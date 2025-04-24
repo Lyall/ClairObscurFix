@@ -5,7 +5,7 @@ set_optimize("smallest")
 
   target("ClairObscurFix")
     set_kind("shared")
-    add_files("src/*.cpp", "src/SDK/Engine_functions.cpp", "src/SDK/CoreUObject_functions.cpp", "src/SDK/Basic.cpp", "external/safetyhook/safetyhook.cpp", "external/safetyhook/Zydis.c")
+    add_files("src/*.cpp", "src/SDK/WBP_SplashScreen_SaveWarning_functions.cpp", "src/SDK/WBP_SplashScreens_Logos_functions.cpp", "src/SDK/WBP_SplashScreen_Epilepsy_functions.cpp", "src/SDK/Engine_functions.cpp", "src/SDK/CoreUObject_functions.cpp", "src/SDK/Basic.cpp", "external/safetyhook/safetyhook.cpp", "external/safetyhook/Zydis.c")
     add_syslinks("user32")
     add_includedirs("external/spdlog/include", "external/inipp", "external/safetyhook")
     set_prefixname("")

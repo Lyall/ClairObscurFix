@@ -9,6 +9,10 @@
 #include "SDK/Basic.hpp"
 #include "SDK/Engine_classes.hpp"
 
+#include "SDK/WBP_SplashScreen_Epilepsy_classes.hpp"
+#include "SDK/WBP_SplashScreens_Logos_classes.hpp"
+#include "SDK/WBP_SplashScreen_SaveWarning_classes.hpp"
+
 #define spdlog_confparse(var) spdlog::info("Config Parse: {}: {}", #var, var)
 
 HMODULE exeModule = GetModuleHandle(NULL);
@@ -42,6 +46,7 @@ float fHUDHeight;
 float fHUDHeightOffset;
 
 // Ini variables
+bool bSkipLogos;
 bool bCutsceneFPS;
 bool bEnableConsole;
 bool bFixFOV;
@@ -51,6 +56,9 @@ bool bCutsceneAspectRatio;
 int iCurrentResX;
 int iCurrentResY;
 SDK::UEngine* Engine = nullptr;
+bool bIntroSkipped;
+std::string sWidgetName;
+SDK::UObject* WidgetObject = nullptr;
 
 void CalculateAspectRatio(bool bLog)
 {
@@ -167,12 +175,14 @@ void Configuration()
 
     // Load settings from ini
     inipp::get_value(ini.sections["Developer Console"], "Enabled", bEnableConsole);
+    inipp::get_value(ini.sections["Skip Intro Logos"], "Enabled", bSkipLogos);
     inipp::get_value(ini.sections["Uncap Cutscene FPS"], "Enabled", bCutsceneFPS);
     inipp::get_value(ini.sections["Fix FOV"], "Enabled", bFixFOV);
     //inipp::get_value(ini.sections["Cutscene Aspect Ratio"], "Unlocked", bCutsceneAspectRatio);
 
     // Log ini parse
     spdlog_confparse(bEnableConsole);
+    spdlog_confparse(bSkipLogos);
     spdlog_confparse(bCutsceneFPS);
     spdlog_confparse(bFixFOV);
     //spdlog_confparse(bCutsceneAspectRatio);
@@ -315,7 +325,7 @@ void Framerate()
                 [](SafetyHookContext& ctx) {
                     SDK::UGameUserSettings* userSettings = SDK::UGameUserSettings::GetGameUserSettings();
                     if (userSettings) {
-                          // This effectively sets t.MaxFPS. Just overwrrite any attempt to set a framerate limit with the user's defined setting.
+                          // This effectively sets t.MaxFPS. Just overwrite any attempt to set a framerate limit with the user's defined setting.
                           ctx.xmm1.f32[0] = userSettings->FrameRateLimit;
                           spdlog::debug("Cutscenes: FPS: GameUserSettings = {:x}. Set FPS limit to {}", reinterpret_cast<uintptr_t>(userSettings), userSettings->FrameRateLimit);   
                     }
@@ -327,6 +337,44 @@ void Framerate()
         else {
             spdlog::error("Cutscenes: FPS: Pattern scan failed.");
         }
+    }
+}
+
+void HUD()
+{
+    // Widgets
+    std::uint8_t* UWigetAddToViewportScanResult = Memory::PatternScan(exeModule, "48 8B ?? ?? 48 8B ?? 48 85 ?? 40 0F ?? ?? 48 ?? ?? 48 89 ?? ?? 48 8B ?? 8B ?? ?? ?? ?? ?? ?? FF 90 ?? ?? ?? ??");
+    if (UWigetAddToViewportScanResult) {
+        spdlog::info("Widgets: Address is {:s}+{:x}", sExeName.c_str(), UWigetAddToViewportScanResult - reinterpret_cast<std::uint8_t*>(exeModule));
+        static SafetyHookMid UWigetAddToViewportMidHook{};
+        UWigetAddToViewportMidHook = safetyhook::create_mid(UWigetAddToViewportScanResult,
+            [](SafetyHookContext& ctx) {
+                if (!ctx.rsi) return;
+
+                WidgetObject = reinterpret_cast<SDK::UObject*>(ctx.rsi);
+                sWidgetName = WidgetObject->GetName();
+                spdlog::debug("Widgets: {} @ 0x{:x}", sWidgetName, reinterpret_cast<uintptr_t>(WidgetObject));
+
+                if (bSkipLogos && !bIntroSkipped) {
+                    if (sWidgetName.contains("WBP_SplashScreen_Epilepsy_C")) {
+                        auto epilepsy = static_cast<SDK::UWBP_SplashScreen_Epilepsy_C*>(WidgetObject);
+                        epilepsy->OnMainAnimationFinished();
+                    }
+                    else if (sWidgetName.contains("WBP_SplashScreens_Logos_C")) {
+                        auto logos = static_cast<SDK::UWBP_SplashScreens_Logos_C*>(WidgetObject);
+                        logos->OnPlayAnimationFinished();
+                    }
+                    else if (sWidgetName.contains("WBP_SplashScreen_SaveWarning_C")) {
+                        auto saveWarning = static_cast<SDK::UWBP_SplashScreen_SaveWarning_C*>(WidgetObject);
+                        saveWarning->OnMainAnimationFinished();
+                        spdlog::info("Widgets: Skipped intro logos and warnings.");
+                        bIntroSkipped = true;
+                    }
+                }
+            });
+    }
+    else {
+        spdlog::error("Widgets: Pattern scan failed.");
     }
 }
 
@@ -388,6 +436,7 @@ DWORD __stdcall Main(void*)
     AspectRatio();
     FOV();
     Framerate();
+    HUD();
     EnableConsole();
 
     return true;
