@@ -67,6 +67,7 @@ jobs:
     - name: Create Release Zips
       run: |
         cd ./zip/Steam; Compress-Archive -Path ./* -DestinationPath ../${{ github.event.repository.name }}_${{ github.event.inputs.version }}_Steam.zip
+        cd ../..
         cd ./zip/Xbox; Compress-Archive -Path ./* -DestinationPath ../${{ github.event.repository.name }}_${{ github.event.inputs.version }}_Xbox.zip
 
     - name: Update release_body.md
