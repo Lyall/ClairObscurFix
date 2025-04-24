@@ -62,7 +62,7 @@ jobs:
         cp ${{ github.event.repository.name }}.ini ./zip/Xbox/Sandfall/Binaries/WinGDK
         cp dinput8.dll ./zip/Xbox/Sandfall/Binaries/WinGDK/dsound.dll        
         cp UltimateASILoader_LICENSE.md ./zip/Xbox/
-        New-Item -Path "./zip/Xbox/EXTRACT_TO_GAME_FOLDER" -ItemType File
+        New-Item -Path "./zip/Xbox/EXTRACT_TO_GAME_CONTENT_FOLDER" -ItemType File
     
     - name: Create Release Zips
       run: |
