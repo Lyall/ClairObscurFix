@@ -8,6 +8,8 @@
 
 #include "SDK/Basic.hpp"
 #include "SDK/Engine_classes.hpp"
+#include "SDK/CommonUI_classes.hpp"
+#include "SDK/MediaAssets_classes.hpp"
 
 #include "SDK/WBP_SplashScreen_Epilepsy_classes.hpp"
 #include "SDK/WBP_SplashScreens_Logos_classes.hpp"
@@ -20,7 +22,7 @@ HMODULE thisModule;
 
 // Fix details
 std::string sFixName = "ClairObscurFix";
-std::string sFixVersion = "0.0.1";
+std::string sFixVersion = "0.0.2";
 std::filesystem::path sFixPath;
 
 // Ini
@@ -50,6 +52,7 @@ bool bSkipLogos;
 bool bCutsceneFPS;
 bool bEnableConsole;
 bool bFixFOV;
+bool bFixMovies;
 bool bCutsceneAspectRatio;
 
 // Variables
@@ -59,6 +62,7 @@ SDK::UEngine* Engine = nullptr;
 bool bIntroSkipped;
 std::string sWidgetName;
 SDK::UObject* WidgetObject = nullptr;
+static bool bIsCutscene;
 
 void CalculateAspectRatio(bool bLog)
 {
@@ -178,14 +182,16 @@ void Configuration()
     inipp::get_value(ini.sections["Skip Intro Logos"], "Enabled", bSkipLogos);
     inipp::get_value(ini.sections["Uncap Cutscene FPS"], "Enabled", bCutsceneFPS);
     inipp::get_value(ini.sections["Fix FOV"], "Enabled", bFixFOV);
-    //inipp::get_value(ini.sections["Cutscene Aspect Ratio"], "Unlocked", bCutsceneAspectRatio);
+    inipp::get_value(ini.sections["Fix Movies"], "Enabled", bFixMovies);
+    inipp::get_value(ini.sections["Cutscene Aspect Ratio"], "Unlocked", bCutsceneAspectRatio);
 
     // Log ini parse
     spdlog_confparse(bEnableConsole);
     spdlog_confparse(bSkipLogos);
     spdlog_confparse(bCutsceneFPS);
     spdlog_confparse(bFixFOV);
-    //spdlog_confparse(bCutsceneAspectRatio);
+    spdlog_confparse(bFixMovies);
+    spdlog_confparse(bCutsceneAspectRatio);
 
     spdlog::info("----------");
 }
@@ -256,9 +262,8 @@ void CurrentResolution()
     }
 }
 
-void AspectRatio() 
+void AspectRatioFOV() 
 {
-    bCutsceneAspectRatio = false;
     if (bCutsceneAspectRatio) 
     {
         // Cutscene Aspect Ratio
@@ -268,8 +273,16 @@ void AspectRatio()
             static SafetyHookMid CutsceneAspectRatioMidHook{};
             CutsceneAspectRatioMidHook = safetyhook::create_mid(CutsceneAspectRatioScanResult,
                 [](SafetyHookContext& ctx) {
-                    if (fAspectRatio != fCutsceneAspect)
+                    // Check if forced aspect ratio is 2.39~
+                    if (std::fabs(ctx.xmm1.f32[0] - fCutsceneAspect) < 1e-5f) {
                         ctx.xmm1.f32[0] = fAspectRatio;
+                        // We're in a cutscene now.
+                        bIsCutscene = true;
+                    }
+                    else {
+                        // If no aspect ratio is forced then we're not in a cutscene.
+                        bIsCutscene = false;
+                    }
                 });
         }
         else {
@@ -283,7 +296,7 @@ void AspectRatio()
             static SafetyHookMid CutsceneFOVMidHook{};
             CutsceneFOVMidHook = safetyhook::create_mid(CutsceneFOVScanResult,
                 [](SafetyHookContext& ctx) {
-                    if (fAspectRatio > fCutsceneAspect)
+                    if (bIsCutscene && fAspectRatio > fCutsceneAspect)
                         ctx.xmm0.f32[0] = atanf(tanf(ctx.xmm0.f32[0] * (fPi / 360)) / fCutsceneAspect * fAspectRatio) * (360 / fPi);
                 });
         }
@@ -291,15 +304,12 @@ void AspectRatio()
             spdlog::error("Cutscenes: FOV: Pattern scan failed.");
         }
     } 
-}
 
-void FOV() 
-{
     if (bFixFOV) {
         // AspectRatioAxisConstraint
         std::uint8_t* AspectRatioAxisConstraintScanResult = Memory::PatternScan(exeModule, "41 ?? ?? ?? ?? ?? 00 00 48 ?? ?? ?? ?? 00 00 4C ?? ?? 4D ?? ?? E8 ?? ?? ?? ??");
         if (AspectRatioAxisConstraintScanResult) {
-            spdlog::info("AspectRatioAxisConstraint: Address is {:s}+{:x}", sExeName.c_str(), AspectRatioAxisConstraintScanResult - reinterpret_cast<std::uint8_t*>(exeModule));
+            spdlog::info("FOV: AspectRatioAxisConstraint: Address is {:s}+{:x}", sExeName.c_str(), AspectRatioAxisConstraintScanResult - reinterpret_cast<std::uint8_t*>(exeModule));
             static SafetyHookMid AspectRatioAxisConstraintMidHook{};
             AspectRatioAxisConstraintMidHook = safetyhook::create_mid(AspectRatioAxisConstraintScanResult + 0x8,
                 [](SafetyHookContext& ctx) {
@@ -308,7 +318,7 @@ void FOV()
                 });
         }
         else {
-            spdlog::error("AspectRatioAxisConstraint: Pattern scan failed.");
+            spdlog::error("FOV: AspectRatioAxisConstraint: Pattern scan failed.");
         }
     }
 }
@@ -342,6 +352,35 @@ void Framerate()
 
 void HUD()
 {
+    if (bFixMovies) {
+        // Video player
+        std::uint8_t* VideoPlayerScanResult = Memory::PatternScan(exeModule, "48 89 ?? ?? 48 8B ?? 0F ?? ?? ?? 33 ?? 48 8B ?? 89 ?? ?? ?? ?? ?? ?? 0F 29 ?? ??");
+        if (VideoPlayerScanResult) {
+            spdlog::info("Video Player: Address is {:s}+{:x}", sExeName.c_str(), VideoPlayerScanResult - reinterpret_cast<std::uint8_t*>(exeModule));
+            static SafetyHookMid VideoPlayerMidHook{};
+            VideoPlayerMidHook = safetyhook::create_mid(VideoPlayerScanResult,
+                [](SafetyHookContext& ctx) {
+                    if (!ctx.rsi) return;
+
+                    auto videoPlayer = reinterpret_cast<SDK::UCommonVideoPlayer*>(ctx.rsi);
+
+                    spdlog::debug("Video Player: Address is 0x{}", reinterpret_cast<uintptr_t>(videoPlayer));
+                    spdlog::debug("Video Player: Playback status changed on video: {}", videoPlayer->MediaPlayer->GetUrl().ToString());
+
+                    // All videos except for the credits are at an aspect ratio of 2.39
+                    if (!videoPlayer->MediaPlayer->GetUrl().ToString().contains("Credit") && videoPlayer->VideoBrush.ImageSize.Y == 1088.00f) {
+                        if (fAspectRatio > fNativeAspect) {
+                            videoPlayer->VideoBrush.ImageSize.X = 1920.00f * (fCutsceneAspect / fNativeAspect);
+                            videoPlayer->VideoBrush.ImageSize.Y = 1088.00f * (fCutsceneAspect / fNativeAspect);
+                        }
+                    }
+                });
+        }
+        else {
+            spdlog::error("Video Player: Pattern scan failed.");
+        }
+    }
+   
     // Widgets
     std::uint8_t* UWigetAddToViewportScanResult = Memory::PatternScan(exeModule, "48 8B ?? ?? 48 8B ?? 48 85 ?? 40 0F ?? ?? 48 ?? ?? 48 89 ?? ?? 48 8B ?? 8B ?? ?? ?? ?? ?? ?? FF 90 ?? ?? ?? ??");
     if (UWigetAddToViewportScanResult) {
@@ -433,8 +472,7 @@ DWORD __stdcall Main(void*)
     Configuration();
     UpdateOffsets();
     CurrentResolution();
-    AspectRatio();
-    FOV();
+    AspectRatioFOV();
     Framerate();
     HUD();
     EnableConsole();
