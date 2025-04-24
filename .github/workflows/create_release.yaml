@@ -46,7 +46,7 @@ jobs:
     - name: Create Directory Structures
       run: |
         mkdir ./zip/Steam/Sandfall/Binaries/Win64
-        mkdir ./zip/Xbox/Sandfall/Binaries/Win64
+        mkdir ./zip/Xbox/Sandfall/Binaries/WinGDK
 
     - name: Prepare Steam Release Files
       run: |
@@ -58,9 +58,9 @@ jobs:
 
     - name: Prepare Xbox Release Files
       run: |
-        cp build/windows/x64/release/${{ github.event.repository.name }}.asi ./zip/Xbox/Sandfall/Binaries/Win64
-        cp ${{ github.event.repository.name }}.ini ./zip/Xbox/Sandfall/Binaries/Win64
-        cp dinput8.dll ./zip/Xbox/Sandfall/Binaries/Win64/dsound.dll        
+        cp build/windows/x64/release/${{ github.event.repository.name }}.asi ./zip/Xbox/Sandfall/Binaries/WinGDK
+        cp ${{ github.event.repository.name }}.ini ./zip/Xbox/Sandfall/Binaries/WinGDK
+        cp dinput8.dll ./zip/Xbox/Sandfall/Binaries/WinGDK/dsound.dll        
         cp UltimateASILoader_LICENSE.md ./zip/Xbox/
         New-Item -Path "./zip/Xbox/EXTRACT_TO_GAME_FOLDER" -ItemType File
     
