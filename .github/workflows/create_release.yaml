@@ -73,8 +73,10 @@ jobs:
     - name: Update release_body.md
       run: |
         $releaseBody = "release_body.md"
-        $zipName = "${{ github.event.repository.name }}_${{ github.event.inputs.version }}.zip" 
-        (Get-Content $releaseBody -Raw) -replace '<RELEASE_ZIP_NAME>', $zipName | Set-Content $releaseBody
+        $steamZipName = "${{ github.event.repository.name }}_${{ github.event.inputs.version }}_Steam.zip" 
+        $xboxZipName = "${{ github.event.repository.name }}_${{ github.event.inputs.version }}_Xbox.zip" 
+        (Get-Content $releaseBody -Raw) -replace '<STEAM_RELEASE_ZIP_NAME>', $steamZipName | Set-Content $releaseBody
+        (Get-Content $releaseBody -Raw) -replace '<XBOX_RELEASE_ZIP_NAME>', $xboxZipName | Set-Content $releaseBody
         
     - uses: ncipollo/release-action@v1
       with:

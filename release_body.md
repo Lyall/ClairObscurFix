@@ -2,7 +2,7 @@
 - 
  
 ## Installation  
-- Download the file marked `<RELEASE_ZIP_NAME>` from the "Assets" section below.
+- Download the file marked `<STEAM_RELEASE_ZIP_NAME>` or `<XBOX_RELEASE_ZIP_NAME>` from the "Assets" section below.
 - Extract the contents of the release zip in to the the game folder.
   
 ### Steam Deck/Linux Additional Instructions
