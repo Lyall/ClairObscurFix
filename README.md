@@ -8,7 +8,6 @@
 ## Features
 - Enable developer console.
 - Remove 30fps cap in cutscenes.
-- Remove letterboxing/pillarboxing in cutscenes.
 - Fix FOV issues when using ultrawide resolutions.
 
 ## Installation  
