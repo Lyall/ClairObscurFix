@@ -21,13 +21,7 @@
 ## Configuration
 - Open **`ClairObscurFix.ini`** to adjust settings.
 
-## Screenshots
-| |
-|:--:|
-| Gameplay |
-
 ## Credits
-Thanks to **VagrantZero** for providing a copy of the game! <br />
 [Ultimate ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader) for ASI loading. <br />
 [inipp](https://github.com/mcmtroffaes/inipp) for ini reading. <br />
 [spdlog](https://github.com/gabime/spdlog) for logging. <br />
