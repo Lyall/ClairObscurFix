@@ -314,12 +314,14 @@ void Framerate()
             FrameRateLimitMidHook = safetyhook::create_mid(FrameRateLimitScanResult,
                 [](SafetyHookContext& ctx) {
                     SDK::UGameUserSettings* userSettings = SDK::UGameUserSettings::GetGameUserSettings();
-
-                    // This effectively sets t.MaxFPS. Just overwrrite any attempt to set a framerate limit with the user's defined setting.
                     if (userSettings) {
-                        ctx.xmm1.f32[0] = userSettings->FrameRateLimit;
-                        spdlog::debug("Cutscenes: FPS: GameUserSettings = {:x}. Set FPS limit to {}", reinterpret_cast<uintptr_t>(userSettings), userSettings->FrameRateLimit);
-                    }              
+                          // This effectively sets t.MaxFPS. Just overwrrite any attempt to set a framerate limit with the user's defined setting.
+                          ctx.xmm1.f32[0] = userSettings->FrameRateLimit;
+                          spdlog::debug("Cutscenes: FPS: GameUserSettings = {:x}. Set FPS limit to {}", reinterpret_cast<uintptr_t>(userSettings), userSettings->FrameRateLimit);   
+                    }
+                    else {
+                        spdlog::error("Cutscenes: FPS: Failed to retreive GameUserSettings.");
+                    }
                 });
         }
         else {
