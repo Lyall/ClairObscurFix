@@ -6,8 +6,10 @@
 **ClairObscurFix** is an ASI plugin for Clair Obscur: Expedition 33 that removes the 30fps cap in cutscenes, fixes ultrawide issues and more.
 
 ## Features
+- Skip intro logos.
 - Enable developer console.
 - Remove 30fps cap in cutscenes.
+- Disable letterboxing/pillarboxing in cutscenes.
 - Fix FOV issues when using ultrawide resolutions.
 
 ## Installation  
@@ -16,7 +18,7 @@
 
 ### Steam Deck/Linux Additional Instructions
 🚩**You do not need to do this if you are using Windows!**  
-- Open the game properties in Steam and add `WINEDLLOVERRIDES="dsound=n,b" %command%` to the launch options.  
+- Open up the game properties in Steam/Epic and add `WINEDLLOVERRIDES="dsound=n,b" %command%` to the launch options.
 
 ## Configuration
 - Open **`ClairObscurFix.ini`** to adjust settings.
