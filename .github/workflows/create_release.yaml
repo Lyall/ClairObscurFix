@@ -1,0 +1,87 @@
+name: create-release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Release version number'
+        required: true
+
+defaults:
+  run:
+    shell: pwsh
+
+jobs:
+  build:
+    runs-on: windows-latest
+    permissions:
+      contents: write
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        submodules: 'true'
+  
+    - uses: xmake-io/github-action-setup-xmake@v1
+      with:
+        xmake-version: latest
+        build-cache: true
+
+    - name: Build With Xmake
+      run: |
+        xmake f -m release
+        xmake build -v
+
+    - uses: robinraju/release-downloader@v1.11
+      with:
+        repository: "ThirteenAG/Ultimate-ASI-Loader"
+        latest: true
+        fileName: "Ultimate-ASI-Loader_x64.zip"
+
+    - name: Prepare Ultimate ASI Loader
+      run: |
+        unzip Ultimate-ASI-Loader_x64.zip -d ./
+        C:\msys64\usr\bin\wget.exe -O ./UltimateASILoader_LICENSE.md https://raw.githubusercontent.com/ThirteenAG/Ultimate-ASI-Loader/master/license
+        
+    - name: Create Directory Structures
+      run: |
+        mkdir ./zip/Steam/Sandfall/Binaries/Win64
+        mkdir ./zip/Xbox/Sandfall/Binaries/Win64
+
+    - name: Prepare Steam Release Files
+      run: |
+        cp build/windows/x64/release/${{ github.event.repository.name }}.asi ./zip/Steam/Sandfall/Binaries/Win64
+        cp ${{ github.event.repository.name }}.ini ./zip/Steam/Sandfall/Binaries/Win64
+        cp dinput8.dll ./zip/Steam/Sandfall/Binaries/Win64/dsound.dll        
+        cp UltimateASILoader_LICENSE.md ./zip/Steam/
+        New-Item -Path "./zip/Steam/EXTRACT_TO_GAME_FOLDER" -ItemType File
+
+    - name: Prepare Xbox Release Files
+      run: |
+        cp build/windows/x64/release/${{ github.event.repository.name }}.asi ./zip/Xbox/Sandfall/Binaries/Win64
+        cp ${{ github.event.repository.name }}.ini ./zip/Xbox/Sandfall/Binaries/Win64
+        cp dinput8.dll ./zip/Xbox/Sandfall/Binaries/Win64/dsound.dll        
+        cp UltimateASILoader_LICENSE.md ./zip/Xbox/
+        New-Item -Path "./zip/Xbox/EXTRACT_TO_GAME_FOLDER" -ItemType File
+    
+    - name: Create Release Zips
+      run: |
+        cd ./zip/Steam; Compress-Archive -Path ./* -DestinationPath ../${{ github.event.repository.name }}_${{ github.event.inputs.version }}_Steam.zip
+        cd ./zip/Xbox; Compress-Archive -Path ./* -DestinationPath ../${{ github.event.repository.name }}_${{ github.event.inputs.version }}_Xbox.zip
+
+    - name: Update release_body.md
+      run: |
+        $releaseBody = "release_body.md"
+        $zipName = "${{ github.event.repository.name }}_${{ github.event.inputs.version }}.zip" 
+        (Get-Content $releaseBody -Raw) -replace '<RELEASE_ZIP_NAME>', $zipName | Set-Content $releaseBody
+        
+    - uses: ncipollo/release-action@v1
+      with:
+        artifacts: "${{ github.event.repository.name }}_${{ github.event.inputs.version }}_Steam.zip, ${{ github.event.repository.name }}_${{ github.event.inputs.version }}_Xbox.zip"
+        token: ${{ secrets.GITHUB_TOKEN }}
+        tag: ${{ github.event.inputs.version }}
+        name: "${{ github.event.inputs.version }}"
+        draft: true
+        bodyFile: "release_body.md"
+        generateReleaseNotes: false
+        artifactErrorsFailBuild: true
