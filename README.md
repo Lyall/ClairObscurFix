@@ -10,6 +10,7 @@
 - Enable developer console.
 - Remove 30fps cap in cutscenes.
 - Disable letterboxing/pillarboxing in cutscenes.
+- Disable forced sharpening.
 - Fix FOV issues when using ultrawide resolutions.
 
 ## Installation  
