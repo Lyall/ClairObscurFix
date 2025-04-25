@@ -60,7 +60,6 @@ bool bDisableSharpening;
 int iCurrentResX;
 int iCurrentResY;
 SDK::UEngine* Engine = nullptr;
-bool bIntroSkipped;
 std::string sWidgetName;
 SDK::UObject* WidgetObject = nullptr;
 static bool bIsCutscene;
@@ -394,27 +393,30 @@ void HUD()
             [](SafetyHookContext& ctx) {
                 if (!ctx.rsi) return;
 
-                WidgetObject = reinterpret_cast<SDK::UObject*>(ctx.rsi);
-                sWidgetName = WidgetObject->GetName();
-                spdlog::debug("Widgets: {} @ 0x{:x}", sWidgetName, reinterpret_cast<uintptr_t>(WidgetObject));
-
-                // Intro skip
-                if (bSkipLogos && !bIntroSkipped) {
-                    if (sWidgetName.contains("WBP_SplashScreen_Epilepsy_C")) {
-                        auto epilepsy = static_cast<SDK::UWBP_SplashScreen_Epilepsy_C*>(WidgetObject);
-                        epilepsy->OnMainAnimationFinished();
+                if (WidgetObject != reinterpret_cast<SDK::UObject*>(ctx.rsi)) {
+                    WidgetObject = reinterpret_cast<SDK::UObject*>(ctx.rsi);
+                    sWidgetName = WidgetObject->GetName();
+                    spdlog::debug("Widgets: {} @ 0x{:x}", sWidgetName, reinterpret_cast<uintptr_t>(WidgetObject));
+    
+                    // Intro skip
+                    if (bSkipLogos) {
+                        if (sWidgetName.contains("WBP_SplashScreen_Epilepsy_C")) {
+                            auto epilepsy = static_cast<SDK::UWBP_SplashScreen_Epilepsy_C*>(WidgetObject);
+                            epilepsy->OnMainAnimationFinished();
+                            spdlog::debug("Widgets: Epilepsy: OnMainAnimationFinsihed()");
+                        }
+                        else if (sWidgetName.contains("WBP_SplashScreens_Logos_C")) {
+                            auto logos = static_cast<SDK::UWBP_SplashScreens_Logos_C*>(WidgetObject);
+                            logos->OnPlayAnimationFinished();
+                            spdlog::debug("Widgets: SplashScreens: PlayAnimationFinished()");
+                        }
+                        else if (sWidgetName.contains("WBP_SplashScreen_SaveWarning_C")) {
+                            auto saveWarning = static_cast<SDK::UWBP_SplashScreen_SaveWarning_C*>(WidgetObject);
+                            saveWarning->OnMainAnimationFinished();
+                            spdlog::debug("Widgets: SaveWarning: OnMainAnimationFinished()");
+                            spdlog::info("Widgets: Skipped intro logos and warnings.");
+                        }
                     }
-                    else if (sWidgetName.contains("WBP_SplashScreens_Logos_C")) {
-                        auto logos = static_cast<SDK::UWBP_SplashScreens_Logos_C*>(WidgetObject);
-                        logos->OnPlayAnimationFinished();
-                    }
-                    else if (sWidgetName.contains("WBP_SplashScreen_SaveWarning_C")) {
-                        auto saveWarning = static_cast<SDK::UWBP_SplashScreen_SaveWarning_C*>(WidgetObject);
-                        saveWarning->OnMainAnimationFinished();
-                        spdlog::info("Widgets: Skipped intro logos and warnings.");
-                        bIntroSkipped = true;
-                    }
-                    return;
                 }
             });
     }
