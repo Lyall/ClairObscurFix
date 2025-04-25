@@ -384,44 +384,47 @@ void HUD()
         }
     }
    
-    // Widgets
-    std::uint8_t* UWigetAddToViewportScanResult = Memory::PatternScan(exeModule, "48 8B ?? ?? 48 8B ?? 48 85 ?? 40 0F ?? ?? 48 ?? ?? 48 89 ?? ?? 48 8B ?? 8B ?? ?? ?? ?? ?? ?? FF 90 ?? ?? ?? ??");
-    if (UWigetAddToViewportScanResult) {
-        spdlog::info("Widgets: Address is {:s}+{:x}", sExeName.c_str(), UWigetAddToViewportScanResult - reinterpret_cast<std::uint8_t*>(exeModule));
-        static SafetyHookMid UWigetAddToViewportMidHook{};
-        UWigetAddToViewportMidHook = safetyhook::create_mid(UWigetAddToViewportScanResult,
-            [](SafetyHookContext& ctx) {
-                if (!ctx.rsi) return;
+    if (bSkipLogos) 
+    {
+        // Widgets
+        std::uint8_t* UWigetAddToViewportScanResult = Memory::PatternScan(exeModule, "48 8B ?? ?? 48 8B ?? 48 85 ?? 40 0F ?? ?? 48 ?? ?? 48 89 ?? ?? 48 8B ?? 8B ?? ?? ?? ?? ?? ?? FF 90 ?? ?? ?? ??");
+        if (UWigetAddToViewportScanResult) {
+            spdlog::info("Widgets: Address is {:s}+{:x}", sExeName.c_str(), UWigetAddToViewportScanResult - reinterpret_cast<std::uint8_t*>(exeModule));
+            static SafetyHookMid UWigetAddToViewportMidHook{};
+            UWigetAddToViewportMidHook = safetyhook::create_mid(UWigetAddToViewportScanResult,
+                [](SafetyHookContext& ctx) {
+                    if (!ctx.rsi) return;
 
-                if (WidgetObject != reinterpret_cast<SDK::UObject*>(ctx.rsi)) {
-                    WidgetObject = reinterpret_cast<SDK::UObject*>(ctx.rsi);
-                    sWidgetName = WidgetObject->GetName();
-                    spdlog::debug("Widgets: {} @ 0x{:x}", sWidgetName, reinterpret_cast<uintptr_t>(WidgetObject));
-    
-                    // Intro skip
-                    if (bSkipLogos) {
-                        if (sWidgetName.contains("WBP_SplashScreen_Epilepsy_C")) {
-                            auto epilepsy = static_cast<SDK::UWBP_SplashScreen_Epilepsy_C*>(WidgetObject);
-                            epilepsy->OnMainAnimationFinished();
-                            spdlog::debug("Widgets: Epilepsy: OnMainAnimationFinsihed()");
-                        }
-                        else if (sWidgetName.contains("WBP_SplashScreens_Logos_C")) {
-                            auto logos = static_cast<SDK::UWBP_SplashScreens_Logos_C*>(WidgetObject);
-                            logos->OnPlayAnimationFinished();
-                            spdlog::debug("Widgets: SplashScreens: PlayAnimationFinished()");
-                        }
-                        else if (sWidgetName.contains("WBP_SplashScreen_SaveWarning_C")) {
-                            auto saveWarning = static_cast<SDK::UWBP_SplashScreen_SaveWarning_C*>(WidgetObject);
-                            saveWarning->OnMainAnimationFinished();
-                            spdlog::debug("Widgets: SaveWarning: OnMainAnimationFinished()");
-                            spdlog::info("Widgets: Skipped intro logos and warnings.");
+                    if (WidgetObject != reinterpret_cast<SDK::UObject*>(ctx.rsi)) {
+                        WidgetObject = reinterpret_cast<SDK::UObject*>(ctx.rsi);
+                        sWidgetName = WidgetObject->GetName();
+                        spdlog::debug("Widgets: {} @ 0x{:x}", sWidgetName, reinterpret_cast<uintptr_t>(WidgetObject));
+
+                        // Intro skip
+                        if (bSkipLogos) {
+                            if (sWidgetName.contains("WBP_SplashScreen_Epilepsy_C")) {
+                                auto epilepsy = static_cast<SDK::UWBP_SplashScreen_Epilepsy_C*>(WidgetObject);
+                                epilepsy->OnMainAnimationFinished();
+                                spdlog::debug("Widgets: Epilepsy: OnMainAnimationFinsihed()");
+                            }
+                            else if (sWidgetName.contains("WBP_SplashScreens_Logos_C")) {
+                                auto logos = static_cast<SDK::UWBP_SplashScreens_Logos_C*>(WidgetObject);
+                                logos->OnPlayAnimationFinished();
+                                spdlog::debug("Widgets: SplashScreens: PlayAnimationFinished()");
+                            }
+                            else if (sWidgetName.contains("WBP_SplashScreen_SaveWarning_C")) {
+                                auto saveWarning = static_cast<SDK::UWBP_SplashScreen_SaveWarning_C*>(WidgetObject);
+                                saveWarning->OnMainAnimationFinished();
+                                spdlog::debug("Widgets: SaveWarning: OnMainAnimationFinished()");
+                                spdlog::info("Widgets: Skipped intro logos and warnings.");
+                            }
                         }
                     }
-                }
-            });
-    }
-    else {
-        spdlog::error("Widgets: Pattern scan failed.");
+                });
+        }
+        else {
+            spdlog::error("Widgets: Pattern scan failed.");
+        }
     }
 }
 
