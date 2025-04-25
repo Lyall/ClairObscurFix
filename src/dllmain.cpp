@@ -394,6 +394,7 @@ void HUD()
                 sWidgetName = WidgetObject->GetName();
                 spdlog::debug("Widgets: {} @ 0x{:x}", sWidgetName, reinterpret_cast<uintptr_t>(WidgetObject));
 
+                // Intro skip
                 if (bSkipLogos && !bIntroSkipped) {
                     if (sWidgetName.contains("WBP_SplashScreen_Epilepsy_C")) {
                         auto epilepsy = static_cast<SDK::UWBP_SplashScreen_Epilepsy_C*>(WidgetObject);
@@ -409,6 +410,7 @@ void HUD()
                         spdlog::info("Widgets: Skipped intro logos and warnings.");
                         bIntroSkipped = true;
                     }
+                    return;
                 }
             });
     }
