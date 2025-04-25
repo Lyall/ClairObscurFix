@@ -474,7 +474,7 @@ void Graphics()
 
                                 for (auto& param : SharpenInstance->ScalarParameterValues) {
                                     if (param.ParameterInfo.Name.ToString() == "SharpenGlobal" || param.ParameterInfo.Name.ToString() == "SharpenMainCharacter") {
-                                        spdlog::info("PostProcess Override: Sharpening: {} - Set {} from {} to 0.", SharpenInstance->GetName(), param.ParameterInfo.Name.ToString(), param.ParameterValue);
+                                        spdlog::info("PostProcess Override: Sharpening: {} - Set {} from {} to {}.", SharpenInstance->GetName(), param.ParameterInfo.Name.ToString(), param.ParameterValue, fSharpenStrength);
                                         param.ParameterValue = fSharpenStrength;
                                     }
                                 }
