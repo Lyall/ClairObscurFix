@@ -54,7 +54,7 @@ bool bEnableConsole;
 bool bFixFOV;
 bool bFixMovies;
 bool bCutsceneLetterboxing;
-bool bDisableSharpening;
+float fSharpenStrength;
 bool bBackgroundAudio;
 
 // Variables
@@ -187,8 +187,11 @@ void Configuration()
     inipp::get_value(ini.sections["Fix FOV"], "Enabled", bFixFOV);
     inipp::get_value(ini.sections["Fix Movies"], "Enabled", bFixMovies);
     inipp::get_value(ini.sections["Cutscene Letterboxing"], "Enabled", bCutsceneLetterboxing);
-    inipp::get_value(ini.sections["Sharpening"], "Disabled", bDisableSharpening);
+    inipp::get_value(ini.sections["Sharpening"], "Strength", fSharpenStrength);
     inipp::get_value(ini.sections["Background Audio"], "Enabled", bBackgroundAudio);
+
+    // Clamp settings
+    fSharpenStrength = std::clamp(fSharpenStrength, 0.00f, 2.00f);
 
     // Log ini parse
     spdlog_confparse(bEnableConsole);
@@ -197,7 +200,7 @@ void Configuration()
     spdlog_confparse(bFixFOV);
     spdlog_confparse(bFixMovies);
     spdlog_confparse(bCutsceneLetterboxing);
-    spdlog_confparse(bDisableSharpening);
+    spdlog_confparse(fSharpenStrength);
     spdlog_confparse(bBackgroundAudio);
 
     spdlog::info("----------");
@@ -452,7 +455,7 @@ void HUD()
 
 void Graphics() 
 {
-    if (bDisableSharpening) {
+    if (fSharpenStrength != 1.00f) {
         // Post process override
         std::uint8_t* PostProcessOverrideScanResult = Memory::PatternScan(exeModule, "48 8B ?? ?? 48 8D ?? ?? 0F 29 ?? ?? ?? 4C 8D ?? ?? ?? ?? ?? 48 8B ?? 0F ?? ?? 48 8B ?? FF 90 ?? ?? ?? ??");
         if (PostProcessOverrideScanResult) {
@@ -472,7 +475,7 @@ void Graphics()
                                 for (auto& param : SharpenInstance->ScalarParameterValues) {
                                     if (param.ParameterInfo.Name.ToString() == "SharpenGlobal" || param.ParameterInfo.Name.ToString() == "SharpenMainCharacter") {
                                         spdlog::info("PostProcess Override: Sharpening: {} - Set {} from {} to 0.", SharpenInstance->GetName(), param.ParameterInfo.Name.ToString(), param.ParameterValue);
-                                        param.ParameterValue = 0.00f;
+                                        param.ParameterValue = fSharpenStrength;
                                     }
                                 }
                             }
