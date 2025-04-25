@@ -55,15 +55,17 @@ bool bFixFOV;
 bool bFixMovies;
 bool bCutsceneAspectRatio;
 bool bDisableSharpening;
+bool bBackgroundAudio;
 
 // Variables
 int iCurrentResX;
 int iCurrentResY;
-SDK::UEngine* Engine = nullptr;
-std::string sWidgetName;
-SDK::UObject* WidgetObject = nullptr;
 static bool bIsCutscene;
-SDK::UMaterialInstanceConstant* sharpenInstance = nullptr;
+std::string sWidgetName;
+SDK::UEngine* Engine = nullptr;
+SDK::UObject* WidgetObject = nullptr;
+SDK::UMaterialInstanceConstant* SharpenInstance = nullptr;
+std::uint8_t* UnfocusedVolumeMultiplier = nullptr;
 
 void CalculateAspectRatio(bool bLog)
 {
@@ -186,6 +188,7 @@ void Configuration()
     inipp::get_value(ini.sections["Fix Movies"], "Enabled", bFixMovies);
     inipp::get_value(ini.sections["Cutscene Aspect Ratio"], "Unlocked", bCutsceneAspectRatio);
     inipp::get_value(ini.sections["Disable Sharpening"], "Enabled", bDisableSharpening);
+    inipp::get_value(ini.sections["Background Audio"], "Enabled", bBackgroundAudio);
 
     // Log ini parse
     spdlog_confparse(bEnableConsole);
@@ -195,6 +198,7 @@ void Configuration()
     spdlog_confparse(bFixMovies);
     spdlog_confparse(bCutsceneAspectRatio);
     spdlog_confparse(bDisableSharpening);
+    spdlog_confparse(bBackgroundAudio);
 
     spdlog::info("----------");
 }
@@ -241,6 +245,20 @@ void UpdateOffsets()
 
 void CurrentResolution()
 {
+    if (bBackgroundAudio) 
+    {
+        // Unfocused volume multiplier
+        std::uint8_t* UnfocusedVolumeMultiplierScanResult = Memory::PatternScan(exeModule, "F3 0F ?? ?? ?? ?? ?? ?? 48 8D ?? ?? ?? ?? ?? E8 ?? ?? ?? ?? C6 ?? ?? ?? ?? ?? 01 48 83 ?? ?? C3");
+        if (UnfocusedVolumeMultiplierScanResult) {
+            spdlog::info("Unfocused Volume Multiplier: Address is {:s}+{:x}", sExeName.c_str(), UnfocusedVolumeMultiplierScanResult - reinterpret_cast<std::uint8_t*>(exeModule));
+            UnfocusedVolumeMultiplier = Memory::GetAbsolute(UnfocusedVolumeMultiplierScanResult + 0x4);
+            spdlog::info("Unfocused Volume Multiplier: Value address is {:s}+{:x}", sExeName.c_str(), UnfocusedVolumeMultiplier - reinterpret_cast<std::uint8_t*>(exeModule));
+        }
+        else {
+            spdlog::error("Unfocused Volume Multiplier: Pattern scan failed.");
+        }
+    }
+
     // Current resolution
     std::uint8_t* CurrentResolutionScanResult = Memory::PatternScan(exeModule, "4C 8B ?? ?? ?? 4C 8B ?? ?? ?? 48 8B ?? ?? ?? ?? ?? ?? 4C 8B ?? ?? ?? 48 8B ?? ?? ?? 48 85 ?? 74 ?? E8 ?? ?? ?? ??");
     if (CurrentResolutionScanResult) {
@@ -258,6 +276,10 @@ void CurrentResolution()
                     iCurrentResY = iResY;
                     CalculateAspectRatio(true);
                 } 
+
+                // Enable background audio
+                if (bBackgroundAudio && UnfocusedVolumeMultiplier)
+                    *reinterpret_cast<float*>(UnfocusedVolumeMultiplier) = 1.00f;
             });
     }
     else {
@@ -442,14 +464,14 @@ void Graphics()
 
                     auto obj = reinterpret_cast<SDK::UObject*>(ctx.rcx - 0x28);
 
-                    if (!sharpenInstance || sharpenInstance != obj) {
+                    if (!SharpenInstance || SharpenInstance != obj) {
                         if (obj->GetName().contains("M_Sharpen")) {
                             if (obj->IsA(SDK::UMaterialInstanceConstant::StaticClass())) {
-                                sharpenInstance = static_cast<SDK::UMaterialInstanceConstant*>(obj);
+                                SharpenInstance = static_cast<SDK::UMaterialInstanceConstant*>(obj);
 
-                                for (auto& param : sharpenInstance->ScalarParameterValues) {
+                                for (auto& param : SharpenInstance->ScalarParameterValues) {
                                     if (param.ParameterInfo.Name.ToString() == "SharpenGlobal" || param.ParameterInfo.Name.ToString() == "SharpenMainCharacter") {
-                                        spdlog::info("PostProcess Override: Sharpening: {} - Set {} from {} to 0.", sharpenInstance->GetName(), param.ParameterInfo.Name.ToString(), param.ParameterValue);
+                                        spdlog::info("PostProcess Override: Sharpening: {} - Set {} from {} to 0.", SharpenInstance->GetName(), param.ParameterInfo.Name.ToString(), param.ParameterValue);
                                         param.ParameterValue = 0.00f;
                                     }
                                 }
