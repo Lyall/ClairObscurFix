@@ -53,7 +53,7 @@ bool bCutsceneFPS;
 bool bEnableConsole;
 bool bFixFOV;
 bool bFixMovies;
-bool bCutsceneAspectRatio;
+bool bCutsceneLetterboxing;
 bool bDisableSharpening;
 bool bBackgroundAudio;
 
@@ -186,8 +186,8 @@ void Configuration()
     inipp::get_value(ini.sections["Uncap Cutscene FPS"], "Enabled", bCutsceneFPS);
     inipp::get_value(ini.sections["Fix FOV"], "Enabled", bFixFOV);
     inipp::get_value(ini.sections["Fix Movies"], "Enabled", bFixMovies);
-    inipp::get_value(ini.sections["Cutscene Aspect Ratio"], "Unlocked", bCutsceneAspectRatio);
-    inipp::get_value(ini.sections["Disable Sharpening"], "Enabled", bDisableSharpening);
+    inipp::get_value(ini.sections["Cutscene Letterboxing"], "Enabled", bCutsceneLetterboxing);
+    inipp::get_value(ini.sections["Sharpening"], "Disabled", bDisableSharpening);
     inipp::get_value(ini.sections["Background Audio"], "Enabled", bBackgroundAudio);
 
     // Log ini parse
@@ -196,7 +196,7 @@ void Configuration()
     spdlog_confparse(bCutsceneFPS);
     spdlog_confparse(bFixFOV);
     spdlog_confparse(bFixMovies);
-    spdlog_confparse(bCutsceneAspectRatio);
+    spdlog_confparse(bCutsceneLetterboxing);
     spdlog_confparse(bDisableSharpening);
     spdlog_confparse(bBackgroundAudio);
 
@@ -289,7 +289,7 @@ void CurrentResolution()
 
 void AspectRatioFOV() 
 {
-    if (bCutsceneAspectRatio) 
+    if (!bCutsceneLetterboxing) 
     {
         // Cutscene Aspect Ratio
         std::uint8_t* CutsceneAspectRatioScanResult = Memory::PatternScan(exeModule, "0F ?? ?? F3 0F ?? ?? ?? ?? ?? ?? 76 ?? F3 0F ?? ?? ?? ?? ?? ?? 48 83 ?? ?? ?? C3");
