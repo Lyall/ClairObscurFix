@@ -54,6 +54,7 @@ bool bEnableConsole;
 bool bFixFOV;
 bool bFixMovies;
 bool bCutsceneAspectRatio;
+bool bDisableSharpening;
 
 // Variables
 int iCurrentResX;
@@ -63,6 +64,7 @@ bool bIntroSkipped;
 std::string sWidgetName;
 SDK::UObject* WidgetObject = nullptr;
 static bool bIsCutscene;
+SDK::UMaterialInstanceConstant* sharpenInstance = nullptr;
 
 void CalculateAspectRatio(bool bLog)
 {
@@ -184,6 +186,7 @@ void Configuration()
     inipp::get_value(ini.sections["Fix FOV"], "Enabled", bFixFOV);
     inipp::get_value(ini.sections["Fix Movies"], "Enabled", bFixMovies);
     inipp::get_value(ini.sections["Cutscene Aspect Ratio"], "Unlocked", bCutsceneAspectRatio);
+    inipp::get_value(ini.sections["Disable Sharpening"], "Enabled", bDisableSharpening);
 
     // Log ini parse
     spdlog_confparse(bEnableConsole);
@@ -192,6 +195,7 @@ void Configuration()
     spdlog_confparse(bFixFOV);
     spdlog_confparse(bFixMovies);
     spdlog_confparse(bCutsceneAspectRatio);
+    spdlog_confparse(bDisableSharpening);
 
     spdlog::info("----------");
 }
@@ -419,6 +423,42 @@ void HUD()
     }
 }
 
+void Graphics() 
+{
+    if (bDisableSharpening) {
+        // Post process override
+        std::uint8_t* PostProcessOverrideScanResult = Memory::PatternScan(exeModule, "48 8B ?? ?? 48 8D ?? ?? 0F 29 ?? ?? ?? 4C 8D ?? ?? ?? ?? ?? 48 8B ?? 0F ?? ?? 48 8B ?? FF 90 ?? ?? ?? ??");
+        if (PostProcessOverrideScanResult) {
+            spdlog::info("PostProcess Override: Address is {:s}+{:x}", sExeName.c_str(), PostProcessOverrideScanResult - reinterpret_cast<std::uint8_t*>(exeModule));
+            static SafetyHookMid PostProcessOverrideMidHook{};
+            PostProcessOverrideMidHook = safetyhook::create_mid(PostProcessOverrideScanResult,
+                [](SafetyHookContext& ctx) {
+                    if (!ctx.rcx) return;
+
+                    auto obj = reinterpret_cast<SDK::UObject*>(ctx.rcx - 0x28);
+
+                    if (!sharpenInstance || sharpenInstance != obj) {
+                        if (obj->GetName().contains("M_Sharpen")) {
+                            if (obj->IsA(SDK::UMaterialInstanceConstant::StaticClass())) {
+                                sharpenInstance = static_cast<SDK::UMaterialInstanceConstant*>(obj);
+
+                                for (auto& param : sharpenInstance->ScalarParameterValues) {
+                                    if (param.ParameterInfo.Name.ToString() == "SharpenGlobal" || param.ParameterInfo.Name.ToString() == "SharpenMainCharacter") {
+                                        param.ParameterValue = 0.00f;
+                                        spdlog::info("PostProcess Override: Sharpening: {} - Set {} to {}.", sharpenInstance->GetName(), param.ParameterInfo.Name.ToString(), param.ParameterValue);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+        }
+        else {
+            spdlog::error("PostProcess Override: Pattern scan failed.");
+        }
+    } 
+}
+
 void EnableConsole()
 { 
     if (bEnableConsole) 
@@ -477,6 +517,7 @@ DWORD __stdcall Main(void*)
     AspectRatioFOV();
     Framerate();
     HUD();
+    Graphics();
     EnableConsole();
 
     return true;
