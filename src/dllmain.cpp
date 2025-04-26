@@ -22,7 +22,7 @@ HMODULE thisModule;
 
 // Fix details
 std::string sFixName = "ClairObscurFix";
-std::string sFixVersion = "0.0.4";
+std::string sFixVersion = "0.0.5";
 std::filesystem::path sFixPath;
 
 // Ini
@@ -248,20 +248,6 @@ void UpdateOffsets()
 
 void CurrentResolution()
 {
-    if (bBackgroundAudio) 
-    {
-        // Unfocused volume multiplier
-        std::uint8_t* UnfocusedVolumeMultiplierScanResult = Memory::PatternScan(exeModule, "F3 0F ?? ?? ?? ?? ?? ?? 48 8D ?? ?? ?? ?? ?? E8 ?? ?? ?? ?? C6 ?? ?? ?? ?? ?? 01 48 83 ?? ?? C3");
-        if (UnfocusedVolumeMultiplierScanResult) {
-            spdlog::info("Unfocused Volume Multiplier: Address is {:s}+{:x}", sExeName.c_str(), UnfocusedVolumeMultiplierScanResult - reinterpret_cast<std::uint8_t*>(exeModule));
-            UnfocusedVolumeMultiplier = Memory::GetAbsolute(UnfocusedVolumeMultiplierScanResult + 0x4);
-            spdlog::info("Unfocused Volume Multiplier: Value address is {:s}+{:x}", sExeName.c_str(), UnfocusedVolumeMultiplier - reinterpret_cast<std::uint8_t*>(exeModule));
-        }
-        else {
-            spdlog::error("Unfocused Volume Multiplier: Pattern scan failed.");
-        }
-    }
-
     // Current resolution
     std::uint8_t* CurrentResolutionScanResult = Memory::PatternScan(exeModule, "4C 8B ?? ?? ?? 4C 8B ?? ?? ?? 48 8B ?? ?? ?? ?? ?? ?? 4C 8B ?? ?? ?? 48 8B ?? ?? ?? 48 85 ?? 74 ?? E8 ?? ?? ?? ??");
     if (CurrentResolutionScanResult) {
@@ -278,11 +264,7 @@ void CurrentResolution()
                     iCurrentResX = iResX;
                     iCurrentResY = iResY;
                     CalculateAspectRatio(true);
-                } 
-
-                // Enable background audio
-                if (bBackgroundAudio && UnfocusedVolumeMultiplier)
-                    *reinterpret_cast<float*>(UnfocusedVolumeMultiplier) = 1.00f;
+                }
             });
     }
     else {
@@ -430,7 +412,7 @@ void HUD()
                             if (sWidgetName.contains("WBP_SplashScreen_Epilepsy_C")) {
                                 auto epilepsy = static_cast<SDK::UWBP_SplashScreen_Epilepsy_C*>(WidgetObject);
                                 epilepsy->OnMainAnimationFinished();
-                                spdlog::debug("Widgets: Epilepsy: OnMainAnimationFinsihed()");
+                                spdlog::debug("Widgets: Epilepsy: OnMainAnimationFinished()");
                             }
                             else if (sWidgetName.contains("WBP_SplashScreens_Logos_C")) {
                                 auto logos = static_cast<SDK::UWBP_SplashScreens_Logos_C*>(WidgetObject);
@@ -487,6 +469,43 @@ void Graphics()
             spdlog::error("PostProcess Override: Pattern scan failed.");
         }
     } 
+}
+
+void Misc()
+{
+    if (bBackgroundAudio) 
+    {
+        // Unfocused volume multiplier
+        std::uint8_t* UnfocusedVolumeMultiplierScanResult = Memory::PatternScan(exeModule, "F3 0F ?? ?? ?? ?? ?? ?? 48 8D ?? ?? ?? ?? ?? E8 ?? ?? ?? ?? C6 ?? ?? ?? ?? ?? 01 48 83 ?? ?? C3");
+        if (UnfocusedVolumeMultiplierScanResult) {
+            spdlog::info("Unfocused Volume Multiplier: Address is {:s}+{:x}", sExeName.c_str(), UnfocusedVolumeMultiplierScanResult - reinterpret_cast<std::uint8_t*>(exeModule));
+            UnfocusedVolumeMultiplier = Memory::GetAbsolute(UnfocusedVolumeMultiplierScanResult + 0x4);
+            spdlog::info("Unfocused Volume Multiplier: Value address is {:s}+{:x}", sExeName.c_str(), UnfocusedVolumeMultiplier - reinterpret_cast<std::uint8_t*>(exeModule));
+        }
+        else {
+            spdlog::error("Unfocused Volume Multiplier: Pattern scan failed.");
+        }
+    }
+
+    // ASandfallGameMode::BeginPlay()
+    std::uint8_t* SandfallGameModeBeginPlayScanResult = Memory::PatternScan(exeModule, "48 83 ?? ?? 48 8B ?? E8 ?? ?? ?? ?? 48 8D ?? ?? ?? ?? ?? E8 ?? ?? ?? ?? 80 3D ?? ?? ?? ?? 00 48 8B ?? 74 ?? 48 85 ?? 74 ??");
+    if (SandfallGameModeBeginPlayScanResult) {
+        spdlog::info("Level Load: Address is {:s}+{:x}", sExeName.c_str(), SandfallGameModeBeginPlayScanResult - reinterpret_cast<std::uint8_t*>(exeModule));
+        static SafetyHookMid SandfallGameModeBeginPlayMidHook{};
+        SandfallGameModeBeginPlayMidHook = safetyhook::create_mid(SandfallGameModeBeginPlayScanResult,
+            [](SafetyHookContext& ctx) {
+                spdlog::debug("Level Load: ASandfallGameMode::BeginPlay() called.");
+
+                // Enable background audio
+                if (bBackgroundAudio && UnfocusedVolumeMultiplier && *reinterpret_cast<float*>(UnfocusedVolumeMultiplier) != 1.00f) {
+                    *reinterpret_cast<float*>(UnfocusedVolumeMultiplier) = 1.00f;
+                    spdlog::info("Unfocused Volume Multiplier: Set volume to 1.00");
+                }
+            });
+    }
+    else {
+        spdlog::error("Level Load: Pattern scan failed.");
+    }
 }
 
 void EnableConsole()
@@ -548,6 +567,7 @@ DWORD __stdcall Main(void*)
     Framerate();
     HUD();
     Graphics();
+    Misc();
     EnableConsole();
 
     return true;
