@@ -11,9 +11,7 @@
 #include "SDK/CommonUI_classes.hpp"
 #include "SDK/MediaAssets_classes.hpp"
 
-#include "SDK/WBP_SplashScreen_Epilepsy_classes.hpp"
-#include "SDK/WBP_SplashScreens_Logos_classes.hpp"
-#include "SDK/WBP_SplashScreen_SaveWarning_classes.hpp"
+#include "SDK/BP_jRPG_GM_Bootstrap_classes.hpp"
 #include "SDK/BP_ExtendedCheatManager_classes.hpp"
 
 #define spdlog_confparse(var) spdlog::info("Config Parse: {}: {}", #var, var)
@@ -61,7 +59,8 @@ bool bBackgroundAudio;
 // Variables
 int iCurrentResX;
 int iCurrentResY;
-static bool bIsCutscene;
+bool bIsCutscene;
+bool bSkippedLogos;
 std::string sWidgetName;
 SDK::UEngine* Engine = nullptr;
 SDK::UObject* WidgetObject = nullptr;
@@ -273,6 +272,83 @@ void CurrentResolution()
     }
 }
 
+void Misc()
+{
+    // Disable Engine.ini flush during startup/exit
+    std::uint8_t* StartupConfigFlushScanResult = Memory::PatternScan(exeModule, "33 ?? E8 ?? ?? ?? ?? 33 ?? 44 89 ?? ?? 48 8D ?? ?? ?? ?? ?? 4C 89 ?? ??");
+    if (StartupConfigFlushScanResult) {
+        spdlog::info("Startup Config Flush: Address is {:s}+{:x}", sExeName.c_str(), StartupConfigFlushScanResult - reinterpret_cast<std::uint8_t*>(exeModule));
+        static SafetyHookMid StartupConfigFlushMidHook{};
+        StartupConfigFlushMidHook = safetyhook::create_mid(Memory::GetAbsolute(StartupConfigFlushScanResult + 0x3),
+            [](SafetyHookContext& ctx) {
+                if (!ctx.r8) return;
+
+                auto filename = *reinterpret_cast<SDK::FString*>(ctx.r8);
+                if (filename.ToString() == "Engine") {
+                    // bAreFileOperationsDisabled
+                    *reinterpret_cast<bool*>(ctx.rcx + 0x8) = true;
+                }
+            });
+    }
+    else {
+        spdlog::error("Startup Config Flush: Pattern scan failed.");
+    }
+
+    if (bBackgroundAudio) 
+    {
+        // Unfocused volume multiplier
+        std::uint8_t* UnfocusedVolumeMultiplierScanResult = Memory::PatternScan(exeModule, "F3 0F ?? ?? ?? ?? ?? ?? 48 8D ?? ?? ?? ?? ?? E8 ?? ?? ?? ?? C6 ?? ?? ?? ?? ?? 01 48 83 ?? ?? C3");
+        if (UnfocusedVolumeMultiplierScanResult) {
+            spdlog::info("Unfocused Volume Multiplier: Address is {:s}+{:x}", sExeName.c_str(), UnfocusedVolumeMultiplierScanResult - reinterpret_cast<std::uint8_t*>(exeModule));
+            UnfocusedVolumeMultiplier = Memory::GetAbsolute(UnfocusedVolumeMultiplierScanResult + 0x4);
+            spdlog::info("Unfocused Volume Multiplier: Value address is {:s}+{:x}", sExeName.c_str(), UnfocusedVolumeMultiplier - reinterpret_cast<std::uint8_t*>(exeModule));
+        }
+        else {
+            spdlog::error("Unfocused Volume Multiplier: Pattern scan failed.");
+        }
+    }
+
+    // ASandfallGameMode::BeginPlay()
+    std::uint8_t* SandfallGameModeBeginPlayScanResult = Memory::PatternScan(exeModule, "48 83 ?? ?? 48 8B ?? E8 ?? ?? ?? ?? 48 8D ?? ?? ?? ?? ?? E8 ?? ?? ?? ?? 80 3D ?? ?? ?? ?? 00 48 8B ?? 74 ?? 48 85 ?? 74 ??");
+    if (SandfallGameModeBeginPlayScanResult) {
+        spdlog::info("Level Load: Address is {:s}+{:x}", sExeName.c_str(), SandfallGameModeBeginPlayScanResult - reinterpret_cast<std::uint8_t*>(exeModule));
+        static SafetyHookMid SandfallGameModeBeginPlayMidHook{};
+        SandfallGameModeBeginPlayMidHook = safetyhook::create_mid(SandfallGameModeBeginPlayScanResult,
+            [](SafetyHookContext& ctx) {
+                spdlog::debug("Level Load: ASandfallGameMode::BeginPlay() called.");
+
+                if (!bSkippedLogos && bSkipLogos) {
+                    auto obj = reinterpret_cast<SDK::UObject*>(ctx.rcx);
+                    if (obj->GetName().contains("BP_jRPG_GM_Bootstrap_C") && obj->IsA(SDK::ABP_jRPG_GM_Bootstrap_C::StaticClass())) {
+                        auto bootstrap = static_cast<SDK::ABP_jRPG_GM_Bootstrap_C*>(obj);
+                        bootstrap->OnSaveWarningSplashScreenCompleted();
+                        spdlog::info("Skip Intro Logos: Skipped logos.");
+                        bSkippedLogos = true;
+                    }
+                }
+           
+                // Enable background audio
+                if (bBackgroundAudio && UnfocusedVolumeMultiplier && *reinterpret_cast<float*>(UnfocusedVolumeMultiplier) != 1.00f) {
+                    *reinterpret_cast<float*>(UnfocusedVolumeMultiplier) = 1.00f;
+                    spdlog::info("Unfocused Volume Multiplier: Set volume to 1.00");
+                }
+
+                if (bEnableConsole) {
+                    SDK::UWorld* World = SDK::UWorld::GetWorld();
+                    if (World && World->OwningGameInstance && World->OwningGameInstance->LocalPlayers.Num() != 0 && World->OwningGameInstance->LocalPlayers[0]->PlayerController) {
+                        SDK::APlayerController* PC = World->OwningGameInstance->LocalPlayers[0]->PlayerController;
+                        
+                        if (!PC->CheatManager)
+                            PC->CheatManager = static_cast<SDK::UBP_ExtendedCheatManager_C*>(SDK::UGameplayStatics::SpawnObject(SDK::UBP_ExtendedCheatManager_C::StaticClass(), PC));
+                    }
+                }
+            });
+    }
+    else {
+        spdlog::error("Level Load: Pattern scan failed.");
+    }
+}
+
 void AspectRatioFOV() 
 {
     if (!bCutsceneLetterboxing) 
@@ -392,7 +468,8 @@ void HUD()
         }
     }
    
-    if (bSkipLogos) 
+    bool bProcWidgets = false;
+    if (bProcWidgets) 
     {
         // Widgets
         std::uint8_t* UWigetAddToViewportScanResult = Memory::PatternScan(exeModule, "48 8B ?? ?? 48 8B ?? 48 85 ?? 40 0F ?? ?? 48 ?? ?? 48 89 ?? ?? 48 8B ?? 8B ?? ?? ?? ?? ?? ?? FF 90 ?? ?? ?? ??");
@@ -407,26 +484,6 @@ void HUD()
                         WidgetObject = reinterpret_cast<SDK::UObject*>(ctx.rsi);
                         sWidgetName = WidgetObject->GetName();
                         spdlog::debug("Widgets: {} @ 0x{:x}", sWidgetName, reinterpret_cast<uintptr_t>(WidgetObject));
-
-                        // Intro skip
-                        if (bSkipLogos) {
-                            if (sWidgetName.contains("WBP_SplashScreen_Epilepsy_C")) {
-                                auto epilepsy = static_cast<SDK::UWBP_SplashScreen_Epilepsy_C*>(WidgetObject);
-                                epilepsy->OnMainAnimationFinished();
-                                spdlog::debug("Widgets: Epilepsy: OnMainAnimationFinished()");
-                            }
-                            else if (sWidgetName.contains("WBP_SplashScreens_Logos_C")) {
-                                auto logos = static_cast<SDK::UWBP_SplashScreens_Logos_C*>(WidgetObject);
-                                logos->OnPlayAnimationFinished();
-                                spdlog::debug("Widgets: SplashScreens: PlayAnimationFinished()");
-                            }
-                            else if (sWidgetName.contains("WBP_SplashScreen_SaveWarning_C")) {
-                                auto saveWarning = static_cast<SDK::UWBP_SplashScreen_SaveWarning_C*>(WidgetObject);
-                                saveWarning->OnMainAnimationFinished();
-                                spdlog::debug("Widgets: SaveWarning: OnMainAnimationFinished()");
-                                spdlog::info("Widgets: Skipped intro logos and warnings.");
-                            }
-                        }
                     }
                 });
         }
@@ -517,6 +574,16 @@ void Misc()
             [](SafetyHookContext& ctx) {
                 spdlog::debug("Level Load: ASandfallGameMode::BeginPlay() called.");
 
+                if (!bSkippedLogos && bSkipLogos) {
+                    auto obj = reinterpret_cast<SDK::UObject*>(ctx.rcx);
+                    if (obj->GetName().contains("BP_jRPG_GM_Bootstrap_C") && obj->IsA(SDK::ABP_jRPG_GM_Bootstrap_C::StaticClass())) {
+                        auto bootstrap = static_cast<SDK::ABP_jRPG_GM_Bootstrap_C*>(obj);
+                        bootstrap->OnSaveWarningSplashScreenCompleted();
+                        spdlog::info("Skip Intro Logos: Skipped logos.");
+                        bSkippedLogos = true;
+                    }
+                }
+           
                 // Enable background audio
                 if (bBackgroundAudio && UnfocusedVolumeMultiplier && *reinterpret_cast<float*>(UnfocusedVolumeMultiplier) != 1.00f) {
                     *reinterpret_cast<float*>(UnfocusedVolumeMultiplier) = 1.00f;
@@ -594,11 +661,11 @@ DWORD __stdcall Main(void*)
     Configuration();
     UpdateOffsets();
     CurrentResolution();
+    Misc();
     AspectRatioFOV();
     Framerate();
     HUD();
     Graphics();
-    Misc();
     EnableConsole();
 
     return true;
