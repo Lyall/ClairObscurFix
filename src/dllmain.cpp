@@ -501,6 +501,16 @@ void Misc()
                     *reinterpret_cast<float*>(UnfocusedVolumeMultiplier) = 1.00f;
                     spdlog::info("Unfocused Volume Multiplier: Set volume to 1.00");
                 }
+
+                if (bEnableConsole) {
+                    SDK::UWorld* World = SDK::UWorld::GetWorld();
+                    if (World && World->OwningGameInstance && World->OwningGameInstance->LocalPlayers.Num() != 0 && World->OwningGameInstance->LocalPlayers[0]->PlayerController) {
+                        SDK::APlayerController* PC = World->OwningGameInstance->LocalPlayers[0]->PlayerController;
+                        
+                        if (!PC->CheatManager)
+                            PC->CheatManager = static_cast<SDK::UCheatManager*>(SDK::UGameplayStatics::SpawnObject(SDK::UCheatManager::StaticClass(), PC));
+                    }
+                }
             });
     }
     else {
