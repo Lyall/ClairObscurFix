@@ -474,6 +474,16 @@ void Graphics()
 
 void Misc()
 {
+    // Disable Engine.ini flush during startup
+    std::uint8_t* StartupConfigFlushScanResult = Memory::PatternScan(exeModule, "33 ?? E8 ?? ?? ?? ?? 33 ?? 44 89 ?? ?? 48 8D ?? ?? ?? ?? ?? 4C 89 ?? ??");
+    if (StartupConfigFlushScanResult) {
+        spdlog::info("Startup Config Flush: Address is {:s}+{:x}", sExeName.c_str(), StartupConfigFlushScanResult - reinterpret_cast<std::uint8_t*>(exeModule));
+        Memory::PatchBytes(StartupConfigFlushScanResult + 0x2, "\x90\x90\x90\x90\x90", 5);
+    }
+    else {
+        spdlog::error("Startup Config Flush: Pattern scan failed.");
+    }
+
     if (bBackgroundAudio) 
     {
         // Unfocused volume multiplier
