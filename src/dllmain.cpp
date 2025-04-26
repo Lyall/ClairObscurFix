@@ -14,6 +14,7 @@
 #include "SDK/WBP_SplashScreen_Epilepsy_classes.hpp"
 #include "SDK/WBP_SplashScreens_Logos_classes.hpp"
 #include "SDK/WBP_SplashScreen_SaveWarning_classes.hpp"
+#include "SDK/BP_ExtendedCheatManager_classes.hpp"
 
 #define spdlog_confparse(var) spdlog::info("Config Parse: {}: {}", #var, var)
 
@@ -508,7 +509,7 @@ void Misc()
                         SDK::APlayerController* PC = World->OwningGameInstance->LocalPlayers[0]->PlayerController;
                         
                         if (!PC->CheatManager)
-                            PC->CheatManager = static_cast<SDK::UCheatManager*>(SDK::UGameplayStatics::SpawnObject(SDK::UCheatManager::StaticClass(), PC));
+                            PC->CheatManager = static_cast<SDK::UBP_ExtendedCheatManager_C*>(SDK::UGameplayStatics::SpawnObject(SDK::UBP_ExtendedCheatManager_C::StaticClass(), PC));
                     }
                 }
             });
