@@ -473,7 +473,7 @@ void HUD()
                     }
 
                     // Skip intro logos
-                    if (bSkipLogos) {
+                    if (bSkipLogos && !bSkippedLogos) {
                         if (sWidgetName.contains("WBP_SplashScreen_Epilepsy_C")) {
                             if (!bSkippedLogos && Bootstrap) {
                                 std::this_thread::sleep_for(std::chrono::milliseconds(1000));
@@ -482,15 +482,12 @@ void HUD()
                             spdlog::debug("Widgets: WBP_SplashScreen_Epilepsy_C");
                         }
                         else if (sWidgetName.contains("WBP_SplashScreens_Logos_C")) {
-                            if (!bSkippedLogos && Bootstrap) {
+                            if (Bootstrap && !bSkippedLogos) {
                                 Bootstrap->OnSaveWarningSplashScreenCompleted();
                                 spdlog::info("Widgets: Skipped intro logos and warnings.");
                                 bSkippedLogos = true;
                             }
                             spdlog::debug("Widgets: WBP_SplashScreens_Logos_C");
-                        }
-                        else if (sWidgetName.contains("WBP_SplashScreen_SaveWarning_C")) {
-                            spdlog::debug("Widgets: WBP_SplashScreen_SaveWarning_C");
                         }
                     }
 
