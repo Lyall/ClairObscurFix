@@ -317,6 +317,7 @@ void Misc()
             [](SafetyHookContext& ctx) {
                 spdlog::debug("Level Load: ASandfallGameMode::BeginPlay() called.");
 
+                // Skip intro logos
                 if (!bSkippedLogos && bSkipLogos) {
                     auto obj = reinterpret_cast<SDK::UObject*>(ctx.rcx);
                     if (obj->GetName().contains("BP_jRPG_GM_Bootstrap_C") && obj->IsA(SDK::ABP_jRPG_GM_Bootstrap_C::StaticClass())) {
@@ -333,13 +334,16 @@ void Misc()
                     spdlog::info("Unfocused Volume Multiplier: Set volume to 1.00");
                 }
 
+                // Spawn CheatManager when console is enabled
                 if (bEnableConsole) {
                     SDK::UWorld* World = SDK::UWorld::GetWorld();
                     if (World && World->OwningGameInstance && World->OwningGameInstance->LocalPlayers.Num() != 0 && World->OwningGameInstance->LocalPlayers[0]->PlayerController) {
                         SDK::APlayerController* PC = World->OwningGameInstance->LocalPlayers[0]->PlayerController;
                         
-                        if (!PC->CheatManager)
+                        if (!PC->CheatManager) {
                             PC->CheatManager = static_cast<SDK::UBP_ExtendedCheatManager_C*>(SDK::UGameplayStatics::SpawnObject(SDK::UBP_ExtendedCheatManager_C::StaticClass(), PC));
+                            spdlog::debug("Enable Console: Spawned CheatManager at 0x{:x}", *reinterpret_cast<uintptr_t*>(PC->CheatManager));
+                        }
                     }
                 }
             });
@@ -376,7 +380,7 @@ void AspectRatioFOV()
             spdlog::error("Cutscenes: Aspect Ratio: Pattern scan failed.");
         }
 
-        // Cutsene FOV
+        // Cutscene FOV
         std::uint8_t* CutsceneFOVScanResult = Memory::PatternScan(exeModule, "F3 0F ?? ?? ?? ?? ?? ?? 0F 57 ?? F3 0F ?? ?? ?? ?? ?? ?? 0F ?? ?? 76?? F3 0F ?? ?? ?? ?? ?? ?? F3 0F ?? ?? EB ??");
         if (CutsceneFOVScanResult) {
             spdlog::info("Cutscenes: FOV: Address is {:s}+{:x}", sExeName.c_str(), CutsceneFOVScanResult - reinterpret_cast<std::uint8_t*>(exeModule));
