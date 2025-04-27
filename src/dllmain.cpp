@@ -12,6 +12,7 @@
 #include "SDK/MediaAssets_classes.hpp"
 
 #include "SDK/WBP_CinematicTransition_classes.hpp"
+#include "SDK/WBP_SubtitleLine_CS_classes.hpp"
 #include "SDK/BP_jRPG_GM_Bootstrap_classes.hpp"
 #include "SDK/BP_ExtendedCheatManager_classes.hpp"
 
@@ -56,6 +57,7 @@ bool bFixMovies;
 bool bCutsceneLetterboxing;
 float fSharpenStrength;
 bool bBackgroundAudio;
+bool bDisableSubtitleBlur;
 
 // Variables
 int iCurrentResX;
@@ -191,6 +193,7 @@ void Configuration()
     inipp::get_value(ini.sections["Cutscene Letterboxing"], "Enabled", bCutsceneLetterboxing);
     inipp::get_value(ini.sections["Sharpening"], "Strength", fSharpenStrength);
     inipp::get_value(ini.sections["Background Audio"], "Enabled", bBackgroundAudio);
+    inipp::get_value(ini.sections["Disable Subtitle Blur"], "Enabled", bDisableSubtitleBlur);
 
     // Clamp settings
     fSharpenStrength = std::clamp(fSharpenStrength, 0.00f, 2.00f);
@@ -204,6 +207,7 @@ void Configuration()
     spdlog_confparse(bCutsceneLetterboxing);
     spdlog_confparse(fSharpenStrength);
     spdlog_confparse(bBackgroundAudio);
+    spdlog_confparse(bDisableSubtitleBlur);
 
     spdlog::info("----------");
 }
@@ -507,7 +511,8 @@ void HUD()
 
 void Graphics() 
 {
-    if (fSharpenStrength != 1.00f) {
+    if (fSharpenStrength != 1.00f) 
+    {
         // Post process override
         std::uint8_t* PostProcessOverrideScanResult = Memory::PatternScan(exeModule, "48 8B ?? ?? 48 8D ?? ?? 0F 29 ?? ?? ?? 4C 8D ?? ?? ?? ?? ?? 48 8B ?? 0F ?? ?? 48 8B ?? FF 90 ?? ?? ?? ??");
         if (PostProcessOverrideScanResult) {
@@ -539,6 +544,40 @@ void Graphics()
             spdlog::error("PostProcess Override: Pattern scan failed.");
         }
     } 
+
+    if (bDisableSubtitleBlur) 
+    {
+        // Subtitles widget
+        std::uint8_t* SubtitlesWidgetScanResult = Memory::PatternScan(exeModule, "4C 8B ?? ?? ?? ?? ?? ?? 48 8D ?? ?? ?? 48 8B ?? E8 ?? ?? ?? ?? 48 8B ?? 48 85 ?? 74 ?? E8 ?? ?? ?? ?? 48 8B ?? ??");
+        if (SubtitlesWidgetScanResult) {
+            spdlog::info("Subtitles Widget: Address is {:s}+{:x}", sExeName.c_str(), SubtitlesWidgetScanResult - reinterpret_cast<std::uint8_t*>(exeModule));
+            static SafetyHookMid SubtitlesWidgetMidHook{};
+            SubtitlesWidgetMidHook = safetyhook::create_mid(SubtitlesWidgetScanResult + 0x15,
+                [](SafetyHookContext& ctx) {
+                    if (!ctx.rax) return;
+
+                    auto subsWidget = reinterpret_cast<SDK::UObject*>(ctx.rax);
+
+                    if (subsWidget->IsA(SDK::UWBP_SubtitleLine_CS_C::StaticClass())) {
+                        auto lineWidget = static_cast<SDK::UWBP_SubtitleLine_CS_C*>(subsWidget);
+                        auto rootWidget = static_cast<SDK::UOverlay*>(lineWidget->WidgetTree->RootWidget);
+
+                        if (rootWidget->Slots.Num() > 0 && rootWidget->Slots[0]) {
+                            auto overlaySlot = static_cast<SDK::UOverlaySlot*>(rootWidget->Slots[0]);
+
+                            if (overlaySlot->Content && overlaySlot->Content->IsA(SDK::UBackgroundBlur::StaticClass())) {
+                                auto backgroundBlur = static_cast<SDK::UBackgroundBlur*>(overlaySlot->Content);
+
+                                backgroundBlur->SetVisibility(SDK::ESlateVisibility::Hidden);
+                            }
+                        }
+                    }
+                });
+        }
+        else {
+            spdlog::error("Subtitles Widget: Pattern scan failed.");
+        }
+    }
 }
 
 void EnableConsole()
