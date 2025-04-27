@@ -11,6 +11,7 @@
 #include "SDK/CommonUI_classes.hpp"
 #include "SDK/MediaAssets_classes.hpp"
 
+#include "SDK/WBP_CinematicTransition_classes.hpp"
 #include "SDK/BP_jRPG_GM_Bootstrap_classes.hpp"
 #include "SDK/BP_ExtendedCheatManager_classes.hpp"
 
@@ -285,7 +286,7 @@ void Misc()
                 if (!ctx.r8) return;
 
                 auto filename = *reinterpret_cast<SDK::FString*>(ctx.r8);
-                if (filename.ToString() == "Engine") {
+                if (Util::string_cmp_caseless(filename.ToString(), "Game") || Util::string_cmp_caseless(filename.ToString(), "Engine")) {
                     // bAreFileOperationsDisabled
                     *reinterpret_cast<bool*>(ctx.rcx + 0x8) = true;
                 }
@@ -453,14 +454,18 @@ void HUD()
 
                     auto videoPlayer = reinterpret_cast<SDK::UCommonVideoPlayer*>(ctx.rsi);
 
-                    spdlog::debug("Video Player: Address is 0x{}", reinterpret_cast<uintptr_t>(videoPlayer));
+                    spdlog::debug("Video Player: Address is 0x{:x}", ctx.rsi);
                     spdlog::debug("Video Player: Playback status changed on video: {}", videoPlayer->MediaPlayer->GetUrl().ToString());
 
                     // All videos except for the credits are at an aspect ratio of 2.39
                     if (!videoPlayer->MediaPlayer->GetUrl().ToString().contains("Credit") && videoPlayer->VideoBrush.ImageSize.Y == 1088.00f) {
-                        if (fAspectRatio > fNativeAspect) {
+                        if (fAspectRatio >= fCutsceneAspect) {
                             videoPlayer->VideoBrush.ImageSize.X = 1920.00f * (fCutsceneAspect / fNativeAspect);
                             videoPlayer->VideoBrush.ImageSize.Y = 1088.00f * (fCutsceneAspect / fNativeAspect);
+                        }
+                        else if (fAspectRatio > fNativeAspect && fAspectRatio < fCutsceneAspect) {
+                            videoPlayer->VideoBrush.ImageSize.X = 1920.00f * (fAspectRatio / fNativeAspect);
+                            videoPlayer->VideoBrush.ImageSize.Y = 1088.00f * (fAspectRatio / fNativeAspect);
                         }
                     }
                 });
@@ -470,7 +475,7 @@ void HUD()
         }
     }
    
-    if (bSkipLogos) 
+    if (bSkipLogos || !bCutsceneLetterboxing) 
     {
         // Widgets
         std::uint8_t* UWigetAddToViewportScanResult = Memory::PatternScan(exeModule, "48 8B ?? ?? 48 8B ?? 48 85 ?? 40 0F ?? ?? 48 ?? ?? 48 89 ?? ?? 48 8B ?? 8B ?? ?? ?? ?? ?? ?? FF 90 ?? ?? ?? ??");
@@ -487,6 +492,7 @@ void HUD()
                         spdlog::debug("Widgets: {} @ 0x{:x}", sWidgetName, reinterpret_cast<uintptr_t>(WidgetObject));
                     }
 
+                    // Skip intro logos
                     if (bSkipLogos) {
                         if (sWidgetName.contains("WBP_SplashScreen_Epilepsy_C")) {
                             if (!bSkippedLogos && Bootstrap) {
@@ -506,6 +512,13 @@ void HUD()
                         else if (sWidgetName.contains("WBP_SplashScreen_SaveWarning_C")) {
                             spdlog::debug("Widgets: WBP_SplashScreen_SaveWarning_C");
                         }
+                    }
+
+                    // Set cinematic transition aspect ratio
+                    if (!bCutsceneLetterboxing && sWidgetName.contains("WBP_CinematicTransition_C")) {
+                        auto transition = static_cast<SDK::UWBP_CinematicTransition_C*>(WidgetObject);
+                        transition->ScreenRatio = static_cast<double>(fAspectRatio);
+                        spdlog::debug("Widgets: WBP_CinematicTransition_C");
                     }
                 });
         }
