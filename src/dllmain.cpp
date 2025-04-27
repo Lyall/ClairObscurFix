@@ -66,6 +66,7 @@ SDK::UEngine* Engine = nullptr;
 SDK::UObject* WidgetObject = nullptr;
 SDK::UMaterialInstanceConstant* SharpenInstance = nullptr;
 std::uint8_t* UnfocusedVolumeMultiplier = nullptr;
+SDK::ABP_jRPG_GM_Bootstrap_C* Bootstrap = nullptr;
 
 void CalculateAspectRatio(bool bLog)
 {
@@ -317,14 +318,11 @@ void Misc()
             [](SafetyHookContext& ctx) {
                 spdlog::debug("Level Load: ASandfallGameMode::BeginPlay() called.");
 
-                // Skip intro logos
+                // Grab bootstrap object
                 if (!bSkippedLogos && bSkipLogos) {
                     auto obj = reinterpret_cast<SDK::UObject*>(ctx.rcx);
                     if (obj->GetName().contains("BP_jRPG_GM_Bootstrap_C") && obj->IsA(SDK::ABP_jRPG_GM_Bootstrap_C::StaticClass())) {
-                        auto bootstrap = static_cast<SDK::ABP_jRPG_GM_Bootstrap_C*>(obj);
-                        bootstrap->OnSaveWarningSplashScreenCompleted();
-                        spdlog::info("Skip Intro Logos: Skipped logos.");
-                        bSkippedLogos = true;
+                        Bootstrap = static_cast<SDK::ABP_jRPG_GM_Bootstrap_C*>(obj);
                     }
                 }
            
@@ -472,8 +470,7 @@ void HUD()
         }
     }
    
-    bool bProcWidgets = false;
-    if (bProcWidgets) 
+    if (bSkipLogos) 
     {
         // Widgets
         std::uint8_t* UWigetAddToViewportScanResult = Memory::PatternScan(exeModule, "48 8B ?? ?? 48 8B ?? 48 85 ?? 40 0F ?? ?? 48 ?? ?? 48 89 ?? ?? 48 8B ?? 8B ?? ?? ?? ?? ?? ?? FF 90 ?? ?? ?? ??");
@@ -488,6 +485,27 @@ void HUD()
                         WidgetObject = reinterpret_cast<SDK::UObject*>(ctx.rsi);
                         sWidgetName = WidgetObject->GetName();
                         spdlog::debug("Widgets: {} @ 0x{:x}", sWidgetName, reinterpret_cast<uintptr_t>(WidgetObject));
+                    }
+
+                    if (bSkipLogos) {
+                        if (sWidgetName.contains("WBP_SplashScreen_Epilepsy_C")) {
+                            if (!bSkippedLogos && Bootstrap) {
+                                std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+                                Bootstrap->OnEpilepsyWarningCompleted();
+                            }
+                            spdlog::debug("Widgets: WBP_SplashScreen_Epilepsy_C");
+                        }
+                        else if (sWidgetName.contains("WBP_SplashScreens_Logos_C")) {
+                            if (!bSkippedLogos && Bootstrap) {
+                                Bootstrap->OnSaveWarningSplashScreenCompleted();
+                                spdlog::info("Widgets: Skipped intro logos and warnings.");
+                                bSkippedLogos = true;
+                            }
+                            spdlog::debug("Widgets: WBP_SplashScreens_Logos_C");
+                        }
+                        else if (sWidgetName.contains("WBP_SplashScreen_SaveWarning_C")) {
+                            spdlog::debug("Widgets: WBP_SplashScreen_SaveWarning_C");
+                        }
                     }
                 });
         }
