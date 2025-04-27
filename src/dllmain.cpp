@@ -276,26 +276,6 @@ void CurrentResolution()
 
 void Misc()
 {
-    // Disable Engine.ini flush during startup/exit
-    std::uint8_t* StartupConfigFlushScanResult = Memory::PatternScan(exeModule, "33 ?? E8 ?? ?? ?? ?? 33 ?? 44 89 ?? ?? 48 8D ?? ?? ?? ?? ?? 4C 89 ?? ??");
-    if (StartupConfigFlushScanResult) {
-        spdlog::info("Startup Config Flush: Address is {:s}+{:x}", sExeName.c_str(), StartupConfigFlushScanResult - reinterpret_cast<std::uint8_t*>(exeModule));
-        static SafetyHookMid StartupConfigFlushMidHook{};
-        StartupConfigFlushMidHook = safetyhook::create_mid(Memory::GetAbsolute(StartupConfigFlushScanResult + 0x3),
-            [](SafetyHookContext& ctx) {
-                if (!ctx.r8) return;
-
-                auto filename = *reinterpret_cast<SDK::FString*>(ctx.r8);
-                if (Util::string_cmp_caseless(filename.ToString(), "Game") || Util::string_cmp_caseless(filename.ToString(), "Engine")) {
-                    // bAreFileOperationsDisabled
-                    *reinterpret_cast<bool*>(ctx.rcx + 0x8) = true;
-                }
-            });
-    }
-    else {
-        spdlog::error("Startup Config Flush: Pattern scan failed.");
-    }
-
     if (bBackgroundAudio) 
     {
         // Unfocused volume multiplier
