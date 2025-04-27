@@ -23,7 +23,7 @@ HMODULE thisModule;
 
 // Fix details
 std::string sFixName = "ClairObscurFix";
-std::string sFixVersion = "0.0.5";
+std::string sFixVersion = "0.0.6";
 std::filesystem::path sFixPath;
 
 // Ini
