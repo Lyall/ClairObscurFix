@@ -526,13 +526,10 @@ void Graphics()
 
                     // Store known sharpen material instances 
                     if (!SharpenInstances.contains(static_cast<SDK::UMaterialInstanceConstant*>(obj))) {
-                        if (obj->GetName().contains("M_Sharpen") && obj->IsA(SDK::UMaterialInstanceConstant::StaticClass())) {
+                        if (obj->GetName().contains("M_Sharpen") && obj->IsA(SDK::UMaterialInstanceConstant::StaticClass()))
                             SharpenInstances.insert(static_cast<SDK::UMaterialInstanceConstant*>(obj));
-                            spdlog::info("PostProcess Override: Found new sharpen material: {}", obj->GetName());
-                        } 
-                        else {
+                        else
                             return;
-                        }
                     }
                     
                     auto instance = static_cast<SDK::UMaterialInstanceConstant*>(obj);
