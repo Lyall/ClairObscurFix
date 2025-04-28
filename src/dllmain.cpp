@@ -67,7 +67,7 @@ bool bSkippedLogos;
 std::string sWidgetName;
 SDK::UEngine* Engine = nullptr;
 SDK::UObject* WidgetObject = nullptr;
-SDK::UMaterialInstanceConstant* SharpenInstance = nullptr;
+std::unordered_set<SDK::UMaterialInstanceConstant*> SharpenInstances;
 std::uint8_t* UnfocusedVolumeMultiplier = nullptr;
 SDK::ABP_jRPG_GM_Bootstrap_C* Bootstrap = nullptr;
 
@@ -524,18 +524,25 @@ void Graphics()
 
                     auto obj = reinterpret_cast<SDK::UObject*>(ctx.rcx - 0x28);
 
-                    if (!SharpenInstance || SharpenInstance != obj) {
-                        if (obj->GetName().contains("M_Sharpen")) {
-                            if (obj->IsA(SDK::UMaterialInstanceConstant::StaticClass())) {
-                                SharpenInstance = static_cast<SDK::UMaterialInstanceConstant*>(obj);
-
-                                for (auto& param : SharpenInstance->ScalarParameterValues) {
-                                    if (param.ParameterInfo.Name.ToString() == "SharpenGlobal" || param.ParameterInfo.Name.ToString() == "SharpenMainCharacter") {
-                                        spdlog::info("PostProcess Override: Sharpening: {} - Set {} from {} to {}.", SharpenInstance->GetName(), param.ParameterInfo.Name.ToString(), param.ParameterValue, fSharpenStrength);
-                                        param.ParameterValue = fSharpenStrength;
-                                    }
-                                }
-                            }
+                    // Store known sharpen material instances 
+                    if (!SharpenInstances.contains(static_cast<SDK::UMaterialInstanceConstant*>(obj))) {
+                        if (obj->GetName().contains("M_Sharpen") && obj->IsA(SDK::UMaterialInstanceConstant::StaticClass())) {
+                            SharpenInstances.insert(static_cast<SDK::UMaterialInstanceConstant*>(obj));
+                            spdlog::info("PostProcess Override: Found new sharpen material: {}", obj->GetName());
+                        } 
+                        else {
+                            return;
+                        }
+                    }
+                    
+                    auto instance = static_cast<SDK::UMaterialInstanceConstant*>(obj);
+                    
+                    // Update sharpening parameters if they don't match fSharpenStrength
+                    for (auto& param : instance->ScalarParameterValues) {
+                        std::string paramName = param.ParameterInfo.Name.ToString();
+                        if ((paramName == "SharpenGlobal" || paramName == "SharpenMainCharacter") && param.ParameterValue != fSharpenStrength) {
+                            spdlog::info("PostProcess Override: Sharpening: {} - Set {} from {} to {}.", instance->GetName(), paramName, param.ParameterValue, fSharpenStrength);
+                            param.ParameterValue = fSharpenStrength;
                         }
                     }
                 });
