@@ -256,7 +256,7 @@ void UpdateOffsets()
 
 void CurrentResolution()
 {
-    if (bAdjustResCheck) 
+    if (bAdjustResChecks) 
     {
         // Use FMonitorInfo::MaxResolution instead of FMonitorInfo::NativeWidth/Height when checking if resolution is compatible
         std::uint8_t* ResolutionCheckScanResult = Memory::PatternScan(exeModule, "8B ?? ?? 39 ?? ?? 7F ?? 8B ?? ?? 39 ?? ?? 7F ?? 49 ?? ?? E8 ?? ?? ?? ?? 83 ?? 01 75 ??");
