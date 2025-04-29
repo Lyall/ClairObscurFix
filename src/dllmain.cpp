@@ -58,7 +58,6 @@ bool bCutsceneLetterboxing;
 float fSharpenStrength;
 bool bBackgroundAudio;
 bool bDisableSubtitleBlur;
-bool bAdjustResChecks;
 
 // Variables
 int iCurrentResX;
@@ -70,6 +69,7 @@ SDK::UEngine* Engine = nullptr;
 SDK::UObject* WidgetObject = nullptr;
 std::uint8_t* UnfocusedVolumeMultiplier = nullptr;
 SDK::ABP_jRPG_GM_Bootstrap_C* Bootstrap = nullptr;
+std::unordered_set<SDK::UObject*> PPOverrideInstances;
 
 void CalculateAspectRatio(bool bLog)
 {
@@ -194,7 +194,6 @@ void Configuration()
     inipp::get_value(ini.sections["Sharpening"], "Strength", fSharpenStrength);
     inipp::get_value(ini.sections["Background Audio"], "Enabled", bBackgroundAudio);
     inipp::get_value(ini.sections["Disable Subtitle Blur"], "Enabled", bDisableSubtitleBlur);
-    inipp::get_value(ini.sections["Adjust Resolution Checks"], "Enabled", bAdjustResChecks);
 
     // Clamp settings
     fSharpenStrength = std::clamp(fSharpenStrength, 0.00f, 2.00f);
@@ -209,7 +208,6 @@ void Configuration()
     spdlog_confparse(fSharpenStrength);
     spdlog_confparse(bBackgroundAudio);
     spdlog_confparse(bDisableSubtitleBlur);
-    spdlog_confparse(bAdjustResChecks);
 
     spdlog::info("----------");
 }
@@ -254,28 +252,8 @@ void UpdateOffsets()
     spdlog::info("----------");
 }
 
-void CurrentResolution()
+void Resolution()
 {
-    if (bAdjustResCheck) 
-    {
-        // Use FMonitorInfo::MaxResolution instead of FMonitorInfo::NativeWidth/Height when checking if resolution is compatible
-        std::uint8_t* ResolutionCheckScanResult = Memory::PatternScan(exeModule, "8B ?? ?? 39 ?? ?? 7F ?? 8B ?? ?? 39 ?? ?? 7F ?? 49 ?? ?? E8 ?? ?? ?? ?? 83 ?? 01 75 ??");
-        if (ResolutionCheckScanResult) {
-            spdlog::info("Resolution Check: Address is {:s}+{:x}", sExeName.c_str(), ResolutionCheckScanResult - reinterpret_cast<std::uint8_t*>(exeModule));
-            // Fullscreen
-            Memory::PatchBytes(ResolutionCheckScanResult + 0x02, "\x28", 1); // Offset 0x20 -> 0x28
-            Memory::PatchBytes(ResolutionCheckScanResult + 0x0A, "\x2C", 1); // Offset 0x24 -> 0x2C
-            // Borderless
-            Memory::PatchBytes(ResolutionCheckScanResult + 0x1F, "\x2C", 1); // Offset 0x24 -> 0x2C
-            Memory::PatchBytes(ResolutionCheckScanResult + 0x22, "\x28", 1); // Offset 0x20 -> 0x28
-
-            spdlog::info("Resolution Check: Patched instructions.");
-        }
-        else {
-            spdlog::error("Resolution Check: Pattern scan failed.");
-        }
-    }
-
     // Current resolution
     std::uint8_t* CurrentResolutionScanResult = Memory::PatternScan(exeModule, "4C 8B ?? ?? ?? 4C 8B ?? ?? ?? 48 8B ?? ?? ?? ?? ?? ?? 4C 8B ?? ?? ?? 48 8B ?? ?? ?? 48 85 ?? 74 ?? E8 ?? ?? ?? ??");
     if (CurrentResolutionScanResult) {
@@ -542,30 +520,29 @@ void Graphics()
             static SafetyHookMid PostProcessOverrideMidHook{};
             PostProcessOverrideMidHook = safetyhook::create_mid(PostProcessOverrideScanResult,
                 [](SafetyHookContext& ctx) {
-                    if (!ctx.rcx) return;
+                    if (!(ctx.rcx - 0x28)) return;
 
                     auto obj = reinterpret_cast<SDK::UObject*>(ctx.rcx - 0x28);
 
-                    // Check for marker that indicates if this material instance was edited
-                    // This does make the assumption that the material instance constant parameters are never updated outside of this hook
-                    if (*reinterpret_cast<int*>(obj + 0x160) == 0xDEADBEEF)
+                    // If we've already seen the instance before, return early
+                    if (PPOverrideInstances.find(obj) != PPOverrideInstances.end())
                         return;
 
-                    // Check if the instance is valid or not and add it to the set
+                    // Check if the instance is a valid sharpen material instance constant
                     if (obj->GetName().contains("M_Sharpen") && obj->IsA(SDK::UMaterialInstanceConstant::StaticClass())) {
                         auto instance = static_cast<SDK::UMaterialInstanceConstant*>(obj);
 
-                        // Update sharpening params
+                        // Update sharpening params if not already changed
                         for (auto& param : instance->ScalarParameterValues) {
                             std::string paramName = param.ParameterInfo.Name.ToString();
                             if ((paramName == "SharpenGlobal" || paramName == "SharpenMainCharacter") && param.ParameterValue != fSharpenStrength) {
                                 spdlog::info("PostProcess Override: Sharpening: {} - Set {} from {} to {}.", instance->GetName(), paramName, param.ParameterValue, fSharpenStrength);
                                 param.ParameterValue = fSharpenStrength;
-                                
-                                // Write marker into padding to indicate that this material has been edited
-                                *reinterpret_cast<int*>(obj + 0x160) = 0xDEADBEEF;
                             }
                         }
+
+                        // Add to the known instances set
+                        PPOverrideInstances.insert(obj);
                     }
                 });
         }
@@ -663,7 +640,7 @@ DWORD __stdcall Main(void*)
     Logging();
     Configuration();
     UpdateOffsets();
-    CurrentResolution();
+    Resolution();
     Misc();
     AspectRatioFOV();
     Framerate();
