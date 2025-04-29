@@ -58,6 +58,7 @@ bool bCutsceneLetterboxing;
 float fSharpenStrength;
 bool bBackgroundAudio;
 bool bDisableSubtitleBlur;
+bool bAdjustResChecks;
 
 // Variables
 int iCurrentResX;
@@ -193,6 +194,7 @@ void Configuration()
     inipp::get_value(ini.sections["Sharpening"], "Strength", fSharpenStrength);
     inipp::get_value(ini.sections["Background Audio"], "Enabled", bBackgroundAudio);
     inipp::get_value(ini.sections["Disable Subtitle Blur"], "Enabled", bDisableSubtitleBlur);
+    inipp::get_value(ini.sections["Adjust Resolution Checks"], "Enabled", bAdjustResChecks);
 
     // Clamp settings
     fSharpenStrength = std::clamp(fSharpenStrength, 0.00f, 2.00f);
@@ -207,6 +209,7 @@ void Configuration()
     spdlog_confparse(fSharpenStrength);
     spdlog_confparse(bBackgroundAudio);
     spdlog_confparse(bDisableSubtitleBlur);
+    spdlog_confparse(bAdjustResChecks);
 
     spdlog::info("----------");
 }
@@ -253,6 +256,26 @@ void UpdateOffsets()
 
 void CurrentResolution()
 {
+    if (bAdjustResCheck) 
+    {
+        // Use FMonitorInfo::MaxResolution instead of FMonitorInfo::NativeWidth/Height when checking if resolution is compatible
+        std::uint8_t* ResolutionCheckScanResult = Memory::PatternScan(exeModule, "8B ?? ?? 39 ?? ?? 7F ?? 8B ?? ?? 39 ?? ?? 7F ?? 49 ?? ?? E8 ?? ?? ?? ?? 83 ?? 01 75 ??");
+        if (ResolutionCheckScanResult) {
+            spdlog::info("Resolution Check: Address is {:s}+{:x}", sExeName.c_str(), ResolutionCheckScanResult - reinterpret_cast<std::uint8_t*>(exeModule));
+            // Fullscreen
+            Memory::PatchBytes(ResolutionCheckScanResult + 0x02, "\x28", 1); // Offset 0x20 -> 0x28
+            Memory::PatchBytes(ResolutionCheckScanResult + 0x0A, "\x2C", 1); // Offset 0x24 -> 0x2C
+            // Borderless
+            Memory::PatchBytes(ResolutionCheckScanResult + 0x1F, "\x2C", 1); // Offset 0x24 -> 0x2C
+            Memory::PatchBytes(ResolutionCheckScanResult + 0x22, "\x28", 1); // Offset 0x20 -> 0x28
+
+            spdlog::info("Resolution Check: Patched instructions.");
+        }
+        else {
+            spdlog::error("Resolution Check: Pattern scan failed.");
+        }
+    }
+
     // Current resolution
     std::uint8_t* CurrentResolutionScanResult = Memory::PatternScan(exeModule, "4C 8B ?? ?? ?? 4C 8B ?? ?? ?? 48 8B ?? ?? ?? ?? ?? ?? 4C 8B ?? ?? ?? 48 8B ?? ?? ?? 48 85 ?? 74 ?? E8 ?? ?? ?? ??");
     if (CurrentResolutionScanResult) {
@@ -305,15 +328,15 @@ void Misc()
                 // Grab bootstrap object
                 if (!bSkippedLogos && bSkipLogos) {
                     auto obj = reinterpret_cast<SDK::UObject*>(ctx.rcx);
-                    if (obj->GetName().contains("BP_jRPG_GM_Bootstrap_C") && obj->IsA(SDK::ABP_jRPG_GM_Bootstrap_C::StaticClass())) {
+
+                    if (obj->GetName().contains("BP_jRPG_GM_Bootstrap_C") && obj->IsA(SDK::ABP_jRPG_GM_Bootstrap_C::StaticClass()))
                         Bootstrap = static_cast<SDK::ABP_jRPG_GM_Bootstrap_C*>(obj);
-                    }
                 }
            
                 // Enable background audio
                 if (bBackgroundAudio && UnfocusedVolumeMultiplier && *reinterpret_cast<float*>(UnfocusedVolumeMultiplier) != 1.00f) {
                     *reinterpret_cast<float*>(UnfocusedVolumeMultiplier) = 1.00f;
-                    spdlog::info("Unfocused Volume Multiplier: Set volume to 1.00");
+                    spdlog::info("Unfocused Volume Multiplier: Set volume to {}", *reinterpret_cast<float*>(UnfocusedVolumeMultiplier));
                 }
 
                 // Spawn CheatManager when console is enabled
@@ -349,11 +372,11 @@ void AspectRatioFOV()
                     // Check if forced aspect ratio is 2.39~
                     if (std::fabs(ctx.xmm1.f32[0] - fCutsceneAspect) < 1e-5f) {
                         ctx.xmm1.f32[0] = fAspectRatio;
-                        // We're in a cutscene now.
+                        // We're in a cutscene now
                         bIsCutscene = true;
                     }
                     else {
-                        // If no aspect ratio is forced then we're not in a cutscene.
+                        // If no aspect ratio is forced then we're not in a cutscene
                         bIsCutscene = false;
                     }
                 });
@@ -386,7 +409,7 @@ void AspectRatioFOV()
             static SafetyHookMid AspectRatioAxisConstraintMidHook{};
             AspectRatioAxisConstraintMidHook = safetyhook::create_mid(AspectRatioAxisConstraintScanResult + 0x8,
                 [](SafetyHookContext& ctx) {
-                    // Stop AspectRatioAxisConstraint being set to 1 after combat.
+                    // Stop AspectRatioAxisConstraint being set to 1 after combat
                     ctx.rdx &= ~0xFF;  
                 });
         }
@@ -408,7 +431,7 @@ void Framerate()
                 [](SafetyHookContext& ctx) {
                     SDK::UGameUserSettings* userSettings = SDK::UGameUserSettings::GetGameUserSettings();
                     if (userSettings) {
-                          // This effectively sets t.MaxFPS. Just overwrite any attempt to set a framerate limit with the user's defined setting.
+                          // This effectively sets t.MaxFPS. Just overwrite any attempt to set a framerate limit with the user's defined setting
                           ctx.xmm1.f32[0] = userSettings->FrameRateLimit;
                           spdlog::debug("Cutscenes: FPS: GameUserSettings = {:x}. Set FPS limit to {}", reinterpret_cast<uintptr_t>(userSettings), userSettings->FrameRateLimit);   
                     }
@@ -523,8 +546,8 @@ void Graphics()
 
                     auto obj = reinterpret_cast<SDK::UObject*>(ctx.rcx - 0x28);
 
-                    // Check for marker that indicates if this material instance was edited.
-                    // This does make the assumption that the material instance constant parameters are never updated out side of this hook.
+                    // Check for marker that indicates if this material instance was edited
+                    // This does make the assumption that the material instance constant parameters are never updated outside of this hook
                     if (*reinterpret_cast<int*>(obj + 0x160) == 0xDEADBEEF)
                         return;
 
