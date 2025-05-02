@@ -1,6 +1,8 @@
 ﻿#include "stdafx.h"
 #include "helper.hpp"
 
+#include "winternl.h"
+
 #include <spdlog/spdlog.h>
 #include <spdlog/sinks/rotating_file_sink.h>
 #include <inipp/inipp.h>
@@ -23,7 +25,7 @@ HMODULE thisModule;
 
 // Fix details
 std::string sFixName = "ClairObscurFix";
-std::string sFixVersion = "0.0.6";
+std::string sFixVersion = "0.0.7";
 std::filesystem::path sFixPath;
 
 // Ini
@@ -104,6 +106,59 @@ void CalculateAspectRatio(bool bLog)
         spdlog::info("Current Resolution: fHUDHeightOffset: {}", fHUDHeightOffset);
         spdlog::info("----------");
     }
+}
+
+typedef NTSTATUS (NTAPI *NtQueryTimerResolution_pfn)(OUT PULONG MinimumResolution, OUT PULONG MaximumResolution, OUT PULONG CurrentResolution);
+typedef NTSTATUS (NTAPI *NtSetTimerResolution_pfn)(IN ULONG DesiredResolution, IN BOOLEAN SetResolution, OUT PULONG CurrentResolution);
+
+static NtQueryTimerResolution_pfn NtQueryTimerResolution_fn = nullptr;
+static NtSetTimerResolution_pfn NtSetTimerResolution_fn = nullptr;
+
+void SetMaxTimerResolution()
+{
+    // Get module handle for ntdll
+    HMODULE ntdll = GetModuleHandleW(L"ntdll.dll");
+
+    if (!ntdll) {
+        spdlog::error("Timer Resolution: Failed to get module handle for 'ntdll.dll'.");
+        return;
+    }
+           
+    // Get function pointers for NtQueryTimerResolution and NtSetTimerResolution
+    NtQueryTimerResolution_fn = (NtQueryTimerResolution_pfn)GetProcAddress(ntdll, "NtQueryTimerResolution");
+    NtSetTimerResolution_fn = (NtSetTimerResolution_pfn)GetProcAddress(ntdll, "NtSetTimerResolution");
+
+    if (!NtQueryTimerResolution_fn || !NtSetTimerResolution_fn) {
+        spdlog::error("Timer Resolution: Failed to get function pointers for NtQueryTimerResolution or NtSetTimerResolution.");
+        return;
+    }
+
+    ULONG min, max, curr;
+    NTSTATUS status;
+    
+    // Query timer resolution to get the maximum supported resolution
+    status = NtQueryTimerResolution_fn(&min, &max, &curr);
+    if (status != 0) {
+        spdlog::error("Timer Resolution: Failed to query timer resolution. Status: 0x{:x}", status);
+        return;
+    }
+
+    // Return if timer resolution is already set to the maximum supported resolution
+    if (max == curr) {
+        spdlog::debug("Timer Resolution: Timer resolution already set to maximum supported resolution.");
+        return;
+    }
+
+    spdlog::info("Timer Resolution: NtQueryTimerResolution: Min = {} | Max = {} | Current = {}", min, max, curr);
+        
+    // Set the maximum supported timer resolution
+    status = NtSetTimerResolution_fn(max, TRUE, &curr);
+    if (status != 0) {
+        spdlog::error("Timer Resolution: Failed to set timer resolution. Status: 0x{:x}", status);
+        return;
+    }
+
+    spdlog::info("Timer Resolution: Set timer resolution to {}", max);
 }
 
 void Logging()
@@ -302,6 +357,9 @@ void Misc()
         SandfallGameModeBeginPlayMidHook = safetyhook::create_mid(SandfallGameModeBeginPlayScanResult,
             [](SafetyHookContext& ctx) {
                 spdlog::debug("Level Load: ASandfallGameMode::BeginPlay() called.");
+
+                // Set maximum supported timer resolution
+                SetMaxTimerResolution();
 
                 // Grab bootstrap object
                 if (!bSkippedLogos && bSkipLogos) {
