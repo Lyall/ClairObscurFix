@@ -24,6 +24,13 @@
 ## Configuration
 - Open **`ClairObscurFix.ini`** to adjust settings.
 
+## Building
+- Use Windows for building
+- Install Git, [XMake](https://xmake.io) and a [C++ compiler](https://visualstudio.microsoft.com/vs/features/cplusplus/)
+- Clone this repository with `git clone https://github.com/Lyall/ClairObscurFix --recurse-submodules`
+- Run `xmake`
+- The output ASI plugin is located at `build/windows/x64/release/ClairObscurFix.asi`
+
 ## Credits
 [Ultimate ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader) for ASI loading. <br />
 [inipp](https://github.com/mcmtroffaes/inipp) for ini reading. <br />
