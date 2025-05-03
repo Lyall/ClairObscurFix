@@ -15,6 +15,8 @@
 
 #include "SDK/WBP_CinematicTransition_classes.hpp"
 #include "SDK/WBP_SubtitleLine_CS_classes.hpp"
+#include "SDK/WBP_Exploration_HUD_classes.hpp"
+#include "SDK/WBP_HUD_BattleScreen_classes.hpp"
 #include "SDK/BP_jRPG_GM_Bootstrap_classes.hpp"
 #include "SDK/BP_ExtendedCheatManager_classes.hpp"
 
@@ -60,6 +62,7 @@ bool bCutsceneLetterboxing;
 float fSharpenStrength;
 bool bBackgroundAudio;
 bool bDisableSubtitleBlur;
+bool bCenterHUD;
 
 // Variables
 int iCurrentResX;
@@ -245,6 +248,7 @@ void Configuration()
     inipp::get_value(ini.sections["Uncap Cutscene FPS"], "Enabled", bCutsceneFPS);
     inipp::get_value(ini.sections["Fix FOV"], "Enabled", bFixFOV);
     inipp::get_value(ini.sections["Fix Movies"], "Enabled", bFixMovies);
+    inipp::get_value(ini.sections["Center HUD"], "Enabled", bCenterHUD);
     inipp::get_value(ini.sections["Cutscene Letterboxing"], "Enabled", bCutsceneLetterboxing);
     inipp::get_value(ini.sections["Sharpening"], "Strength", fSharpenStrength);
     inipp::get_value(ini.sections["Background Audio"], "Enabled", bBackgroundAudio);
@@ -259,6 +263,7 @@ void Configuration()
     spdlog_confparse(bCutsceneFPS);
     spdlog_confparse(bFixFOV);
     spdlog_confparse(bFixMovies);
+    spdlog_confparse(bCenterHUD);
     spdlog_confparse(bCutsceneLetterboxing);
     spdlog_confparse(fSharpenStrength);
     spdlog_confparse(bBackgroundAudio);
@@ -558,6 +563,44 @@ void HUD()
                         auto transition = static_cast<SDK::UWBP_CinematicTransition_C*>(WidgetObject);
                         transition->ScreenRatio = static_cast<double>(fAspectRatio);
                         spdlog::debug("Widgets: WBP_CinematicTransition_C");
+                    }
+
+                    if (bCenterHUD) {
+                        if (sWidgetName.contains("WBP_Exploration_HUD_C")) {
+                            auto explorationHUD = static_cast<SDK::UWBP_Exploration_HUD_C*>(WidgetObject);
+
+                            if (explorationHUD->HUDOverlay->Slot) {
+                                auto overlaySlot = static_cast<SDK::UOverlaySlot*>(explorationHUD->HUDOverlay->Slot);
+
+                                if (fAspectRatio > fNativeAspect) {
+                                    float WidthOffset = ((1080.00f * fAspectRatio) - 1920.00f) / 2.00f;
+                                    overlaySlot->SetPadding(SDK::FMargin(WidthOffset, 0.00f, WidthOffset, 0.00f));
+                                }
+                            }
+                        }
+
+                        if (sWidgetName.contains("WBP_HUD_BattleScreen_C")) {
+                            auto battleHUD = static_cast<SDK::UWBP_HUD_BattleScreen_C*>(WidgetObject);
+
+                            if (battleHUD->Canvas_UniqueMechanicsContainer->Slot && battleHUD->SafeZone->Slots.Num() > 0 && battleHUD->CanvasPanel_0->Slots.Num() > 7) {
+                                auto safeZone = static_cast<SDK::USafeZone*>(battleHUD->SafeZone);
+                                auto safeZoneSlot = static_cast<SDK::USafeZoneSlot*>(safeZone->Slots[0]);
+                                auto uniqueMechanics = static_cast<SDK::UCanvasPanelSlot*>(battleHUD->Canvas_UniqueMechanicsContainer->Slot);
+                                auto turnOrder = static_cast<SDK::UCanvasPanelSlot*>(battleHUD->CanvasPanel_0->Slots[4]);
+                                auto targetSelectControls = static_cast<SDK::UCanvasPanelSlot*>(battleHUD->CanvasPanel_0->Slots[6]);
+                                auto tooltips = static_cast<SDK::UCanvasPanelSlot*>(battleHUD->CanvasPanel_0->Slots[7]);
+
+                                if (fAspectRatio > fNativeAspect) {
+                                    float WidthOffset = ((1080.00f * fAspectRatio) - 1920.00f) / 2.00f;
+                                    
+                                    safeZoneSlot->Padding = SDK::FMargin(WidthOffset, 0.00f, WidthOffset, 0.00f);
+                                    targetSelectControls->SetOffsets(SDK::FMargin(WidthOffset + 330.00f, 300.00f, 0.00f, 0.00f));
+                                    tooltips->SetOffsets(SDK::FMargin(WidthOffset + 210.00f, 64.00f, 0.00f, 0.00f));
+                                    turnOrder->SetOffsets(SDK::FMargin(WidthOffset + 10.00f, 0.00f, 0.00f, 0.00f));
+                                    uniqueMechanics->SetOffsets(SDK::FMargin(0.00f, 0.00f, WidthOffset, 0.00f));
+                                }
+                            }
+                        }
                     }
                 });
         }
