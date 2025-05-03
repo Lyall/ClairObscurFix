@@ -467,7 +467,7 @@ void Framerate()
                     if (userSettings) {
                           // This effectively sets t.MaxFPS. Just overwrite any attempt to set a framerate limit with the user's defined setting
                           ctx.xmm1.f32[0] = userSettings->FrameRateLimit;
-                          spdlog::debug("Cutscenes: FPS: GameUserSettings = {:x}. Set FPS limit to {}", reinterpret_cast<uintptr_t>(userSettings), userSettings->FrameRateLimit);   
+                          spdlog::debug("Cutscenes: FPS: GameUserSettings = 0x{:x}. Set FPS limit to {}", reinterpret_cast<uintptr_t>(userSettings), userSettings->FrameRateLimit);   
                     }
                     else {
                         spdlog::error("Cutscenes: FPS: Failed to retreive GameUserSettings.");
@@ -648,7 +648,7 @@ void Graphics()
     if (bDisableSubtitleBlur) 
     {
         // Subtitles widget
-        std::uint8_t* SubtitlesWidgetScanResult = Memory::PatternScan(exeModule, "4C 8B ?? ?? ?? ?? ?? ?? 48 8D ?? ?? ?? 48 8B ?? E8 ?? ?? ?? ?? 48 8B ?? 48 85 ?? 74 ?? E8 ?? ?? ?? ?? 48 8B ?? ??");
+        std::uint8_t* SubtitlesWidgetScanResult = Memory::PatternScan(exeModule, "4C 8B ?? ?? ?? ?? ?? ?? 48 8D ?? ?? ?? ?? 8B ?? E8 ?? ?? ?? ?? 48 8B ?? 48 85 ?? 74 ?? E8 ?? ?? ?? ??");
         if (SubtitlesWidgetScanResult) {
             spdlog::info("Subtitles Widget: Address is {:s}+{:x}", sExeName.c_str(), SubtitlesWidgetScanResult - reinterpret_cast<std::uint8_t*>(exeModule));
             static SafetyHookMid SubtitlesWidgetMidHook{};
@@ -667,7 +667,7 @@ void Graphics()
 
                             if (overlaySlot->Content && overlaySlot->Content->IsA(SDK::UBackgroundBlur::StaticClass())) {
                                 auto backgroundBlur = static_cast<SDK::UBackgroundBlur*>(overlaySlot->Content);
-
+                                
                                 backgroundBlur->SetVisibility(SDK::ESlateVisibility::Hidden);
                             }
                         }
@@ -699,7 +699,7 @@ void EnableConsole()
             return;
         }
 
-        spdlog::debug("Enable Console: GEngine address = {:x}", (uintptr_t)Engine);
+        spdlog::debug("Enable Console: GEngine address = 0x{:x}", reinterpret_cast<uintptr_t>(Engine));
 
         // Construct console
         SDK::UObject* NewObject = SDK::UGameplayStatics::SpawnObject(Engine->ConsoleClass, Engine->GameViewport);
