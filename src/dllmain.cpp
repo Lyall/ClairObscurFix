@@ -72,7 +72,6 @@ bool bSkippedLogos;
 std::string sWidgetName;
 SDK::UEngine* Engine = nullptr;
 SDK::UObject* WidgetObject = nullptr;
-std::uint8_t* UnfocusedVolumeMultiplier = nullptr;
 SDK::ABP_jRPG_GM_Bootstrap_C* Bootstrap = nullptr;
 std::unordered_set<SDK::UObject*> PPOverrideInstances;
 
@@ -343,11 +342,11 @@ void Misc()
     if (bBackgroundAudio) 
     {
         // Unfocused volume multiplier
-        std::uint8_t* UnfocusedVolumeMultiplierScanResult = Memory::PatternScan(exeModule, "F3 0F ?? ?? ?? ?? ?? ?? 48 8D ?? ?? ?? ?? ?? E8 ?? ?? ?? ?? C6 ?? ?? ?? ?? ?? 01 48 83 ?? ?? C3");
+        std::uint8_t* UnfocusedVolumeMultiplierScanResult = Memory::PatternScan(exeModule, "74 ?? C7 ?? ?? ?? ?? ?? 00 00 80 3F EB ?? E8 ?? ?? ?? ??");
         if (UnfocusedVolumeMultiplierScanResult) {
             spdlog::info("Unfocused Volume Multiplier: Address is {:s}+{:x}", sExeName.c_str(), UnfocusedVolumeMultiplierScanResult - reinterpret_cast<std::uint8_t*>(exeModule));
-            UnfocusedVolumeMultiplier = Memory::GetAbsolute(UnfocusedVolumeMultiplierScanResult + 0x4);
-            spdlog::info("Unfocused Volume Multiplier: Value address is {:s}+{:x}", sExeName.c_str(), UnfocusedVolumeMultiplier - reinterpret_cast<std::uint8_t*>(exeModule));
+            Memory::PatchBytes(UnfocusedVolumeMultiplierScanResult, "\x90\x90", 2);
+            spdlog::info("Unfocused Volume Multiplier: Patched instruction.");
         }
         else {
             spdlog::error("Unfocused Volume Multiplier: Pattern scan failed.");
@@ -372,12 +371,6 @@ void Misc()
 
                     if (obj->GetName().contains("BP_jRPG_GM_Bootstrap_C") && obj->IsA(SDK::ABP_jRPG_GM_Bootstrap_C::StaticClass()))
                         Bootstrap = static_cast<SDK::ABP_jRPG_GM_Bootstrap_C*>(obj);
-                }
-           
-                // Enable background audio
-                if (bBackgroundAudio && UnfocusedVolumeMultiplier && *reinterpret_cast<float*>(UnfocusedVolumeMultiplier) != 1.00f) {
-                    *reinterpret_cast<float*>(UnfocusedVolumeMultiplier) = 1.00f;
-                    spdlog::info("Unfocused Volume Multiplier: Set volume to {}", *reinterpret_cast<float*>(UnfocusedVolumeMultiplier));
                 }
 
                 // Spawn CheatManager when console is enabled
