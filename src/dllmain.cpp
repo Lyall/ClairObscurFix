@@ -515,7 +515,7 @@ void HUD()
         }
     }
    
-    if (bSkipLogos || !bCutsceneLetterboxing) 
+    if (bSkipLogos || !bCutsceneLetterboxing || bCenterHUD) 
     {
         // Widgets
         std::uint8_t* UWigetAddToViewportScanResult = Memory::PatternScan(exeModule, "48 8B ?? ?? 48 8B ?? 48 85 ?? 40 0F ?? ?? 48 ?? ?? 48 89 ?? ?? 48 8B ?? 8B ?? ?? ?? ?? ?? ?? FF 90 ?? ?? ?? ??");
@@ -562,12 +562,14 @@ void HUD()
                         if (sWidgetName.contains("WBP_Exploration_HUD_C")) {
                             auto explorationHUD = static_cast<SDK::UWBP_Exploration_HUD_C*>(WidgetObject);
 
-                            if (explorationHUD->HUDOverlay->Slot) {
-                                auto overlaySlot = static_cast<SDK::UOverlaySlot*>(explorationHUD->HUDOverlay->Slot);
+                            if (explorationHUD->OverlaySafeZone->Slots.Num() > 0 && explorationHUD->QuestObjectiveBackground->Slot) {
+                                auto safeZoneSlot = static_cast<SDK::USafeZoneSlot*>(explorationHUD->OverlaySafeZone->Slots[0]);
+                                auto objectiveBGSlot = static_cast<SDK::UOverlaySlot*>(explorationHUD->QuestObjectiveBackground->Slot);
 
                                 if (fAspectRatio > fNativeAspect) {
                                     float WidthOffset = ((1080.00f * fAspectRatio) - 1920.00f) / 2.00f;
-                                    overlaySlot->SetPadding(SDK::FMargin(WidthOffset, 0.00f, WidthOffset, 0.00f));
+                                    safeZoneSlot->Padding = SDK::FMargin(WidthOffset, 0.00f, WidthOffset, 0.00f);
+                                    objectiveBGSlot->SetPadding(SDK::FMargin(WidthOffset, 0.00f, 0.00f, 0.00f));
                                 }
                             }
                         }
@@ -667,7 +669,7 @@ void Graphics()
 
                             if (overlaySlot->Content && overlaySlot->Content->IsA(SDK::UBackgroundBlur::StaticClass())) {
                                 auto backgroundBlur = static_cast<SDK::UBackgroundBlur*>(overlaySlot->Content);
-                                
+
                                 backgroundBlur->SetVisibility(SDK::ESlateVisibility::Hidden);
                             }
                         }
