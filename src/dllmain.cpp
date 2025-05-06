@@ -17,6 +17,9 @@
 #include "SDK/WBP_SubtitleLine_CS_classes.hpp"
 #include "SDK/WBP_Exploration_HUD_classes.hpp"
 #include "SDK/WBP_HUD_BattleScreen_classes.hpp"
+#include "SDK/WBP_GameMenu_v3_classes.hpp"
+#include "SDK/WBP_GM_MainMenuContainer_classes.hpp"
+#include "SDK/WBP_GM_CharacterMenuContainer_classes.hpp"
 #include "SDK/BP_jRPG_GM_Bootstrap_classes.hpp"
 #include "SDK/BP_ExtendedCheatManager_classes.hpp"
 
@@ -63,6 +66,7 @@ float fSharpenStrength;
 bool bBackgroundAudio;
 bool bDisableSubtitleBlur;
 bool bCenterHUD;
+float fHUDAspectRatio;
 
 // Variables
 int iCurrentResX;
@@ -248,6 +252,7 @@ void Configuration()
     inipp::get_value(ini.sections["Fix FOV"], "Enabled", bFixFOV);
     inipp::get_value(ini.sections["Fix Movies"], "Enabled", bFixMovies);
     inipp::get_value(ini.sections["Center HUD"], "Enabled", bCenterHUD);
+    inipp::get_value(ini.sections["Center HUD"], "AspectRatio", fHUDAspectRatio);
     inipp::get_value(ini.sections["Cutscene Letterboxing"], "Enabled", bCutsceneLetterboxing);
     inipp::get_value(ini.sections["Sharpening"], "Strength", fSharpenStrength);
     inipp::get_value(ini.sections["Background Audio"], "Enabled", bBackgroundAudio);
@@ -255,6 +260,7 @@ void Configuration()
 
     // Clamp settings
     fSharpenStrength = std::clamp(fSharpenStrength, 0.00f, 2.00f);
+    fHUDAspectRatio = std::clamp(fHUDAspectRatio, 1.00f, 10.00f);
 
     // Log ini parse
     spdlog_confparse(bEnableConsole);
@@ -263,6 +269,7 @@ void Configuration()
     spdlog_confparse(bFixFOV);
     spdlog_confparse(bFixMovies);
     spdlog_confparse(bCenterHUD);
+    spdlog_confparse(fHUDAspectRatio);
     spdlog_confparse(bCutsceneLetterboxing);
     spdlog_confparse(fSharpenStrength);
     spdlog_confparse(bBackgroundAudio);
@@ -539,7 +546,6 @@ void HUD()
                                 std::this_thread::sleep_for(std::chrono::milliseconds(1000));
                                 Bootstrap->OnEpilepsyWarningCompleted();
                             }
-                            spdlog::debug("Widgets: WBP_SplashScreen_Epilepsy_C");
                         }
                         else if (sWidgetName.contains("WBP_SplashScreens_Logos_C")) {
                             if (Bootstrap && !bSkippedLogos) {
@@ -547,7 +553,6 @@ void HUD()
                                 spdlog::info("Widgets: Skipped intro logos and warnings.");
                                 bSkippedLogos = true;
                             }
-                            spdlog::debug("Widgets: WBP_SplashScreens_Logos_C");
                         }
                     }
 
@@ -555,10 +560,11 @@ void HUD()
                     if (!bCutsceneLetterboxing && sWidgetName.contains("WBP_CinematicTransition_C")) {
                         auto transition = static_cast<SDK::UWBP_CinematicTransition_C*>(WidgetObject);
                         transition->ScreenRatio = static_cast<double>(fAspectRatio);
-                        spdlog::debug("Widgets: WBP_CinematicTransition_C");
                     }
 
                     if (bCenterHUD) {
+                        float WidthOffset = ((1080.00f * fAspectRatio) - (1080.00f * fHUDAspectRatio)) / 2.00f;
+
                         if (sWidgetName.contains("WBP_Exploration_HUD_C")) {
                             auto explorationHUD = static_cast<SDK::UWBP_Exploration_HUD_C*>(WidgetObject);
 
@@ -566,8 +572,7 @@ void HUD()
                                 auto safeZoneSlot = static_cast<SDK::USafeZoneSlot*>(explorationHUD->OverlaySafeZone->Slots[0]);
                                 auto objectiveBGSlot = static_cast<SDK::UOverlaySlot*>(explorationHUD->QuestObjectiveBackground->Slot);
 
-                                if (fAspectRatio > fNativeAspect) {
-                                    float WidthOffset = ((1080.00f * fAspectRatio) - 1920.00f) / 2.00f;
+                                if (fHUDAspectRatio < fAspectRatio) {
                                     safeZoneSlot->Padding = SDK::FMargin(WidthOffset, 0.00f, WidthOffset, 0.00f);
                                     objectiveBGSlot->SetPadding(SDK::FMargin(WidthOffset, 0.00f, 0.00f, 0.00f));
                                 }
@@ -585,15 +590,28 @@ void HUD()
                                 auto targetSelectControls = static_cast<SDK::UCanvasPanelSlot*>(battleHUD->CanvasPanel_0->Slots[6]);
                                 auto tooltips = static_cast<SDK::UCanvasPanelSlot*>(battleHUD->CanvasPanel_0->Slots[7]);
 
-                                if (fAspectRatio > fNativeAspect) {
-                                    float WidthOffset = ((1080.00f * fAspectRatio) - 1920.00f) / 2.00f;
-                                    
+                                if (fHUDAspectRatio < fAspectRatio) {                                    
                                     safeZoneSlot->Padding = SDK::FMargin(WidthOffset, 0.00f, WidthOffset, 0.00f);
                                     targetSelectControls->SetOffsets(SDK::FMargin(WidthOffset + 330.00f, 300.00f, 0.00f, 0.00f));
                                     tooltips->SetOffsets(SDK::FMargin(WidthOffset + 210.00f, 64.00f, 0.00f, 0.00f));
                                     turnOrder->SetOffsets(SDK::FMargin(WidthOffset + 10.00f, 0.00f, 0.00f, 0.00f));
                                     uniqueMechanics->SetOffsets(SDK::FMargin(0.00f, 0.00f, WidthOffset, 0.00f));
                                 }
+                            }
+                        }
+
+                        if (sWidgetName.contains("WBP_GameMenu_v3_C")) {
+                            auto gameMenu = static_cast<SDK::UWBP_GameMenu_v3_C*>(WidgetObject);
+                            auto gameMenuOverlay = static_cast<SDK::UOverlay*>(gameMenu->WidgetTree->RootWidget);
+
+                            if (gameMenuOverlay->Slots.Num() >= 4) {
+                                auto mainMenuSlot = static_cast<SDK::UOverlaySlot*>(gameMenuOverlay->Slots[2]);
+                                auto charMenuSlot = static_cast<SDK::UOverlaySlot*>(gameMenuOverlay->Slots[3]);
+                                auto actionBarSlot = static_cast<SDK::UOverlaySlot*>(gameMenuOverlay->Slots[4]);
+
+                                mainMenuSlot->SetPadding(SDK::FMargin(WidthOffset, 0.00f, WidthOffset, 0.00f));
+                                charMenuSlot->SetPadding(SDK::FMargin(WidthOffset, 0.00f, WidthOffset, 0.00f));
+                                actionBarSlot->SetPadding(SDK::FMargin(WidthOffset, 0.00f, WidthOffset, 0.00f));
                             }
                         }
                     }
