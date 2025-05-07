@@ -20,6 +20,7 @@
 #include "SDK/WBP_GameMenu_v3_classes.hpp"
 #include "SDK/WBP_GM_MainMenuContainer_classes.hpp"
 #include "SDK/WBP_GM_CharacterMenuContainer_classes.hpp"
+#include "SDK/WBP_DialogNotifBox_classes.hpp"
 #include "SDK/BP_jRPG_GM_Bootstrap_classes.hpp"
 #include "SDK/BP_ExtendedCheatManager_classes.hpp"
 
@@ -562,8 +563,19 @@ void HUD()
                         transition->ScreenRatio = static_cast<double>(fAspectRatio);
                     }
 
+                    // Center HUD
                     if (bCenterHUD) {
-                        float WidthOffset = ((1080.00f * fAspectRatio) - (1080.00f * fHUDAspectRatio)) / 2.00f;
+                        float HeightOffset = 0.00f;
+                        float WidthOffset = 0.00f;
+
+                        if (fAspectRatio > fNativeAspect) {
+                            HeightOffset = 0.00f;
+                            WidthOffset = ((1080.00f * fAspectRatio) - (1080.00f * fHUDAspectRatio)) / 2.00f;
+                        }
+                        else if (fAspectRatio < fNativeAspect) {
+                            HeightOffset = ((1920.00f / fAspectRatio) - (1920.00f / fHUDAspectRatio)) / 2.00f;
+                            WidthOffset = 0.00f;
+                        }           
 
                         if (sWidgetName.contains("WBP_Exploration_HUD_C")) {
                             auto explorationHUD = static_cast<SDK::UWBP_Exploration_HUD_C*>(WidgetObject);
@@ -571,11 +583,9 @@ void HUD()
                             if (explorationHUD->OverlaySafeZone->Slots.Num() > 0 && explorationHUD->QuestObjectiveBackground->Slot) {
                                 auto safeZoneSlot = static_cast<SDK::USafeZoneSlot*>(explorationHUD->OverlaySafeZone->Slots[0]);
                                 auto objectiveBGSlot = static_cast<SDK::UOverlaySlot*>(explorationHUD->QuestObjectiveBackground->Slot);
-
-                                if (fHUDAspectRatio < fAspectRatio) {
-                                    safeZoneSlot->Padding = SDK::FMargin(WidthOffset, 0.00f, WidthOffset, 0.00f);
-                                    objectiveBGSlot->SetPadding(SDK::FMargin(WidthOffset, 0.00f, 0.00f, 0.00f));
-                                }
+          
+                                safeZoneSlot->Padding = SDK::FMargin(WidthOffset, HeightOffset, WidthOffset, HeightOffset);
+                                objectiveBGSlot->SetPadding(SDK::FMargin(WidthOffset, HeightOffset, 0.00f, 0.00f));                                  
                             }
                         }
 
@@ -590,13 +600,11 @@ void HUD()
                                 auto targetSelectControls = static_cast<SDK::UCanvasPanelSlot*>(battleHUD->CanvasPanel_0->Slots[6]);
                                 auto tooltips = static_cast<SDK::UCanvasPanelSlot*>(battleHUD->CanvasPanel_0->Slots[7]);
 
-                                if (fHUDAspectRatio < fAspectRatio) {                                    
-                                    safeZoneSlot->Padding = SDK::FMargin(WidthOffset, 0.00f, WidthOffset, 0.00f);
-                                    targetSelectControls->SetOffsets(SDK::FMargin(WidthOffset + 330.00f, 300.00f, 0.00f, 0.00f));
-                                    tooltips->SetOffsets(SDK::FMargin(WidthOffset + 210.00f, 64.00f, 0.00f, 0.00f));
-                                    turnOrder->SetOffsets(SDK::FMargin(WidthOffset + 10.00f, 0.00f, 0.00f, 0.00f));
-                                    uniqueMechanics->SetOffsets(SDK::FMargin(0.00f, 0.00f, WidthOffset, 0.00f));
-                                }
+                                safeZoneSlot->Padding = SDK::FMargin(WidthOffset, HeightOffset, WidthOffset, HeightOffset);
+                                targetSelectControls->SetOffsets(SDK::FMargin(WidthOffset + 330.00f, HeightOffset + 300.00f, 0.00f, 0.00f));
+                                tooltips->SetOffsets(SDK::FMargin(WidthOffset + 210.00f, HeightOffset + 64.00f, 0.00f, 0.00f));
+                                turnOrder->SetOffsets(SDK::FMargin(WidthOffset + 10.00f, HeightOffset, 0.00f, 0.00f));
+                                uniqueMechanics->SetOffsets(SDK::FMargin(0.00f, 0.00f, WidthOffset, HeightOffset));
                             }
                         }
 
@@ -609,9 +617,19 @@ void HUD()
                                 auto charMenuSlot = static_cast<SDK::UOverlaySlot*>(gameMenuOverlay->Slots[3]);
                                 auto actionBarSlot = static_cast<SDK::UOverlaySlot*>(gameMenuOverlay->Slots[4]);
 
-                                mainMenuSlot->SetPadding(SDK::FMargin(WidthOffset, 0.00f, WidthOffset, 0.00f));
-                                charMenuSlot->SetPadding(SDK::FMargin(WidthOffset, 0.00f, WidthOffset, 0.00f));
-                                actionBarSlot->SetPadding(SDK::FMargin(WidthOffset, 0.00f, WidthOffset, 0.00f));
+                                mainMenuSlot->SetPadding(SDK::FMargin(WidthOffset, HeightOffset, WidthOffset,HeightOffset));
+                                charMenuSlot->SetPadding(SDK::FMargin(WidthOffset, HeightOffset, WidthOffset, HeightOffset));
+                                actionBarSlot->SetPadding(SDK::FMargin(WidthOffset, HeightOffset, WidthOffset, HeightOffset));
+                            }
+                        }
+
+                        if (sWidgetName.contains("WBP_DialogNotifBox_C")) {
+                            auto dialogBox = static_cast<SDK::UWBP_DialogNotifBox_C*>(WidgetObject);
+                            auto dialogCanvasPanel = static_cast<SDK::UCanvasPanel*>(dialogBox->WidgetTree->RootWidget);
+
+                            if (dialogCanvasPanel->Slots.Num() > 0) {
+                                auto dialogCanvasSlot = static_cast<SDK::UCanvasPanelSlot*>(dialogCanvasPanel->Slots[0]);
+                                dialogCanvasSlot->SetOffsets(SDK::FMargin(-WidthOffset, -HeightOffset + -150.00f, 870.00f, 370.00f));
                             }
                         }
                     }
