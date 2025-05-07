@@ -564,7 +564,7 @@ void HUD()
                     }
 
                     // Center HUD
-                    if (bCenterHUD) {
+                    if (bCenterHUD && fAspectRatio != fNativeAspect) {
                         float HeightOffset = 0.00f;
                         float WidthOffset = 0.00f;
 
