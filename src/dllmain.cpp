@@ -592,7 +592,7 @@ void HUD()
                         if (sWidgetName.contains("WBP_HUD_BattleScreen_C")) {
                             auto battleHUD = static_cast<SDK::UWBP_HUD_BattleScreen_C*>(WidgetObject);
 
-                            if (battleHUD->Canvas_UniqueMechanicsContainer->Slot && battleHUD->SafeZone->Slots.Num() > 0 && battleHUD->CanvasPanel_0->Slots.Num() > 7) {
+                            if (battleHUD->Canvas_UniqueMechanicsContainer->Slot && battleHUD->SafeZone->Slots.Num() >= 1 && battleHUD->Canvas_UniqueMechanicsContainer->Slot && battleHUD->CanvasPanel_0->Slots.Num() >= 7) {
                                 auto safeZone = static_cast<SDK::USafeZone*>(battleHUD->SafeZone);
                                 auto safeZoneSlot = static_cast<SDK::USafeZoneSlot*>(safeZone->Slots[0]);
                                 auto uniqueMechanics = static_cast<SDK::UCanvasPanelSlot*>(battleHUD->Canvas_UniqueMechanicsContainer->Slot);
@@ -610,26 +610,30 @@ void HUD()
 
                         if (sWidgetName.contains("WBP_GameMenu_v3_C")) {
                             auto gameMenu = static_cast<SDK::UWBP_GameMenu_v3_C*>(WidgetObject);
-                            auto gameMenuOverlay = static_cast<SDK::UOverlay*>(gameMenu->WidgetTree->RootWidget);
 
-                            if (gameMenuOverlay->Slots.Num() >= 4) {
-                                auto mainMenuSlot = static_cast<SDK::UOverlaySlot*>(gameMenuOverlay->Slots[2]);
-                                auto charMenuSlot = static_cast<SDK::UOverlaySlot*>(gameMenuOverlay->Slots[3]);
-                                auto actionBarSlot = static_cast<SDK::UOverlaySlot*>(gameMenuOverlay->Slots[4]);
+                            if (gameMenu->WidgetTree->RootWidget) {
+                                auto gameMenuOverlay = static_cast<SDK::UOverlay*>(gameMenu->WidgetTree->RootWidget);
 
-                                mainMenuSlot->SetPadding(SDK::FMargin(WidthOffset, HeightOffset, WidthOffset,HeightOffset));
-                                charMenuSlot->SetPadding(SDK::FMargin(WidthOffset, HeightOffset, WidthOffset, HeightOffset));
-                                actionBarSlot->SetPadding(SDK::FMargin(WidthOffset, HeightOffset, WidthOffset, HeightOffset));
+                                if (gameMenuOverlay->Slots.Num() >= 4) {
+                                    auto mainMenuSlot = static_cast<SDK::UOverlaySlot*>(gameMenuOverlay->Slots[2]);
+                                    auto charMenuSlot = static_cast<SDK::UOverlaySlot*>(gameMenuOverlay->Slots[3]);
+                                    auto actionBarSlot = static_cast<SDK::UOverlaySlot*>(gameMenuOverlay->Slots[4]);
+    
+                                    mainMenuSlot->SetPadding(SDK::FMargin(WidthOffset, HeightOffset, WidthOffset,HeightOffset));
+                                    charMenuSlot->SetPadding(SDK::FMargin(WidthOffset, HeightOffset, WidthOffset, HeightOffset));
+                                    actionBarSlot->SetPadding(SDK::FMargin(WidthOffset, HeightOffset, WidthOffset, HeightOffset));
+                                }
                             }
                         }
 
                         if (sWidgetName.contains("WBP_DialogNotifBox_C")) {
                             auto dialogBox = static_cast<SDK::UWBP_DialogNotifBox_C*>(WidgetObject);
-                            auto dialogCanvasPanel = static_cast<SDK::UCanvasPanel*>(dialogBox->WidgetTree->RootWidget);
-
-                            if (dialogCanvasPanel->Slots.Num() > 0) {
-                                auto dialogCanvasSlot = static_cast<SDK::UCanvasPanelSlot*>(dialogCanvasPanel->Slots[0]);
-                                dialogCanvasSlot->SetOffsets(SDK::FMargin(-WidthOffset, -HeightOffset + -150.00f, 870.00f, 370.00f));
+                            if (dialogBox->WidgetTree->RootWidget) {
+                                auto dialogCanvasPanel = static_cast<SDK::UCanvasPanel*>(dialogBox->WidgetTree->RootWidget);
+                                if (dialogCanvasPanel->Slots.Num() > 0) {
+                                    auto dialogCanvasSlot = static_cast<SDK::UCanvasPanelSlot*>(dialogCanvasPanel->Slots[0]);
+                                    dialogCanvasSlot->SetOffsets(SDK::FMargin(-WidthOffset, -HeightOffset + -150.00f, 870.00f, 370.00f));
+                                }
                             }
                         }
                     }
