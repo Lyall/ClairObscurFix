@@ -539,6 +539,11 @@ void HUD()
                         }
                     }
 
+                    if (!bCutsceneLetterboxing && sWidgetName.contains("WBP_CinematicTransition_C")) {
+                        auto transition = static_cast<SDK::UWBP_CinematicTransition_C*>(WidgetObject);
+                        transition->ScreenRatio = static_cast<double>(fAspectRatio);
+                    }
+
                     // Center HUD
                     if (bCenterHUD && fAspectRatio != fNativeAspect) {
                         float HeightOffset = 0.00f;
