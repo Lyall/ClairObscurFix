@@ -6,12 +6,18 @@
 **ClairObscurFix** is an ASI plugin for Clair Obscur: Expedition 33 that removes the 30fps cap in cutscenes, fixes ultrawide issues and more.
 
 ## Features
+### General
 - Skip intro logos.
 - Enable developer console.
 - Remove 30fps cap in cutscenes.
+- Enable background audio.
+- Adjust forced sharpening.
+- Disable cutscene subtitle background blur.
+
+### Ultrawide/Narrower
 - Disable letterboxing/pillarboxing in cutscenes.
-- Disable forced sharpening.
-- Fix FOV issues when using ultrawide resolutions.
+- Crop letterboxing in pre-rendered movies where possible.
+- Adjustable HUD size.
 
 ## Installation  
 - Download the latest release from [here](https://github.com/Lyall/ClairObscurFix/releases). 
