@@ -60,7 +60,6 @@ float fHUDHeightOffset;
 bool bSkipLogos;
 bool bCutsceneFPS;
 bool bEnableConsole;
-bool bFixFOV;
 bool bFixMovies;
 bool bCutsceneLetterboxing;
 float fSharpenStrength;
@@ -250,7 +249,6 @@ void Configuration()
     inipp::get_value(ini.sections["Developer Console"], "Enabled", bEnableConsole);
     inipp::get_value(ini.sections["Skip Intro Logos"], "Enabled", bSkipLogos);
     inipp::get_value(ini.sections["Uncap Cutscene FPS"], "Enabled", bCutsceneFPS);
-    inipp::get_value(ini.sections["Fix FOV"], "Enabled", bFixFOV);
     inipp::get_value(ini.sections["Fix Movies"], "Enabled", bFixMovies);
     inipp::get_value(ini.sections["Center HUD"], "Enabled", bCenterHUD);
     inipp::get_value(ini.sections["Center HUD"], "AspectRatio", fHUDAspectRatio);
@@ -267,7 +265,6 @@ void Configuration()
     spdlog_confparse(bEnableConsole);
     spdlog_confparse(bSkipLogos);
     spdlog_confparse(bCutsceneFPS);
-    spdlog_confparse(bFixFOV);
     spdlog_confparse(bFixMovies);
     spdlog_confparse(bCenterHUD);
     spdlog_confparse(fHUDAspectRatio);
@@ -441,23 +438,6 @@ void AspectRatioFOV()
         else {
             spdlog::error("Cutscenes: FOV: Pattern scan failed.");
         }
-    } 
-
-    if (bFixFOV) {
-        // AspectRatioAxisConstraint
-        std::uint8_t* AspectRatioAxisConstraintScanResult = Memory::PatternScan(exeModule, "41 ?? ?? ?? ?? ?? 00 00 48 ?? ?? ?? ?? 00 00 4C ?? ?? 4D ?? ?? E8 ?? ?? ?? ??");
-        if (AspectRatioAxisConstraintScanResult) {
-            spdlog::info("FOV: AspectRatioAxisConstraint: Address is {:s}+{:x}", sExeName.c_str(), AspectRatioAxisConstraintScanResult - reinterpret_cast<std::uint8_t*>(exeModule));
-            static SafetyHookMid AspectRatioAxisConstraintMidHook{};
-            AspectRatioAxisConstraintMidHook = safetyhook::create_mid(AspectRatioAxisConstraintScanResult + 0x8,
-                [](SafetyHookContext& ctx) {
-                    // Stop AspectRatioAxisConstraint being set to 1 after combat
-                    ctx.rdx &= ~0xFF;  
-                });
-        }
-        else {
-            spdlog::error("FOV: AspectRatioAxisConstraint: Pattern scan failed.");
-        }
     }
 }
 
@@ -500,20 +480,22 @@ void HUD()
                 [](SafetyHookContext& ctx) {
                     if (!ctx.rsi) return;
 
-                    auto videoPlayer = reinterpret_cast<SDK::UCommonVideoPlayer*>(ctx.rsi);
+                    if (reinterpret_cast<SDK::UObject*>(ctx.rsi)->IsA(SDK::UCommonVideoPlayer::StaticClass())) {
+                        auto videoPlayer = reinterpret_cast<SDK::UCommonVideoPlayer*>(ctx.rsi);
 
-                    spdlog::debug("Video Player: Address is 0x{:x}", ctx.rsi);
-                    spdlog::debug("Video Player: Playback status changed on video: {}", videoPlayer->MediaPlayer->GetUrl().ToString());
-
-                    // All videos except for the credits are at an aspect ratio of 2.39
-                    if (!videoPlayer->MediaPlayer->GetUrl().ToString().contains("Credit") && videoPlayer->VideoBrush.ImageSize.Y == 1088.00f) {
-                        if (fAspectRatio >= fCutsceneAspect) {
-                            videoPlayer->VideoBrush.ImageSize.X = 1920.00f * (fCutsceneAspect / fNativeAspect);
-                            videoPlayer->VideoBrush.ImageSize.Y = 1088.00f * (fCutsceneAspect / fNativeAspect);
-                        }
-                        else if (fAspectRatio > fNativeAspect && fAspectRatio < fCutsceneAspect) {
-                            videoPlayer->VideoBrush.ImageSize.X = 1920.00f * (fAspectRatio / fNativeAspect);
-                            videoPlayer->VideoBrush.ImageSize.Y = 1088.00f * (fAspectRatio / fNativeAspect);
+                        spdlog::debug("Video Player: Address is 0x{:x}", ctx.rsi);
+                        spdlog::debug("Video Player: Playback status changed on video: {}", videoPlayer->MediaPlayer->GetUrl().ToString());
+    
+                        // All videos except for the credits are at an aspect ratio of 2.39
+                        if (!videoPlayer->MediaPlayer->GetUrl().ToString().contains("Credit") && videoPlayer->VideoBrush.ImageSize.Y == 1088.00f) {
+                            if (fAspectRatio >= fCutsceneAspect) {
+                                videoPlayer->VideoBrush.ImageSize.X = 1920.00f * (fCutsceneAspect / fNativeAspect);
+                                videoPlayer->VideoBrush.ImageSize.Y = 1088.00f * (fCutsceneAspect / fNativeAspect);
+                            }
+                            else if (fAspectRatio > fNativeAspect && fAspectRatio < fCutsceneAspect) {
+                                videoPlayer->VideoBrush.ImageSize.X = 1920.00f * (fAspectRatio / fNativeAspect);
+                                videoPlayer->VideoBrush.ImageSize.Y = 1088.00f * (fAspectRatio / fNativeAspect);
+                            }
                         }
                     }
                 });
@@ -557,12 +539,6 @@ void HUD()
                         }
                     }
 
-                    // Set cinematic transition aspect ratio
-                    if (!bCutsceneLetterboxing && sWidgetName.contains("WBP_CinematicTransition_C")) {
-                        auto transition = static_cast<SDK::UWBP_CinematicTransition_C*>(WidgetObject);
-                        transition->ScreenRatio = static_cast<double>(fAspectRatio);
-                    }
-
                     // Center HUD
                     if (bCenterHUD && fAspectRatio != fNativeAspect) {
                         float HeightOffset = 0.00f;
@@ -577,7 +553,7 @@ void HUD()
                             WidthOffset = 0.00f;
                         }           
 
-                        if (sWidgetName.contains("WBP_Exploration_HUD_C")) {
+                        if (sWidgetName.contains("WBP_Exploration_HUD_C") && WidgetObject->IsA(SDK::UWBP_Exploration_HUD_C::StaticClass())) {
                             auto explorationHUD = static_cast<SDK::UWBP_Exploration_HUD_C*>(WidgetObject);
 
                             if (explorationHUD->OverlaySafeZone->Slots.Num() > 0 && explorationHUD->QuestObjectiveBackground->Slot) {
@@ -589,7 +565,7 @@ void HUD()
                             }
                         }
 
-                        if (sWidgetName.contains("WBP_HUD_BattleScreen_C")) {
+                        if (sWidgetName.contains("WBP_HUD_BattleScreen_C") && WidgetObject->IsA(SDK::UWBP_HUD_BattleScreen_C::StaticClass())) {
                             auto battleHUD = static_cast<SDK::UWBP_HUD_BattleScreen_C*>(WidgetObject);
 
                             if (battleHUD->Canvas_UniqueMechanicsContainer->Slot && battleHUD->SafeZone->Slots.Num() >= 1 && battleHUD->Canvas_UniqueMechanicsContainer->Slot && battleHUD->CanvasPanel_0->Slots.Num() >= 7) {
@@ -608,7 +584,7 @@ void HUD()
                             }
                         }
 
-                        if (sWidgetName.contains("WBP_GameMenu_v3_C")) {
+                        if (sWidgetName.contains("WBP_GameMenu_v3_C") &&  WidgetObject->IsA(SDK::UWBP_GameMenu_v3_C::StaticClass())) {
                             auto gameMenu = static_cast<SDK::UWBP_GameMenu_v3_C*>(WidgetObject);
 
                             if (gameMenu->WidgetTree->RootWidget) {
@@ -626,7 +602,7 @@ void HUD()
                             }
                         }
 
-                        if (sWidgetName.contains("WBP_DialogNotifBox_C")) {
+                        if (sWidgetName.contains("WBP_DialogNotifBox_C") && WidgetObject->IsA(SDK::UWBP_DialogNotifBox_C::StaticClass())) {
                             auto dialogBox = static_cast<SDK::UWBP_DialogNotifBox_C*>(WidgetObject);
                             if (dialogBox->WidgetTree->RootWidget) {
                                 auto dialogCanvasPanel = static_cast<SDK::UCanvasPanel*>(dialogBox->WidgetTree->RootWidget);
@@ -665,8 +641,8 @@ void Graphics()
                         return;
 
                     // Check if the instance is a valid sharpen material instance constant
-                    if (obj->GetName().contains("M_Sharpen") && obj->IsA(SDK::UMaterialInstanceConstant::StaticClass())) {
-                        auto instance = static_cast<SDK::UMaterialInstanceConstant*>(obj);
+                    if (obj->GetName().contains("M_Sharpen")) {
+                        auto instance = static_cast<SDK::UMaterialInstance*>(obj);
 
                         // Update sharpening params if not already changed
                         for (auto& param : instance->ScalarParameterValues) {
@@ -699,18 +675,18 @@ void Graphics()
                     if (!ctx.rax) return;
 
                     auto subsWidget = reinterpret_cast<SDK::UObject*>(ctx.rax);
+                    std::string subWidgetName = subsWidget->GetName();
 
-                    if (subsWidget->IsA(SDK::UWBP_SubtitleLine_CS_C::StaticClass())) {
+                    if (subWidgetName.contains("WBP_SubtitleLine_CS_C")) {
                         auto lineWidget = static_cast<SDK::UWBP_SubtitleLine_CS_C*>(subsWidget);
-                        auto rootWidget = static_cast<SDK::UOverlay*>(lineWidget->WidgetTree->RootWidget);
-
-                        if (rootWidget->Slots.Num() > 0 && rootWidget->Slots[0]) {
-                            auto overlaySlot = static_cast<SDK::UOverlaySlot*>(rootWidget->Slots[0]);
-
-                            if (overlaySlot->Content && overlaySlot->Content->IsA(SDK::UBackgroundBlur::StaticClass())) {
-                                auto backgroundBlur = static_cast<SDK::UBackgroundBlur*>(overlaySlot->Content);
-
-                                backgroundBlur->SetVisibility(SDK::ESlateVisibility::Hidden);
+                        if (lineWidget->WidgetTree->RootWidget) {
+                            auto rootWidget = static_cast<SDK::UOverlay*>(lineWidget->WidgetTree->RootWidget);
+                            if (rootWidget->Slots.Num() > 0 && rootWidget->Slots[0]) {
+                                auto overlaySlot = static_cast<SDK::UOverlaySlot*>(rootWidget->Slots[0]);
+                                if (overlaySlot->Content) {
+                                    auto backgroundBlur = static_cast<SDK::UWidget*>(overlaySlot->Content);
+                                    backgroundBlur->SetVisibility(SDK::ESlateVisibility::Hidden);
+                                }
                             }
                         }
                     }
