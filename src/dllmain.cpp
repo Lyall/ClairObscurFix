@@ -3,6 +3,12 @@
 
 #include "winternl.h"
 
+#ifdef _DEBUG
+    #define SPDLOG_ACTIVE_LEVEL SPDLOG_LEVEL_DEBUG
+#else
+    #define SPDLOG_ACTIVE_LEVEL SPDLOG_LEVEL_WARN
+#endif
+
 #include <spdlog/spdlog.h>
 #include <spdlog/sinks/rotating_file_sink.h>
 #include <inipp/inipp.h>
