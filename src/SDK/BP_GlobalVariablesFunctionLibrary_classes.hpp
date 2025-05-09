@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "E_jRPG_ItemSubtype_structs.hpp"
+#include "E_jRPG_ItemType_structs.hpp"
 #include "Engine_classes.hpp"
-#include "E_CharacterList_structs.hpp"
 #include "E_ExplorationCapacity_structs.hpp"
 #include "E_QuestStatus_structs.hpp"
+#include "E_CharacterList_structs.hpp"
+#include "E_jRPG_ItemSubtype_structs.hpp"
 #include "E_WorldMapExplorationCapacity_structs.hpp"
-#include "E_jRPG_ItemType_structs.hpp"
 
 
 namespace SDK

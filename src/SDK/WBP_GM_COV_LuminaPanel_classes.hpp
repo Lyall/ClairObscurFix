@@ -12,8 +12,8 @@
 
 #include "Engine_structs.hpp"
 #include "CommonUI_classes.hpp"
-#include "BlueprintSorting_structs.hpp"
 #include "E_jRPG_StatType_structs.hpp"
+#include "BlueprintSorting_structs.hpp"
 
 
 namespace SDK

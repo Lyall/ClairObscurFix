@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "S_jRPG_Item_DynamicData_structs.hpp"
-#include "S_BattleRewards_structs.hpp"
 #include "S_RolledLootEntry_structs.hpp"
+#include "S_BattleRewards_structs.hpp"
 #include "S_jRPG_Item_StaticData_structs.hpp"
 
 

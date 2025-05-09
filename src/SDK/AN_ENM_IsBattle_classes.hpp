@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "EBattleAudioContainerComponents_structs.hpp"
 #include "EInWorldAudioContainerComponents_structs.hpp"
+#include "EBattleAudioContainerComponents_structs.hpp"
 #include "Engine_classes.hpp"
 
 

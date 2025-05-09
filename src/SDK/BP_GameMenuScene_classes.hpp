@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "E_GameMenuPage_structs.hpp"
-#include "E_Characters_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "E_QuestStatus_structs.hpp"
+#include "E_WorldMapExplorationCapacity_structs.hpp"
 #include "MovieScene_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "E_WorldMapExplorationCapacity_structs.hpp"
+#include "E_GameMenuPage_structs.hpp"
+#include "E_Characters_structs.hpp"
+#include "E_QuestStatus_structs.hpp"
 
 
 namespace SDK

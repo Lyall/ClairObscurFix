@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "UMG_structs.hpp"
-#include "E_jRPG_ItemType_structs.hpp"
 #include "S_jRPG_Item_StaticData_structs.hpp"
-#include "SlateCore_structs.hpp"
+#include "UMG_structs.hpp"
 #include "EWeaponQuality_structs.hpp"
+#include "SlateCore_structs.hpp"
+#include "E_jRPG_ItemType_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 

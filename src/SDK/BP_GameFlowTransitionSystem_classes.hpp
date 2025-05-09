@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "E_GameFlowTransitionPhase_structs.hpp"
 #include "SandFall_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "E_GameFlowTransitionPhase_structs.hpp"
 #include "S_GameFlowTransitionState_structs.hpp"
 #include "S_GameFlowTransitionType_structs.hpp"
 

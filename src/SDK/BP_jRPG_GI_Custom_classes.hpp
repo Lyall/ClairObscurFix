@@ -10,29 +10,29 @@
 
 #include "Basic.hpp"
 
-#include "S_MerchantSaveData_structs.hpp"
-#include "GameplayTags_structs.hpp"
-#include "S_CleasTowerBattle_structs.hpp"
+#include "S_jRPG_PartySlot_structs.hpp"
+#include "S_jRPG_Item_DynamicData_structs.hpp"
+#include "FVendorState_structs.hpp"
 #include "Engine_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "S_jRPG_CharacterSaveState_structs.hpp"
-#include "S_AreaAudioParameters_structs.hpp"
+#include "S_UINotificationPool_structs.hpp"
+#include "E_GPE_MovingAlongSplineDestination_structs.hpp"
 #include "FSoundEvent_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "S_jRPG_Item_DynamicData_structs.hpp"
-#include "S_jRPG_PartySlot_structs.hpp"
-#include "E_GPE_MovingAlongSplineDestination_structs.hpp"
+#include "GameplayTags_structs.hpp"
+#include "S_MerchantSaveData_structs.hpp"
 #include "E_WorldMap_Camps_structs.hpp"
 #include "S_LevelSpawnPointsData_structs.hpp"
-#include "E_CharacterList_structs.hpp"
-#include "S_LevelSpawnPointData_structs.hpp"
-#include "FVendorState_structs.hpp"
-#include "S_ManorDoors_structs.hpp"
-#include "E_InteractiveMusicContext_structs.hpp"
 #include "FPassiveEffectProgression_structs.hpp"
-#include "S_UINotificationPool_structs.hpp"
+#include "S_CleasTowerBattle_structs.hpp"
+#include "E_CharacterList_structs.hpp"
+#include "S_ManorDoors_structs.hpp"
+#include "S_AreaAudioParameters_structs.hpp"
+#include "E_InteractiveMusicContext_structs.hpp"
 #include "S_UIFavoritePool_structs.hpp"
+#include "S_LevelSpawnPointData_structs.hpp"
 #include "SandFall_classes.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK
@@ -216,6 +216,7 @@ public:
 	void ApplyPostProcessSettings();
 	void AreAllCharactersDead(bool* AllDead);
 	void BindOnSaveLoaded(const TDelegate<void()>& Event, bool* AlreadyLoaded);
+	bool CanUseStats();
 	void ChangeMap();
 	void CheckDestroyable(const class FName& ItemToFind, bool* CanDestroy);
 	void CheckDialogueIsAtLeastAtStage(const struct FGuid& DialogueGUID, int32 Stage, bool* IsAtLeastAtStage);

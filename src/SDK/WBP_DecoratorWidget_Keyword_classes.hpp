@@ -13,8 +13,8 @@
 #include "SandFall_classes.hpp"
 #include "Engine_structs.hpp"
 #include "S_RichTextDecorator_KeywordStyle_structs.hpp"
-#include "UMG_structs.hpp"
 #include "E_RichTextDecorator_Keyword_IconPosition_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK

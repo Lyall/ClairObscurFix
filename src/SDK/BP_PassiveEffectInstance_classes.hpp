@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "SandFall_classes.hpp"
-#include "FPassiveEffect_structs.hpp"
 #include "Engine_structs.hpp"
+#include "FPassiveEffect_structs.hpp"
 #include "S_jRPG_Item_StaticData_structs.hpp"
 
 

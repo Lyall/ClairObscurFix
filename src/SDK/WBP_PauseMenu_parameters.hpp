@@ -12,8 +12,8 @@
 
 #include "E_jRPG_YesNoQuestions_structs.hpp"
 #include "UMG_structs.hpp"
-#include "S_LoadGameRequest_structs.hpp"
 #include "EModalUIResponse_structs.hpp"
+#include "S_LoadGameRequest_structs.hpp"
 
 
 namespace SDK::Params

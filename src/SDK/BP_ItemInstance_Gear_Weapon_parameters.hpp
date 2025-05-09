@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "EAttributeScalingGrade_structs.hpp"
-#include "EWeaponQuality_structs.hpp"
 #include "S_WeaponDefinition_structs.hpp"
-#include "E_jRPG_StatType_structs.hpp"
+#include "EWeaponQuality_structs.hpp"
 #include "ECharacterAttribute_structs.hpp"
+#include "E_jRPG_StatType_structs.hpp"
+#include "EAttributeScalingGrade_structs.hpp"
 #include "S_WeaponInstanceData_structs.hpp"
 #include "S_WeaponInstanceHandle_structs.hpp"
 #include "Engine_structs.hpp"

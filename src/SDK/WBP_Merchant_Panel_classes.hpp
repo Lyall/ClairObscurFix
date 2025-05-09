@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "S_MerchantItemSellData_structs.hpp"
 #include "Engine_structs.hpp"
 #include "SandFall_structs.hpp"
+#include "S_MerchantItemSellData_structs.hpp"
 #include "CommonUI_classes.hpp"
 #include "UMG_structs.hpp"
 
@@ -35,12 +35,12 @@ public:
 	class UNiagaraSystemWidget*                   FX_LightMerchant;                                  // 0x0468(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_TextualInputActionBinding_C*       LeaveBinding;                                      // 0x0470(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_BaseButton_C*                      LeaveButton;                                       // 0x0478(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonLazyImage*                       PlaceholderBackground;                             // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonLazyImage*                       PlaceholderMerchant;                               // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonLazyImage*                       PlaceholderMerchant_1;                             // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USafeZone*                              SafeZone_0;                                        // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_GoldAmount_C*                      WBP_GoldAmount;                                    // 0x04A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ItemDetailsPanel_C*                WBP_ItemDetailsPanel;                              // 0x04A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonLazyImage*                       PlaceholderMerchant;                               // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonLazyImage*                       PlaceholderMerchant_1;                             // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USafeZone*                              SafeZone_0;                                        // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_GoldAmount_C*                      WBP_GoldAmount;                                    // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ItemDetailsPanel_C*                WBP_ItemDetailsPanel;                              // 0x04A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_WidescreenRatioBox_C*              WBP_WidescreenRatioBox;                            // 0x04A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	TMap<class FName, struct FS_MerchantItemSellData> AvailableItems;                                // 0x04B0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	TMulticastInlineDelegate<void()>              OnCloseMerchantPanel;                              // 0x0500(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class UWBP_Merchant_Item_Row_C*               FocusedMerchantItem;                               // 0x0510(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -97,12 +97,12 @@ static_assert(offsetof(UWBP_Merchant_Panel_C, FightMerchantButton) == 0x000460, 
 static_assert(offsetof(UWBP_Merchant_Panel_C, FX_LightMerchant) == 0x000468, "Member 'UWBP_Merchant_Panel_C::FX_LightMerchant' has a wrong offset!");
 static_assert(offsetof(UWBP_Merchant_Panel_C, LeaveBinding) == 0x000470, "Member 'UWBP_Merchant_Panel_C::LeaveBinding' has a wrong offset!");
 static_assert(offsetof(UWBP_Merchant_Panel_C, LeaveButton) == 0x000478, "Member 'UWBP_Merchant_Panel_C::LeaveButton' has a wrong offset!");
-static_assert(offsetof(UWBP_Merchant_Panel_C, PlaceholderBackground) == 0x000480, "Member 'UWBP_Merchant_Panel_C::PlaceholderBackground' has a wrong offset!");
-static_assert(offsetof(UWBP_Merchant_Panel_C, PlaceholderMerchant) == 0x000488, "Member 'UWBP_Merchant_Panel_C::PlaceholderMerchant' has a wrong offset!");
-static_assert(offsetof(UWBP_Merchant_Panel_C, PlaceholderMerchant_1) == 0x000490, "Member 'UWBP_Merchant_Panel_C::PlaceholderMerchant_1' has a wrong offset!");
-static_assert(offsetof(UWBP_Merchant_Panel_C, SafeZone_0) == 0x000498, "Member 'UWBP_Merchant_Panel_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UWBP_Merchant_Panel_C, WBP_GoldAmount) == 0x0004A0, "Member 'UWBP_Merchant_Panel_C::WBP_GoldAmount' has a wrong offset!");
-static_assert(offsetof(UWBP_Merchant_Panel_C, WBP_ItemDetailsPanel) == 0x0004A8, "Member 'UWBP_Merchant_Panel_C::WBP_ItemDetailsPanel' has a wrong offset!");
+static_assert(offsetof(UWBP_Merchant_Panel_C, PlaceholderMerchant) == 0x000480, "Member 'UWBP_Merchant_Panel_C::PlaceholderMerchant' has a wrong offset!");
+static_assert(offsetof(UWBP_Merchant_Panel_C, PlaceholderMerchant_1) == 0x000488, "Member 'UWBP_Merchant_Panel_C::PlaceholderMerchant_1' has a wrong offset!");
+static_assert(offsetof(UWBP_Merchant_Panel_C, SafeZone_0) == 0x000490, "Member 'UWBP_Merchant_Panel_C::SafeZone_0' has a wrong offset!");
+static_assert(offsetof(UWBP_Merchant_Panel_C, WBP_GoldAmount) == 0x000498, "Member 'UWBP_Merchant_Panel_C::WBP_GoldAmount' has a wrong offset!");
+static_assert(offsetof(UWBP_Merchant_Panel_C, WBP_ItemDetailsPanel) == 0x0004A0, "Member 'UWBP_Merchant_Panel_C::WBP_ItemDetailsPanel' has a wrong offset!");
+static_assert(offsetof(UWBP_Merchant_Panel_C, WBP_WidescreenRatioBox) == 0x0004A8, "Member 'UWBP_Merchant_Panel_C::WBP_WidescreenRatioBox' has a wrong offset!");
 static_assert(offsetof(UWBP_Merchant_Panel_C, AvailableItems) == 0x0004B0, "Member 'UWBP_Merchant_Panel_C::AvailableItems' has a wrong offset!");
 static_assert(offsetof(UWBP_Merchant_Panel_C, OnCloseMerchantPanel) == 0x000500, "Member 'UWBP_Merchant_Panel_C::OnCloseMerchantPanel' has a wrong offset!");
 static_assert(offsetof(UWBP_Merchant_Panel_C, FocusedMerchantItem) == 0x000510, "Member 'UWBP_Merchant_Panel_C::FocusedMerchantItem' has a wrong offset!");

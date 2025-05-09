@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "E_GameMenuPage_structs.hpp"
+#include "S_jRPG_Item_StaticData_structs.hpp"
 #include "E_Characters_structs.hpp"
+#include "E_WorldMapExplorationCapacity_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "SandFall_structs.hpp"
 #include "Engine_structs.hpp"
-#include "S_jRPG_Item_StaticData_structs.hpp"
 #include "S_GameMenuParameters_structs.hpp"
-#include "E_WorldMapExplorationCapacity_structs.hpp"
+#include "E_GameMenuPage_structs.hpp"
 #include "CinematicCamera_structs.hpp"
 #include "GameplayCameras_structs.hpp"
 #include "E_QuestStatus_structs.hpp"

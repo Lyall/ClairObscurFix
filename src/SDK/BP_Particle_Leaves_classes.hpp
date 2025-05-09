@@ -43,9 +43,9 @@ public:
 	double                                        Speed;                                             // 0x0310(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_Particle_Leaves(int32 EntryPoint);
-	void ReceiveBeginPlay();
 	void UserConstructionScript();
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_Particle_Leaves(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

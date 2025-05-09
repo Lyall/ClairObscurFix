@@ -12,8 +12,8 @@
 
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "ECharacterTeamSelector_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "ECharacterTeamSelector_structs.hpp"
 
 
 namespace SDK

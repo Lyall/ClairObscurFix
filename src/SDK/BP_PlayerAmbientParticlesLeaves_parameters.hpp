@@ -17,30 +17,6 @@
 namespace SDK::Params
 {
 
-// Function BP_PlayerAmbientParticlesLeaves.BP_PlayerAmbientParticlesLeaves_C.SetDilation
-// 0x0010 (0x0010 - 0x0000)
-struct BP_PlayerAmbientParticlesLeaves_C_SetDilation final
-{
-public:
-	double                                        NewValue;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetCustomTimeDilation_Dilation_ImplicitCast; // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_PlayerAmbientParticlesLeaves_C_SetDilation) == 0x000008, "Wrong alignment on BP_PlayerAmbientParticlesLeaves_C_SetDilation");
-static_assert(sizeof(BP_PlayerAmbientParticlesLeaves_C_SetDilation) == 0x000010, "Wrong size on BP_PlayerAmbientParticlesLeaves_C_SetDilation");
-static_assert(offsetof(BP_PlayerAmbientParticlesLeaves_C_SetDilation, NewValue) == 0x000000, "Member 'BP_PlayerAmbientParticlesLeaves_C_SetDilation::NewValue' has a wrong offset!");
-static_assert(offsetof(BP_PlayerAmbientParticlesLeaves_C_SetDilation, CallFunc_SetCustomTimeDilation_Dilation_ImplicitCast) == 0x000008, "Member 'BP_PlayerAmbientParticlesLeaves_C_SetDilation::CallFunc_SetCustomTimeDilation_Dilation_ImplicitCast' has a wrong offset!");
-
-// Function BP_PlayerAmbientParticlesLeaves.BP_PlayerAmbientParticlesLeaves_C.SetLeavesMaterial
-// 0x0001 (0x0001 - 0x0000)
-struct BP_PlayerAmbientParticlesLeaves_C_SetLeavesMaterial final
-{
-public:
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_PlayerAmbientParticlesLeaves_C_SetLeavesMaterial) == 0x000001, "Wrong alignment on BP_PlayerAmbientParticlesLeaves_C_SetLeavesMaterial");
-static_assert(sizeof(BP_PlayerAmbientParticlesLeaves_C_SetLeavesMaterial) == 0x000001, "Wrong size on BP_PlayerAmbientParticlesLeaves_C_SetLeavesMaterial");
-static_assert(offsetof(BP_PlayerAmbientParticlesLeaves_C_SetLeavesMaterial, K2Node_SwitchEnum_CmpSuccess) == 0x000000, "Member 'BP_PlayerAmbientParticlesLeaves_C_SetLeavesMaterial::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-
 // Function BP_PlayerAmbientParticlesLeaves.BP_PlayerAmbientParticlesLeaves_C.UserConstructionScript
 // 0x0128 (0x0128 - 0x0000)
 struct BP_PlayerAmbientParticlesLeaves_C_UserConstructionScript final
@@ -59,6 +35,30 @@ static_assert(offsetof(BP_PlayerAmbientParticlesLeaves_C_UserConstructionScript,
 static_assert(offsetof(BP_PlayerAmbientParticlesLeaves_C_UserConstructionScript, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000020, "Member 'BP_PlayerAmbientParticlesLeaves_C_UserConstructionScript::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_PlayerAmbientParticlesLeaves_C_UserConstructionScript, CallFunc_K2_SetWorldRotation_SweepHitResult) == 0x000028, "Member 'BP_PlayerAmbientParticlesLeaves_C_UserConstructionScript::CallFunc_K2_SetWorldRotation_SweepHitResult' has a wrong offset!");
 static_assert(offsetof(BP_PlayerAmbientParticlesLeaves_C_UserConstructionScript, CallFunc_SetFloatParameter_Param_ImplicitCast) == 0x000120, "Member 'BP_PlayerAmbientParticlesLeaves_C_UserConstructionScript::CallFunc_SetFloatParameter_Param_ImplicitCast' has a wrong offset!");
+
+// Function BP_PlayerAmbientParticlesLeaves.BP_PlayerAmbientParticlesLeaves_C.SetLeavesMaterial
+// 0x0001 (0x0001 - 0x0000)
+struct BP_PlayerAmbientParticlesLeaves_C_SetLeavesMaterial final
+{
+public:
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_PlayerAmbientParticlesLeaves_C_SetLeavesMaterial) == 0x000001, "Wrong alignment on BP_PlayerAmbientParticlesLeaves_C_SetLeavesMaterial");
+static_assert(sizeof(BP_PlayerAmbientParticlesLeaves_C_SetLeavesMaterial) == 0x000001, "Wrong size on BP_PlayerAmbientParticlesLeaves_C_SetLeavesMaterial");
+static_assert(offsetof(BP_PlayerAmbientParticlesLeaves_C_SetLeavesMaterial, K2Node_SwitchEnum_CmpSuccess) == 0x000000, "Member 'BP_PlayerAmbientParticlesLeaves_C_SetLeavesMaterial::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+
+// Function BP_PlayerAmbientParticlesLeaves.BP_PlayerAmbientParticlesLeaves_C.SetDilation
+// 0x0010 (0x0010 - 0x0000)
+struct BP_PlayerAmbientParticlesLeaves_C_SetDilation final
+{
+public:
+	double                                        NewValue;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetCustomTimeDilation_Dilation_ImplicitCast; // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_PlayerAmbientParticlesLeaves_C_SetDilation) == 0x000008, "Wrong alignment on BP_PlayerAmbientParticlesLeaves_C_SetDilation");
+static_assert(sizeof(BP_PlayerAmbientParticlesLeaves_C_SetDilation) == 0x000010, "Wrong size on BP_PlayerAmbientParticlesLeaves_C_SetDilation");
+static_assert(offsetof(BP_PlayerAmbientParticlesLeaves_C_SetDilation, NewValue) == 0x000000, "Member 'BP_PlayerAmbientParticlesLeaves_C_SetDilation::NewValue' has a wrong offset!");
+static_assert(offsetof(BP_PlayerAmbientParticlesLeaves_C_SetDilation, CallFunc_SetCustomTimeDilation_Dilation_ImplicitCast) == 0x000008, "Member 'BP_PlayerAmbientParticlesLeaves_C_SetDilation::CallFunc_SetCustomTimeDilation_Dilation_ImplicitCast' has a wrong offset!");
 
 }
 

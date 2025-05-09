@@ -11,6 +11,7 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
 #include "CommonInput_structs.hpp"
 
@@ -19,7 +20,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Battle_JumpCounterHint.WBP_Battle_JumpCounterHint_C
-// 0x0038 (0x0318 - 0x02E0)
+// 0x0040 (0x0320 - 0x02E0)
 class UWBP_Battle_JumpCounterHint_C final : public UUserWidget
 {
 public:
@@ -30,6 +31,7 @@ public:
 	class UWidgetAnimation*                       Anim_Appear;                                       // 0x0300(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class UImage*                                 Image_Icon;                                        // 0x0308(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_Shine;                                       // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_InputActionBinding_C*              InputActionBinding;                                // 0x0318(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void Appear();
@@ -50,7 +52,7 @@ public:
 	}
 };
 static_assert(alignof(UWBP_Battle_JumpCounterHint_C) == 0x000008, "Wrong alignment on UWBP_Battle_JumpCounterHint_C");
-static_assert(sizeof(UWBP_Battle_JumpCounterHint_C) == 0x000318, "Wrong size on UWBP_Battle_JumpCounterHint_C");
+static_assert(sizeof(UWBP_Battle_JumpCounterHint_C) == 0x000320, "Wrong size on UWBP_Battle_JumpCounterHint_C");
 static_assert(offsetof(UWBP_Battle_JumpCounterHint_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_Battle_JumpCounterHint_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWBP_Battle_JumpCounterHint_C, Anim_Disappear) == 0x0002E8, "Member 'UWBP_Battle_JumpCounterHint_C::Anim_Disappear' has a wrong offset!");
 static_assert(offsetof(UWBP_Battle_JumpCounterHint_C, Anim_Success) == 0x0002F0, "Member 'UWBP_Battle_JumpCounterHint_C::Anim_Success' has a wrong offset!");
@@ -58,6 +60,7 @@ static_assert(offsetof(UWBP_Battle_JumpCounterHint_C, Anim_Shine) == 0x0002F8, "
 static_assert(offsetof(UWBP_Battle_JumpCounterHint_C, Anim_Appear) == 0x000300, "Member 'UWBP_Battle_JumpCounterHint_C::Anim_Appear' has a wrong offset!");
 static_assert(offsetof(UWBP_Battle_JumpCounterHint_C, Image_Icon) == 0x000308, "Member 'UWBP_Battle_JumpCounterHint_C::Image_Icon' has a wrong offset!");
 static_assert(offsetof(UWBP_Battle_JumpCounterHint_C, Image_Shine) == 0x000310, "Member 'UWBP_Battle_JumpCounterHint_C::Image_Shine' has a wrong offset!");
+static_assert(offsetof(UWBP_Battle_JumpCounterHint_C, InputActionBinding) == 0x000318, "Member 'UWBP_Battle_JumpCounterHint_C::InputActionBinding' has a wrong offset!");
 
 }
 

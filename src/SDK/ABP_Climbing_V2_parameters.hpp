@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "E_ClimbingComponentState_structs.hpp"
 #include "Engine_structs.hpp"
 #include "E_Climbing_Direction_structs.hpp"
-#include "E_ClimbingComponentState_structs.hpp"
 
 
 namespace SDK::Params

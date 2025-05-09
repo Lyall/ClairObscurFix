@@ -11,44 +11,45 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "CommonInput_structs.hpp"
 #include "S_TutorialCardParameters_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "CommonUI_classes.hpp"
 #include "UMG_structs.hpp"
 #include "E_TutorialCardWidgetPosition_structs.hpp"
-#include "CommonInput_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_TutorialCard.WBP_TutorialCard_C
-// 0x00D0 (0x0500 - 0x0430)
+// 0x00D8 (0x0508 - 0x0430)
 class UWBP_TutorialCard_C final : public UCommonActivatableWidget
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0430(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UWidgetAnimation*                       Anim_AppearFromLeft;                               // 0x0438(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Anim_AppearFromRight;                              // 0x0440(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class USizeBox*                               ContentSizeBox;                                    // 0x0448(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_TextualInputActionBinding_C*       DiscardBinding;                                    // 0x0450(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_BaseButton_C*                      DiscardButton;                                     // 0x0458(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_BaseButton_C*                      InvisibleHealPartyTutorialButton;                  // 0x0460(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonRichTextBlock*                   RichText_Description;                              // 0x0468(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USafeZone*                              SafeZone_1;                                        // 0x0470(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_WrappingText_C*                    Text_Title;                                        // 0x0478(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonLazyImage*                       TitleLine;                                         // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           TitleVerticalBox;                                  // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCanvasPanel*                           TutoPanel;                                         // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonLazyImage*                       TutorialCardBackground;                            // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonLazyImage*                       TutorialImage;                                     // 0x04A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               TutorialImageBox;                                  // 0x04A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void(class UWBP_TutorialCard_C* Widget)> OnCardDiscarded;               // 0x04B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	struct FS_TutorialCardParameters              TutorialCardParameters;                            // 0x04C0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsWaitingForSpecificInputAction;                   // 0x04E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4E1[0x7];                                      // 0x04E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDataTableRowHandle                    SDTutoWindowAppear;                                // 0x04E8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	bool                                          IsHealPartyTutorial;                               // 0x04F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UScaleBox*                              BackgroundScaleBox;                                // 0x0448(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               ContentSizeBox;                                    // 0x0450(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_TextualInputActionBinding_C*       DiscardBinding;                                    // 0x0458(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_BaseButton_C*                      DiscardButton;                                     // 0x0460(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_BaseButton_C*                      InvisibleHealPartyTutorialButton;                  // 0x0468(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonRichTextBlock*                   RichText_Description;                              // 0x0470(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USafeZone*                              SafeZone_1;                                        // 0x0478(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_WrappingText_C*                    Text_Title;                                        // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonLazyImage*                       TitleLine;                                         // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           TitleVerticalBox;                                  // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCanvasPanel*                           TutoPanel;                                         // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonLazyImage*                       TutorialCardBackground;                            // 0x04A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonLazyImage*                       TutorialImage;                                     // 0x04A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               TutorialImageBox;                                  // 0x04B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TMulticastInlineDelegate<void(class UWBP_TutorialCard_C* Widget)> OnCardDiscarded;               // 0x04B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FS_TutorialCardParameters              TutorialCardParameters;                            // 0x04C8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsWaitingForSpecificInputAction;                   // 0x04E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4E9[0x7];                                      // 0x04E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDataTableRowHandle                    SDTutoWindowAppear;                                // 0x04F0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	bool                                          IsHealPartyTutorial;                               // 0x0500(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void BndEvt__WBP_TutorialCard_DiscardButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
@@ -83,28 +84,29 @@ public:
 	}
 };
 static_assert(alignof(UWBP_TutorialCard_C) == 0x000008, "Wrong alignment on UWBP_TutorialCard_C");
-static_assert(sizeof(UWBP_TutorialCard_C) == 0x000500, "Wrong size on UWBP_TutorialCard_C");
+static_assert(sizeof(UWBP_TutorialCard_C) == 0x000508, "Wrong size on UWBP_TutorialCard_C");
 static_assert(offsetof(UWBP_TutorialCard_C, UberGraphFrame) == 0x000430, "Member 'UWBP_TutorialCard_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWBP_TutorialCard_C, Anim_AppearFromLeft) == 0x000438, "Member 'UWBP_TutorialCard_C::Anim_AppearFromLeft' has a wrong offset!");
 static_assert(offsetof(UWBP_TutorialCard_C, Anim_AppearFromRight) == 0x000440, "Member 'UWBP_TutorialCard_C::Anim_AppearFromRight' has a wrong offset!");
-static_assert(offsetof(UWBP_TutorialCard_C, ContentSizeBox) == 0x000448, "Member 'UWBP_TutorialCard_C::ContentSizeBox' has a wrong offset!");
-static_assert(offsetof(UWBP_TutorialCard_C, DiscardBinding) == 0x000450, "Member 'UWBP_TutorialCard_C::DiscardBinding' has a wrong offset!");
-static_assert(offsetof(UWBP_TutorialCard_C, DiscardButton) == 0x000458, "Member 'UWBP_TutorialCard_C::DiscardButton' has a wrong offset!");
-static_assert(offsetof(UWBP_TutorialCard_C, InvisibleHealPartyTutorialButton) == 0x000460, "Member 'UWBP_TutorialCard_C::InvisibleHealPartyTutorialButton' has a wrong offset!");
-static_assert(offsetof(UWBP_TutorialCard_C, RichText_Description) == 0x000468, "Member 'UWBP_TutorialCard_C::RichText_Description' has a wrong offset!");
-static_assert(offsetof(UWBP_TutorialCard_C, SafeZone_1) == 0x000470, "Member 'UWBP_TutorialCard_C::SafeZone_1' has a wrong offset!");
-static_assert(offsetof(UWBP_TutorialCard_C, Text_Title) == 0x000478, "Member 'UWBP_TutorialCard_C::Text_Title' has a wrong offset!");
-static_assert(offsetof(UWBP_TutorialCard_C, TitleLine) == 0x000480, "Member 'UWBP_TutorialCard_C::TitleLine' has a wrong offset!");
-static_assert(offsetof(UWBP_TutorialCard_C, TitleVerticalBox) == 0x000488, "Member 'UWBP_TutorialCard_C::TitleVerticalBox' has a wrong offset!");
-static_assert(offsetof(UWBP_TutorialCard_C, TutoPanel) == 0x000490, "Member 'UWBP_TutorialCard_C::TutoPanel' has a wrong offset!");
-static_assert(offsetof(UWBP_TutorialCard_C, TutorialCardBackground) == 0x000498, "Member 'UWBP_TutorialCard_C::TutorialCardBackground' has a wrong offset!");
-static_assert(offsetof(UWBP_TutorialCard_C, TutorialImage) == 0x0004A0, "Member 'UWBP_TutorialCard_C::TutorialImage' has a wrong offset!");
-static_assert(offsetof(UWBP_TutorialCard_C, TutorialImageBox) == 0x0004A8, "Member 'UWBP_TutorialCard_C::TutorialImageBox' has a wrong offset!");
-static_assert(offsetof(UWBP_TutorialCard_C, OnCardDiscarded) == 0x0004B0, "Member 'UWBP_TutorialCard_C::OnCardDiscarded' has a wrong offset!");
-static_assert(offsetof(UWBP_TutorialCard_C, TutorialCardParameters) == 0x0004C0, "Member 'UWBP_TutorialCard_C::TutorialCardParameters' has a wrong offset!");
-static_assert(offsetof(UWBP_TutorialCard_C, IsWaitingForSpecificInputAction) == 0x0004E0, "Member 'UWBP_TutorialCard_C::IsWaitingForSpecificInputAction' has a wrong offset!");
-static_assert(offsetof(UWBP_TutorialCard_C, SDTutoWindowAppear) == 0x0004E8, "Member 'UWBP_TutorialCard_C::SDTutoWindowAppear' has a wrong offset!");
-static_assert(offsetof(UWBP_TutorialCard_C, IsHealPartyTutorial) == 0x0004F8, "Member 'UWBP_TutorialCard_C::IsHealPartyTutorial' has a wrong offset!");
+static_assert(offsetof(UWBP_TutorialCard_C, BackgroundScaleBox) == 0x000448, "Member 'UWBP_TutorialCard_C::BackgroundScaleBox' has a wrong offset!");
+static_assert(offsetof(UWBP_TutorialCard_C, ContentSizeBox) == 0x000450, "Member 'UWBP_TutorialCard_C::ContentSizeBox' has a wrong offset!");
+static_assert(offsetof(UWBP_TutorialCard_C, DiscardBinding) == 0x000458, "Member 'UWBP_TutorialCard_C::DiscardBinding' has a wrong offset!");
+static_assert(offsetof(UWBP_TutorialCard_C, DiscardButton) == 0x000460, "Member 'UWBP_TutorialCard_C::DiscardButton' has a wrong offset!");
+static_assert(offsetof(UWBP_TutorialCard_C, InvisibleHealPartyTutorialButton) == 0x000468, "Member 'UWBP_TutorialCard_C::InvisibleHealPartyTutorialButton' has a wrong offset!");
+static_assert(offsetof(UWBP_TutorialCard_C, RichText_Description) == 0x000470, "Member 'UWBP_TutorialCard_C::RichText_Description' has a wrong offset!");
+static_assert(offsetof(UWBP_TutorialCard_C, SafeZone_1) == 0x000478, "Member 'UWBP_TutorialCard_C::SafeZone_1' has a wrong offset!");
+static_assert(offsetof(UWBP_TutorialCard_C, Text_Title) == 0x000480, "Member 'UWBP_TutorialCard_C::Text_Title' has a wrong offset!");
+static_assert(offsetof(UWBP_TutorialCard_C, TitleLine) == 0x000488, "Member 'UWBP_TutorialCard_C::TitleLine' has a wrong offset!");
+static_assert(offsetof(UWBP_TutorialCard_C, TitleVerticalBox) == 0x000490, "Member 'UWBP_TutorialCard_C::TitleVerticalBox' has a wrong offset!");
+static_assert(offsetof(UWBP_TutorialCard_C, TutoPanel) == 0x000498, "Member 'UWBP_TutorialCard_C::TutoPanel' has a wrong offset!");
+static_assert(offsetof(UWBP_TutorialCard_C, TutorialCardBackground) == 0x0004A0, "Member 'UWBP_TutorialCard_C::TutorialCardBackground' has a wrong offset!");
+static_assert(offsetof(UWBP_TutorialCard_C, TutorialImage) == 0x0004A8, "Member 'UWBP_TutorialCard_C::TutorialImage' has a wrong offset!");
+static_assert(offsetof(UWBP_TutorialCard_C, TutorialImageBox) == 0x0004B0, "Member 'UWBP_TutorialCard_C::TutorialImageBox' has a wrong offset!");
+static_assert(offsetof(UWBP_TutorialCard_C, OnCardDiscarded) == 0x0004B8, "Member 'UWBP_TutorialCard_C::OnCardDiscarded' has a wrong offset!");
+static_assert(offsetof(UWBP_TutorialCard_C, TutorialCardParameters) == 0x0004C8, "Member 'UWBP_TutorialCard_C::TutorialCardParameters' has a wrong offset!");
+static_assert(offsetof(UWBP_TutorialCard_C, IsWaitingForSpecificInputAction) == 0x0004E8, "Member 'UWBP_TutorialCard_C::IsWaitingForSpecificInputAction' has a wrong offset!");
+static_assert(offsetof(UWBP_TutorialCard_C, SDTutoWindowAppear) == 0x0004F0, "Member 'UWBP_TutorialCard_C::SDTutoWindowAppear' has a wrong offset!");
+static_assert(offsetof(UWBP_TutorialCard_C, IsHealPartyTutorial) == 0x000500, "Member 'UWBP_TutorialCard_C::IsHealPartyTutorial' has a wrong offset!");
 
 }
 

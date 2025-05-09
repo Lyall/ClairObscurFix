@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "E_AiStates_structs.hpp"
 #include "Engine_structs.hpp"
 #include "AIModule_classes.hpp"
+#include "E_AiStates_structs.hpp"
 
 
 namespace SDK

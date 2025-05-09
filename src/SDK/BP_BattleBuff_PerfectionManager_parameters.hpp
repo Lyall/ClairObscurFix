@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "EPerfectionReason_structs.hpp"
-#include "FDamageModifier_structs.hpp"
 #include "E_Perfection_Ranks_structs.hpp"
+#include "FDamageModifier_structs.hpp"
 
 
 namespace SDK::Params

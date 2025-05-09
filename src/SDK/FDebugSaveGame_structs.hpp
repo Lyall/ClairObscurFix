@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "FDebugSaveGame_SkilList_structs.hpp"
 #include "S_jRPG_Item_DynamicData_structs.hpp"
-#include "S_jRPG_PartySlot_structs.hpp"
 #include "S_WeaponInstanceHandle_structs.hpp"
-#include "FExplorationProgression_SaveState_structs.hpp"
+#include "S_jRPG_PartySlot_structs.hpp"
+#include "FDebugSaveGame_SkilList_structs.hpp"
 #include "S_jRPG_CharacterSaveState_structs.hpp"
-#include "E_Characters_structs.hpp"
+#include "FExplorationProgression_SaveState_structs.hpp"
 #include "Engine_structs.hpp"
+#include "E_Characters_structs.hpp"
 
 
 namespace SDK

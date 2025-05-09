@@ -11,11 +11,11 @@
 #include "Basic.hpp"
 
 #include "E_PerfectionUpdateType_structs.hpp"
-#include "SandFall_structs.hpp"
 #include "E_Perfection_Ranks_structs.hpp"
+#include "SandFall_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "UMG_structs.hpp"
 #include "EPerfectionReason_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK::Params

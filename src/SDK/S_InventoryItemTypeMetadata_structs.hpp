@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "E_jRPG_ItemType_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "E_jRPG_ItemType_structs.hpp"
 
 
 namespace SDK

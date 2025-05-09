@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "E_jRPG_CombatStyle_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "E_jRPG_CombatStyle_structs.hpp"
 #include "OLD_ABP_Battle_Parent_structs.hpp"
 #include "FSoundEvent_structs.hpp"
 #include "CoreUObject_structs.hpp"

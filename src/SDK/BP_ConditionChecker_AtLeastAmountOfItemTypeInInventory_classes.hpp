@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "BP_ConditionChecker_classes.hpp"
-#include "E_jRPG_ItemSubtype_structs.hpp"
 #include "E_jRPG_ItemType_structs.hpp"
+#include "E_jRPG_ItemSubtype_structs.hpp"
+#include "BP_ConditionChecker_classes.hpp"
 
 
 namespace SDK

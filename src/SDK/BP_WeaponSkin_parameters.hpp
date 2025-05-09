@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "EPermeateIntensity_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "EAttackType_structs.hpp"
+#include "EPermeateIntensity_structs.hpp"
 
 
 namespace SDK::Params

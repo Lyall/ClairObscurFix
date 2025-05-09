@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "SlateCore_structs.hpp"
-#include "FPassiveEffectProgression_structs.hpp"
 #include "S_jRPG_Item_DynamicData_structs.hpp"
+#include "FPassiveEffectProgression_structs.hpp"
 
 
 namespace SDK::Params

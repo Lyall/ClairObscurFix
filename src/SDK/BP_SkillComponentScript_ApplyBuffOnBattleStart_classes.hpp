@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BP_SkillDataComponentScript_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK

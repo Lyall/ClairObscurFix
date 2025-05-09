@@ -12,15 +12,15 @@
 
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "ABP_Battle_Global_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "IKFootToGround_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
-#include "ABP_Battle_Global_structs.hpp"
-#include "E_BattleLookDirection_structs.hpp"
+#include "E_AiStates_structs.hpp"
+#include "EBattleTurnState_structs.hpp"
 #include "E_HitReact_Anim_Type_structs.hpp"
 #include "E_EnemyIdleState_structs.hpp"
-#include "EBattleTurnState_structs.hpp"
-#include "E_AiStates_structs.hpp"
+#include "E_BattleLookDirection_structs.hpp"
 
 
 namespace SDK
@@ -28,7 +28,7 @@ namespace SDK
 
 // AnimBlueprintGeneratedClass ABP_Battle_Global.ABP_Battle_Global_C
 // 0x5BC0 (0x5F30 - 0x0370)
-class UABP_Battle_Global_C final : public UAnimInstance
+class UABP_Battle_Global_C : public UAnimInstance
 {
 public:
 	uint8                                         Pad_368[0x8];                                      // 0x0368(0x0008)(Fixing Size After Last Property [ Dumper-7 ])

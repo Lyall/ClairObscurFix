@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "UMG_structs.hpp"
-#include "S_jRPG_Enemy_structs.hpp"
 #include "Engine_structs.hpp"
+#include "S_jRPG_Enemy_structs.hpp"
 
 
 namespace SDK::Params

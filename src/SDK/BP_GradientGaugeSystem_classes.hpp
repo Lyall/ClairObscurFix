@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "EAPChangeReason_structs.hpp"
 #include "SandFall_classes.hpp"
 #include "EGradientChangeReason_structs.hpp"
-#include "EAPChangeReason_structs.hpp"
 
 
 namespace SDK

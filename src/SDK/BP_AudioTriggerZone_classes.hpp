@@ -54,25 +54,25 @@ public:
 	class USoundControlBusMix*                    ControlBusMixDeactivate;                           // 0x0328(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_AudioTriggerZone_Box_Entry_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
-	void BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
-	void BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
-	void BndEvt__BP_AudioTriggerZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
-	void BndEvt__BP_AudioTriggerZone_BP_ConditionCheckerComponent_K2Node_ComponentBoundEvent_4_OnConditionChanged__DelegateSignature(bool Condition);
-	void ExecuteUbergraph_BP_AudioTriggerZone(int32 EntryPoint);
-	void GetCustomGameInstance(class UBP_jRPG_GI_Custom_C** CustomGameInstance);
-	void GetPlaybackPercentAmbience3D(const class USoundWave* PlayingSoundWave, const float PlaybackPercent);
-	void GetWorldAudioComponent(class UBP_World_Audio_Component_C** WorldAudioCompRef);
-	void HandleAmbience(class UBP_DataAsset_Ambience_C* DataAsset_Amb);
-	void HandleMusic(const struct FS_InteractiveMusicParameters& InteractiveMusicParameters, float NewMusicFadeIn, float OldMusicFadeOut);
-	void HandleRFX(class UBP_DataAsset_Ambience_C* DataAsset_Amb);
-	void OnBoxInsideBeginOverlap(class UObject* Actor);
-	void OnBoxInsideEndOverlap(class UObject* Actor);
-	void OnBoxOutsideBeginOverlap(class UObject* Actor);
-	void OnBoxOutsideEndOverlap(class UObject* Actor);
-	void ReceiveBeginPlay();
-	void SetTriggerComponentsCollisionEnabled(bool Enabled);
 	void UpdateTriggerComponentsCollision();
+	void SetTriggerComponentsCollisionEnabled(bool Enabled);
+	void ReceiveBeginPlay();
+	void OnBoxOutsideEndOverlap(class UObject* Actor);
+	void OnBoxOutsideBeginOverlap(class UObject* Actor);
+	void OnBoxInsideEndOverlap(class UObject* Actor);
+	void OnBoxInsideBeginOverlap(class UObject* Actor);
+	void HandleRFX(class UBP_DataAsset_Ambience_C* DataAsset_Amb);
+	void HandleMusic(const struct FS_InteractiveMusicParameters& InteractiveMusicParameters, float NewMusicFadeIn, float OldMusicFadeOut);
+	void HandleAmbience(class UBP_DataAsset_Ambience_C* DataAsset_Amb);
+	void GetWorldAudioComponent(class UBP_World_Audio_Component_C** WorldAudioCompRef);
+	void GetPlaybackPercentAmbience3D(const class USoundWave* PlayingSoundWave, const float PlaybackPercent);
+	void GetCustomGameInstance(class UBP_jRPG_GI_Custom_C** CustomGameInstance);
+	void ExecuteUbergraph_BP_AudioTriggerZone(int32 EntryPoint);
+	void BndEvt__BP_AudioTriggerZone_BP_ConditionCheckerComponent_K2Node_ComponentBoundEvent_4_OnConditionChanged__DelegateSignature(bool Condition);
+	void BndEvt__BP_AudioTriggerZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
+	void BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+	void BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
+	void BndEvt__BP_AudioTriggerZone_Box_Entry_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 
 public:
 	static class UClass* StaticClass()

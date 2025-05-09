@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "FPassiveEffect_structs.hpp"
 #include "FPassiveEffectProgression_structs.hpp"
+#include "FPassiveEffect_structs.hpp"
 
 
 namespace SDK

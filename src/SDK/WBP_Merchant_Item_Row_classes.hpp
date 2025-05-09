@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "S_MerchantItemSellData_structs.hpp"
 #include "Engine_structs.hpp"
+#include "S_MerchantItemSellData_structs.hpp"
 #include "EWeaponQuality_structs.hpp"
 #include "CommonUI_classes.hpp"
 #include "UMG_structs.hpp"

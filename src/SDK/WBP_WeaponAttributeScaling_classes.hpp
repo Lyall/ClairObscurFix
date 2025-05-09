@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "CommonUI_classes.hpp"
-#include "EAttributeScalingGrade_structs.hpp"
 #include "Engine_structs.hpp"
-#include "UMG_structs.hpp"
 #include "ECharacterAttribute_structs.hpp"
+#include "UMG_structs.hpp"
+#include "EAttributeScalingGrade_structs.hpp"
+#include "CommonUI_classes.hpp"
 
 
 namespace SDK

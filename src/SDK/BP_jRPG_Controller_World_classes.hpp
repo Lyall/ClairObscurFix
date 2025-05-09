@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
+#include "E_BattleFlowState_structs.hpp"
+#include "SandFall_structs.hpp"
 #include "Engine_structs.hpp"
 #include "ALS_Player_Controller_classes.hpp"
-#include "SandFall_structs.hpp"
-#include "CommonInput_structs.hpp"
 #include "S_CameraOverrideParameters_structs.hpp"
-#include "E_BattleFlowState_structs.hpp"
-#include "E_QuestStatus_structs.hpp"
+#include "CommonInput_structs.hpp"
 #include "EBattleEndResult_structs.hpp"
+#include "E_QuestStatus_structs.hpp"
 #include "E_Characters_structs.hpp"
 #include "EInputAction_structs.hpp"
 #include "EExplorationHealthDamageType_structs.hpp"
@@ -133,6 +133,8 @@ public:
 	void ApplyUserSettings();
 	void AxisInputThreshold(double AxisValue, int32* Value);
 	void BackToTitleMenu();
+	void BndEvt__BP_jRPG_Controller_World_BP_CinematicSystem_K2Node_ComponentBoundEvent_0_OnCinematicRequested__DelegateSignature();
+	void BndEvt__BP_jRPG_Controller_World_BP_CinematicSystem_K2Node_ComponentBoundEvent_1_EventWhenTriggeringCinematic__DelegateSignature();
 	void BndEvt__BP_jRPG_Controller_World_BP_DialogueSystemComponent_K2Node_ComponentBoundEvent_0_OnDialogueFinished__DelegateSignature(class ABP_Dialogue_C* Dialogue);
 	bool CanOpenGameMenu();
 	bool CanOpenPauseMenu();
@@ -252,6 +254,7 @@ public:
 	void SetActorTickPaused(const class AActor*& Actor, const TArray<class AActor*>& AlreadyPausedActors, const TArray<class UActorComponent*>& AlreadyPausedComponents, struct FS_GameplayPauseParameters& PauseParameters);
 	void SetForceFeedbackEnabled(bool Enabled, struct FSF_ReferenceCounterHandle& ForceFeedbackBlocker, const class FString& DebugName);
 	void SetGameplayPaused(const struct FS_GameplayPauseParameters& Parameters, struct FSF_ReferenceCounterHandle& PauseBlocker, const class FString& DebugName);
+	void SetInputModeBattle(bool IsTakingAction);
 	void SetInputModeUI(bool UIModeEnabled, bool ConfigureUI_Navigation);
 	void SetLevelLightingHiddenForGameMenu(bool Hidden);
 	void SetMiniMapVisible(bool Visible);

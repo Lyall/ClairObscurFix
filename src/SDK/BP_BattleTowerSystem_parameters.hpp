@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "S_BattleTowerSaveData_structs.hpp"
-#include "FBattleStartParams_structs.hpp"
+#include "S_Loot_structs.hpp"
 #include "SandFall_structs.hpp"
 #include "Engine_structs.hpp"
-#include "S_BattleTowerStageData_structs.hpp"
+#include "FBattleStartParams_structs.hpp"
 #include "S_BattleRewardParameters_structs.hpp"
-#include "S_Loot_structs.hpp"
+#include "S_BattleTowerStageData_structs.hpp"
+#include "S_BattleTowerSaveData_structs.hpp"
 
 
 namespace SDK::Params

@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
+#include "EInputAction_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "InputCore_structs.hpp"
-#include "EInputAction_structs.hpp"
-#include "EInputType_structs.hpp"
 #include "FInputLayer_structs.hpp"
+#include "EInputType_structs.hpp"
+#include "InputCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 

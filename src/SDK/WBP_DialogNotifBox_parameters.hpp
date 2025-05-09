@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "S_DialogueLine_structs.hpp"
+#include "Engine_structs.hpp"
 #include "E_DialoguesPortraitsType_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "FInWorldDialogue_CharacterProfile_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params

@@ -26,8 +26,8 @@ public:
 	class USafeZone*                              SafeZone;                                          // 0x0380(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_Subtitles(int32 EntryPoint);
 	void OnSubtitleWidgetCreated_BP(class UVerticalBoxSlot* NewSubWidget);
+	void ExecuteUbergraph_WBP_Subtitles(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

@@ -11,11 +11,11 @@
 #include "Basic.hpp"
 
 #include "FPromptActorAttachmentInfo_structs.hpp"
-#include "CoreUObject_structs.hpp"
-#include "FPromptID_structs.hpp"
-#include "SlateCore_structs.hpp"
-#include "Engine_structs.hpp"
 #include "FPromptParams_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "SlateCore_structs.hpp"
+#include "FPromptID_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params

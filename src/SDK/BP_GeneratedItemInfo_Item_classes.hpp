@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "E_jRPG_ItemType_structs.hpp"
 #include "S_jRPG_Item_StaticData_structs.hpp"
 #include "BP_GeneratedItemInfo_Base_classes.hpp"
+#include "E_jRPG_ItemType_structs.hpp"
 
 
 namespace SDK

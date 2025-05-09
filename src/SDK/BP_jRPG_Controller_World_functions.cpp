@@ -89,6 +89,34 @@ void ABP_jRPG_Controller_World_C::BackToTitleMenu()
 }
 
 
+// Function BP_jRPG_Controller_World.BP_jRPG_Controller_World_C.BndEvt__BP_jRPG_Controller_World_BP_CinematicSystem_K2Node_ComponentBoundEvent_0_OnCinematicRequested__DelegateSignature
+// (BlueprintEvent)
+
+void ABP_jRPG_Controller_World_C::BndEvt__BP_jRPG_Controller_World_BP_CinematicSystem_K2Node_ComponentBoundEvent_0_OnCinematicRequested__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_jRPG_Controller_World_C", "BndEvt__BP_jRPG_Controller_World_BP_CinematicSystem_K2Node_ComponentBoundEvent_0_OnCinematicRequested__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_jRPG_Controller_World.BP_jRPG_Controller_World_C.BndEvt__BP_jRPG_Controller_World_BP_CinematicSystem_K2Node_ComponentBoundEvent_1_EventWhenTriggeringCinematic__DelegateSignature
+// (BlueprintEvent)
+
+void ABP_jRPG_Controller_World_C::BndEvt__BP_jRPG_Controller_World_BP_CinematicSystem_K2Node_ComponentBoundEvent_1_EventWhenTriggeringCinematic__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_jRPG_Controller_World_C", "BndEvt__BP_jRPG_Controller_World_BP_CinematicSystem_K2Node_ComponentBoundEvent_1_EventWhenTriggeringCinematic__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_jRPG_Controller_World.BP_jRPG_Controller_World_C.BndEvt__BP_jRPG_Controller_World_BP_DialogueSystemComponent_K2Node_ComponentBoundEvent_0_OnDialogueFinished__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -2359,6 +2387,26 @@ void ABP_jRPG_Controller_World_C::SetGameplayPaused(const struct FS_GameplayPaus
 	UObject::ProcessEvent(Func, &Parms);
 
 	PauseBlocker = std::move(Parms.PauseBlocker);
+}
+
+
+// Function BP_jRPG_Controller_World.BP_jRPG_Controller_World_C.SetInputModeBattle
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsTakingAction                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_jRPG_Controller_World_C::SetInputModeBattle(bool IsTakingAction)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_jRPG_Controller_World_C", "SetInputModeBattle");
+
+	Params::BP_jRPG_Controller_World_C_SetInputModeBattle Parms{};
+
+	Parms.IsTakingAction = IsTakingAction;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

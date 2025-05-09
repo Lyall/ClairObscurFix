@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "ThirdPerson_AnimBP_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "ThirdPerson_AnimBP_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
 
 

@@ -11,13 +11,13 @@
 #include "Basic.hpp"
 
 #include "S_jRPG_OverdriveSource_structs.hpp"
-#include "E_jRPG_ItemSubtype_structs.hpp"
 #include "FCharacterStats_structs.hpp"
 #include "S_jRPG_Character_PortraitData_structs.hpp"
-#include "S_jRPG_NameArray_structs.hpp"
-#include "S_CharacterCustomizationItemData_structs.hpp"
-#include "FCharacterExplorationAudioProfile_structs.hpp"
+#include "E_jRPG_ItemSubtype_structs.hpp"
 #include "E_jRPG_StatType_structs.hpp"
+#include "FCharacterExplorationAudioProfile_structs.hpp"
+#include "S_CharacterCustomizationItemData_structs.hpp"
+#include "S_jRPG_NameArray_structs.hpp"
 #include "Engine_structs.hpp"
 
 

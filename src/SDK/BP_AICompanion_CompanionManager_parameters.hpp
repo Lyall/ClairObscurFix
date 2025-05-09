@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "S_jRPG_CharacterDefinition_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "S_jRPG_CharacterDefinition_structs.hpp"
 #include "S_jRPG_PartySlot_structs.hpp"
 
 

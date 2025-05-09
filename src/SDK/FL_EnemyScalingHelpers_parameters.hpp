@@ -12,11 +12,11 @@
 
 #include "S_EnemyScalingDataLevel_structs.hpp"
 #include "Engine_structs.hpp"
-#include "S_jRPG_Encounter_structs.hpp"
-#include "FLevelDataEntry_structs.hpp"
 #include "S_EnemyScalingMultipliers_structs.hpp"
-#include "S_NewGamePlusParameters_structs.hpp"
 #include "E_jRPG_StatType_structs.hpp"
+#include "S_NewGamePlusParameters_structs.hpp"
+#include "FLevelDataEntry_structs.hpp"
+#include "S_jRPG_Encounter_structs.hpp"
 
 
 namespace SDK::Params
@@ -64,7 +64,7 @@ static_assert(offsetof(FL_EnemyScalingHelpers_C_FindArchetypeEncounterLevelRow, 
 static_assert(offsetof(FL_EnemyScalingHelpers_C_FindArchetypeEncounterLevelRow, CallFunc_Format_ReturnValue) == 0x000170, "Member 'FL_EnemyScalingHelpers_C_FindArchetypeEncounterLevelRow::CallFunc_Format_ReturnValue' has a wrong offset!");
 
 // Function FL_EnemyScalingHelpers.FL_EnemyScalingHelpers_C.ComputeCharacterStats
-// 0x0290 (0x0290 - 0x0000)
+// 0x02C0 (0x02C0 - 0x0000)
 struct FL_EnemyScalingHelpers_C_ComputeCharacterStats final
 {
 public:
@@ -81,55 +81,56 @@ public:
 	double                                        CallFunc_Conv_IntToDouble_ReturnValue_1;           // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_1;      // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Round_ReturnValue;                        // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Round_ReturnValue_1;                      // 0x0124(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue_2;           // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue_3;           // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_2;      // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_3;      // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_4;      // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Round_ReturnValue_2;                      // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Round_ReturnValue_3;                      // 0x0154(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue_4;           // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue_5;           // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_5;      // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue_6;           // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Round_ReturnValue_4;                      // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_17C[0x4];                                      // 0x017C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_6;      // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue_7;           // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Round_ReturnValue_5;                      // 0x0190(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_194[0x4];                                      // 0x0194(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue_8;           // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue_9;           // 0x01A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_7;      // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue_10;          // 0x01B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Round_ReturnValue_6;                      // 0x01B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1BC[0x4];                                      // 0x01BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_8;      // 0x01C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue_11;          // 0x01C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Round_ReturnValue_7;                      // 0x01D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D4[0x4];                                      // 0x01D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue_12;          // 0x01D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue_13;          // 0x01E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_9;      // 0x01E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue_14;          // 0x01F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Round_ReturnValue_8;                      // 0x01F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1FC[0x4];                                      // 0x01FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_10;     // 0x0200(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue_15;          // 0x0208(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Round_ReturnValue_9;                      // 0x0210(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_214[0x4];                                      // 0x0214(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue_16;          // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue_17;          // 0x0220(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_11;     // 0x0228(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Round_ReturnValue_10;                     // 0x0230(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_234[0x4];                                      // 0x0234(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue_18;          // 0x0238(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TMap<E_jRPG_StatType, double>                 K2Node_MakeMap_Map;                                // 0x0240(0x0050)()
+	int64                                         CallFunc_Round64_ReturnValue;                      // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int64                                         CallFunc_Round64_ReturnValue_1;                    // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Conv_Int64ToDouble_ReturnValue;           // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Conv_Int64ToInt_ReturnValue;              // 0x0138(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_13C[0x4];                                      // 0x013C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Conv_IntToDouble_ReturnValue_2;           // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Max_ReturnValue;                          // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14C[0x4];                                      // 0x014C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_2;      // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_3;      // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int64                                         CallFunc_Round64_ReturnValue_2;                    // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_4;      // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Conv_Int64ToInt_ReturnValue_1;            // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_174[0x4];                                      // 0x0174(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int64                                         CallFunc_Round64_ReturnValue_3;                    // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Max_ReturnValue_1;                        // 0x0180(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_184[0x4];                                      // 0x0184(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Conv_Int64ToDouble_ReturnValue_1;         // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Conv_IntToDouble_ReturnValue_3;           // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Conv_IntToDouble_ReturnValue_4;           // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_5;      // 0x01A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_6;      // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int64                                         CallFunc_Round64_ReturnValue_4;                    // 0x01B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int64                                         CallFunc_Round64_ReturnValue_5;                    // 0x01B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Conv_Int64ToDouble_ReturnValue_2;         // 0x01C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Conv_Int64ToDouble_ReturnValue_3;         // 0x01C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Conv_IntToDouble_ReturnValue_5;           // 0x01D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Conv_IntToDouble_ReturnValue_6;           // 0x01D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_7;      // 0x01E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_8;      // 0x01E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int64                                         CallFunc_Round64_ReturnValue_6;                    // 0x01F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int64                                         CallFunc_Round64_ReturnValue_7;                    // 0x01F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Conv_Int64ToDouble_ReturnValue_4;         // 0x0200(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Conv_Int64ToDouble_ReturnValue_5;         // 0x0208(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Conv_IntToDouble_ReturnValue_7;           // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Conv_IntToDouble_ReturnValue_8;           // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_9;      // 0x0220(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_10;     // 0x0228(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int64                                         CallFunc_Round64_ReturnValue_8;                    // 0x0230(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int64                                         CallFunc_Round64_ReturnValue_9;                    // 0x0238(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Conv_Int64ToDouble_ReturnValue_6;         // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Conv_Int64ToDouble_ReturnValue_7;         // 0x0248(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Conv_IntToDouble_ReturnValue_9;           // 0x0250(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_11;     // 0x0258(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int64                                         CallFunc_Round64_ReturnValue_10;                   // 0x0260(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Conv_Int64ToDouble_ReturnValue_8;         // 0x0268(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TMap<E_jRPG_StatType, double>                 K2Node_MakeMap_Map;                                // 0x0270(0x0050)()
 };
 static_assert(alignof(FL_EnemyScalingHelpers_C_ComputeCharacterStats) == 0x000008, "Wrong alignment on FL_EnemyScalingHelpers_C_ComputeCharacterStats");
-static_assert(sizeof(FL_EnemyScalingHelpers_C_ComputeCharacterStats) == 0x000290, "Wrong size on FL_EnemyScalingHelpers_C_ComputeCharacterStats");
+static_assert(sizeof(FL_EnemyScalingHelpers_C_ComputeCharacterStats) == 0x0002C0, "Wrong size on FL_EnemyScalingHelpers_C_ComputeCharacterStats");
 static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, ArchetypeDT) == 0x000000, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::ArchetypeDT' has a wrong offset!");
 static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, EncounterLevel) == 0x000008, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::EncounterLevel' has a wrong offset!");
 static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, StatMultipliers) == 0x000010, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::StatMultipliers' has a wrong offset!");
@@ -142,45 +143,49 @@ static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_
 static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Conv_IntToDouble_ReturnValue_1) == 0x000108, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Conv_IntToDouble_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000110, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Multiply_DoubleDouble_ReturnValue_1) == 0x000118, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Multiply_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Round_ReturnValue) == 0x000120, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Round_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Round_ReturnValue_1) == 0x000124, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Round_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Conv_IntToDouble_ReturnValue_2) == 0x000128, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Conv_IntToDouble_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Conv_IntToDouble_ReturnValue_3) == 0x000130, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Conv_IntToDouble_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Multiply_DoubleDouble_ReturnValue_2) == 0x000138, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Multiply_DoubleDouble_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Multiply_DoubleDouble_ReturnValue_3) == 0x000140, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Multiply_DoubleDouble_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Multiply_DoubleDouble_ReturnValue_4) == 0x000148, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Multiply_DoubleDouble_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Round_ReturnValue_2) == 0x000150, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Round_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Round_ReturnValue_3) == 0x000154, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Round_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Conv_IntToDouble_ReturnValue_4) == 0x000158, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Conv_IntToDouble_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Conv_IntToDouble_ReturnValue_5) == 0x000160, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Conv_IntToDouble_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Multiply_DoubleDouble_ReturnValue_5) == 0x000168, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Multiply_DoubleDouble_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Conv_IntToDouble_ReturnValue_6) == 0x000170, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Conv_IntToDouble_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Round_ReturnValue_4) == 0x000178, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Round_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Multiply_DoubleDouble_ReturnValue_6) == 0x000180, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Multiply_DoubleDouble_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Conv_IntToDouble_ReturnValue_7) == 0x000188, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Conv_IntToDouble_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Round_ReturnValue_5) == 0x000190, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Round_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Conv_IntToDouble_ReturnValue_8) == 0x000198, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Conv_IntToDouble_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Conv_IntToDouble_ReturnValue_9) == 0x0001A0, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Conv_IntToDouble_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Multiply_DoubleDouble_ReturnValue_7) == 0x0001A8, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Multiply_DoubleDouble_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Conv_IntToDouble_ReturnValue_10) == 0x0001B0, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Conv_IntToDouble_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Round_ReturnValue_6) == 0x0001B8, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Round_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Multiply_DoubleDouble_ReturnValue_8) == 0x0001C0, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Multiply_DoubleDouble_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Conv_IntToDouble_ReturnValue_11) == 0x0001C8, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Conv_IntToDouble_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Round_ReturnValue_7) == 0x0001D0, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Round_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Conv_IntToDouble_ReturnValue_12) == 0x0001D8, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Conv_IntToDouble_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Conv_IntToDouble_ReturnValue_13) == 0x0001E0, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Conv_IntToDouble_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Multiply_DoubleDouble_ReturnValue_9) == 0x0001E8, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Multiply_DoubleDouble_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Conv_IntToDouble_ReturnValue_14) == 0x0001F0, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Conv_IntToDouble_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Round_ReturnValue_8) == 0x0001F8, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Round_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Multiply_DoubleDouble_ReturnValue_10) == 0x000200, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Multiply_DoubleDouble_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Conv_IntToDouble_ReturnValue_15) == 0x000208, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Conv_IntToDouble_ReturnValue_15' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Round_ReturnValue_9) == 0x000210, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Round_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Conv_IntToDouble_ReturnValue_16) == 0x000218, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Conv_IntToDouble_ReturnValue_16' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Conv_IntToDouble_ReturnValue_17) == 0x000220, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Conv_IntToDouble_ReturnValue_17' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Multiply_DoubleDouble_ReturnValue_11) == 0x000228, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Multiply_DoubleDouble_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Round_ReturnValue_10) == 0x000230, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Round_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Conv_IntToDouble_ReturnValue_18) == 0x000238, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Conv_IntToDouble_ReturnValue_18' has a wrong offset!");
-static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, K2Node_MakeMap_Map) == 0x000240, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::K2Node_MakeMap_Map' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Round64_ReturnValue) == 0x000120, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Round64_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Round64_ReturnValue_1) == 0x000128, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Round64_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Conv_Int64ToDouble_ReturnValue) == 0x000130, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Conv_Int64ToDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Conv_Int64ToInt_ReturnValue) == 0x000138, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Conv_Int64ToInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Conv_IntToDouble_ReturnValue_2) == 0x000140, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Conv_IntToDouble_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Max_ReturnValue) == 0x000148, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Max_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Multiply_DoubleDouble_ReturnValue_2) == 0x000150, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Multiply_DoubleDouble_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Multiply_DoubleDouble_ReturnValue_3) == 0x000158, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Multiply_DoubleDouble_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Round64_ReturnValue_2) == 0x000160, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Round64_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Multiply_DoubleDouble_ReturnValue_4) == 0x000168, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Multiply_DoubleDouble_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Conv_Int64ToInt_ReturnValue_1) == 0x000170, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Conv_Int64ToInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Round64_ReturnValue_3) == 0x000178, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Round64_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Max_ReturnValue_1) == 0x000180, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Max_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Conv_Int64ToDouble_ReturnValue_1) == 0x000188, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Conv_Int64ToDouble_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Conv_IntToDouble_ReturnValue_3) == 0x000190, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Conv_IntToDouble_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Conv_IntToDouble_ReturnValue_4) == 0x000198, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Conv_IntToDouble_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Multiply_DoubleDouble_ReturnValue_5) == 0x0001A0, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Multiply_DoubleDouble_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Multiply_DoubleDouble_ReturnValue_6) == 0x0001A8, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Multiply_DoubleDouble_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Round64_ReturnValue_4) == 0x0001B0, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Round64_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Round64_ReturnValue_5) == 0x0001B8, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Round64_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Conv_Int64ToDouble_ReturnValue_2) == 0x0001C0, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Conv_Int64ToDouble_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Conv_Int64ToDouble_ReturnValue_3) == 0x0001C8, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Conv_Int64ToDouble_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Conv_IntToDouble_ReturnValue_5) == 0x0001D0, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Conv_IntToDouble_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Conv_IntToDouble_ReturnValue_6) == 0x0001D8, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Conv_IntToDouble_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Multiply_DoubleDouble_ReturnValue_7) == 0x0001E0, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Multiply_DoubleDouble_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Multiply_DoubleDouble_ReturnValue_8) == 0x0001E8, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Multiply_DoubleDouble_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Round64_ReturnValue_6) == 0x0001F0, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Round64_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Round64_ReturnValue_7) == 0x0001F8, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Round64_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Conv_Int64ToDouble_ReturnValue_4) == 0x000200, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Conv_Int64ToDouble_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Conv_Int64ToDouble_ReturnValue_5) == 0x000208, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Conv_Int64ToDouble_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Conv_IntToDouble_ReturnValue_7) == 0x000210, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Conv_IntToDouble_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Conv_IntToDouble_ReturnValue_8) == 0x000218, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Conv_IntToDouble_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Multiply_DoubleDouble_ReturnValue_9) == 0x000220, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Multiply_DoubleDouble_ReturnValue_9' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Multiply_DoubleDouble_ReturnValue_10) == 0x000228, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Multiply_DoubleDouble_ReturnValue_10' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Round64_ReturnValue_8) == 0x000230, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Round64_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Round64_ReturnValue_9) == 0x000238, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Round64_ReturnValue_9' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Conv_Int64ToDouble_ReturnValue_6) == 0x000240, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Conv_Int64ToDouble_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Conv_Int64ToDouble_ReturnValue_7) == 0x000248, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Conv_Int64ToDouble_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Conv_IntToDouble_ReturnValue_9) == 0x000250, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Conv_IntToDouble_ReturnValue_9' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Multiply_DoubleDouble_ReturnValue_11) == 0x000258, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Multiply_DoubleDouble_ReturnValue_11' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Round64_ReturnValue_10) == 0x000260, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Round64_ReturnValue_10' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, CallFunc_Conv_Int64ToDouble_ReturnValue_8) == 0x000268, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::CallFunc_Conv_Int64ToDouble_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(FL_EnemyScalingHelpers_C_ComputeCharacterStats, K2Node_MakeMap_Map) == 0x000270, "Member 'FL_EnemyScalingHelpers_C_ComputeCharacterStats::K2Node_MakeMap_Map' has a wrong offset!");
 
 // Function FL_EnemyScalingHelpers.FL_EnemyScalingHelpers_C.GetEncounterLevelFromMap
 // 0x02B0 (0x02B0 - 0x0000)

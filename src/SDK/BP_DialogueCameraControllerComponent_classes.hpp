@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "E_NPC_SpolightTypes_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "CoreUObject_structs.hpp"
-#include "E_NPC_SpolightTypes_structs.hpp"
 
 
 namespace SDK

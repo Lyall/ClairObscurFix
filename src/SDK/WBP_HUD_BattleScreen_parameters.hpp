@@ -12,9 +12,9 @@
 
 #include "CoreUObject_structs.hpp"
 #include "Slate_structs.hpp"
+#include "EBattleTurnState_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "UMG_structs.hpp"
-#include "EBattleTurnState_structs.hpp"
 #include "SandFall_structs.hpp"
 
 

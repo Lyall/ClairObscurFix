@@ -19,23 +19,27 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_CinematicTransition.WBP_CinematicTransition_C
-// 0x0048 (0x0328 - 0x02E0)
+// 0x0068 (0x0348 - 0x02E0)
 class UWBP_CinematicTransition_C final : public UUserWidget
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02E0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UWidgetAnimation*                       Anim_BlackBarAppear;                               // 0x02E8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class UImage*                                 BottomBlackBar;                                    // 0x02F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBoxBottom;                                     // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBoxTop;                                        // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 TopBlackBar;                                       // 0x0308(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	double                                        ScreenRatio;                                       // 0x0310(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        AnimationAlpha;                                    // 0x0318(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash)
-	EUMGSequencePlayMode                          Play_Mode;                                         // 0x0320(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	class UImage*                                 LeftBlackBar;                                      // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 RightBlackbar;                                     // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBoxBottom;                                     // 0x0308(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBoxLeft;                                       // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBoxRight;                                      // 0x0318(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBoxTop;                                        // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 TopBlackBar;                                       // 0x0328(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	double                                        ScreenRatio;                                       // 0x0330(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        AnimationAlpha;                                    // 0x0338(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash)
+	EUMGSequencePlayMode                          Play_Mode;                                         // 0x0340(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
 	void AnimateBlackBars();
-	double ComputeBlackBarSize();
+	double ComputeBlackBarSize(bool* bIsLetterBox);
 	void Construct();
 	void ExecuteUbergraph_WBP_CinematicTransition(int32 EntryPoint);
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
@@ -52,16 +56,20 @@ public:
 	}
 };
 static_assert(alignof(UWBP_CinematicTransition_C) == 0x000008, "Wrong alignment on UWBP_CinematicTransition_C");
-static_assert(sizeof(UWBP_CinematicTransition_C) == 0x000328, "Wrong size on UWBP_CinematicTransition_C");
+static_assert(sizeof(UWBP_CinematicTransition_C) == 0x000348, "Wrong size on UWBP_CinematicTransition_C");
 static_assert(offsetof(UWBP_CinematicTransition_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_CinematicTransition_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWBP_CinematicTransition_C, Anim_BlackBarAppear) == 0x0002E8, "Member 'UWBP_CinematicTransition_C::Anim_BlackBarAppear' has a wrong offset!");
 static_assert(offsetof(UWBP_CinematicTransition_C, BottomBlackBar) == 0x0002F0, "Member 'UWBP_CinematicTransition_C::BottomBlackBar' has a wrong offset!");
-static_assert(offsetof(UWBP_CinematicTransition_C, SizeBoxBottom) == 0x0002F8, "Member 'UWBP_CinematicTransition_C::SizeBoxBottom' has a wrong offset!");
-static_assert(offsetof(UWBP_CinematicTransition_C, SizeBoxTop) == 0x000300, "Member 'UWBP_CinematicTransition_C::SizeBoxTop' has a wrong offset!");
-static_assert(offsetof(UWBP_CinematicTransition_C, TopBlackBar) == 0x000308, "Member 'UWBP_CinematicTransition_C::TopBlackBar' has a wrong offset!");
-static_assert(offsetof(UWBP_CinematicTransition_C, ScreenRatio) == 0x000310, "Member 'UWBP_CinematicTransition_C::ScreenRatio' has a wrong offset!");
-static_assert(offsetof(UWBP_CinematicTransition_C, AnimationAlpha) == 0x000318, "Member 'UWBP_CinematicTransition_C::AnimationAlpha' has a wrong offset!");
-static_assert(offsetof(UWBP_CinematicTransition_C, Play_Mode) == 0x000320, "Member 'UWBP_CinematicTransition_C::Play_Mode' has a wrong offset!");
+static_assert(offsetof(UWBP_CinematicTransition_C, LeftBlackBar) == 0x0002F8, "Member 'UWBP_CinematicTransition_C::LeftBlackBar' has a wrong offset!");
+static_assert(offsetof(UWBP_CinematicTransition_C, RightBlackbar) == 0x000300, "Member 'UWBP_CinematicTransition_C::RightBlackbar' has a wrong offset!");
+static_assert(offsetof(UWBP_CinematicTransition_C, SizeBoxBottom) == 0x000308, "Member 'UWBP_CinematicTransition_C::SizeBoxBottom' has a wrong offset!");
+static_assert(offsetof(UWBP_CinematicTransition_C, SizeBoxLeft) == 0x000310, "Member 'UWBP_CinematicTransition_C::SizeBoxLeft' has a wrong offset!");
+static_assert(offsetof(UWBP_CinematicTransition_C, SizeBoxRight) == 0x000318, "Member 'UWBP_CinematicTransition_C::SizeBoxRight' has a wrong offset!");
+static_assert(offsetof(UWBP_CinematicTransition_C, SizeBoxTop) == 0x000320, "Member 'UWBP_CinematicTransition_C::SizeBoxTop' has a wrong offset!");
+static_assert(offsetof(UWBP_CinematicTransition_C, TopBlackBar) == 0x000328, "Member 'UWBP_CinematicTransition_C::TopBlackBar' has a wrong offset!");
+static_assert(offsetof(UWBP_CinematicTransition_C, ScreenRatio) == 0x000330, "Member 'UWBP_CinematicTransition_C::ScreenRatio' has a wrong offset!");
+static_assert(offsetof(UWBP_CinematicTransition_C, AnimationAlpha) == 0x000338, "Member 'UWBP_CinematicTransition_C::AnimationAlpha' has a wrong offset!");
+static_assert(offsetof(UWBP_CinematicTransition_C, Play_Mode) == 0x000340, "Member 'UWBP_CinematicTransition_C::Play_Mode' has a wrong offset!");
 
 }
 

@@ -13,12 +13,12 @@
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "FPromptParams_structs.hpp"
-#include "E_AiStates_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "FSoundEvent_structs.hpp"
-#include "S_MusicParameters_structs.hpp"
 #include "S_RangedAmbienceParameters_structs.hpp"
 #include "E_EnemyIdleState_structs.hpp"
+#include "S_MusicParameters_structs.hpp"
+#include "E_AiStates_structs.hpp"
 #include "EInWorldAudioContainerComponents_structs.hpp"
 #include "EInputDevices_structs.hpp"
 #include "E_jRPG_EngageTypes_structs.hpp"
@@ -30,7 +30,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_jRPG_Enemy_World_Base_Seamless.BP_jRPG_Enemy_World_Base_Seamless_C
 // 0x0680 (0x0CF0 - 0x0670)
-class ABP_jRPG_Enemy_World_Base_Seamless_C final : public ACharacter
+class ABP_jRPG_Enemy_World_Base_Seamless_C : public ACharacter
 {
 public:
 	uint8                                         Pad_668[0x8];                                      // 0x0668(0x0008)(Fixing Size After Last Property [ Dumper-7 ])

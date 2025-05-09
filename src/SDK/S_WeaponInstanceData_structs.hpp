@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "S_WeaponDefinition_structs.hpp"
-#include "S_WeaponInstanceHandle_structs.hpp"
 #include "EWeaponQuality_structs.hpp"
+#include "S_WeaponInstanceHandle_structs.hpp"
 
 
 namespace SDK

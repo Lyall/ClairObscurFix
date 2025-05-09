@@ -12,11 +12,11 @@
 
 #include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "EBattleEndResult_structs.hpp"
-#include "ECharacterTeamSelector_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "FRoutedEventHandle_structs.hpp"
+#include "EBattleEndResult_structs.hpp"
 #include "UMG_structs.hpp"
+#include "FRoutedEventHandle_structs.hpp"
+#include "ECharacterTeamSelector_structs.hpp"
 
 
 namespace SDK::Params

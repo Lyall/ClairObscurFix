@@ -12,8 +12,8 @@
 
 #include "UMG_structs.hpp"
 #include "EWeaponQuality_structs.hpp"
-#include "Engine_structs.hpp"
 #include "S_MerchantItemSellData_structs.hpp"
+#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 

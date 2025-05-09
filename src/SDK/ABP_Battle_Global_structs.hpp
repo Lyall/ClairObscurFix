@@ -19,7 +19,7 @@ namespace SDK
 
 // ScriptStruct ABP_Battle_Global.ABP_Battle_Global_C.AnimBlueprintGeneratedConstantData
 // 0x3B6F (0x3B70 - 0x0001)
-struct ABP_Battle_Global::FAnimBlueprintGeneratedConstantData final : public FAnimBlueprintConstantData
+struct ABP_Battle_Global::FAnimBlueprintGeneratedConstantData : public FAnimBlueprintConstantData
 {
 public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])

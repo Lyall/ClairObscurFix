@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
+#include "ECreditsPositioning_structs.hpp"
 #include "Engine_structs.hpp"
-#include "Slate_structs.hpp"
 #include "FCreditsParagraph_structs.hpp"
 #include "UMG_classes.hpp"
-#include "ECreditsPositioning_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "Slate_structs.hpp"
 
 
 namespace SDK

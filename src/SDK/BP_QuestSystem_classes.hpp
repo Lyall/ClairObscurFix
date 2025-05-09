@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "SandFall_structs.hpp"
-#include "SandFall_classes.hpp"
 #include "S_QuestStatusData_structs.hpp"
 #include "E_QuestStatus_structs.hpp"
+#include "SandFall_structs.hpp"
+#include "SandFall_classes.hpp"
 
 
 namespace SDK

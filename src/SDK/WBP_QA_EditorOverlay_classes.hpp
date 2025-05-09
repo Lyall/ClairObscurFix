@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "EBattleEndResult_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
-#include "EBattleEndResult_structs.hpp"
 #include "ECharacterTeamSelector_structs.hpp"
 
 

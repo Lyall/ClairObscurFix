@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "E_jRPG_ItemSubtype_structs.hpp"
+#include "S_LootContext_structs.hpp"
+#include "E_jRPG_ItemType_structs.hpp"
 #include "SandFall_classes.hpp"
 #include "Engine_structs.hpp"
 #include "E_CustomizationItemType_structs.hpp"
-#include "S_LootContext_structs.hpp"
-#include "E_jRPG_ItemType_structs.hpp"
 #include "E_jRPG_StatType_structs.hpp"
+#include "E_jRPG_ItemSubtype_structs.hpp"
 
 
 namespace SDK

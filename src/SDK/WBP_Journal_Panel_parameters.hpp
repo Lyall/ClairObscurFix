@@ -11,6 +11,7 @@
 #include "Basic.hpp"
 
 #include "SandFall_structs.hpp"
+#include "Engine_structs.hpp"
 #include "S_jRPG_Item_StaticData_structs.hpp"
 #include "CommonInput_structs.hpp"
 #include "CoreUObject_structs.hpp"
@@ -18,6 +19,40 @@
 
 namespace SDK::Params
 {
+
+// Function WBP_Journal_Panel.WBP_Journal_Panel_C.IsAnyItemPlaying
+// 0x0048 (0x0048 - 0x0000)
+struct WBP_Journal_Panel_C_IsAnyItemPlaying final
+{
+public:
+	bool                                          IsAnyItemPlaying_0;                                // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UObject*>                        CallFunc_GetListItems_ReturnValue;                 // 0x0010(0x0010)(ConstParm, ReferenceParm)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                CallFunc_Array_Get_Item;                           // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UBP_JournalViewItem_C*                  K2Node_DynamicCast_AsBP_Journal_View_Item;         // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsPlaying_bIsPlaying;                     // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Journal_Panel_C_IsAnyItemPlaying) == 0x000008, "Wrong alignment on WBP_Journal_Panel_C_IsAnyItemPlaying");
+static_assert(sizeof(WBP_Journal_Panel_C_IsAnyItemPlaying) == 0x000048, "Wrong size on WBP_Journal_Panel_C_IsAnyItemPlaying");
+static_assert(offsetof(WBP_Journal_Panel_C_IsAnyItemPlaying, IsAnyItemPlaying_0) == 0x000000, "Member 'WBP_Journal_Panel_C_IsAnyItemPlaying::IsAnyItemPlaying_0' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_IsAnyItemPlaying, Temp_int_Array_Index_Variable) == 0x000004, "Member 'WBP_Journal_Panel_C_IsAnyItemPlaying::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_IsAnyItemPlaying, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'WBP_Journal_Panel_C_IsAnyItemPlaying::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_IsAnyItemPlaying, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'WBP_Journal_Panel_C_IsAnyItemPlaying::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_IsAnyItemPlaying, CallFunc_GetListItems_ReturnValue) == 0x000010, "Member 'WBP_Journal_Panel_C_IsAnyItemPlaying::CallFunc_GetListItems_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_IsAnyItemPlaying, CallFunc_Array_Length_ReturnValue) == 0x000020, "Member 'WBP_Journal_Panel_C_IsAnyItemPlaying::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_IsAnyItemPlaying, CallFunc_Array_Get_Item) == 0x000028, "Member 'WBP_Journal_Panel_C_IsAnyItemPlaying::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_IsAnyItemPlaying, CallFunc_Less_IntInt_ReturnValue) == 0x000030, "Member 'WBP_Journal_Panel_C_IsAnyItemPlaying::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_IsAnyItemPlaying, K2Node_DynamicCast_AsBP_Journal_View_Item) == 0x000038, "Member 'WBP_Journal_Panel_C_IsAnyItemPlaying::K2Node_DynamicCast_AsBP_Journal_View_Item' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_IsAnyItemPlaying, K2Node_DynamicCast_bSuccess) == 0x000040, "Member 'WBP_Journal_Panel_C_IsAnyItemPlaying::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_IsAnyItemPlaying, CallFunc_IsPlaying_bIsPlaying) == 0x000041, "Member 'WBP_Journal_Panel_C_IsAnyItemPlaying::CallFunc_IsPlaying_bIsPlaying' has a wrong offset!");
 
 // Function WBP_Journal_Panel.WBP_Journal_Panel_C.GetActionBar
 // 0x0020 (0x0020 - 0x0000)
@@ -37,60 +72,65 @@ static_assert(offsetof(WBP_Journal_Panel_C_GetActionBar, CallFunc_FindParentWidg
 static_assert(offsetof(WBP_Journal_Panel_C_GetActionBar, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'WBP_Journal_Panel_C_GetActionBar::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function WBP_Journal_Panel.WBP_Journal_Panel_C.UnlockJournalItem
-// 0x01A8 (0x01A8 - 0x0000)
+// 0x01C8 (0x01C8 - 0x0000)
 struct WBP_Journal_Panel_C_UnlockJournalItem final
 {
 public:
 	struct FItemDataTableRowHandle                UnlockedJournal;                                   // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	bool                                          localJournalFound;                                 // 0x0010(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_True_if_break_was_hit_Variable;          // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_13[0x5];                                       // 0x0013(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FS_jRPG_Item_StaticData                CallFunc_GetDataTableRowFromName_OutRow;           // 0x0018(0x0130)(ContainsInstancedReference, HasGetValueTypeHash)
-	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0149(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14A[0x2];                                      // 0x014A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x014C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0154(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_True_if_break_was_hit_Variable;          // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FS_jRPG_Item_StaticData                CallFunc_GetDataTableRowFromName_OutRow;           // 0x0020(0x0130)(ContainsInstancedReference, HasGetValueTypeHash)
+	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0151(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0152(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_153[0x5];                                      // 0x0153(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UBP_JournalViewItem_C*                  CallFunc_SpawnObject_ReturnValue;                  // 0x0158(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UAC_jRPG_InventoryManager_C*            CallFunc_GetInventoryManager_ReturnValue;          // 0x0160(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TArray<class UObject*>                        CallFunc_GetListItems_ReturnValue;                 // 0x0168(0x0010)(ConstParm, ReferenceParm)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_17C[0x4];                                      // 0x017C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                CallFunc_Array_Get_Item;                           // 0x0180(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_189[0x7];                                      // 0x0189(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UBP_JournalViewItem_C*                  K2Node_DynamicCast_AsBP_Journal_View_Item;         // 0x0190(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0199(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19A[0x2];                                      // 0x019A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   CallFunc_GetJournalHardcodedName_Item_HardcodedName; // 0x019C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x01A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0160(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0170(0x0008)(NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x017C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAC_jRPG_InventoryManager_C*            CallFunc_GetInventoryManager_ReturnValue;          // 0x0180(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TArray<class UObject*>                        CallFunc_GetListItems_ReturnValue;                 // 0x0188(0x0010)(ConstParm, ReferenceParm)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19C[0x4];                                      // 0x019C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                CallFunc_Array_Get_Item;                           // 0x01A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x01A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1A9[0x7];                                      // 0x01A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UBP_JournalViewItem_C*                  K2Node_DynamicCast_AsBP_Journal_View_Item;         // 0x01B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x01B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x01B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1BA[0x2];                                      // 0x01BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   CallFunc_GetJournalHardcodedName_Item_HardcodedName; // 0x01BC(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x01C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_Journal_Panel_C_UnlockJournalItem) == 0x000008, "Wrong alignment on WBP_Journal_Panel_C_UnlockJournalItem");
-static_assert(sizeof(WBP_Journal_Panel_C_UnlockJournalItem) == 0x0001A8, "Wrong size on WBP_Journal_Panel_C_UnlockJournalItem");
+static_assert(sizeof(WBP_Journal_Panel_C_UnlockJournalItem) == 0x0001C8, "Wrong size on WBP_Journal_Panel_C_UnlockJournalItem");
 static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, UnlockedJournal) == 0x000000, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::UnlockedJournal' has a wrong offset!");
 static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, localJournalFound) == 0x000010, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::localJournalFound' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, Temp_bool_True_if_break_was_hit_Variable) == 0x000011, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, CallFunc_Not_PreBool_ReturnValue) == 0x000012, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, CallFunc_GetDataTableRowFromName_OutRow) == 0x000018, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000148, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, CallFunc_IsValid_ReturnValue) == 0x000149, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, Temp_int_Array_Index_Variable) == 0x00014C, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, Temp_int_Loop_Counter_Variable) == 0x000150, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, CallFunc_Add_IntInt_ReturnValue) == 0x000154, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, Temp_int_Array_Index_Variable) == 0x000014, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, Temp_bool_True_if_break_was_hit_Variable) == 0x000018, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, CallFunc_GetDataTableRowFromName_OutRow) == 0x000020, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000150, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, CallFunc_Not_PreBool_ReturnValue) == 0x000151, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, CallFunc_IsValid_ReturnValue) == 0x000152, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, CallFunc_SpawnObject_ReturnValue) == 0x000158, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::CallFunc_SpawnObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, CallFunc_GetInventoryManager_ReturnValue) == 0x000160, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::CallFunc_GetInventoryManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, CallFunc_GetListItems_ReturnValue) == 0x000168, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::CallFunc_GetListItems_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, CallFunc_Array_Length_ReturnValue) == 0x000178, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, CallFunc_Array_Get_Item) == 0x000180, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, CallFunc_Less_IntInt_ReturnValue) == 0x000188, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, K2Node_DynamicCast_AsBP_Journal_View_Item) == 0x000190, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::K2Node_DynamicCast_AsBP_Journal_View_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, K2Node_DynamicCast_bSuccess) == 0x000198, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, CallFunc_BooleanAND_ReturnValue) == 0x000199, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, CallFunc_GetJournalHardcodedName_Item_HardcodedName) == 0x00019C, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::CallFunc_GetJournalHardcodedName_Item_HardcodedName' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, CallFunc_EqualEqual_NameName_ReturnValue) == 0x0001A4, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, K2Node_CreateDelegate_OutputDelegate) == 0x000160, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000170, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, Temp_int_Loop_Counter_Variable) == 0x000178, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, CallFunc_Add_IntInt_ReturnValue) == 0x00017C, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, CallFunc_GetInventoryManager_ReturnValue) == 0x000180, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::CallFunc_GetInventoryManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, CallFunc_GetListItems_ReturnValue) == 0x000188, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::CallFunc_GetListItems_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, CallFunc_Array_Length_ReturnValue) == 0x000198, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, CallFunc_Array_Get_Item) == 0x0001A0, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, CallFunc_Less_IntInt_ReturnValue) == 0x0001A8, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, K2Node_DynamicCast_AsBP_Journal_View_Item) == 0x0001B0, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::K2Node_DynamicCast_AsBP_Journal_View_Item' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, K2Node_DynamicCast_bSuccess) == 0x0001B8, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, CallFunc_BooleanAND_ReturnValue) == 0x0001B9, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, CallFunc_GetJournalHardcodedName_Item_HardcodedName) == 0x0001BC, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::CallFunc_GetJournalHardcodedName_Item_HardcodedName' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_UnlockJournalItem, CallFunc_EqualEqual_NameName_ReturnValue) == 0x0001C4, "Member 'WBP_Journal_Panel_C_UnlockJournalItem::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
 
 // Function WBP_Journal_Panel.WBP_Journal_Panel_C.BndEvt__WBP_Journal_Panel_WBP_CommonBoundActionButton_Back_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -161,37 +201,40 @@ static_assert(sizeof(WBP_Journal_Panel_C_RebuildActionBarButtons) == 0x000008, "
 static_assert(offsetof(WBP_Journal_Panel_C_RebuildActionBarButtons, ActionBarContainerWidget) == 0x000000, "Member 'WBP_Journal_Panel_C_RebuildActionBarButtons::ActionBarContainerWidget' has a wrong offset!");
 
 // Function WBP_Journal_Panel.WBP_Journal_Panel_C.BndEvt__WBP_Journal_Panel_WBP_JournalEntriesList_K2Node_ComponentBoundEvent_3_OnJournalItemClicked__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct WBP_Journal_Panel_C_BndEvt__WBP_Journal_Panel_WBP_JournalEntriesList_K2Node_ComponentBoundEvent_3_OnJournalItemClicked__DelegateSignature final
 {
 public:
-	bool                                          IsSelected;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UBP_JournalViewItem_C*                  JournalViewItem;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsSelected;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Journal_Panel_C_BndEvt__WBP_Journal_Panel_WBP_JournalEntriesList_K2Node_ComponentBoundEvent_3_OnJournalItemClicked__DelegateSignature) == 0x000001, "Wrong alignment on WBP_Journal_Panel_C_BndEvt__WBP_Journal_Panel_WBP_JournalEntriesList_K2Node_ComponentBoundEvent_3_OnJournalItemClicked__DelegateSignature");
-static_assert(sizeof(WBP_Journal_Panel_C_BndEvt__WBP_Journal_Panel_WBP_JournalEntriesList_K2Node_ComponentBoundEvent_3_OnJournalItemClicked__DelegateSignature) == 0x000001, "Wrong size on WBP_Journal_Panel_C_BndEvt__WBP_Journal_Panel_WBP_JournalEntriesList_K2Node_ComponentBoundEvent_3_OnJournalItemClicked__DelegateSignature");
-static_assert(offsetof(WBP_Journal_Panel_C_BndEvt__WBP_Journal_Panel_WBP_JournalEntriesList_K2Node_ComponentBoundEvent_3_OnJournalItemClicked__DelegateSignature, IsSelected) == 0x000000, "Member 'WBP_Journal_Panel_C_BndEvt__WBP_Journal_Panel_WBP_JournalEntriesList_K2Node_ComponentBoundEvent_3_OnJournalItemClicked__DelegateSignature::IsSelected' has a wrong offset!");
+static_assert(alignof(WBP_Journal_Panel_C_BndEvt__WBP_Journal_Panel_WBP_JournalEntriesList_K2Node_ComponentBoundEvent_3_OnJournalItemClicked__DelegateSignature) == 0x000008, "Wrong alignment on WBP_Journal_Panel_C_BndEvt__WBP_Journal_Panel_WBP_JournalEntriesList_K2Node_ComponentBoundEvent_3_OnJournalItemClicked__DelegateSignature");
+static_assert(sizeof(WBP_Journal_Panel_C_BndEvt__WBP_Journal_Panel_WBP_JournalEntriesList_K2Node_ComponentBoundEvent_3_OnJournalItemClicked__DelegateSignature) == 0x000010, "Wrong size on WBP_Journal_Panel_C_BndEvt__WBP_Journal_Panel_WBP_JournalEntriesList_K2Node_ComponentBoundEvent_3_OnJournalItemClicked__DelegateSignature");
+static_assert(offsetof(WBP_Journal_Panel_C_BndEvt__WBP_Journal_Panel_WBP_JournalEntriesList_K2Node_ComponentBoundEvent_3_OnJournalItemClicked__DelegateSignature, JournalViewItem) == 0x000000, "Member 'WBP_Journal_Panel_C_BndEvt__WBP_Journal_Panel_WBP_JournalEntriesList_K2Node_ComponentBoundEvent_3_OnJournalItemClicked__DelegateSignature::JournalViewItem' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_BndEvt__WBP_Journal_Panel_WBP_JournalEntriesList_K2Node_ComponentBoundEvent_3_OnJournalItemClicked__DelegateSignature, IsSelected) == 0x000008, "Member 'WBP_Journal_Panel_C_BndEvt__WBP_Journal_Panel_WBP_JournalEntriesList_K2Node_ComponentBoundEvent_3_OnJournalItemClicked__DelegateSignature::IsSelected' has a wrong offset!");
 
 // Function WBP_Journal_Panel.WBP_Journal_Panel_C.ExecuteUbergraph_WBP_Journal_Panel
-// 0x01E8 (0x01E8 - 0x0000)
+// 0x0268 (0x0268 - 0x0000)
 struct WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UWBP_CommonActionBarContainer_C* ActionBarContainerWidget)> K2Node_CreateDelegate_OutputDelegate; // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(ECommonInputType bNewInputType)> K2Node_CreateDelegate_OutputDelegate_1;          // 0x0014(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonInputSubsystem*                  CallFunc_GetLocalPlayerSubsystem_ReturnValue;      // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UBP_JournalViewItem_C*                  K2Node_ComponentBoundEvent_JournalViewItem_1;      // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_IsSelected_1;           // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TSoftObjectPtr<class USoundBase>              CallFunc_GetJournalVoiceOver_VoiceOver;            // 0x0048(0x0028)(HasGetValueTypeHash)
-	class FName                                   CallFunc_GetJournalLevelName_AssociatedLevel;      // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue;   // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsOwned_IsOwned;                          // 0x007A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UBP_JournalViewItem_C*                  K2Node_ComponentBoundEvent_JournalViewItem_2;      // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_IsSelected_1;           // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftObjectPtr<class USoundBase>              CallFunc_GetJournalVoiceOver_VoiceOver;            // 0x0018(0x0028)(HasGetValueTypeHash)
+	class FName                                   CallFunc_GetJournalLevelName_AssociatedLevel;      // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue;   // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftObjectPtr<class USoundBase>              CallFunc_GetJournalVoiceOver_VoiceOver_1;          // 0x0050(0x0028)(HasGetValueTypeHash)
+	bool                                          CallFunc_IsOwned_IsOwned;                          // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue_1; // 0x0079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x007A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x007B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_IsOwned_IsOwned_1;                        // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x007D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7E[0x2];                                       // 0x007E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector2D                              CallFunc_GetDesiredSize_ReturnValue;               // 0x0080(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_BreakVector2D_X;                          // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_BreakVector2D_Y;                          // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -199,116 +242,151 @@ public:
 	bool                                          CallFunc_GreaterEqual_DoubleDouble_ReturnValue;    // 0x00A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_A5[0x3];                                       // 0x00A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetScrollOffset_ReturnValue;              // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_AC[0x4];                                       // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonInputSubsystem*                  CallFunc_GetLocalPlayerSubsystem_ReturnValue_1;    // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsInputMethodActive_ReturnValue;          // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B9[0x3];                                       // 0x00B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_InputAxisEvent_AxisValue;                   // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_FClamp_ReturnValue;                       // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECommonInputType                              K2Node_CustomEvent_bNewInputType;                  // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetIsEnabled_ReturnValue;                 // 0x00E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x00E2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E3[0x1];                                       // 0x00E3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x00E4(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F4[0x4];                                       // 0x00F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UBP_JournalViewItem_C*                  K2Node_ComponentBoundEvent_JournalViewItem;        // 0x00F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TSoftObjectPtr<class USoundBase>              CallFunc_GetJournalVoiceOver_VoiceOver_1;          // 0x0100(0x0028)(HasGetValueTypeHash)
-	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue_1; // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_129[0x3];                                      // 0x0129(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   CallFunc_GetJournalLevelName_AssociatedLevel_1;    // 0x012C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0134(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_135[0x3];                                      // 0x0135(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable;                                // 0x0138(0x0010)()
-	class FText                                   Temp_text_Variable_1;                              // 0x0148(0x0010)()
-	bool                                          Temp_bool_Variable;                                // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_InputAxisEvent_AxisValue;                   // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_FClamp_ReturnValue;                       // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetIsEnabled_ReturnValue;                 // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C9[0x7];                                       // 0x00C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x00D0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	ECommonInputType                              K2Node_CustomEvent_bNewInputType;                  // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x00D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_DA[0x6];                                       // 0x00DA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UBP_JournalViewItem_C*                  K2Node_ComponentBoundEvent_JournalViewItem_1;      // 0x00E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TSoftObjectPtr<class USoundBase>              CallFunc_GetJournalVoiceOver_VoiceOver_2;          // 0x00E8(0x0028)(HasGetValueTypeHash)
+	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue_2; // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_111[0x3];                                      // 0x0111(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   CallFunc_GetJournalLevelName_AssociatedLevel_1;    // 0x0114(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x011C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11D[0x3];                                      // 0x011D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0120(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UCommonInputSubsystem*                  CallFunc_GetLocalPlayerSubsystem_ReturnValue;      // 0x0128(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWBP_CommonActionBarContainer_C*        K2Node_CustomEvent_ActionBarContainerWidget;       // 0x0130(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_CommonActionBarContainer_C*        CallFunc_GetActionBar_WBP_CommonActionBarContainer; // 0x0138(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_CommonBoundActionButton_C*         CallFunc_FindActionButtonFromButton_CommonButtonBase; // 0x0140(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0149(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetIsEnabled_ReturnValue_1;               // 0x014A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14B[0x5];                                      // 0x014B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_CommonActionBarContainer_C*        CallFunc_GetActionBar_WBP_CommonActionBarContainer_1; // 0x0150(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_159[0x7];                                      // 0x0159(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_CommonActionBarContainer_C*        K2Node_CustomEvent_ActionBarContainerWidget;       // 0x0160(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_CommonActionBarContainer_C*        CallFunc_GetActionBar_WBP_CommonActionBarContainer; // 0x0168(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_CommonBoundActionButton_C*         CallFunc_FindActionButtonFromButton_CommonButtonBase; // 0x0170(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0179(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetIsEnabled_ReturnValue_1;               // 0x017A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_17B[0x5];                                      // 0x017B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_CommonActionBarContainer_C*        CallFunc_GetActionBar_WBP_CommonActionBarContainer_1; // 0x0180(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_IsSelected;             // 0x0189(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_18A[0x6];                                      // 0x018A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   K2Node_Select_Default;                             // 0x0190(0x0010)()
-	class UWBP_CommonActionBarContainer_C*        CallFunc_GetActionBar_WBP_CommonActionBarContainer_2; // 0x01A0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x01A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1A9[0x7];                                      // 0x01A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result;    // 0x01B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue; // 0x01B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_6;                    // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C1[0x7];                                      // 0x01C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_FClamp_Max_ImplicitCast;                  // 0x01C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Add_DoubleDouble_A_ImplicitCast;          // 0x01D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_A_ImplicitCast;     // 0x01D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScrollOffset_NewScrollOffset_ImplicitCast; // 0x01E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UBP_JournalViewItem_C*                  K2Node_ComponentBoundEvent_JournalViewItem;        // 0x0160(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_IsSelected;             // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_169[0x7];                                      // 0x0169(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_CommonActionBarContainer_C*        CallFunc_GetActionBar_WBP_CommonActionBarContainer_2; // 0x0170(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_179[0x7];                                      // 0x0179(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftObjectPtr<class USoundBase>              CallFunc_GetJournalVoiceOver_VoiceOver_3;          // 0x0180(0x0028)(HasGetValueTypeHash)
+	class FName                                   CallFunc_GetJournalLevelName_AssociatedLevel_2;    // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue_3; // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsOwned_IsOwned_2;                        // 0x01B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_6;                    // 0x01B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x01B3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(ECommonInputType bNewInputType)> K2Node_CreateDelegate_OutputDelegate;            // 0x01B4(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsInGamepadOrKeyboardNavigationMode_ReturnValue; // 0x01C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsInGamepadOrKeyboardNavigationMode_ReturnValue_1; // 0x01C5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_3;                 // 0x01C6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsAnyItemPlaying_IsAnyItemPlaying;        // 0x01C7(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x01C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C9[0x7];                                      // 0x01C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonInputSubsystem*                  CallFunc_GetLocalPlayerSubsystem_ReturnValue_1;    // 0x01D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsInputMethodActive_ReturnValue;          // 0x01D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D9[0x3];                                      // 0x01D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x01DC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x01EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1ED[0x3];                                      // 0x01ED(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x01F0(0x0008)(NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsInGamepadOrKeyboardNavigationMode_ReturnValue_2; // 0x01F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_2;                // 0x01F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1FA[0x6];                                      // 0x01FA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Temp_text_Variable;                                // 0x0200(0x0010)()
+	class FText                                   Temp_text_Variable_1;                              // 0x0210(0x0010)()
+	bool                                          Temp_bool_Variable;                                // 0x0220(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_221[0x7];                                      // 0x0221(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   K2Node_Select_Default;                             // 0x0228(0x0010)()
+	TDelegate<void(class UWBP_CommonActionBarContainer_C* ActionBarContainerWidget)> K2Node_CreateDelegate_OutputDelegate_2; // 0x0238(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_FClamp_Max_ImplicitCast;                  // 0x0248(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Add_DoubleDouble_A_ImplicitCast;          // 0x0250(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_A_ImplicitCast;     // 0x0258(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScrollOffset_NewScrollOffset_ImplicitCast; // 0x0260(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel) == 0x000008, "Wrong alignment on WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel");
-static_assert(sizeof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel) == 0x0001E8, "Wrong size on WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel");
+static_assert(sizeof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel) == 0x000268, "Wrong size on WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel");
 static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, EntryPoint) == 0x000000, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, K2Node_CreateDelegate_OutputDelegate_1) == 0x000014, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_GetLocalPlayerSubsystem_ReturnValue) == 0x000028, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_GetLocalPlayerSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, K2Node_ComponentBoundEvent_Button) == 0x000030, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, K2Node_ComponentBoundEvent_JournalViewItem_1) == 0x000038, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::K2Node_ComponentBoundEvent_JournalViewItem_1' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, K2Node_ComponentBoundEvent_IsSelected_1) == 0x000040, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::K2Node_ComponentBoundEvent_IsSelected_1' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_GetJournalVoiceOver_VoiceOver) == 0x000048, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_GetJournalVoiceOver_VoiceOver' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_GetJournalLevelName_AssociatedLevel) == 0x000070, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_GetJournalLevelName_AssociatedLevel' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_IsValidSoftObjectReference_ReturnValue) == 0x000078, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_IsValidSoftObjectReference_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_IsValid_ReturnValue) == 0x000079, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_IsOwned_IsOwned) == 0x00007A, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_IsOwned_IsOwned' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, K2Node_ComponentBoundEvent_JournalViewItem_2) == 0x000008, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::K2Node_ComponentBoundEvent_JournalViewItem_2' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, K2Node_ComponentBoundEvent_IsSelected_1) == 0x000010, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::K2Node_ComponentBoundEvent_IsSelected_1' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_GetJournalVoiceOver_VoiceOver) == 0x000018, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_GetJournalVoiceOver_VoiceOver' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_GetJournalLevelName_AssociatedLevel) == 0x000040, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_GetJournalLevelName_AssociatedLevel' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_IsValidSoftObjectReference_ReturnValue) == 0x000048, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_IsValidSoftObjectReference_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_GetJournalVoiceOver_VoiceOver_1) == 0x000050, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_GetJournalVoiceOver_VoiceOver_1' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_IsOwned_IsOwned) == 0x000078, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_IsOwned_IsOwned' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_IsValidSoftObjectReference_ReturnValue_1) == 0x000079, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_IsValidSoftObjectReference_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_IsValid_ReturnValue) == 0x00007A, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_BooleanAND_ReturnValue) == 0x00007B, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_IsOwned_IsOwned_1) == 0x00007C, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_IsOwned_IsOwned_1' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_BooleanAND_ReturnValue_1) == 0x00007D, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_GetDesiredSize_ReturnValue) == 0x000080, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_GetDesiredSize_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_BreakVector2D_X) == 0x000090, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_BreakVector2D_X' has a wrong offset!");
 static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_BreakVector2D_Y) == 0x000098, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_BreakVector2D_Y' has a wrong offset!");
 static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_GetScrollOffsetOfEnd_ReturnValue) == 0x0000A0, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_GetScrollOffsetOfEnd_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_GreaterEqual_DoubleDouble_ReturnValue) == 0x0000A4, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_GreaterEqual_DoubleDouble_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_GetScrollOffset_ReturnValue) == 0x0000A8, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_GetScrollOffset_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_GetLocalPlayerSubsystem_ReturnValue_1) == 0x0000B0, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_GetLocalPlayerSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_IsInputMethodActive_ReturnValue) == 0x0000B8, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_IsInputMethodActive_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, K2Node_InputAxisEvent_AxisValue) == 0x0000BC, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::K2Node_InputAxisEvent_AxisValue' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_Not_PreBool_ReturnValue) == 0x0000C0, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x0000C8, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_Add_DoubleDouble_ReturnValue) == 0x0000D0, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_FClamp_ReturnValue) == 0x0000D8, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, K2Node_CustomEvent_bNewInputType) == 0x0000E0, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::K2Node_CustomEvent_bNewInputType' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_GetIsEnabled_ReturnValue) == 0x0000E1, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_GetIsEnabled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000E2, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, K2Node_CreateDelegate_OutputDelegate_2) == 0x0000E4, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, K2Node_ComponentBoundEvent_JournalViewItem) == 0x0000F8, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::K2Node_ComponentBoundEvent_JournalViewItem' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_GetJournalVoiceOver_VoiceOver_1) == 0x000100, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_GetJournalVoiceOver_VoiceOver_1' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_IsValidSoftObjectReference_ReturnValue_1) == 0x000128, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_IsValidSoftObjectReference_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_GetJournalLevelName_AssociatedLevel_1) == 0x00012C, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_GetJournalLevelName_AssociatedLevel_1' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_IsValid_ReturnValue_1) == 0x000134, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, Temp_text_Variable) == 0x000138, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, Temp_text_Variable_1) == 0x000148, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::Temp_text_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, Temp_bool_Variable) == 0x000158, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, K2Node_CustomEvent_ActionBarContainerWidget) == 0x000160, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::K2Node_CustomEvent_ActionBarContainerWidget' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_GetActionBar_WBP_CommonActionBarContainer) == 0x000168, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_GetActionBar_WBP_CommonActionBarContainer' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_FindActionButtonFromButton_CommonButtonBase) == 0x000170, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_FindActionButtonFromButton_CommonButtonBase' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_IsValid_ReturnValue_2) == 0x000178, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_IsValid_ReturnValue_3) == 0x000179, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_GetIsEnabled_ReturnValue_1) == 0x00017A, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_GetIsEnabled_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_GetActionBar_WBP_CommonActionBarContainer_1) == 0x000180, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_GetActionBar_WBP_CommonActionBarContainer_1' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_IsValid_ReturnValue_4) == 0x000188, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, K2Node_ComponentBoundEvent_IsSelected) == 0x000189, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::K2Node_ComponentBoundEvent_IsSelected' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, K2Node_Select_Default) == 0x000190, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_GetActionBar_WBP_CommonActionBarContainer_2) == 0x0001A0, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_GetActionBar_WBP_CommonActionBarContainer_2' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_IsValid_ReturnValue_5) == 0x0001A8, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_CreatePlayAnimationProxyObject_Result) == 0x0001B0, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_CreatePlayAnimationProxyObject_Result' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_CreatePlayAnimationProxyObject_ReturnValue) == 0x0001B8, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_CreatePlayAnimationProxyObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_IsValid_ReturnValue_6) == 0x0001C0, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_IsValid_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_FClamp_Max_ImplicitCast) == 0x0001C8, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_FClamp_Max_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_Add_DoubleDouble_A_ImplicitCast) == 0x0001D0, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_Add_DoubleDouble_A_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_Multiply_DoubleDouble_A_ImplicitCast) == 0x0001D8, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_Multiply_DoubleDouble_A_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_SetScrollOffset_NewScrollOffset_ImplicitCast) == 0x0001E0, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_SetScrollOffset_NewScrollOffset_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, K2Node_InputAxisEvent_AxisValue) == 0x0000AC, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::K2Node_InputAxisEvent_AxisValue' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x0000B0, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_Add_DoubleDouble_ReturnValue) == 0x0000B8, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_FClamp_ReturnValue) == 0x0000C0, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_FClamp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_GetIsEnabled_ReturnValue) == 0x0000C8, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_GetIsEnabled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, K2Node_ComponentBoundEvent_Button) == 0x0000D0, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, K2Node_CustomEvent_bNewInputType) == 0x0000D8, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::K2Node_CustomEvent_bNewInputType' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000D9, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, K2Node_ComponentBoundEvent_JournalViewItem_1) == 0x0000E0, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::K2Node_ComponentBoundEvent_JournalViewItem_1' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_GetJournalVoiceOver_VoiceOver_2) == 0x0000E8, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_GetJournalVoiceOver_VoiceOver_2' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_IsValidSoftObjectReference_ReturnValue_2) == 0x000110, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_IsValidSoftObjectReference_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_GetJournalLevelName_AssociatedLevel_1) == 0x000114, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_GetJournalLevelName_AssociatedLevel_1' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_IsValid_ReturnValue_1) == 0x00011C, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_PlayAnimationForward_ReturnValue) == 0x000120, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_GetLocalPlayerSubsystem_ReturnValue) == 0x000128, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_GetLocalPlayerSubsystem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, K2Node_CustomEvent_ActionBarContainerWidget) == 0x000130, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::K2Node_CustomEvent_ActionBarContainerWidget' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_GetActionBar_WBP_CommonActionBarContainer) == 0x000138, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_GetActionBar_WBP_CommonActionBarContainer' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_FindActionButtonFromButton_CommonButtonBase) == 0x000140, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_FindActionButtonFromButton_CommonButtonBase' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_IsValid_ReturnValue_2) == 0x000148, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_IsValid_ReturnValue_3) == 0x000149, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_GetIsEnabled_ReturnValue_1) == 0x00014A, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_GetIsEnabled_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_GetActionBar_WBP_CommonActionBarContainer_1) == 0x000150, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_GetActionBar_WBP_CommonActionBarContainer_1' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_IsValid_ReturnValue_4) == 0x000158, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, K2Node_ComponentBoundEvent_JournalViewItem) == 0x000160, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::K2Node_ComponentBoundEvent_JournalViewItem' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, K2Node_ComponentBoundEvent_IsSelected) == 0x000168, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::K2Node_ComponentBoundEvent_IsSelected' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_GetActionBar_WBP_CommonActionBarContainer_2) == 0x000170, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_GetActionBar_WBP_CommonActionBarContainer_2' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_IsValid_ReturnValue_5) == 0x000178, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_GetJournalVoiceOver_VoiceOver_3) == 0x000180, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_GetJournalVoiceOver_VoiceOver_3' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_GetJournalLevelName_AssociatedLevel_2) == 0x0001A8, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_GetJournalLevelName_AssociatedLevel_2' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_IsValidSoftObjectReference_ReturnValue_3) == 0x0001B0, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_IsValidSoftObjectReference_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_IsOwned_IsOwned_2) == 0x0001B1, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_IsOwned_IsOwned_2' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_IsValid_ReturnValue_6) == 0x0001B2, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_IsValid_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_BooleanAND_ReturnValue_2) == 0x0001B3, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, K2Node_CreateDelegate_OutputDelegate) == 0x0001B4, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_IsInGamepadOrKeyboardNavigationMode_ReturnValue) == 0x0001C4, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_IsInGamepadOrKeyboardNavigationMode_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_IsInGamepadOrKeyboardNavigationMode_ReturnValue_1) == 0x0001C5, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_IsInGamepadOrKeyboardNavigationMode_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_BooleanAND_ReturnValue_3) == 0x0001C6, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_BooleanAND_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_IsAnyItemPlaying_IsAnyItemPlaying) == 0x0001C7, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_IsAnyItemPlaying_IsAnyItemPlaying' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_Not_PreBool_ReturnValue) == 0x0001C8, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_GetLocalPlayerSubsystem_ReturnValue_1) == 0x0001D0, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_GetLocalPlayerSubsystem_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_IsInputMethodActive_ReturnValue) == 0x0001D8, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_IsInputMethodActive_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, K2Node_CreateDelegate_OutputDelegate_1) == 0x0001DC, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_Not_PreBool_ReturnValue_1) == 0x0001EC, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x0001F0, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_IsInGamepadOrKeyboardNavigationMode_ReturnValue_2) == 0x0001F8, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_IsInGamepadOrKeyboardNavigationMode_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_Not_PreBool_ReturnValue_2) == 0x0001F9, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, Temp_text_Variable) == 0x000200, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::Temp_text_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, Temp_text_Variable_1) == 0x000210, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::Temp_text_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, Temp_bool_Variable) == 0x000220, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, K2Node_Select_Default) == 0x000228, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, K2Node_CreateDelegate_OutputDelegate_2) == 0x000238, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_FClamp_Max_ImplicitCast) == 0x000248, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_FClamp_Max_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_Add_DoubleDouble_A_ImplicitCast) == 0x000250, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_Add_DoubleDouble_A_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_Multiply_DoubleDouble_A_ImplicitCast) == 0x000258, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_Multiply_DoubleDouble_A_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel, CallFunc_SetScrollOffset_NewScrollOffset_ImplicitCast) == 0x000260, "Member 'WBP_Journal_Panel_C_ExecuteUbergraph_WBP_Journal_Panel::CallFunc_SetScrollOffset_NewScrollOffset_ImplicitCast' has a wrong offset!");
 
 }
 

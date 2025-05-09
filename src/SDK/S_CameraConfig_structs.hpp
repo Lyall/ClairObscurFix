@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "S_CameraComponentConfig_structs.hpp"
 #include "S_SpringArmComponentConfig_structs.hpp"
+#include "S_CameraComponentConfig_structs.hpp"
 
 
 namespace SDK

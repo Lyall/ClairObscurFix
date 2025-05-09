@@ -17,6 +17,27 @@
 namespace SDK
 {
 
+// Function WBP_Journal_Panel.WBP_Journal_Panel_C.IsAnyItemPlaying
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   IsAnyItemPlaying_0                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Journal_Panel_C::IsAnyItemPlaying(bool* IsAnyItemPlaying_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Journal_Panel_C", "IsAnyItemPlaying");
+
+	Params::WBP_Journal_Panel_C_IsAnyItemPlaying Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (IsAnyItemPlaying_0 != nullptr)
+		*IsAnyItemPlaying_0 = Parms.IsAnyItemPlaying_0;
+}
+
+
 // Function WBP_Journal_Panel.WBP_Journal_Panel_C.GetActionBar
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -55,20 +76,6 @@ void UWBP_Journal_Panel_C::UnlockJournalItem(const struct FItemDataTableRowHandl
 	Parms.UnlockedJournal = std::move(UnlockedJournal);
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Journal_Panel.WBP_Journal_Panel_C.Finished_913628BC43AE94E7CD5F1C8F0D1D0D60
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Journal_Panel_C::Finished_913628BC43AE94E7CD5F1C8F0D1D0D60()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Journal_Panel_C", "Finished_913628BC43AE94E7CD5F1C8F0D1D0D60");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -239,9 +246,10 @@ void UWBP_Journal_Panel_C::RebuildActionBarButtons(class UWBP_CommonActionBarCon
 // Function WBP_Journal_Panel.WBP_Journal_Panel_C.BndEvt__WBP_Journal_Panel_WBP_JournalEntriesList_K2Node_ComponentBoundEvent_3_OnJournalItemClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
+// class UBP_JournalViewItem_C*            JournalViewItem                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                                    IsSelected                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Journal_Panel_C::BndEvt__WBP_Journal_Panel_WBP_JournalEntriesList_K2Node_ComponentBoundEvent_3_OnJournalItemClicked__DelegateSignature(bool IsSelected)
+void UWBP_Journal_Panel_C::BndEvt__WBP_Journal_Panel_WBP_JournalEntriesList_K2Node_ComponentBoundEvent_3_OnJournalItemClicked__DelegateSignature(class UBP_JournalViewItem_C* JournalViewItem, bool IsSelected)
 {
 	static class UFunction* Func = nullptr;
 
@@ -250,9 +258,38 @@ void UWBP_Journal_Panel_C::BndEvt__WBP_Journal_Panel_WBP_JournalEntriesList_K2No
 
 	Params::WBP_Journal_Panel_C_BndEvt__WBP_Journal_Panel_WBP_JournalEntriesList_K2Node_ComponentBoundEvent_3_OnJournalItemClicked__DelegateSignature Parms{};
 
+	Parms.JournalViewItem = JournalViewItem;
 	Parms.IsSelected = IsSelected;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Journal_Panel.WBP_Journal_Panel_C.OnTimerEnded
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Journal_Panel_C::OnTimerEnded()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Journal_Panel_C", "OnTimerEnded");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Journal_Panel.WBP_Journal_Panel_C.OnUnlockJournalBackActionFallback
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Journal_Panel_C::OnUnlockJournalBackActionFallback()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Journal_Panel_C", "OnUnlockJournalBackActionFallback");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

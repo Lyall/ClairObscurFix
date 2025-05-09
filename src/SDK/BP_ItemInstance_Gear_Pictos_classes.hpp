@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "BP_ItemInstance_Gear_classes.hpp"
 #include "E_jRPG_StatType_structs.hpp"
+#include "BP_ItemInstance_Gear_classes.hpp"
 
 
 namespace SDK

@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "S_BattleLineEventPerCharacter_structs.hpp"
+#include "ECharacterTeamSelector_structs.hpp"
 #include "S_BattleLinePool_structs.hpp"
 #include "SandFall_classes.hpp"
-#include "ECharacterTeamSelector_structs.hpp"
 
 
 namespace SDK

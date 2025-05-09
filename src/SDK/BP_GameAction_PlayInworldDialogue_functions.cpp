@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function BP_GameAction_PlayInworldDialogue.BP_GameAction_PlayInworldDialogue_C.GetInstanceClass
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TSubclassOf<class UGameActionInstance>  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-
-TSubclassOf<class UGameActionInstance> UBP_GameAction_PlayInworldDialogue_C::GetInstanceClass()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GameAction_PlayInworldDialogue_C", "GetInstanceClass");
-
-	Params::BP_GameAction_PlayInworldDialogue_C_GetInstanceClass Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
 // Function BP_GameAction_PlayInworldDialogue.BP_GameAction_PlayInworldDialogue_C.ValidateGameAction
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -62,6 +42,26 @@ void UBP_GameAction_PlayInworldDialogue_C::ValidateGameAction(TArray<class FText
 	ErrorMessages = std::move(Parms.ErrorMessages);
 	PropertyPath = std::move(Parms.PropertyPath);
 	ExploreAssetChildren = Parms.ExploreAssetChildren;
+}
+
+
+// Function BP_GameAction_PlayInworldDialogue.BP_GameAction_PlayInworldDialogue_C.GetInstanceClass
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TSubclassOf<class UGameActionInstance>  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+
+TSubclassOf<class UGameActionInstance> UBP_GameAction_PlayInworldDialogue_C::GetInstanceClass()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_GameAction_PlayInworldDialogue_C", "GetInstanceClass");
+
+	Params::BP_GameAction_PlayInworldDialogue_C_GetInstanceClass Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 }

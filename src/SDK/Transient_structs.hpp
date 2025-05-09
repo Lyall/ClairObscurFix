@@ -20,163 +20,9 @@
 namespace SDK
 {
 
-// PropertyBag Transient.PropertyBag_98b4112951aa9cd
-// 0x0500 (0x0500 - 0x0000)
-struct FPropertyBag_98b4112951aa9cd final
-{
-public:
-	struct FVector                                RigVMModel___FootTrace_Offset;                     // 0x0000(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                FootTrace___FootTrace_MathVectorAdd_Result;        // 0x0018(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             FootTrace___FootTrace_GetTransform_Transform;      // 0x0030(0x0060)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FCachedRigElement>              FootTrace___FootTrace_GetTransform_CachedIndex;    // 0x0090(0x0010)(Edit)
-	float                                         FootTrace___FootTrace_MathFloatAdd_Result;         // 0x00A0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         FootTrace___FootTrace_MathFloatAdd_A;              // 0x00A4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A8[0x8];                                       // 0x00A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             FootTrace___FootTrace_GetTransform_1_Transform;    // 0x00B0(0x0060)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FCachedRigElement>              FootTrace___FootTrace_GetTransform_1_CachedIndex;  // 0x0110(0x0010)(Edit)
-	struct FVector                                FootTrace___FootTrace_MathVectorAdd_A__IO;         // 0x0120(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                FootTrace___FootTrace_MathVectorSub_Result;        // 0x0138(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                FootTrace___FootTrace_MathVectorSub_A__IO;         // 0x0150(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          FootTrace___FootTrace_SphereTraceByTraceChannel_bHit; // 0x0168(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_169[0x7];                                      // 0x0169(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                FootTrace___FootTrace_SphereTraceByTraceChannel_HitNormal; // 0x0170(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FRigUnit_SphereTrace_WorkData>  FootTrace___FootTrace_SphereTraceByTraceChannel_WorkData; // 0x0188(0x0010)(Edit)
-	struct FVector                                RigVMModel___FootTrace_1_Offset;                   // 0x0198(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                FootTrace_1___FootTrace_MathVectorAdd_Result;      // 0x01B0(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C8[0x8];                                      // 0x01C8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             FootTrace_1___FootTrace_GetTransform_Transform;    // 0x01D0(0x0060)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FCachedRigElement>              FootTrace_1___FootTrace_GetTransform_CachedIndex;  // 0x0230(0x0010)(Edit)
-	float                                         FootTrace_1___FootTrace_MathFloatAdd_Result;       // 0x0240(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         FootTrace_1___FootTrace_MathFloatAdd_A;            // 0x0244(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_248[0x8];                                      // 0x0248(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             FootTrace_1___FootTrace_GetTransform_1_Transform;  // 0x0250(0x0060)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FCachedRigElement>              FootTrace_1___FootTrace_GetTransform_1_CachedIndex; // 0x02B0(0x0010)(Edit)
-	struct FVector                                FootTrace_1___FootTrace_MathVectorAdd_A__IO;       // 0x02C0(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                FootTrace_1___FootTrace_MathVectorSub_Result;      // 0x02D8(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                FootTrace_1___FootTrace_MathVectorSub_A__IO;       // 0x02F0(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          FootTrace_1___FootTrace_SphereTraceByTraceChannel_bHit; // 0x0308(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_309[0x7];                                      // 0x0309(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                FootTrace_1___FootTrace_SphereTraceByTraceChannel_HitNormal; // 0x0310(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FRigUnit_SphereTrace_WorkData>  FootTrace_1___FootTrace_SphereTraceByTraceChannel_WorkData; // 0x0328(0x0010)(Edit)
-	class FName                                   RigVMModel___Branch_RigVMUnitNode_BlockToRun;      // 0x0338(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         RigVMModel___AlphaInterp_Result;                   // 0x0340(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         RigVMModel___AlphaInterp_Value;                    // 0x0344(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FInputScaleBiasClamp>           RigVMModel___AlphaInterp_ScaleBiasClamp;           // 0x0348(0x0010)(Edit)
-	float                                         RigVMModel___AlphaInterp_1_Result;                 // 0x0358(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         RigVMModel___AlphaInterp_1_Value;                  // 0x035C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FInputScaleBiasClamp>           RigVMModel___AlphaInterp_1_ScaleBiasClamp;         // 0x0360(0x0010)(Edit)
-	float                                         RigVMModel___If_Result;                            // 0x0370(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          RigVMModel___MathFloatLess_Result;                 // 0x0374(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_375[0x3];                                      // 0x0375(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         RigVMModel___MathFloatLess_A;                      // 0x0378(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         RigVMModel___MathFloatLess_B;                      // 0x037C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          RigVMModel___If_Condition;                         // 0x0380(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_381[0x3];                                      // 0x0381(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         RigVMModel___If_True;                              // 0x0384(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         RigVMModel___If_False;                             // 0x0388(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_38C[0x4];                                      // 0x038C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FRigUnit_ModifyTransforms_PerItem> RigVMModel___ModifyTransforms_ItemToModify__IO; // 0x0390(0x0010)(Edit)
-	TArray<struct FRigUnit_ModifyTransforms_WorkData> RigVMModel___ModifyTransforms_WorkData;        // 0x03A0(0x0010)(Edit)
-	TArray<struct FRigUnit_ModifyTransforms_PerItem> RigVMModel___ModifyTransforms_1_ItemToModify__IO; // 0x03B0(0x0010)(Edit)
-	TArray<struct FRigUnit_ModifyTransforms_WorkData> RigVMModel___ModifyTransforms_1_WorkData;      // 0x03C0(0x0010)(Edit)
-	TArray<struct FRigUnit_ModifyTransforms_PerItem> RigVMModel___ModifyTransforms_1_1_ItemToModify__IO; // 0x03D0(0x0010)(Edit)
-	TArray<struct FRigUnit_ModifyTransforms_WorkData> RigVMModel___ModifyTransforms_1_1_WorkData;    // 0x03E0(0x0010)(Edit)
-	struct FTransform                             RigVMModel___GetTransform_Transform;               // 0x03F0(0x0060)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FCachedRigElement>              RigVMModel___GetTransform_CachedIndex;             // 0x0450(0x0010)(Edit)
-	struct FTransform                             RigVMModel___GetTransform_1_Transform;             // 0x0460(0x0060)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FCachedRigElement>              RigVMModel___GetTransform_1_CachedIndex;           // 0x04C0(0x0010)(Edit)
-	TArray<struct FPBIKEffector>                  RigVMModel___PBIK_Effectors__IO;                   // 0x04D0(0x0010)(Edit)
-	TArray<TArray<int32>>                         RigVMModel___PBIK_EffectorSolverIndices;           // 0x04E0(0x0010)(Edit)
-	TArray<struct FPBIKWorkData>                  RigVMModel___PBIK_WorkData;                        // 0x04F0(0x0010)(Edit)
-};
-static_assert(alignof(FPropertyBag_98b4112951aa9cd) == 0x000010, "Wrong alignment on FPropertyBag_98b4112951aa9cd");
-static_assert(sizeof(FPropertyBag_98b4112951aa9cd) == 0x000500, "Wrong size on FPropertyBag_98b4112951aa9cd");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, RigVMModel___FootTrace_Offset) == 0x000000, "Member 'FPropertyBag_98b4112951aa9cd::RigVMModel___FootTrace_Offset' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, FootTrace___FootTrace_MathVectorAdd_Result) == 0x000018, "Member 'FPropertyBag_98b4112951aa9cd::FootTrace___FootTrace_MathVectorAdd_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, FootTrace___FootTrace_GetTransform_Transform) == 0x000030, "Member 'FPropertyBag_98b4112951aa9cd::FootTrace___FootTrace_GetTransform_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, FootTrace___FootTrace_GetTransform_CachedIndex) == 0x000090, "Member 'FPropertyBag_98b4112951aa9cd::FootTrace___FootTrace_GetTransform_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, FootTrace___FootTrace_MathFloatAdd_Result) == 0x0000A0, "Member 'FPropertyBag_98b4112951aa9cd::FootTrace___FootTrace_MathFloatAdd_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, FootTrace___FootTrace_MathFloatAdd_A) == 0x0000A4, "Member 'FPropertyBag_98b4112951aa9cd::FootTrace___FootTrace_MathFloatAdd_A' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, FootTrace___FootTrace_GetTransform_1_Transform) == 0x0000B0, "Member 'FPropertyBag_98b4112951aa9cd::FootTrace___FootTrace_GetTransform_1_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, FootTrace___FootTrace_GetTransform_1_CachedIndex) == 0x000110, "Member 'FPropertyBag_98b4112951aa9cd::FootTrace___FootTrace_GetTransform_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, FootTrace___FootTrace_MathVectorAdd_A__IO) == 0x000120, "Member 'FPropertyBag_98b4112951aa9cd::FootTrace___FootTrace_MathVectorAdd_A__IO' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, FootTrace___FootTrace_MathVectorSub_Result) == 0x000138, "Member 'FPropertyBag_98b4112951aa9cd::FootTrace___FootTrace_MathVectorSub_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, FootTrace___FootTrace_MathVectorSub_A__IO) == 0x000150, "Member 'FPropertyBag_98b4112951aa9cd::FootTrace___FootTrace_MathVectorSub_A__IO' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, FootTrace___FootTrace_SphereTraceByTraceChannel_bHit) == 0x000168, "Member 'FPropertyBag_98b4112951aa9cd::FootTrace___FootTrace_SphereTraceByTraceChannel_bHit' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, FootTrace___FootTrace_SphereTraceByTraceChannel_HitNormal) == 0x000170, "Member 'FPropertyBag_98b4112951aa9cd::FootTrace___FootTrace_SphereTraceByTraceChannel_HitNormal' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, FootTrace___FootTrace_SphereTraceByTraceChannel_WorkData) == 0x000188, "Member 'FPropertyBag_98b4112951aa9cd::FootTrace___FootTrace_SphereTraceByTraceChannel_WorkData' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, RigVMModel___FootTrace_1_Offset) == 0x000198, "Member 'FPropertyBag_98b4112951aa9cd::RigVMModel___FootTrace_1_Offset' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, FootTrace_1___FootTrace_MathVectorAdd_Result) == 0x0001B0, "Member 'FPropertyBag_98b4112951aa9cd::FootTrace_1___FootTrace_MathVectorAdd_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, FootTrace_1___FootTrace_GetTransform_Transform) == 0x0001D0, "Member 'FPropertyBag_98b4112951aa9cd::FootTrace_1___FootTrace_GetTransform_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, FootTrace_1___FootTrace_GetTransform_CachedIndex) == 0x000230, "Member 'FPropertyBag_98b4112951aa9cd::FootTrace_1___FootTrace_GetTransform_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, FootTrace_1___FootTrace_MathFloatAdd_Result) == 0x000240, "Member 'FPropertyBag_98b4112951aa9cd::FootTrace_1___FootTrace_MathFloatAdd_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, FootTrace_1___FootTrace_MathFloatAdd_A) == 0x000244, "Member 'FPropertyBag_98b4112951aa9cd::FootTrace_1___FootTrace_MathFloatAdd_A' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, FootTrace_1___FootTrace_GetTransform_1_Transform) == 0x000250, "Member 'FPropertyBag_98b4112951aa9cd::FootTrace_1___FootTrace_GetTransform_1_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, FootTrace_1___FootTrace_GetTransform_1_CachedIndex) == 0x0002B0, "Member 'FPropertyBag_98b4112951aa9cd::FootTrace_1___FootTrace_GetTransform_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, FootTrace_1___FootTrace_MathVectorAdd_A__IO) == 0x0002C0, "Member 'FPropertyBag_98b4112951aa9cd::FootTrace_1___FootTrace_MathVectorAdd_A__IO' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, FootTrace_1___FootTrace_MathVectorSub_Result) == 0x0002D8, "Member 'FPropertyBag_98b4112951aa9cd::FootTrace_1___FootTrace_MathVectorSub_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, FootTrace_1___FootTrace_MathVectorSub_A__IO) == 0x0002F0, "Member 'FPropertyBag_98b4112951aa9cd::FootTrace_1___FootTrace_MathVectorSub_A__IO' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, FootTrace_1___FootTrace_SphereTraceByTraceChannel_bHit) == 0x000308, "Member 'FPropertyBag_98b4112951aa9cd::FootTrace_1___FootTrace_SphereTraceByTraceChannel_bHit' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, FootTrace_1___FootTrace_SphereTraceByTraceChannel_HitNormal) == 0x000310, "Member 'FPropertyBag_98b4112951aa9cd::FootTrace_1___FootTrace_SphereTraceByTraceChannel_HitNormal' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, FootTrace_1___FootTrace_SphereTraceByTraceChannel_WorkData) == 0x000328, "Member 'FPropertyBag_98b4112951aa9cd::FootTrace_1___FootTrace_SphereTraceByTraceChannel_WorkData' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, RigVMModel___Branch_RigVMUnitNode_BlockToRun) == 0x000338, "Member 'FPropertyBag_98b4112951aa9cd::RigVMModel___Branch_RigVMUnitNode_BlockToRun' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, RigVMModel___AlphaInterp_Result) == 0x000340, "Member 'FPropertyBag_98b4112951aa9cd::RigVMModel___AlphaInterp_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, RigVMModel___AlphaInterp_Value) == 0x000344, "Member 'FPropertyBag_98b4112951aa9cd::RigVMModel___AlphaInterp_Value' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, RigVMModel___AlphaInterp_ScaleBiasClamp) == 0x000348, "Member 'FPropertyBag_98b4112951aa9cd::RigVMModel___AlphaInterp_ScaleBiasClamp' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, RigVMModel___AlphaInterp_1_Result) == 0x000358, "Member 'FPropertyBag_98b4112951aa9cd::RigVMModel___AlphaInterp_1_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, RigVMModel___AlphaInterp_1_Value) == 0x00035C, "Member 'FPropertyBag_98b4112951aa9cd::RigVMModel___AlphaInterp_1_Value' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, RigVMModel___AlphaInterp_1_ScaleBiasClamp) == 0x000360, "Member 'FPropertyBag_98b4112951aa9cd::RigVMModel___AlphaInterp_1_ScaleBiasClamp' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, RigVMModel___If_Result) == 0x000370, "Member 'FPropertyBag_98b4112951aa9cd::RigVMModel___If_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, RigVMModel___MathFloatLess_Result) == 0x000374, "Member 'FPropertyBag_98b4112951aa9cd::RigVMModel___MathFloatLess_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, RigVMModel___MathFloatLess_A) == 0x000378, "Member 'FPropertyBag_98b4112951aa9cd::RigVMModel___MathFloatLess_A' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, RigVMModel___MathFloatLess_B) == 0x00037C, "Member 'FPropertyBag_98b4112951aa9cd::RigVMModel___MathFloatLess_B' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, RigVMModel___If_Condition) == 0x000380, "Member 'FPropertyBag_98b4112951aa9cd::RigVMModel___If_Condition' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, RigVMModel___If_True) == 0x000384, "Member 'FPropertyBag_98b4112951aa9cd::RigVMModel___If_True' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, RigVMModel___If_False) == 0x000388, "Member 'FPropertyBag_98b4112951aa9cd::RigVMModel___If_False' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, RigVMModel___ModifyTransforms_ItemToModify__IO) == 0x000390, "Member 'FPropertyBag_98b4112951aa9cd::RigVMModel___ModifyTransforms_ItemToModify__IO' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, RigVMModel___ModifyTransforms_WorkData) == 0x0003A0, "Member 'FPropertyBag_98b4112951aa9cd::RigVMModel___ModifyTransforms_WorkData' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, RigVMModel___ModifyTransforms_1_ItemToModify__IO) == 0x0003B0, "Member 'FPropertyBag_98b4112951aa9cd::RigVMModel___ModifyTransforms_1_ItemToModify__IO' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, RigVMModel___ModifyTransforms_1_WorkData) == 0x0003C0, "Member 'FPropertyBag_98b4112951aa9cd::RigVMModel___ModifyTransforms_1_WorkData' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, RigVMModel___ModifyTransforms_1_1_ItemToModify__IO) == 0x0003D0, "Member 'FPropertyBag_98b4112951aa9cd::RigVMModel___ModifyTransforms_1_1_ItemToModify__IO' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, RigVMModel___ModifyTransforms_1_1_WorkData) == 0x0003E0, "Member 'FPropertyBag_98b4112951aa9cd::RigVMModel___ModifyTransforms_1_1_WorkData' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, RigVMModel___GetTransform_Transform) == 0x0003F0, "Member 'FPropertyBag_98b4112951aa9cd::RigVMModel___GetTransform_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, RigVMModel___GetTransform_CachedIndex) == 0x000450, "Member 'FPropertyBag_98b4112951aa9cd::RigVMModel___GetTransform_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, RigVMModel___GetTransform_1_Transform) == 0x000460, "Member 'FPropertyBag_98b4112951aa9cd::RigVMModel___GetTransform_1_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, RigVMModel___GetTransform_1_CachedIndex) == 0x0004C0, "Member 'FPropertyBag_98b4112951aa9cd::RigVMModel___GetTransform_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, RigVMModel___PBIK_Effectors__IO) == 0x0004D0, "Member 'FPropertyBag_98b4112951aa9cd::RigVMModel___PBIK_Effectors__IO' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, RigVMModel___PBIK_EffectorSolverIndices) == 0x0004E0, "Member 'FPropertyBag_98b4112951aa9cd::RigVMModel___PBIK_EffectorSolverIndices' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_98b4112951aa9cd, RigVMModel___PBIK_WorkData) == 0x0004F0, "Member 'FPropertyBag_98b4112951aa9cd::RigVMModel___PBIK_WorkData' has a wrong offset!");
-
-// ScriptStruct Transient.ChaosDestructionEvent_SWC
-// 0x0044 (0x0044 - 0x0000)
-struct FChaosDestructionEvent_SWC final
-{
-public:
-	struct FVector3f                              position;                                          // 0x0000(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector3f                              Normal;                                            // 0x000C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector3f                              Velocity;                                          // 0x0018(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector3f                              AngularVelocity;                                   // 0x0024(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         ExtentMin;                                         // 0x0030(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ExtentMax;                                         // 0x0034(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ParticleID;                                        // 0x0038(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Time;                                              // 0x003C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Type;                                              // 0x0040(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FChaosDestructionEvent_SWC) == 0x000004, "Wrong alignment on FChaosDestructionEvent_SWC");
-static_assert(sizeof(FChaosDestructionEvent_SWC) == 0x000044, "Wrong size on FChaosDestructionEvent_SWC");
-static_assert(offsetof(FChaosDestructionEvent_SWC, position) == 0x000000, "Member 'FChaosDestructionEvent_SWC::position' has a wrong offset!");
-static_assert(offsetof(FChaosDestructionEvent_SWC, Normal) == 0x00000C, "Member 'FChaosDestructionEvent_SWC::Normal' has a wrong offset!");
-static_assert(offsetof(FChaosDestructionEvent_SWC, Velocity) == 0x000018, "Member 'FChaosDestructionEvent_SWC::Velocity' has a wrong offset!");
-static_assert(offsetof(FChaosDestructionEvent_SWC, AngularVelocity) == 0x000024, "Member 'FChaosDestructionEvent_SWC::AngularVelocity' has a wrong offset!");
-static_assert(offsetof(FChaosDestructionEvent_SWC, ExtentMin) == 0x000030, "Member 'FChaosDestructionEvent_SWC::ExtentMin' has a wrong offset!");
-static_assert(offsetof(FChaosDestructionEvent_SWC, ExtentMax) == 0x000034, "Member 'FChaosDestructionEvent_SWC::ExtentMax' has a wrong offset!");
-static_assert(offsetof(FChaosDestructionEvent_SWC, ParticleID) == 0x000038, "Member 'FChaosDestructionEvent_SWC::ParticleID' has a wrong offset!");
-static_assert(offsetof(FChaosDestructionEvent_SWC, Time) == 0x00003C, "Member 'FChaosDestructionEvent_SWC::Time' has a wrong offset!");
-static_assert(offsetof(FChaosDestructionEvent_SWC, Type) == 0x000040, "Member 'FChaosDestructionEvent_SWC::Type' has a wrong offset!");
-
-// PropertyBag Transient.PropertyBag_c83821d998262d01
+// PropertyBag Transient.PropertyBag_1d1b0908947a4791
 // 0x0230 (0x0230 - 0x0000)
-struct FPropertyBag_c83821d998262d01 final
+struct FPropertyBag_1d1b0908947a4791 final
 {
 public:
 	struct FRigElementKey                         RigVMModel___SetRotation_2_Item__Const;            // 0x0000(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
@@ -236,199 +82,91 @@ public:
 	struct FRigElementKey                         RigVMModel___SetRotation_3_2_1_1_Item__Const;      // 0x0214(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
 	struct FRigElementKey                         RigVMModel___SetTranslation_4_1_2_Item__Const;     // 0x0220(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FPropertyBag_c83821d998262d01) == 0x000010, "Wrong alignment on FPropertyBag_c83821d998262d01");
-static_assert(sizeof(FPropertyBag_c83821d998262d01) == 0x000230, "Wrong size on FPropertyBag_c83821d998262d01");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___SetRotation_2_Item__Const) == 0x000000, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___SetRotation_2_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___SetRotation_2_Space__Const) == 0x00000C, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___SetRotation_2_Space__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___SetRotation_2_bInitial__Const) == 0x00000D, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___SetRotation_2_bInitial__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___GetTransform_6_Item__Const) == 0x000010, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___GetTransform_6_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___GetTransform_6_1_bInitial__Const) == 0x00001C, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___GetTransform_6_1_bInitial__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___MathQuaternionSwingTwist_TwistAxis__Const) == 0x000020, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___MathQuaternionSwingTwist_TwistAxis__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___MathQuaternionSlerp_2_B__Const) == 0x000040, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___MathQuaternionSlerp_2_B__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___MathQuaternionSlerp_2_T__Const) == 0x000060, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___MathQuaternionSlerp_2_T__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___SetRotation_2_Weight__Const) == 0x000064, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___SetRotation_2_Weight__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___SetRotation_2_1_Item__Const) == 0x000068, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___SetRotation_2_1_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___MathQuaternionSlerp_T__Const) == 0x000074, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___MathQuaternionSlerp_T__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___SetTranslation_Space__Const) == 0x000078, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___SetTranslation_Space__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___GetTransform_1_Item__Const) == 0x00007C, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___GetTransform_1_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___MathTransformLerp_T__Const) == 0x000088, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___MathTransformLerp_T__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___SetRotation_2_1_1_Item__Const) == 0x00008C, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___SetRotation_2_1_1_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___MathQuaternionSlerp_1_T__Const) == 0x000098, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___MathQuaternionSlerp_1_T__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___MathTransformLerp_1_T__Const) == 0x00009C, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___MathTransformLerp_1_T__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___SetRotation_2_1_2_Item__Const) == 0x0000A0, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___SetRotation_2_1_2_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___MathQuaternionSlerp_2_3_T__Const) == 0x0000AC, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___MathQuaternionSlerp_2_3_T__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___SetRotation_1_Item__Const) == 0x0000B0, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___SetRotation_1_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___GetTransform_5_1_Item__Const) == 0x0000BC, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___GetTransform_5_1_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___MathQuaternionSlerp_4_T__Const) == 0x0000C8, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___MathQuaternionSlerp_4_T__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___SetRotation_Item__Const) == 0x0000CC, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___SetRotation_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___SetRotation_2_2_Item__Const) == 0x0000D8, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___SetRotation_2_2_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___GetTransform_6_3_Item__Const) == 0x0000E4, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___GetTransform_6_3_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___SetRotation_2_1_3_Item__Const) == 0x0000F0, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___SetRotation_2_1_3_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___GetTransform_1_1_Item__Const) == 0x0000FC, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___GetTransform_1_1_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___SetRotation_2_1_3_1_Item__Const) == 0x000108, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___SetRotation_2_1_3_1_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___SetRotation_2_1_3_1_1_Item__Const) == 0x000114, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___SetRotation_2_1_3_1_1_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___SetRotation_2_1_3_1_1_1_Item__Const) == 0x000120, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___SetRotation_2_1_3_1_1_1_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___GetTransform_6_5_Item__Const) == 0x00012C, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___GetTransform_6_5_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___SetRotation_2_1_3_1_1_1_1_Item__Const) == 0x000138, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___SetRotation_2_1_3_1_1_1_1_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___SetRotation_2_2_1_Item__Const) == 0x000144, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___SetRotation_2_2_1_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___GetTransform_6_3_1_Item__Const) == 0x000150, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___GetTransform_6_3_1_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___MathQuaternionSlerp_2_2_T__Const) == 0x00015C, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___MathQuaternionSlerp_2_2_T__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___SetRotation_2_1_3_2_Item__Const) == 0x000160, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___SetRotation_2_1_3_2_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___GetTransform_1_2_Item__Const) == 0x00016C, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___GetTransform_1_2_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___SetRotation_3_Item__Const) == 0x000178, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___SetRotation_3_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___SetRotation_2_1_3_2_1_Item__Const) == 0x000184, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___SetRotation_2_1_3_2_1_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___SetRotation_2_1_3_2_1_1_Item__Const) == 0x000190, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___SetRotation_2_1_3_2_1_1_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___GetTransform_6_3_1_2_Item__Const) == 0x00019C, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___GetTransform_6_3_1_2_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___SetRotation_2_1_3_2_1_1_1_Item__Const) == 0x0001A8, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___SetRotation_2_1_3_2_1_1_1_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___SetRotation_2_2_1_1_Item__Const) == 0x0001B4, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___SetRotation_2_2_1_1_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___GetTransform_6_3_1_3_Item__Const) == 0x0001C0, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___GetTransform_6_3_1_3_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___SetRotation_2_1_3_2_2_Item__Const) == 0x0001CC, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___SetRotation_2_1_3_2_2_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___GetTransform_1_2_1_Item__Const) == 0x0001D8, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___GetTransform_1_2_1_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___SetRotation_3_1_Item__Const) == 0x0001E4, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___SetRotation_3_1_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___SetRotation_3_2_Item__Const) == 0x0001F0, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___SetRotation_3_2_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___SetRotation_3_2_1_Item__Const) == 0x0001FC, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___SetRotation_3_2_1_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___GetTransform_6_3_1_5_Item__Const) == 0x000208, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___GetTransform_6_3_1_5_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___SetRotation_3_2_1_1_Item__Const) == 0x000214, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___SetRotation_3_2_1_1_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c83821d998262d01, RigVMModel___SetTranslation_4_1_2_Item__Const) == 0x000220, "Member 'FPropertyBag_c83821d998262d01::RigVMModel___SetTranslation_4_1_2_Item__Const' has a wrong offset!");
+static_assert(alignof(FPropertyBag_1d1b0908947a4791) == 0x000010, "Wrong alignment on FPropertyBag_1d1b0908947a4791");
+static_assert(sizeof(FPropertyBag_1d1b0908947a4791) == 0x000230, "Wrong size on FPropertyBag_1d1b0908947a4791");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___SetRotation_2_Item__Const) == 0x000000, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___SetRotation_2_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___SetRotation_2_Space__Const) == 0x00000C, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___SetRotation_2_Space__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___SetRotation_2_bInitial__Const) == 0x00000D, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___SetRotation_2_bInitial__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___GetTransform_6_Item__Const) == 0x000010, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___GetTransform_6_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___GetTransform_6_1_bInitial__Const) == 0x00001C, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___GetTransform_6_1_bInitial__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___MathQuaternionSwingTwist_TwistAxis__Const) == 0x000020, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___MathQuaternionSwingTwist_TwistAxis__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___MathQuaternionSlerp_2_B__Const) == 0x000040, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___MathQuaternionSlerp_2_B__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___MathQuaternionSlerp_2_T__Const) == 0x000060, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___MathQuaternionSlerp_2_T__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___SetRotation_2_Weight__Const) == 0x000064, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___SetRotation_2_Weight__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___SetRotation_2_1_Item__Const) == 0x000068, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___SetRotation_2_1_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___MathQuaternionSlerp_T__Const) == 0x000074, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___MathQuaternionSlerp_T__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___SetTranslation_Space__Const) == 0x000078, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___SetTranslation_Space__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___GetTransform_1_Item__Const) == 0x00007C, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___GetTransform_1_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___MathTransformLerp_T__Const) == 0x000088, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___MathTransformLerp_T__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___SetRotation_2_1_1_Item__Const) == 0x00008C, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___SetRotation_2_1_1_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___MathQuaternionSlerp_1_T__Const) == 0x000098, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___MathQuaternionSlerp_1_T__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___MathTransformLerp_1_T__Const) == 0x00009C, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___MathTransformLerp_1_T__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___SetRotation_2_1_2_Item__Const) == 0x0000A0, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___SetRotation_2_1_2_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___MathQuaternionSlerp_2_3_T__Const) == 0x0000AC, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___MathQuaternionSlerp_2_3_T__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___SetRotation_1_Item__Const) == 0x0000B0, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___SetRotation_1_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___GetTransform_5_1_Item__Const) == 0x0000BC, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___GetTransform_5_1_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___MathQuaternionSlerp_4_T__Const) == 0x0000C8, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___MathQuaternionSlerp_4_T__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___SetRotation_Item__Const) == 0x0000CC, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___SetRotation_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___SetRotation_2_2_Item__Const) == 0x0000D8, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___SetRotation_2_2_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___GetTransform_6_3_Item__Const) == 0x0000E4, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___GetTransform_6_3_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___SetRotation_2_1_3_Item__Const) == 0x0000F0, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___SetRotation_2_1_3_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___GetTransform_1_1_Item__Const) == 0x0000FC, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___GetTransform_1_1_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___SetRotation_2_1_3_1_Item__Const) == 0x000108, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___SetRotation_2_1_3_1_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___SetRotation_2_1_3_1_1_Item__Const) == 0x000114, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___SetRotation_2_1_3_1_1_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___SetRotation_2_1_3_1_1_1_Item__Const) == 0x000120, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___SetRotation_2_1_3_1_1_1_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___GetTransform_6_5_Item__Const) == 0x00012C, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___GetTransform_6_5_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___SetRotation_2_1_3_1_1_1_1_Item__Const) == 0x000138, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___SetRotation_2_1_3_1_1_1_1_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___SetRotation_2_2_1_Item__Const) == 0x000144, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___SetRotation_2_2_1_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___GetTransform_6_3_1_Item__Const) == 0x000150, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___GetTransform_6_3_1_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___MathQuaternionSlerp_2_2_T__Const) == 0x00015C, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___MathQuaternionSlerp_2_2_T__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___SetRotation_2_1_3_2_Item__Const) == 0x000160, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___SetRotation_2_1_3_2_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___GetTransform_1_2_Item__Const) == 0x00016C, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___GetTransform_1_2_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___SetRotation_3_Item__Const) == 0x000178, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___SetRotation_3_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___SetRotation_2_1_3_2_1_Item__Const) == 0x000184, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___SetRotation_2_1_3_2_1_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___SetRotation_2_1_3_2_1_1_Item__Const) == 0x000190, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___SetRotation_2_1_3_2_1_1_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___GetTransform_6_3_1_2_Item__Const) == 0x00019C, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___GetTransform_6_3_1_2_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___SetRotation_2_1_3_2_1_1_1_Item__Const) == 0x0001A8, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___SetRotation_2_1_3_2_1_1_1_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___SetRotation_2_2_1_1_Item__Const) == 0x0001B4, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___SetRotation_2_2_1_1_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___GetTransform_6_3_1_3_Item__Const) == 0x0001C0, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___GetTransform_6_3_1_3_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___SetRotation_2_1_3_2_2_Item__Const) == 0x0001CC, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___SetRotation_2_1_3_2_2_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___GetTransform_1_2_1_Item__Const) == 0x0001D8, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___GetTransform_1_2_1_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___SetRotation_3_1_Item__Const) == 0x0001E4, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___SetRotation_3_1_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___SetRotation_3_2_Item__Const) == 0x0001F0, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___SetRotation_3_2_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___SetRotation_3_2_1_Item__Const) == 0x0001FC, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___SetRotation_3_2_1_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___GetTransform_6_3_1_5_Item__Const) == 0x000208, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___GetTransform_6_3_1_5_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___SetRotation_3_2_1_1_Item__Const) == 0x000214, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___SetRotation_3_2_1_1_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_1d1b0908947a4791, RigVMModel___SetTranslation_4_1_2_Item__Const) == 0x000220, "Member 'FPropertyBag_1d1b0908947a4791::RigVMModel___SetTranslation_4_1_2_Item__Const' has a wrong offset!");
 
-// PropertyBag Transient.PropertyBag_e92315c3804419c7
-// 0x0248 (0x0248 - 0x0000)
-struct FPropertyBag_e92315c3804419c7 final
+// ScriptStruct Transient.ChaosDestructionEvent_SWC
+// 0x0044 (0x0044 - 0x0000)
+struct FChaosDestructionEvent_SWC final
 {
 public:
-	struct FRigElementKey                         RigVMModel___FootTrace_Ik_Foot_Bone__Const;        // 0x0000(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                LocalVariableDefault__FootTrace_AnimatedFloorLocation__Const; // 0x0010(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                FootTrace___FootTrace_MathVectorAdd_A__Const;      // 0x0028(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ERigVMTransformSpace                          FootTrace___FootTrace_GetTransform_Space__Const;   // 0x0040(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          FootTrace___FootTrace_GetTransform_bInitial__Const; // 0x0041(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42[0x2];                                       // 0x0042(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         FootTrace___FootTrace_MathFloatAdd_B__Const;       // 0x0044(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRigElementKey                         FootTrace___FootTrace_GetTransform_1_Item__Const;  // 0x0048(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                FootTrace___FootTrace_MathVectorAdd_B__Const;      // 0x0058(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_bEnabled__Const; // 0x0070(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ERigUnitVisualDebugPointMode                  FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Mode__Const; // 0x0071(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_72[0x2];                                       // 0x0072(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Color__Const; // 0x0074(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Thickness__Const; // 0x0084(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Scale__Const; // 0x0088(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRigElementKey                         FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Space__Const; // 0x008C(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                FootTrace___FootTrace_MathVectorSub_B__Const;      // 0x0098(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ERigUnitVisualDebugPointMode                  FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_2_Mode__Const; // 0x00B0(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETraceTypeQuery                               FootTrace___FootTrace_SphereTraceByTraceChannel_TraceChannel__Const; // 0x00B1(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B2[0x2];                                       // 0x00B2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         FootTrace___FootTrace_SphereTraceByTraceChannel_Radius__Const; // 0x00B4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ERigUnitVisualDebugPointMode                  FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_Mode__Const; // 0x00B8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B9[0x3];                                       // 0x00B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRigElementKey                         RigVMModel___FootTrace_1_Ik_Foot_Bone__Const;      // 0x00BC(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                FootTrace_1___FootTrace_MathVectorAdd_A__Const;    // 0x00C8(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ERigVMTransformSpace                          FootTrace_1___FootTrace_GetTransform_Space__Const; // 0x00E0(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          FootTrace_1___FootTrace_GetTransform_bInitial__Const; // 0x00E1(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E2[0x2];                                       // 0x00E2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         FootTrace_1___FootTrace_MathFloatAdd_B__Const;     // 0x00E4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRigElementKey                         FootTrace_1___FootTrace_GetTransform_1_Item__Const; // 0x00E8(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F4[0x4];                                       // 0x00F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                FootTrace_1___FootTrace_MathVectorAdd_B__Const;    // 0x00F8(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_bEnabled__Const; // 0x0110(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ERigUnitVisualDebugPointMode                  FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Mode__Const; // 0x0111(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_112[0x2];                                      // 0x0112(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Color__Const; // 0x0114(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Thickness__Const; // 0x0124(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Scale__Const; // 0x0128(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRigElementKey                         FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Space__Const; // 0x012C(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                FootTrace_1___FootTrace_MathVectorSub_B__Const;    // 0x0138(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ERigUnitVisualDebugPointMode                  FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_2_Mode__Const; // 0x0150(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETraceTypeQuery                               FootTrace_1___FootTrace_SphereTraceByTraceChannel_TraceChannel__Const; // 0x0151(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_152[0x2];                                      // 0x0152(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         FootTrace_1___FootTrace_SphereTraceByTraceChannel_Radius__Const; // 0x0154(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ERigUnitVisualDebugPointMode                  FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_Mode__Const; // 0x0158(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_159[0x7];                                      // 0x0159(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        RigVMModel___VariableNode_9_Value__Const;          // 0x0160(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         RigVMModel___AlphaInterp_Scale__Const;             // 0x0168(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         RigVMModel___AlphaInterp_Bias__Const;              // 0x016C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          RigVMModel___AlphaInterp_bMapRange__Const;         // 0x0170(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_171[0x3];                                      // 0x0171(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FInputRange                            RigVMModel___AlphaInterp_InRange__Const;           // 0x0174(0x0008)(Edit, NoDestructor)
-	bool                                          RigVMModel___AlphaInterp_bInterpResult__Const;     // 0x017C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_17D[0x3];                                      // 0x017D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         RigVMModel___AlphaInterp_InterpSpeedIncreasing__Const; // 0x0180(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_184[0x4];                                      // 0x0184(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FRigUnit_ModifyTransforms_PerItem> RigVMModel___ModifyTransforms_ItemToModify__Const; // 0x0188(0x0010)(Edit)
-	EControlRigModifyBoneMode                     RigVMModel___ModifyTransforms_Mode__Const;         // 0x0198(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_199[0x7];                                      // 0x0199(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FRigUnit_ModifyTransforms_PerItem> RigVMModel___ModifyTransforms_1_ItemToModify__Const; // 0x01A0(0x0010)(Edit)
-	TArray<struct FRigUnit_ModifyTransforms_PerItem> RigVMModel___ModifyTransforms_1_1_ItemToModify__Const; // 0x01B0(0x0010)(Edit)
-	class FName                                   RigVMModel___PBIK_Root__Const;                     // 0x01C0(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FPBIKEffector>                  RigVMModel___PBIK_Effectors__Const;                // 0x01C8(0x0010)(Edit)
-	ERigVMTransformSpace                          RigVMModel___GetTransform_Space__Const;            // 0x01D8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D9[0x7];                                      // 0x01D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FPBIKBoneSetting>               RigVMModel___PBIK_BoneSettings__Const;             // 0x01E0(0x0010)(Edit)
-	TArray<class FName>                           RigVMModel___PBIK_ExcludedBones__Const;            // 0x01F0(0x0010)(Edit)
-	struct FPBIKSolverSettings                    RigVMModel___PBIK_Settings__Const;                 // 0x0200(0x0040)(Edit, NoDestructor)
-	struct FPBIKDebug                             RigVMModel___PBIK_Debug__Const;                    // 0x0240(0x0008)(Edit, NoDestructor)
+	struct FVector3f                              position;                                          // 0x0000(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector3f                              Normal;                                            // 0x000C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector3f                              Velocity;                                          // 0x0018(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector3f                              AngularVelocity;                                   // 0x0024(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         ExtentMin;                                         // 0x0030(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ExtentMax;                                         // 0x0034(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ParticleID;                                        // 0x0038(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Time;                                              // 0x003C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Type;                                              // 0x0040(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FPropertyBag_e92315c3804419c7) == 0x000008, "Wrong alignment on FPropertyBag_e92315c3804419c7");
-static_assert(sizeof(FPropertyBag_e92315c3804419c7) == 0x000248, "Wrong size on FPropertyBag_e92315c3804419c7");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, RigVMModel___FootTrace_Ik_Foot_Bone__Const) == 0x000000, "Member 'FPropertyBag_e92315c3804419c7::RigVMModel___FootTrace_Ik_Foot_Bone__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, LocalVariableDefault__FootTrace_AnimatedFloorLocation__Const) == 0x000010, "Member 'FPropertyBag_e92315c3804419c7::LocalVariableDefault__FootTrace_AnimatedFloorLocation__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, FootTrace___FootTrace_MathVectorAdd_A__Const) == 0x000028, "Member 'FPropertyBag_e92315c3804419c7::FootTrace___FootTrace_MathVectorAdd_A__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, FootTrace___FootTrace_GetTransform_Space__Const) == 0x000040, "Member 'FPropertyBag_e92315c3804419c7::FootTrace___FootTrace_GetTransform_Space__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, FootTrace___FootTrace_GetTransform_bInitial__Const) == 0x000041, "Member 'FPropertyBag_e92315c3804419c7::FootTrace___FootTrace_GetTransform_bInitial__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, FootTrace___FootTrace_MathFloatAdd_B__Const) == 0x000044, "Member 'FPropertyBag_e92315c3804419c7::FootTrace___FootTrace_MathFloatAdd_B__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, FootTrace___FootTrace_GetTransform_1_Item__Const) == 0x000048, "Member 'FPropertyBag_e92315c3804419c7::FootTrace___FootTrace_GetTransform_1_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, FootTrace___FootTrace_MathVectorAdd_B__Const) == 0x000058, "Member 'FPropertyBag_e92315c3804419c7::FootTrace___FootTrace_MathVectorAdd_B__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_bEnabled__Const) == 0x000070, "Member 'FPropertyBag_e92315c3804419c7::FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_bEnabled__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Mode__Const) == 0x000071, "Member 'FPropertyBag_e92315c3804419c7::FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Mode__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Color__Const) == 0x000074, "Member 'FPropertyBag_e92315c3804419c7::FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Color__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Thickness__Const) == 0x000084, "Member 'FPropertyBag_e92315c3804419c7::FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Thickness__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Scale__Const) == 0x000088, "Member 'FPropertyBag_e92315c3804419c7::FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Scale__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Space__Const) == 0x00008C, "Member 'FPropertyBag_e92315c3804419c7::FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Space__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, FootTrace___FootTrace_MathVectorSub_B__Const) == 0x000098, "Member 'FPropertyBag_e92315c3804419c7::FootTrace___FootTrace_MathVectorSub_B__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_2_Mode__Const) == 0x0000B0, "Member 'FPropertyBag_e92315c3804419c7::FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_2_Mode__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, FootTrace___FootTrace_SphereTraceByTraceChannel_TraceChannel__Const) == 0x0000B1, "Member 'FPropertyBag_e92315c3804419c7::FootTrace___FootTrace_SphereTraceByTraceChannel_TraceChannel__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, FootTrace___FootTrace_SphereTraceByTraceChannel_Radius__Const) == 0x0000B4, "Member 'FPropertyBag_e92315c3804419c7::FootTrace___FootTrace_SphereTraceByTraceChannel_Radius__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_Mode__Const) == 0x0000B8, "Member 'FPropertyBag_e92315c3804419c7::FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_Mode__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, RigVMModel___FootTrace_1_Ik_Foot_Bone__Const) == 0x0000BC, "Member 'FPropertyBag_e92315c3804419c7::RigVMModel___FootTrace_1_Ik_Foot_Bone__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, FootTrace_1___FootTrace_MathVectorAdd_A__Const) == 0x0000C8, "Member 'FPropertyBag_e92315c3804419c7::FootTrace_1___FootTrace_MathVectorAdd_A__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, FootTrace_1___FootTrace_GetTransform_Space__Const) == 0x0000E0, "Member 'FPropertyBag_e92315c3804419c7::FootTrace_1___FootTrace_GetTransform_Space__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, FootTrace_1___FootTrace_GetTransform_bInitial__Const) == 0x0000E1, "Member 'FPropertyBag_e92315c3804419c7::FootTrace_1___FootTrace_GetTransform_bInitial__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, FootTrace_1___FootTrace_MathFloatAdd_B__Const) == 0x0000E4, "Member 'FPropertyBag_e92315c3804419c7::FootTrace_1___FootTrace_MathFloatAdd_B__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, FootTrace_1___FootTrace_GetTransform_1_Item__Const) == 0x0000E8, "Member 'FPropertyBag_e92315c3804419c7::FootTrace_1___FootTrace_GetTransform_1_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, FootTrace_1___FootTrace_MathVectorAdd_B__Const) == 0x0000F8, "Member 'FPropertyBag_e92315c3804419c7::FootTrace_1___FootTrace_MathVectorAdd_B__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_bEnabled__Const) == 0x000110, "Member 'FPropertyBag_e92315c3804419c7::FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_bEnabled__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Mode__Const) == 0x000111, "Member 'FPropertyBag_e92315c3804419c7::FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Mode__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Color__Const) == 0x000114, "Member 'FPropertyBag_e92315c3804419c7::FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Color__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Thickness__Const) == 0x000124, "Member 'FPropertyBag_e92315c3804419c7::FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Thickness__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Scale__Const) == 0x000128, "Member 'FPropertyBag_e92315c3804419c7::FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Scale__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Space__Const) == 0x00012C, "Member 'FPropertyBag_e92315c3804419c7::FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Space__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, FootTrace_1___FootTrace_MathVectorSub_B__Const) == 0x000138, "Member 'FPropertyBag_e92315c3804419c7::FootTrace_1___FootTrace_MathVectorSub_B__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_2_Mode__Const) == 0x000150, "Member 'FPropertyBag_e92315c3804419c7::FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_2_Mode__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, FootTrace_1___FootTrace_SphereTraceByTraceChannel_TraceChannel__Const) == 0x000151, "Member 'FPropertyBag_e92315c3804419c7::FootTrace_1___FootTrace_SphereTraceByTraceChannel_TraceChannel__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, FootTrace_1___FootTrace_SphereTraceByTraceChannel_Radius__Const) == 0x000154, "Member 'FPropertyBag_e92315c3804419c7::FootTrace_1___FootTrace_SphereTraceByTraceChannel_Radius__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_Mode__Const) == 0x000158, "Member 'FPropertyBag_e92315c3804419c7::FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_Mode__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, RigVMModel___VariableNode_9_Value__Const) == 0x000160, "Member 'FPropertyBag_e92315c3804419c7::RigVMModel___VariableNode_9_Value__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, RigVMModel___AlphaInterp_Scale__Const) == 0x000168, "Member 'FPropertyBag_e92315c3804419c7::RigVMModel___AlphaInterp_Scale__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, RigVMModel___AlphaInterp_Bias__Const) == 0x00016C, "Member 'FPropertyBag_e92315c3804419c7::RigVMModel___AlphaInterp_Bias__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, RigVMModel___AlphaInterp_bMapRange__Const) == 0x000170, "Member 'FPropertyBag_e92315c3804419c7::RigVMModel___AlphaInterp_bMapRange__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, RigVMModel___AlphaInterp_InRange__Const) == 0x000174, "Member 'FPropertyBag_e92315c3804419c7::RigVMModel___AlphaInterp_InRange__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, RigVMModel___AlphaInterp_bInterpResult__Const) == 0x00017C, "Member 'FPropertyBag_e92315c3804419c7::RigVMModel___AlphaInterp_bInterpResult__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, RigVMModel___AlphaInterp_InterpSpeedIncreasing__Const) == 0x000180, "Member 'FPropertyBag_e92315c3804419c7::RigVMModel___AlphaInterp_InterpSpeedIncreasing__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, RigVMModel___ModifyTransforms_ItemToModify__Const) == 0x000188, "Member 'FPropertyBag_e92315c3804419c7::RigVMModel___ModifyTransforms_ItemToModify__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, RigVMModel___ModifyTransforms_Mode__Const) == 0x000198, "Member 'FPropertyBag_e92315c3804419c7::RigVMModel___ModifyTransforms_Mode__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, RigVMModel___ModifyTransforms_1_ItemToModify__Const) == 0x0001A0, "Member 'FPropertyBag_e92315c3804419c7::RigVMModel___ModifyTransforms_1_ItemToModify__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, RigVMModel___ModifyTransforms_1_1_ItemToModify__Const) == 0x0001B0, "Member 'FPropertyBag_e92315c3804419c7::RigVMModel___ModifyTransforms_1_1_ItemToModify__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, RigVMModel___PBIK_Root__Const) == 0x0001C0, "Member 'FPropertyBag_e92315c3804419c7::RigVMModel___PBIK_Root__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, RigVMModel___PBIK_Effectors__Const) == 0x0001C8, "Member 'FPropertyBag_e92315c3804419c7::RigVMModel___PBIK_Effectors__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, RigVMModel___GetTransform_Space__Const) == 0x0001D8, "Member 'FPropertyBag_e92315c3804419c7::RigVMModel___GetTransform_Space__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, RigVMModel___PBIK_BoneSettings__Const) == 0x0001E0, "Member 'FPropertyBag_e92315c3804419c7::RigVMModel___PBIK_BoneSettings__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, RigVMModel___PBIK_ExcludedBones__Const) == 0x0001F0, "Member 'FPropertyBag_e92315c3804419c7::RigVMModel___PBIK_ExcludedBones__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, RigVMModel___PBIK_Settings__Const) == 0x000200, "Member 'FPropertyBag_e92315c3804419c7::RigVMModel___PBIK_Settings__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_e92315c3804419c7, RigVMModel___PBIK_Debug__Const) == 0x000240, "Member 'FPropertyBag_e92315c3804419c7::RigVMModel___PBIK_Debug__Const' has a wrong offset!");
+static_assert(alignof(FChaosDestructionEvent_SWC) == 0x000004, "Wrong alignment on FChaosDestructionEvent_SWC");
+static_assert(sizeof(FChaosDestructionEvent_SWC) == 0x000044, "Wrong size on FChaosDestructionEvent_SWC");
+static_assert(offsetof(FChaosDestructionEvent_SWC, position) == 0x000000, "Member 'FChaosDestructionEvent_SWC::position' has a wrong offset!");
+static_assert(offsetof(FChaosDestructionEvent_SWC, Normal) == 0x00000C, "Member 'FChaosDestructionEvent_SWC::Normal' has a wrong offset!");
+static_assert(offsetof(FChaosDestructionEvent_SWC, Velocity) == 0x000018, "Member 'FChaosDestructionEvent_SWC::Velocity' has a wrong offset!");
+static_assert(offsetof(FChaosDestructionEvent_SWC, AngularVelocity) == 0x000024, "Member 'FChaosDestructionEvent_SWC::AngularVelocity' has a wrong offset!");
+static_assert(offsetof(FChaosDestructionEvent_SWC, ExtentMin) == 0x000030, "Member 'FChaosDestructionEvent_SWC::ExtentMin' has a wrong offset!");
+static_assert(offsetof(FChaosDestructionEvent_SWC, ExtentMax) == 0x000034, "Member 'FChaosDestructionEvent_SWC::ExtentMax' has a wrong offset!");
+static_assert(offsetof(FChaosDestructionEvent_SWC, ParticleID) == 0x000038, "Member 'FChaosDestructionEvent_SWC::ParticleID' has a wrong offset!");
+static_assert(offsetof(FChaosDestructionEvent_SWC, Time) == 0x00003C, "Member 'FChaosDestructionEvent_SWC::Time' has a wrong offset!");
+static_assert(offsetof(FChaosDestructionEvent_SWC, Type) == 0x000040, "Member 'FChaosDestructionEvent_SWC::Type' has a wrong offset!");
 
-// PropertyBag Transient.PropertyBag_d3964a24ccda490a
+// PropertyBag Transient.PropertyBag_20c9dd40735cda66
 // 0x0258 (0x0258 - 0x0000)
-struct FPropertyBag_d3964a24ccda490a final
+struct FPropertyBag_20c9dd40735cda66 final
 {
 public:
 	struct FRigElementKey                         RigVMModel___Set_Transform_Item__Const;            // 0x0000(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
@@ -507,69 +245,69 @@ public:
 	struct FPBIKSolverSettings                    RigVMModel___PBIK_Settings__Const;                 // 0x0210(0x0040)(Edit, NoDestructor)
 	struct FPBIKDebug                             RigVMModel___PBIK_Debug__Const;                    // 0x0250(0x0008)(Edit, NoDestructor)
 };
-static_assert(alignof(FPropertyBag_d3964a24ccda490a) == 0x000008, "Wrong alignment on FPropertyBag_d3964a24ccda490a");
-static_assert(sizeof(FPropertyBag_d3964a24ccda490a) == 0x000258, "Wrong size on FPropertyBag_d3964a24ccda490a");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, RigVMModel___Set_Transform_Item__Const) == 0x000000, "Member 'FPropertyBag_d3964a24ccda490a::RigVMModel___Set_Transform_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, RigVMModel___Set_Transform_Space__Const) == 0x00000C, "Member 'FPropertyBag_d3964a24ccda490a::RigVMModel___Set_Transform_Space__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, RigVMModel___Set_Transform_bInitial__Const) == 0x00000D, "Member 'FPropertyBag_d3964a24ccda490a::RigVMModel___Set_Transform_bInitial__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, RigVMModel___GetTransform_2_Item__Const) == 0x000010, "Member 'FPropertyBag_d3964a24ccda490a::RigVMModel___GetTransform_2_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, RigVMModel___Set_Transform_Weight__Const) == 0x00001C, "Member 'FPropertyBag_d3964a24ccda490a::RigVMModel___Set_Transform_Weight__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, RigVMModel___Set_Transform_bPropagateToChildren__Const) == 0x000020, "Member 'FPropertyBag_d3964a24ccda490a::RigVMModel___Set_Transform_bPropagateToChildren__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, RigVMModel___Set_Transform_1_Item__Const) == 0x000024, "Member 'FPropertyBag_d3964a24ccda490a::RigVMModel___Set_Transform_1_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, RigVMModel___GetTransform_2_1_Item__Const) == 0x000030, "Member 'FPropertyBag_d3964a24ccda490a::RigVMModel___GetTransform_2_1_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, LocalVariableDefault__FootTrace_AnimatedFloorLocation__Const) == 0x000040, "Member 'FPropertyBag_d3964a24ccda490a::LocalVariableDefault__FootTrace_AnimatedFloorLocation__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, FootTrace___FootTrace_MathVectorAdd_A__Const) == 0x000058, "Member 'FPropertyBag_d3964a24ccda490a::FootTrace___FootTrace_MathVectorAdd_A__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, FootTrace___FootTrace_GetTransform_Space__Const) == 0x000070, "Member 'FPropertyBag_d3964a24ccda490a::FootTrace___FootTrace_GetTransform_Space__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, FootTrace___FootTrace_GetTransform_bInitial__Const) == 0x000071, "Member 'FPropertyBag_d3964a24ccda490a::FootTrace___FootTrace_GetTransform_bInitial__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, FootTrace___FootTrace_MathFloatAdd_B__Const) == 0x000074, "Member 'FPropertyBag_d3964a24ccda490a::FootTrace___FootTrace_MathFloatAdd_B__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, FootTrace___FootTrace_GetTransform_1_Item__Const) == 0x000078, "Member 'FPropertyBag_d3964a24ccda490a::FootTrace___FootTrace_GetTransform_1_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, FootTrace___FootTrace_MathVectorAdd_B__Const) == 0x000088, "Member 'FPropertyBag_d3964a24ccda490a::FootTrace___FootTrace_MathVectorAdd_B__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_bEnabled__Const) == 0x0000A0, "Member 'FPropertyBag_d3964a24ccda490a::FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_bEnabled__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Mode__Const) == 0x0000A1, "Member 'FPropertyBag_d3964a24ccda490a::FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Mode__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Color__Const) == 0x0000A4, "Member 'FPropertyBag_d3964a24ccda490a::FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Color__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Thickness__Const) == 0x0000B4, "Member 'FPropertyBag_d3964a24ccda490a::FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Thickness__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Scale__Const) == 0x0000B8, "Member 'FPropertyBag_d3964a24ccda490a::FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Scale__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, FootTrace___FootTrace_MathVectorSub_B__Const) == 0x0000C0, "Member 'FPropertyBag_d3964a24ccda490a::FootTrace___FootTrace_MathVectorSub_B__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_2_Mode__Const) == 0x0000D8, "Member 'FPropertyBag_d3964a24ccda490a::FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_2_Mode__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, FootTrace___FootTrace_SphereTraceByTraceChannel_TraceChannel__Const) == 0x0000D9, "Member 'FPropertyBag_d3964a24ccda490a::FootTrace___FootTrace_SphereTraceByTraceChannel_TraceChannel__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, FootTrace___FootTrace_SphereTraceByTraceChannel_Radius__Const) == 0x0000DC, "Member 'FPropertyBag_d3964a24ccda490a::FootTrace___FootTrace_SphereTraceByTraceChannel_Radius__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_Mode__Const) == 0x0000E0, "Member 'FPropertyBag_d3964a24ccda490a::FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_Mode__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, FootTrace_1___FootTrace_MathVectorAdd_A__Const) == 0x0000E8, "Member 'FPropertyBag_d3964a24ccda490a::FootTrace_1___FootTrace_MathVectorAdd_A__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, FootTrace_1___FootTrace_GetTransform_Space__Const) == 0x000100, "Member 'FPropertyBag_d3964a24ccda490a::FootTrace_1___FootTrace_GetTransform_Space__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, FootTrace_1___FootTrace_GetTransform_bInitial__Const) == 0x000101, "Member 'FPropertyBag_d3964a24ccda490a::FootTrace_1___FootTrace_GetTransform_bInitial__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, FootTrace_1___FootTrace_MathFloatAdd_B__Const) == 0x000104, "Member 'FPropertyBag_d3964a24ccda490a::FootTrace_1___FootTrace_MathFloatAdd_B__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, FootTrace_1___FootTrace_GetTransform_1_Item__Const) == 0x000108, "Member 'FPropertyBag_d3964a24ccda490a::FootTrace_1___FootTrace_GetTransform_1_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, FootTrace_1___FootTrace_MathVectorAdd_B__Const) == 0x000118, "Member 'FPropertyBag_d3964a24ccda490a::FootTrace_1___FootTrace_MathVectorAdd_B__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_bEnabled__Const) == 0x000130, "Member 'FPropertyBag_d3964a24ccda490a::FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_bEnabled__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Mode__Const) == 0x000131, "Member 'FPropertyBag_d3964a24ccda490a::FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Mode__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Color__Const) == 0x000134, "Member 'FPropertyBag_d3964a24ccda490a::FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Color__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Thickness__Const) == 0x000144, "Member 'FPropertyBag_d3964a24ccda490a::FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Thickness__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Scale__Const) == 0x000148, "Member 'FPropertyBag_d3964a24ccda490a::FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Scale__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, FootTrace_1___FootTrace_MathVectorSub_B__Const) == 0x000150, "Member 'FPropertyBag_d3964a24ccda490a::FootTrace_1___FootTrace_MathVectorSub_B__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_2_Mode__Const) == 0x000168, "Member 'FPropertyBag_d3964a24ccda490a::FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_2_Mode__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, FootTrace_1___FootTrace_SphereTraceByTraceChannel_TraceChannel__Const) == 0x000169, "Member 'FPropertyBag_d3964a24ccda490a::FootTrace_1___FootTrace_SphereTraceByTraceChannel_TraceChannel__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, FootTrace_1___FootTrace_SphereTraceByTraceChannel_Radius__Const) == 0x00016C, "Member 'FPropertyBag_d3964a24ccda490a::FootTrace_1___FootTrace_SphereTraceByTraceChannel_Radius__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_Mode__Const) == 0x000170, "Member 'FPropertyBag_d3964a24ccda490a::FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_Mode__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, RigVMModel___VariableNode_9_Value__Const) == 0x000178, "Member 'FPropertyBag_d3964a24ccda490a::RigVMModel___VariableNode_9_Value__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, RigVMModel___AlphaInterp_Bias__Const) == 0x000180, "Member 'FPropertyBag_d3964a24ccda490a::RigVMModel___AlphaInterp_Bias__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, RigVMModel___AlphaInterp_InRange__Const) == 0x000184, "Member 'FPropertyBag_d3964a24ccda490a::RigVMModel___AlphaInterp_InRange__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, RigVMModel___AlphaInterp_InterpSpeedIncreasing__Const) == 0x00018C, "Member 'FPropertyBag_d3964a24ccda490a::RigVMModel___AlphaInterp_InterpSpeedIncreasing__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, RigVMModel___MathFloatLerp_T__Const) == 0x000190, "Member 'FPropertyBag_d3964a24ccda490a::RigVMModel___MathFloatLerp_T__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, RigVMModel___ModifyTransforms_ItemToModify__Const) == 0x000198, "Member 'FPropertyBag_d3964a24ccda490a::RigVMModel___ModifyTransforms_ItemToModify__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, RigVMModel___ModifyTransforms_Mode__Const) == 0x0001A8, "Member 'FPropertyBag_d3964a24ccda490a::RigVMModel___ModifyTransforms_Mode__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, RigVMModel___ModifyTransforms_1_ItemToModify__Const) == 0x0001B0, "Member 'FPropertyBag_d3964a24ccda490a::RigVMModel___ModifyTransforms_1_ItemToModify__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, RigVMModel___ModifyTransforms_1_1_ItemToModify__Const) == 0x0001C0, "Member 'FPropertyBag_d3964a24ccda490a::RigVMModel___ModifyTransforms_1_1_ItemToModify__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, RigVMModel___PBIK_Root__Const) == 0x0001D0, "Member 'FPropertyBag_d3964a24ccda490a::RigVMModel___PBIK_Root__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, RigVMModel___PBIK_Effectors__Const) == 0x0001D8, "Member 'FPropertyBag_d3964a24ccda490a::RigVMModel___PBIK_Effectors__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, RigVMModel___GetTransform_Space__Const) == 0x0001E8, "Member 'FPropertyBag_d3964a24ccda490a::RigVMModel___GetTransform_Space__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, RigVMModel___PBIK_BoneSettings__Const) == 0x0001F0, "Member 'FPropertyBag_d3964a24ccda490a::RigVMModel___PBIK_BoneSettings__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, RigVMModel___PBIK_ExcludedBones__Const) == 0x000200, "Member 'FPropertyBag_d3964a24ccda490a::RigVMModel___PBIK_ExcludedBones__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, RigVMModel___PBIK_Settings__Const) == 0x000210, "Member 'FPropertyBag_d3964a24ccda490a::RigVMModel___PBIK_Settings__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_d3964a24ccda490a, RigVMModel___PBIK_Debug__Const) == 0x000250, "Member 'FPropertyBag_d3964a24ccda490a::RigVMModel___PBIK_Debug__Const' has a wrong offset!");
+static_assert(alignof(FPropertyBag_20c9dd40735cda66) == 0x000008, "Wrong alignment on FPropertyBag_20c9dd40735cda66");
+static_assert(sizeof(FPropertyBag_20c9dd40735cda66) == 0x000258, "Wrong size on FPropertyBag_20c9dd40735cda66");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, RigVMModel___Set_Transform_Item__Const) == 0x000000, "Member 'FPropertyBag_20c9dd40735cda66::RigVMModel___Set_Transform_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, RigVMModel___Set_Transform_Space__Const) == 0x00000C, "Member 'FPropertyBag_20c9dd40735cda66::RigVMModel___Set_Transform_Space__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, RigVMModel___Set_Transform_bInitial__Const) == 0x00000D, "Member 'FPropertyBag_20c9dd40735cda66::RigVMModel___Set_Transform_bInitial__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, RigVMModel___GetTransform_2_Item__Const) == 0x000010, "Member 'FPropertyBag_20c9dd40735cda66::RigVMModel___GetTransform_2_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, RigVMModel___Set_Transform_Weight__Const) == 0x00001C, "Member 'FPropertyBag_20c9dd40735cda66::RigVMModel___Set_Transform_Weight__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, RigVMModel___Set_Transform_bPropagateToChildren__Const) == 0x000020, "Member 'FPropertyBag_20c9dd40735cda66::RigVMModel___Set_Transform_bPropagateToChildren__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, RigVMModel___Set_Transform_1_Item__Const) == 0x000024, "Member 'FPropertyBag_20c9dd40735cda66::RigVMModel___Set_Transform_1_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, RigVMModel___GetTransform_2_1_Item__Const) == 0x000030, "Member 'FPropertyBag_20c9dd40735cda66::RigVMModel___GetTransform_2_1_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, LocalVariableDefault__FootTrace_AnimatedFloorLocation__Const) == 0x000040, "Member 'FPropertyBag_20c9dd40735cda66::LocalVariableDefault__FootTrace_AnimatedFloorLocation__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, FootTrace___FootTrace_MathVectorAdd_A__Const) == 0x000058, "Member 'FPropertyBag_20c9dd40735cda66::FootTrace___FootTrace_MathVectorAdd_A__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, FootTrace___FootTrace_GetTransform_Space__Const) == 0x000070, "Member 'FPropertyBag_20c9dd40735cda66::FootTrace___FootTrace_GetTransform_Space__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, FootTrace___FootTrace_GetTransform_bInitial__Const) == 0x000071, "Member 'FPropertyBag_20c9dd40735cda66::FootTrace___FootTrace_GetTransform_bInitial__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, FootTrace___FootTrace_MathFloatAdd_B__Const) == 0x000074, "Member 'FPropertyBag_20c9dd40735cda66::FootTrace___FootTrace_MathFloatAdd_B__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, FootTrace___FootTrace_GetTransform_1_Item__Const) == 0x000078, "Member 'FPropertyBag_20c9dd40735cda66::FootTrace___FootTrace_GetTransform_1_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, FootTrace___FootTrace_MathVectorAdd_B__Const) == 0x000088, "Member 'FPropertyBag_20c9dd40735cda66::FootTrace___FootTrace_MathVectorAdd_B__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_bEnabled__Const) == 0x0000A0, "Member 'FPropertyBag_20c9dd40735cda66::FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_bEnabled__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Mode__Const) == 0x0000A1, "Member 'FPropertyBag_20c9dd40735cda66::FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Mode__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Color__Const) == 0x0000A4, "Member 'FPropertyBag_20c9dd40735cda66::FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Color__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Thickness__Const) == 0x0000B4, "Member 'FPropertyBag_20c9dd40735cda66::FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Thickness__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Scale__Const) == 0x0000B8, "Member 'FPropertyBag_20c9dd40735cda66::FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Scale__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, FootTrace___FootTrace_MathVectorSub_B__Const) == 0x0000C0, "Member 'FPropertyBag_20c9dd40735cda66::FootTrace___FootTrace_MathVectorSub_B__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_2_Mode__Const) == 0x0000D8, "Member 'FPropertyBag_20c9dd40735cda66::FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_2_Mode__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, FootTrace___FootTrace_SphereTraceByTraceChannel_TraceChannel__Const) == 0x0000D9, "Member 'FPropertyBag_20c9dd40735cda66::FootTrace___FootTrace_SphereTraceByTraceChannel_TraceChannel__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, FootTrace___FootTrace_SphereTraceByTraceChannel_Radius__Const) == 0x0000DC, "Member 'FPropertyBag_20c9dd40735cda66::FootTrace___FootTrace_SphereTraceByTraceChannel_Radius__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_Mode__Const) == 0x0000E0, "Member 'FPropertyBag_20c9dd40735cda66::FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_Mode__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, FootTrace_1___FootTrace_MathVectorAdd_A__Const) == 0x0000E8, "Member 'FPropertyBag_20c9dd40735cda66::FootTrace_1___FootTrace_MathVectorAdd_A__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, FootTrace_1___FootTrace_GetTransform_Space__Const) == 0x000100, "Member 'FPropertyBag_20c9dd40735cda66::FootTrace_1___FootTrace_GetTransform_Space__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, FootTrace_1___FootTrace_GetTransform_bInitial__Const) == 0x000101, "Member 'FPropertyBag_20c9dd40735cda66::FootTrace_1___FootTrace_GetTransform_bInitial__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, FootTrace_1___FootTrace_MathFloatAdd_B__Const) == 0x000104, "Member 'FPropertyBag_20c9dd40735cda66::FootTrace_1___FootTrace_MathFloatAdd_B__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, FootTrace_1___FootTrace_GetTransform_1_Item__Const) == 0x000108, "Member 'FPropertyBag_20c9dd40735cda66::FootTrace_1___FootTrace_GetTransform_1_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, FootTrace_1___FootTrace_MathVectorAdd_B__Const) == 0x000118, "Member 'FPropertyBag_20c9dd40735cda66::FootTrace_1___FootTrace_MathVectorAdd_B__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_bEnabled__Const) == 0x000130, "Member 'FPropertyBag_20c9dd40735cda66::FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_bEnabled__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Mode__Const) == 0x000131, "Member 'FPropertyBag_20c9dd40735cda66::FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Mode__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Color__Const) == 0x000134, "Member 'FPropertyBag_20c9dd40735cda66::FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Color__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Thickness__Const) == 0x000144, "Member 'FPropertyBag_20c9dd40735cda66::FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Thickness__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Scale__Const) == 0x000148, "Member 'FPropertyBag_20c9dd40735cda66::FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Scale__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, FootTrace_1___FootTrace_MathVectorSub_B__Const) == 0x000150, "Member 'FPropertyBag_20c9dd40735cda66::FootTrace_1___FootTrace_MathVectorSub_B__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_2_Mode__Const) == 0x000168, "Member 'FPropertyBag_20c9dd40735cda66::FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_2_Mode__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, FootTrace_1___FootTrace_SphereTraceByTraceChannel_TraceChannel__Const) == 0x000169, "Member 'FPropertyBag_20c9dd40735cda66::FootTrace_1___FootTrace_SphereTraceByTraceChannel_TraceChannel__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, FootTrace_1___FootTrace_SphereTraceByTraceChannel_Radius__Const) == 0x00016C, "Member 'FPropertyBag_20c9dd40735cda66::FootTrace_1___FootTrace_SphereTraceByTraceChannel_Radius__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_Mode__Const) == 0x000170, "Member 'FPropertyBag_20c9dd40735cda66::FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_Mode__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, RigVMModel___VariableNode_9_Value__Const) == 0x000178, "Member 'FPropertyBag_20c9dd40735cda66::RigVMModel___VariableNode_9_Value__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, RigVMModel___AlphaInterp_Bias__Const) == 0x000180, "Member 'FPropertyBag_20c9dd40735cda66::RigVMModel___AlphaInterp_Bias__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, RigVMModel___AlphaInterp_InRange__Const) == 0x000184, "Member 'FPropertyBag_20c9dd40735cda66::RigVMModel___AlphaInterp_InRange__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, RigVMModel___AlphaInterp_InterpSpeedIncreasing__Const) == 0x00018C, "Member 'FPropertyBag_20c9dd40735cda66::RigVMModel___AlphaInterp_InterpSpeedIncreasing__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, RigVMModel___MathFloatLerp_T__Const) == 0x000190, "Member 'FPropertyBag_20c9dd40735cda66::RigVMModel___MathFloatLerp_T__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, RigVMModel___ModifyTransforms_ItemToModify__Const) == 0x000198, "Member 'FPropertyBag_20c9dd40735cda66::RigVMModel___ModifyTransforms_ItemToModify__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, RigVMModel___ModifyTransforms_Mode__Const) == 0x0001A8, "Member 'FPropertyBag_20c9dd40735cda66::RigVMModel___ModifyTransforms_Mode__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, RigVMModel___ModifyTransforms_1_ItemToModify__Const) == 0x0001B0, "Member 'FPropertyBag_20c9dd40735cda66::RigVMModel___ModifyTransforms_1_ItemToModify__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, RigVMModel___ModifyTransforms_1_1_ItemToModify__Const) == 0x0001C0, "Member 'FPropertyBag_20c9dd40735cda66::RigVMModel___ModifyTransforms_1_1_ItemToModify__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, RigVMModel___PBIK_Root__Const) == 0x0001D0, "Member 'FPropertyBag_20c9dd40735cda66::RigVMModel___PBIK_Root__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, RigVMModel___PBIK_Effectors__Const) == 0x0001D8, "Member 'FPropertyBag_20c9dd40735cda66::RigVMModel___PBIK_Effectors__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, RigVMModel___GetTransform_Space__Const) == 0x0001E8, "Member 'FPropertyBag_20c9dd40735cda66::RigVMModel___GetTransform_Space__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, RigVMModel___PBIK_BoneSettings__Const) == 0x0001F0, "Member 'FPropertyBag_20c9dd40735cda66::RigVMModel___PBIK_BoneSettings__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, RigVMModel___PBIK_ExcludedBones__Const) == 0x000200, "Member 'FPropertyBag_20c9dd40735cda66::RigVMModel___PBIK_ExcludedBones__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, RigVMModel___PBIK_Settings__Const) == 0x000210, "Member 'FPropertyBag_20c9dd40735cda66::RigVMModel___PBIK_Settings__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_20c9dd40735cda66, RigVMModel___PBIK_Debug__Const) == 0x000250, "Member 'FPropertyBag_20c9dd40735cda66::RigVMModel___PBIK_Debug__Const' has a wrong offset!");
 
-// PropertyBag Transient.PropertyBag_f243139d2cf436af
+// PropertyBag Transient.PropertyBag_3fe86ee39239b5e0
 // 0x2A80 (0x2A80 - 0x0000)
-struct FPropertyBag_f243139d2cf436af final
+struct FPropertyBag_3fe86ee39239b5e0 final
 {
 public:
 	struct FQuat                                  RigVMModel___MathQuaternionMul_Result;             // 0x0000(0x0020)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -832,256 +570,274 @@ public:
 	struct FVector                                RigVMModel___SetTranslation_4_1_2_Value;           // 0x2A50(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FCachedRigElement>              RigVMModel___SetTranslation_4_1_2_CachedIndex;     // 0x2A68(0x0010)(Edit)
 };
-static_assert(alignof(FPropertyBag_f243139d2cf436af) == 0x000010, "Wrong alignment on FPropertyBag_f243139d2cf436af");
-static_assert(sizeof(FPropertyBag_f243139d2cf436af) == 0x002A80, "Wrong size on FPropertyBag_f243139d2cf436af");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionMul_Result) == 0x000000, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionMul_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionInverse_3_Result) == 0x000020, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionInverse_3_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSwingTwist_Twist) == 0x000040, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSwingTwist_Twist' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathTransformMakeRelative_3_Local) == 0x000060, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathTransformMakeRelative_3_Local' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_Transform) == 0x0000C0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_CachedIndex) == 0x000120, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_1_Transform) == 0x000130, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_1_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_1_CachedIndex) == 0x000190, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSwingTwist_Input) == 0x0001A0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSwingTwist_Input' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSwingTwist_Swing) == 0x0001C0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSwingTwist_Swing' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSlerp_2_Result) == 0x0001E0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSlerp_2_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionInverse_2_Result) == 0x000200, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionInverse_2_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetRotation_2_CachedIndex) == 0x000220, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetRotation_2_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSlerp_Result) == 0x000230, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSlerp_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetRotation_2_1_CachedIndex) == 0x000250, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetRotation_2_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathTransformLerp_Result) == 0x000260, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathTransformLerp_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_Transform) == 0x0002C0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_CachedIndex) == 0x000320, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_1_Transform) == 0x000330, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_1_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_1_CachedIndex) == 0x000390, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetTranslation_Value) == 0x0003A0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetTranslation_Value' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetTranslation_CachedIndex) == 0x0003B8, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetTranslation_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSlerp_1_Result) == 0x0003D0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSlerp_1_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetRotation_2_1_1_CachedIndex) == 0x0003F0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetRotation_2_1_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathTransformLerp_1_Result) == 0x000400, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathTransformLerp_1_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetTranslation_1_Value) == 0x000460, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetTranslation_1_Value' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetTranslation_1_CachedIndex) == 0x000478, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetTranslation_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionMul_3_Result) == 0x000490, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionMul_3_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionInverse_3_3_Result) == 0x0004B0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionInverse_3_3_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSwingTwist_4_Twist) == 0x0004D0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSwingTwist_4_Twist' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathTransformMakeRelative_3_4_Local) == 0x0004F0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathTransformMakeRelative_3_4_Local' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_2_Transform) == 0x000550, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_2_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_2_CachedIndex) == 0x0005B0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_2_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_1_1_Transform) == 0x0005C0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_1_1_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_1_1_CachedIndex) == 0x000620, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_1_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSwingTwist_4_Input) == 0x000630, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSwingTwist_4_Input' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSwingTwist_4_Swing) == 0x000650, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSwingTwist_4_Swing' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSlerp_2_3_Result) == 0x000670, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSlerp_2_3_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionInverse_2_4_Result) == 0x000690, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionInverse_2_4_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetRotation_2_1_2_CachedIndex) == 0x0006B0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetRotation_2_1_2_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSlerp_4_Result) == 0x0006C0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSlerp_4_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSwingTwist_3_Twist) == 0x0006E0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSwingTwist_3_Twist' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathTransformMakeRelative_3_3_Local) == 0x000700, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathTransformMakeRelative_3_3_Local' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_5_1_Transform) == 0x000760, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_5_1_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_5_1_CachedIndex) == 0x0007C0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_5_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_5_Transform) == 0x0007D0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_5_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_5_CachedIndex) == 0x000830, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_5_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSwingTwist_3_Input) == 0x000840, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSwingTwist_3_Input' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSwingTwist_3_Swing) == 0x000860, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSwingTwist_3_Swing' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetRotation_1_CachedIndex) == 0x000880, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetRotation_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathTransformLerp_1_3_Result) == 0x000890, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathTransformLerp_1_3_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_4_Transform) == 0x0008F0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_4_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_4_CachedIndex) == 0x000950, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_4_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_1_3_Transform) == 0x000960, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_1_3_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_1_3_CachedIndex) == 0x0009C0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_1_3_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetTranslation_5_Value) == 0x0009D0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetTranslation_5_Value' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetTranslation_5_CachedIndex) == 0x0009E8, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetTranslation_5_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSlerp_1_3_Result) == 0x000A00, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSlerp_1_3_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetRotation_CachedIndex) == 0x000A20, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetRotation_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathTransformLerp_4_Result) == 0x000A30, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathTransformLerp_4_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetTranslation_5_1_Value) == 0x000A90, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetTranslation_5_1_Value' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetTranslation_5_1_CachedIndex) == 0x000AA8, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetTranslation_5_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionMul_1_Result) == 0x000AC0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionMul_1_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionInverse_3_1_Result) == 0x000AE0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionInverse_3_1_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSwingTwist_1_Twist) == 0x000B00, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSwingTwist_1_Twist' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathTransformMakeRelative_3_1_Local) == 0x000B20, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathTransformMakeRelative_3_1_Local' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_3_Transform) == 0x000B80, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_3_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_3_CachedIndex) == 0x000BE0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_3_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_1_2_Transform) == 0x000BF0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_1_2_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_1_2_CachedIndex) == 0x000C50, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_1_2_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSwingTwist_1_Input) == 0x000C60, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSwingTwist_1_Input' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSwingTwist_1_Swing) == 0x000C80, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSwingTwist_1_Swing' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSlerp_2_1_Result) == 0x000CA0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSlerp_2_1_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionInverse_2_1_Result) == 0x000CC0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionInverse_2_1_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetRotation_2_2_CachedIndex) == 0x000CE0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetRotation_2_2_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSlerp_3_Result) == 0x000CF0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSlerp_3_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetRotation_2_1_3_CachedIndex) == 0x000D10, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetRotation_2_1_3_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathTransformLerp_2_Result) == 0x000D20, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathTransformLerp_2_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_2_Transform) == 0x000D80, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_2_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_2_CachedIndex) == 0x000DE0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_2_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_1_1_Transform) == 0x000DF0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_1_1_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_1_1_CachedIndex) == 0x000E50, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_1_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetTranslation_2_Value) == 0x000E60, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetTranslation_2_Value' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetTranslation_2_CachedIndex) == 0x000E78, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetTranslation_2_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSlerp_1_1_Result) == 0x000E90, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSlerp_1_1_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetRotation_2_1_3_1_CachedIndex) == 0x000EB0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetRotation_2_1_3_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathTransformLerp_1_1_Result) == 0x000EC0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathTransformLerp_1_1_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetTranslation_2_1_Value) == 0x000F20, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetTranslation_2_1_Value' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetTranslation_2_1_CachedIndex) == 0x000F38, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetTranslation_2_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionMul_3_1_Result) == 0x000F50, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionMul_3_1_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionInverse_3_3_1_Result) == 0x000F70, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionInverse_3_3_1_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSwingTwist_4_1_Twist) == 0x000F90, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSwingTwist_4_1_Twist' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathTransformMakeRelative_3_4_1_Local) == 0x000FB0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathTransformMakeRelative_3_4_1_Local' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_4_Transform) == 0x001010, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_4_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_4_CachedIndex) == 0x001070, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_4_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_1_3_Transform) == 0x001080, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_1_3_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_1_3_CachedIndex) == 0x0010E0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_1_3_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSwingTwist_4_1_Input) == 0x0010F0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSwingTwist_4_1_Input' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSwingTwist_4_1_Swing) == 0x001110, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSwingTwist_4_1_Swing' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSlerp_2_3_1_Result) == 0x001130, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSlerp_2_3_1_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionInverse_2_4_1_Result) == 0x001150, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionInverse_2_4_1_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetRotation_2_1_3_1_1_CachedIndex) == 0x001170, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetRotation_2_1_3_1_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSlerp_1_3_1_1_Result) == 0x001180, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSlerp_1_3_1_1_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSwingTwist_3_1_Twist) == 0x0011A0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSwingTwist_3_1_Twist' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathTransformMakeRelative_3_3_1_Local) == 0x0011C0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathTransformMakeRelative_3_3_1_Local' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_5_Transform) == 0x001220, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_5_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_5_CachedIndex) == 0x001280, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_5_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_1_4_Transform) == 0x001290, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_1_4_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_1_4_CachedIndex) == 0x0012F0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_1_4_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSwingTwist_3_1_Input) == 0x001300, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSwingTwist_3_1_Input' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSwingTwist_3_1_Swing) == 0x001320, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSwingTwist_3_1_Swing' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetRotation_2_1_3_1_1_1_CachedIndex) == 0x001340, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetRotation_2_1_3_1_1_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathTransformLerp_1_3_1_Result) == 0x001350, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathTransformLerp_1_3_1_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_4_1_Transform) == 0x0013B0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_4_1_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_4_1_CachedIndex) == 0x001410, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_4_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_1_3_1_Transform) == 0x001420, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_1_3_1_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_1_3_1_CachedIndex) == 0x001480, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_1_3_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetTranslation_2_1_1_Value) == 0x001490, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetTranslation_2_1_1_Value' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetTranslation_2_1_1_CachedIndex) == 0x0014A8, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetTranslation_2_1_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSlerp_1_3_1_Result) == 0x0014C0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSlerp_1_3_1_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetRotation_2_1_3_1_1_1_1_CachedIndex) == 0x0014E0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetRotation_2_1_3_1_1_1_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathTransformLerp_4_1_Result) == 0x0014F0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathTransformLerp_4_1_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetTranslation_2_1_1_1_Value) == 0x001550, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetTranslation_2_1_1_1_Value' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetTranslation_2_1_1_1_CachedIndex) == 0x001568, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetTranslation_2_1_1_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionMul_2_Result) == 0x001580, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionMul_2_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionInverse_3_2_Result) == 0x0015A0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionInverse_3_2_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSwingTwist_2_Twist) == 0x0015C0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSwingTwist_2_Twist' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathTransformMakeRelative_3_2_Local) == 0x0015E0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathTransformMakeRelative_3_2_Local' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_3_1_Transform) == 0x001640, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_3_1_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_3_1_CachedIndex) == 0x0016A0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_3_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_1_2_1_Transform) == 0x0016B0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_1_2_1_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_1_2_1_CachedIndex) == 0x001710, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_1_2_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSwingTwist_2_Input) == 0x001720, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSwingTwist_2_Input' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSwingTwist_2_Swing) == 0x001740, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSwingTwist_2_Swing' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSlerp_2_2_Result) == 0x001760, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSlerp_2_2_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionInverse_2_2_Result) == 0x001780, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionInverse_2_2_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetRotation_2_2_1_CachedIndex) == 0x0017A0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetRotation_2_2_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetRotation_2_1_3_2_CachedIndex) == 0x0017B0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetRotation_2_1_3_2_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathTransformLerp_3_Result) == 0x0017C0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathTransformLerp_3_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_3_Transform) == 0x001820, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_3_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_3_CachedIndex) == 0x001880, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_3_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_1_2_Transform) == 0x001890, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_1_2_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_1_2_CachedIndex) == 0x0018F0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_1_2_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetTranslation_3_Value) == 0x001900, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetTranslation_3_Value' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetTranslation_3_CachedIndex) == 0x001918, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetTranslation_3_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSlerp_1_2_Result) == 0x001930, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSlerp_1_2_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetRotation_3_CachedIndex) == 0x001950, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetRotation_3_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathTransformLerp_1_2_Result) == 0x001960, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathTransformLerp_1_2_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetTranslation_3_1_Value) == 0x0019C0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetTranslation_3_1_Value' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetTranslation_3_1_CachedIndex) == 0x0019D8, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetTranslation_3_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionMul_2_2_Result) == 0x0019F0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionMul_2_2_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionInverse_3_2_2_Result) == 0x001A10, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionInverse_3_2_2_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSwingTwist_2_2_Twist) == 0x001A30, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSwingTwist_2_2_Twist' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathTransformMakeRelative_3_2_2_Local) == 0x001A50, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathTransformMakeRelative_3_2_2_Local' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_3_1_1_Transform) == 0x001AB0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_3_1_1_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_3_1_1_CachedIndex) == 0x001B10, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_3_1_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_1_2_1_1_Transform) == 0x001B20, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_1_2_1_1_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_1_2_1_1_CachedIndex) == 0x001B80, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_1_2_1_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSwingTwist_2_2_Input) == 0x001B90, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSwingTwist_2_2_Input' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSwingTwist_2_2_Swing) == 0x001BB0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSwingTwist_2_2_Swing' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSlerp_2_2_2_Result) == 0x001BD0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSlerp_2_2_2_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionInverse_2_2_2_Result) == 0x001BF0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionInverse_2_2_2_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetRotation_2_1_3_2_1_CachedIndex) == 0x001C10, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetRotation_2_1_3_2_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSlerp_2_2_2_1_Result) == 0x001C20, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSlerp_2_2_2_1_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSwingTwist_2_2_1_Twist) == 0x001C40, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSwingTwist_2_2_1_Twist' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathTransformMakeRelative_3_2_2_1_Local) == 0x001C60, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathTransformMakeRelative_3_2_2_1_Local' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_3_1_2_Transform) == 0x001CC0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_3_1_2_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_3_1_2_CachedIndex) == 0x001D20, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_3_1_2_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_1_2_1_2_Transform) == 0x001D30, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_1_2_1_2_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_1_2_1_2_CachedIndex) == 0x001D90, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_1_2_1_2_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSwingTwist_2_2_1_Input) == 0x001DA0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSwingTwist_2_2_1_Input' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSwingTwist_2_2_1_Swing) == 0x001DC0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSwingTwist_2_2_1_Swing' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetRotation_2_1_3_2_1_1_CachedIndex) == 0x001DE0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetRotation_2_1_3_2_1_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathTransformLerp_1_2_2_Result) == 0x001DF0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathTransformLerp_1_2_2_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_3_2_Transform) == 0x001E50, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_3_2_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_3_2_CachedIndex) == 0x001EB0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_3_2_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_1_2_2_Transform) == 0x001EC0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_1_2_2_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_1_2_2_CachedIndex) == 0x001F20, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_1_2_2_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetTranslation_3_1_1_Value) == 0x001F30, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetTranslation_3_1_1_Value' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetTranslation_3_1_1_CachedIndex) == 0x001F48, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetTranslation_3_1_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetRotation_2_1_3_2_1_1_1_CachedIndex) == 0x001F58, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetRotation_2_1_3_2_1_1_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathTransformLerp_3_2_Result) == 0x001F70, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathTransformLerp_3_2_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetTranslation_3_1_1_1_Value) == 0x001FD0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetTranslation_3_1_1_1_Value' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetTranslation_3_1_1_1_CachedIndex) == 0x001FE8, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetTranslation_3_1_1_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionMul_2_1_Result) == 0x002000, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionMul_2_1_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionInverse_3_2_1_Result) == 0x002020, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionInverse_3_2_1_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSwingTwist_2_1_Twist) == 0x002040, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSwingTwist_2_1_Twist' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathTransformMakeRelative_3_2_1_Local) == 0x002060, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathTransformMakeRelative_3_2_1_Local' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_3_1_3_Transform) == 0x0020C0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_3_1_3_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_3_1_3_CachedIndex) == 0x002120, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_3_1_3_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_1_2_1_3_Transform) == 0x002130, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_1_2_1_3_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_1_2_1_3_CachedIndex) == 0x002190, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_1_2_1_3_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSwingTwist_2_1_Input) == 0x0021A0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSwingTwist_2_1_Input' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSwingTwist_2_1_Swing) == 0x0021C0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSwingTwist_2_1_Swing' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSlerp_2_2_1_Result) == 0x0021E0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSlerp_2_2_1_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionInverse_2_2_1_Result) == 0x002200, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionInverse_2_2_1_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetRotation_2_2_1_1_CachedIndex) == 0x002220, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetRotation_2_2_1_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetRotation_2_1_3_2_2_CachedIndex) == 0x002230, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetRotation_2_1_3_2_2_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathTransformLerp_3_1_Result) == 0x002240, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathTransformLerp_3_1_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_3_1_Transform) == 0x0022A0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_3_1_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_3_1_CachedIndex) == 0x002300, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_3_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_1_2_1_Transform) == 0x002310, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_1_2_1_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_1_2_1_CachedIndex) == 0x002370, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_1_2_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetTranslation_4_Value) == 0x002380, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetTranslation_4_Value' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetTranslation_4_CachedIndex) == 0x002398, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetTranslation_4_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSlerp_1_2_1_Result) == 0x0023B0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSlerp_1_2_1_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetRotation_3_1_CachedIndex) == 0x0023D0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetRotation_3_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathTransformLerp_1_2_1_Result) == 0x0023E0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathTransformLerp_1_2_1_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetTranslation_4_1_Value) == 0x002440, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetTranslation_4_1_Value' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetTranslation_4_1_CachedIndex) == 0x002458, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetTranslation_4_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionMul_2_2_1_Result) == 0x002470, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionMul_2_2_1_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionInverse_3_2_2_1_Result) == 0x002490, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionInverse_3_2_2_1_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSwingTwist_2_2_2_Twist) == 0x0024B0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSwingTwist_2_2_2_Twist' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathTransformMakeRelative_3_2_2_2_Local) == 0x0024D0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathTransformMakeRelative_3_2_2_2_Local' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_3_1_4_Transform) == 0x002530, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_3_1_4_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_3_1_4_CachedIndex) == 0x002590, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_3_1_4_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_1_2_1_4_Transform) == 0x0025A0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_1_2_1_4_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_1_2_1_4_CachedIndex) == 0x002600, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_1_2_1_4_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSwingTwist_2_2_2_Input) == 0x002610, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSwingTwist_2_2_2_Input' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSwingTwist_2_2_2_Swing) == 0x002630, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSwingTwist_2_2_2_Swing' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSlerp_2_2_2_2_Result) == 0x002650, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSlerp_2_2_2_2_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionInverse_2_2_2_1_Result) == 0x002670, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionInverse_2_2_2_1_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetRotation_3_2_CachedIndex) == 0x002690, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetRotation_3_2_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSlerp_2_2_2_1_1_Result) == 0x0026A0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSlerp_2_2_2_1_1_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSwingTwist_2_2_1_1_Twist) == 0x0026C0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSwingTwist_2_2_1_1_Twist' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathTransformMakeRelative_3_2_2_1_1_Local) == 0x0026E0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathTransformMakeRelative_3_2_2_1_1_Local' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_3_1_5_Transform) == 0x002740, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_3_1_5_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_3_1_5_CachedIndex) == 0x0027A0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_3_1_5_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_1_2_1_5_Transform) == 0x0027B0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_1_2_1_5_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_6_1_2_1_5_CachedIndex) == 0x002810, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_6_1_2_1_5_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSwingTwist_2_2_1_1_Input) == 0x002820, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSwingTwist_2_2_1_1_Input' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathQuaternionSwingTwist_2_2_1_1_Swing) == 0x002840, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathQuaternionSwingTwist_2_2_1_1_Swing' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetRotation_3_2_1_CachedIndex) == 0x002860, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetRotation_3_2_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathTransformLerp_1_2_2_1_Result) == 0x002870, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathTransformLerp_1_2_2_1_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_3_2_1_Transform) == 0x0028D0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_3_2_1_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_3_2_1_CachedIndex) == 0x002930, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_3_2_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_1_2_2_1_Transform) == 0x002940, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_1_2_2_1_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___GetTransform_1_2_2_1_CachedIndex) == 0x0029A0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___GetTransform_1_2_2_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetTranslation_4_1_1_Value) == 0x0029B0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetTranslation_4_1_1_Value' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetTranslation_4_1_1_CachedIndex) == 0x0029C8, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetTranslation_4_1_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetRotation_3_2_1_1_CachedIndex) == 0x0029D8, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetRotation_3_2_1_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___MathTransformLerp_3_2_1_Result) == 0x0029F0, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___MathTransformLerp_3_2_1_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetTranslation_4_1_2_Value) == 0x002A50, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetTranslation_4_1_2_Value' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f243139d2cf436af, RigVMModel___SetTranslation_4_1_2_CachedIndex) == 0x002A68, "Member 'FPropertyBag_f243139d2cf436af::RigVMModel___SetTranslation_4_1_2_CachedIndex' has a wrong offset!");
+static_assert(alignof(FPropertyBag_3fe86ee39239b5e0) == 0x000010, "Wrong alignment on FPropertyBag_3fe86ee39239b5e0");
+static_assert(sizeof(FPropertyBag_3fe86ee39239b5e0) == 0x002A80, "Wrong size on FPropertyBag_3fe86ee39239b5e0");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionMul_Result) == 0x000000, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionMul_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionInverse_3_Result) == 0x000020, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionInverse_3_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSwingTwist_Twist) == 0x000040, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSwingTwist_Twist' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathTransformMakeRelative_3_Local) == 0x000060, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathTransformMakeRelative_3_Local' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_Transform) == 0x0000C0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_CachedIndex) == 0x000120, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_1_Transform) == 0x000130, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_1_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_1_CachedIndex) == 0x000190, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSwingTwist_Input) == 0x0001A0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSwingTwist_Input' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSwingTwist_Swing) == 0x0001C0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSwingTwist_Swing' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSlerp_2_Result) == 0x0001E0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSlerp_2_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionInverse_2_Result) == 0x000200, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionInverse_2_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetRotation_2_CachedIndex) == 0x000220, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetRotation_2_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSlerp_Result) == 0x000230, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSlerp_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetRotation_2_1_CachedIndex) == 0x000250, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetRotation_2_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathTransformLerp_Result) == 0x000260, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathTransformLerp_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_Transform) == 0x0002C0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_CachedIndex) == 0x000320, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_1_Transform) == 0x000330, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_1_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_1_CachedIndex) == 0x000390, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetTranslation_Value) == 0x0003A0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetTranslation_Value' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetTranslation_CachedIndex) == 0x0003B8, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetTranslation_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSlerp_1_Result) == 0x0003D0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSlerp_1_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetRotation_2_1_1_CachedIndex) == 0x0003F0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetRotation_2_1_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathTransformLerp_1_Result) == 0x000400, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathTransformLerp_1_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetTranslation_1_Value) == 0x000460, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetTranslation_1_Value' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetTranslation_1_CachedIndex) == 0x000478, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetTranslation_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionMul_3_Result) == 0x000490, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionMul_3_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionInverse_3_3_Result) == 0x0004B0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionInverse_3_3_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSwingTwist_4_Twist) == 0x0004D0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSwingTwist_4_Twist' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathTransformMakeRelative_3_4_Local) == 0x0004F0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathTransformMakeRelative_3_4_Local' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_2_Transform) == 0x000550, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_2_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_2_CachedIndex) == 0x0005B0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_2_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_1_1_Transform) == 0x0005C0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_1_1_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_1_1_CachedIndex) == 0x000620, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_1_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSwingTwist_4_Input) == 0x000630, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSwingTwist_4_Input' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSwingTwist_4_Swing) == 0x000650, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSwingTwist_4_Swing' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSlerp_2_3_Result) == 0x000670, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSlerp_2_3_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionInverse_2_4_Result) == 0x000690, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionInverse_2_4_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetRotation_2_1_2_CachedIndex) == 0x0006B0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetRotation_2_1_2_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSlerp_4_Result) == 0x0006C0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSlerp_4_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSwingTwist_3_Twist) == 0x0006E0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSwingTwist_3_Twist' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathTransformMakeRelative_3_3_Local) == 0x000700, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathTransformMakeRelative_3_3_Local' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_5_1_Transform) == 0x000760, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_5_1_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_5_1_CachedIndex) == 0x0007C0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_5_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_5_Transform) == 0x0007D0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_5_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_5_CachedIndex) == 0x000830, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_5_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSwingTwist_3_Input) == 0x000840, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSwingTwist_3_Input' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSwingTwist_3_Swing) == 0x000860, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSwingTwist_3_Swing' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetRotation_1_CachedIndex) == 0x000880, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetRotation_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathTransformLerp_1_3_Result) == 0x000890, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathTransformLerp_1_3_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_4_Transform) == 0x0008F0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_4_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_4_CachedIndex) == 0x000950, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_4_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_1_3_Transform) == 0x000960, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_1_3_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_1_3_CachedIndex) == 0x0009C0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_1_3_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetTranslation_5_Value) == 0x0009D0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetTranslation_5_Value' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetTranslation_5_CachedIndex) == 0x0009E8, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetTranslation_5_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSlerp_1_3_Result) == 0x000A00, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSlerp_1_3_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetRotation_CachedIndex) == 0x000A20, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetRotation_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathTransformLerp_4_Result) == 0x000A30, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathTransformLerp_4_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetTranslation_5_1_Value) == 0x000A90, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetTranslation_5_1_Value' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetTranslation_5_1_CachedIndex) == 0x000AA8, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetTranslation_5_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionMul_1_Result) == 0x000AC0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionMul_1_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionInverse_3_1_Result) == 0x000AE0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionInverse_3_1_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSwingTwist_1_Twist) == 0x000B00, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSwingTwist_1_Twist' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathTransformMakeRelative_3_1_Local) == 0x000B20, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathTransformMakeRelative_3_1_Local' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_3_Transform) == 0x000B80, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_3_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_3_CachedIndex) == 0x000BE0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_3_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_1_2_Transform) == 0x000BF0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_1_2_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_1_2_CachedIndex) == 0x000C50, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_1_2_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSwingTwist_1_Input) == 0x000C60, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSwingTwist_1_Input' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSwingTwist_1_Swing) == 0x000C80, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSwingTwist_1_Swing' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSlerp_2_1_Result) == 0x000CA0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSlerp_2_1_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionInverse_2_1_Result) == 0x000CC0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionInverse_2_1_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetRotation_2_2_CachedIndex) == 0x000CE0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetRotation_2_2_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSlerp_3_Result) == 0x000CF0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSlerp_3_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetRotation_2_1_3_CachedIndex) == 0x000D10, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetRotation_2_1_3_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathTransformLerp_2_Result) == 0x000D20, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathTransformLerp_2_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_2_Transform) == 0x000D80, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_2_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_2_CachedIndex) == 0x000DE0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_2_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_1_1_Transform) == 0x000DF0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_1_1_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_1_1_CachedIndex) == 0x000E50, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_1_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetTranslation_2_Value) == 0x000E60, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetTranslation_2_Value' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetTranslation_2_CachedIndex) == 0x000E78, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetTranslation_2_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSlerp_1_1_Result) == 0x000E90, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSlerp_1_1_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetRotation_2_1_3_1_CachedIndex) == 0x000EB0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetRotation_2_1_3_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathTransformLerp_1_1_Result) == 0x000EC0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathTransformLerp_1_1_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetTranslation_2_1_Value) == 0x000F20, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetTranslation_2_1_Value' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetTranslation_2_1_CachedIndex) == 0x000F38, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetTranslation_2_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionMul_3_1_Result) == 0x000F50, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionMul_3_1_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionInverse_3_3_1_Result) == 0x000F70, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionInverse_3_3_1_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSwingTwist_4_1_Twist) == 0x000F90, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSwingTwist_4_1_Twist' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathTransformMakeRelative_3_4_1_Local) == 0x000FB0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathTransformMakeRelative_3_4_1_Local' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_4_Transform) == 0x001010, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_4_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_4_CachedIndex) == 0x001070, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_4_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_1_3_Transform) == 0x001080, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_1_3_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_1_3_CachedIndex) == 0x0010E0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_1_3_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSwingTwist_4_1_Input) == 0x0010F0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSwingTwist_4_1_Input' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSwingTwist_4_1_Swing) == 0x001110, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSwingTwist_4_1_Swing' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSlerp_2_3_1_Result) == 0x001130, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSlerp_2_3_1_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionInverse_2_4_1_Result) == 0x001150, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionInverse_2_4_1_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetRotation_2_1_3_1_1_CachedIndex) == 0x001170, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetRotation_2_1_3_1_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSlerp_1_3_1_1_Result) == 0x001180, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSlerp_1_3_1_1_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSwingTwist_3_1_Twist) == 0x0011A0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSwingTwist_3_1_Twist' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathTransformMakeRelative_3_3_1_Local) == 0x0011C0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathTransformMakeRelative_3_3_1_Local' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_5_Transform) == 0x001220, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_5_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_5_CachedIndex) == 0x001280, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_5_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_1_4_Transform) == 0x001290, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_1_4_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_1_4_CachedIndex) == 0x0012F0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_1_4_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSwingTwist_3_1_Input) == 0x001300, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSwingTwist_3_1_Input' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSwingTwist_3_1_Swing) == 0x001320, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSwingTwist_3_1_Swing' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetRotation_2_1_3_1_1_1_CachedIndex) == 0x001340, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetRotation_2_1_3_1_1_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathTransformLerp_1_3_1_Result) == 0x001350, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathTransformLerp_1_3_1_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_4_1_Transform) == 0x0013B0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_4_1_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_4_1_CachedIndex) == 0x001410, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_4_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_1_3_1_Transform) == 0x001420, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_1_3_1_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_1_3_1_CachedIndex) == 0x001480, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_1_3_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetTranslation_2_1_1_Value) == 0x001490, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetTranslation_2_1_1_Value' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetTranslation_2_1_1_CachedIndex) == 0x0014A8, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetTranslation_2_1_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSlerp_1_3_1_Result) == 0x0014C0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSlerp_1_3_1_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetRotation_2_1_3_1_1_1_1_CachedIndex) == 0x0014E0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetRotation_2_1_3_1_1_1_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathTransformLerp_4_1_Result) == 0x0014F0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathTransformLerp_4_1_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetTranslation_2_1_1_1_Value) == 0x001550, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetTranslation_2_1_1_1_Value' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetTranslation_2_1_1_1_CachedIndex) == 0x001568, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetTranslation_2_1_1_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionMul_2_Result) == 0x001580, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionMul_2_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionInverse_3_2_Result) == 0x0015A0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionInverse_3_2_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSwingTwist_2_Twist) == 0x0015C0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSwingTwist_2_Twist' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathTransformMakeRelative_3_2_Local) == 0x0015E0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathTransformMakeRelative_3_2_Local' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_3_1_Transform) == 0x001640, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_3_1_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_3_1_CachedIndex) == 0x0016A0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_3_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_1_2_1_Transform) == 0x0016B0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_1_2_1_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_1_2_1_CachedIndex) == 0x001710, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_1_2_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSwingTwist_2_Input) == 0x001720, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSwingTwist_2_Input' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSwingTwist_2_Swing) == 0x001740, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSwingTwist_2_Swing' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSlerp_2_2_Result) == 0x001760, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSlerp_2_2_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionInverse_2_2_Result) == 0x001780, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionInverse_2_2_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetRotation_2_2_1_CachedIndex) == 0x0017A0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetRotation_2_2_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetRotation_2_1_3_2_CachedIndex) == 0x0017B0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetRotation_2_1_3_2_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathTransformLerp_3_Result) == 0x0017C0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathTransformLerp_3_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_3_Transform) == 0x001820, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_3_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_3_CachedIndex) == 0x001880, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_3_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_1_2_Transform) == 0x001890, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_1_2_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_1_2_CachedIndex) == 0x0018F0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_1_2_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetTranslation_3_Value) == 0x001900, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetTranslation_3_Value' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetTranslation_3_CachedIndex) == 0x001918, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetTranslation_3_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSlerp_1_2_Result) == 0x001930, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSlerp_1_2_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetRotation_3_CachedIndex) == 0x001950, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetRotation_3_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathTransformLerp_1_2_Result) == 0x001960, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathTransformLerp_1_2_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetTranslation_3_1_Value) == 0x0019C0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetTranslation_3_1_Value' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetTranslation_3_1_CachedIndex) == 0x0019D8, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetTranslation_3_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionMul_2_2_Result) == 0x0019F0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionMul_2_2_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionInverse_3_2_2_Result) == 0x001A10, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionInverse_3_2_2_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSwingTwist_2_2_Twist) == 0x001A30, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSwingTwist_2_2_Twist' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathTransformMakeRelative_3_2_2_Local) == 0x001A50, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathTransformMakeRelative_3_2_2_Local' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_3_1_1_Transform) == 0x001AB0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_3_1_1_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_3_1_1_CachedIndex) == 0x001B10, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_3_1_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_1_2_1_1_Transform) == 0x001B20, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_1_2_1_1_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_1_2_1_1_CachedIndex) == 0x001B80, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_1_2_1_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSwingTwist_2_2_Input) == 0x001B90, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSwingTwist_2_2_Input' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSwingTwist_2_2_Swing) == 0x001BB0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSwingTwist_2_2_Swing' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSlerp_2_2_2_Result) == 0x001BD0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSlerp_2_2_2_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionInverse_2_2_2_Result) == 0x001BF0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionInverse_2_2_2_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetRotation_2_1_3_2_1_CachedIndex) == 0x001C10, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetRotation_2_1_3_2_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSlerp_2_2_2_1_Result) == 0x001C20, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSlerp_2_2_2_1_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSwingTwist_2_2_1_Twist) == 0x001C40, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSwingTwist_2_2_1_Twist' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathTransformMakeRelative_3_2_2_1_Local) == 0x001C60, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathTransformMakeRelative_3_2_2_1_Local' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_3_1_2_Transform) == 0x001CC0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_3_1_2_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_3_1_2_CachedIndex) == 0x001D20, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_3_1_2_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_1_2_1_2_Transform) == 0x001D30, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_1_2_1_2_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_1_2_1_2_CachedIndex) == 0x001D90, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_1_2_1_2_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSwingTwist_2_2_1_Input) == 0x001DA0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSwingTwist_2_2_1_Input' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSwingTwist_2_2_1_Swing) == 0x001DC0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSwingTwist_2_2_1_Swing' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetRotation_2_1_3_2_1_1_CachedIndex) == 0x001DE0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetRotation_2_1_3_2_1_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathTransformLerp_1_2_2_Result) == 0x001DF0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathTransformLerp_1_2_2_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_3_2_Transform) == 0x001E50, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_3_2_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_3_2_CachedIndex) == 0x001EB0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_3_2_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_1_2_2_Transform) == 0x001EC0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_1_2_2_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_1_2_2_CachedIndex) == 0x001F20, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_1_2_2_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetTranslation_3_1_1_Value) == 0x001F30, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetTranslation_3_1_1_Value' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetTranslation_3_1_1_CachedIndex) == 0x001F48, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetTranslation_3_1_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetRotation_2_1_3_2_1_1_1_CachedIndex) == 0x001F58, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetRotation_2_1_3_2_1_1_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathTransformLerp_3_2_Result) == 0x001F70, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathTransformLerp_3_2_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetTranslation_3_1_1_1_Value) == 0x001FD0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetTranslation_3_1_1_1_Value' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetTranslation_3_1_1_1_CachedIndex) == 0x001FE8, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetTranslation_3_1_1_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionMul_2_1_Result) == 0x002000, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionMul_2_1_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionInverse_3_2_1_Result) == 0x002020, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionInverse_3_2_1_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSwingTwist_2_1_Twist) == 0x002040, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSwingTwist_2_1_Twist' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathTransformMakeRelative_3_2_1_Local) == 0x002060, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathTransformMakeRelative_3_2_1_Local' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_3_1_3_Transform) == 0x0020C0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_3_1_3_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_3_1_3_CachedIndex) == 0x002120, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_3_1_3_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_1_2_1_3_Transform) == 0x002130, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_1_2_1_3_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_1_2_1_3_CachedIndex) == 0x002190, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_1_2_1_3_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSwingTwist_2_1_Input) == 0x0021A0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSwingTwist_2_1_Input' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSwingTwist_2_1_Swing) == 0x0021C0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSwingTwist_2_1_Swing' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSlerp_2_2_1_Result) == 0x0021E0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSlerp_2_2_1_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionInverse_2_2_1_Result) == 0x002200, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionInverse_2_2_1_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetRotation_2_2_1_1_CachedIndex) == 0x002220, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetRotation_2_2_1_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetRotation_2_1_3_2_2_CachedIndex) == 0x002230, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetRotation_2_1_3_2_2_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathTransformLerp_3_1_Result) == 0x002240, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathTransformLerp_3_1_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_3_1_Transform) == 0x0022A0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_3_1_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_3_1_CachedIndex) == 0x002300, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_3_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_1_2_1_Transform) == 0x002310, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_1_2_1_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_1_2_1_CachedIndex) == 0x002370, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_1_2_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetTranslation_4_Value) == 0x002380, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetTranslation_4_Value' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetTranslation_4_CachedIndex) == 0x002398, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetTranslation_4_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSlerp_1_2_1_Result) == 0x0023B0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSlerp_1_2_1_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetRotation_3_1_CachedIndex) == 0x0023D0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetRotation_3_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathTransformLerp_1_2_1_Result) == 0x0023E0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathTransformLerp_1_2_1_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetTranslation_4_1_Value) == 0x002440, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetTranslation_4_1_Value' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetTranslation_4_1_CachedIndex) == 0x002458, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetTranslation_4_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionMul_2_2_1_Result) == 0x002470, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionMul_2_2_1_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionInverse_3_2_2_1_Result) == 0x002490, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionInverse_3_2_2_1_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSwingTwist_2_2_2_Twist) == 0x0024B0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSwingTwist_2_2_2_Twist' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathTransformMakeRelative_3_2_2_2_Local) == 0x0024D0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathTransformMakeRelative_3_2_2_2_Local' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_3_1_4_Transform) == 0x002530, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_3_1_4_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_3_1_4_CachedIndex) == 0x002590, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_3_1_4_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_1_2_1_4_Transform) == 0x0025A0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_1_2_1_4_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_1_2_1_4_CachedIndex) == 0x002600, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_1_2_1_4_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSwingTwist_2_2_2_Input) == 0x002610, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSwingTwist_2_2_2_Input' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSwingTwist_2_2_2_Swing) == 0x002630, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSwingTwist_2_2_2_Swing' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSlerp_2_2_2_2_Result) == 0x002650, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSlerp_2_2_2_2_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionInverse_2_2_2_1_Result) == 0x002670, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionInverse_2_2_2_1_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetRotation_3_2_CachedIndex) == 0x002690, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetRotation_3_2_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSlerp_2_2_2_1_1_Result) == 0x0026A0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSlerp_2_2_2_1_1_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSwingTwist_2_2_1_1_Twist) == 0x0026C0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSwingTwist_2_2_1_1_Twist' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathTransformMakeRelative_3_2_2_1_1_Local) == 0x0026E0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathTransformMakeRelative_3_2_2_1_1_Local' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_3_1_5_Transform) == 0x002740, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_3_1_5_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_3_1_5_CachedIndex) == 0x0027A0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_3_1_5_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_1_2_1_5_Transform) == 0x0027B0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_1_2_1_5_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_6_1_2_1_5_CachedIndex) == 0x002810, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_6_1_2_1_5_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSwingTwist_2_2_1_1_Input) == 0x002820, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSwingTwist_2_2_1_1_Input' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathQuaternionSwingTwist_2_2_1_1_Swing) == 0x002840, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathQuaternionSwingTwist_2_2_1_1_Swing' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetRotation_3_2_1_CachedIndex) == 0x002860, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetRotation_3_2_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathTransformLerp_1_2_2_1_Result) == 0x002870, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathTransformLerp_1_2_2_1_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_3_2_1_Transform) == 0x0028D0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_3_2_1_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_3_2_1_CachedIndex) == 0x002930, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_3_2_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_1_2_2_1_Transform) == 0x002940, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_1_2_2_1_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___GetTransform_1_2_2_1_CachedIndex) == 0x0029A0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___GetTransform_1_2_2_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetTranslation_4_1_1_Value) == 0x0029B0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetTranslation_4_1_1_Value' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetTranslation_4_1_1_CachedIndex) == 0x0029C8, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetTranslation_4_1_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetRotation_3_2_1_1_CachedIndex) == 0x0029D8, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetRotation_3_2_1_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___MathTransformLerp_3_2_1_Result) == 0x0029F0, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___MathTransformLerp_3_2_1_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetTranslation_4_1_2_Value) == 0x002A50, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetTranslation_4_1_2_Value' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_3fe86ee39239b5e0, RigVMModel___SetTranslation_4_1_2_CachedIndex) == 0x002A68, "Member 'FPropertyBag_3fe86ee39239b5e0::RigVMModel___SetTranslation_4_1_2_CachedIndex' has a wrong offset!");
 
-// PropertyBag Transient.PropertyBag_f7fd17c1cf45d72d
+// PropertyBag Transient.PropertyBag_8fc1cd4b0425b68a
+// 0x0080 (0x0080 - 0x0000)
+struct FPropertyBag_8fc1cd4b0425b68a final
+{
+public:
+	struct FRigElementKey                         RigVMModel___OffsetTransformForItem_Item__Const;   // 0x0000(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             RigVMModel___OffsetTransformForItem_OffsetTransform__Const; // 0x0010(0x0060)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         RigVMModel___OffsetTransformForItem_Weight__Const; // 0x0070(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          RigVMModel___OffsetTransformForItem_bPropagateToChildren__Const; // 0x0074(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(FPropertyBag_8fc1cd4b0425b68a) == 0x000010, "Wrong alignment on FPropertyBag_8fc1cd4b0425b68a");
+static_assert(sizeof(FPropertyBag_8fc1cd4b0425b68a) == 0x000080, "Wrong size on FPropertyBag_8fc1cd4b0425b68a");
+static_assert(offsetof(FPropertyBag_8fc1cd4b0425b68a, RigVMModel___OffsetTransformForItem_Item__Const) == 0x000000, "Member 'FPropertyBag_8fc1cd4b0425b68a::RigVMModel___OffsetTransformForItem_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_8fc1cd4b0425b68a, RigVMModel___OffsetTransformForItem_OffsetTransform__Const) == 0x000010, "Member 'FPropertyBag_8fc1cd4b0425b68a::RigVMModel___OffsetTransformForItem_OffsetTransform__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_8fc1cd4b0425b68a, RigVMModel___OffsetTransformForItem_Weight__Const) == 0x000070, "Member 'FPropertyBag_8fc1cd4b0425b68a::RigVMModel___OffsetTransformForItem_Weight__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_8fc1cd4b0425b68a, RigVMModel___OffsetTransformForItem_bPropagateToChildren__Const) == 0x000074, "Member 'FPropertyBag_8fc1cd4b0425b68a::RigVMModel___OffsetTransformForItem_bPropagateToChildren__Const' has a wrong offset!");
+
+// PropertyBag Transient.PropertyBag_bd1941974b101b01
 // 0x0610 (0x0610 - 0x0000)
-struct FPropertyBag_f7fd17c1cf45d72d final
+struct FPropertyBag_bd1941974b101b01 final
 {
 public:
 	struct FTransform                             RigVMModel___GetTransform_2_Transform;             // 0x0000(0x0060)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1156,105 +912,349 @@ public:
 	TArray<TArray<int32>>                         RigVMModel___PBIK_EffectorSolverIndices;           // 0x05F0(0x0010)(Edit)
 	TArray<struct FPBIKWorkData>                  RigVMModel___PBIK_WorkData;                        // 0x0600(0x0010)(Edit)
 };
-static_assert(alignof(FPropertyBag_f7fd17c1cf45d72d) == 0x000010, "Wrong alignment on FPropertyBag_f7fd17c1cf45d72d");
-static_assert(sizeof(FPropertyBag_f7fd17c1cf45d72d) == 0x000610, "Wrong size on FPropertyBag_f7fd17c1cf45d72d");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, RigVMModel___GetTransform_2_Transform) == 0x000000, "Member 'FPropertyBag_f7fd17c1cf45d72d::RigVMModel___GetTransform_2_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, RigVMModel___GetTransform_2_CachedIndex) == 0x000060, "Member 'FPropertyBag_f7fd17c1cf45d72d::RigVMModel___GetTransform_2_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, RigVMModel___Set_Transform_CachedIndex) == 0x000070, "Member 'FPropertyBag_f7fd17c1cf45d72d::RigVMModel___Set_Transform_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, RigVMModel___GetTransform_2_1_Transform) == 0x000080, "Member 'FPropertyBag_f7fd17c1cf45d72d::RigVMModel___GetTransform_2_1_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, RigVMModel___GetTransform_2_1_CachedIndex) == 0x0000E0, "Member 'FPropertyBag_f7fd17c1cf45d72d::RigVMModel___GetTransform_2_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, RigVMModel___Set_Transform_1_CachedIndex) == 0x0000F0, "Member 'FPropertyBag_f7fd17c1cf45d72d::RigVMModel___Set_Transform_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, RigVMModel___FootTrace_Offset) == 0x000100, "Member 'FPropertyBag_f7fd17c1cf45d72d::RigVMModel___FootTrace_Offset' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, FootTrace___FootTrace_MathVectorAdd_Result) == 0x000118, "Member 'FPropertyBag_f7fd17c1cf45d72d::FootTrace___FootTrace_MathVectorAdd_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, FootTrace___FootTrace_GetTransform_Transform) == 0x000130, "Member 'FPropertyBag_f7fd17c1cf45d72d::FootTrace___FootTrace_GetTransform_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, FootTrace___FootTrace_GetTransform_CachedIndex) == 0x000190, "Member 'FPropertyBag_f7fd17c1cf45d72d::FootTrace___FootTrace_GetTransform_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, FootTrace___FootTrace_MathFloatAdd_Result) == 0x0001A0, "Member 'FPropertyBag_f7fd17c1cf45d72d::FootTrace___FootTrace_MathFloatAdd_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, FootTrace___FootTrace_MathFloatAdd_A) == 0x0001A4, "Member 'FPropertyBag_f7fd17c1cf45d72d::FootTrace___FootTrace_MathFloatAdd_A' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, FootTrace___FootTrace_GetTransform_1_Transform) == 0x0001B0, "Member 'FPropertyBag_f7fd17c1cf45d72d::FootTrace___FootTrace_GetTransform_1_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, FootTrace___FootTrace_GetTransform_1_CachedIndex) == 0x000210, "Member 'FPropertyBag_f7fd17c1cf45d72d::FootTrace___FootTrace_GetTransform_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, FootTrace___FootTrace_MathVectorAdd_A__IO) == 0x000220, "Member 'FPropertyBag_f7fd17c1cf45d72d::FootTrace___FootTrace_MathVectorAdd_A__IO' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, FootTrace___FootTrace_MathVectorSub_Result) == 0x000238, "Member 'FPropertyBag_f7fd17c1cf45d72d::FootTrace___FootTrace_MathVectorSub_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, FootTrace___FootTrace_MathVectorSub_A__IO) == 0x000250, "Member 'FPropertyBag_f7fd17c1cf45d72d::FootTrace___FootTrace_MathVectorSub_A__IO' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, FootTrace___FootTrace_SphereTraceByTraceChannel_bHit) == 0x000268, "Member 'FPropertyBag_f7fd17c1cf45d72d::FootTrace___FootTrace_SphereTraceByTraceChannel_bHit' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, FootTrace___FootTrace_SphereTraceByTraceChannel_HitNormal) == 0x000270, "Member 'FPropertyBag_f7fd17c1cf45d72d::FootTrace___FootTrace_SphereTraceByTraceChannel_HitNormal' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, FootTrace___FootTrace_SphereTraceByTraceChannel_WorkData) == 0x000288, "Member 'FPropertyBag_f7fd17c1cf45d72d::FootTrace___FootTrace_SphereTraceByTraceChannel_WorkData' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, RigVMModel___FootTrace_1_Offset) == 0x000298, "Member 'FPropertyBag_f7fd17c1cf45d72d::RigVMModel___FootTrace_1_Offset' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, FootTrace_1___FootTrace_MathVectorAdd_Result) == 0x0002B0, "Member 'FPropertyBag_f7fd17c1cf45d72d::FootTrace_1___FootTrace_MathVectorAdd_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, FootTrace_1___FootTrace_GetTransform_Transform) == 0x0002D0, "Member 'FPropertyBag_f7fd17c1cf45d72d::FootTrace_1___FootTrace_GetTransform_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, FootTrace_1___FootTrace_GetTransform_CachedIndex) == 0x000330, "Member 'FPropertyBag_f7fd17c1cf45d72d::FootTrace_1___FootTrace_GetTransform_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, FootTrace_1___FootTrace_MathFloatAdd_Result) == 0x000340, "Member 'FPropertyBag_f7fd17c1cf45d72d::FootTrace_1___FootTrace_MathFloatAdd_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, FootTrace_1___FootTrace_MathFloatAdd_A) == 0x000344, "Member 'FPropertyBag_f7fd17c1cf45d72d::FootTrace_1___FootTrace_MathFloatAdd_A' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, FootTrace_1___FootTrace_GetTransform_1_Transform) == 0x000350, "Member 'FPropertyBag_f7fd17c1cf45d72d::FootTrace_1___FootTrace_GetTransform_1_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, FootTrace_1___FootTrace_GetTransform_1_CachedIndex) == 0x0003B0, "Member 'FPropertyBag_f7fd17c1cf45d72d::FootTrace_1___FootTrace_GetTransform_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, FootTrace_1___FootTrace_MathVectorAdd_A__IO) == 0x0003C0, "Member 'FPropertyBag_f7fd17c1cf45d72d::FootTrace_1___FootTrace_MathVectorAdd_A__IO' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, FootTrace_1___FootTrace_MathVectorSub_Result) == 0x0003D8, "Member 'FPropertyBag_f7fd17c1cf45d72d::FootTrace_1___FootTrace_MathVectorSub_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, FootTrace_1___FootTrace_MathVectorSub_A__IO) == 0x0003F0, "Member 'FPropertyBag_f7fd17c1cf45d72d::FootTrace_1___FootTrace_MathVectorSub_A__IO' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, FootTrace_1___FootTrace_SphereTraceByTraceChannel_bHit) == 0x000408, "Member 'FPropertyBag_f7fd17c1cf45d72d::FootTrace_1___FootTrace_SphereTraceByTraceChannel_bHit' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, FootTrace_1___FootTrace_SphereTraceByTraceChannel_HitNormal) == 0x000410, "Member 'FPropertyBag_f7fd17c1cf45d72d::FootTrace_1___FootTrace_SphereTraceByTraceChannel_HitNormal' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, FootTrace_1___FootTrace_SphereTraceByTraceChannel_WorkData) == 0x000428, "Member 'FPropertyBag_f7fd17c1cf45d72d::FootTrace_1___FootTrace_SphereTraceByTraceChannel_WorkData' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, RigVMModel___Branch_BlockToRun) == 0x000438, "Member 'FPropertyBag_f7fd17c1cf45d72d::RigVMModel___Branch_BlockToRun' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, RigVMModel___AlphaInterp_Result) == 0x000440, "Member 'FPropertyBag_f7fd17c1cf45d72d::RigVMModel___AlphaInterp_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, RigVMModel___AlphaInterp_Value) == 0x000444, "Member 'FPropertyBag_f7fd17c1cf45d72d::RigVMModel___AlphaInterp_Value' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, RigVMModel___AlphaInterp_ScaleBiasClamp) == 0x000448, "Member 'FPropertyBag_f7fd17c1cf45d72d::RigVMModel___AlphaInterp_ScaleBiasClamp' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, RigVMModel___AlphaInterp_1_Result) == 0x000458, "Member 'FPropertyBag_f7fd17c1cf45d72d::RigVMModel___AlphaInterp_1_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, RigVMModel___AlphaInterp_1_Value) == 0x00045C, "Member 'FPropertyBag_f7fd17c1cf45d72d::RigVMModel___AlphaInterp_1_Value' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, RigVMModel___AlphaInterp_1_ScaleBiasClamp) == 0x000460, "Member 'FPropertyBag_f7fd17c1cf45d72d::RigVMModel___AlphaInterp_1_ScaleBiasClamp' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, RigVMModel___MathFloatLerp_Result) == 0x000470, "Member 'FPropertyBag_f7fd17c1cf45d72d::RigVMModel___MathFloatLerp_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, RigVMModel___MathFloatLerp_A) == 0x000474, "Member 'FPropertyBag_f7fd17c1cf45d72d::RigVMModel___MathFloatLerp_A' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, RigVMModel___If_Result) == 0x000478, "Member 'FPropertyBag_f7fd17c1cf45d72d::RigVMModel___If_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, RigVMModel___MathFloatLess_Result) == 0x000480, "Member 'FPropertyBag_f7fd17c1cf45d72d::RigVMModel___MathFloatLess_Result' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, RigVMModel___MathFloatLess_A) == 0x000484, "Member 'FPropertyBag_f7fd17c1cf45d72d::RigVMModel___MathFloatLess_A' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, RigVMModel___MathFloatLess_B) == 0x000488, "Member 'FPropertyBag_f7fd17c1cf45d72d::RigVMModel___MathFloatLess_B' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, RigVMModel___If_Condition) == 0x00048C, "Member 'FPropertyBag_f7fd17c1cf45d72d::RigVMModel___If_Condition' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, RigVMModel___MathFloatLerp_B) == 0x000490, "Member 'FPropertyBag_f7fd17c1cf45d72d::RigVMModel___MathFloatLerp_B' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, RigVMModel___ModifyTransforms_ItemToModify__IO) == 0x000498, "Member 'FPropertyBag_f7fd17c1cf45d72d::RigVMModel___ModifyTransforms_ItemToModify__IO' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, RigVMModel___ModifyTransforms_WorkData) == 0x0004A8, "Member 'FPropertyBag_f7fd17c1cf45d72d::RigVMModel___ModifyTransforms_WorkData' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, RigVMModel___ModifyTransforms_1_ItemToModify__IO) == 0x0004B8, "Member 'FPropertyBag_f7fd17c1cf45d72d::RigVMModel___ModifyTransforms_1_ItemToModify__IO' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, RigVMModel___ModifyTransforms_1_WorkData) == 0x0004C8, "Member 'FPropertyBag_f7fd17c1cf45d72d::RigVMModel___ModifyTransforms_1_WorkData' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, RigVMModel___ModifyTransforms_1_1_ItemToModify__IO) == 0x0004D8, "Member 'FPropertyBag_f7fd17c1cf45d72d::RigVMModel___ModifyTransforms_1_1_ItemToModify__IO' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, RigVMModel___ModifyTransforms_1_1_WorkData) == 0x0004E8, "Member 'FPropertyBag_f7fd17c1cf45d72d::RigVMModel___ModifyTransforms_1_1_WorkData' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, RigVMModel___GetTransform_Transform) == 0x000500, "Member 'FPropertyBag_f7fd17c1cf45d72d::RigVMModel___GetTransform_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, RigVMModel___GetTransform_CachedIndex) == 0x000560, "Member 'FPropertyBag_f7fd17c1cf45d72d::RigVMModel___GetTransform_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, RigVMModel___GetTransform_1_Transform) == 0x000570, "Member 'FPropertyBag_f7fd17c1cf45d72d::RigVMModel___GetTransform_1_Transform' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, RigVMModel___GetTransform_1_CachedIndex) == 0x0005D0, "Member 'FPropertyBag_f7fd17c1cf45d72d::RigVMModel___GetTransform_1_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, RigVMModel___PBIK_Effectors__IO) == 0x0005E0, "Member 'FPropertyBag_f7fd17c1cf45d72d::RigVMModel___PBIK_Effectors__IO' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, RigVMModel___PBIK_EffectorSolverIndices) == 0x0005F0, "Member 'FPropertyBag_f7fd17c1cf45d72d::RigVMModel___PBIK_EffectorSolverIndices' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_f7fd17c1cf45d72d, RigVMModel___PBIK_WorkData) == 0x000600, "Member 'FPropertyBag_f7fd17c1cf45d72d::RigVMModel___PBIK_WorkData' has a wrong offset!");
+static_assert(alignof(FPropertyBag_bd1941974b101b01) == 0x000010, "Wrong alignment on FPropertyBag_bd1941974b101b01");
+static_assert(sizeof(FPropertyBag_bd1941974b101b01) == 0x000610, "Wrong size on FPropertyBag_bd1941974b101b01");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, RigVMModel___GetTransform_2_Transform) == 0x000000, "Member 'FPropertyBag_bd1941974b101b01::RigVMModel___GetTransform_2_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, RigVMModel___GetTransform_2_CachedIndex) == 0x000060, "Member 'FPropertyBag_bd1941974b101b01::RigVMModel___GetTransform_2_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, RigVMModel___Set_Transform_CachedIndex) == 0x000070, "Member 'FPropertyBag_bd1941974b101b01::RigVMModel___Set_Transform_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, RigVMModel___GetTransform_2_1_Transform) == 0x000080, "Member 'FPropertyBag_bd1941974b101b01::RigVMModel___GetTransform_2_1_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, RigVMModel___GetTransform_2_1_CachedIndex) == 0x0000E0, "Member 'FPropertyBag_bd1941974b101b01::RigVMModel___GetTransform_2_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, RigVMModel___Set_Transform_1_CachedIndex) == 0x0000F0, "Member 'FPropertyBag_bd1941974b101b01::RigVMModel___Set_Transform_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, RigVMModel___FootTrace_Offset) == 0x000100, "Member 'FPropertyBag_bd1941974b101b01::RigVMModel___FootTrace_Offset' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, FootTrace___FootTrace_MathVectorAdd_Result) == 0x000118, "Member 'FPropertyBag_bd1941974b101b01::FootTrace___FootTrace_MathVectorAdd_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, FootTrace___FootTrace_GetTransform_Transform) == 0x000130, "Member 'FPropertyBag_bd1941974b101b01::FootTrace___FootTrace_GetTransform_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, FootTrace___FootTrace_GetTransform_CachedIndex) == 0x000190, "Member 'FPropertyBag_bd1941974b101b01::FootTrace___FootTrace_GetTransform_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, FootTrace___FootTrace_MathFloatAdd_Result) == 0x0001A0, "Member 'FPropertyBag_bd1941974b101b01::FootTrace___FootTrace_MathFloatAdd_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, FootTrace___FootTrace_MathFloatAdd_A) == 0x0001A4, "Member 'FPropertyBag_bd1941974b101b01::FootTrace___FootTrace_MathFloatAdd_A' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, FootTrace___FootTrace_GetTransform_1_Transform) == 0x0001B0, "Member 'FPropertyBag_bd1941974b101b01::FootTrace___FootTrace_GetTransform_1_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, FootTrace___FootTrace_GetTransform_1_CachedIndex) == 0x000210, "Member 'FPropertyBag_bd1941974b101b01::FootTrace___FootTrace_GetTransform_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, FootTrace___FootTrace_MathVectorAdd_A__IO) == 0x000220, "Member 'FPropertyBag_bd1941974b101b01::FootTrace___FootTrace_MathVectorAdd_A__IO' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, FootTrace___FootTrace_MathVectorSub_Result) == 0x000238, "Member 'FPropertyBag_bd1941974b101b01::FootTrace___FootTrace_MathVectorSub_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, FootTrace___FootTrace_MathVectorSub_A__IO) == 0x000250, "Member 'FPropertyBag_bd1941974b101b01::FootTrace___FootTrace_MathVectorSub_A__IO' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, FootTrace___FootTrace_SphereTraceByTraceChannel_bHit) == 0x000268, "Member 'FPropertyBag_bd1941974b101b01::FootTrace___FootTrace_SphereTraceByTraceChannel_bHit' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, FootTrace___FootTrace_SphereTraceByTraceChannel_HitNormal) == 0x000270, "Member 'FPropertyBag_bd1941974b101b01::FootTrace___FootTrace_SphereTraceByTraceChannel_HitNormal' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, FootTrace___FootTrace_SphereTraceByTraceChannel_WorkData) == 0x000288, "Member 'FPropertyBag_bd1941974b101b01::FootTrace___FootTrace_SphereTraceByTraceChannel_WorkData' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, RigVMModel___FootTrace_1_Offset) == 0x000298, "Member 'FPropertyBag_bd1941974b101b01::RigVMModel___FootTrace_1_Offset' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, FootTrace_1___FootTrace_MathVectorAdd_Result) == 0x0002B0, "Member 'FPropertyBag_bd1941974b101b01::FootTrace_1___FootTrace_MathVectorAdd_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, FootTrace_1___FootTrace_GetTransform_Transform) == 0x0002D0, "Member 'FPropertyBag_bd1941974b101b01::FootTrace_1___FootTrace_GetTransform_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, FootTrace_1___FootTrace_GetTransform_CachedIndex) == 0x000330, "Member 'FPropertyBag_bd1941974b101b01::FootTrace_1___FootTrace_GetTransform_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, FootTrace_1___FootTrace_MathFloatAdd_Result) == 0x000340, "Member 'FPropertyBag_bd1941974b101b01::FootTrace_1___FootTrace_MathFloatAdd_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, FootTrace_1___FootTrace_MathFloatAdd_A) == 0x000344, "Member 'FPropertyBag_bd1941974b101b01::FootTrace_1___FootTrace_MathFloatAdd_A' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, FootTrace_1___FootTrace_GetTransform_1_Transform) == 0x000350, "Member 'FPropertyBag_bd1941974b101b01::FootTrace_1___FootTrace_GetTransform_1_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, FootTrace_1___FootTrace_GetTransform_1_CachedIndex) == 0x0003B0, "Member 'FPropertyBag_bd1941974b101b01::FootTrace_1___FootTrace_GetTransform_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, FootTrace_1___FootTrace_MathVectorAdd_A__IO) == 0x0003C0, "Member 'FPropertyBag_bd1941974b101b01::FootTrace_1___FootTrace_MathVectorAdd_A__IO' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, FootTrace_1___FootTrace_MathVectorSub_Result) == 0x0003D8, "Member 'FPropertyBag_bd1941974b101b01::FootTrace_1___FootTrace_MathVectorSub_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, FootTrace_1___FootTrace_MathVectorSub_A__IO) == 0x0003F0, "Member 'FPropertyBag_bd1941974b101b01::FootTrace_1___FootTrace_MathVectorSub_A__IO' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, FootTrace_1___FootTrace_SphereTraceByTraceChannel_bHit) == 0x000408, "Member 'FPropertyBag_bd1941974b101b01::FootTrace_1___FootTrace_SphereTraceByTraceChannel_bHit' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, FootTrace_1___FootTrace_SphereTraceByTraceChannel_HitNormal) == 0x000410, "Member 'FPropertyBag_bd1941974b101b01::FootTrace_1___FootTrace_SphereTraceByTraceChannel_HitNormal' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, FootTrace_1___FootTrace_SphereTraceByTraceChannel_WorkData) == 0x000428, "Member 'FPropertyBag_bd1941974b101b01::FootTrace_1___FootTrace_SphereTraceByTraceChannel_WorkData' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, RigVMModel___Branch_BlockToRun) == 0x000438, "Member 'FPropertyBag_bd1941974b101b01::RigVMModel___Branch_BlockToRun' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, RigVMModel___AlphaInterp_Result) == 0x000440, "Member 'FPropertyBag_bd1941974b101b01::RigVMModel___AlphaInterp_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, RigVMModel___AlphaInterp_Value) == 0x000444, "Member 'FPropertyBag_bd1941974b101b01::RigVMModel___AlphaInterp_Value' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, RigVMModel___AlphaInterp_ScaleBiasClamp) == 0x000448, "Member 'FPropertyBag_bd1941974b101b01::RigVMModel___AlphaInterp_ScaleBiasClamp' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, RigVMModel___AlphaInterp_1_Result) == 0x000458, "Member 'FPropertyBag_bd1941974b101b01::RigVMModel___AlphaInterp_1_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, RigVMModel___AlphaInterp_1_Value) == 0x00045C, "Member 'FPropertyBag_bd1941974b101b01::RigVMModel___AlphaInterp_1_Value' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, RigVMModel___AlphaInterp_1_ScaleBiasClamp) == 0x000460, "Member 'FPropertyBag_bd1941974b101b01::RigVMModel___AlphaInterp_1_ScaleBiasClamp' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, RigVMModel___MathFloatLerp_Result) == 0x000470, "Member 'FPropertyBag_bd1941974b101b01::RigVMModel___MathFloatLerp_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, RigVMModel___MathFloatLerp_A) == 0x000474, "Member 'FPropertyBag_bd1941974b101b01::RigVMModel___MathFloatLerp_A' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, RigVMModel___If_Result) == 0x000478, "Member 'FPropertyBag_bd1941974b101b01::RigVMModel___If_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, RigVMModel___MathFloatLess_Result) == 0x000480, "Member 'FPropertyBag_bd1941974b101b01::RigVMModel___MathFloatLess_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, RigVMModel___MathFloatLess_A) == 0x000484, "Member 'FPropertyBag_bd1941974b101b01::RigVMModel___MathFloatLess_A' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, RigVMModel___MathFloatLess_B) == 0x000488, "Member 'FPropertyBag_bd1941974b101b01::RigVMModel___MathFloatLess_B' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, RigVMModel___If_Condition) == 0x00048C, "Member 'FPropertyBag_bd1941974b101b01::RigVMModel___If_Condition' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, RigVMModel___MathFloatLerp_B) == 0x000490, "Member 'FPropertyBag_bd1941974b101b01::RigVMModel___MathFloatLerp_B' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, RigVMModel___ModifyTransforms_ItemToModify__IO) == 0x000498, "Member 'FPropertyBag_bd1941974b101b01::RigVMModel___ModifyTransforms_ItemToModify__IO' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, RigVMModel___ModifyTransforms_WorkData) == 0x0004A8, "Member 'FPropertyBag_bd1941974b101b01::RigVMModel___ModifyTransforms_WorkData' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, RigVMModel___ModifyTransforms_1_ItemToModify__IO) == 0x0004B8, "Member 'FPropertyBag_bd1941974b101b01::RigVMModel___ModifyTransforms_1_ItemToModify__IO' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, RigVMModel___ModifyTransforms_1_WorkData) == 0x0004C8, "Member 'FPropertyBag_bd1941974b101b01::RigVMModel___ModifyTransforms_1_WorkData' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, RigVMModel___ModifyTransforms_1_1_ItemToModify__IO) == 0x0004D8, "Member 'FPropertyBag_bd1941974b101b01::RigVMModel___ModifyTransforms_1_1_ItemToModify__IO' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, RigVMModel___ModifyTransforms_1_1_WorkData) == 0x0004E8, "Member 'FPropertyBag_bd1941974b101b01::RigVMModel___ModifyTransforms_1_1_WorkData' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, RigVMModel___GetTransform_Transform) == 0x000500, "Member 'FPropertyBag_bd1941974b101b01::RigVMModel___GetTransform_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, RigVMModel___GetTransform_CachedIndex) == 0x000560, "Member 'FPropertyBag_bd1941974b101b01::RigVMModel___GetTransform_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, RigVMModel___GetTransform_1_Transform) == 0x000570, "Member 'FPropertyBag_bd1941974b101b01::RigVMModel___GetTransform_1_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, RigVMModel___GetTransform_1_CachedIndex) == 0x0005D0, "Member 'FPropertyBag_bd1941974b101b01::RigVMModel___GetTransform_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, RigVMModel___PBIK_Effectors__IO) == 0x0005E0, "Member 'FPropertyBag_bd1941974b101b01::RigVMModel___PBIK_Effectors__IO' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, RigVMModel___PBIK_EffectorSolverIndices) == 0x0005F0, "Member 'FPropertyBag_bd1941974b101b01::RigVMModel___PBIK_EffectorSolverIndices' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_bd1941974b101b01, RigVMModel___PBIK_WorkData) == 0x000600, "Member 'FPropertyBag_bd1941974b101b01::RigVMModel___PBIK_WorkData' has a wrong offset!");
 
-// PropertyBag Transient.PropertyBag_75d876d967437d32
-// 0x0080 (0x0080 - 0x0000)
-struct FPropertyBag_75d876d967437d32 final
+// PropertyBag Transient.PropertyBag_c2b62973af52916
+// 0x0248 (0x0248 - 0x0000)
+struct FPropertyBag_c2b62973af52916 final
 {
 public:
-	struct FRigElementKey                         RigVMModel___OffsetTransformForItem_Item__Const;   // 0x0000(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
+	struct FRigElementKey                         RigVMModel___FootTrace_Ik_Foot_Bone__Const;        // 0x0000(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             RigVMModel___OffsetTransformForItem_OffsetTransform__Const; // 0x0010(0x0060)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         RigVMModel___OffsetTransformForItem_Weight__Const; // 0x0070(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          RigVMModel___OffsetTransformForItem_bPropagateToChildren__Const; // 0x0074(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                LocalVariableDefault__FootTrace_AnimatedFloorLocation__Const; // 0x0010(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                FootTrace___FootTrace_MathVectorAdd_A__Const;      // 0x0028(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ERigVMTransformSpace                          FootTrace___FootTrace_GetTransform_Space__Const;   // 0x0040(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          FootTrace___FootTrace_GetTransform_bInitial__Const; // 0x0041(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_42[0x2];                                       // 0x0042(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         FootTrace___FootTrace_MathFloatAdd_B__Const;       // 0x0044(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRigElementKey                         FootTrace___FootTrace_GetTransform_1_Item__Const;  // 0x0048(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                FootTrace___FootTrace_MathVectorAdd_B__Const;      // 0x0058(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_bEnabled__Const; // 0x0070(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ERigUnitVisualDebugPointMode                  FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Mode__Const; // 0x0071(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_72[0x2];                                       // 0x0072(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Color__Const; // 0x0074(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Thickness__Const; // 0x0084(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Scale__Const; // 0x0088(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRigElementKey                         FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Space__Const; // 0x008C(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                FootTrace___FootTrace_MathVectorSub_B__Const;      // 0x0098(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ERigUnitVisualDebugPointMode                  FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_2_Mode__Const; // 0x00B0(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETraceTypeQuery                               FootTrace___FootTrace_SphereTraceByTraceChannel_TraceChannel__Const; // 0x00B1(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B2[0x2];                                       // 0x00B2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         FootTrace___FootTrace_SphereTraceByTraceChannel_Radius__Const; // 0x00B4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ERigUnitVisualDebugPointMode                  FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_Mode__Const; // 0x00B8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B9[0x3];                                       // 0x00B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRigElementKey                         RigVMModel___FootTrace_1_Ik_Foot_Bone__Const;      // 0x00BC(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                FootTrace_1___FootTrace_MathVectorAdd_A__Const;    // 0x00C8(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ERigVMTransformSpace                          FootTrace_1___FootTrace_GetTransform_Space__Const; // 0x00E0(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          FootTrace_1___FootTrace_GetTransform_bInitial__Const; // 0x00E1(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E2[0x2];                                       // 0x00E2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         FootTrace_1___FootTrace_MathFloatAdd_B__Const;     // 0x00E4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRigElementKey                         FootTrace_1___FootTrace_GetTransform_1_Item__Const; // 0x00E8(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F4[0x4];                                       // 0x00F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                FootTrace_1___FootTrace_MathVectorAdd_B__Const;    // 0x00F8(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_bEnabled__Const; // 0x0110(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ERigUnitVisualDebugPointMode                  FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Mode__Const; // 0x0111(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_112[0x2];                                      // 0x0112(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Color__Const; // 0x0114(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Thickness__Const; // 0x0124(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Scale__Const; // 0x0128(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRigElementKey                         FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Space__Const; // 0x012C(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                FootTrace_1___FootTrace_MathVectorSub_B__Const;    // 0x0138(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ERigUnitVisualDebugPointMode                  FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_2_Mode__Const; // 0x0150(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETraceTypeQuery                               FootTrace_1___FootTrace_SphereTraceByTraceChannel_TraceChannel__Const; // 0x0151(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_152[0x2];                                      // 0x0152(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         FootTrace_1___FootTrace_SphereTraceByTraceChannel_Radius__Const; // 0x0154(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ERigUnitVisualDebugPointMode                  FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_Mode__Const; // 0x0158(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_159[0x7];                                      // 0x0159(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        RigVMModel___VariableNode_9_Value__Const;          // 0x0160(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         RigVMModel___AlphaInterp_Scale__Const;             // 0x0168(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         RigVMModel___AlphaInterp_Bias__Const;              // 0x016C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          RigVMModel___AlphaInterp_bMapRange__Const;         // 0x0170(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_171[0x3];                                      // 0x0171(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FInputRange                            RigVMModel___AlphaInterp_InRange__Const;           // 0x0174(0x0008)(Edit, NoDestructor)
+	bool                                          RigVMModel___AlphaInterp_bInterpResult__Const;     // 0x017C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_17D[0x3];                                      // 0x017D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         RigVMModel___AlphaInterp_InterpSpeedIncreasing__Const; // 0x0180(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_184[0x4];                                      // 0x0184(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FRigUnit_ModifyTransforms_PerItem> RigVMModel___ModifyTransforms_ItemToModify__Const; // 0x0188(0x0010)(Edit)
+	EControlRigModifyBoneMode                     RigVMModel___ModifyTransforms_Mode__Const;         // 0x0198(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_199[0x7];                                      // 0x0199(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FRigUnit_ModifyTransforms_PerItem> RigVMModel___ModifyTransforms_1_ItemToModify__Const; // 0x01A0(0x0010)(Edit)
+	TArray<struct FRigUnit_ModifyTransforms_PerItem> RigVMModel___ModifyTransforms_1_1_ItemToModify__Const; // 0x01B0(0x0010)(Edit)
+	class FName                                   RigVMModel___PBIK_Root__Const;                     // 0x01C0(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FPBIKEffector>                  RigVMModel___PBIK_Effectors__Const;                // 0x01C8(0x0010)(Edit)
+	ERigVMTransformSpace                          RigVMModel___GetTransform_Space__Const;            // 0x01D8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D9[0x7];                                      // 0x01D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FPBIKBoneSetting>               RigVMModel___PBIK_BoneSettings__Const;             // 0x01E0(0x0010)(Edit)
+	TArray<class FName>                           RigVMModel___PBIK_ExcludedBones__Const;            // 0x01F0(0x0010)(Edit)
+	struct FPBIKSolverSettings                    RigVMModel___PBIK_Settings__Const;                 // 0x0200(0x0040)(Edit, NoDestructor)
+	struct FPBIKDebug                             RigVMModel___PBIK_Debug__Const;                    // 0x0240(0x0008)(Edit, NoDestructor)
 };
-static_assert(alignof(FPropertyBag_75d876d967437d32) == 0x000010, "Wrong alignment on FPropertyBag_75d876d967437d32");
-static_assert(sizeof(FPropertyBag_75d876d967437d32) == 0x000080, "Wrong size on FPropertyBag_75d876d967437d32");
-static_assert(offsetof(FPropertyBag_75d876d967437d32, RigVMModel___OffsetTransformForItem_Item__Const) == 0x000000, "Member 'FPropertyBag_75d876d967437d32::RigVMModel___OffsetTransformForItem_Item__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_75d876d967437d32, RigVMModel___OffsetTransformForItem_OffsetTransform__Const) == 0x000010, "Member 'FPropertyBag_75d876d967437d32::RigVMModel___OffsetTransformForItem_OffsetTransform__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_75d876d967437d32, RigVMModel___OffsetTransformForItem_Weight__Const) == 0x000070, "Member 'FPropertyBag_75d876d967437d32::RigVMModel___OffsetTransformForItem_Weight__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_75d876d967437d32, RigVMModel___OffsetTransformForItem_bPropagateToChildren__Const) == 0x000074, "Member 'FPropertyBag_75d876d967437d32::RigVMModel___OffsetTransformForItem_bPropagateToChildren__Const' has a wrong offset!");
+static_assert(alignof(FPropertyBag_c2b62973af52916) == 0x000008, "Wrong alignment on FPropertyBag_c2b62973af52916");
+static_assert(sizeof(FPropertyBag_c2b62973af52916) == 0x000248, "Wrong size on FPropertyBag_c2b62973af52916");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, RigVMModel___FootTrace_Ik_Foot_Bone__Const) == 0x000000, "Member 'FPropertyBag_c2b62973af52916::RigVMModel___FootTrace_Ik_Foot_Bone__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, LocalVariableDefault__FootTrace_AnimatedFloorLocation__Const) == 0x000010, "Member 'FPropertyBag_c2b62973af52916::LocalVariableDefault__FootTrace_AnimatedFloorLocation__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, FootTrace___FootTrace_MathVectorAdd_A__Const) == 0x000028, "Member 'FPropertyBag_c2b62973af52916::FootTrace___FootTrace_MathVectorAdd_A__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, FootTrace___FootTrace_GetTransform_Space__Const) == 0x000040, "Member 'FPropertyBag_c2b62973af52916::FootTrace___FootTrace_GetTransform_Space__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, FootTrace___FootTrace_GetTransform_bInitial__Const) == 0x000041, "Member 'FPropertyBag_c2b62973af52916::FootTrace___FootTrace_GetTransform_bInitial__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, FootTrace___FootTrace_MathFloatAdd_B__Const) == 0x000044, "Member 'FPropertyBag_c2b62973af52916::FootTrace___FootTrace_MathFloatAdd_B__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, FootTrace___FootTrace_GetTransform_1_Item__Const) == 0x000048, "Member 'FPropertyBag_c2b62973af52916::FootTrace___FootTrace_GetTransform_1_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, FootTrace___FootTrace_MathVectorAdd_B__Const) == 0x000058, "Member 'FPropertyBag_c2b62973af52916::FootTrace___FootTrace_MathVectorAdd_B__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_bEnabled__Const) == 0x000070, "Member 'FPropertyBag_c2b62973af52916::FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_bEnabled__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Mode__Const) == 0x000071, "Member 'FPropertyBag_c2b62973af52916::FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Mode__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Color__Const) == 0x000074, "Member 'FPropertyBag_c2b62973af52916::FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Color__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Thickness__Const) == 0x000084, "Member 'FPropertyBag_c2b62973af52916::FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Thickness__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Scale__Const) == 0x000088, "Member 'FPropertyBag_c2b62973af52916::FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Scale__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Space__Const) == 0x00008C, "Member 'FPropertyBag_c2b62973af52916::FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Space__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, FootTrace___FootTrace_MathVectorSub_B__Const) == 0x000098, "Member 'FPropertyBag_c2b62973af52916::FootTrace___FootTrace_MathVectorSub_B__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_2_Mode__Const) == 0x0000B0, "Member 'FPropertyBag_c2b62973af52916::FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_2_Mode__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, FootTrace___FootTrace_SphereTraceByTraceChannel_TraceChannel__Const) == 0x0000B1, "Member 'FPropertyBag_c2b62973af52916::FootTrace___FootTrace_SphereTraceByTraceChannel_TraceChannel__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, FootTrace___FootTrace_SphereTraceByTraceChannel_Radius__Const) == 0x0000B4, "Member 'FPropertyBag_c2b62973af52916::FootTrace___FootTrace_SphereTraceByTraceChannel_Radius__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_Mode__Const) == 0x0000B8, "Member 'FPropertyBag_c2b62973af52916::FootTrace___FootTrace_RigUnit_VisualDebugVectorItemSpace_Mode__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, RigVMModel___FootTrace_1_Ik_Foot_Bone__Const) == 0x0000BC, "Member 'FPropertyBag_c2b62973af52916::RigVMModel___FootTrace_1_Ik_Foot_Bone__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, FootTrace_1___FootTrace_MathVectorAdd_A__Const) == 0x0000C8, "Member 'FPropertyBag_c2b62973af52916::FootTrace_1___FootTrace_MathVectorAdd_A__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, FootTrace_1___FootTrace_GetTransform_Space__Const) == 0x0000E0, "Member 'FPropertyBag_c2b62973af52916::FootTrace_1___FootTrace_GetTransform_Space__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, FootTrace_1___FootTrace_GetTransform_bInitial__Const) == 0x0000E1, "Member 'FPropertyBag_c2b62973af52916::FootTrace_1___FootTrace_GetTransform_bInitial__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, FootTrace_1___FootTrace_MathFloatAdd_B__Const) == 0x0000E4, "Member 'FPropertyBag_c2b62973af52916::FootTrace_1___FootTrace_MathFloatAdd_B__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, FootTrace_1___FootTrace_GetTransform_1_Item__Const) == 0x0000E8, "Member 'FPropertyBag_c2b62973af52916::FootTrace_1___FootTrace_GetTransform_1_Item__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, FootTrace_1___FootTrace_MathVectorAdd_B__Const) == 0x0000F8, "Member 'FPropertyBag_c2b62973af52916::FootTrace_1___FootTrace_MathVectorAdd_B__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_bEnabled__Const) == 0x000110, "Member 'FPropertyBag_c2b62973af52916::FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_bEnabled__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Mode__Const) == 0x000111, "Member 'FPropertyBag_c2b62973af52916::FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Mode__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Color__Const) == 0x000114, "Member 'FPropertyBag_c2b62973af52916::FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Color__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Thickness__Const) == 0x000124, "Member 'FPropertyBag_c2b62973af52916::FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Thickness__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Scale__Const) == 0x000128, "Member 'FPropertyBag_c2b62973af52916::FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Scale__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Space__Const) == 0x00012C, "Member 'FPropertyBag_c2b62973af52916::FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_1_Space__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, FootTrace_1___FootTrace_MathVectorSub_B__Const) == 0x000138, "Member 'FPropertyBag_c2b62973af52916::FootTrace_1___FootTrace_MathVectorSub_B__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_2_Mode__Const) == 0x000150, "Member 'FPropertyBag_c2b62973af52916::FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_2_Mode__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, FootTrace_1___FootTrace_SphereTraceByTraceChannel_TraceChannel__Const) == 0x000151, "Member 'FPropertyBag_c2b62973af52916::FootTrace_1___FootTrace_SphereTraceByTraceChannel_TraceChannel__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, FootTrace_1___FootTrace_SphereTraceByTraceChannel_Radius__Const) == 0x000154, "Member 'FPropertyBag_c2b62973af52916::FootTrace_1___FootTrace_SphereTraceByTraceChannel_Radius__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_Mode__Const) == 0x000158, "Member 'FPropertyBag_c2b62973af52916::FootTrace_1___FootTrace_RigUnit_VisualDebugVectorItemSpace_Mode__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, RigVMModel___VariableNode_9_Value__Const) == 0x000160, "Member 'FPropertyBag_c2b62973af52916::RigVMModel___VariableNode_9_Value__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, RigVMModel___AlphaInterp_Scale__Const) == 0x000168, "Member 'FPropertyBag_c2b62973af52916::RigVMModel___AlphaInterp_Scale__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, RigVMModel___AlphaInterp_Bias__Const) == 0x00016C, "Member 'FPropertyBag_c2b62973af52916::RigVMModel___AlphaInterp_Bias__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, RigVMModel___AlphaInterp_bMapRange__Const) == 0x000170, "Member 'FPropertyBag_c2b62973af52916::RigVMModel___AlphaInterp_bMapRange__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, RigVMModel___AlphaInterp_InRange__Const) == 0x000174, "Member 'FPropertyBag_c2b62973af52916::RigVMModel___AlphaInterp_InRange__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, RigVMModel___AlphaInterp_bInterpResult__Const) == 0x00017C, "Member 'FPropertyBag_c2b62973af52916::RigVMModel___AlphaInterp_bInterpResult__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, RigVMModel___AlphaInterp_InterpSpeedIncreasing__Const) == 0x000180, "Member 'FPropertyBag_c2b62973af52916::RigVMModel___AlphaInterp_InterpSpeedIncreasing__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, RigVMModel___ModifyTransforms_ItemToModify__Const) == 0x000188, "Member 'FPropertyBag_c2b62973af52916::RigVMModel___ModifyTransforms_ItemToModify__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, RigVMModel___ModifyTransforms_Mode__Const) == 0x000198, "Member 'FPropertyBag_c2b62973af52916::RigVMModel___ModifyTransforms_Mode__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, RigVMModel___ModifyTransforms_1_ItemToModify__Const) == 0x0001A0, "Member 'FPropertyBag_c2b62973af52916::RigVMModel___ModifyTransforms_1_ItemToModify__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, RigVMModel___ModifyTransforms_1_1_ItemToModify__Const) == 0x0001B0, "Member 'FPropertyBag_c2b62973af52916::RigVMModel___ModifyTransforms_1_1_ItemToModify__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, RigVMModel___PBIK_Root__Const) == 0x0001C0, "Member 'FPropertyBag_c2b62973af52916::RigVMModel___PBIK_Root__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, RigVMModel___PBIK_Effectors__Const) == 0x0001C8, "Member 'FPropertyBag_c2b62973af52916::RigVMModel___PBIK_Effectors__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, RigVMModel___GetTransform_Space__Const) == 0x0001D8, "Member 'FPropertyBag_c2b62973af52916::RigVMModel___GetTransform_Space__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, RigVMModel___PBIK_BoneSettings__Const) == 0x0001E0, "Member 'FPropertyBag_c2b62973af52916::RigVMModel___PBIK_BoneSettings__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, RigVMModel___PBIK_ExcludedBones__Const) == 0x0001F0, "Member 'FPropertyBag_c2b62973af52916::RigVMModel___PBIK_ExcludedBones__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, RigVMModel___PBIK_Settings__Const) == 0x000200, "Member 'FPropertyBag_c2b62973af52916::RigVMModel___PBIK_Settings__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_c2b62973af52916, RigVMModel___PBIK_Debug__Const) == 0x000240, "Member 'FPropertyBag_c2b62973af52916::RigVMModel___PBIK_Debug__Const' has a wrong offset!");
 
-// PropertyBag Transient.PropertyBag_54ec91b8660facbc
+// PropertyBag Transient.PropertyBag_eb24871878799efc
+// 0x0500 (0x0500 - 0x0000)
+struct FPropertyBag_eb24871878799efc final
+{
+public:
+	struct FVector                                RigVMModel___FootTrace_Offset;                     // 0x0000(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                FootTrace___FootTrace_MathVectorAdd_Result;        // 0x0018(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             FootTrace___FootTrace_GetTransform_Transform;      // 0x0030(0x0060)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FCachedRigElement>              FootTrace___FootTrace_GetTransform_CachedIndex;    // 0x0090(0x0010)(Edit)
+	float                                         FootTrace___FootTrace_MathFloatAdd_Result;         // 0x00A0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         FootTrace___FootTrace_MathFloatAdd_A;              // 0x00A4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A8[0x8];                                       // 0x00A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             FootTrace___FootTrace_GetTransform_1_Transform;    // 0x00B0(0x0060)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FCachedRigElement>              FootTrace___FootTrace_GetTransform_1_CachedIndex;  // 0x0110(0x0010)(Edit)
+	struct FVector                                FootTrace___FootTrace_MathVectorAdd_A__IO;         // 0x0120(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                FootTrace___FootTrace_MathVectorSub_Result;        // 0x0138(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                FootTrace___FootTrace_MathVectorSub_A__IO;         // 0x0150(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          FootTrace___FootTrace_SphereTraceByTraceChannel_bHit; // 0x0168(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_169[0x7];                                      // 0x0169(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                FootTrace___FootTrace_SphereTraceByTraceChannel_HitNormal; // 0x0170(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FRigUnit_SphereTrace_WorkData>  FootTrace___FootTrace_SphereTraceByTraceChannel_WorkData; // 0x0188(0x0010)(Edit)
+	struct FVector                                RigVMModel___FootTrace_1_Offset;                   // 0x0198(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                FootTrace_1___FootTrace_MathVectorAdd_Result;      // 0x01B0(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C8[0x8];                                      // 0x01C8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             FootTrace_1___FootTrace_GetTransform_Transform;    // 0x01D0(0x0060)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FCachedRigElement>              FootTrace_1___FootTrace_GetTransform_CachedIndex;  // 0x0230(0x0010)(Edit)
+	float                                         FootTrace_1___FootTrace_MathFloatAdd_Result;       // 0x0240(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         FootTrace_1___FootTrace_MathFloatAdd_A;            // 0x0244(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_248[0x8];                                      // 0x0248(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             FootTrace_1___FootTrace_GetTransform_1_Transform;  // 0x0250(0x0060)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FCachedRigElement>              FootTrace_1___FootTrace_GetTransform_1_CachedIndex; // 0x02B0(0x0010)(Edit)
+	struct FVector                                FootTrace_1___FootTrace_MathVectorAdd_A__IO;       // 0x02C0(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                FootTrace_1___FootTrace_MathVectorSub_Result;      // 0x02D8(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                FootTrace_1___FootTrace_MathVectorSub_A__IO;       // 0x02F0(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          FootTrace_1___FootTrace_SphereTraceByTraceChannel_bHit; // 0x0308(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_309[0x7];                                      // 0x0309(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                FootTrace_1___FootTrace_SphereTraceByTraceChannel_HitNormal; // 0x0310(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FRigUnit_SphereTrace_WorkData>  FootTrace_1___FootTrace_SphereTraceByTraceChannel_WorkData; // 0x0328(0x0010)(Edit)
+	class FName                                   RigVMModel___Branch_RigVMUnitNode_BlockToRun;      // 0x0338(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         RigVMModel___AlphaInterp_Result;                   // 0x0340(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         RigVMModel___AlphaInterp_Value;                    // 0x0344(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FInputScaleBiasClamp>           RigVMModel___AlphaInterp_ScaleBiasClamp;           // 0x0348(0x0010)(Edit)
+	float                                         RigVMModel___AlphaInterp_1_Result;                 // 0x0358(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         RigVMModel___AlphaInterp_1_Value;                  // 0x035C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FInputScaleBiasClamp>           RigVMModel___AlphaInterp_1_ScaleBiasClamp;         // 0x0360(0x0010)(Edit)
+	float                                         RigVMModel___If_Result;                            // 0x0370(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          RigVMModel___MathFloatLess_Result;                 // 0x0374(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_375[0x3];                                      // 0x0375(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         RigVMModel___MathFloatLess_A;                      // 0x0378(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         RigVMModel___MathFloatLess_B;                      // 0x037C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          RigVMModel___If_Condition;                         // 0x0380(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_381[0x3];                                      // 0x0381(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         RigVMModel___If_True;                              // 0x0384(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         RigVMModel___If_False;                             // 0x0388(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_38C[0x4];                                      // 0x038C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FRigUnit_ModifyTransforms_PerItem> RigVMModel___ModifyTransforms_ItemToModify__IO; // 0x0390(0x0010)(Edit)
+	TArray<struct FRigUnit_ModifyTransforms_WorkData> RigVMModel___ModifyTransforms_WorkData;        // 0x03A0(0x0010)(Edit)
+	TArray<struct FRigUnit_ModifyTransforms_PerItem> RigVMModel___ModifyTransforms_1_ItemToModify__IO; // 0x03B0(0x0010)(Edit)
+	TArray<struct FRigUnit_ModifyTransforms_WorkData> RigVMModel___ModifyTransforms_1_WorkData;      // 0x03C0(0x0010)(Edit)
+	TArray<struct FRigUnit_ModifyTransforms_PerItem> RigVMModel___ModifyTransforms_1_1_ItemToModify__IO; // 0x03D0(0x0010)(Edit)
+	TArray<struct FRigUnit_ModifyTransforms_WorkData> RigVMModel___ModifyTransforms_1_1_WorkData;    // 0x03E0(0x0010)(Edit)
+	struct FTransform                             RigVMModel___GetTransform_Transform;               // 0x03F0(0x0060)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FCachedRigElement>              RigVMModel___GetTransform_CachedIndex;             // 0x0450(0x0010)(Edit)
+	struct FTransform                             RigVMModel___GetTransform_1_Transform;             // 0x0460(0x0060)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FCachedRigElement>              RigVMModel___GetTransform_1_CachedIndex;           // 0x04C0(0x0010)(Edit)
+	TArray<struct FPBIKEffector>                  RigVMModel___PBIK_Effectors__IO;                   // 0x04D0(0x0010)(Edit)
+	TArray<TArray<int32>>                         RigVMModel___PBIK_EffectorSolverIndices;           // 0x04E0(0x0010)(Edit)
+	TArray<struct FPBIKWorkData>                  RigVMModel___PBIK_WorkData;                        // 0x04F0(0x0010)(Edit)
+};
+static_assert(alignof(FPropertyBag_eb24871878799efc) == 0x000010, "Wrong alignment on FPropertyBag_eb24871878799efc");
+static_assert(sizeof(FPropertyBag_eb24871878799efc) == 0x000500, "Wrong size on FPropertyBag_eb24871878799efc");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, RigVMModel___FootTrace_Offset) == 0x000000, "Member 'FPropertyBag_eb24871878799efc::RigVMModel___FootTrace_Offset' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, FootTrace___FootTrace_MathVectorAdd_Result) == 0x000018, "Member 'FPropertyBag_eb24871878799efc::FootTrace___FootTrace_MathVectorAdd_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, FootTrace___FootTrace_GetTransform_Transform) == 0x000030, "Member 'FPropertyBag_eb24871878799efc::FootTrace___FootTrace_GetTransform_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, FootTrace___FootTrace_GetTransform_CachedIndex) == 0x000090, "Member 'FPropertyBag_eb24871878799efc::FootTrace___FootTrace_GetTransform_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, FootTrace___FootTrace_MathFloatAdd_Result) == 0x0000A0, "Member 'FPropertyBag_eb24871878799efc::FootTrace___FootTrace_MathFloatAdd_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, FootTrace___FootTrace_MathFloatAdd_A) == 0x0000A4, "Member 'FPropertyBag_eb24871878799efc::FootTrace___FootTrace_MathFloatAdd_A' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, FootTrace___FootTrace_GetTransform_1_Transform) == 0x0000B0, "Member 'FPropertyBag_eb24871878799efc::FootTrace___FootTrace_GetTransform_1_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, FootTrace___FootTrace_GetTransform_1_CachedIndex) == 0x000110, "Member 'FPropertyBag_eb24871878799efc::FootTrace___FootTrace_GetTransform_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, FootTrace___FootTrace_MathVectorAdd_A__IO) == 0x000120, "Member 'FPropertyBag_eb24871878799efc::FootTrace___FootTrace_MathVectorAdd_A__IO' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, FootTrace___FootTrace_MathVectorSub_Result) == 0x000138, "Member 'FPropertyBag_eb24871878799efc::FootTrace___FootTrace_MathVectorSub_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, FootTrace___FootTrace_MathVectorSub_A__IO) == 0x000150, "Member 'FPropertyBag_eb24871878799efc::FootTrace___FootTrace_MathVectorSub_A__IO' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, FootTrace___FootTrace_SphereTraceByTraceChannel_bHit) == 0x000168, "Member 'FPropertyBag_eb24871878799efc::FootTrace___FootTrace_SphereTraceByTraceChannel_bHit' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, FootTrace___FootTrace_SphereTraceByTraceChannel_HitNormal) == 0x000170, "Member 'FPropertyBag_eb24871878799efc::FootTrace___FootTrace_SphereTraceByTraceChannel_HitNormal' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, FootTrace___FootTrace_SphereTraceByTraceChannel_WorkData) == 0x000188, "Member 'FPropertyBag_eb24871878799efc::FootTrace___FootTrace_SphereTraceByTraceChannel_WorkData' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, RigVMModel___FootTrace_1_Offset) == 0x000198, "Member 'FPropertyBag_eb24871878799efc::RigVMModel___FootTrace_1_Offset' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, FootTrace_1___FootTrace_MathVectorAdd_Result) == 0x0001B0, "Member 'FPropertyBag_eb24871878799efc::FootTrace_1___FootTrace_MathVectorAdd_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, FootTrace_1___FootTrace_GetTransform_Transform) == 0x0001D0, "Member 'FPropertyBag_eb24871878799efc::FootTrace_1___FootTrace_GetTransform_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, FootTrace_1___FootTrace_GetTransform_CachedIndex) == 0x000230, "Member 'FPropertyBag_eb24871878799efc::FootTrace_1___FootTrace_GetTransform_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, FootTrace_1___FootTrace_MathFloatAdd_Result) == 0x000240, "Member 'FPropertyBag_eb24871878799efc::FootTrace_1___FootTrace_MathFloatAdd_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, FootTrace_1___FootTrace_MathFloatAdd_A) == 0x000244, "Member 'FPropertyBag_eb24871878799efc::FootTrace_1___FootTrace_MathFloatAdd_A' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, FootTrace_1___FootTrace_GetTransform_1_Transform) == 0x000250, "Member 'FPropertyBag_eb24871878799efc::FootTrace_1___FootTrace_GetTransform_1_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, FootTrace_1___FootTrace_GetTransform_1_CachedIndex) == 0x0002B0, "Member 'FPropertyBag_eb24871878799efc::FootTrace_1___FootTrace_GetTransform_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, FootTrace_1___FootTrace_MathVectorAdd_A__IO) == 0x0002C0, "Member 'FPropertyBag_eb24871878799efc::FootTrace_1___FootTrace_MathVectorAdd_A__IO' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, FootTrace_1___FootTrace_MathVectorSub_Result) == 0x0002D8, "Member 'FPropertyBag_eb24871878799efc::FootTrace_1___FootTrace_MathVectorSub_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, FootTrace_1___FootTrace_MathVectorSub_A__IO) == 0x0002F0, "Member 'FPropertyBag_eb24871878799efc::FootTrace_1___FootTrace_MathVectorSub_A__IO' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, FootTrace_1___FootTrace_SphereTraceByTraceChannel_bHit) == 0x000308, "Member 'FPropertyBag_eb24871878799efc::FootTrace_1___FootTrace_SphereTraceByTraceChannel_bHit' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, FootTrace_1___FootTrace_SphereTraceByTraceChannel_HitNormal) == 0x000310, "Member 'FPropertyBag_eb24871878799efc::FootTrace_1___FootTrace_SphereTraceByTraceChannel_HitNormal' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, FootTrace_1___FootTrace_SphereTraceByTraceChannel_WorkData) == 0x000328, "Member 'FPropertyBag_eb24871878799efc::FootTrace_1___FootTrace_SphereTraceByTraceChannel_WorkData' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, RigVMModel___Branch_RigVMUnitNode_BlockToRun) == 0x000338, "Member 'FPropertyBag_eb24871878799efc::RigVMModel___Branch_RigVMUnitNode_BlockToRun' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, RigVMModel___AlphaInterp_Result) == 0x000340, "Member 'FPropertyBag_eb24871878799efc::RigVMModel___AlphaInterp_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, RigVMModel___AlphaInterp_Value) == 0x000344, "Member 'FPropertyBag_eb24871878799efc::RigVMModel___AlphaInterp_Value' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, RigVMModel___AlphaInterp_ScaleBiasClamp) == 0x000348, "Member 'FPropertyBag_eb24871878799efc::RigVMModel___AlphaInterp_ScaleBiasClamp' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, RigVMModel___AlphaInterp_1_Result) == 0x000358, "Member 'FPropertyBag_eb24871878799efc::RigVMModel___AlphaInterp_1_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, RigVMModel___AlphaInterp_1_Value) == 0x00035C, "Member 'FPropertyBag_eb24871878799efc::RigVMModel___AlphaInterp_1_Value' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, RigVMModel___AlphaInterp_1_ScaleBiasClamp) == 0x000360, "Member 'FPropertyBag_eb24871878799efc::RigVMModel___AlphaInterp_1_ScaleBiasClamp' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, RigVMModel___If_Result) == 0x000370, "Member 'FPropertyBag_eb24871878799efc::RigVMModel___If_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, RigVMModel___MathFloatLess_Result) == 0x000374, "Member 'FPropertyBag_eb24871878799efc::RigVMModel___MathFloatLess_Result' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, RigVMModel___MathFloatLess_A) == 0x000378, "Member 'FPropertyBag_eb24871878799efc::RigVMModel___MathFloatLess_A' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, RigVMModel___MathFloatLess_B) == 0x00037C, "Member 'FPropertyBag_eb24871878799efc::RigVMModel___MathFloatLess_B' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, RigVMModel___If_Condition) == 0x000380, "Member 'FPropertyBag_eb24871878799efc::RigVMModel___If_Condition' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, RigVMModel___If_True) == 0x000384, "Member 'FPropertyBag_eb24871878799efc::RigVMModel___If_True' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, RigVMModel___If_False) == 0x000388, "Member 'FPropertyBag_eb24871878799efc::RigVMModel___If_False' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, RigVMModel___ModifyTransforms_ItemToModify__IO) == 0x000390, "Member 'FPropertyBag_eb24871878799efc::RigVMModel___ModifyTransforms_ItemToModify__IO' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, RigVMModel___ModifyTransforms_WorkData) == 0x0003A0, "Member 'FPropertyBag_eb24871878799efc::RigVMModel___ModifyTransforms_WorkData' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, RigVMModel___ModifyTransforms_1_ItemToModify__IO) == 0x0003B0, "Member 'FPropertyBag_eb24871878799efc::RigVMModel___ModifyTransforms_1_ItemToModify__IO' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, RigVMModel___ModifyTransforms_1_WorkData) == 0x0003C0, "Member 'FPropertyBag_eb24871878799efc::RigVMModel___ModifyTransforms_1_WorkData' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, RigVMModel___ModifyTransforms_1_1_ItemToModify__IO) == 0x0003D0, "Member 'FPropertyBag_eb24871878799efc::RigVMModel___ModifyTransforms_1_1_ItemToModify__IO' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, RigVMModel___ModifyTransforms_1_1_WorkData) == 0x0003E0, "Member 'FPropertyBag_eb24871878799efc::RigVMModel___ModifyTransforms_1_1_WorkData' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, RigVMModel___GetTransform_Transform) == 0x0003F0, "Member 'FPropertyBag_eb24871878799efc::RigVMModel___GetTransform_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, RigVMModel___GetTransform_CachedIndex) == 0x000450, "Member 'FPropertyBag_eb24871878799efc::RigVMModel___GetTransform_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, RigVMModel___GetTransform_1_Transform) == 0x000460, "Member 'FPropertyBag_eb24871878799efc::RigVMModel___GetTransform_1_Transform' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, RigVMModel___GetTransform_1_CachedIndex) == 0x0004C0, "Member 'FPropertyBag_eb24871878799efc::RigVMModel___GetTransform_1_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, RigVMModel___PBIK_Effectors__IO) == 0x0004D0, "Member 'FPropertyBag_eb24871878799efc::RigVMModel___PBIK_Effectors__IO' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, RigVMModel___PBIK_EffectorSolverIndices) == 0x0004E0, "Member 'FPropertyBag_eb24871878799efc::RigVMModel___PBIK_EffectorSolverIndices' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_eb24871878799efc, RigVMModel___PBIK_WorkData) == 0x0004F0, "Member 'FPropertyBag_eb24871878799efc::RigVMModel___PBIK_WorkData' has a wrong offset!");
+
+// PropertyBag Transient.PropertyBag_75c86857574fe53e
 // 0x0070 (0x0070 - 0x0000)
-struct FPropertyBag_54ec91b8660facbc final
+struct FPropertyBag_75c86857574fe53e final
 {
 public:
 	struct FTransform                             RigVMModel___OffsetTransformForItem_OffsetTransform__IO; // 0x0000(0x0060)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FCachedRigElement>              RigVMModel___OffsetTransformForItem_CachedIndex;   // 0x0060(0x0010)(Edit)
 };
-static_assert(alignof(FPropertyBag_54ec91b8660facbc) == 0x000010, "Wrong alignment on FPropertyBag_54ec91b8660facbc");
-static_assert(sizeof(FPropertyBag_54ec91b8660facbc) == 0x000070, "Wrong size on FPropertyBag_54ec91b8660facbc");
-static_assert(offsetof(FPropertyBag_54ec91b8660facbc, RigVMModel___OffsetTransformForItem_OffsetTransform__IO) == 0x000000, "Member 'FPropertyBag_54ec91b8660facbc::RigVMModel___OffsetTransformForItem_OffsetTransform__IO' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_54ec91b8660facbc, RigVMModel___OffsetTransformForItem_CachedIndex) == 0x000060, "Member 'FPropertyBag_54ec91b8660facbc::RigVMModel___OffsetTransformForItem_CachedIndex' has a wrong offset!");
+static_assert(alignof(FPropertyBag_75c86857574fe53e) == 0x000010, "Wrong alignment on FPropertyBag_75c86857574fe53e");
+static_assert(sizeof(FPropertyBag_75c86857574fe53e) == 0x000070, "Wrong size on FPropertyBag_75c86857574fe53e");
+static_assert(offsetof(FPropertyBag_75c86857574fe53e, RigVMModel___OffsetTransformForItem_OffsetTransform__IO) == 0x000000, "Member 'FPropertyBag_75c86857574fe53e::RigVMModel___OffsetTransformForItem_OffsetTransform__IO' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_75c86857574fe53e, RigVMModel___OffsetTransformForItem_CachedIndex) == 0x000060, "Member 'FPropertyBag_75c86857574fe53e::RigVMModel___OffsetTransformForItem_CachedIndex' has a wrong offset!");
 
-// PropertyBag Transient.PropertyBag_c4020ae2f4cfae91
+// PropertyBag Transient.PropertyBag_863c37d5848c4534
 // 0x0390 (0x0390 - 0x0000)
-struct FPropertyBag_c4020ae2f4cfae91 final
+struct FPropertyBag_863c37d5848c4534 final
 {
 public:
 	TArray<class FName>                           LocalVariableDefault__Clear_Keyframeas_bone_names__Const; // 0x0000(0x0010)(Edit)
@@ -1342,90 +1342,90 @@ public:
 	struct FRigElementKey                         RigVMModel___RerouteNode_Values_26__Const;         // 0x0378(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
 	struct FRigElementKey                         RigVMModel___RerouteNode_Values_27__Const;         // 0x0384(0x000C)(Edit, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FPropertyBag_c4020ae2f4cfae91) == 0x000008, "Wrong alignment on FPropertyBag_c4020ae2f4cfae91");
-static_assert(sizeof(FPropertyBag_c4020ae2f4cfae91) == 0x000390, "Wrong size on FPropertyBag_c4020ae2f4cfae91");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, LocalVariableDefault__Clear_Keyframeas_bone_names__Const) == 0x000000, "Member 'FPropertyBag_c4020ae2f4cfae91::LocalVariableDefault__Clear_Keyframeas_bone_names__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, Clear_Keyframeas___Clear_Keyframeas_ResetTransformToInitial_Space__Const) == 0x000010, "Member 'FPropertyBag_c4020ae2f4cfae91::Clear_Keyframeas___Clear_Keyframeas_ResetTransformToInitial_Space__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, Clear_Keyframeas___Clear_Keyframeas_ResetTransformToInitial_bInitial__Const) == 0x000011, "Member 'FPropertyBag_c4020ae2f4cfae91::Clear_Keyframeas___Clear_Keyframeas_ResetTransformToInitial_bInitial__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, Clear_Keyframeas___Clear_Keyframeas_ResetTransformToInitial_bPropagateToChildren__Const) == 0x000012, "Member 'FPropertyBag_c4020ae2f4cfae91::Clear_Keyframeas___Clear_Keyframeas_ResetTransformToInitial_bPropagateToChildren__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___MetahumanComputeTwist_StartBone__Const) == 0x000014, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___MetahumanComputeTwist_StartBone__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___MetahumanComputeTwist_EndBone__Const) == 0x000020, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___MetahumanComputeTwist_EndBone__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___MetahumanComputeTwist_RootCorrective__Const) == 0x00002C, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___MetahumanComputeTwist_RootCorrective__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_1_Values_0__Const) == 0x000038, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_1_Values_0__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_1_Values_1__Const) == 0x000044, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_1_Values_1__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___MetahumanComputeTwist_SwingBlend__Const) == 0x000050, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___MetahumanComputeTwist_SwingBlend__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___MetahumanComputeTwist_TwistBlend__Const) == 0x000058, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___MetahumanComputeTwist_TwistBlend__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___MetahumanComputeTwist_PositionBlend__Const) == 0x000068, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___MetahumanComputeTwist_PositionBlend__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___MetahumanComputeTwist_bTwistFromEnd__Const) == 0x000078, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___MetahumanComputeTwist_bTwistFromEnd__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___MetahumanComputeTwist_1_StartBone__Const) == 0x00007C, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___MetahumanComputeTwist_1_StartBone__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___MetahumanComputeTwist_1_EndBone__Const) == 0x000088, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___MetahumanComputeTwist_1_EndBone__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___MetahumanComputeTwist_1_RootCorrective__Const) == 0x000094, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___MetahumanComputeTwist_1_RootCorrective__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_2_Values_0__Const) == 0x0000A0, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_2_Values_0__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_2_Values_1__Const) == 0x0000AC, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_2_Values_1__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___MetahumanComputeTwist_1_1_StartBone__Const) == 0x0000B8, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___MetahumanComputeTwist_1_1_StartBone__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___MetahumanComputeTwist_1_1_EndBone__Const) == 0x0000C4, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___MetahumanComputeTwist_1_1_EndBone__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___MetahumanComputeTwist_1_1_RootCorrective__Const) == 0x0000D0, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___MetahumanComputeTwist_1_1_RootCorrective__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_3_Values_0__Const) == 0x0000DC, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_3_Values_0__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_3_Values_1__Const) == 0x0000E8, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_3_Values_1__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___MetahumanComputeTwist_1_1_SwingBlend__Const) == 0x0000F4, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___MetahumanComputeTwist_1_1_SwingBlend__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___MetahumanComputeTwist_1_1_TwistBlend__Const) == 0x0000F8, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___MetahumanComputeTwist_1_1_TwistBlend__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___MetahumanComputeTwist_1_2_StartBone__Const) == 0x000108, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___MetahumanComputeTwist_1_2_StartBone__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___MetahumanComputeTwist_1_2_EndBone__Const) == 0x000114, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___MetahumanComputeTwist_1_2_EndBone__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___MetahumanComputeTwist_1_2_RootCorrective__Const) == 0x000120, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___MetahumanComputeTwist_1_2_RootCorrective__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_4_Values_0__Const) == 0x00012C, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_4_Values_0__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_4_Values_1__Const) == 0x000138, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_4_Values_1__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___MetahumanComputeTwist_2_EndBone__Const) == 0x000144, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___MetahumanComputeTwist_2_EndBone__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___MetahumanComputeTwist_2_RootCorrective__Const) == 0x000150, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___MetahumanComputeTwist_2_RootCorrective__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_6_Values_0__Const) == 0x00015C, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_6_Values_0__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_6_Values_1__Const) == 0x000168, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_6_Values_1__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___MetahumanComputeTwist_2_TwistBlend__Const) == 0x000178, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___MetahumanComputeTwist_2_TwistBlend__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___MetahumanComputeTwist_2_PositionBlend__Const) == 0x000188, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___MetahumanComputeTwist_2_PositionBlend__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___MetahumanComputeTwist_2_bTwistFromEnd__Const) == 0x000198, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___MetahumanComputeTwist_2_bTwistFromEnd__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___MetahumanComputeTwist_2_1_EndBone__Const) == 0x00019C, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___MetahumanComputeTwist_2_1_EndBone__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___MetahumanComputeTwist_2_1_RootCorrective__Const) == 0x0001A8, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___MetahumanComputeTwist_2_1_RootCorrective__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_5_Values_0__Const) == 0x0001B4, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_5_Values_0__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_5_Values_1__Const) == 0x0001C0, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_5_Values_1__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___MetahumanComputeTwist_2_2_EndBone__Const) == 0x0001CC, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___MetahumanComputeTwist_2_2_EndBone__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___MetahumanComputeTwist_2_2_RootCorrective__Const) == 0x0001D8, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___MetahumanComputeTwist_2_2_RootCorrective__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_7_Values_0__Const) == 0x0001E4, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_7_Values_0__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_7_Values_1__Const) == 0x0001F0, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_7_Values_1__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___MetahumanComputeTwist_2_2_TwistBlend__Const) == 0x000200, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___MetahumanComputeTwist_2_2_TwistBlend__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___MetahumanComputeTwist_2_3_EndBone__Const) == 0x000210, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___MetahumanComputeTwist_2_3_EndBone__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___MetahumanComputeTwist_2_3_RootCorrective__Const) == 0x00021C, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___MetahumanComputeTwist_2_3_RootCorrective__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_8_Values_0__Const) == 0x000228, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_8_Values_0__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_8_Values_1__Const) == 0x000234, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_8_Values_1__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_Values_0__Const) == 0x000240, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_Values_0__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_Values_1__Const) == 0x00024C, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_Values_1__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_Values_2__Const) == 0x000258, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_Values_2__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_Values_3__Const) == 0x000264, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_Values_3__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_Values_4__Const) == 0x000270, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_Values_4__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_Values_5__Const) == 0x00027C, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_Values_5__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_Values_6__Const) == 0x000288, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_Values_6__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_Values_7__Const) == 0x000294, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_Values_7__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_Values_8__Const) == 0x0002A0, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_Values_8__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_Values_9__Const) == 0x0002AC, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_Values_9__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_Values_10__Const) == 0x0002B8, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_Values_10__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_Values_11__Const) == 0x0002C4, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_Values_11__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_Values_12__Const) == 0x0002D0, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_Values_12__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_Values_13__Const) == 0x0002DC, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_Values_13__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_Values_14__Const) == 0x0002E8, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_Values_14__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_Values_15__Const) == 0x0002F4, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_Values_15__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_Values_16__Const) == 0x000300, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_Values_16__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_Values_17__Const) == 0x00030C, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_Values_17__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_Values_18__Const) == 0x000318, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_Values_18__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_Values_19__Const) == 0x000324, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_Values_19__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_Values_20__Const) == 0x000330, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_Values_20__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_Values_21__Const) == 0x00033C, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_Values_21__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_Values_22__Const) == 0x000348, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_Values_22__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_Values_23__Const) == 0x000354, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_Values_23__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_Values_24__Const) == 0x000360, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_Values_24__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_Values_25__Const) == 0x00036C, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_Values_25__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_Values_26__Const) == 0x000378, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_Values_26__Const' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_c4020ae2f4cfae91, RigVMModel___RerouteNode_Values_27__Const) == 0x000384, "Member 'FPropertyBag_c4020ae2f4cfae91::RigVMModel___RerouteNode_Values_27__Const' has a wrong offset!");
+static_assert(alignof(FPropertyBag_863c37d5848c4534) == 0x000008, "Wrong alignment on FPropertyBag_863c37d5848c4534");
+static_assert(sizeof(FPropertyBag_863c37d5848c4534) == 0x000390, "Wrong size on FPropertyBag_863c37d5848c4534");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, LocalVariableDefault__Clear_Keyframeas_bone_names__Const) == 0x000000, "Member 'FPropertyBag_863c37d5848c4534::LocalVariableDefault__Clear_Keyframeas_bone_names__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, Clear_Keyframeas___Clear_Keyframeas_ResetTransformToInitial_Space__Const) == 0x000010, "Member 'FPropertyBag_863c37d5848c4534::Clear_Keyframeas___Clear_Keyframeas_ResetTransformToInitial_Space__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, Clear_Keyframeas___Clear_Keyframeas_ResetTransformToInitial_bInitial__Const) == 0x000011, "Member 'FPropertyBag_863c37d5848c4534::Clear_Keyframeas___Clear_Keyframeas_ResetTransformToInitial_bInitial__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, Clear_Keyframeas___Clear_Keyframeas_ResetTransformToInitial_bPropagateToChildren__Const) == 0x000012, "Member 'FPropertyBag_863c37d5848c4534::Clear_Keyframeas___Clear_Keyframeas_ResetTransformToInitial_bPropagateToChildren__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___MetahumanComputeTwist_StartBone__Const) == 0x000014, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___MetahumanComputeTwist_StartBone__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___MetahumanComputeTwist_EndBone__Const) == 0x000020, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___MetahumanComputeTwist_EndBone__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___MetahumanComputeTwist_RootCorrective__Const) == 0x00002C, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___MetahumanComputeTwist_RootCorrective__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_1_Values_0__Const) == 0x000038, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_1_Values_0__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_1_Values_1__Const) == 0x000044, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_1_Values_1__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___MetahumanComputeTwist_SwingBlend__Const) == 0x000050, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___MetahumanComputeTwist_SwingBlend__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___MetahumanComputeTwist_TwistBlend__Const) == 0x000058, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___MetahumanComputeTwist_TwistBlend__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___MetahumanComputeTwist_PositionBlend__Const) == 0x000068, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___MetahumanComputeTwist_PositionBlend__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___MetahumanComputeTwist_bTwistFromEnd__Const) == 0x000078, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___MetahumanComputeTwist_bTwistFromEnd__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___MetahumanComputeTwist_1_StartBone__Const) == 0x00007C, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___MetahumanComputeTwist_1_StartBone__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___MetahumanComputeTwist_1_EndBone__Const) == 0x000088, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___MetahumanComputeTwist_1_EndBone__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___MetahumanComputeTwist_1_RootCorrective__Const) == 0x000094, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___MetahumanComputeTwist_1_RootCorrective__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_2_Values_0__Const) == 0x0000A0, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_2_Values_0__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_2_Values_1__Const) == 0x0000AC, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_2_Values_1__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___MetahumanComputeTwist_1_1_StartBone__Const) == 0x0000B8, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___MetahumanComputeTwist_1_1_StartBone__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___MetahumanComputeTwist_1_1_EndBone__Const) == 0x0000C4, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___MetahumanComputeTwist_1_1_EndBone__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___MetahumanComputeTwist_1_1_RootCorrective__Const) == 0x0000D0, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___MetahumanComputeTwist_1_1_RootCorrective__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_3_Values_0__Const) == 0x0000DC, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_3_Values_0__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_3_Values_1__Const) == 0x0000E8, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_3_Values_1__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___MetahumanComputeTwist_1_1_SwingBlend__Const) == 0x0000F4, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___MetahumanComputeTwist_1_1_SwingBlend__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___MetahumanComputeTwist_1_1_TwistBlend__Const) == 0x0000F8, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___MetahumanComputeTwist_1_1_TwistBlend__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___MetahumanComputeTwist_1_2_StartBone__Const) == 0x000108, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___MetahumanComputeTwist_1_2_StartBone__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___MetahumanComputeTwist_1_2_EndBone__Const) == 0x000114, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___MetahumanComputeTwist_1_2_EndBone__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___MetahumanComputeTwist_1_2_RootCorrective__Const) == 0x000120, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___MetahumanComputeTwist_1_2_RootCorrective__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_4_Values_0__Const) == 0x00012C, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_4_Values_0__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_4_Values_1__Const) == 0x000138, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_4_Values_1__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___MetahumanComputeTwist_2_EndBone__Const) == 0x000144, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___MetahumanComputeTwist_2_EndBone__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___MetahumanComputeTwist_2_RootCorrective__Const) == 0x000150, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___MetahumanComputeTwist_2_RootCorrective__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_6_Values_0__Const) == 0x00015C, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_6_Values_0__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_6_Values_1__Const) == 0x000168, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_6_Values_1__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___MetahumanComputeTwist_2_TwistBlend__Const) == 0x000178, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___MetahumanComputeTwist_2_TwistBlend__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___MetahumanComputeTwist_2_PositionBlend__Const) == 0x000188, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___MetahumanComputeTwist_2_PositionBlend__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___MetahumanComputeTwist_2_bTwistFromEnd__Const) == 0x000198, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___MetahumanComputeTwist_2_bTwistFromEnd__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___MetahumanComputeTwist_2_1_EndBone__Const) == 0x00019C, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___MetahumanComputeTwist_2_1_EndBone__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___MetahumanComputeTwist_2_1_RootCorrective__Const) == 0x0001A8, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___MetahumanComputeTwist_2_1_RootCorrective__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_5_Values_0__Const) == 0x0001B4, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_5_Values_0__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_5_Values_1__Const) == 0x0001C0, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_5_Values_1__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___MetahumanComputeTwist_2_2_EndBone__Const) == 0x0001CC, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___MetahumanComputeTwist_2_2_EndBone__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___MetahumanComputeTwist_2_2_RootCorrective__Const) == 0x0001D8, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___MetahumanComputeTwist_2_2_RootCorrective__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_7_Values_0__Const) == 0x0001E4, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_7_Values_0__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_7_Values_1__Const) == 0x0001F0, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_7_Values_1__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___MetahumanComputeTwist_2_2_TwistBlend__Const) == 0x000200, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___MetahumanComputeTwist_2_2_TwistBlend__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___MetahumanComputeTwist_2_3_EndBone__Const) == 0x000210, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___MetahumanComputeTwist_2_3_EndBone__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___MetahumanComputeTwist_2_3_RootCorrective__Const) == 0x00021C, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___MetahumanComputeTwist_2_3_RootCorrective__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_8_Values_0__Const) == 0x000228, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_8_Values_0__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_8_Values_1__Const) == 0x000234, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_8_Values_1__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_Values_0__Const) == 0x000240, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_Values_0__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_Values_1__Const) == 0x00024C, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_Values_1__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_Values_2__Const) == 0x000258, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_Values_2__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_Values_3__Const) == 0x000264, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_Values_3__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_Values_4__Const) == 0x000270, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_Values_4__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_Values_5__Const) == 0x00027C, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_Values_5__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_Values_6__Const) == 0x000288, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_Values_6__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_Values_7__Const) == 0x000294, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_Values_7__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_Values_8__Const) == 0x0002A0, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_Values_8__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_Values_9__Const) == 0x0002AC, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_Values_9__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_Values_10__Const) == 0x0002B8, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_Values_10__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_Values_11__Const) == 0x0002C4, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_Values_11__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_Values_12__Const) == 0x0002D0, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_Values_12__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_Values_13__Const) == 0x0002DC, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_Values_13__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_Values_14__Const) == 0x0002E8, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_Values_14__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_Values_15__Const) == 0x0002F4, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_Values_15__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_Values_16__Const) == 0x000300, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_Values_16__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_Values_17__Const) == 0x00030C, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_Values_17__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_Values_18__Const) == 0x000318, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_Values_18__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_Values_19__Const) == 0x000324, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_Values_19__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_Values_20__Const) == 0x000330, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_Values_20__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_Values_21__Const) == 0x00033C, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_Values_21__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_Values_22__Const) == 0x000348, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_Values_22__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_Values_23__Const) == 0x000354, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_Values_23__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_Values_24__Const) == 0x000360, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_Values_24__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_Values_25__Const) == 0x00036C, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_Values_25__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_Values_26__Const) == 0x000378, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_Values_26__Const' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_863c37d5848c4534, RigVMModel___RerouteNode_Values_27__Const) == 0x000384, "Member 'FPropertyBag_863c37d5848c4534::RigVMModel___RerouteNode_Values_27__Const' has a wrong offset!");
 
-// PropertyBag Transient.PropertyBag_8972f0d2827c1e67
+// PropertyBag Transient.PropertyBag_e31ad9e98eb45ccc
 // 0x02C0 (0x02C0 - 0x0000)
-struct FPropertyBag_8972f0d2827c1e67 final
+struct FPropertyBag_e31ad9e98eb45ccc final
 {
 public:
 	TArray<TArray<struct FCachedRigElement>>      Clear_Keyframeas___Clear_Keyframeas_ResetTransformToInitial_CachedIndex; // 0x0000(0x0010)(Edit)
@@ -1473,52 +1473,52 @@ public:
 	TArray<TArray<struct FCachedRigElement>>      RigVMModel___MetahumanComputeHalfFingers_CachedIndex; // 0x02A0(0x0010)(Edit)
 	TArray<TArray<struct FCachedRigElement>>      RigVMModel___MetahumanComputeHalfFingers_CachedParent; // 0x02B0(0x0010)(Edit)
 };
-static_assert(alignof(FPropertyBag_8972f0d2827c1e67) == 0x000008, "Wrong alignment on FPropertyBag_8972f0d2827c1e67");
-static_assert(sizeof(FPropertyBag_8972f0d2827c1e67) == 0x0002C0, "Wrong size on FPropertyBag_8972f0d2827c1e67");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, Clear_Keyframeas___Clear_Keyframeas_ResetTransformToInitial_CachedIndex) == 0x000000, "Member 'FPropertyBag_8972f0d2827c1e67::Clear_Keyframeas___Clear_Keyframeas_ResetTransformToInitial_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___RerouteNode_1_Array) == 0x000010, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___RerouteNode_1_Array' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___MetahumanComputeTwist_StartBoneCached) == 0x000020, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___MetahumanComputeTwist_StartBoneCached' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___MetahumanComputeTwist_EndBoneCached) == 0x000030, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___MetahumanComputeTwist_EndBoneCached' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___MetahumanComputeTwist_RootCorrectiveCached) == 0x000040, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___MetahumanComputeTwist_RootCorrectiveCached' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___MetahumanComputeTwist_TwistBonesCached) == 0x000050, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___MetahumanComputeTwist_TwistBonesCached' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___RerouteNode_2_Array) == 0x000060, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___RerouteNode_2_Array' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___MetahumanComputeTwist_1_StartBoneCached) == 0x000070, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___MetahumanComputeTwist_1_StartBoneCached' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___MetahumanComputeTwist_1_EndBoneCached) == 0x000080, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___MetahumanComputeTwist_1_EndBoneCached' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___MetahumanComputeTwist_1_RootCorrectiveCached) == 0x000090, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___MetahumanComputeTwist_1_RootCorrectiveCached' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___MetahumanComputeTwist_1_TwistBonesCached) == 0x0000A0, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___MetahumanComputeTwist_1_TwistBonesCached' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___RerouteNode_3_Array) == 0x0000B0, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___RerouteNode_3_Array' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___MetahumanComputeTwist_1_1_StartBoneCached) == 0x0000C0, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___MetahumanComputeTwist_1_1_StartBoneCached' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___MetahumanComputeTwist_1_1_EndBoneCached) == 0x0000D0, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___MetahumanComputeTwist_1_1_EndBoneCached' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___MetahumanComputeTwist_1_1_RootCorrectiveCached) == 0x0000E0, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___MetahumanComputeTwist_1_1_RootCorrectiveCached' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___MetahumanComputeTwist_1_1_TwistBonesCached) == 0x0000F0, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___MetahumanComputeTwist_1_1_TwistBonesCached' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___RerouteNode_4_Array) == 0x000100, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___RerouteNode_4_Array' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___MetahumanComputeTwist_1_2_StartBoneCached) == 0x000110, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___MetahumanComputeTwist_1_2_StartBoneCached' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___MetahumanComputeTwist_1_2_EndBoneCached) == 0x000120, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___MetahumanComputeTwist_1_2_EndBoneCached' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___MetahumanComputeTwist_1_2_RootCorrectiveCached) == 0x000130, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___MetahumanComputeTwist_1_2_RootCorrectiveCached' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___MetahumanComputeTwist_1_2_TwistBonesCached) == 0x000140, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___MetahumanComputeTwist_1_2_TwistBonesCached' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___RerouteNode_6_Array) == 0x000150, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___RerouteNode_6_Array' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___MetahumanComputeTwist_2_StartBoneCached) == 0x000160, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___MetahumanComputeTwist_2_StartBoneCached' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___MetahumanComputeTwist_2_EndBoneCached) == 0x000170, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___MetahumanComputeTwist_2_EndBoneCached' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___MetahumanComputeTwist_2_RootCorrectiveCached) == 0x000180, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___MetahumanComputeTwist_2_RootCorrectiveCached' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___MetahumanComputeTwist_2_TwistBonesCached) == 0x000190, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___MetahumanComputeTwist_2_TwistBonesCached' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___RerouteNode_5_Array) == 0x0001A0, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___RerouteNode_5_Array' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___MetahumanComputeTwist_2_1_StartBoneCached) == 0x0001B0, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___MetahumanComputeTwist_2_1_StartBoneCached' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___MetahumanComputeTwist_2_1_EndBoneCached) == 0x0001C0, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___MetahumanComputeTwist_2_1_EndBoneCached' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___MetahumanComputeTwist_2_1_RootCorrectiveCached) == 0x0001D0, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___MetahumanComputeTwist_2_1_RootCorrectiveCached' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___MetahumanComputeTwist_2_1_TwistBonesCached) == 0x0001E0, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___MetahumanComputeTwist_2_1_TwistBonesCached' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___RerouteNode_7_Array) == 0x0001F0, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___RerouteNode_7_Array' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___MetahumanComputeTwist_2_2_StartBoneCached) == 0x000200, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___MetahumanComputeTwist_2_2_StartBoneCached' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___MetahumanComputeTwist_2_2_EndBoneCached) == 0x000210, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___MetahumanComputeTwist_2_2_EndBoneCached' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___MetahumanComputeTwist_2_2_RootCorrectiveCached) == 0x000220, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___MetahumanComputeTwist_2_2_RootCorrectiveCached' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___MetahumanComputeTwist_2_2_TwistBonesCached) == 0x000230, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___MetahumanComputeTwist_2_2_TwistBonesCached' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___RerouteNode_8_Array) == 0x000240, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___RerouteNode_8_Array' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___MetahumanComputeTwist_2_3_StartBoneCached) == 0x000250, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___MetahumanComputeTwist_2_3_StartBoneCached' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___MetahumanComputeTwist_2_3_EndBoneCached) == 0x000260, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___MetahumanComputeTwist_2_3_EndBoneCached' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___MetahumanComputeTwist_2_3_RootCorrectiveCached) == 0x000270, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___MetahumanComputeTwist_2_3_RootCorrectiveCached' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___MetahumanComputeTwist_2_3_TwistBonesCached) == 0x000280, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___MetahumanComputeTwist_2_3_TwistBonesCached' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___RerouteNode_Array) == 0x000290, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___RerouteNode_Array' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___MetahumanComputeHalfFingers_CachedIndex) == 0x0002A0, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___MetahumanComputeHalfFingers_CachedIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyBag_8972f0d2827c1e67, RigVMModel___MetahumanComputeHalfFingers_CachedParent) == 0x0002B0, "Member 'FPropertyBag_8972f0d2827c1e67::RigVMModel___MetahumanComputeHalfFingers_CachedParent' has a wrong offset!");
+static_assert(alignof(FPropertyBag_e31ad9e98eb45ccc) == 0x000008, "Wrong alignment on FPropertyBag_e31ad9e98eb45ccc");
+static_assert(sizeof(FPropertyBag_e31ad9e98eb45ccc) == 0x0002C0, "Wrong size on FPropertyBag_e31ad9e98eb45ccc");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, Clear_Keyframeas___Clear_Keyframeas_ResetTransformToInitial_CachedIndex) == 0x000000, "Member 'FPropertyBag_e31ad9e98eb45ccc::Clear_Keyframeas___Clear_Keyframeas_ResetTransformToInitial_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___RerouteNode_1_Array) == 0x000010, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___RerouteNode_1_Array' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___MetahumanComputeTwist_StartBoneCached) == 0x000020, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___MetahumanComputeTwist_StartBoneCached' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___MetahumanComputeTwist_EndBoneCached) == 0x000030, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___MetahumanComputeTwist_EndBoneCached' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___MetahumanComputeTwist_RootCorrectiveCached) == 0x000040, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___MetahumanComputeTwist_RootCorrectiveCached' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___MetahumanComputeTwist_TwistBonesCached) == 0x000050, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___MetahumanComputeTwist_TwistBonesCached' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___RerouteNode_2_Array) == 0x000060, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___RerouteNode_2_Array' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___MetahumanComputeTwist_1_StartBoneCached) == 0x000070, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___MetahumanComputeTwist_1_StartBoneCached' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___MetahumanComputeTwist_1_EndBoneCached) == 0x000080, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___MetahumanComputeTwist_1_EndBoneCached' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___MetahumanComputeTwist_1_RootCorrectiveCached) == 0x000090, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___MetahumanComputeTwist_1_RootCorrectiveCached' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___MetahumanComputeTwist_1_TwistBonesCached) == 0x0000A0, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___MetahumanComputeTwist_1_TwistBonesCached' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___RerouteNode_3_Array) == 0x0000B0, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___RerouteNode_3_Array' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___MetahumanComputeTwist_1_1_StartBoneCached) == 0x0000C0, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___MetahumanComputeTwist_1_1_StartBoneCached' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___MetahumanComputeTwist_1_1_EndBoneCached) == 0x0000D0, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___MetahumanComputeTwist_1_1_EndBoneCached' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___MetahumanComputeTwist_1_1_RootCorrectiveCached) == 0x0000E0, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___MetahumanComputeTwist_1_1_RootCorrectiveCached' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___MetahumanComputeTwist_1_1_TwistBonesCached) == 0x0000F0, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___MetahumanComputeTwist_1_1_TwistBonesCached' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___RerouteNode_4_Array) == 0x000100, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___RerouteNode_4_Array' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___MetahumanComputeTwist_1_2_StartBoneCached) == 0x000110, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___MetahumanComputeTwist_1_2_StartBoneCached' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___MetahumanComputeTwist_1_2_EndBoneCached) == 0x000120, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___MetahumanComputeTwist_1_2_EndBoneCached' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___MetahumanComputeTwist_1_2_RootCorrectiveCached) == 0x000130, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___MetahumanComputeTwist_1_2_RootCorrectiveCached' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___MetahumanComputeTwist_1_2_TwistBonesCached) == 0x000140, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___MetahumanComputeTwist_1_2_TwistBonesCached' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___RerouteNode_6_Array) == 0x000150, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___RerouteNode_6_Array' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___MetahumanComputeTwist_2_StartBoneCached) == 0x000160, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___MetahumanComputeTwist_2_StartBoneCached' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___MetahumanComputeTwist_2_EndBoneCached) == 0x000170, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___MetahumanComputeTwist_2_EndBoneCached' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___MetahumanComputeTwist_2_RootCorrectiveCached) == 0x000180, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___MetahumanComputeTwist_2_RootCorrectiveCached' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___MetahumanComputeTwist_2_TwistBonesCached) == 0x000190, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___MetahumanComputeTwist_2_TwistBonesCached' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___RerouteNode_5_Array) == 0x0001A0, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___RerouteNode_5_Array' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___MetahumanComputeTwist_2_1_StartBoneCached) == 0x0001B0, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___MetahumanComputeTwist_2_1_StartBoneCached' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___MetahumanComputeTwist_2_1_EndBoneCached) == 0x0001C0, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___MetahumanComputeTwist_2_1_EndBoneCached' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___MetahumanComputeTwist_2_1_RootCorrectiveCached) == 0x0001D0, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___MetahumanComputeTwist_2_1_RootCorrectiveCached' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___MetahumanComputeTwist_2_1_TwistBonesCached) == 0x0001E0, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___MetahumanComputeTwist_2_1_TwistBonesCached' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___RerouteNode_7_Array) == 0x0001F0, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___RerouteNode_7_Array' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___MetahumanComputeTwist_2_2_StartBoneCached) == 0x000200, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___MetahumanComputeTwist_2_2_StartBoneCached' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___MetahumanComputeTwist_2_2_EndBoneCached) == 0x000210, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___MetahumanComputeTwist_2_2_EndBoneCached' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___MetahumanComputeTwist_2_2_RootCorrectiveCached) == 0x000220, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___MetahumanComputeTwist_2_2_RootCorrectiveCached' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___MetahumanComputeTwist_2_2_TwistBonesCached) == 0x000230, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___MetahumanComputeTwist_2_2_TwistBonesCached' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___RerouteNode_8_Array) == 0x000240, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___RerouteNode_8_Array' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___MetahumanComputeTwist_2_3_StartBoneCached) == 0x000250, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___MetahumanComputeTwist_2_3_StartBoneCached' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___MetahumanComputeTwist_2_3_EndBoneCached) == 0x000260, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___MetahumanComputeTwist_2_3_EndBoneCached' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___MetahumanComputeTwist_2_3_RootCorrectiveCached) == 0x000270, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___MetahumanComputeTwist_2_3_RootCorrectiveCached' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___MetahumanComputeTwist_2_3_TwistBonesCached) == 0x000280, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___MetahumanComputeTwist_2_3_TwistBonesCached' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___RerouteNode_Array) == 0x000290, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___RerouteNode_Array' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___MetahumanComputeHalfFingers_CachedIndex) == 0x0002A0, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___MetahumanComputeHalfFingers_CachedIndex' has a wrong offset!");
+static_assert(offsetof(FPropertyBag_e31ad9e98eb45ccc, RigVMModel___MetahumanComputeHalfFingers_CachedParent) == 0x0002B0, "Member 'FPropertyBag_e31ad9e98eb45ccc::RigVMModel___MetahumanComputeHalfFingers_CachedParent' has a wrong offset!");
 
 }
 

@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
+#include "EAttributeScalingGrade_structs.hpp"
 #include "S_MerchantItemQueueData_structs.hpp"
 #include "S_jRPG_Item_DynamicData_structs.hpp"
-#include "S_jRPG_Item_StaticData_structs.hpp"
 #include "ECharacterAttribute_structs.hpp"
-#include "EAttributeScalingGrade_structs.hpp"
-#include "S_LootContext_structs.hpp"
+#include "S_jRPG_Item_StaticData_structs.hpp"
 #include "S_WeaponDefinition_structs.hpp"
+#include "S_LootContext_structs.hpp"
 
 
 namespace SDK::Params

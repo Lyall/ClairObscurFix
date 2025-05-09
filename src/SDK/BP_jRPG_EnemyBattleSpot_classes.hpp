@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "E_jRPG_FormationType_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "E_jRPG_FormationType_structs.hpp"
 
 
 namespace SDK

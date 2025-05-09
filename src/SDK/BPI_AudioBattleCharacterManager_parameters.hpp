@@ -13,10 +13,10 @@
 #include "EOnoType_structs.hpp"
 #include "EBattleHitBy_structs.hpp"
 #include "EBattleCommonSFX_structs.hpp"
-#include "EUiBattleType_structs.hpp"
 #include "EFootstepsType_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "PhysicsCore_structs.hpp"
+#include "EUiBattleType_structs.hpp"
 
 
 namespace SDK::Params

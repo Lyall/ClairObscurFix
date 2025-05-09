@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "E_jRPG_ItemType_structs.hpp"
+#include "BlueprintSorting_structs.hpp"
 #include "S_jRPG_Item_StaticData_structs.hpp"
 #include "E_jRPG_StatType_structs.hpp"
-#include "BlueprintSorting_structs.hpp"
 #include "Engine_structs.hpp"
+#include "E_jRPG_ItemType_structs.hpp"
 #include "S_SortDropdownEntry_structs.hpp"
 
 

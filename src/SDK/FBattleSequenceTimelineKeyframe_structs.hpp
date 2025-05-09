@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "EBattleActionEvent_structs.hpp"
 #include "SandFall_structs.hpp"
+#include "EBattleActionEvent_structs.hpp"
 
 
 namespace SDK

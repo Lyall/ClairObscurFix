@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "SandFall_structs.hpp"
-#include "E_CurrentAct_structs.hpp"
 #include "E_MainQuest_Step_structs.hpp"
+#include "E_CurrentAct_structs.hpp"
 #include "GameplayTags_structs.hpp"
 
 

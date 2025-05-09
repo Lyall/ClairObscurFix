@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "Enum_Fog_Presets_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "Struct_FogQualityVars_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Enum_Fog_Quality_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "Enum_Fog_Presets_structs.hpp"
 
 
 namespace SDK
@@ -60,20 +60,20 @@ public:
 	double                                        OpacityMultiplier;                                 // 0x03B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ApplyPreset();
-	void ApplySeed();
-	void ExecuteUbergraph_BP_UltraVolumetrics(int32 EntryPoint);
-	void FogQuality_GridPixelSize(class FString* Output);
-	void FogQuality_GridSizeZ(class FString* Output);
-	void FogQualitySet();
-	void GetDefaultQualityVars();
-	void Randomize();
-	void ReceiveBeginPlay();
-	void ReceiveTick(float DeltaSeconds);
-	void ResetFogQuality();
-	void SetOpacity(double NewValue);
-	void SetRandom();
 	void UserConstructionScript();
+	void SetRandom();
+	void SetOpacity(double NewValue);
+	void ResetFogQuality();
+	void ReceiveTick(float DeltaSeconds);
+	void ReceiveBeginPlay();
+	void Randomize();
+	void GetDefaultQualityVars();
+	void FogQualitySet();
+	void FogQuality_GridSizeZ(class FString* Output);
+	void FogQuality_GridPixelSize(class FString* Output);
+	void ExecuteUbergraph_BP_UltraVolumetrics(int32 EntryPoint);
+	void ApplySeed();
+	void ApplyPreset();
 
 public:
 	static class UClass* StaticClass()

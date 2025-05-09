@@ -32,20 +32,20 @@ public:
 	TArray<struct FS_RuntimeSoundDataWithDelay>   RuntimeSoundData;                                  // 0x02B8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	bool CheckForErrors(TArray<class FText>& ErrorMessages);
-	void DEBUG_DrawMinMaxPositions();
-	void DEBUG_DrawPlayedSound(class USoundBase* Sound, const struct FVector& position);
-	void ExecuteUbergraph_BP_Audio_Spline_Random(int32 EntryPoint);
-	void GetMinMaxDistanceFromLocationInRange(const struct FVector& Location, double Range, bool* Found, double* MinDistance, double* MaxDistance);
-	void GetRandomSplinePointInRange(const struct FVector& position, double Range, TArray<struct FVector>& Points, struct FVector* Point, bool* Found);
-	void GetRandomSplinePointsInDistanceRange(double MinDistance, double MaxDistance, int32 NumberOfPoints, TArray<struct FVector>* Points);
-	void GetSplinePointForSound(class USoundBase* Sound, struct FVector* position, bool* Found);
-	void OnTimerElapsed();
-	void PlayRandomSoundAtRandomPosition(struct FS_RuntimeSoundDataWithDelay& RandomSoundData);
-	void ReceiveBeginPlay();
-	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
-	void ReceiveTick(float DeltaSeconds);
 	void StartTimerForSoundData(struct FS_RuntimeSoundDataWithDelay& SoundData_0);
+	void ReceiveTick(float DeltaSeconds);
+	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
+	void ReceiveBeginPlay();
+	void PlayRandomSoundAtRandomPosition(struct FS_RuntimeSoundDataWithDelay& RandomSoundData);
+	void OnTimerElapsed();
+	void GetSplinePointForSound(class USoundBase* Sound, struct FVector* position, bool* Found);
+	void GetRandomSplinePointsInDistanceRange(double MinDistance, double MaxDistance, int32 NumberOfPoints, TArray<struct FVector>* Points);
+	void GetRandomSplinePointInRange(const struct FVector& position, double Range, TArray<struct FVector>& Points, struct FVector* Point, bool* Found);
+	void GetMinMaxDistanceFromLocationInRange(const struct FVector& Location, double Range, bool* Found, double* MinDistance, double* MaxDistance);
+	void ExecuteUbergraph_BP_Audio_Spline_Random(int32 EntryPoint);
+	void DEBUG_DrawPlayedSound(class USoundBase* Sound, const struct FVector& position);
+	void DEBUG_DrawMinMaxPositions();
+	bool CheckForErrors(TArray<class FText>& ErrorMessages);
 
 public:
 	static class UClass* StaticClass()

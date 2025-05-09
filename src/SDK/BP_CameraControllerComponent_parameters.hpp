@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "S_CameraConfig_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CinematicCamera_structs.hpp"
 #include "E_CharacterList_structs.hpp"
 #include "Engine_structs.hpp"
-#include "S_CameraConfig_structs.hpp"
 #include "S_CameraRecenterRequest_structs.hpp"
 
 

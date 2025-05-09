@@ -27,15 +27,15 @@ public:
 	class USF_BlueprintLatentAction*              CinematicLatentAction;                             // 0x0050(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ActivateLightingScenario(class ABP_LightingScenarioReference_C* LigthingScenario);
-	void ActivateLightingScenarioAfterCinematic();
-	void CacheCurrentLightingScenario();
-	void ExecuteGameAction(const class APlayerController* Controller);
-	void ExecuteUbergraph_BP_GameActionInstance_CinematicWithLightingScenario(int32 EntryPoint);
 	void GetLightingScenarioToActivateAfterCinematic(class ABP_LightingScenarioReference_C** Scenario);
+	void ExecuteUbergraph_BP_GameActionInstance_CinematicWithLightingScenario(int32 EntryPoint);
+	void ExecuteGameAction(const class APlayerController* Controller);
+	void CacheCurrentLightingScenario();
+	void ActivateLightingScenarioAfterCinematic();
+	void ActivateLightingScenario(class ABP_LightingScenarioReference_C* LigthingScenario);
 
-	class FString GetDebugString() const;
 	void GetParameters(struct FS_TriggerCinematicVariables* CinematicParameters, TSoftObjectPtr<class ABP_LightingScenarioReference_C>* ScenarioReferenceOnEnd) const;
+	class FString GetDebugString() const;
 
 public:
 	static class UClass* StaticClass()

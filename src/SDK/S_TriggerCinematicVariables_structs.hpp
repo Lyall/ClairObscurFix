@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "S_PostCinematicParameters_structs.hpp"
+#include "S_PreCinematicParameters_structs.hpp"
 #include "FSoundEvent_structs.hpp"
 #include "MovieScene_structs.hpp"
 #include "S_RangedAmbienceParameters_structs.hpp"
-#include "S_PreCinematicParameters_structs.hpp"
-#include "S_PostCinematicParameters_structs.hpp"
 
 
 namespace SDK

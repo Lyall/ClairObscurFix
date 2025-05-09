@@ -12,14 +12,14 @@
 
 #include "Engine_structs.hpp"
 #include "SandFall_structs.hpp"
-#include "S_TutorialCardParameters_structs.hpp"
-#include "UMG_structs.hpp"
-#include "E_ModalStandardButton_structs.hpp"
-#include "FEquipmentSlot_structs.hpp"
-#include "FCharacterAssignedEquipment_structs.hpp"
-#include "CommonUI_classes.hpp"
 #include "CommonInput_structs.hpp"
+#include "S_TutorialCardParameters_structs.hpp"
+#include "CommonUI_classes.hpp"
+#include "FCharacterAssignedEquipment_structs.hpp"
+#include "FEquipmentSlot_structs.hpp"
+#include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "E_ModalStandardButton_structs.hpp"
 #include "EModalUIResponse_structs.hpp"
 
 

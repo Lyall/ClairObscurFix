@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "S_BlockedActionFeedback_structs.hpp"
 #include "EAttackType_structs.hpp"
 #include "EBuffApplicationProbability_structs.hpp"
-#include "Engine_structs.hpp"
 
 
 namespace SDK::Params

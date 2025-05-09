@@ -11,12 +11,12 @@
 #include "Basic.hpp"
 
 #include "Chaos_structs.hpp"
+#include "EFieldActivationType_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "FieldSystemEngine_classes.hpp"
-#include "Engine_structs.hpp"
-#include "EFieldActivationType_structs.hpp"
 #include "EFieldShapeType_structs.hpp"
 #include "EFieldForceVel_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK

@@ -10,16 +10,16 @@
 
 #include "Basic.hpp"
 
+#include "S_NPCAnimations_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "S_IdleNpcParameters_structs.hpp"
-#include "E_NPC_Body_IdleType_structs.hpp"
 #include "E_LookAtEndBones_structs.hpp"
+#include "E_NPC_Body_IdleType_structs.hpp"
 #include "E_Facial_LookAt_structs.hpp"
-#include "S_NPCAnimations_structs.hpp"
-#include "E_Expressions_Metahuman_structs.hpp"
-#include "CoreUObject_structs.hpp"
+#include "S_IdleNpcParameters_structs.hpp"
 #include "E_NPC_ForceHeadDirection_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "E_Expressions_Metahuman_structs.hpp"
 
 
 namespace SDK

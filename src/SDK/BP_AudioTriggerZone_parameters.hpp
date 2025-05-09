@@ -17,94 +17,246 @@
 namespace SDK::Params
 {
 
-// Function BP_AudioTriggerZone.BP_AudioTriggerZone_C.BndEvt__BP_AudioTriggerZone_Box_Entry_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Entry_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature final
-{
-public:
-	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Entry_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Entry_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature");
-static_assert(sizeof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Entry_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature) == 0x000020, "Wrong size on BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Entry_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature");
-static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Entry_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Entry_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Entry_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Entry_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Entry_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Entry_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Entry_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Entry_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
-
-// Function BP_AudioTriggerZone.BP_AudioTriggerZone_C.BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature
-// 0x0118 (0x0118 - 0x0000)
-struct BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature final
-{
-public:
-	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             SweepResult;                                       // 0x0020(0x00F8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-};
-static_assert(alignof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature");
-static_assert(sizeof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature) == 0x000118, "Wrong size on BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature");
-static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature, bFromSweep) == 0x00001C, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature::bFromSweep' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature, SweepResult) == 0x000020, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature::SweepResult' has a wrong offset!");
-
-// Function BP_AudioTriggerZone.BP_AudioTriggerZone_C.BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature final
-{
-public:
-	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature");
-static_assert(sizeof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature) == 0x000020, "Wrong size on BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature");
-static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
-
-// Function BP_AudioTriggerZone.BP_AudioTriggerZone_C.BndEvt__BP_AudioTriggerZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
-// 0x0118 (0x0118 - 0x0000)
-struct BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature final
-{
-public:
-	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             SweepResult;                                       // 0x0020(0x00F8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-};
-static_assert(alignof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
-static_assert(sizeof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature) == 0x000118, "Wrong size on BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
-static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, bFromSweep) == 0x00001C, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::bFromSweep' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, SweepResult) == 0x000020, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::SweepResult' has a wrong offset!");
-
-// Function BP_AudioTriggerZone.BP_AudioTriggerZone_C.BndEvt__BP_AudioTriggerZone_BP_ConditionCheckerComponent_K2Node_ComponentBoundEvent_4_OnConditionChanged__DelegateSignature
+// Function BP_AudioTriggerZone.BP_AudioTriggerZone_C.UpdateTriggerComponentsCollision
 // 0x0001 (0x0001 - 0x0000)
-struct BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_BP_ConditionCheckerComponent_K2Node_ComponentBoundEvent_4_OnConditionChanged__DelegateSignature final
+struct BP_AudioTriggerZone_C_UpdateTriggerComponentsCollision final
 {
 public:
-	bool                                          Condition;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetCurrentConditionValue_CurrentValue;    // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_BP_ConditionCheckerComponent_K2Node_ComponentBoundEvent_4_OnConditionChanged__DelegateSignature) == 0x000001, "Wrong alignment on BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_BP_ConditionCheckerComponent_K2Node_ComponentBoundEvent_4_OnConditionChanged__DelegateSignature");
-static_assert(sizeof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_BP_ConditionCheckerComponent_K2Node_ComponentBoundEvent_4_OnConditionChanged__DelegateSignature) == 0x000001, "Wrong size on BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_BP_ConditionCheckerComponent_K2Node_ComponentBoundEvent_4_OnConditionChanged__DelegateSignature");
-static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_BP_ConditionCheckerComponent_K2Node_ComponentBoundEvent_4_OnConditionChanged__DelegateSignature, Condition) == 0x000000, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_BP_ConditionCheckerComponent_K2Node_ComponentBoundEvent_4_OnConditionChanged__DelegateSignature::Condition' has a wrong offset!");
+static_assert(alignof(BP_AudioTriggerZone_C_UpdateTriggerComponentsCollision) == 0x000001, "Wrong alignment on BP_AudioTriggerZone_C_UpdateTriggerComponentsCollision");
+static_assert(sizeof(BP_AudioTriggerZone_C_UpdateTriggerComponentsCollision) == 0x000001, "Wrong size on BP_AudioTriggerZone_C_UpdateTriggerComponentsCollision");
+static_assert(offsetof(BP_AudioTriggerZone_C_UpdateTriggerComponentsCollision, CallFunc_GetCurrentConditionValue_CurrentValue) == 0x000000, "Member 'BP_AudioTriggerZone_C_UpdateTriggerComponentsCollision::CallFunc_GetCurrentConditionValue_CurrentValue' has a wrong offset!");
+
+// Function BP_AudioTriggerZone.BP_AudioTriggerZone_C.SetTriggerComponentsCollisionEnabled
+// 0x0040 (0x0040 - 0x0000)
+struct BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled final
+{
+public:
+	bool                                          Enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECollisionEnabled                             Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECollisionEnabled                             Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECollisionEnabled                             K2Node_Select_Default;                             // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UPrimitiveComponent*>            K2Node_MakeArray_Array;                            // 0x0018(0x0010)(ReferenceParm, ContainsInstancedReference)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPrimitiveComponent*                    CallFunc_Array_Get_Item;                           // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled) == 0x000008, "Wrong alignment on BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled");
+static_assert(sizeof(BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled) == 0x000040, "Wrong size on BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled");
+static_assert(offsetof(BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled, Enabled) == 0x000000, "Member 'BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled::Enabled' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled, Temp_bool_Variable) == 0x000001, "Member 'BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled, Temp_byte_Variable) == 0x000002, "Member 'BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled, Temp_byte_Variable_1) == 0x000003, "Member 'BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled, Temp_int_Array_Index_Variable) == 0x000004, "Member 'BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled, K2Node_Select_Default) == 0x000008, "Member 'BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled, Temp_int_Loop_Counter_Variable) == 0x00000C, "Member 'BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled, K2Node_MakeArray_Array) == 0x000018, "Member 'BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled, CallFunc_Array_Get_Item) == 0x000030, "Member 'BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled, CallFunc_Less_IntInt_ReturnValue) == 0x000038, "Member 'BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+
+// Function BP_AudioTriggerZone.BP_AudioTriggerZone_C.OnBoxOutsideEndOverlap
+// 0x0050 (0x0050 - 0x0000)
+struct BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap final
+{
+public:
+	class UObject*                                Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UBP_jRPG_GI_Custom_C*                   CallFunc_GetCustomGI_ReturnValue;                  // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UBP_AudioControlSystem_C*               CallFunc_GetAudioControlSystem_AudioControlSystem; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsPlaying_ReturnValue;                    // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class APawn*                                  CallFunc_GetPlayerPawn_ReturnValue;                // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FS_InteractiveMusicParameters          K2Node_MakeStruct_S_InteractiveMusicParameters;    // 0x0030(0x0018)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap) == 0x000008, "Wrong alignment on BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap");
+static_assert(sizeof(BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap) == 0x000050, "Wrong size on BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap");
+static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap, Actor) == 0x000000, "Member 'BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap::Actor' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap, CallFunc_GetCustomGI_ReturnValue) == 0x000008, "Member 'BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap::CallFunc_GetCustomGI_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap, CallFunc_GetAudioControlSystem_AudioControlSystem) == 0x000010, "Member 'BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap::CallFunc_GetAudioControlSystem_AudioControlSystem' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap, CallFunc_IsValid_ReturnValue_1) == 0x000019, "Member 'BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap, CallFunc_IsPlaying_ReturnValue) == 0x00001A, "Member 'BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap::CallFunc_IsPlaying_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap, CallFunc_Not_PreBool_ReturnValue) == 0x00001B, "Member 'BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap, CallFunc_GetPlayerPawn_ReturnValue) == 0x000020, "Member 'BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap::CallFunc_GetPlayerPawn_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000028, "Member 'BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap, K2Node_MakeStruct_S_InteractiveMusicParameters) == 0x000030, "Member 'BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap::K2Node_MakeStruct_S_InteractiveMusicParameters' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap, CallFunc_Not_PreBool_ReturnValue_1) == 0x000048, "Member 'BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+
+// Function BP_AudioTriggerZone.BP_AudioTriggerZone_C.OnBoxOutsideBeginOverlap
+// 0x0018 (0x0018 - 0x0000)
+struct BP_AudioTriggerZone_C_OnBoxOutsideBeginOverlap final
+{
+public:
+	class UObject*                                Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  CallFunc_GetPlayerPawn_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AudioTriggerZone_C_OnBoxOutsideBeginOverlap) == 0x000008, "Wrong alignment on BP_AudioTriggerZone_C_OnBoxOutsideBeginOverlap");
+static_assert(sizeof(BP_AudioTriggerZone_C_OnBoxOutsideBeginOverlap) == 0x000018, "Wrong size on BP_AudioTriggerZone_C_OnBoxOutsideBeginOverlap");
+static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxOutsideBeginOverlap, Actor) == 0x000000, "Member 'BP_AudioTriggerZone_C_OnBoxOutsideBeginOverlap::Actor' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxOutsideBeginOverlap, CallFunc_GetPlayerPawn_ReturnValue) == 0x000008, "Member 'BP_AudioTriggerZone_C_OnBoxOutsideBeginOverlap::CallFunc_GetPlayerPawn_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxOutsideBeginOverlap, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000010, "Member 'BP_AudioTriggerZone_C_OnBoxOutsideBeginOverlap::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxOutsideBeginOverlap, CallFunc_Not_PreBool_ReturnValue) == 0x000011, "Member 'BP_AudioTriggerZone_C_OnBoxOutsideBeginOverlap::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+
+// Function BP_AudioTriggerZone.BP_AudioTriggerZone_C.OnBoxInsideEndOverlap
+// 0x0050 (0x0050 - 0x0000)
+struct BP_AudioTriggerZone_C_OnBoxInsideEndOverlap final
+{
+public:
+	class UObject*                                Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UBP_jRPG_GI_Custom_C*                   CallFunc_GetCustomGI_ReturnValue;                  // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UBP_AudioControlSystem_C*               CallFunc_GetAudioControlSystem_AudioControlSystem; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FS_InteractiveMusicParameters          K2Node_MakeStruct_S_InteractiveMusicParameters;    // 0x0020(0x0018)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APawn*                                  CallFunc_GetPlayerPawn_ReturnValue;                // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AudioTriggerZone_C_OnBoxInsideEndOverlap) == 0x000008, "Wrong alignment on BP_AudioTriggerZone_C_OnBoxInsideEndOverlap");
+static_assert(sizeof(BP_AudioTriggerZone_C_OnBoxInsideEndOverlap) == 0x000050, "Wrong size on BP_AudioTriggerZone_C_OnBoxInsideEndOverlap");
+static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxInsideEndOverlap, Actor) == 0x000000, "Member 'BP_AudioTriggerZone_C_OnBoxInsideEndOverlap::Actor' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxInsideEndOverlap, CallFunc_GetCustomGI_ReturnValue) == 0x000008, "Member 'BP_AudioTriggerZone_C_OnBoxInsideEndOverlap::CallFunc_GetCustomGI_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxInsideEndOverlap, CallFunc_GetAudioControlSystem_AudioControlSystem) == 0x000010, "Member 'BP_AudioTriggerZone_C_OnBoxInsideEndOverlap::CallFunc_GetAudioControlSystem_AudioControlSystem' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxInsideEndOverlap, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'BP_AudioTriggerZone_C_OnBoxInsideEndOverlap::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxInsideEndOverlap, K2Node_MakeStruct_S_InteractiveMusicParameters) == 0x000020, "Member 'BP_AudioTriggerZone_C_OnBoxInsideEndOverlap::K2Node_MakeStruct_S_InteractiveMusicParameters' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxInsideEndOverlap, CallFunc_Not_PreBool_ReturnValue) == 0x000038, "Member 'BP_AudioTriggerZone_C_OnBoxInsideEndOverlap::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxInsideEndOverlap, CallFunc_GetPlayerPawn_ReturnValue) == 0x000040, "Member 'BP_AudioTriggerZone_C_OnBoxInsideEndOverlap::CallFunc_GetPlayerPawn_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxInsideEndOverlap, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000048, "Member 'BP_AudioTriggerZone_C_OnBoxInsideEndOverlap::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
+
+// Function BP_AudioTriggerZone.BP_AudioTriggerZone_C.OnBoxInsideBeginOverlap
+// 0x0018 (0x0018 - 0x0000)
+struct BP_AudioTriggerZone_C_OnBoxInsideBeginOverlap final
+{
+public:
+	class UObject*                                Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  CallFunc_GetPlayerPawn_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsPlaying_ReturnValue;                    // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AudioTriggerZone_C_OnBoxInsideBeginOverlap) == 0x000008, "Wrong alignment on BP_AudioTriggerZone_C_OnBoxInsideBeginOverlap");
+static_assert(sizeof(BP_AudioTriggerZone_C_OnBoxInsideBeginOverlap) == 0x000018, "Wrong size on BP_AudioTriggerZone_C_OnBoxInsideBeginOverlap");
+static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxInsideBeginOverlap, Actor) == 0x000000, "Member 'BP_AudioTriggerZone_C_OnBoxInsideBeginOverlap::Actor' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxInsideBeginOverlap, CallFunc_GetPlayerPawn_ReturnValue) == 0x000008, "Member 'BP_AudioTriggerZone_C_OnBoxInsideBeginOverlap::CallFunc_GetPlayerPawn_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxInsideBeginOverlap, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000010, "Member 'BP_AudioTriggerZone_C_OnBoxInsideBeginOverlap::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxInsideBeginOverlap, CallFunc_IsValid_ReturnValue) == 0x000011, "Member 'BP_AudioTriggerZone_C_OnBoxInsideBeginOverlap::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxInsideBeginOverlap, CallFunc_IsPlaying_ReturnValue) == 0x000012, "Member 'BP_AudioTriggerZone_C_OnBoxInsideBeginOverlap::CallFunc_IsPlaying_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxInsideBeginOverlap, CallFunc_Not_PreBool_ReturnValue) == 0x000013, "Member 'BP_AudioTriggerZone_C_OnBoxInsideBeginOverlap::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxInsideBeginOverlap, CallFunc_Not_PreBool_ReturnValue_1) == 0x000014, "Member 'BP_AudioTriggerZone_C_OnBoxInsideBeginOverlap::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+
+// Function BP_AudioTriggerZone.BP_AudioTriggerZone_C.HandleRFX
+// 0x0010 (0x0010 - 0x0000)
+struct BP_AudioTriggerZone_C_HandleRFX final
+{
+public:
+	class UBP_DataAsset_Ambience_C*               DataAsset_Amb;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UBP_World_Audio_Component_C*            CallFunc_GetWorldAudioComponent_WorldAudioCompRef; // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AudioTriggerZone_C_HandleRFX) == 0x000008, "Wrong alignment on BP_AudioTriggerZone_C_HandleRFX");
+static_assert(sizeof(BP_AudioTriggerZone_C_HandleRFX) == 0x000010, "Wrong size on BP_AudioTriggerZone_C_HandleRFX");
+static_assert(offsetof(BP_AudioTriggerZone_C_HandleRFX, DataAsset_Amb) == 0x000000, "Member 'BP_AudioTriggerZone_C_HandleRFX::DataAsset_Amb' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_HandleRFX, CallFunc_GetWorldAudioComponent_WorldAudioCompRef) == 0x000008, "Member 'BP_AudioTriggerZone_C_HandleRFX::CallFunc_GetWorldAudioComponent_WorldAudioCompRef' has a wrong offset!");
+
+// Function BP_AudioTriggerZone.BP_AudioTriggerZone_C.HandleMusic
+// 0x0028 (0x0028 - 0x0000)
+struct BP_AudioTriggerZone_C_HandleMusic final
+{
+public:
+	struct FS_InteractiveMusicParameters          InteractiveMusicParameters;                        // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         NewMusicFadeIn;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         OldMusicFadeOut;                                   // 0x001C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UBP_jRPG_GI_Custom_C*                   CallFunc_GetCustomGameInstance_CustomGameInstance; // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AudioTriggerZone_C_HandleMusic) == 0x000008, "Wrong alignment on BP_AudioTriggerZone_C_HandleMusic");
+static_assert(sizeof(BP_AudioTriggerZone_C_HandleMusic) == 0x000028, "Wrong size on BP_AudioTriggerZone_C_HandleMusic");
+static_assert(offsetof(BP_AudioTriggerZone_C_HandleMusic, InteractiveMusicParameters) == 0x000000, "Member 'BP_AudioTriggerZone_C_HandleMusic::InteractiveMusicParameters' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_HandleMusic, NewMusicFadeIn) == 0x000018, "Member 'BP_AudioTriggerZone_C_HandleMusic::NewMusicFadeIn' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_HandleMusic, OldMusicFadeOut) == 0x00001C, "Member 'BP_AudioTriggerZone_C_HandleMusic::OldMusicFadeOut' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_HandleMusic, CallFunc_GetCustomGameInstance_CustomGameInstance) == 0x000020, "Member 'BP_AudioTriggerZone_C_HandleMusic::CallFunc_GetCustomGameInstance_CustomGameInstance' has a wrong offset!");
+
+// Function BP_AudioTriggerZone.BP_AudioTriggerZone_C.HandleAmbience
+// 0x0018 (0x0018 - 0x0000)
+struct BP_AudioTriggerZone_C_HandleAmbience final
+{
+public:
+	class UBP_DataAsset_Ambience_C*               DataAsset_Amb;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UBP_jRPG_GI_Custom_C*                   CallFunc_GetCustomGameInstance_CustomGameInstance; // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_HandleNextAmbience_StartTime_ImplicitCast; // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AudioTriggerZone_C_HandleAmbience) == 0x000008, "Wrong alignment on BP_AudioTriggerZone_C_HandleAmbience");
+static_assert(sizeof(BP_AudioTriggerZone_C_HandleAmbience) == 0x000018, "Wrong size on BP_AudioTriggerZone_C_HandleAmbience");
+static_assert(offsetof(BP_AudioTriggerZone_C_HandleAmbience, DataAsset_Amb) == 0x000000, "Member 'BP_AudioTriggerZone_C_HandleAmbience::DataAsset_Amb' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_HandleAmbience, CallFunc_GetCustomGameInstance_CustomGameInstance) == 0x000008, "Member 'BP_AudioTriggerZone_C_HandleAmbience::CallFunc_GetCustomGameInstance_CustomGameInstance' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_HandleAmbience, CallFunc_HandleNextAmbience_StartTime_ImplicitCast) == 0x000010, "Member 'BP_AudioTriggerZone_C_HandleAmbience::CallFunc_HandleNextAmbience_StartTime_ImplicitCast' has a wrong offset!");
+
+// Function BP_AudioTriggerZone.BP_AudioTriggerZone_C.GetWorldAudioComponent
+// 0x0020 (0x0020 - 0x0000)
+struct BP_AudioTriggerZone_C_GetWorldAudioComponent final
+{
+public:
+	class UBP_World_Audio_Component_C*            WorldAudioCompRef;                                 // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_jRPG_Controller_World_C*            K2Node_DynamicCast_AsBP_J_RPG_Controller_World;    // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AudioTriggerZone_C_GetWorldAudioComponent) == 0x000008, "Wrong alignment on BP_AudioTriggerZone_C_GetWorldAudioComponent");
+static_assert(sizeof(BP_AudioTriggerZone_C_GetWorldAudioComponent) == 0x000020, "Wrong size on BP_AudioTriggerZone_C_GetWorldAudioComponent");
+static_assert(offsetof(BP_AudioTriggerZone_C_GetWorldAudioComponent, WorldAudioCompRef) == 0x000000, "Member 'BP_AudioTriggerZone_C_GetWorldAudioComponent::WorldAudioCompRef' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_GetWorldAudioComponent, CallFunc_GetPlayerController_ReturnValue) == 0x000008, "Member 'BP_AudioTriggerZone_C_GetWorldAudioComponent::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_GetWorldAudioComponent, K2Node_DynamicCast_AsBP_J_RPG_Controller_World) == 0x000010, "Member 'BP_AudioTriggerZone_C_GetWorldAudioComponent::K2Node_DynamicCast_AsBP_J_RPG_Controller_World' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_GetWorldAudioComponent, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'BP_AudioTriggerZone_C_GetWorldAudioComponent::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_GetWorldAudioComponent, CallFunc_IsValid_ReturnValue) == 0x000019, "Member 'BP_AudioTriggerZone_C_GetWorldAudioComponent::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+
+// Function BP_AudioTriggerZone.BP_AudioTriggerZone_C.GetPlaybackPercentAmbience3D
+// 0x0010 (0x0010 - 0x0000)
+struct BP_AudioTriggerZone_C_GetPlaybackPercentAmbience3D final
+{
+public:
+	const class USoundWave*                       PlayingSoundWave;                                  // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         PlaybackPercent;                                   // 0x0008(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AudioTriggerZone_C_GetPlaybackPercentAmbience3D) == 0x000008, "Wrong alignment on BP_AudioTriggerZone_C_GetPlaybackPercentAmbience3D");
+static_assert(sizeof(BP_AudioTriggerZone_C_GetPlaybackPercentAmbience3D) == 0x000010, "Wrong size on BP_AudioTriggerZone_C_GetPlaybackPercentAmbience3D");
+static_assert(offsetof(BP_AudioTriggerZone_C_GetPlaybackPercentAmbience3D, PlayingSoundWave) == 0x000000, "Member 'BP_AudioTriggerZone_C_GetPlaybackPercentAmbience3D::PlayingSoundWave' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_GetPlaybackPercentAmbience3D, PlaybackPercent) == 0x000008, "Member 'BP_AudioTriggerZone_C_GetPlaybackPercentAmbience3D::PlaybackPercent' has a wrong offset!");
+
+// Function BP_AudioTriggerZone.BP_AudioTriggerZone_C.GetCustomGameInstance
+// 0x0020 (0x0020 - 0x0000)
+struct BP_AudioTriggerZone_C_GetCustomGameInstance final
+{
+public:
+	class UBP_jRPG_GI_Custom_C*                   CustomGameInstance;                                // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UGameInstance*                          CallFunc_GetGameInstance_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UBP_jRPG_GI_Custom_C*                   K2Node_DynamicCast_AsBP_J_RPG_GI_Custom;           // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AudioTriggerZone_C_GetCustomGameInstance) == 0x000008, "Wrong alignment on BP_AudioTriggerZone_C_GetCustomGameInstance");
+static_assert(sizeof(BP_AudioTriggerZone_C_GetCustomGameInstance) == 0x000020, "Wrong size on BP_AudioTriggerZone_C_GetCustomGameInstance");
+static_assert(offsetof(BP_AudioTriggerZone_C_GetCustomGameInstance, CustomGameInstance) == 0x000000, "Member 'BP_AudioTriggerZone_C_GetCustomGameInstance::CustomGameInstance' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_GetCustomGameInstance, CallFunc_GetGameInstance_ReturnValue) == 0x000008, "Member 'BP_AudioTriggerZone_C_GetCustomGameInstance::CallFunc_GetGameInstance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_GetCustomGameInstance, K2Node_DynamicCast_AsBP_J_RPG_GI_Custom) == 0x000010, "Member 'BP_AudioTriggerZone_C_GetCustomGameInstance::K2Node_DynamicCast_AsBP_J_RPG_GI_Custom' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_GetCustomGameInstance, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'BP_AudioTriggerZone_C_GetCustomGameInstance::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function BP_AudioTriggerZone.BP_AudioTriggerZone_C.ExecuteUbergraph_BP_AudioTriggerZone
 // 0x02C0 (0x02C0 - 0x0000)
@@ -211,246 +363,94 @@ static_assert(offsetof(BP_AudioTriggerZone_C_ExecuteUbergraph_BP_AudioTriggerZon
 static_assert(offsetof(BP_AudioTriggerZone_C_ExecuteUbergraph_BP_AudioTriggerZone, CallFunc_Multiply_DoubleDouble_A_ImplicitCast) == 0x0002B0, "Member 'BP_AudioTriggerZone_C_ExecuteUbergraph_BP_AudioTriggerZone::CallFunc_Multiply_DoubleDouble_A_ImplicitCast' has a wrong offset!");
 static_assert(offsetof(BP_AudioTriggerZone_C_ExecuteUbergraph_BP_AudioTriggerZone, CallFunc_Multiply_DoubleDouble_B_ImplicitCast) == 0x0002B8, "Member 'BP_AudioTriggerZone_C_ExecuteUbergraph_BP_AudioTriggerZone::CallFunc_Multiply_DoubleDouble_B_ImplicitCast' has a wrong offset!");
 
-// Function BP_AudioTriggerZone.BP_AudioTriggerZone_C.GetCustomGameInstance
-// 0x0020 (0x0020 - 0x0000)
-struct BP_AudioTriggerZone_C_GetCustomGameInstance final
-{
-public:
-	class UBP_jRPG_GI_Custom_C*                   CustomGameInstance;                                // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UGameInstance*                          CallFunc_GetGameInstance_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UBP_jRPG_GI_Custom_C*                   K2Node_DynamicCast_AsBP_J_RPG_GI_Custom;           // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AudioTriggerZone_C_GetCustomGameInstance) == 0x000008, "Wrong alignment on BP_AudioTriggerZone_C_GetCustomGameInstance");
-static_assert(sizeof(BP_AudioTriggerZone_C_GetCustomGameInstance) == 0x000020, "Wrong size on BP_AudioTriggerZone_C_GetCustomGameInstance");
-static_assert(offsetof(BP_AudioTriggerZone_C_GetCustomGameInstance, CustomGameInstance) == 0x000000, "Member 'BP_AudioTriggerZone_C_GetCustomGameInstance::CustomGameInstance' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_GetCustomGameInstance, CallFunc_GetGameInstance_ReturnValue) == 0x000008, "Member 'BP_AudioTriggerZone_C_GetCustomGameInstance::CallFunc_GetGameInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_GetCustomGameInstance, K2Node_DynamicCast_AsBP_J_RPG_GI_Custom) == 0x000010, "Member 'BP_AudioTriggerZone_C_GetCustomGameInstance::K2Node_DynamicCast_AsBP_J_RPG_GI_Custom' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_GetCustomGameInstance, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'BP_AudioTriggerZone_C_GetCustomGameInstance::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-
-// Function BP_AudioTriggerZone.BP_AudioTriggerZone_C.GetPlaybackPercentAmbience3D
-// 0x0010 (0x0010 - 0x0000)
-struct BP_AudioTriggerZone_C_GetPlaybackPercentAmbience3D final
-{
-public:
-	const class USoundWave*                       PlayingSoundWave;                                  // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         PlaybackPercent;                                   // 0x0008(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AudioTriggerZone_C_GetPlaybackPercentAmbience3D) == 0x000008, "Wrong alignment on BP_AudioTriggerZone_C_GetPlaybackPercentAmbience3D");
-static_assert(sizeof(BP_AudioTriggerZone_C_GetPlaybackPercentAmbience3D) == 0x000010, "Wrong size on BP_AudioTriggerZone_C_GetPlaybackPercentAmbience3D");
-static_assert(offsetof(BP_AudioTriggerZone_C_GetPlaybackPercentAmbience3D, PlayingSoundWave) == 0x000000, "Member 'BP_AudioTriggerZone_C_GetPlaybackPercentAmbience3D::PlayingSoundWave' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_GetPlaybackPercentAmbience3D, PlaybackPercent) == 0x000008, "Member 'BP_AudioTriggerZone_C_GetPlaybackPercentAmbience3D::PlaybackPercent' has a wrong offset!");
-
-// Function BP_AudioTriggerZone.BP_AudioTriggerZone_C.GetWorldAudioComponent
-// 0x0020 (0x0020 - 0x0000)
-struct BP_AudioTriggerZone_C_GetWorldAudioComponent final
-{
-public:
-	class UBP_World_Audio_Component_C*            WorldAudioCompRef;                                 // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_jRPG_Controller_World_C*            K2Node_DynamicCast_AsBP_J_RPG_Controller_World;    // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AudioTriggerZone_C_GetWorldAudioComponent) == 0x000008, "Wrong alignment on BP_AudioTriggerZone_C_GetWorldAudioComponent");
-static_assert(sizeof(BP_AudioTriggerZone_C_GetWorldAudioComponent) == 0x000020, "Wrong size on BP_AudioTriggerZone_C_GetWorldAudioComponent");
-static_assert(offsetof(BP_AudioTriggerZone_C_GetWorldAudioComponent, WorldAudioCompRef) == 0x000000, "Member 'BP_AudioTriggerZone_C_GetWorldAudioComponent::WorldAudioCompRef' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_GetWorldAudioComponent, CallFunc_GetPlayerController_ReturnValue) == 0x000008, "Member 'BP_AudioTriggerZone_C_GetWorldAudioComponent::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_GetWorldAudioComponent, K2Node_DynamicCast_AsBP_J_RPG_Controller_World) == 0x000010, "Member 'BP_AudioTriggerZone_C_GetWorldAudioComponent::K2Node_DynamicCast_AsBP_J_RPG_Controller_World' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_GetWorldAudioComponent, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'BP_AudioTriggerZone_C_GetWorldAudioComponent::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_GetWorldAudioComponent, CallFunc_IsValid_ReturnValue) == 0x000019, "Member 'BP_AudioTriggerZone_C_GetWorldAudioComponent::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-
-// Function BP_AudioTriggerZone.BP_AudioTriggerZone_C.HandleAmbience
-// 0x0018 (0x0018 - 0x0000)
-struct BP_AudioTriggerZone_C_HandleAmbience final
-{
-public:
-	class UBP_DataAsset_Ambience_C*               DataAsset_Amb;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UBP_jRPG_GI_Custom_C*                   CallFunc_GetCustomGameInstance_CustomGameInstance; // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_HandleNextAmbience_StartTime_ImplicitCast; // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AudioTriggerZone_C_HandleAmbience) == 0x000008, "Wrong alignment on BP_AudioTriggerZone_C_HandleAmbience");
-static_assert(sizeof(BP_AudioTriggerZone_C_HandleAmbience) == 0x000018, "Wrong size on BP_AudioTriggerZone_C_HandleAmbience");
-static_assert(offsetof(BP_AudioTriggerZone_C_HandleAmbience, DataAsset_Amb) == 0x000000, "Member 'BP_AudioTriggerZone_C_HandleAmbience::DataAsset_Amb' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_HandleAmbience, CallFunc_GetCustomGameInstance_CustomGameInstance) == 0x000008, "Member 'BP_AudioTriggerZone_C_HandleAmbience::CallFunc_GetCustomGameInstance_CustomGameInstance' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_HandleAmbience, CallFunc_HandleNextAmbience_StartTime_ImplicitCast) == 0x000010, "Member 'BP_AudioTriggerZone_C_HandleAmbience::CallFunc_HandleNextAmbience_StartTime_ImplicitCast' has a wrong offset!");
-
-// Function BP_AudioTriggerZone.BP_AudioTriggerZone_C.HandleMusic
-// 0x0028 (0x0028 - 0x0000)
-struct BP_AudioTriggerZone_C_HandleMusic final
-{
-public:
-	struct FS_InteractiveMusicParameters          InteractiveMusicParameters;                        // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         NewMusicFadeIn;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         OldMusicFadeOut;                                   // 0x001C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UBP_jRPG_GI_Custom_C*                   CallFunc_GetCustomGameInstance_CustomGameInstance; // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AudioTriggerZone_C_HandleMusic) == 0x000008, "Wrong alignment on BP_AudioTriggerZone_C_HandleMusic");
-static_assert(sizeof(BP_AudioTriggerZone_C_HandleMusic) == 0x000028, "Wrong size on BP_AudioTriggerZone_C_HandleMusic");
-static_assert(offsetof(BP_AudioTriggerZone_C_HandleMusic, InteractiveMusicParameters) == 0x000000, "Member 'BP_AudioTriggerZone_C_HandleMusic::InteractiveMusicParameters' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_HandleMusic, NewMusicFadeIn) == 0x000018, "Member 'BP_AudioTriggerZone_C_HandleMusic::NewMusicFadeIn' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_HandleMusic, OldMusicFadeOut) == 0x00001C, "Member 'BP_AudioTriggerZone_C_HandleMusic::OldMusicFadeOut' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_HandleMusic, CallFunc_GetCustomGameInstance_CustomGameInstance) == 0x000020, "Member 'BP_AudioTriggerZone_C_HandleMusic::CallFunc_GetCustomGameInstance_CustomGameInstance' has a wrong offset!");
-
-// Function BP_AudioTriggerZone.BP_AudioTriggerZone_C.HandleRFX
-// 0x0010 (0x0010 - 0x0000)
-struct BP_AudioTriggerZone_C_HandleRFX final
-{
-public:
-	class UBP_DataAsset_Ambience_C*               DataAsset_Amb;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UBP_World_Audio_Component_C*            CallFunc_GetWorldAudioComponent_WorldAudioCompRef; // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AudioTriggerZone_C_HandleRFX) == 0x000008, "Wrong alignment on BP_AudioTriggerZone_C_HandleRFX");
-static_assert(sizeof(BP_AudioTriggerZone_C_HandleRFX) == 0x000010, "Wrong size on BP_AudioTriggerZone_C_HandleRFX");
-static_assert(offsetof(BP_AudioTriggerZone_C_HandleRFX, DataAsset_Amb) == 0x000000, "Member 'BP_AudioTriggerZone_C_HandleRFX::DataAsset_Amb' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_HandleRFX, CallFunc_GetWorldAudioComponent_WorldAudioCompRef) == 0x000008, "Member 'BP_AudioTriggerZone_C_HandleRFX::CallFunc_GetWorldAudioComponent_WorldAudioCompRef' has a wrong offset!");
-
-// Function BP_AudioTriggerZone.BP_AudioTriggerZone_C.OnBoxInsideBeginOverlap
-// 0x0018 (0x0018 - 0x0000)
-struct BP_AudioTriggerZone_C_OnBoxInsideBeginOverlap final
-{
-public:
-	class UObject*                                Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APawn*                                  CallFunc_GetPlayerPawn_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsPlaying_ReturnValue;                    // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AudioTriggerZone_C_OnBoxInsideBeginOverlap) == 0x000008, "Wrong alignment on BP_AudioTriggerZone_C_OnBoxInsideBeginOverlap");
-static_assert(sizeof(BP_AudioTriggerZone_C_OnBoxInsideBeginOverlap) == 0x000018, "Wrong size on BP_AudioTriggerZone_C_OnBoxInsideBeginOverlap");
-static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxInsideBeginOverlap, Actor) == 0x000000, "Member 'BP_AudioTriggerZone_C_OnBoxInsideBeginOverlap::Actor' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxInsideBeginOverlap, CallFunc_GetPlayerPawn_ReturnValue) == 0x000008, "Member 'BP_AudioTriggerZone_C_OnBoxInsideBeginOverlap::CallFunc_GetPlayerPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxInsideBeginOverlap, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000010, "Member 'BP_AudioTriggerZone_C_OnBoxInsideBeginOverlap::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxInsideBeginOverlap, CallFunc_IsValid_ReturnValue) == 0x000011, "Member 'BP_AudioTriggerZone_C_OnBoxInsideBeginOverlap::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxInsideBeginOverlap, CallFunc_IsPlaying_ReturnValue) == 0x000012, "Member 'BP_AudioTriggerZone_C_OnBoxInsideBeginOverlap::CallFunc_IsPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxInsideBeginOverlap, CallFunc_Not_PreBool_ReturnValue) == 0x000013, "Member 'BP_AudioTriggerZone_C_OnBoxInsideBeginOverlap::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxInsideBeginOverlap, CallFunc_Not_PreBool_ReturnValue_1) == 0x000014, "Member 'BP_AudioTriggerZone_C_OnBoxInsideBeginOverlap::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-
-// Function BP_AudioTriggerZone.BP_AudioTriggerZone_C.OnBoxInsideEndOverlap
-// 0x0050 (0x0050 - 0x0000)
-struct BP_AudioTriggerZone_C_OnBoxInsideEndOverlap final
-{
-public:
-	class UObject*                                Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UBP_jRPG_GI_Custom_C*                   CallFunc_GetCustomGI_ReturnValue;                  // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UBP_AudioControlSystem_C*               CallFunc_GetAudioControlSystem_AudioControlSystem; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FS_InteractiveMusicParameters          K2Node_MakeStruct_S_InteractiveMusicParameters;    // 0x0020(0x0018)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APawn*                                  CallFunc_GetPlayerPawn_ReturnValue;                // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AudioTriggerZone_C_OnBoxInsideEndOverlap) == 0x000008, "Wrong alignment on BP_AudioTriggerZone_C_OnBoxInsideEndOverlap");
-static_assert(sizeof(BP_AudioTriggerZone_C_OnBoxInsideEndOverlap) == 0x000050, "Wrong size on BP_AudioTriggerZone_C_OnBoxInsideEndOverlap");
-static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxInsideEndOverlap, Actor) == 0x000000, "Member 'BP_AudioTriggerZone_C_OnBoxInsideEndOverlap::Actor' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxInsideEndOverlap, CallFunc_GetCustomGI_ReturnValue) == 0x000008, "Member 'BP_AudioTriggerZone_C_OnBoxInsideEndOverlap::CallFunc_GetCustomGI_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxInsideEndOverlap, CallFunc_GetAudioControlSystem_AudioControlSystem) == 0x000010, "Member 'BP_AudioTriggerZone_C_OnBoxInsideEndOverlap::CallFunc_GetAudioControlSystem_AudioControlSystem' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxInsideEndOverlap, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'BP_AudioTriggerZone_C_OnBoxInsideEndOverlap::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxInsideEndOverlap, K2Node_MakeStruct_S_InteractiveMusicParameters) == 0x000020, "Member 'BP_AudioTriggerZone_C_OnBoxInsideEndOverlap::K2Node_MakeStruct_S_InteractiveMusicParameters' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxInsideEndOverlap, CallFunc_Not_PreBool_ReturnValue) == 0x000038, "Member 'BP_AudioTriggerZone_C_OnBoxInsideEndOverlap::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxInsideEndOverlap, CallFunc_GetPlayerPawn_ReturnValue) == 0x000040, "Member 'BP_AudioTriggerZone_C_OnBoxInsideEndOverlap::CallFunc_GetPlayerPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxInsideEndOverlap, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000048, "Member 'BP_AudioTriggerZone_C_OnBoxInsideEndOverlap::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-
-// Function BP_AudioTriggerZone.BP_AudioTriggerZone_C.OnBoxOutsideBeginOverlap
-// 0x0018 (0x0018 - 0x0000)
-struct BP_AudioTriggerZone_C_OnBoxOutsideBeginOverlap final
-{
-public:
-	class UObject*                                Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APawn*                                  CallFunc_GetPlayerPawn_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AudioTriggerZone_C_OnBoxOutsideBeginOverlap) == 0x000008, "Wrong alignment on BP_AudioTriggerZone_C_OnBoxOutsideBeginOverlap");
-static_assert(sizeof(BP_AudioTriggerZone_C_OnBoxOutsideBeginOverlap) == 0x000018, "Wrong size on BP_AudioTriggerZone_C_OnBoxOutsideBeginOverlap");
-static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxOutsideBeginOverlap, Actor) == 0x000000, "Member 'BP_AudioTriggerZone_C_OnBoxOutsideBeginOverlap::Actor' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxOutsideBeginOverlap, CallFunc_GetPlayerPawn_ReturnValue) == 0x000008, "Member 'BP_AudioTriggerZone_C_OnBoxOutsideBeginOverlap::CallFunc_GetPlayerPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxOutsideBeginOverlap, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000010, "Member 'BP_AudioTriggerZone_C_OnBoxOutsideBeginOverlap::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxOutsideBeginOverlap, CallFunc_Not_PreBool_ReturnValue) == 0x000011, "Member 'BP_AudioTriggerZone_C_OnBoxOutsideBeginOverlap::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-
-// Function BP_AudioTriggerZone.BP_AudioTriggerZone_C.OnBoxOutsideEndOverlap
-// 0x0050 (0x0050 - 0x0000)
-struct BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap final
-{
-public:
-	class UObject*                                Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UBP_jRPG_GI_Custom_C*                   CallFunc_GetCustomGI_ReturnValue;                  // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UBP_AudioControlSystem_C*               CallFunc_GetAudioControlSystem_AudioControlSystem; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsPlaying_ReturnValue;                    // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APawn*                                  CallFunc_GetPlayerPawn_ReturnValue;                // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FS_InteractiveMusicParameters          K2Node_MakeStruct_S_InteractiveMusicParameters;    // 0x0030(0x0018)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap) == 0x000008, "Wrong alignment on BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap");
-static_assert(sizeof(BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap) == 0x000050, "Wrong size on BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap");
-static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap, Actor) == 0x000000, "Member 'BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap::Actor' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap, CallFunc_GetCustomGI_ReturnValue) == 0x000008, "Member 'BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap::CallFunc_GetCustomGI_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap, CallFunc_GetAudioControlSystem_AudioControlSystem) == 0x000010, "Member 'BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap::CallFunc_GetAudioControlSystem_AudioControlSystem' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap, CallFunc_IsValid_ReturnValue_1) == 0x000019, "Member 'BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap, CallFunc_IsPlaying_ReturnValue) == 0x00001A, "Member 'BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap::CallFunc_IsPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap, CallFunc_Not_PreBool_ReturnValue) == 0x00001B, "Member 'BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap, CallFunc_GetPlayerPawn_ReturnValue) == 0x000020, "Member 'BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap::CallFunc_GetPlayerPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000028, "Member 'BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap, K2Node_MakeStruct_S_InteractiveMusicParameters) == 0x000030, "Member 'BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap::K2Node_MakeStruct_S_InteractiveMusicParameters' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap, CallFunc_Not_PreBool_ReturnValue_1) == 0x000048, "Member 'BP_AudioTriggerZone_C_OnBoxOutsideEndOverlap::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-
-// Function BP_AudioTriggerZone.BP_AudioTriggerZone_C.SetTriggerComponentsCollisionEnabled
-// 0x0040 (0x0040 - 0x0000)
-struct BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled final
-{
-public:
-	bool                                          Enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECollisionEnabled                             Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECollisionEnabled                             Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECollisionEnabled                             K2Node_Select_Default;                             // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UPrimitiveComponent*>            K2Node_MakeArray_Array;                            // 0x0018(0x0010)(ReferenceParm, ContainsInstancedReference)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPrimitiveComponent*                    CallFunc_Array_Get_Item;                           // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled) == 0x000008, "Wrong alignment on BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled");
-static_assert(sizeof(BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled) == 0x000040, "Wrong size on BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled");
-static_assert(offsetof(BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled, Enabled) == 0x000000, "Member 'BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled::Enabled' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled, Temp_bool_Variable) == 0x000001, "Member 'BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled, Temp_byte_Variable) == 0x000002, "Member 'BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled, Temp_byte_Variable_1) == 0x000003, "Member 'BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled, Temp_int_Array_Index_Variable) == 0x000004, "Member 'BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled, K2Node_Select_Default) == 0x000008, "Member 'BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled, Temp_int_Loop_Counter_Variable) == 0x00000C, "Member 'BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled, K2Node_MakeArray_Array) == 0x000018, "Member 'BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled, CallFunc_Array_Get_Item) == 0x000030, "Member 'BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled, CallFunc_Less_IntInt_ReturnValue) == 0x000038, "Member 'BP_AudioTriggerZone_C_SetTriggerComponentsCollisionEnabled::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-
-// Function BP_AudioTriggerZone.BP_AudioTriggerZone_C.UpdateTriggerComponentsCollision
+// Function BP_AudioTriggerZone.BP_AudioTriggerZone_C.BndEvt__BP_AudioTriggerZone_BP_ConditionCheckerComponent_K2Node_ComponentBoundEvent_4_OnConditionChanged__DelegateSignature
 // 0x0001 (0x0001 - 0x0000)
-struct BP_AudioTriggerZone_C_UpdateTriggerComponentsCollision final
+struct BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_BP_ConditionCheckerComponent_K2Node_ComponentBoundEvent_4_OnConditionChanged__DelegateSignature final
 {
 public:
-	bool                                          CallFunc_GetCurrentConditionValue_CurrentValue;    // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Condition;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_AudioTriggerZone_C_UpdateTriggerComponentsCollision) == 0x000001, "Wrong alignment on BP_AudioTriggerZone_C_UpdateTriggerComponentsCollision");
-static_assert(sizeof(BP_AudioTriggerZone_C_UpdateTriggerComponentsCollision) == 0x000001, "Wrong size on BP_AudioTriggerZone_C_UpdateTriggerComponentsCollision");
-static_assert(offsetof(BP_AudioTriggerZone_C_UpdateTriggerComponentsCollision, CallFunc_GetCurrentConditionValue_CurrentValue) == 0x000000, "Member 'BP_AudioTriggerZone_C_UpdateTriggerComponentsCollision::CallFunc_GetCurrentConditionValue_CurrentValue' has a wrong offset!");
+static_assert(alignof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_BP_ConditionCheckerComponent_K2Node_ComponentBoundEvent_4_OnConditionChanged__DelegateSignature) == 0x000001, "Wrong alignment on BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_BP_ConditionCheckerComponent_K2Node_ComponentBoundEvent_4_OnConditionChanged__DelegateSignature");
+static_assert(sizeof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_BP_ConditionCheckerComponent_K2Node_ComponentBoundEvent_4_OnConditionChanged__DelegateSignature) == 0x000001, "Wrong size on BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_BP_ConditionCheckerComponent_K2Node_ComponentBoundEvent_4_OnConditionChanged__DelegateSignature");
+static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_BP_ConditionCheckerComponent_K2Node_ComponentBoundEvent_4_OnConditionChanged__DelegateSignature, Condition) == 0x000000, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_BP_ConditionCheckerComponent_K2Node_ComponentBoundEvent_4_OnConditionChanged__DelegateSignature::Condition' has a wrong offset!");
+
+// Function BP_AudioTriggerZone.BP_AudioTriggerZone_C.BndEvt__BP_AudioTriggerZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
+// 0x0118 (0x0118 - 0x0000)
+struct BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature final
+{
+public:
+	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             SweepResult;                                       // 0x0020(0x00F8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+};
+static_assert(alignof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
+static_assert(sizeof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature) == 0x000118, "Wrong size on BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
+static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, bFromSweep) == 0x00001C, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::bFromSweep' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, SweepResult) == 0x000020, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::SweepResult' has a wrong offset!");
+
+// Function BP_AudioTriggerZone.BP_AudioTriggerZone_C.BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature final
+{
+public:
+	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature");
+static_assert(sizeof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature) == 0x000020, "Wrong size on BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature");
+static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
+
+// Function BP_AudioTriggerZone.BP_AudioTriggerZone_C.BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature
+// 0x0118 (0x0118 - 0x0000)
+struct BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature final
+{
+public:
+	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             SweepResult;                                       // 0x0020(0x00F8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+};
+static_assert(alignof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature");
+static_assert(sizeof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature) == 0x000118, "Wrong size on BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature");
+static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature, bFromSweep) == 0x00001C, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature::bFromSweep' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature, SweepResult) == 0x000020, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Exit_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature::SweepResult' has a wrong offset!");
+
+// Function BP_AudioTriggerZone.BP_AudioTriggerZone_C.BndEvt__BP_AudioTriggerZone_Box_Entry_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Entry_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature final
+{
+public:
+	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Entry_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Entry_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature");
+static_assert(sizeof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Entry_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature) == 0x000020, "Wrong size on BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Entry_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature");
+static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Entry_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Entry_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Entry_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Entry_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Entry_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Entry_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
+static_assert(offsetof(BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Entry_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'BP_AudioTriggerZone_C_BndEvt__BP_AudioTriggerZone_Box_Entry_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
 
 }
 

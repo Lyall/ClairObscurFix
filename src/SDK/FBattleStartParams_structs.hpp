@@ -12,13 +12,13 @@
 
 #include "SandFall_structs.hpp"
 #include "Engine_structs.hpp"
-#include "E_jRPG_EngageTypes_structs.hpp"
-#include "S_GameFlowTransitionRequest_structs.hpp"
-#include "S_BattleRewardParameters_structs.hpp"
-#include "EBattleTransitionType_structs.hpp"
 #include "S_MusicParameters_structs.hpp"
 #include "S_RangedAmbienceParameters_structs.hpp"
+#include "E_jRPG_EngageTypes_structs.hpp"
+#include "EBattleTransitionType_structs.hpp"
 #include "S_jRPG_PartySlot_structs.hpp"
+#include "S_GameFlowTransitionRequest_structs.hpp"
+#include "S_BattleRewardParameters_structs.hpp"
 
 
 namespace SDK

@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "E_jRPG_ItemType_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FSoundEvent_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "E_jRPG_ItemType_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
 #include "EWeaponQuality_structs.hpp"

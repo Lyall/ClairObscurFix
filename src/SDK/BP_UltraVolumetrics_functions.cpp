@@ -17,181 +17,29 @@
 namespace SDK
 {
 
-// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.ApplyPreset
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_UltraVolumetrics_C::ApplyPreset()
+void ABP_UltraVolumetrics_C::UserConstructionScript()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UltraVolumetrics_C", "ApplyPreset");
+		Func = Class->GetFunction("BP_UltraVolumetrics_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.ApplySeed
+// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.SetRandom
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_UltraVolumetrics_C::ApplySeed()
+void ABP_UltraVolumetrics_C::SetRandom()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UltraVolumetrics_C", "ApplySeed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.ExecuteUbergraph_BP_UltraVolumetrics
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_UltraVolumetrics_C::ExecuteUbergraph_BP_UltraVolumetrics(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UltraVolumetrics_C", "ExecuteUbergraph_BP_UltraVolumetrics");
-
-	Params::BP_UltraVolumetrics_C_ExecuteUbergraph_BP_UltraVolumetrics Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.FogQuality-GridPixelSize
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class FString*                          Output                                                 (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
-
-void ABP_UltraVolumetrics_C::FogQuality_GridPixelSize(class FString* Output)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UltraVolumetrics_C", "FogQuality-GridPixelSize");
-
-	Params::BP_UltraVolumetrics_C_FogQuality_GridPixelSize Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Output != nullptr)
-		*Output = std::move(Parms.Output);
-}
-
-
-// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.FogQuality-GridSizeZ
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class FString*                          Output                                                 (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
-
-void ABP_UltraVolumetrics_C::FogQuality_GridSizeZ(class FString* Output)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UltraVolumetrics_C", "FogQuality-GridSizeZ");
-
-	Params::BP_UltraVolumetrics_C_FogQuality_GridSizeZ Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Output != nullptr)
-		*Output = std::move(Parms.Output);
-}
-
-
-// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.FogQualitySet
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_UltraVolumetrics_C::FogQualitySet()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UltraVolumetrics_C", "FogQualitySet");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.GetDefaultQualityVars
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_UltraVolumetrics_C::GetDefaultQualityVars()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UltraVolumetrics_C", "GetDefaultQualityVars");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.Randomize
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_UltraVolumetrics_C::Randomize()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UltraVolumetrics_C", "Randomize");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_UltraVolumetrics_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UltraVolumetrics_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_UltraVolumetrics_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UltraVolumetrics_C", "ReceiveTick");
-
-	Params::BP_UltraVolumetrics_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.ResetFogQuality
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_UltraVolumetrics_C::ResetFogQuality()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UltraVolumetrics_C", "ResetFogQuality");
+		Func = Class->GetFunction("BP_UltraVolumetrics_C", "SetRandom");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -217,29 +65,181 @@ void ABP_UltraVolumetrics_C::SetOpacity(double NewValue)
 }
 
 
-// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.SetRandom
+// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.ResetFogQuality
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_UltraVolumetrics_C::SetRandom()
+void ABP_UltraVolumetrics_C::ResetFogQuality()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UltraVolumetrics_C", "SetRandom");
+		Func = Class->GetFunction("BP_UltraVolumetrics_C", "ResetFogQuality");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_UltraVolumetrics_C::UserConstructionScript()
+void ABP_UltraVolumetrics_C::ReceiveTick(float DeltaSeconds)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UltraVolumetrics_C", "UserConstructionScript");
+		Func = Class->GetFunction("BP_UltraVolumetrics_C", "ReceiveTick");
+
+	Params::BP_UltraVolumetrics_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_UltraVolumetrics_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_UltraVolumetrics_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.Randomize
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_UltraVolumetrics_C::Randomize()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_UltraVolumetrics_C", "Randomize");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.GetDefaultQualityVars
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_UltraVolumetrics_C::GetDefaultQualityVars()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_UltraVolumetrics_C", "GetDefaultQualityVars");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.FogQualitySet
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_UltraVolumetrics_C::FogQualitySet()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_UltraVolumetrics_C", "FogQualitySet");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.FogQuality-GridSizeZ
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class FString*                          Output                                                 (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+
+void ABP_UltraVolumetrics_C::FogQuality_GridSizeZ(class FString* Output)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_UltraVolumetrics_C", "FogQuality-GridSizeZ");
+
+	Params::BP_UltraVolumetrics_C_FogQuality_GridSizeZ Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Output != nullptr)
+		*Output = std::move(Parms.Output);
+}
+
+
+// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.FogQuality-GridPixelSize
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class FString*                          Output                                                 (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+
+void ABP_UltraVolumetrics_C::FogQuality_GridPixelSize(class FString* Output)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_UltraVolumetrics_C", "FogQuality-GridPixelSize");
+
+	Params::BP_UltraVolumetrics_C_FogQuality_GridPixelSize Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Output != nullptr)
+		*Output = std::move(Parms.Output);
+}
+
+
+// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.ExecuteUbergraph_BP_UltraVolumetrics
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_UltraVolumetrics_C::ExecuteUbergraph_BP_UltraVolumetrics(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_UltraVolumetrics_C", "ExecuteUbergraph_BP_UltraVolumetrics");
+
+	Params::BP_UltraVolumetrics_C_ExecuteUbergraph_BP_UltraVolumetrics Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.ApplySeed
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_UltraVolumetrics_C::ApplySeed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_UltraVolumetrics_C", "ApplySeed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.ApplyPreset
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_UltraVolumetrics_C::ApplyPreset()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_UltraVolumetrics_C", "ApplyPreset");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

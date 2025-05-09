@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "S_jRPG_Character_World_Movement_Data_structs.hpp"
 #include "SandFall_structs.hpp"
 #include "S_TriggerCinematicVariables_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "UMG_structs.hpp"
+#include "S_jRPG_Character_World_Movement_Data_structs.hpp"
 #include "ALSV4_CPP_structs.hpp"
 #include "E_jRPG_CharacterWorldCapability_structs.hpp"
 

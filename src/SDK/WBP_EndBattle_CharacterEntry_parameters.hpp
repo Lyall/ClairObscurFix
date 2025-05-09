@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "FEquipmentSlot_structs.hpp"
 #include "S_jRPG_Item_StaticData_structs.hpp"
 #include "FPassiveEffectProgression_structs.hpp"
+#include "FEquipmentSlot_structs.hpp"
 
 
 namespace SDK::Params

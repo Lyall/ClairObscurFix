@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "EHealReason_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
-#include "EHealReason_structs.hpp"
 
 
 namespace SDK

@@ -35,8 +35,9 @@ void UWBP_CinematicTransition_C::AnimateBlackBars()
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // double                                  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   bIsLetterBox                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-double UWBP_CinematicTransition_C::ComputeBlackBarSize()
+double UWBP_CinematicTransition_C::ComputeBlackBarSize(bool* bIsLetterBox)
 {
 	static class UFunction* Func = nullptr;
 
@@ -46,6 +47,9 @@ double UWBP_CinematicTransition_C::ComputeBlackBarSize()
 	Params::WBP_CinematicTransition_C_ComputeBlackBarSize Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (bIsLetterBox != nullptr)
+		*bIsLetterBox = Parms.bIsLetterBox;
 
 	return Parms.ReturnValue;
 }

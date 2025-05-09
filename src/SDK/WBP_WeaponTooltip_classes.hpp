@@ -12,10 +12,10 @@
 
 #include "Engine_structs.hpp"
 #include "EWeaponQuality_structs.hpp"
-#include "EAttributeScalingGrade_structs.hpp"
 #include "CommonUI_classes.hpp"
-#include "ECharacterAttribute_structs.hpp"
+#include "EAttributeScalingGrade_structs.hpp"
 #include "UMG_structs.hpp"
+#include "ECharacterAttribute_structs.hpp"
 
 
 namespace SDK

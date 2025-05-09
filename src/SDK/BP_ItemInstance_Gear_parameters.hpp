@@ -12,11 +12,11 @@
 
 #include "S_WeaponInstanceHandle_structs.hpp"
 #include "S_jRPG_Item_StaticData_structs.hpp"
+#include "Engine_structs.hpp"
 #include "S_GearScalingLevel_structs.hpp"
 #include "E_jRPG_StatType_structs.hpp"
 #include "EWeaponQuality_structs.hpp"
 #include "S_LootContext_structs.hpp"
-#include "Engine_structs.hpp"
 
 
 namespace SDK::Params

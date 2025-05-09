@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_classes.hpp"
 #include "E_jRPG_ItemType_structs.hpp"
+#include "Engine_classes.hpp"
 #include "EWeaponQuality_structs.hpp"
 
 

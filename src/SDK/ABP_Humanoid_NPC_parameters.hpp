@@ -11,12 +11,12 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "E_SecondaryMotionBreathingType_structs.hpp"
+#include "E_NPC_ForceHeadDirection_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
-#include "S_IdleNpcParameters_structs.hpp"
 #include "E_NPC_Body_IdleType_structs.hpp"
-#include "E_NPC_ForceHeadDirection_structs.hpp"
+#include "S_IdleNpcParameters_structs.hpp"
+#include "E_SecondaryMotionBreathingType_structs.hpp"
 
 
 namespace SDK::Params

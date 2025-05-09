@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_classes.hpp"
-#include "EAttackType_structs.hpp"
-#include "E_ModalStandardButton_structs.hpp"
 #include "EInputAction_structs.hpp"
+#include "Engine_classes.hpp"
+#include "E_ModalStandardButton_structs.hpp"
+#include "EAttackType_structs.hpp"
 
 
 namespace SDK

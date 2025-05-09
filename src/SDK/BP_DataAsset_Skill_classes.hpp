@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
+#include "ESkillElementOverride_structs.hpp"
 #include "Engine_structs.hpp"
 #include "SandFall_structs.hpp"
 #include "SandFall_classes.hpp"
+#include "E_jRPG_SpeedModifier_structs.hpp"
 #include "ESkillType_structs.hpp"
-#include "ESkillElementOverride_structs.hpp"
 #include "E_jRPG_TargetingType_structs.hpp"
 #include "EAttackType_structs.hpp"
-#include "E_jRPG_SpeedModifier_structs.hpp"
 
 
 namespace SDK

@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "FEquipmentSlot_structs.hpp"
-#include "UMG_structs.hpp"
 #include "S_jRPG_Item_StaticData_structs.hpp"
 #include "S_jRPG_Item_DynamicData_structs.hpp"
+#include "UMG_structs.hpp"
+#include "FEquipmentSlot_structs.hpp"
 #include "SandFall_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"

@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "EBattleForbiddenActionReason_structs.hpp"
 #include "Engine_structs.hpp"
 #include "SandFall_structs.hpp"
-#include "CommonUI_classes.hpp"
 #include "EBattleTurnState_structs.hpp"
+#include "EBattleForbiddenActionReason_structs.hpp"
+#include "CommonUI_classes.hpp"
 
 
 namespace SDK

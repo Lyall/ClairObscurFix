@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "S_jRPG_PartySlot_structs.hpp"
-#include "S_CharacterSelectorParameters_structs.hpp"
 #include "UMG_structs.hpp"
+#include "S_CharacterSelectorParameters_structs.hpp"
 #include "S_MerchantItemSellData_structs.hpp"
 
 

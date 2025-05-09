@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "S_BattleLine_structs.hpp"
-#include "Engine_structs.hpp"
 #include "S_BattleLineCandidate_structs.hpp"
-#include "E_CharacterList_structs.hpp"
+#include "Engine_structs.hpp"
 #include "S_BattleLinePool_structs.hpp"
+#include "S_BattleLine_structs.hpp"
+#include "E_CharacterList_structs.hpp"
 #include "S_BattleLineEventPerCharacter_structs.hpp"
 
 

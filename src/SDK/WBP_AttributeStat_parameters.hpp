@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "EAttributeScalingGrade_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "UMG_structs.hpp"
 #include "ECharacterAttribute_structs.hpp"
+#include "UMG_structs.hpp"
+#include "EAttributeScalingGrade_structs.hpp"
 
 
 namespace SDK::Params

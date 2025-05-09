@@ -10,7 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "SlateCore_structs.hpp"
 #include "FLevelDataEntry_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params
@@ -28,6 +30,53 @@ static_assert(alignof(WBP_MM_LevelIcon_C_SetLevelIcon) == 0x000008, "Wrong align
 static_assert(sizeof(WBP_MM_LevelIcon_C_SetLevelIcon) == 0x0001B8, "Wrong size on WBP_MM_LevelIcon_C_SetLevelIcon");
 static_assert(offsetof(WBP_MM_LevelIcon_C_SetLevelIcon, LevelData) == 0x000000, "Member 'WBP_MM_LevelIcon_C_SetLevelIcon::LevelData' has a wrong offset!");
 static_assert(offsetof(WBP_MM_LevelIcon_C_SetLevelIcon, CallFunc_IsValidSoftObjectReference_ReturnValue) == 0x0001B0, "Member 'WBP_MM_LevelIcon_C_SetLevelIcon::CallFunc_IsValidSoftObjectReference_ReturnValue' has a wrong offset!");
+
+// Function WBP_MM_LevelIcon.WBP_MM_LevelIcon_C.OnSettingsApplied
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_MM_LevelIcon_C_OnSettingsApplied final
+{
+public:
+	const class UConfigurableGameUserSettings*    UserConfig;                                        // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_MM_LevelIcon_C_OnSettingsApplied) == 0x000008, "Wrong alignment on WBP_MM_LevelIcon_C_OnSettingsApplied");
+static_assert(sizeof(WBP_MM_LevelIcon_C_OnSettingsApplied) == 0x000008, "Wrong size on WBP_MM_LevelIcon_C_OnSettingsApplied");
+static_assert(offsetof(WBP_MM_LevelIcon_C_OnSettingsApplied, UserConfig) == 0x000000, "Member 'WBP_MM_LevelIcon_C_OnSettingsApplied::UserConfig' has a wrong offset!");
+
+// Function WBP_MM_LevelIcon.WBP_MM_LevelIcon_C.ExecuteUbergraph_WBP_MM_LevelIcon
+// 0x0080 (0x0080 - 0x0000)
+struct WBP_MM_LevelIcon_C_ExecuteUbergraph_WBP_MM_LevelIcon final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(const class UConfigurableGameUserSettings* UserConfig)> K2Node_CreateDelegate_OutputDelegate; // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              CallFunc_GetViewportSize_ReturnValue;              // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UConfigurableGameUserSettings*          CallFunc_GetConfigurableGameUserSettings_GameUserSettings; // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector2D_X;                          // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector2D_Y;                          // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_MapRangeClamped_ReturnValue;              // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class UConfigurableGameUserSettings*    K2Node_CustomEvent_UserConfig;                     // 0x0050(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Lerp_ReturnValue;                         // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0060(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UOverlaySlot*                           CallFunc_SlotAsOverlaySlot_ReturnValue;            // 0x0070(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_MakeStruct_Right_ImplicitCast;              // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_MM_LevelIcon_C_ExecuteUbergraph_WBP_MM_LevelIcon) == 0x000008, "Wrong alignment on WBP_MM_LevelIcon_C_ExecuteUbergraph_WBP_MM_LevelIcon");
+static_assert(sizeof(WBP_MM_LevelIcon_C_ExecuteUbergraph_WBP_MM_LevelIcon) == 0x000080, "Wrong size on WBP_MM_LevelIcon_C_ExecuteUbergraph_WBP_MM_LevelIcon");
+static_assert(offsetof(WBP_MM_LevelIcon_C_ExecuteUbergraph_WBP_MM_LevelIcon, EntryPoint) == 0x000000, "Member 'WBP_MM_LevelIcon_C_ExecuteUbergraph_WBP_MM_LevelIcon::EntryPoint' has a wrong offset!");
+static_assert(offsetof(WBP_MM_LevelIcon_C_ExecuteUbergraph_WBP_MM_LevelIcon, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_MM_LevelIcon_C_ExecuteUbergraph_WBP_MM_LevelIcon::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(WBP_MM_LevelIcon_C_ExecuteUbergraph_WBP_MM_LevelIcon, CallFunc_GetViewportSize_ReturnValue) == 0x000018, "Member 'WBP_MM_LevelIcon_C_ExecuteUbergraph_WBP_MM_LevelIcon::CallFunc_GetViewportSize_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MM_LevelIcon_C_ExecuteUbergraph_WBP_MM_LevelIcon, CallFunc_GetConfigurableGameUserSettings_GameUserSettings) == 0x000028, "Member 'WBP_MM_LevelIcon_C_ExecuteUbergraph_WBP_MM_LevelIcon::CallFunc_GetConfigurableGameUserSettings_GameUserSettings' has a wrong offset!");
+static_assert(offsetof(WBP_MM_LevelIcon_C_ExecuteUbergraph_WBP_MM_LevelIcon, CallFunc_BreakVector2D_X) == 0x000030, "Member 'WBP_MM_LevelIcon_C_ExecuteUbergraph_WBP_MM_LevelIcon::CallFunc_BreakVector2D_X' has a wrong offset!");
+static_assert(offsetof(WBP_MM_LevelIcon_C_ExecuteUbergraph_WBP_MM_LevelIcon, CallFunc_BreakVector2D_Y) == 0x000038, "Member 'WBP_MM_LevelIcon_C_ExecuteUbergraph_WBP_MM_LevelIcon::CallFunc_BreakVector2D_Y' has a wrong offset!");
+static_assert(offsetof(WBP_MM_LevelIcon_C_ExecuteUbergraph_WBP_MM_LevelIcon, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x000040, "Member 'WBP_MM_LevelIcon_C_ExecuteUbergraph_WBP_MM_LevelIcon::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MM_LevelIcon_C_ExecuteUbergraph_WBP_MM_LevelIcon, CallFunc_MapRangeClamped_ReturnValue) == 0x000048, "Member 'WBP_MM_LevelIcon_C_ExecuteUbergraph_WBP_MM_LevelIcon::CallFunc_MapRangeClamped_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MM_LevelIcon_C_ExecuteUbergraph_WBP_MM_LevelIcon, K2Node_CustomEvent_UserConfig) == 0x000050, "Member 'WBP_MM_LevelIcon_C_ExecuteUbergraph_WBP_MM_LevelIcon::K2Node_CustomEvent_UserConfig' has a wrong offset!");
+static_assert(offsetof(WBP_MM_LevelIcon_C_ExecuteUbergraph_WBP_MM_LevelIcon, CallFunc_Lerp_ReturnValue) == 0x000058, "Member 'WBP_MM_LevelIcon_C_ExecuteUbergraph_WBP_MM_LevelIcon::CallFunc_Lerp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MM_LevelIcon_C_ExecuteUbergraph_WBP_MM_LevelIcon, K2Node_MakeStruct_Margin) == 0x000060, "Member 'WBP_MM_LevelIcon_C_ExecuteUbergraph_WBP_MM_LevelIcon::K2Node_MakeStruct_Margin' has a wrong offset!");
+static_assert(offsetof(WBP_MM_LevelIcon_C_ExecuteUbergraph_WBP_MM_LevelIcon, CallFunc_SlotAsOverlaySlot_ReturnValue) == 0x000070, "Member 'WBP_MM_LevelIcon_C_ExecuteUbergraph_WBP_MM_LevelIcon::CallFunc_SlotAsOverlaySlot_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MM_LevelIcon_C_ExecuteUbergraph_WBP_MM_LevelIcon, K2Node_MakeStruct_Right_ImplicitCast) == 0x000078, "Member 'WBP_MM_LevelIcon_C_ExecuteUbergraph_WBP_MM_LevelIcon::K2Node_MakeStruct_Right_ImplicitCast' has a wrong offset!");
 
 }
 

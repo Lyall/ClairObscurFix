@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "EHealReason_structs.hpp"
 #include "EDamageReason_structs.hpp"
+#include "EHealReason_structs.hpp"
 #include "EAttackType_structs.hpp"
 
 

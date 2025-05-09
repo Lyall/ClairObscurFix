@@ -11,11 +11,11 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "FEquipmentSlot_structs.hpp"
 #include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "EWeaponQuality_structs.hpp"
 #include "S_jRPG_Item_DynamicData_structs.hpp"
+#include "FEquipmentSlot_structs.hpp"
 
 
 namespace SDK::Params

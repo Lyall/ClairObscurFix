@@ -10,15 +10,15 @@
 
 #include "Basic.hpp"
 
-#include "EElementalAffinity_structs.hpp"
-#include "EAttackType_structs.hpp"
-#include "S_EnemyScalingMultipliers_structs.hpp"
-#include "FEnemyDataRow_structs.hpp"
-#include "E_jRPG_StatType_structs.hpp"
-#include "FCharacterStats_structs.hpp"
-#include "S_jRPG_EnemyPortraitData_structs.hpp"
 #include "S_Loot_structs.hpp"
+#include "FCharacterStats_structs.hpp"
+#include "S_EnemyScalingMultipliers_structs.hpp"
+#include "E_jRPG_StatType_structs.hpp"
+#include "S_jRPG_EnemyPortraitData_structs.hpp"
 #include "FEnemyBattleAudioProfile_structs.hpp"
+#include "FEnemyDataRow_structs.hpp"
+#include "EAttackType_structs.hpp"
+#include "EElementalAffinity_structs.hpp"
 #include "Engine_structs.hpp"
 
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "FLevelDataEntry_structs.hpp"
 #include "UMG_structs.hpp"
+#include "FLevelDataEntry_structs.hpp"
 
 
 namespace SDK::Params

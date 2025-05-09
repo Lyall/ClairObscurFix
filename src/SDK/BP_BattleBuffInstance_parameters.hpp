@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "EAPChangeReason_structs.hpp"
-#include "EDamageReason_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "E_jRPG_CharacterAttachmentSlot_structs.hpp"
+#include "EDamageReason_structs.hpp"
 #include "EPerfectionReason_structs.hpp"
 #include "E_StanceType_structs.hpp"
+#include "E_jRPG_CharacterAttachmentSlot_structs.hpp"
 #include "Engine_structs.hpp"
 #include "E_PerfectionUpdateType_structs.hpp"
+#include "EAPChangeReason_structs.hpp"
 #include "FAudioBattle_BuffActivation_structs.hpp"
 
 

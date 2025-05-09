@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "S_Dialogue_AnimationParameters_structs.hpp"
 #include "EDialogueCameraType_structs.hpp"
+#include "S_Dialogue_AnimationParameters_structs.hpp"
 #include "S_Dialogue_CustomOptions_structs.hpp"
 
 

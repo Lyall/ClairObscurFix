@@ -12,10 +12,10 @@
 
 #include "Engine_structs.hpp"
 #include "SandFall_structs.hpp"
-#include "Slate_structs.hpp"
 #include "E_CustomizationItemType_structs.hpp"
 #include "CommonUI_classes.hpp"
 #include "CommonInput_structs.hpp"
+#include "Slate_structs.hpp"
 
 
 namespace SDK

@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "S_BattleHitSoundOverrideHandle_structs.hpp"
 #include "SandFall_structs.hpp"
 #include "Engine_structs.hpp"
 #include "S_BattleLine_structs.hpp"
 #include "ECharacterTeamSelector_structs.hpp"
+#include "EBattleHitBy_structs.hpp"
+#include "S_BattleHitSoundOverrideHandle_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "EOnoType_structs.hpp"
-#include "EBattleHitBy_structs.hpp"
 #include "EBattleCommonSFX_structs.hpp"
 #include "EFootstepsType_structs.hpp"
 #include "PhysicsCore_structs.hpp"

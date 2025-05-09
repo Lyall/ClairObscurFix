@@ -10,17 +10,17 @@
 
 #include "Basic.hpp"
 
+#include "EDialogueCameraType_structs.hpp"
+#include "E_CharacterList_structs.hpp"
+#include "E_jRPG_ItemType_structs.hpp"
 #include "GameplayCameras_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "E_CharacterList_structs.hpp"
 #include "FRichDialogueLine_structs.hpp"
-#include "EDialogueCameraType_structs.hpp"
-#include "E_jRPG_ItemType_structs.hpp"
-#include "E_Dialogue_CameraMovements_structs.hpp"
 #include "S_DialogueQueueElement_structs.hpp"
-#include "E_NPC_Body_IdleType_structs.hpp"
+#include "E_Dialogue_CameraMovements_structs.hpp"
 #include "E_Expressions_Metahuman_structs.hpp"
+#include "E_NPC_Body_IdleType_structs.hpp"
 #include "E_CanInterruptDialogue_structs.hpp"
 
 

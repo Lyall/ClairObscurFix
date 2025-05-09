@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "S_jRPG_Item_StaticData_structs.hpp"
 #include "FEquipmentSlot_structs.hpp"
-#include "BlueprintSorting_structs.hpp"
 #include "E_jRPG_StatType_structs.hpp"
+#include "S_jRPG_Item_StaticData_structs.hpp"
+#include "BlueprintSorting_structs.hpp"
 #include "FPassiveEffect_structs.hpp"
 
 

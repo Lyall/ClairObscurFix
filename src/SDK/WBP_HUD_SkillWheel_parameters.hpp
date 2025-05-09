@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UMG_structs.hpp"
-#include "Engine_structs.hpp"
-#include "EBattleForbiddenActionReason_structs.hpp"
 #include "S_InputBindingParameters_structs.hpp"
+#include "EBattleForbiddenActionReason_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params

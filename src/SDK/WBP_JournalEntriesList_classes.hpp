@@ -29,7 +29,7 @@ public:
 	class UDataTable*                             JournalItemsDataTable;                             // 0x0458(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UBP_JournalViewItem_C*                  UnlockedJournal;                                   // 0x0460(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	TMulticastInlineDelegate<void(class UBP_JournalViewItem_C* JournalViewItem)> OnJournalItemUnlocked; // 0x0468(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void(bool IsSelected)> OnJournalItemClicked;                            // 0x0478(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(class UBP_JournalViewItem_C* JournalViewItem, bool IsSelected)> OnJournalItemClicked; // 0x0478(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class UAudioComponent*                        VoiceOverAudioComponent;                           // 0x0488(0x0008)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UBP_JournalViewItem_C*                  CurrentlyPlayingJournal;                           // 0x0490(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UBP_JournalViewItem_C*                  NextPlayingJournal;                                // 0x0498(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
@@ -45,10 +45,11 @@ public:
 	void OnJournalEntryClicked(class UBP_JournalViewItem_C* JournalViewItem, bool IsSelected);
 	void OnJournalEntryNavigated(class UBP_JournalViewItem_C* InViewItem, bool IsSelected);
 	void OnJournalEntryUnlocked(class UBP_JournalViewItem_C* JournalViewItem);
-	void OnNextTick();
 	void PlayJournal(class UBP_JournalViewItem_C* JournalViewItem);
 	void ResetVoiceOver();
 	void SetUnlockedJournal(class UBP_JournalViewItem_C* UnlockedJournal_0);
+
+	class UWidget* BP_GetDesiredFocusTarget() const;
 
 public:
 	static class UClass* StaticClass()

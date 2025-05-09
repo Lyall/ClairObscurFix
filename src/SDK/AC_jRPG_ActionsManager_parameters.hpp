@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "S_BalancingTableFloatEntry_structs.hpp"
+#include "E_jRPG_ActionType_structs.hpp"
 #include "S_jRPG_Action_structs.hpp"
 #include "E_jRPG_StatType_structs.hpp"
-#include "E_jRPG_ActionType_structs.hpp"
 #include "Engine_structs.hpp"
+#include "S_BalancingTableFloatEntry_structs.hpp"
 #include "EAttackType_structs.hpp"
 #include "S_jRPG_Item_StaticData_structs.hpp"
 

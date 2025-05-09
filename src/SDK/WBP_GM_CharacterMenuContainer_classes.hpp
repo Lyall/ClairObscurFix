@@ -21,7 +21,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_GM_CharacterMenuContainer.WBP_GM_CharacterMenuContainer_C
-// 0x0148 (0x0578 - 0x0430)
+// 0x0150 (0x0580 - 0x0430)
 class UWBP_GM_CharacterMenuContainer_C final : public UCommonActivatableWidget
 {
 public:
@@ -38,20 +38,21 @@ public:
 	class UWBP_Panel_SkillTree_C*                 WBP_Panel_SkillTree;                               // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_Panel_Stats_C*                     WBP_Panel_Stats;                                   // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_Panel_Weapon_C*                    WBP_Panel_Weapon;                                  // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonActivatableWidget*               CurrentActiveWidget;                               // 0x0498(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class ABP_GameMenuScene_C*                    GameMenuScene;                                     // 0x04A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void()>              OnBackPressed;                                     // 0x04A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void(class UBP_CharacterData_C* NewCharacter)> OnSelectedCharacterChanged; // 0x04B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	struct FSoundEventDataTableRowHandle          SD_OnTabChanged;                                   // 0x04C8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FSoundEventDataTableRowHandle          SD_OnBack;                                         // 0x04D8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	bool                                          IsBackAllowed;                                     // 0x04E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          AllowCharacterChanges;                             // 0x04E9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4EA[0x6];                                      // 0x04EA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonActivatableWidget*               NextSwitcherTarget;                                // 0x04F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void(E_GameMenuPage InActivePage)> OnActivePageChanged;                 // 0x04F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMap<class UCommonActivatableWidget*, E_GameMenuPage> MenuPageMap;                               // 0x0508(0x0050)(Edit, BlueprintVisible, Transient, DisableEditOnInstance, ContainsInstancedReference)
-	struct FSoundEventDataTableRowHandle          SD_OnActivated;                                    // 0x0558(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FSoundEventDataTableRowHandle          SD_OnDeactivated;                                  // 0x0568(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	class UWBP_WidescreenRatioBox_C*              WBP_WidescreenRatioBox;                            // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonActivatableWidget*               CurrentActiveWidget;                               // 0x04A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class ABP_GameMenuScene_C*                    GameMenuScene;                                     // 0x04A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	TMulticastInlineDelegate<void()>              OnBackPressed;                                     // 0x04B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(class UBP_CharacterData_C* NewCharacter)> OnSelectedCharacterChanged; // 0x04C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FSoundEventDataTableRowHandle          SD_OnTabChanged;                                   // 0x04D0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FSoundEventDataTableRowHandle          SD_OnBack;                                         // 0x04E0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	bool                                          IsBackAllowed;                                     // 0x04F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          AllowCharacterChanges;                             // 0x04F1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4F2[0x6];                                      // 0x04F2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonActivatableWidget*               NextSwitcherTarget;                                // 0x04F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TMulticastInlineDelegate<void(E_GameMenuPage InActivePage)> OnActivePageChanged;                 // 0x0500(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMap<class UCommonActivatableWidget*, E_GameMenuPage> MenuPageMap;                               // 0x0510(0x0050)(Edit, BlueprintVisible, Transient, DisableEditOnInstance, ContainsInstancedReference)
+	struct FSoundEventDataTableRowHandle          SD_OnActivated;                                    // 0x0560(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FSoundEventDataTableRowHandle          SD_OnDeactivated;                                  // 0x0570(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
 	void ActivateCurrentWidgetInSwitcher();
@@ -101,7 +102,7 @@ public:
 	}
 };
 static_assert(alignof(UWBP_GM_CharacterMenuContainer_C) == 0x000008, "Wrong alignment on UWBP_GM_CharacterMenuContainer_C");
-static_assert(sizeof(UWBP_GM_CharacterMenuContainer_C) == 0x000578, "Wrong size on UWBP_GM_CharacterMenuContainer_C");
+static_assert(sizeof(UWBP_GM_CharacterMenuContainer_C) == 0x000580, "Wrong size on UWBP_GM_CharacterMenuContainer_C");
 static_assert(offsetof(UWBP_GM_CharacterMenuContainer_C, UberGraphFrame) == 0x000430, "Member 'UWBP_GM_CharacterMenuContainer_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWBP_GM_CharacterMenuContainer_C, Anim_Appear) == 0x000438, "Member 'UWBP_GM_CharacterMenuContainer_C::Anim_Appear' has a wrong offset!");
 static_assert(offsetof(UWBP_GM_CharacterMenuContainer_C, CharacterMenuSwitcher) == 0x000440, "Member 'UWBP_GM_CharacterMenuContainer_C::CharacterMenuSwitcher' has a wrong offset!");
@@ -115,19 +116,20 @@ static_assert(offsetof(UWBP_GM_CharacterMenuContainer_C, WBP_Panel_Pictos) == 0x
 static_assert(offsetof(UWBP_GM_CharacterMenuContainer_C, WBP_Panel_SkillTree) == 0x000480, "Member 'UWBP_GM_CharacterMenuContainer_C::WBP_Panel_SkillTree' has a wrong offset!");
 static_assert(offsetof(UWBP_GM_CharacterMenuContainer_C, WBP_Panel_Stats) == 0x000488, "Member 'UWBP_GM_CharacterMenuContainer_C::WBP_Panel_Stats' has a wrong offset!");
 static_assert(offsetof(UWBP_GM_CharacterMenuContainer_C, WBP_Panel_Weapon) == 0x000490, "Member 'UWBP_GM_CharacterMenuContainer_C::WBP_Panel_Weapon' has a wrong offset!");
-static_assert(offsetof(UWBP_GM_CharacterMenuContainer_C, CurrentActiveWidget) == 0x000498, "Member 'UWBP_GM_CharacterMenuContainer_C::CurrentActiveWidget' has a wrong offset!");
-static_assert(offsetof(UWBP_GM_CharacterMenuContainer_C, GameMenuScene) == 0x0004A0, "Member 'UWBP_GM_CharacterMenuContainer_C::GameMenuScene' has a wrong offset!");
-static_assert(offsetof(UWBP_GM_CharacterMenuContainer_C, OnBackPressed) == 0x0004A8, "Member 'UWBP_GM_CharacterMenuContainer_C::OnBackPressed' has a wrong offset!");
-static_assert(offsetof(UWBP_GM_CharacterMenuContainer_C, OnSelectedCharacterChanged) == 0x0004B8, "Member 'UWBP_GM_CharacterMenuContainer_C::OnSelectedCharacterChanged' has a wrong offset!");
-static_assert(offsetof(UWBP_GM_CharacterMenuContainer_C, SD_OnTabChanged) == 0x0004C8, "Member 'UWBP_GM_CharacterMenuContainer_C::SD_OnTabChanged' has a wrong offset!");
-static_assert(offsetof(UWBP_GM_CharacterMenuContainer_C, SD_OnBack) == 0x0004D8, "Member 'UWBP_GM_CharacterMenuContainer_C::SD_OnBack' has a wrong offset!");
-static_assert(offsetof(UWBP_GM_CharacterMenuContainer_C, IsBackAllowed) == 0x0004E8, "Member 'UWBP_GM_CharacterMenuContainer_C::IsBackAllowed' has a wrong offset!");
-static_assert(offsetof(UWBP_GM_CharacterMenuContainer_C, AllowCharacterChanges) == 0x0004E9, "Member 'UWBP_GM_CharacterMenuContainer_C::AllowCharacterChanges' has a wrong offset!");
-static_assert(offsetof(UWBP_GM_CharacterMenuContainer_C, NextSwitcherTarget) == 0x0004F0, "Member 'UWBP_GM_CharacterMenuContainer_C::NextSwitcherTarget' has a wrong offset!");
-static_assert(offsetof(UWBP_GM_CharacterMenuContainer_C, OnActivePageChanged) == 0x0004F8, "Member 'UWBP_GM_CharacterMenuContainer_C::OnActivePageChanged' has a wrong offset!");
-static_assert(offsetof(UWBP_GM_CharacterMenuContainer_C, MenuPageMap) == 0x000508, "Member 'UWBP_GM_CharacterMenuContainer_C::MenuPageMap' has a wrong offset!");
-static_assert(offsetof(UWBP_GM_CharacterMenuContainer_C, SD_OnActivated) == 0x000558, "Member 'UWBP_GM_CharacterMenuContainer_C::SD_OnActivated' has a wrong offset!");
-static_assert(offsetof(UWBP_GM_CharacterMenuContainer_C, SD_OnDeactivated) == 0x000568, "Member 'UWBP_GM_CharacterMenuContainer_C::SD_OnDeactivated' has a wrong offset!");
+static_assert(offsetof(UWBP_GM_CharacterMenuContainer_C, WBP_WidescreenRatioBox) == 0x000498, "Member 'UWBP_GM_CharacterMenuContainer_C::WBP_WidescreenRatioBox' has a wrong offset!");
+static_assert(offsetof(UWBP_GM_CharacterMenuContainer_C, CurrentActiveWidget) == 0x0004A0, "Member 'UWBP_GM_CharacterMenuContainer_C::CurrentActiveWidget' has a wrong offset!");
+static_assert(offsetof(UWBP_GM_CharacterMenuContainer_C, GameMenuScene) == 0x0004A8, "Member 'UWBP_GM_CharacterMenuContainer_C::GameMenuScene' has a wrong offset!");
+static_assert(offsetof(UWBP_GM_CharacterMenuContainer_C, OnBackPressed) == 0x0004B0, "Member 'UWBP_GM_CharacterMenuContainer_C::OnBackPressed' has a wrong offset!");
+static_assert(offsetof(UWBP_GM_CharacterMenuContainer_C, OnSelectedCharacterChanged) == 0x0004C0, "Member 'UWBP_GM_CharacterMenuContainer_C::OnSelectedCharacterChanged' has a wrong offset!");
+static_assert(offsetof(UWBP_GM_CharacterMenuContainer_C, SD_OnTabChanged) == 0x0004D0, "Member 'UWBP_GM_CharacterMenuContainer_C::SD_OnTabChanged' has a wrong offset!");
+static_assert(offsetof(UWBP_GM_CharacterMenuContainer_C, SD_OnBack) == 0x0004E0, "Member 'UWBP_GM_CharacterMenuContainer_C::SD_OnBack' has a wrong offset!");
+static_assert(offsetof(UWBP_GM_CharacterMenuContainer_C, IsBackAllowed) == 0x0004F0, "Member 'UWBP_GM_CharacterMenuContainer_C::IsBackAllowed' has a wrong offset!");
+static_assert(offsetof(UWBP_GM_CharacterMenuContainer_C, AllowCharacterChanges) == 0x0004F1, "Member 'UWBP_GM_CharacterMenuContainer_C::AllowCharacterChanges' has a wrong offset!");
+static_assert(offsetof(UWBP_GM_CharacterMenuContainer_C, NextSwitcherTarget) == 0x0004F8, "Member 'UWBP_GM_CharacterMenuContainer_C::NextSwitcherTarget' has a wrong offset!");
+static_assert(offsetof(UWBP_GM_CharacterMenuContainer_C, OnActivePageChanged) == 0x000500, "Member 'UWBP_GM_CharacterMenuContainer_C::OnActivePageChanged' has a wrong offset!");
+static_assert(offsetof(UWBP_GM_CharacterMenuContainer_C, MenuPageMap) == 0x000510, "Member 'UWBP_GM_CharacterMenuContainer_C::MenuPageMap' has a wrong offset!");
+static_assert(offsetof(UWBP_GM_CharacterMenuContainer_C, SD_OnActivated) == 0x000560, "Member 'UWBP_GM_CharacterMenuContainer_C::SD_OnActivated' has a wrong offset!");
+static_assert(offsetof(UWBP_GM_CharacterMenuContainer_C, SD_OnDeactivated) == 0x000570, "Member 'UWBP_GM_CharacterMenuContainer_C::SD_OnDeactivated' has a wrong offset!");
 
 }
 

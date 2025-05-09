@@ -12,8 +12,8 @@
 
 #include "S_jRPG_PartySlot_structs.hpp"
 #include "S_jRPG_CharacterSaveState_structs.hpp"
-#include "Engine_structs.hpp"
 #include "E_jRPG_ItemType_structs.hpp"
+#include "Engine_structs.hpp"
 #include "FEquipmentSlot_structs.hpp"
 #include "S_jRPG_Item_StaticData_structs.hpp"
 

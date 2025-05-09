@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "E_Perfection_Ranks_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UMG_classes.hpp"
-#include "E_Perfection_Ranks_structs.hpp"
 
 
 namespace SDK

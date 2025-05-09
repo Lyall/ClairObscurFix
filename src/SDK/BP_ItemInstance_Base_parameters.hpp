@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "S_jRPG_Item_StaticData_structs.hpp"
-#include "E_jRPG_ItemType_structs.hpp"
-#include "S_LootContext_structs.hpp"
 #include "Engine_structs.hpp"
+#include "E_jRPG_ItemType_structs.hpp"
+#include "S_jRPG_Item_StaticData_structs.hpp"
+#include "S_LootContext_structs.hpp"
 
 
 namespace SDK::Params

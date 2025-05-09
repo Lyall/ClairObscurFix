@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "EAttackType_structs.hpp"
 #include "CommonUI_classes.hpp"
 #include "UMG_structs.hpp"
+#include "EAttackType_structs.hpp"
 
 
 namespace SDK

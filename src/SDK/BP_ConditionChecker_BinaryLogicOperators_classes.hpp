@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "SandFall_structs.hpp"
 #include "E_ConditionChecker_BinaryLogicOperator_structs.hpp"
 #include "BP_ConditionChecker_classes.hpp"
-#include "SandFall_structs.hpp"
 
 
 namespace SDK

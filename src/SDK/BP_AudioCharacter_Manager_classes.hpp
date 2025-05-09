@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "FAudioCharacter_ExplorationSFXType_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "EFootstepsType_structs.hpp"
-#include "FAudioCharacter_ExplorationSFXType_structs.hpp"
 #include "ESfxType_structs.hpp"
 #include "PhysicsCore_structs.hpp"
 

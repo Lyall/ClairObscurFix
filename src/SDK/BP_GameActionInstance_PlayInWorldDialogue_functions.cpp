@@ -17,23 +17,17 @@
 namespace SDK
 {
 
-// Function BP_GameActionInstance_PlayInWorldDialogue.BP_GameActionInstance_PlayInWorldDialogue_C.ExecuteGameAction
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class APlayerController*          Controller                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function BP_GameActionInstance_PlayInWorldDialogue.BP_GameActionInstance_PlayInWorldDialogue_C.OnInWorldDialogueCompleted
+// (BlueprintCallable, BlueprintEvent)
 
-void UBP_GameActionInstance_PlayInWorldDialogue_C::ExecuteGameAction(const class APlayerController* Controller)
+void UBP_GameActionInstance_PlayInWorldDialogue_C::OnInWorldDialogueCompleted()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GameActionInstance_PlayInWorldDialogue_C", "ExecuteGameAction");
+		Func = Class->GetFunction("BP_GameActionInstance_PlayInWorldDialogue_C", "OnInWorldDialogueCompleted");
 
-	Params::BP_GameActionInstance_PlayInWorldDialogue_C_ExecuteGameAction Parms{};
-
-	Parms.Controller = Controller;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -57,33 +51,39 @@ void UBP_GameActionInstance_PlayInWorldDialogue_C::ExecuteUbergraph_BP_GameActio
 }
 
 
-// Function BP_GameActionInstance_PlayInWorldDialogue.BP_GameActionInstance_PlayInWorldDialogue_C.OnInWorldDialogueCompleted
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_GameActionInstance_PlayInWorldDialogue.BP_GameActionInstance_PlayInWorldDialogue_C.ExecuteGameAction
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class APlayerController*          Controller                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UBP_GameActionInstance_PlayInWorldDialogue_C::OnInWorldDialogueCompleted()
+void UBP_GameActionInstance_PlayInWorldDialogue_C::ExecuteGameAction(const class APlayerController* Controller)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GameActionInstance_PlayInWorldDialogue_C", "OnInWorldDialogueCompleted");
+		Func = Class->GetFunction("BP_GameActionInstance_PlayInWorldDialogue_C", "ExecuteGameAction");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BP_GameActionInstance_PlayInWorldDialogue_C_ExecuteGameAction Parms{};
+
+	Parms.Controller = Controller;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_GameActionInstance_PlayInWorldDialogue.BP_GameActionInstance_PlayInWorldDialogue_C.GetDebugString
-// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Function BP_GameActionInstance_PlayInWorldDialogue.BP_GameActionInstance_PlayInWorldDialogue_C.ShouldTriggerAutoSaveAfterExecution
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-class FString UBP_GameActionInstance_PlayInWorldDialogue_C::GetDebugString() const
+bool UBP_GameActionInstance_PlayInWorldDialogue_C::ShouldTriggerAutoSaveAfterExecution() const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GameActionInstance_PlayInWorldDialogue_C", "GetDebugString");
+		Func = Class->GetFunction("BP_GameActionInstance_PlayInWorldDialogue_C", "ShouldTriggerAutoSaveAfterExecution");
 
-	Params::BP_GameActionInstance_PlayInWorldDialogue_C_GetDebugString Parms{};
+	Params::BP_GameActionInstance_PlayInWorldDialogue_C_ShouldTriggerAutoSaveAfterExecution Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -111,19 +111,19 @@ bool UBP_GameActionInstance_PlayInWorldDialogue_C::ShouldBlockAutoSaveDuringExec
 }
 
 
-// Function BP_GameActionInstance_PlayInWorldDialogue.BP_GameActionInstance_PlayInWorldDialogue_C.ShouldTriggerAutoSaveAfterExecution
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Function BP_GameActionInstance_PlayInWorldDialogue.BP_GameActionInstance_PlayInWorldDialogue_C.GetDebugString
+// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
 
-bool UBP_GameActionInstance_PlayInWorldDialogue_C::ShouldTriggerAutoSaveAfterExecution() const
+class FString UBP_GameActionInstance_PlayInWorldDialogue_C::GetDebugString() const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GameActionInstance_PlayInWorldDialogue_C", "ShouldTriggerAutoSaveAfterExecution");
+		Func = Class->GetFunction("BP_GameActionInstance_PlayInWorldDialogue_C", "GetDebugString");
 
-	Params::BP_GameActionInstance_PlayInWorldDialogue_C_ShouldTriggerAutoSaveAfterExecution Parms{};
+	Params::BP_GameActionInstance_PlayInWorldDialogue_C_GetDebugString Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 

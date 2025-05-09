@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "SandFall_structs.hpp"
-#include "E_RichTextDecorator_Keyword_IconPosition_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "E_RichTextDecorator_Keyword_IconPosition_structs.hpp"
 
 
 namespace SDK

@@ -12,8 +12,8 @@
 
 #include "Engine_structs.hpp"
 #include "SandFall_structs.hpp"
-#include "S_jRPG_Item_DynamicData_structs.hpp"
 #include "S_TutorialCardParameters_structs.hpp"
+#include "S_jRPG_Item_DynamicData_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "CommonUI_classes.hpp"
 

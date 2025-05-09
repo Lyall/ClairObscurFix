@@ -10,12 +10,368 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "Enum_Fog_Quality_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params
 {
+
+// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.UserConstructionScript
+// 0x00C0 (0x00C0 - 0x0000)
+struct BP_UltraVolumetrics_C_UserConstructionScript final
+{
+public:
+	class UMaterialInterface*                     CallFunc_GetMaterial_ReturnValue;                  // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_X;                            // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_Y;                            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_Z;                            // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_MapRangeClamped_ReturnValue;              // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0038(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Conv_DoubleToLinearColor_ReturnValue;     // 0x0048(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_X_1;                          // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_Y_1;                          // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_Z_1;                          // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstance*                      CallFunc_Array_Get_Item;                           // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_1;      // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_MakeStruct_G_ImplicitCast;                  // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_MakeStruct_B_ImplicitCast;                  // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_MakeStruct_R_ImplicitCast;                  // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_1; // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_2; // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_3; // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_4; // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_5; // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_6; // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_7; // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_8; // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_9; // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_10; // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_UltraVolumetrics_C_UserConstructionScript) == 0x000008, "Wrong alignment on BP_UltraVolumetrics_C_UserConstructionScript");
+static_assert(sizeof(BP_UltraVolumetrics_C_UserConstructionScript) == 0x0000C0, "Wrong size on BP_UltraVolumetrics_C_UserConstructionScript");
+static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_GetMaterial_ReturnValue) == 0x000000, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_GetMaterial_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000008, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_BreakVector_X) == 0x000010, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_BreakVector_X' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_BreakVector_Y) == 0x000018, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_BreakVector_Y' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_BreakVector_Z) == 0x000020, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_BreakVector_Z' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000028, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_MapRangeClamped_ReturnValue) == 0x000030, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_MapRangeClamped_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, K2Node_MakeStruct_LinearColor) == 0x000038, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::K2Node_MakeStruct_LinearColor' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_Conv_DoubleToLinearColor_ReturnValue) == 0x000048, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_Conv_DoubleToLinearColor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_BreakVector_X_1) == 0x000058, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_BreakVector_X_1' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_BreakVector_Y_1) == 0x000060, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_BreakVector_Y_1' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_BreakVector_Z_1) == 0x000068, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_BreakVector_Z_1' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_SelectInt_ReturnValue) == 0x000070, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_Array_Get_Item) == 0x000078, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_Multiply_DoubleDouble_ReturnValue_1) == 0x000080, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_Multiply_DoubleDouble_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, K2Node_MakeStruct_G_ImplicitCast) == 0x000088, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::K2Node_MakeStruct_G_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, K2Node_MakeStruct_B_ImplicitCast) == 0x00008C, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::K2Node_MakeStruct_B_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, K2Node_MakeStruct_R_ImplicitCast) == 0x000090, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::K2Node_MakeStruct_R_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000094, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_1) == 0x000098, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_1' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_2) == 0x00009C, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_2' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_3) == 0x0000A0, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_3' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_4) == 0x0000A4, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_4' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_5) == 0x0000A8, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_5' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_6) == 0x0000AC, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_6' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_7) == 0x0000B0, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_7' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_8) == 0x0000B4, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_8' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_9) == 0x0000B8, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_9' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_10) == 0x0000BC, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_10' has a wrong offset!");
+
+// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.SetRandom
+// 0x01A0 (0x01A0 - 0x0000)
+struct BP_UltraVolumetrics_C_SetRandom final
+{
+public:
+	class UMaterialInterface*                     CallFunc_GetMaterial_ReturnValue;                  // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_X;                            // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_Y;                            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_Z;                            // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_MapRangeClamped_ReturnValue;              // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0038(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Conv_DoubleToLinearColor_ReturnValue;     // 0x0048(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_X_1;                          // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_Y_1;                          // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_Z_1;                          // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstance*                      CallFunc_Array_Get_Item;                           // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_1;      // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRandomStream                          CallFunc_MakeRandomStream_ReturnValue;             // 0x0088(0x0008)(ZeroConstructor, NoDestructor)
+	float                                         CallFunc_RandomFloatInRangeFromStream_ReturnValue; // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRangeFromStream_ReturnValue_1; // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRangeFromStream_ReturnValue_2; // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRangeFromStream_ReturnValue_3; // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x00A0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRangeFromStream_ReturnValue_4; // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRangeFromStream_ReturnValue_5; // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRangeFromStream_ReturnValue_6; // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRangeFromStream_ReturnValue_7; // 0x00C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRangeFromStream_ReturnValue_8; // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_CC[0x4];                                       // 0x00CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_MakeVector_ReturnValue_1;                 // 0x00D0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRangeFromStream_ReturnValue_9; // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRangeFromStream_ReturnValue_10; // 0x00EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRangeFromStream_ReturnValue_11; // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomFloatInRangeFromStream_ReturnValue_12; // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_RandomBoolFromStream_ReturnValue;         // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F9[0x3];                                       // 0x00F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_MakeStruct_G_ImplicitCast;                  // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_MakeStruct_B_ImplicitCast;                  // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_MakeStruct_R_ImplicitCast;                  // 0x0104(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_1; // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_2; // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_3; // 0x0114(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_4; // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_5; // 0x011C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_6; // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_7; // 0x0124(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_8; // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_9; // 0x012C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_10; // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_134[0x4];                                      // 0x0134(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_MakeVector_Z_ImplicitCast;                // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_MakeVector_Y_ImplicitCast;                // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_MakeVector_X_ImplicitCast;                // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_VariableSet_Noise___Multiply_ImplicitCast;  // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_VariableSet_Noise___Contrast_ImplicitCast;  // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_MakeVector_Z_ImplicitCast_1;              // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_MakeVector_Y_ImplicitCast_1;              // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_MakeVector_X_ImplicitCast_1;              // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_VariableSet_Opacity_ImplicitCast;           // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_VariableSet_Distance_Field___Self_Shadow_Amount_ImplicitCast; // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_VariableSet_Distance_Field___Contrast_ImplicitCast; // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_VariableSet_Distance_Field___Multiply_ImplicitCast; // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_VariableSet_Distance_Field___Height_ImplicitCast; // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_UltraVolumetrics_C_SetRandom) == 0x000008, "Wrong alignment on BP_UltraVolumetrics_C_SetRandom");
+static_assert(sizeof(BP_UltraVolumetrics_C_SetRandom) == 0x0001A0, "Wrong size on BP_UltraVolumetrics_C_SetRandom");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_GetMaterial_ReturnValue) == 0x000000, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_GetMaterial_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000008, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_BreakVector_X) == 0x000010, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_BreakVector_X' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_BreakVector_Y) == 0x000018, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_BreakVector_Y' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_BreakVector_Z) == 0x000020, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_BreakVector_Z' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000028, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_MapRangeClamped_ReturnValue) == 0x000030, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_MapRangeClamped_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, K2Node_MakeStruct_LinearColor) == 0x000038, "Member 'BP_UltraVolumetrics_C_SetRandom::K2Node_MakeStruct_LinearColor' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_Conv_DoubleToLinearColor_ReturnValue) == 0x000048, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_Conv_DoubleToLinearColor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_BreakVector_X_1) == 0x000058, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_BreakVector_X_1' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_BreakVector_Y_1) == 0x000060, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_BreakVector_Y_1' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_BreakVector_Z_1) == 0x000068, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_BreakVector_Z_1' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_SelectInt_ReturnValue) == 0x000070, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_Array_Get_Item) == 0x000078, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_Multiply_DoubleDouble_ReturnValue_1) == 0x000080, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_Multiply_DoubleDouble_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_MakeRandomStream_ReturnValue) == 0x000088, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_MakeRandomStream_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_RandomFloatInRangeFromStream_ReturnValue) == 0x000090, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_RandomFloatInRangeFromStream_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_RandomFloatInRangeFromStream_ReturnValue_1) == 0x000094, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_RandomFloatInRangeFromStream_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_RandomFloatInRangeFromStream_ReturnValue_2) == 0x000098, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_RandomFloatInRangeFromStream_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_RandomFloatInRangeFromStream_ReturnValue_3) == 0x00009C, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_RandomFloatInRangeFromStream_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_MakeVector_ReturnValue) == 0x0000A0, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_RandomFloatInRangeFromStream_ReturnValue_4) == 0x0000B8, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_RandomFloatInRangeFromStream_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_RandomFloatInRangeFromStream_ReturnValue_5) == 0x0000BC, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_RandomFloatInRangeFromStream_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_RandomFloatInRangeFromStream_ReturnValue_6) == 0x0000C0, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_RandomFloatInRangeFromStream_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_RandomFloatInRangeFromStream_ReturnValue_7) == 0x0000C4, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_RandomFloatInRangeFromStream_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_RandomFloatInRangeFromStream_ReturnValue_8) == 0x0000C8, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_RandomFloatInRangeFromStream_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_MakeVector_ReturnValue_1) == 0x0000D0, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_MakeVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_RandomFloatInRangeFromStream_ReturnValue_9) == 0x0000E8, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_RandomFloatInRangeFromStream_ReturnValue_9' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_RandomFloatInRangeFromStream_ReturnValue_10) == 0x0000EC, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_RandomFloatInRangeFromStream_ReturnValue_10' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_RandomFloatInRangeFromStream_ReturnValue_11) == 0x0000F0, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_RandomFloatInRangeFromStream_ReturnValue_11' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_RandomFloatInRangeFromStream_ReturnValue_12) == 0x0000F4, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_RandomFloatInRangeFromStream_ReturnValue_12' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_RandomBoolFromStream_ReturnValue) == 0x0000F8, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_RandomBoolFromStream_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, K2Node_MakeStruct_G_ImplicitCast) == 0x0000FC, "Member 'BP_UltraVolumetrics_C_SetRandom::K2Node_MakeStruct_G_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, K2Node_MakeStruct_B_ImplicitCast) == 0x000100, "Member 'BP_UltraVolumetrics_C_SetRandom::K2Node_MakeStruct_B_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, K2Node_MakeStruct_R_ImplicitCast) == 0x000104, "Member 'BP_UltraVolumetrics_C_SetRandom::K2Node_MakeStruct_R_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000108, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_SetScalarParameterValue_Value_ImplicitCast_1) == 0x00010C, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_SetScalarParameterValue_Value_ImplicitCast_1' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_SetScalarParameterValue_Value_ImplicitCast_2) == 0x000110, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_SetScalarParameterValue_Value_ImplicitCast_2' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_SetScalarParameterValue_Value_ImplicitCast_3) == 0x000114, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_SetScalarParameterValue_Value_ImplicitCast_3' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_SetScalarParameterValue_Value_ImplicitCast_4) == 0x000118, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_SetScalarParameterValue_Value_ImplicitCast_4' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_SetScalarParameterValue_Value_ImplicitCast_5) == 0x00011C, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_SetScalarParameterValue_Value_ImplicitCast_5' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_SetScalarParameterValue_Value_ImplicitCast_6) == 0x000120, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_SetScalarParameterValue_Value_ImplicitCast_6' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_SetScalarParameterValue_Value_ImplicitCast_7) == 0x000124, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_SetScalarParameterValue_Value_ImplicitCast_7' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_SetScalarParameterValue_Value_ImplicitCast_8) == 0x000128, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_SetScalarParameterValue_Value_ImplicitCast_8' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_SetScalarParameterValue_Value_ImplicitCast_9) == 0x00012C, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_SetScalarParameterValue_Value_ImplicitCast_9' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_SetScalarParameterValue_Value_ImplicitCast_10) == 0x000130, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_SetScalarParameterValue_Value_ImplicitCast_10' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_MakeVector_Z_ImplicitCast) == 0x000138, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_MakeVector_Z_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_MakeVector_Y_ImplicitCast) == 0x000140, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_MakeVector_Y_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_MakeVector_X_ImplicitCast) == 0x000148, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_MakeVector_X_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, K2Node_VariableSet_Noise___Multiply_ImplicitCast) == 0x000150, "Member 'BP_UltraVolumetrics_C_SetRandom::K2Node_VariableSet_Noise___Multiply_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, K2Node_VariableSet_Noise___Contrast_ImplicitCast) == 0x000158, "Member 'BP_UltraVolumetrics_C_SetRandom::K2Node_VariableSet_Noise___Contrast_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_MakeVector_Z_ImplicitCast_1) == 0x000160, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_MakeVector_Z_ImplicitCast_1' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_MakeVector_Y_ImplicitCast_1) == 0x000168, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_MakeVector_Y_ImplicitCast_1' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_MakeVector_X_ImplicitCast_1) == 0x000170, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_MakeVector_X_ImplicitCast_1' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, K2Node_VariableSet_Opacity_ImplicitCast) == 0x000178, "Member 'BP_UltraVolumetrics_C_SetRandom::K2Node_VariableSet_Opacity_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, K2Node_VariableSet_Distance_Field___Self_Shadow_Amount_ImplicitCast) == 0x000180, "Member 'BP_UltraVolumetrics_C_SetRandom::K2Node_VariableSet_Distance_Field___Self_Shadow_Amount_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, K2Node_VariableSet_Distance_Field___Contrast_ImplicitCast) == 0x000188, "Member 'BP_UltraVolumetrics_C_SetRandom::K2Node_VariableSet_Distance_Field___Contrast_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, K2Node_VariableSet_Distance_Field___Multiply_ImplicitCast) == 0x000190, "Member 'BP_UltraVolumetrics_C_SetRandom::K2Node_VariableSet_Distance_Field___Multiply_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, K2Node_VariableSet_Distance_Field___Height_ImplicitCast) == 0x000198, "Member 'BP_UltraVolumetrics_C_SetRandom::K2Node_VariableSet_Distance_Field___Height_ImplicitCast' has a wrong offset!");
+
+// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.SetOpacity
+// 0x0018 (0x0018 - 0x0000)
+struct BP_UltraVolumetrics_C_SetOpacity final
+{
+public:
+	double                                        NewValue;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_UltraVolumetrics_C_SetOpacity) == 0x000008, "Wrong alignment on BP_UltraVolumetrics_C_SetOpacity");
+static_assert(sizeof(BP_UltraVolumetrics_C_SetOpacity) == 0x000018, "Wrong size on BP_UltraVolumetrics_C_SetOpacity");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetOpacity, NewValue) == 0x000000, "Member 'BP_UltraVolumetrics_C_SetOpacity::NewValue' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetOpacity, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000008, "Member 'BP_UltraVolumetrics_C_SetOpacity::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_SetOpacity, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000010, "Member 'BP_UltraVolumetrics_C_SetOpacity::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
+
+// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.ResetFogQuality
+// 0x0060 (0x0060 - 0x0000)
+struct BP_UltraVolumetrics_C_ResetFogQuality final
+{
+public:
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_DoubleToString_ReturnValue;          // 0x0020(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_2;              // 0x0030(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_DoubleToString_ReturnValue_1;        // 0x0040(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_3;              // 0x0050(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_UltraVolumetrics_C_ResetFogQuality) == 0x000008, "Wrong alignment on BP_UltraVolumetrics_C_ResetFogQuality");
+static_assert(sizeof(BP_UltraVolumetrics_C_ResetFogQuality) == 0x000060, "Wrong size on BP_UltraVolumetrics_C_ResetFogQuality");
+static_assert(offsetof(BP_UltraVolumetrics_C_ResetFogQuality, CallFunc_Concat_StrStr_ReturnValue) == 0x000000, "Member 'BP_UltraVolumetrics_C_ResetFogQuality::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_ResetFogQuality, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000010, "Member 'BP_UltraVolumetrics_C_ResetFogQuality::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_ResetFogQuality, CallFunc_Conv_DoubleToString_ReturnValue) == 0x000020, "Member 'BP_UltraVolumetrics_C_ResetFogQuality::CallFunc_Conv_DoubleToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_ResetFogQuality, CallFunc_Concat_StrStr_ReturnValue_2) == 0x000030, "Member 'BP_UltraVolumetrics_C_ResetFogQuality::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_ResetFogQuality, CallFunc_Conv_DoubleToString_ReturnValue_1) == 0x000040, "Member 'BP_UltraVolumetrics_C_ResetFogQuality::CallFunc_Conv_DoubleToString_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_ResetFogQuality, CallFunc_Concat_StrStr_ReturnValue_3) == 0x000050, "Member 'BP_UltraVolumetrics_C_ResetFogQuality::CallFunc_Concat_StrStr_ReturnValue_3' has a wrong offset!");
+
+// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_UltraVolumetrics_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_UltraVolumetrics_C_ReceiveTick) == 0x000004, "Wrong alignment on BP_UltraVolumetrics_C_ReceiveTick");
+static_assert(sizeof(BP_UltraVolumetrics_C_ReceiveTick) == 0x000004, "Wrong size on BP_UltraVolumetrics_C_ReceiveTick");
+static_assert(offsetof(BP_UltraVolumetrics_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'BP_UltraVolumetrics_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
+
+// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.Randomize
+// 0x0004 (0x0004 - 0x0000)
+struct BP_UltraVolumetrics_C_Randomize final
+{
+public:
+	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_UltraVolumetrics_C_Randomize) == 0x000004, "Wrong alignment on BP_UltraVolumetrics_C_Randomize");
+static_assert(sizeof(BP_UltraVolumetrics_C_Randomize) == 0x000004, "Wrong size on BP_UltraVolumetrics_C_Randomize");
+static_assert(offsetof(BP_UltraVolumetrics_C_Randomize, CallFunc_RandomIntegerInRange_ReturnValue) == 0x000000, "Member 'BP_UltraVolumetrics_C_Randomize::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
+
+// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.GetDefaultQualityVars
+// 0x0018 (0x0018 - 0x0000)
+struct BP_UltraVolumetrics_C_GetDefaultQualityVars final
+{
+public:
+	float                                         CallFunc_GetConsoleVariableFloatValue_ReturnValue; // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetConsoleVariableFloatValue_ReturnValue_1; // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_VariableSet_GridPixelSize_ImplicitCast;     // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_VariableSet_GridSizeZ_ImplicitCast;         // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_UltraVolumetrics_C_GetDefaultQualityVars) == 0x000008, "Wrong alignment on BP_UltraVolumetrics_C_GetDefaultQualityVars");
+static_assert(sizeof(BP_UltraVolumetrics_C_GetDefaultQualityVars) == 0x000018, "Wrong size on BP_UltraVolumetrics_C_GetDefaultQualityVars");
+static_assert(offsetof(BP_UltraVolumetrics_C_GetDefaultQualityVars, CallFunc_GetConsoleVariableFloatValue_ReturnValue) == 0x000000, "Member 'BP_UltraVolumetrics_C_GetDefaultQualityVars::CallFunc_GetConsoleVariableFloatValue_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_GetDefaultQualityVars, CallFunc_GetConsoleVariableFloatValue_ReturnValue_1) == 0x000004, "Member 'BP_UltraVolumetrics_C_GetDefaultQualityVars::CallFunc_GetConsoleVariableFloatValue_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_GetDefaultQualityVars, K2Node_VariableSet_GridPixelSize_ImplicitCast) == 0x000008, "Member 'BP_UltraVolumetrics_C_GetDefaultQualityVars::K2Node_VariableSet_GridPixelSize_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_GetDefaultQualityVars, K2Node_VariableSet_GridSizeZ_ImplicitCast) == 0x000010, "Member 'BP_UltraVolumetrics_C_GetDefaultQualityVars::K2Node_VariableSet_GridSizeZ_ImplicitCast' has a wrong offset!");
+
+// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.FogQualitySet
+// 0x0020 (0x0020 - 0x0000)
+struct BP_UltraVolumetrics_C_FogQualitySet final
+{
+public:
+	class FString                                 CallFunc_FogQuality_GridPixelSize_Output;          // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_FogQuality_GridSizeZ_Output;              // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_UltraVolumetrics_C_FogQualitySet) == 0x000008, "Wrong alignment on BP_UltraVolumetrics_C_FogQualitySet");
+static_assert(sizeof(BP_UltraVolumetrics_C_FogQualitySet) == 0x000020, "Wrong size on BP_UltraVolumetrics_C_FogQualitySet");
+static_assert(offsetof(BP_UltraVolumetrics_C_FogQualitySet, CallFunc_FogQuality_GridPixelSize_Output) == 0x000000, "Member 'BP_UltraVolumetrics_C_FogQualitySet::CallFunc_FogQuality_GridPixelSize_Output' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_FogQualitySet, CallFunc_FogQuality_GridSizeZ_Output) == 0x000010, "Member 'BP_UltraVolumetrics_C_FogQualitySet::CallFunc_FogQuality_GridSizeZ_Output' has a wrong offset!");
+
+// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.FogQuality-GridSizeZ
+// 0x0088 (0x0088 - 0x0000)
+struct BP_UltraVolumetrics_C_FogQuality_GridSizeZ final
+{
+public:
+	class FString                                 Output;                                            // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	Enum_Fog_Quality                              Temp_byte_Variable;                                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Array_Get_Item;                           // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Array_Get_Item_1;                         // 0x0038(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Array_Get_Item_2;                         // 0x0048(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Array_Get_Item_3;                         // 0x0058(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 K2Node_Select_Default;                             // 0x0068(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0078(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_UltraVolumetrics_C_FogQuality_GridSizeZ) == 0x000008, "Wrong alignment on BP_UltraVolumetrics_C_FogQuality_GridSizeZ");
+static_assert(sizeof(BP_UltraVolumetrics_C_FogQuality_GridSizeZ) == 0x000088, "Wrong size on BP_UltraVolumetrics_C_FogQuality_GridSizeZ");
+static_assert(offsetof(BP_UltraVolumetrics_C_FogQuality_GridSizeZ, Output) == 0x000000, "Member 'BP_UltraVolumetrics_C_FogQuality_GridSizeZ::Output' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_FogQuality_GridSizeZ, CallFunc_Concat_StrStr_ReturnValue) == 0x000010, "Member 'BP_UltraVolumetrics_C_FogQuality_GridSizeZ::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_FogQuality_GridSizeZ, Temp_byte_Variable) == 0x000020, "Member 'BP_UltraVolumetrics_C_FogQuality_GridSizeZ::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_FogQuality_GridSizeZ, CallFunc_Array_Get_Item) == 0x000028, "Member 'BP_UltraVolumetrics_C_FogQuality_GridSizeZ::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_FogQuality_GridSizeZ, CallFunc_Array_Get_Item_1) == 0x000038, "Member 'BP_UltraVolumetrics_C_FogQuality_GridSizeZ::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_FogQuality_GridSizeZ, CallFunc_Array_Get_Item_2) == 0x000048, "Member 'BP_UltraVolumetrics_C_FogQuality_GridSizeZ::CallFunc_Array_Get_Item_2' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_FogQuality_GridSizeZ, CallFunc_Array_Get_Item_3) == 0x000058, "Member 'BP_UltraVolumetrics_C_FogQuality_GridSizeZ::CallFunc_Array_Get_Item_3' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_FogQuality_GridSizeZ, K2Node_Select_Default) == 0x000068, "Member 'BP_UltraVolumetrics_C_FogQuality_GridSizeZ::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_FogQuality_GridSizeZ, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000078, "Member 'BP_UltraVolumetrics_C_FogQuality_GridSizeZ::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
+
+// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.FogQuality-GridPixelSize
+// 0x0088 (0x0088 - 0x0000)
+struct BP_UltraVolumetrics_C_FogQuality_GridPixelSize final
+{
+public:
+	class FString                                 Output;                                            // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	Enum_Fog_Quality                              Temp_byte_Variable;                                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Array_Get_Item;                           // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Array_Get_Item_1;                         // 0x0038(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Array_Get_Item_2;                         // 0x0048(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Array_Get_Item_3;                         // 0x0058(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 K2Node_Select_Default;                             // 0x0068(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0078(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_UltraVolumetrics_C_FogQuality_GridPixelSize) == 0x000008, "Wrong alignment on BP_UltraVolumetrics_C_FogQuality_GridPixelSize");
+static_assert(sizeof(BP_UltraVolumetrics_C_FogQuality_GridPixelSize) == 0x000088, "Wrong size on BP_UltraVolumetrics_C_FogQuality_GridPixelSize");
+static_assert(offsetof(BP_UltraVolumetrics_C_FogQuality_GridPixelSize, Output) == 0x000000, "Member 'BP_UltraVolumetrics_C_FogQuality_GridPixelSize::Output' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_FogQuality_GridPixelSize, CallFunc_Concat_StrStr_ReturnValue) == 0x000010, "Member 'BP_UltraVolumetrics_C_FogQuality_GridPixelSize::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_FogQuality_GridPixelSize, Temp_byte_Variable) == 0x000020, "Member 'BP_UltraVolumetrics_C_FogQuality_GridPixelSize::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_FogQuality_GridPixelSize, CallFunc_Array_Get_Item) == 0x000028, "Member 'BP_UltraVolumetrics_C_FogQuality_GridPixelSize::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_FogQuality_GridPixelSize, CallFunc_Array_Get_Item_1) == 0x000038, "Member 'BP_UltraVolumetrics_C_FogQuality_GridPixelSize::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_FogQuality_GridPixelSize, CallFunc_Array_Get_Item_2) == 0x000048, "Member 'BP_UltraVolumetrics_C_FogQuality_GridPixelSize::CallFunc_Array_Get_Item_2' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_FogQuality_GridPixelSize, CallFunc_Array_Get_Item_3) == 0x000058, "Member 'BP_UltraVolumetrics_C_FogQuality_GridPixelSize::CallFunc_Array_Get_Item_3' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_FogQuality_GridPixelSize, K2Node_Select_Default) == 0x000068, "Member 'BP_UltraVolumetrics_C_FogQuality_GridPixelSize::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_FogQuality_GridPixelSize, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000078, "Member 'BP_UltraVolumetrics_C_FogQuality_GridPixelSize::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
+
+// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.ExecuteUbergraph_BP_UltraVolumetrics
+// 0x0008 (0x0008 - 0x0000)
+struct BP_UltraVolumetrics_C_ExecuteUbergraph_BP_UltraVolumetrics final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_DeltaSeconds;                         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_UltraVolumetrics_C_ExecuteUbergraph_BP_UltraVolumetrics) == 0x000004, "Wrong alignment on BP_UltraVolumetrics_C_ExecuteUbergraph_BP_UltraVolumetrics");
+static_assert(sizeof(BP_UltraVolumetrics_C_ExecuteUbergraph_BP_UltraVolumetrics) == 0x000008, "Wrong size on BP_UltraVolumetrics_C_ExecuteUbergraph_BP_UltraVolumetrics");
+static_assert(offsetof(BP_UltraVolumetrics_C_ExecuteUbergraph_BP_UltraVolumetrics, EntryPoint) == 0x000000, "Member 'BP_UltraVolumetrics_C_ExecuteUbergraph_BP_UltraVolumetrics::EntryPoint' has a wrong offset!");
+static_assert(offsetof(BP_UltraVolumetrics_C_ExecuteUbergraph_BP_UltraVolumetrics, K2Node_Event_DeltaSeconds) == 0x000004, "Member 'BP_UltraVolumetrics_C_ExecuteUbergraph_BP_UltraVolumetrics::K2Node_Event_DeltaSeconds' has a wrong offset!");
 
 // Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.ApplyPreset
 // 0x0908 (0x0908 - 0x0000)
@@ -736,362 +1092,6 @@ static_assert(offsetof(BP_UltraVolumetrics_C_ApplyPreset, K2Node_MakeStruct_B_Im
 static_assert(offsetof(BP_UltraVolumetrics_C_ApplyPreset, K2Node_MakeStruct_R_ImplicitCast_11) == 0x0008F8, "Member 'BP_UltraVolumetrics_C_ApplyPreset::K2Node_MakeStruct_R_ImplicitCast_11' has a wrong offset!");
 static_assert(offsetof(BP_UltraVolumetrics_C_ApplyPreset, CallFunc_SetScalarParameterValue_Value_ImplicitCast_130) == 0x0008FC, "Member 'BP_UltraVolumetrics_C_ApplyPreset::CallFunc_SetScalarParameterValue_Value_ImplicitCast_130' has a wrong offset!");
 static_assert(offsetof(BP_UltraVolumetrics_C_ApplyPreset, CallFunc_SetScalarParameterValue_Value_ImplicitCast_131) == 0x000900, "Member 'BP_UltraVolumetrics_C_ApplyPreset::CallFunc_SetScalarParameterValue_Value_ImplicitCast_131' has a wrong offset!");
-
-// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.ExecuteUbergraph_BP_UltraVolumetrics
-// 0x0008 (0x0008 - 0x0000)
-struct BP_UltraVolumetrics_C_ExecuteUbergraph_BP_UltraVolumetrics final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_DeltaSeconds;                         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_UltraVolumetrics_C_ExecuteUbergraph_BP_UltraVolumetrics) == 0x000004, "Wrong alignment on BP_UltraVolumetrics_C_ExecuteUbergraph_BP_UltraVolumetrics");
-static_assert(sizeof(BP_UltraVolumetrics_C_ExecuteUbergraph_BP_UltraVolumetrics) == 0x000008, "Wrong size on BP_UltraVolumetrics_C_ExecuteUbergraph_BP_UltraVolumetrics");
-static_assert(offsetof(BP_UltraVolumetrics_C_ExecuteUbergraph_BP_UltraVolumetrics, EntryPoint) == 0x000000, "Member 'BP_UltraVolumetrics_C_ExecuteUbergraph_BP_UltraVolumetrics::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_ExecuteUbergraph_BP_UltraVolumetrics, K2Node_Event_DeltaSeconds) == 0x000004, "Member 'BP_UltraVolumetrics_C_ExecuteUbergraph_BP_UltraVolumetrics::K2Node_Event_DeltaSeconds' has a wrong offset!");
-
-// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.FogQuality-GridPixelSize
-// 0x0088 (0x0088 - 0x0000)
-struct BP_UltraVolumetrics_C_FogQuality_GridPixelSize final
-{
-public:
-	class FString                                 Output;                                            // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	Enum_Fog_Quality                              Temp_byte_Variable;                                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Array_Get_Item;                           // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Array_Get_Item_1;                         // 0x0038(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Array_Get_Item_2;                         // 0x0048(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Array_Get_Item_3;                         // 0x0058(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 K2Node_Select_Default;                             // 0x0068(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0078(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_UltraVolumetrics_C_FogQuality_GridPixelSize) == 0x000008, "Wrong alignment on BP_UltraVolumetrics_C_FogQuality_GridPixelSize");
-static_assert(sizeof(BP_UltraVolumetrics_C_FogQuality_GridPixelSize) == 0x000088, "Wrong size on BP_UltraVolumetrics_C_FogQuality_GridPixelSize");
-static_assert(offsetof(BP_UltraVolumetrics_C_FogQuality_GridPixelSize, Output) == 0x000000, "Member 'BP_UltraVolumetrics_C_FogQuality_GridPixelSize::Output' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_FogQuality_GridPixelSize, CallFunc_Concat_StrStr_ReturnValue) == 0x000010, "Member 'BP_UltraVolumetrics_C_FogQuality_GridPixelSize::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_FogQuality_GridPixelSize, Temp_byte_Variable) == 0x000020, "Member 'BP_UltraVolumetrics_C_FogQuality_GridPixelSize::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_FogQuality_GridPixelSize, CallFunc_Array_Get_Item) == 0x000028, "Member 'BP_UltraVolumetrics_C_FogQuality_GridPixelSize::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_FogQuality_GridPixelSize, CallFunc_Array_Get_Item_1) == 0x000038, "Member 'BP_UltraVolumetrics_C_FogQuality_GridPixelSize::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_FogQuality_GridPixelSize, CallFunc_Array_Get_Item_2) == 0x000048, "Member 'BP_UltraVolumetrics_C_FogQuality_GridPixelSize::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_FogQuality_GridPixelSize, CallFunc_Array_Get_Item_3) == 0x000058, "Member 'BP_UltraVolumetrics_C_FogQuality_GridPixelSize::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_FogQuality_GridPixelSize, K2Node_Select_Default) == 0x000068, "Member 'BP_UltraVolumetrics_C_FogQuality_GridPixelSize::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_FogQuality_GridPixelSize, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000078, "Member 'BP_UltraVolumetrics_C_FogQuality_GridPixelSize::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-
-// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.FogQuality-GridSizeZ
-// 0x0088 (0x0088 - 0x0000)
-struct BP_UltraVolumetrics_C_FogQuality_GridSizeZ final
-{
-public:
-	class FString                                 Output;                                            // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	Enum_Fog_Quality                              Temp_byte_Variable;                                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Array_Get_Item;                           // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Array_Get_Item_1;                         // 0x0038(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Array_Get_Item_2;                         // 0x0048(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Array_Get_Item_3;                         // 0x0058(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 K2Node_Select_Default;                             // 0x0068(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0078(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_UltraVolumetrics_C_FogQuality_GridSizeZ) == 0x000008, "Wrong alignment on BP_UltraVolumetrics_C_FogQuality_GridSizeZ");
-static_assert(sizeof(BP_UltraVolumetrics_C_FogQuality_GridSizeZ) == 0x000088, "Wrong size on BP_UltraVolumetrics_C_FogQuality_GridSizeZ");
-static_assert(offsetof(BP_UltraVolumetrics_C_FogQuality_GridSizeZ, Output) == 0x000000, "Member 'BP_UltraVolumetrics_C_FogQuality_GridSizeZ::Output' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_FogQuality_GridSizeZ, CallFunc_Concat_StrStr_ReturnValue) == 0x000010, "Member 'BP_UltraVolumetrics_C_FogQuality_GridSizeZ::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_FogQuality_GridSizeZ, Temp_byte_Variable) == 0x000020, "Member 'BP_UltraVolumetrics_C_FogQuality_GridSizeZ::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_FogQuality_GridSizeZ, CallFunc_Array_Get_Item) == 0x000028, "Member 'BP_UltraVolumetrics_C_FogQuality_GridSizeZ::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_FogQuality_GridSizeZ, CallFunc_Array_Get_Item_1) == 0x000038, "Member 'BP_UltraVolumetrics_C_FogQuality_GridSizeZ::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_FogQuality_GridSizeZ, CallFunc_Array_Get_Item_2) == 0x000048, "Member 'BP_UltraVolumetrics_C_FogQuality_GridSizeZ::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_FogQuality_GridSizeZ, CallFunc_Array_Get_Item_3) == 0x000058, "Member 'BP_UltraVolumetrics_C_FogQuality_GridSizeZ::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_FogQuality_GridSizeZ, K2Node_Select_Default) == 0x000068, "Member 'BP_UltraVolumetrics_C_FogQuality_GridSizeZ::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_FogQuality_GridSizeZ, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000078, "Member 'BP_UltraVolumetrics_C_FogQuality_GridSizeZ::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-
-// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.FogQualitySet
-// 0x0020 (0x0020 - 0x0000)
-struct BP_UltraVolumetrics_C_FogQualitySet final
-{
-public:
-	class FString                                 CallFunc_FogQuality_GridPixelSize_Output;          // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_FogQuality_GridSizeZ_Output;              // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_UltraVolumetrics_C_FogQualitySet) == 0x000008, "Wrong alignment on BP_UltraVolumetrics_C_FogQualitySet");
-static_assert(sizeof(BP_UltraVolumetrics_C_FogQualitySet) == 0x000020, "Wrong size on BP_UltraVolumetrics_C_FogQualitySet");
-static_assert(offsetof(BP_UltraVolumetrics_C_FogQualitySet, CallFunc_FogQuality_GridPixelSize_Output) == 0x000000, "Member 'BP_UltraVolumetrics_C_FogQualitySet::CallFunc_FogQuality_GridPixelSize_Output' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_FogQualitySet, CallFunc_FogQuality_GridSizeZ_Output) == 0x000010, "Member 'BP_UltraVolumetrics_C_FogQualitySet::CallFunc_FogQuality_GridSizeZ_Output' has a wrong offset!");
-
-// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.GetDefaultQualityVars
-// 0x0018 (0x0018 - 0x0000)
-struct BP_UltraVolumetrics_C_GetDefaultQualityVars final
-{
-public:
-	float                                         CallFunc_GetConsoleVariableFloatValue_ReturnValue; // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetConsoleVariableFloatValue_ReturnValue_1; // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        K2Node_VariableSet_GridPixelSize_ImplicitCast;     // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        K2Node_VariableSet_GridSizeZ_ImplicitCast;         // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_UltraVolumetrics_C_GetDefaultQualityVars) == 0x000008, "Wrong alignment on BP_UltraVolumetrics_C_GetDefaultQualityVars");
-static_assert(sizeof(BP_UltraVolumetrics_C_GetDefaultQualityVars) == 0x000018, "Wrong size on BP_UltraVolumetrics_C_GetDefaultQualityVars");
-static_assert(offsetof(BP_UltraVolumetrics_C_GetDefaultQualityVars, CallFunc_GetConsoleVariableFloatValue_ReturnValue) == 0x000000, "Member 'BP_UltraVolumetrics_C_GetDefaultQualityVars::CallFunc_GetConsoleVariableFloatValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_GetDefaultQualityVars, CallFunc_GetConsoleVariableFloatValue_ReturnValue_1) == 0x000004, "Member 'BP_UltraVolumetrics_C_GetDefaultQualityVars::CallFunc_GetConsoleVariableFloatValue_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_GetDefaultQualityVars, K2Node_VariableSet_GridPixelSize_ImplicitCast) == 0x000008, "Member 'BP_UltraVolumetrics_C_GetDefaultQualityVars::K2Node_VariableSet_GridPixelSize_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_GetDefaultQualityVars, K2Node_VariableSet_GridSizeZ_ImplicitCast) == 0x000010, "Member 'BP_UltraVolumetrics_C_GetDefaultQualityVars::K2Node_VariableSet_GridSizeZ_ImplicitCast' has a wrong offset!");
-
-// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.Randomize
-// 0x0004 (0x0004 - 0x0000)
-struct BP_UltraVolumetrics_C_Randomize final
-{
-public:
-	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_UltraVolumetrics_C_Randomize) == 0x000004, "Wrong alignment on BP_UltraVolumetrics_C_Randomize");
-static_assert(sizeof(BP_UltraVolumetrics_C_Randomize) == 0x000004, "Wrong size on BP_UltraVolumetrics_C_Randomize");
-static_assert(offsetof(BP_UltraVolumetrics_C_Randomize, CallFunc_RandomIntegerInRange_ReturnValue) == 0x000000, "Member 'BP_UltraVolumetrics_C_Randomize::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
-
-// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_UltraVolumetrics_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_UltraVolumetrics_C_ReceiveTick) == 0x000004, "Wrong alignment on BP_UltraVolumetrics_C_ReceiveTick");
-static_assert(sizeof(BP_UltraVolumetrics_C_ReceiveTick) == 0x000004, "Wrong size on BP_UltraVolumetrics_C_ReceiveTick");
-static_assert(offsetof(BP_UltraVolumetrics_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'BP_UltraVolumetrics_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
-
-// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.ResetFogQuality
-// 0x0060 (0x0060 - 0x0000)
-struct BP_UltraVolumetrics_C_ResetFogQuality final
-{
-public:
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_DoubleToString_ReturnValue;          // 0x0020(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_2;              // 0x0030(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_DoubleToString_ReturnValue_1;        // 0x0040(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_3;              // 0x0050(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_UltraVolumetrics_C_ResetFogQuality) == 0x000008, "Wrong alignment on BP_UltraVolumetrics_C_ResetFogQuality");
-static_assert(sizeof(BP_UltraVolumetrics_C_ResetFogQuality) == 0x000060, "Wrong size on BP_UltraVolumetrics_C_ResetFogQuality");
-static_assert(offsetof(BP_UltraVolumetrics_C_ResetFogQuality, CallFunc_Concat_StrStr_ReturnValue) == 0x000000, "Member 'BP_UltraVolumetrics_C_ResetFogQuality::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_ResetFogQuality, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000010, "Member 'BP_UltraVolumetrics_C_ResetFogQuality::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_ResetFogQuality, CallFunc_Conv_DoubleToString_ReturnValue) == 0x000020, "Member 'BP_UltraVolumetrics_C_ResetFogQuality::CallFunc_Conv_DoubleToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_ResetFogQuality, CallFunc_Concat_StrStr_ReturnValue_2) == 0x000030, "Member 'BP_UltraVolumetrics_C_ResetFogQuality::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_ResetFogQuality, CallFunc_Conv_DoubleToString_ReturnValue_1) == 0x000040, "Member 'BP_UltraVolumetrics_C_ResetFogQuality::CallFunc_Conv_DoubleToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_ResetFogQuality, CallFunc_Concat_StrStr_ReturnValue_3) == 0x000050, "Member 'BP_UltraVolumetrics_C_ResetFogQuality::CallFunc_Concat_StrStr_ReturnValue_3' has a wrong offset!");
-
-// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.SetOpacity
-// 0x0018 (0x0018 - 0x0000)
-struct BP_UltraVolumetrics_C_SetOpacity final
-{
-public:
-	double                                        NewValue;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_UltraVolumetrics_C_SetOpacity) == 0x000008, "Wrong alignment on BP_UltraVolumetrics_C_SetOpacity");
-static_assert(sizeof(BP_UltraVolumetrics_C_SetOpacity) == 0x000018, "Wrong size on BP_UltraVolumetrics_C_SetOpacity");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetOpacity, NewValue) == 0x000000, "Member 'BP_UltraVolumetrics_C_SetOpacity::NewValue' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetOpacity, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000008, "Member 'BP_UltraVolumetrics_C_SetOpacity::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetOpacity, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000010, "Member 'BP_UltraVolumetrics_C_SetOpacity::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
-
-// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.SetRandom
-// 0x01A0 (0x01A0 - 0x0000)
-struct BP_UltraVolumetrics_C_SetRandom final
-{
-public:
-	class UMaterialInterface*                     CallFunc_GetMaterial_ReturnValue;                  // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_X;                            // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_Y;                            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_Z;                            // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_MapRangeClamped_ReturnValue;              // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0038(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Conv_DoubleToLinearColor_ReturnValue;     // 0x0048(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_X_1;                          // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_Y_1;                          // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_Z_1;                          // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstance*                      CallFunc_Array_Get_Item;                           // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_1;      // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRandomStream                          CallFunc_MakeRandomStream_ReturnValue;             // 0x0088(0x0008)(ZeroConstructor, NoDestructor)
-	float                                         CallFunc_RandomFloatInRangeFromStream_ReturnValue; // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRangeFromStream_ReturnValue_1; // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRangeFromStream_ReturnValue_2; // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRangeFromStream_ReturnValue_3; // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x00A0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRangeFromStream_ReturnValue_4; // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRangeFromStream_ReturnValue_5; // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRangeFromStream_ReturnValue_6; // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRangeFromStream_ReturnValue_7; // 0x00C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRangeFromStream_ReturnValue_8; // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_CC[0x4];                                       // 0x00CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_MakeVector_ReturnValue_1;                 // 0x00D0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRangeFromStream_ReturnValue_9; // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRangeFromStream_ReturnValue_10; // 0x00EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRangeFromStream_ReturnValue_11; // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRangeFromStream_ReturnValue_12; // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_RandomBoolFromStream_ReturnValue;         // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F9[0x3];                                       // 0x00F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_MakeStruct_G_ImplicitCast;                  // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_MakeStruct_B_ImplicitCast;                  // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_MakeStruct_R_ImplicitCast;                  // 0x0104(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_1; // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_2; // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_3; // 0x0114(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_4; // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_5; // 0x011C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_6; // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_7; // 0x0124(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_8; // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_9; // 0x012C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_10; // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_134[0x4];                                      // 0x0134(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_MakeVector_Z_ImplicitCast;                // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_MakeVector_Y_ImplicitCast;                // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_MakeVector_X_ImplicitCast;                // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        K2Node_VariableSet_Noise___Multiply_ImplicitCast;  // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        K2Node_VariableSet_Noise___Contrast_ImplicitCast;  // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_MakeVector_Z_ImplicitCast_1;              // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_MakeVector_Y_ImplicitCast_1;              // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_MakeVector_X_ImplicitCast_1;              // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        K2Node_VariableSet_Opacity_ImplicitCast;           // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        K2Node_VariableSet_Distance_Field___Self_Shadow_Amount_ImplicitCast; // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        K2Node_VariableSet_Distance_Field___Contrast_ImplicitCast; // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        K2Node_VariableSet_Distance_Field___Multiply_ImplicitCast; // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        K2Node_VariableSet_Distance_Field___Height_ImplicitCast; // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_UltraVolumetrics_C_SetRandom) == 0x000008, "Wrong alignment on BP_UltraVolumetrics_C_SetRandom");
-static_assert(sizeof(BP_UltraVolumetrics_C_SetRandom) == 0x0001A0, "Wrong size on BP_UltraVolumetrics_C_SetRandom");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_GetMaterial_ReturnValue) == 0x000000, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_GetMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000008, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_BreakVector_X) == 0x000010, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_BreakVector_Y) == 0x000018, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_BreakVector_Z) == 0x000020, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000028, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_MapRangeClamped_ReturnValue) == 0x000030, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_MapRangeClamped_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, K2Node_MakeStruct_LinearColor) == 0x000038, "Member 'BP_UltraVolumetrics_C_SetRandom::K2Node_MakeStruct_LinearColor' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_Conv_DoubleToLinearColor_ReturnValue) == 0x000048, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_Conv_DoubleToLinearColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_BreakVector_X_1) == 0x000058, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_BreakVector_X_1' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_BreakVector_Y_1) == 0x000060, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_BreakVector_Y_1' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_BreakVector_Z_1) == 0x000068, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_BreakVector_Z_1' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_SelectInt_ReturnValue) == 0x000070, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_Array_Get_Item) == 0x000078, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_Multiply_DoubleDouble_ReturnValue_1) == 0x000080, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_Multiply_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_MakeRandomStream_ReturnValue) == 0x000088, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_MakeRandomStream_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_RandomFloatInRangeFromStream_ReturnValue) == 0x000090, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_RandomFloatInRangeFromStream_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_RandomFloatInRangeFromStream_ReturnValue_1) == 0x000094, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_RandomFloatInRangeFromStream_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_RandomFloatInRangeFromStream_ReturnValue_2) == 0x000098, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_RandomFloatInRangeFromStream_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_RandomFloatInRangeFromStream_ReturnValue_3) == 0x00009C, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_RandomFloatInRangeFromStream_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_MakeVector_ReturnValue) == 0x0000A0, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_RandomFloatInRangeFromStream_ReturnValue_4) == 0x0000B8, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_RandomFloatInRangeFromStream_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_RandomFloatInRangeFromStream_ReturnValue_5) == 0x0000BC, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_RandomFloatInRangeFromStream_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_RandomFloatInRangeFromStream_ReturnValue_6) == 0x0000C0, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_RandomFloatInRangeFromStream_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_RandomFloatInRangeFromStream_ReturnValue_7) == 0x0000C4, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_RandomFloatInRangeFromStream_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_RandomFloatInRangeFromStream_ReturnValue_8) == 0x0000C8, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_RandomFloatInRangeFromStream_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_MakeVector_ReturnValue_1) == 0x0000D0, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_MakeVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_RandomFloatInRangeFromStream_ReturnValue_9) == 0x0000E8, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_RandomFloatInRangeFromStream_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_RandomFloatInRangeFromStream_ReturnValue_10) == 0x0000EC, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_RandomFloatInRangeFromStream_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_RandomFloatInRangeFromStream_ReturnValue_11) == 0x0000F0, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_RandomFloatInRangeFromStream_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_RandomFloatInRangeFromStream_ReturnValue_12) == 0x0000F4, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_RandomFloatInRangeFromStream_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_RandomBoolFromStream_ReturnValue) == 0x0000F8, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_RandomBoolFromStream_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, K2Node_MakeStruct_G_ImplicitCast) == 0x0000FC, "Member 'BP_UltraVolumetrics_C_SetRandom::K2Node_MakeStruct_G_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, K2Node_MakeStruct_B_ImplicitCast) == 0x000100, "Member 'BP_UltraVolumetrics_C_SetRandom::K2Node_MakeStruct_B_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, K2Node_MakeStruct_R_ImplicitCast) == 0x000104, "Member 'BP_UltraVolumetrics_C_SetRandom::K2Node_MakeStruct_R_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000108, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_SetScalarParameterValue_Value_ImplicitCast_1) == 0x00010C, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_SetScalarParameterValue_Value_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_SetScalarParameterValue_Value_ImplicitCast_2) == 0x000110, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_SetScalarParameterValue_Value_ImplicitCast_2' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_SetScalarParameterValue_Value_ImplicitCast_3) == 0x000114, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_SetScalarParameterValue_Value_ImplicitCast_3' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_SetScalarParameterValue_Value_ImplicitCast_4) == 0x000118, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_SetScalarParameterValue_Value_ImplicitCast_4' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_SetScalarParameterValue_Value_ImplicitCast_5) == 0x00011C, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_SetScalarParameterValue_Value_ImplicitCast_5' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_SetScalarParameterValue_Value_ImplicitCast_6) == 0x000120, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_SetScalarParameterValue_Value_ImplicitCast_6' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_SetScalarParameterValue_Value_ImplicitCast_7) == 0x000124, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_SetScalarParameterValue_Value_ImplicitCast_7' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_SetScalarParameterValue_Value_ImplicitCast_8) == 0x000128, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_SetScalarParameterValue_Value_ImplicitCast_8' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_SetScalarParameterValue_Value_ImplicitCast_9) == 0x00012C, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_SetScalarParameterValue_Value_ImplicitCast_9' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_SetScalarParameterValue_Value_ImplicitCast_10) == 0x000130, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_SetScalarParameterValue_Value_ImplicitCast_10' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_MakeVector_Z_ImplicitCast) == 0x000138, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_MakeVector_Z_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_MakeVector_Y_ImplicitCast) == 0x000140, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_MakeVector_Y_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_MakeVector_X_ImplicitCast) == 0x000148, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_MakeVector_X_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, K2Node_VariableSet_Noise___Multiply_ImplicitCast) == 0x000150, "Member 'BP_UltraVolumetrics_C_SetRandom::K2Node_VariableSet_Noise___Multiply_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, K2Node_VariableSet_Noise___Contrast_ImplicitCast) == 0x000158, "Member 'BP_UltraVolumetrics_C_SetRandom::K2Node_VariableSet_Noise___Contrast_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_MakeVector_Z_ImplicitCast_1) == 0x000160, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_MakeVector_Z_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_MakeVector_Y_ImplicitCast_1) == 0x000168, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_MakeVector_Y_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, CallFunc_MakeVector_X_ImplicitCast_1) == 0x000170, "Member 'BP_UltraVolumetrics_C_SetRandom::CallFunc_MakeVector_X_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, K2Node_VariableSet_Opacity_ImplicitCast) == 0x000178, "Member 'BP_UltraVolumetrics_C_SetRandom::K2Node_VariableSet_Opacity_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, K2Node_VariableSet_Distance_Field___Self_Shadow_Amount_ImplicitCast) == 0x000180, "Member 'BP_UltraVolumetrics_C_SetRandom::K2Node_VariableSet_Distance_Field___Self_Shadow_Amount_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, K2Node_VariableSet_Distance_Field___Contrast_ImplicitCast) == 0x000188, "Member 'BP_UltraVolumetrics_C_SetRandom::K2Node_VariableSet_Distance_Field___Contrast_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, K2Node_VariableSet_Distance_Field___Multiply_ImplicitCast) == 0x000190, "Member 'BP_UltraVolumetrics_C_SetRandom::K2Node_VariableSet_Distance_Field___Multiply_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_SetRandom, K2Node_VariableSet_Distance_Field___Height_ImplicitCast) == 0x000198, "Member 'BP_UltraVolumetrics_C_SetRandom::K2Node_VariableSet_Distance_Field___Height_ImplicitCast' has a wrong offset!");
-
-// Function BP_UltraVolumetrics.BP_UltraVolumetrics_C.UserConstructionScript
-// 0x00C0 (0x00C0 - 0x0000)
-struct BP_UltraVolumetrics_C_UserConstructionScript final
-{
-public:
-	class UMaterialInterface*                     CallFunc_GetMaterial_ReturnValue;                  // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_X;                            // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_Y;                            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_Z;                            // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_MapRangeClamped_ReturnValue;              // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0038(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Conv_DoubleToLinearColor_ReturnValue;     // 0x0048(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_X_1;                          // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_Y_1;                          // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_Z_1;                          // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstance*                      CallFunc_Array_Get_Item;                           // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_1;      // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_MakeStruct_G_ImplicitCast;                  // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_MakeStruct_B_ImplicitCast;                  // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_MakeStruct_R_ImplicitCast;                  // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_1; // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_2; // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_3; // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_4; // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_5; // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_6; // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_7; // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_8; // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_9; // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_10; // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_UltraVolumetrics_C_UserConstructionScript) == 0x000008, "Wrong alignment on BP_UltraVolumetrics_C_UserConstructionScript");
-static_assert(sizeof(BP_UltraVolumetrics_C_UserConstructionScript) == 0x0000C0, "Wrong size on BP_UltraVolumetrics_C_UserConstructionScript");
-static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_GetMaterial_ReturnValue) == 0x000000, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_GetMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000008, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_BreakVector_X) == 0x000010, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_BreakVector_Y) == 0x000018, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_BreakVector_Z) == 0x000020, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000028, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_MapRangeClamped_ReturnValue) == 0x000030, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_MapRangeClamped_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, K2Node_MakeStruct_LinearColor) == 0x000038, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::K2Node_MakeStruct_LinearColor' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_Conv_DoubleToLinearColor_ReturnValue) == 0x000048, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_Conv_DoubleToLinearColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_BreakVector_X_1) == 0x000058, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_BreakVector_X_1' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_BreakVector_Y_1) == 0x000060, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_BreakVector_Y_1' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_BreakVector_Z_1) == 0x000068, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_BreakVector_Z_1' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_SelectInt_ReturnValue) == 0x000070, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_Array_Get_Item) == 0x000078, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_Multiply_DoubleDouble_ReturnValue_1) == 0x000080, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_Multiply_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, K2Node_MakeStruct_G_ImplicitCast) == 0x000088, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::K2Node_MakeStruct_G_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, K2Node_MakeStruct_B_ImplicitCast) == 0x00008C, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::K2Node_MakeStruct_B_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, K2Node_MakeStruct_R_ImplicitCast) == 0x000090, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::K2Node_MakeStruct_R_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast) == 0x000094, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_1) == 0x000098, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_2) == 0x00009C, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_2' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_3) == 0x0000A0, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_3' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_4) == 0x0000A4, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_4' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_5) == 0x0000A8, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_5' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_6) == 0x0000AC, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_6' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_7) == 0x0000B0, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_7' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_8) == 0x0000B4, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_8' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_9) == 0x0000B8, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_9' has a wrong offset!");
-static_assert(offsetof(BP_UltraVolumetrics_C_UserConstructionScript, CallFunc_SetScalarParameterValue_Value_ImplicitCast_10) == 0x0000BC, "Member 'BP_UltraVolumetrics_C_UserConstructionScript::CallFunc_SetScalarParameterValue_Value_ImplicitCast_10' has a wrong offset!");
 
 }
 

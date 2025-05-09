@@ -17,44 +17,99 @@
 namespace SDK::Params
 {
 
-// Function BP_PlayerAmbientParticles.BP_PlayerAmbientParticles_C.BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
-// 0x0118 (0x0118 - 0x0000)
-struct BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature final
+// Function BP_PlayerAmbientParticles.BP_PlayerAmbientParticles_C.UserConstructionScript
+// 0x0060 (0x0060 - 0x0000)
+struct BP_PlayerAmbientParticles_C_UserConstructionScript final
 {
 public:
-	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             SweepResult;                                       // 0x0020(0x00F8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                CallFunc_Conv_DoubleToVector_ReturnValue;          // 0x0000(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorScale3D_ReturnValue;              // 0x0030(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x0048(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
-static_assert(sizeof(BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature) == 0x000118, "Wrong size on BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, bFromSweep) == 0x00001C, "Member 'BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::bFromSweep' has a wrong offset!");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, SweepResult) == 0x000020, "Member 'BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::SweepResult' has a wrong offset!");
+static_assert(alignof(BP_PlayerAmbientParticles_C_UserConstructionScript) == 0x000008, "Wrong alignment on BP_PlayerAmbientParticles_C_UserConstructionScript");
+static_assert(sizeof(BP_PlayerAmbientParticles_C_UserConstructionScript) == 0x000060, "Wrong size on BP_PlayerAmbientParticles_C_UserConstructionScript");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_UserConstructionScript, CallFunc_Conv_DoubleToVector_ReturnValue) == 0x000000, "Member 'BP_PlayerAmbientParticles_C_UserConstructionScript::CallFunc_Conv_DoubleToVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_UserConstructionScript, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000018, "Member 'BP_PlayerAmbientParticles_C_UserConstructionScript::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_UserConstructionScript, CallFunc_GetActorScale3D_ReturnValue) == 0x000030, "Member 'BP_PlayerAmbientParticles_C_UserConstructionScript::CallFunc_GetActorScale3D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_UserConstructionScript, CallFunc_Multiply_VectorVector_ReturnValue) == 0x000048, "Member 'BP_PlayerAmbientParticles_C_UserConstructionScript::CallFunc_Multiply_VectorVector_ReturnValue' has a wrong offset!");
 
-// Function BP_PlayerAmbientParticles.BP_PlayerAmbientParticles_C.BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature final
+// Function BP_PlayerAmbientParticles.BP_PlayerAmbientParticles_C.SetPreviewParticlesParameters
+// 0x0090 (0x0090 - 0x0000)
+struct BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters final
 {
 public:
-	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorScale3D_ReturnValue;              // 0x0000(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Conv_DoubleToVector_ReturnValue;          // 0x0020(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Divide_VectorVector_ReturnValue;          // 0x0038(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0058(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_1;      // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Divide_DoubleDouble_A_ImplicitCast;       // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetFloatParameter_Param_ImplicitCast;     // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetFloatParameter_Param_ImplicitCast_1;   // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetFloatParameter_Param_ImplicitCast_2;   // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetFloatParameter_Param_ImplicitCast_3;   // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature");
-static_assert(sizeof(BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature) == 0x000020, "Wrong size on BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
+static_assert(alignof(BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters) == 0x000008, "Wrong alignment on BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters");
+static_assert(sizeof(BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters) == 0x000090, "Wrong size on BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters, CallFunc_GetActorScale3D_ReturnValue) == 0x000000, "Member 'BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters::CallFunc_GetActorScale3D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x000018, "Member 'BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters, CallFunc_Conv_DoubleToVector_ReturnValue) == 0x000020, "Member 'BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters::CallFunc_Conv_DoubleToVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters, CallFunc_Divide_VectorVector_ReturnValue) == 0x000038, "Member 'BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters::CallFunc_Divide_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000050, "Member 'BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters, CallFunc_MakeVector_ReturnValue) == 0x000058, "Member 'BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters, CallFunc_Multiply_DoubleDouble_ReturnValue_1) == 0x000070, "Member 'BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters::CallFunc_Multiply_DoubleDouble_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters, CallFunc_Divide_DoubleDouble_A_ImplicitCast) == 0x000078, "Member 'BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters::CallFunc_Divide_DoubleDouble_A_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters, CallFunc_SetFloatParameter_Param_ImplicitCast) == 0x000080, "Member 'BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters::CallFunc_SetFloatParameter_Param_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters, CallFunc_SetFloatParameter_Param_ImplicitCast_1) == 0x000084, "Member 'BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters::CallFunc_SetFloatParameter_Param_ImplicitCast_1' has a wrong offset!");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters, CallFunc_SetFloatParameter_Param_ImplicitCast_2) == 0x000088, "Member 'BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters::CallFunc_SetFloatParameter_Param_ImplicitCast_2' has a wrong offset!");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters, CallFunc_SetFloatParameter_Param_ImplicitCast_3) == 0x00008C, "Member 'BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters::CallFunc_SetFloatParameter_Param_ImplicitCast_3' has a wrong offset!");
+
+// Function BP_PlayerAmbientParticles.BP_PlayerAmbientParticles_C.SetParticlesParameters
+// 0x0090 (0x0090 - 0x0000)
+struct BP_PlayerAmbientParticles_C_SetParticlesParameters final
+{
+public:
+	struct FVector                                CallFunc_GetActorScale3D_ReturnValue;              // 0x0000(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Conv_DoubleToVector_ReturnValue;          // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Divide_VectorVector_ReturnValue;          // 0x0038(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0058(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_1;      // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Divide_DoubleDouble_A_ImplicitCast;       // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetFloatParameter_Param_ImplicitCast;     // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetFloatParameter_Param_ImplicitCast_1;   // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetFloatParameter_Param_ImplicitCast_2;   // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetFloatParameter_Param_ImplicitCast_3;   // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_PlayerAmbientParticles_C_SetParticlesParameters) == 0x000008, "Wrong alignment on BP_PlayerAmbientParticles_C_SetParticlesParameters");
+static_assert(sizeof(BP_PlayerAmbientParticles_C_SetParticlesParameters) == 0x000090, "Wrong size on BP_PlayerAmbientParticles_C_SetParticlesParameters");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_SetParticlesParameters, CallFunc_GetActorScale3D_ReturnValue) == 0x000000, "Member 'BP_PlayerAmbientParticles_C_SetParticlesParameters::CallFunc_GetActorScale3D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_SetParticlesParameters, CallFunc_Conv_DoubleToVector_ReturnValue) == 0x000018, "Member 'BP_PlayerAmbientParticles_C_SetParticlesParameters::CallFunc_Conv_DoubleToVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_SetParticlesParameters, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x000030, "Member 'BP_PlayerAmbientParticles_C_SetParticlesParameters::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_SetParticlesParameters, CallFunc_Divide_VectorVector_ReturnValue) == 0x000038, "Member 'BP_PlayerAmbientParticles_C_SetParticlesParameters::CallFunc_Divide_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_SetParticlesParameters, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000050, "Member 'BP_PlayerAmbientParticles_C_SetParticlesParameters::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_SetParticlesParameters, CallFunc_MakeVector_ReturnValue) == 0x000058, "Member 'BP_PlayerAmbientParticles_C_SetParticlesParameters::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_SetParticlesParameters, CallFunc_Multiply_DoubleDouble_ReturnValue_1) == 0x000070, "Member 'BP_PlayerAmbientParticles_C_SetParticlesParameters::CallFunc_Multiply_DoubleDouble_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_SetParticlesParameters, CallFunc_Divide_DoubleDouble_A_ImplicitCast) == 0x000078, "Member 'BP_PlayerAmbientParticles_C_SetParticlesParameters::CallFunc_Divide_DoubleDouble_A_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_SetParticlesParameters, CallFunc_SetFloatParameter_Param_ImplicitCast) == 0x000080, "Member 'BP_PlayerAmbientParticles_C_SetParticlesParameters::CallFunc_SetFloatParameter_Param_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_SetParticlesParameters, CallFunc_SetFloatParameter_Param_ImplicitCast_1) == 0x000084, "Member 'BP_PlayerAmbientParticles_C_SetParticlesParameters::CallFunc_SetFloatParameter_Param_ImplicitCast_1' has a wrong offset!");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_SetParticlesParameters, CallFunc_SetFloatParameter_Param_ImplicitCast_2) == 0x000088, "Member 'BP_PlayerAmbientParticles_C_SetParticlesParameters::CallFunc_SetFloatParameter_Param_ImplicitCast_2' has a wrong offset!");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_SetParticlesParameters, CallFunc_SetFloatParameter_Param_ImplicitCast_3) == 0x00008C, "Member 'BP_PlayerAmbientParticles_C_SetParticlesParameters::CallFunc_SetFloatParameter_Param_ImplicitCast_3' has a wrong offset!");
+
+// Function BP_PlayerAmbientParticles.BP_PlayerAmbientParticles_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_PlayerAmbientParticles_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_PlayerAmbientParticles_C_ReceiveTick) == 0x000004, "Wrong alignment on BP_PlayerAmbientParticles_C_ReceiveTick");
+static_assert(sizeof(BP_PlayerAmbientParticles_C_ReceiveTick) == 0x000004, "Wrong size on BP_PlayerAmbientParticles_C_ReceiveTick");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'BP_PlayerAmbientParticles_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
 
 // Function BP_PlayerAmbientParticles.BP_PlayerAmbientParticles_C.ExecuteUbergraph_BP_PlayerAmbientParticles
 // 0x0468 (0x0468 - 0x0000)
@@ -138,99 +193,44 @@ static_assert(offsetof(BP_PlayerAmbientParticles_C_ExecuteUbergraph_BP_PlayerAmb
 static_assert(offsetof(BP_PlayerAmbientParticles_C_ExecuteUbergraph_BP_PlayerAmbientParticles, CallFunc_K2_SetWorldLocation_SweepHitResult_1) == 0x000368, "Member 'BP_PlayerAmbientParticles_C_ExecuteUbergraph_BP_PlayerAmbientParticles::CallFunc_K2_SetWorldLocation_SweepHitResult_1' has a wrong offset!");
 static_assert(offsetof(BP_PlayerAmbientParticles_C_ExecuteUbergraph_BP_PlayerAmbientParticles, CallFunc_EqualEqual_ObjectObject_ReturnValue_1) == 0x000460, "Member 'BP_PlayerAmbientParticles_C_ExecuteUbergraph_BP_PlayerAmbientParticles::CallFunc_EqualEqual_ObjectObject_ReturnValue_1' has a wrong offset!");
 
-// Function BP_PlayerAmbientParticles.BP_PlayerAmbientParticles_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_PlayerAmbientParticles_C_ReceiveTick final
+// Function BP_PlayerAmbientParticles.BP_PlayerAmbientParticles_C.BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature final
 {
 public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_PlayerAmbientParticles_C_ReceiveTick) == 0x000004, "Wrong alignment on BP_PlayerAmbientParticles_C_ReceiveTick");
-static_assert(sizeof(BP_PlayerAmbientParticles_C_ReceiveTick) == 0x000004, "Wrong size on BP_PlayerAmbientParticles_C_ReceiveTick");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'BP_PlayerAmbientParticles_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
+static_assert(alignof(BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature");
+static_assert(sizeof(BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature) == 0x000020, "Wrong size on BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
 
-// Function BP_PlayerAmbientParticles.BP_PlayerAmbientParticles_C.SetParticlesParameters
-// 0x0090 (0x0090 - 0x0000)
-struct BP_PlayerAmbientParticles_C_SetParticlesParameters final
+// Function BP_PlayerAmbientParticles.BP_PlayerAmbientParticles_C.BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
+// 0x0118 (0x0118 - 0x0000)
+struct BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature final
 {
 public:
-	struct FVector                                CallFunc_GetActorScale3D_ReturnValue;              // 0x0000(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Conv_DoubleToVector_ReturnValue;          // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Divide_VectorVector_ReturnValue;          // 0x0038(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0058(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_1;      // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Divide_DoubleDouble_A_ImplicitCast;       // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetFloatParameter_Param_ImplicitCast;     // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetFloatParameter_Param_ImplicitCast_1;   // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetFloatParameter_Param_ImplicitCast_2;   // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetFloatParameter_Param_ImplicitCast_3;   // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             SweepResult;                                       // 0x0020(0x00F8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(BP_PlayerAmbientParticles_C_SetParticlesParameters) == 0x000008, "Wrong alignment on BP_PlayerAmbientParticles_C_SetParticlesParameters");
-static_assert(sizeof(BP_PlayerAmbientParticles_C_SetParticlesParameters) == 0x000090, "Wrong size on BP_PlayerAmbientParticles_C_SetParticlesParameters");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_SetParticlesParameters, CallFunc_GetActorScale3D_ReturnValue) == 0x000000, "Member 'BP_PlayerAmbientParticles_C_SetParticlesParameters::CallFunc_GetActorScale3D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_SetParticlesParameters, CallFunc_Conv_DoubleToVector_ReturnValue) == 0x000018, "Member 'BP_PlayerAmbientParticles_C_SetParticlesParameters::CallFunc_Conv_DoubleToVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_SetParticlesParameters, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x000030, "Member 'BP_PlayerAmbientParticles_C_SetParticlesParameters::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_SetParticlesParameters, CallFunc_Divide_VectorVector_ReturnValue) == 0x000038, "Member 'BP_PlayerAmbientParticles_C_SetParticlesParameters::CallFunc_Divide_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_SetParticlesParameters, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000050, "Member 'BP_PlayerAmbientParticles_C_SetParticlesParameters::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_SetParticlesParameters, CallFunc_MakeVector_ReturnValue) == 0x000058, "Member 'BP_PlayerAmbientParticles_C_SetParticlesParameters::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_SetParticlesParameters, CallFunc_Multiply_DoubleDouble_ReturnValue_1) == 0x000070, "Member 'BP_PlayerAmbientParticles_C_SetParticlesParameters::CallFunc_Multiply_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_SetParticlesParameters, CallFunc_Divide_DoubleDouble_A_ImplicitCast) == 0x000078, "Member 'BP_PlayerAmbientParticles_C_SetParticlesParameters::CallFunc_Divide_DoubleDouble_A_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_SetParticlesParameters, CallFunc_SetFloatParameter_Param_ImplicitCast) == 0x000080, "Member 'BP_PlayerAmbientParticles_C_SetParticlesParameters::CallFunc_SetFloatParameter_Param_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_SetParticlesParameters, CallFunc_SetFloatParameter_Param_ImplicitCast_1) == 0x000084, "Member 'BP_PlayerAmbientParticles_C_SetParticlesParameters::CallFunc_SetFloatParameter_Param_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_SetParticlesParameters, CallFunc_SetFloatParameter_Param_ImplicitCast_2) == 0x000088, "Member 'BP_PlayerAmbientParticles_C_SetParticlesParameters::CallFunc_SetFloatParameter_Param_ImplicitCast_2' has a wrong offset!");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_SetParticlesParameters, CallFunc_SetFloatParameter_Param_ImplicitCast_3) == 0x00008C, "Member 'BP_PlayerAmbientParticles_C_SetParticlesParameters::CallFunc_SetFloatParameter_Param_ImplicitCast_3' has a wrong offset!");
-
-// Function BP_PlayerAmbientParticles.BP_PlayerAmbientParticles_C.SetPreviewParticlesParameters
-// 0x0090 (0x0090 - 0x0000)
-struct BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters final
-{
-public:
-	struct FVector                                CallFunc_GetActorScale3D_ReturnValue;              // 0x0000(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Conv_DoubleToVector_ReturnValue;          // 0x0020(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Divide_VectorVector_ReturnValue;          // 0x0038(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0058(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_1;      // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Divide_DoubleDouble_A_ImplicitCast;       // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetFloatParameter_Param_ImplicitCast;     // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetFloatParameter_Param_ImplicitCast_1;   // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetFloatParameter_Param_ImplicitCast_2;   // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetFloatParameter_Param_ImplicitCast_3;   // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters) == 0x000008, "Wrong alignment on BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters");
-static_assert(sizeof(BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters) == 0x000090, "Wrong size on BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters, CallFunc_GetActorScale3D_ReturnValue) == 0x000000, "Member 'BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters::CallFunc_GetActorScale3D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x000018, "Member 'BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters, CallFunc_Conv_DoubleToVector_ReturnValue) == 0x000020, "Member 'BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters::CallFunc_Conv_DoubleToVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters, CallFunc_Divide_VectorVector_ReturnValue) == 0x000038, "Member 'BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters::CallFunc_Divide_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000050, "Member 'BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters, CallFunc_MakeVector_ReturnValue) == 0x000058, "Member 'BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters, CallFunc_Multiply_DoubleDouble_ReturnValue_1) == 0x000070, "Member 'BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters::CallFunc_Multiply_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters, CallFunc_Divide_DoubleDouble_A_ImplicitCast) == 0x000078, "Member 'BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters::CallFunc_Divide_DoubleDouble_A_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters, CallFunc_SetFloatParameter_Param_ImplicitCast) == 0x000080, "Member 'BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters::CallFunc_SetFloatParameter_Param_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters, CallFunc_SetFloatParameter_Param_ImplicitCast_1) == 0x000084, "Member 'BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters::CallFunc_SetFloatParameter_Param_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters, CallFunc_SetFloatParameter_Param_ImplicitCast_2) == 0x000088, "Member 'BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters::CallFunc_SetFloatParameter_Param_ImplicitCast_2' has a wrong offset!");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters, CallFunc_SetFloatParameter_Param_ImplicitCast_3) == 0x00008C, "Member 'BP_PlayerAmbientParticles_C_SetPreviewParticlesParameters::CallFunc_SetFloatParameter_Param_ImplicitCast_3' has a wrong offset!");
-
-// Function BP_PlayerAmbientParticles.BP_PlayerAmbientParticles_C.UserConstructionScript
-// 0x0060 (0x0060 - 0x0000)
-struct BP_PlayerAmbientParticles_C_UserConstructionScript final
-{
-public:
-	struct FVector                                CallFunc_Conv_DoubleToVector_ReturnValue;          // 0x0000(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorScale3D_ReturnValue;              // 0x0030(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x0048(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_PlayerAmbientParticles_C_UserConstructionScript) == 0x000008, "Wrong alignment on BP_PlayerAmbientParticles_C_UserConstructionScript");
-static_assert(sizeof(BP_PlayerAmbientParticles_C_UserConstructionScript) == 0x000060, "Wrong size on BP_PlayerAmbientParticles_C_UserConstructionScript");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_UserConstructionScript, CallFunc_Conv_DoubleToVector_ReturnValue) == 0x000000, "Member 'BP_PlayerAmbientParticles_C_UserConstructionScript::CallFunc_Conv_DoubleToVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_UserConstructionScript, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000018, "Member 'BP_PlayerAmbientParticles_C_UserConstructionScript::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_UserConstructionScript, CallFunc_GetActorScale3D_ReturnValue) == 0x000030, "Member 'BP_PlayerAmbientParticles_C_UserConstructionScript::CallFunc_GetActorScale3D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PlayerAmbientParticles_C_UserConstructionScript, CallFunc_Multiply_VectorVector_ReturnValue) == 0x000048, "Member 'BP_PlayerAmbientParticles_C_UserConstructionScript::CallFunc_Multiply_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(alignof(BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
+static_assert(sizeof(BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature) == 0x000118, "Wrong size on BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, bFromSweep) == 0x00001C, "Member 'BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::bFromSweep' has a wrong offset!");
+static_assert(offsetof(BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, SweepResult) == 0x000020, "Member 'BP_PlayerAmbientParticles_C_BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::SweepResult' has a wrong offset!");
 
 }
 

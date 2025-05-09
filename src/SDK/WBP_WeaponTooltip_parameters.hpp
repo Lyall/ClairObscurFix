@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "S_jRPG_Item_StaticData_structs.hpp"
-#include "ECharacterAttribute_structs.hpp"
-#include "UMG_structs.hpp"
-#include "EWeaponQuality_structs.hpp"
-#include "EAttributeScalingGrade_structs.hpp"
 #include "FPassiveEffect_structs.hpp"
-#include "S_WeaponDefinition_structs.hpp"
+#include "EAttributeScalingGrade_structs.hpp"
+#include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "ECharacterAttribute_structs.hpp"
+#include "EWeaponQuality_structs.hpp"
+#include "S_WeaponDefinition_structs.hpp"
+#include "S_jRPG_Item_StaticData_structs.hpp"
 
 
 namespace SDK::Params

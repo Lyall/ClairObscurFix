@@ -25,8 +25,8 @@ public:
 	bool                                          ShouldWaitEndOfDialogueToFinishExecution;          // 0x0038(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	TSubclassOf<class UGameActionInstance> GetInstanceClass();
 	void ValidateGameAction(TArray<class FText>& ErrorMessages, class FString& PropertyPath, bool& ExploreAssetChildren);
+	TSubclassOf<class UGameActionInstance> GetInstanceClass();
 
 public:
 	static class UClass* StaticClass()

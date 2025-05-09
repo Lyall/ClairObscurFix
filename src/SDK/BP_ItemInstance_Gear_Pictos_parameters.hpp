@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "S_jRPG_Item_StaticData_structs.hpp"
-#include "E_jRPG_StatType_structs.hpp"
 #include "S_PictosDefinition_structs.hpp"
+#include "E_jRPG_StatType_structs.hpp"
 
 
 namespace SDK::Params

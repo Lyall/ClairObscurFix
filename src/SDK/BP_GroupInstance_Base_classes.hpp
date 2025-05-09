@@ -18,7 +18,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_GroupInstance_Base.BP_GroupInstance_Base_C
 // 0x0010 (0x0038 - 0x0028)
-class UBP_GroupInstance_Base_C final : public UExtendedObject
+class UBP_GroupInstance_Base_C : public UExtendedObject
 {
 public:
 	TArray<class UObject*>                        MatchingObjects;                                   // 0x0028(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)

@@ -18,7 +18,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_GroupingPolicy_Base.BP_GroupingPolicy_Base_C
 // 0x0030 (0x0058 - 0x0028)
-class UBP_GroupingPolicy_Base_C final : public UExtendedObject
+class UBP_GroupingPolicy_Base_C : public UExtendedObject
 {
 public:
 	TArray<class UBP_GroupInstance_Base_C*>       GroupInstances;                                    // 0x0028(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)

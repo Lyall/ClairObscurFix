@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "ESkillNodeState_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
-#include "ESkillNodeState_structs.hpp"
 #include "FSkillUnlockData_structs.hpp"
 #include "CommonUI_classes.hpp"
 

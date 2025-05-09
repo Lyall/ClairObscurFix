@@ -12,8 +12,8 @@
 
 #include "Engine_classes.hpp"
 #include "E_QuestStatus_structs.hpp"
-#include "E_CurrentAct_structs.hpp"
 #include "E_MainQuest_Step_structs.hpp"
+#include "E_CurrentAct_structs.hpp"
 
 
 namespace SDK

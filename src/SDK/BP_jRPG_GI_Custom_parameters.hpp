@@ -10,30 +10,30 @@
 
 #include "Basic.hpp"
 
-#include "GameplayTags_structs.hpp"
-#include "E_CharacterList_structs.hpp"
-#include "S_LevelSpawnPointsData_structs.hpp"
+#include "S_CameraOverrideParameters_structs.hpp"
+#include "S_jRPG_Item_StaticData_structs.hpp"
+#include "S_GameFlowTransitionRequest_structs.hpp"
 #include "S_UIFavoritePool_structs.hpp"
+#include "GameplayTags_structs.hpp"
+#include "S_LevelSpawnPointsData_structs.hpp"
 #include "FLevelDataEntry_structs.hpp"
 #include "S_UINotificationPool_structs.hpp"
-#include "FPassiveEffect_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FPassiveEffectProgression_structs.hpp"
+#include "FPassiveEffect_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "E_InteractiveMusicContext_structs.hpp"
 #include "S_AreaAudioParameters_structs.hpp"
-#include "S_LevelSpawnPointData_structs.hpp"
-#include "FVendorState_structs.hpp"
 #include "S_AudioLevelParameters_structs.hpp"
 #include "S_InteractiveMusicParameters_structs.hpp"
-#include "S_GameplayPauseParameters_structs.hpp"
 #include "SandFall_structs.hpp"
-#include "S_GameFlowTransitionRequest_structs.hpp"
-#include "S_CameraOverrideParameters_structs.hpp"
-#include "S_jRPG_Item_DynamicData_structs.hpp"
-#include "S_jRPG_Item_StaticData_structs.hpp"
+#include "S_GameplayPauseParameters_structs.hpp"
+#include "E_CharacterList_structs.hpp"
+#include "FVendorState_structs.hpp"
 #include "S_jRPG_PartySlot_structs.hpp"
+#include "S_jRPG_Item_DynamicData_structs.hpp"
+#include "S_LevelSpawnPointData_structs.hpp"
 #include "S_ManorDoors_structs.hpp"
 
 
@@ -216,6 +216,25 @@ static_assert(alignof(BP_jRPG_GI_Custom_C_BindOnSaveLoaded) == 0x000004, "Wrong 
 static_assert(sizeof(BP_jRPG_GI_Custom_C_BindOnSaveLoaded) == 0x000014, "Wrong size on BP_jRPG_GI_Custom_C_BindOnSaveLoaded");
 static_assert(offsetof(BP_jRPG_GI_Custom_C_BindOnSaveLoaded, Event) == 0x000000, "Member 'BP_jRPG_GI_Custom_C_BindOnSaveLoaded::Event' has a wrong offset!");
 static_assert(offsetof(BP_jRPG_GI_Custom_C_BindOnSaveLoaded, AlreadyLoaded) == 0x000010, "Member 'BP_jRPG_GI_Custom_C_BindOnSaveLoaded::AlreadyLoaded' has a wrong offset!");
+
+// Function BP_jRPG_GI_Custom.BP_jRPG_GI_Custom_C.CanUseStats
+// 0x0038 (0x0038 - 0x0000)
+struct BP_jRPG_GI_Custom_C_CanUseStats final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTag                           CallFunc_GetPlatformNameAsTag_ReturnValue;         // 0x0004(0x0008)(NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  CallFunc_MakeLiteralGameplayTagContainer_ReturnValue; // 0x0010(0x0020)()
+	bool                                          CallFunc_HasTag_ReturnValue;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_jRPG_GI_Custom_C_CanUseStats) == 0x000008, "Wrong alignment on BP_jRPG_GI_Custom_C_CanUseStats");
+static_assert(sizeof(BP_jRPG_GI_Custom_C_CanUseStats) == 0x000038, "Wrong size on BP_jRPG_GI_Custom_C_CanUseStats");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_CanUseStats, ReturnValue) == 0x000000, "Member 'BP_jRPG_GI_Custom_C_CanUseStats::ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_CanUseStats, CallFunc_GetPlatformNameAsTag_ReturnValue) == 0x000004, "Member 'BP_jRPG_GI_Custom_C_CanUseStats::CallFunc_GetPlatformNameAsTag_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_CanUseStats, CallFunc_MakeLiteralGameplayTagContainer_ReturnValue) == 0x000010, "Member 'BP_jRPG_GI_Custom_C_CanUseStats::CallFunc_MakeLiteralGameplayTagContainer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_CanUseStats, CallFunc_HasTag_ReturnValue) == 0x000030, "Member 'BP_jRPG_GI_Custom_C_CanUseStats::CallFunc_HasTag_ReturnValue' has a wrong offset!");
 
 // Function BP_jRPG_GI_Custom.BP_jRPG_GI_Custom_C.CheckDestroyable
 // 0x000C (0x000C - 0x0000)
@@ -676,70 +695,73 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_10;           // 0x09A8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class USentryId*                              CallFunc_CaptureMessage_ReturnValue;               // 0x09B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue_3;        // 0x09C0(0x0008)(NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Temp_wildcard_Variable_1;                          // 0x09C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IBPI_Tool_PerformanceMeasureTool_C> K2Node_DynamicCast_AsBPI_Tool_Performance_Measure_Tool; // 0x09D0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x09E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9E1[0x7];                                      // 0x09E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_RandomFloatInRange_ReturnValue;           // 0x09E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UCharacterStats*>                CallFunc_Map_Values_Values;                        // 0x09F0(0x0010)(ReferenceParm)
-	TDelegate<void(int32 NewValue)>               K2Node_CreateDelegate_OutputDelegate_11;           // 0x0A00(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UCharacterStats*                        CallFunc_Array_Get_Item_3;                         // 0x0A10(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0A18(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_MultiGate_FirstRun;                         // 0x0A1C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A1D[0x3];                                      // 0x0A1D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_MultiGate_Data;                             // 0x0A20(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_MultiGate_ScratchBool;                      // 0x0A24(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CanUseStats_ReturnValue;                  // 0x09C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CanUseStats_ReturnValue_1;                // 0x09C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9CA[0x6];                                      // 0x09CA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Temp_wildcard_Variable_1;                          // 0x09D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IBPI_Tool_PerformanceMeasureTool_C> K2Node_DynamicCast_AsBPI_Tool_Performance_Measure_Tool; // 0x09D8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x09E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9E9[0x7];                                      // 0x09E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_RandomFloatInRange_ReturnValue;           // 0x09F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UCharacterStats*>                CallFunc_Map_Values_Values;                        // 0x09F8(0x0010)(ReferenceParm)
+	TDelegate<void(int32 NewValue)>               K2Node_CreateDelegate_OutputDelegate_11;           // 0x0A08(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UCharacterStats*                        CallFunc_Array_Get_Item_3;                         // 0x0A18(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0A20(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_MultiGate_FirstRun;                         // 0x0A24(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_A25[0x3];                                      // 0x0A25(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_MultiGate_ScratchIndex;                     // 0x0A28(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0A2C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_MultiGate_Data;                             // 0x0A28(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_MultiGate_ScratchBool;                      // 0x0A2C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_A2D[0x3];                                      // 0x0A2D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class USF_LoadingScreenGISubsystem*           CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0A30(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UCharacterStats*                        CallFunc_Map_Find_Value;                           // 0x0A38(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0A40(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A41[0x3];                                      // 0x0A41(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_CustomEvent_StatId;                         // 0x0A44(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_StatValue;                      // 0x0A48(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0A4C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A4D[0x3];                                      // 0x0A4D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0A50(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0A58(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A59[0x7];                                      // 0x0A59(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0A60(0x0048)(HasGetValueTypeHash)
-	int32                                         CallFunc_GetStat_ReturnValue;                      // 0x0AA8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_AAC[0x4];                                      // 0x0AAC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USF_LoadingScreenGISubsystem*           CallFunc_GetGameInstanceSubsystem_ReturnValue_1;   // 0x0AB0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int64                                         CallFunc_Conv_IntToInt64_ReturnValue_1;            // 0x0AB8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_2;            // 0x0AC0(0x0048)(HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_IntInt_ReturnValue_1;            // 0x0B08(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B09[0x7];                                      // 0x0B09(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x0B10(0x0010)(ReferenceParm)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0B20(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B21[0x7];                                      // 0x0B21(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Format_ReturnValue_1;                     // 0x0B28(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Map_Length_ReturnValue;                   // 0x0B38(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B3C[0x4];                                      // 0x0B3C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FName>                           CallFunc_Map_Keys_Keys;                            // 0x0B40(0x0010)(ReferenceParm)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0B50(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B51[0x3];                                      // 0x0B51(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   CallFunc_Array_Random_OutItem;                     // 0x0B54(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Random_OutIndex;                    // 0x0B5C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UBP_CharacterData_C*                    CallFunc_Map_Find_Value_1;                         // 0x0B60(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue_1;                   // 0x0B68(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Remove_ReturnValue;                   // 0x0B69(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B6A[0x6];                                      // 0x0B6A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Temp_string_Variable;                              // 0x0B70(0x0010)(ConstParm, ZeroConstructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_12;           // 0x0B80(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0B90(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0B91(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B92[0x6];                                      // 0x0B92(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<int32, int32>                            CallFunc_GetBaseStatValues_ReturnValue;            // 0x0B98(0x0050)()
-	int32                                         CallFunc_Map_Find_Value_2;                         // 0x0BE8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue_2;                   // 0x0BEC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_IntInt_ReturnValue_2;            // 0x0BED(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0BEE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_BEF[0x1];                                      // 0x0BEF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_SetScalarParameterValue_ParameterValue_ImplicitCast; // 0x0BF0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Delay_Duration_ImplicitCast;              // 0x0BF4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_MultiGate_ScratchIndex;                     // 0x0A30(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0A34(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A35[0x3];                                      // 0x0A35(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class USF_LoadingScreenGISubsystem*           CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0A38(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UCharacterStats*                        CallFunc_Map_Find_Value;                           // 0x0A40(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0A48(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A49[0x3];                                      // 0x0A49(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_CustomEvent_StatId;                         // 0x0A4C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_StatValue;                      // 0x0A50(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0A54(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A55[0x3];                                      // 0x0A55(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0A58(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0A60(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A61[0x7];                                      // 0x0A61(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0A68(0x0048)(HasGetValueTypeHash)
+	int32                                         CallFunc_GetStat_ReturnValue;                      // 0x0AB0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_AB4[0x4];                                      // 0x0AB4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USF_LoadingScreenGISubsystem*           CallFunc_GetGameInstanceSubsystem_ReturnValue_1;   // 0x0AB8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue_1;            // 0x0AC0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_2;            // 0x0AC8(0x0048)(HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue_1;            // 0x0B10(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B11[0x7];                                      // 0x0B11(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x0B18(0x0010)(ReferenceParm)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0B28(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B29[0x7];                                      // 0x0B29(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Format_ReturnValue_1;                     // 0x0B30(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Map_Length_ReturnValue;                   // 0x0B40(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B44[0x4];                                      // 0x0B44(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FName>                           CallFunc_Map_Keys_Keys;                            // 0x0B48(0x0010)(ReferenceParm)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0B58(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B59[0x3];                                      // 0x0B59(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   CallFunc_Array_Random_OutItem;                     // 0x0B5C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Random_OutIndex;                    // 0x0B64(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UBP_CharacterData_C*                    CallFunc_Map_Find_Value_1;                         // 0x0B68(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue_1;                   // 0x0B70(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Remove_ReturnValue;                   // 0x0B71(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B72[0x6];                                      // 0x0B72(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 Temp_string_Variable;                              // 0x0B78(0x0010)(ConstParm, ZeroConstructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_12;           // 0x0B88(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0B98(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0B99(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B9A[0x6];                                      // 0x0B9A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<int32, int32>                            CallFunc_GetBaseStatValues_ReturnValue;            // 0x0BA0(0x0050)()
+	int32                                         CallFunc_Map_Find_Value_2;                         // 0x0BF0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue_2;                   // 0x0BF4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue_2;            // 0x0BF5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0BF6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_BF7[0x1];                                      // 0x0BF7(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_SetScalarParameterValue_ParameterValue_ImplicitCast; // 0x0BF8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Delay_Duration_ImplicitCast;              // 0x0BFC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom) == 0x000010, "Wrong alignment on BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom");
 static_assert(sizeof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom) == 0x000C00, "Wrong size on BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom");
@@ -845,55 +867,57 @@ static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, C
 static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, K2Node_CreateDelegate_OutputDelegate_10) == 0x0009A8, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::K2Node_CreateDelegate_OutputDelegate_10' has a wrong offset!");
 static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_CaptureMessage_ReturnValue) == 0x0009B8, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_CaptureMessage_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_K2_SetTimerDelegate_ReturnValue_3) == 0x0009C0, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_K2_SetTimerDelegate_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, Temp_wildcard_Variable_1) == 0x0009C8, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::Temp_wildcard_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, K2Node_DynamicCast_AsBPI_Tool_Performance_Measure_Tool) == 0x0009D0, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::K2Node_DynamicCast_AsBPI_Tool_Performance_Measure_Tool' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, K2Node_DynamicCast_bSuccess_3) == 0x0009E0, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_RandomFloatInRange_ReturnValue) == 0x0009E8, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Map_Values_Values) == 0x0009F0, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Map_Values_Values' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, K2Node_CreateDelegate_OutputDelegate_11) == 0x000A00, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::K2Node_CreateDelegate_OutputDelegate_11' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Array_Get_Item_3) == 0x000A10, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Array_Length_ReturnValue_1) == 0x000A18, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, K2Node_MultiGate_FirstRun) == 0x000A1C, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::K2Node_MultiGate_FirstRun' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, K2Node_MultiGate_Data) == 0x000A20, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::K2Node_MultiGate_Data' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, K2Node_MultiGate_ScratchBool) == 0x000A24, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::K2Node_MultiGate_ScratchBool' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, K2Node_MultiGate_ScratchIndex) == 0x000A28, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::K2Node_MultiGate_ScratchIndex' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Less_IntInt_ReturnValue_1) == 0x000A2C, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000A30, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Map_Find_Value) == 0x000A38, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Map_Find_ReturnValue) == 0x000A40, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, K2Node_CustomEvent_StatId) == 0x000A44, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::K2Node_CustomEvent_StatId' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, K2Node_CustomEvent_StatValue) == 0x000A48, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::K2Node_CustomEvent_StatValue' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000A4C, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Conv_IntToInt64_ReturnValue) == 0x000A50, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000A58, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, K2Node_MakeStruct_FormatArgumentData_1) == 0x000A60, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_GetStat_ReturnValue) == 0x000AA8, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_GetStat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_GetGameInstanceSubsystem_ReturnValue_1) == 0x000AB0, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_GetGameInstanceSubsystem_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Conv_IntToInt64_ReturnValue_1) == 0x000AB8, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Conv_IntToInt64_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, K2Node_MakeStruct_FormatArgumentData_2) == 0x000AC0, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_NotEqual_IntInt_ReturnValue_1) == 0x000B08, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_NotEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, K2Node_MakeArray_Array_1) == 0x000B10, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_BooleanAND_ReturnValue) == 0x000B20, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Format_ReturnValue_1) == 0x000B28, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Format_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Map_Length_ReturnValue) == 0x000B38, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Map_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Map_Keys_Keys) == 0x000B40, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Map_Keys_Keys' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Greater_IntInt_ReturnValue) == 0x000B50, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Array_Random_OutItem) == 0x000B54, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Array_Random_OutItem' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Array_Random_OutIndex) == 0x000B5C, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Array_Random_OutIndex' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Map_Find_Value_1) == 0x000B60, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Map_Find_Value_1' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Map_Find_ReturnValue_1) == 0x000B68, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Map_Find_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Map_Remove_ReturnValue) == 0x000B69, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Map_Remove_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, Temp_string_Variable) == 0x000B70, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::Temp_string_Variable' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, K2Node_CreateDelegate_OutputDelegate_12) == 0x000B80, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::K2Node_CreateDelegate_OutputDelegate_12' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Array_Contains_ReturnValue) == 0x000B90, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Not_PreBool_ReturnValue_1) == 0x000B91, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_GetBaseStatValues_ReturnValue) == 0x000B98, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_GetBaseStatValues_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Map_Find_Value_2) == 0x000BE8, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Map_Find_Value_2' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Map_Find_ReturnValue_2) == 0x000BEC, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Map_Find_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_NotEqual_IntInt_ReturnValue_2) == 0x000BED, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_NotEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_BooleanAND_ReturnValue_1) == 0x000BEE, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_SetScalarParameterValue_ParameterValue_ImplicitCast) == 0x000BF0, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_SetScalarParameterValue_ParameterValue_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Delay_Duration_ImplicitCast) == 0x000BF4, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Delay_Duration_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_CanUseStats_ReturnValue) == 0x0009C8, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_CanUseStats_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_CanUseStats_ReturnValue_1) == 0x0009C9, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_CanUseStats_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, Temp_wildcard_Variable_1) == 0x0009D0, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::Temp_wildcard_Variable_1' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, K2Node_DynamicCast_AsBPI_Tool_Performance_Measure_Tool) == 0x0009D8, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::K2Node_DynamicCast_AsBPI_Tool_Performance_Measure_Tool' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, K2Node_DynamicCast_bSuccess_3) == 0x0009E8, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_RandomFloatInRange_ReturnValue) == 0x0009F0, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Map_Values_Values) == 0x0009F8, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Map_Values_Values' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, K2Node_CreateDelegate_OutputDelegate_11) == 0x000A08, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::K2Node_CreateDelegate_OutputDelegate_11' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Array_Get_Item_3) == 0x000A18, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Array_Get_Item_3' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Array_Length_ReturnValue_1) == 0x000A20, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, K2Node_MultiGate_FirstRun) == 0x000A24, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::K2Node_MultiGate_FirstRun' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, K2Node_MultiGate_Data) == 0x000A28, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::K2Node_MultiGate_Data' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, K2Node_MultiGate_ScratchBool) == 0x000A2C, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::K2Node_MultiGate_ScratchBool' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, K2Node_MultiGate_ScratchIndex) == 0x000A30, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::K2Node_MultiGate_ScratchIndex' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Less_IntInt_ReturnValue_1) == 0x000A34, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000A38, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Map_Find_Value) == 0x000A40, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Map_Find_Value' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Map_Find_ReturnValue) == 0x000A48, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, K2Node_CustomEvent_StatId) == 0x000A4C, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::K2Node_CustomEvent_StatId' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, K2Node_CustomEvent_StatValue) == 0x000A50, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::K2Node_CustomEvent_StatValue' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000A54, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Conv_IntToInt64_ReturnValue) == 0x000A58, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000A60, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, K2Node_MakeStruct_FormatArgumentData_1) == 0x000A68, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_GetStat_ReturnValue) == 0x000AB0, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_GetStat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_GetGameInstanceSubsystem_ReturnValue_1) == 0x000AB8, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_GetGameInstanceSubsystem_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Conv_IntToInt64_ReturnValue_1) == 0x000AC0, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Conv_IntToInt64_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, K2Node_MakeStruct_FormatArgumentData_2) == 0x000AC8, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_NotEqual_IntInt_ReturnValue_1) == 0x000B10, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_NotEqual_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, K2Node_MakeArray_Array_1) == 0x000B18, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::K2Node_MakeArray_Array_1' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_BooleanAND_ReturnValue) == 0x000B28, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Format_ReturnValue_1) == 0x000B30, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Format_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Map_Length_ReturnValue) == 0x000B40, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Map_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Map_Keys_Keys) == 0x000B48, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Map_Keys_Keys' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Greater_IntInt_ReturnValue) == 0x000B58, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Array_Random_OutItem) == 0x000B5C, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Array_Random_OutItem' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Array_Random_OutIndex) == 0x000B64, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Array_Random_OutIndex' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Map_Find_Value_1) == 0x000B68, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Map_Find_Value_1' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Map_Find_ReturnValue_1) == 0x000B70, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Map_Find_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Map_Remove_ReturnValue) == 0x000B71, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Map_Remove_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, Temp_string_Variable) == 0x000B78, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::Temp_string_Variable' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, K2Node_CreateDelegate_OutputDelegate_12) == 0x000B88, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::K2Node_CreateDelegate_OutputDelegate_12' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Array_Contains_ReturnValue) == 0x000B98, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Not_PreBool_ReturnValue_1) == 0x000B99, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_GetBaseStatValues_ReturnValue) == 0x000BA0, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_GetBaseStatValues_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Map_Find_Value_2) == 0x000BF0, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Map_Find_Value_2' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Map_Find_ReturnValue_2) == 0x000BF4, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Map_Find_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_NotEqual_IntInt_ReturnValue_2) == 0x000BF5, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_NotEqual_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_BooleanAND_ReturnValue_1) == 0x000BF6, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_SetScalarParameterValue_ParameterValue_ImplicitCast) == 0x000BF8, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_SetScalarParameterValue_ParameterValue_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom, CallFunc_Delay_Duration_ImplicitCast) == 0x000BFC, "Member 'BP_jRPG_GI_Custom_C_ExecuteUbergraph_BP_jRPG_GI_Custom::CallFunc_Delay_Duration_ImplicitCast' has a wrong offset!");
 
 // Function BP_jRPG_GI_Custom.BP_jRPG_GI_Custom_C.FindNamedIDByGuid
 // 0x0050 (0x0050 - 0x0000)

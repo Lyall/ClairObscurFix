@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
+#include "S_TutorialCardContentData_structs.hpp"
 #include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
-#include "CommonInput_structs.hpp"
-#include "S_TutorialCardContentData_structs.hpp"
 #include "Slate_structs.hpp"
-#include "E_TutorialCardWidgetPosition_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "E_TutorialCardWidgetPosition_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "CommonInput_structs.hpp"
 #include "S_TutorialCardParameters_structs.hpp"
 
 
@@ -58,46 +58,66 @@ static_assert(sizeof(WBP_TutorialCard_C_BndEvt__WBP_TutorialCard_InvisibleHealPa
 static_assert(offsetof(WBP_TutorialCard_C_BndEvt__WBP_TutorialCard_InvisibleHealPartyTutorialButton_K2Node_ComponentBoundEvent_0_OnButtonBaseActionProgress__DelegateSignature, Progress) == 0x000000, "Member 'WBP_TutorialCard_C_BndEvt__WBP_TutorialCard_InvisibleHealPartyTutorialButton_K2Node_ComponentBoundEvent_0_OnButtonBaseActionProgress__DelegateSignature::Progress' has a wrong offset!");
 
 // Function WBP_TutorialCard.WBP_TutorialCard_C.ExecuteUbergraph_WBP_TutorialCard
-// 0x00B0 (0x00B0 - 0x0000)
+// 0x0110 (0x0110 - 0x0000)
 struct WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(ECommonInputType bNewInputType)> K2Node_CreateDelegate_OutputDelegate_1;          // 0x0014(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0024(0x0038)(IsPlainOldData, NoDestructor)
-	float                                         K2Node_Event_InDeltaTime;                          // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0060(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	double                                        K2Node_ComponentBoundEvent_Progress_1;             // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        K2Node_ComponentBoundEvent_Progress;               // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_DoubleDouble_ReturnValue;      // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_jRPG_Controller_World_C*            K2Node_DynamicCast_AsBP_J_RPG_Controller_World;    // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_91[0x3];                                       // 0x0091(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0094(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsActivated_ReturnValue;                  // 0x00A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A5[0x3];                                       // 0x00A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonInputSubsystem*                  CallFunc_GetLocalPlayerSubsystem_ReturnValue;      // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(ECommonInputType bNewInputType)> K2Node_CreateDelegate_OutputDelegate_1;          // 0x0020(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0030(0x0038)(IsPlainOldData, NoDestructor)
+	float                                         K2Node_Event_InDeltaTime;                          // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0070(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_ComponentBoundEvent_Progress_1;             // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_ComponentBoundEvent_Progress;               // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_DoubleDouble_ReturnValue;      // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_jRPG_Controller_World_C*            K2Node_DynamicCast_AsBP_J_RPG_Controller_World;    // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A1[0x3];                                       // 0x00A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x00A4(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsActivated_ReturnValue;                  // 0x00B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B5[0x3];                                       // 0x00B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              CallFunc_GetViewportSize_ReturnValue;              // 0x00B8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector2D_X;                          // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector2D_Y;                          // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonInputSubsystem*                  CallFunc_GetLocalPlayerSubsystem_ReturnValue;      // 0x00D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_MapRangeClamped_ReturnValue;              // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Lerp_ReturnValue;                         // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x00F8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         K2Node_MakeStruct_Bottom_ImplicitCast;             // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard) == 0x000008, "Wrong alignment on WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard");
-static_assert(sizeof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard) == 0x0000B0, "Wrong size on WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard");
+static_assert(sizeof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard) == 0x000110, "Wrong size on WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard");
 static_assert(offsetof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard, EntryPoint) == 0x000000, "Member 'WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard, K2Node_CreateDelegate_OutputDelegate_1) == 0x000014, "Member 'WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard, K2Node_Event_MyGeometry) == 0x000024, "Member 'WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard, K2Node_Event_InDeltaTime) == 0x00005C, "Member 'WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard, K2Node_ComponentBoundEvent_Button) == 0x000060, "Member 'WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard, K2Node_ComponentBoundEvent_Progress_1) == 0x000068, "Member 'WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard::K2Node_ComponentBoundEvent_Progress_1' has a wrong offset!");
-static_assert(offsetof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard, K2Node_ComponentBoundEvent_Progress) == 0x000070, "Member 'WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard::K2Node_ComponentBoundEvent_Progress' has a wrong offset!");
-static_assert(offsetof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard, CallFunc_EqualEqual_DoubleDouble_ReturnValue) == 0x000078, "Member 'WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard::CallFunc_EqualEqual_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard, CallFunc_GetPlayerController_ReturnValue) == 0x000080, "Member 'WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard, K2Node_DynamicCast_AsBP_J_RPG_Controller_World) == 0x000088, "Member 'WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard::K2Node_DynamicCast_AsBP_J_RPG_Controller_World' has a wrong offset!");
-static_assert(offsetof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard, K2Node_DynamicCast_bSuccess) == 0x000090, "Member 'WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard, K2Node_CreateDelegate_OutputDelegate_2) == 0x000094, "Member 'WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard, CallFunc_IsActivated_ReturnValue) == 0x0000A4, "Member 'WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard::CallFunc_IsActivated_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard, CallFunc_GetLocalPlayerSubsystem_ReturnValue) == 0x0000A8, "Member 'WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard::CallFunc_GetLocalPlayerSubsystem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard, CallFunc_SlotAsCanvasSlot_ReturnValue) == 0x000008, "Member 'WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard::CallFunc_SlotAsCanvasSlot_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard, K2Node_CreateDelegate_OutputDelegate_1) == 0x000020, "Member 'WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+static_assert(offsetof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard, K2Node_Event_MyGeometry) == 0x000030, "Member 'WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard::K2Node_Event_MyGeometry' has a wrong offset!");
+static_assert(offsetof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard, K2Node_Event_InDeltaTime) == 0x000068, "Member 'WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard::K2Node_Event_InDeltaTime' has a wrong offset!");
+static_assert(offsetof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard, K2Node_ComponentBoundEvent_Button) == 0x000070, "Member 'WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
+static_assert(offsetof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard, K2Node_ComponentBoundEvent_Progress_1) == 0x000078, "Member 'WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard::K2Node_ComponentBoundEvent_Progress_1' has a wrong offset!");
+static_assert(offsetof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard, K2Node_ComponentBoundEvent_Progress) == 0x000080, "Member 'WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard::K2Node_ComponentBoundEvent_Progress' has a wrong offset!");
+static_assert(offsetof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard, CallFunc_EqualEqual_DoubleDouble_ReturnValue) == 0x000088, "Member 'WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard::CallFunc_EqualEqual_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard, CallFunc_GetPlayerController_ReturnValue) == 0x000090, "Member 'WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard, K2Node_DynamicCast_AsBP_J_RPG_Controller_World) == 0x000098, "Member 'WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard::K2Node_DynamicCast_AsBP_J_RPG_Controller_World' has a wrong offset!");
+static_assert(offsetof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard, K2Node_DynamicCast_bSuccess) == 0x0000A0, "Member 'WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard, K2Node_CreateDelegate_OutputDelegate_2) == 0x0000A4, "Member 'WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
+static_assert(offsetof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard, CallFunc_IsActivated_ReturnValue) == 0x0000B4, "Member 'WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard::CallFunc_IsActivated_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard, CallFunc_GetViewportSize_ReturnValue) == 0x0000B8, "Member 'WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard::CallFunc_GetViewportSize_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard, CallFunc_BreakVector2D_X) == 0x0000C8, "Member 'WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard::CallFunc_BreakVector2D_X' has a wrong offset!");
+static_assert(offsetof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard, CallFunc_BreakVector2D_Y) == 0x0000D0, "Member 'WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard::CallFunc_BreakVector2D_Y' has a wrong offset!");
+static_assert(offsetof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard, CallFunc_GetLocalPlayerSubsystem_ReturnValue) == 0x0000D8, "Member 'WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard::CallFunc_GetLocalPlayerSubsystem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x0000E0, "Member 'WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard, CallFunc_MapRangeClamped_ReturnValue) == 0x0000E8, "Member 'WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard::CallFunc_MapRangeClamped_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard, CallFunc_Lerp_ReturnValue) == 0x0000F0, "Member 'WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard::CallFunc_Lerp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard, K2Node_MakeStruct_Margin) == 0x0000F8, "Member 'WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard::K2Node_MakeStruct_Margin' has a wrong offset!");
+static_assert(offsetof(WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard, K2Node_MakeStruct_Bottom_ImplicitCast) == 0x000108, "Member 'WBP_TutorialCard_C_ExecuteUbergraph_WBP_TutorialCard::K2Node_MakeStruct_Bottom_ImplicitCast' has a wrong offset!");
 
 // Function WBP_TutorialCard.WBP_TutorialCard_C.GetTutorialCardRow
 // 0x0010 (0x0010 - 0x0000)

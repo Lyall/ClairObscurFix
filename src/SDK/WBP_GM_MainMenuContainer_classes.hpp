@@ -20,12 +20,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_GM_MainMenuContainer.WBP_GM_MainMenuContainer_C
-// 0x0098 (0x04C8 - 0x0430)
+// 0x00A0 (0x04D0 - 0x0430)
 class UWBP_GM_MainMenuContainer_C final : public UCommonActivatableWidget
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0430(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UCommonLazyImage*                       Background;                                        // 0x0438(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 BackgroundImage;                                   // 0x0438(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonAnimatedSwitcher*                CommonAnimatedWidgetSwitcher;                      // 0x0440(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                               JournalBackgroundOverlay;                          // 0x0448(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class URetainerBox*                           JournalRetainer;                                   // 0x0450(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -33,12 +33,13 @@ public:
 	class UWBP_Journal_Panel_C*                   WBP_GM_Journal_Page;                               // 0x0460(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_GM_TeamOverview3D_Page_C*          WBP_GM_TeamOverview3D_Page;                        // 0x0468(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_Items_Panel_C*                     WBP_Items_Panel;                                   // 0x0470(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class ABP_GameMenuScene_C*                    GameMenuScene;                                     // 0x0478(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void(class UBP_CharacterData_C* CharacterData)> OnCharacterSelected;    // 0x0480(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	class UCommonActivatableWidget*               CurrentActiveWidget;                               // 0x0490(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void()>              OnBackToExplorationRequested;                      // 0x0498(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void(E_GameMenuPage InActivePage)> OnActivePageChanged;                 // 0x04A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void(class UBP_CharacterData_C* CharacterData)> OnCharacterFocused;     // 0x04B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	class UWBP_WidescreenRatioBox_C*              WBP_WidescreenRatioBox;                            // 0x0478(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ABP_GameMenuScene_C*                    GameMenuScene;                                     // 0x0480(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	TMulticastInlineDelegate<void(class UBP_CharacterData_C* CharacterData)> OnCharacterSelected;    // 0x0488(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	class UCommonActivatableWidget*               CurrentActiveWidget;                               // 0x0498(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TMulticastInlineDelegate<void()>              OnBackToExplorationRequested;                      // 0x04A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(E_GameMenuPage InActivePage)> OnActivePageChanged;                 // 0x04B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(class UBP_CharacterData_C* CharacterData)> OnCharacterFocused;     // 0x04C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void ActivateCurrentWidgetInSwitcher();
@@ -71,9 +72,9 @@ public:
 	}
 };
 static_assert(alignof(UWBP_GM_MainMenuContainer_C) == 0x000008, "Wrong alignment on UWBP_GM_MainMenuContainer_C");
-static_assert(sizeof(UWBP_GM_MainMenuContainer_C) == 0x0004C8, "Wrong size on UWBP_GM_MainMenuContainer_C");
+static_assert(sizeof(UWBP_GM_MainMenuContainer_C) == 0x0004D0, "Wrong size on UWBP_GM_MainMenuContainer_C");
 static_assert(offsetof(UWBP_GM_MainMenuContainer_C, UberGraphFrame) == 0x000430, "Member 'UWBP_GM_MainMenuContainer_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_GM_MainMenuContainer_C, Background) == 0x000438, "Member 'UWBP_GM_MainMenuContainer_C::Background' has a wrong offset!");
+static_assert(offsetof(UWBP_GM_MainMenuContainer_C, BackgroundImage) == 0x000438, "Member 'UWBP_GM_MainMenuContainer_C::BackgroundImage' has a wrong offset!");
 static_assert(offsetof(UWBP_GM_MainMenuContainer_C, CommonAnimatedWidgetSwitcher) == 0x000440, "Member 'UWBP_GM_MainMenuContainer_C::CommonAnimatedWidgetSwitcher' has a wrong offset!");
 static_assert(offsetof(UWBP_GM_MainMenuContainer_C, JournalBackgroundOverlay) == 0x000448, "Member 'UWBP_GM_MainMenuContainer_C::JournalBackgroundOverlay' has a wrong offset!");
 static_assert(offsetof(UWBP_GM_MainMenuContainer_C, JournalRetainer) == 0x000450, "Member 'UWBP_GM_MainMenuContainer_C::JournalRetainer' has a wrong offset!");
@@ -81,12 +82,13 @@ static_assert(offsetof(UWBP_GM_MainMenuContainer_C, LevelImage) == 0x000458, "Me
 static_assert(offsetof(UWBP_GM_MainMenuContainer_C, WBP_GM_Journal_Page) == 0x000460, "Member 'UWBP_GM_MainMenuContainer_C::WBP_GM_Journal_Page' has a wrong offset!");
 static_assert(offsetof(UWBP_GM_MainMenuContainer_C, WBP_GM_TeamOverview3D_Page) == 0x000468, "Member 'UWBP_GM_MainMenuContainer_C::WBP_GM_TeamOverview3D_Page' has a wrong offset!");
 static_assert(offsetof(UWBP_GM_MainMenuContainer_C, WBP_Items_Panel) == 0x000470, "Member 'UWBP_GM_MainMenuContainer_C::WBP_Items_Panel' has a wrong offset!");
-static_assert(offsetof(UWBP_GM_MainMenuContainer_C, GameMenuScene) == 0x000478, "Member 'UWBP_GM_MainMenuContainer_C::GameMenuScene' has a wrong offset!");
-static_assert(offsetof(UWBP_GM_MainMenuContainer_C, OnCharacterSelected) == 0x000480, "Member 'UWBP_GM_MainMenuContainer_C::OnCharacterSelected' has a wrong offset!");
-static_assert(offsetof(UWBP_GM_MainMenuContainer_C, CurrentActiveWidget) == 0x000490, "Member 'UWBP_GM_MainMenuContainer_C::CurrentActiveWidget' has a wrong offset!");
-static_assert(offsetof(UWBP_GM_MainMenuContainer_C, OnBackToExplorationRequested) == 0x000498, "Member 'UWBP_GM_MainMenuContainer_C::OnBackToExplorationRequested' has a wrong offset!");
-static_assert(offsetof(UWBP_GM_MainMenuContainer_C, OnActivePageChanged) == 0x0004A8, "Member 'UWBP_GM_MainMenuContainer_C::OnActivePageChanged' has a wrong offset!");
-static_assert(offsetof(UWBP_GM_MainMenuContainer_C, OnCharacterFocused) == 0x0004B8, "Member 'UWBP_GM_MainMenuContainer_C::OnCharacterFocused' has a wrong offset!");
+static_assert(offsetof(UWBP_GM_MainMenuContainer_C, WBP_WidescreenRatioBox) == 0x000478, "Member 'UWBP_GM_MainMenuContainer_C::WBP_WidescreenRatioBox' has a wrong offset!");
+static_assert(offsetof(UWBP_GM_MainMenuContainer_C, GameMenuScene) == 0x000480, "Member 'UWBP_GM_MainMenuContainer_C::GameMenuScene' has a wrong offset!");
+static_assert(offsetof(UWBP_GM_MainMenuContainer_C, OnCharacterSelected) == 0x000488, "Member 'UWBP_GM_MainMenuContainer_C::OnCharacterSelected' has a wrong offset!");
+static_assert(offsetof(UWBP_GM_MainMenuContainer_C, CurrentActiveWidget) == 0x000498, "Member 'UWBP_GM_MainMenuContainer_C::CurrentActiveWidget' has a wrong offset!");
+static_assert(offsetof(UWBP_GM_MainMenuContainer_C, OnBackToExplorationRequested) == 0x0004A0, "Member 'UWBP_GM_MainMenuContainer_C::OnBackToExplorationRequested' has a wrong offset!");
+static_assert(offsetof(UWBP_GM_MainMenuContainer_C, OnActivePageChanged) == 0x0004B0, "Member 'UWBP_GM_MainMenuContainer_C::OnActivePageChanged' has a wrong offset!");
+static_assert(offsetof(UWBP_GM_MainMenuContainer_C, OnCharacterFocused) == 0x0004C0, "Member 'UWBP_GM_MainMenuContainer_C::OnCharacterFocused' has a wrong offset!");
 
 }
 

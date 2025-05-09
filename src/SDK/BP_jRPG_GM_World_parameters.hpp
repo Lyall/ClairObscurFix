@@ -10,16 +10,71 @@
 
 #include "Basic.hpp"
 
-#include "S_AreaAudioParameters_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "S_ChangeLevelParameters_structs.hpp"
 #include "Engine_structs.hpp"
+#include "S_AreaAudioParameters_structs.hpp"
 #include "FLevelDataEntry_structs.hpp"
+#include "S_ChangeLevelParameters_structs.hpp"
 #include "S_GameFlowTransitionRequest_structs.hpp"
 
 
 namespace SDK::Params
 {
+
+// Function BP_jRPG_GM_World.BP_jRPG_GM_World_C.ReceiveEndPlay
+// 0x0001 (0x0001 - 0x0000)
+struct BP_jRPG_GM_World_C_ReceiveEndPlay final
+{
+public:
+	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_jRPG_GM_World_C_ReceiveEndPlay) == 0x000001, "Wrong alignment on BP_jRPG_GM_World_C_ReceiveEndPlay");
+static_assert(sizeof(BP_jRPG_GM_World_C_ReceiveEndPlay) == 0x000001, "Wrong size on BP_jRPG_GM_World_C_ReceiveEndPlay");
+static_assert(offsetof(BP_jRPG_GM_World_C_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'BP_jRPG_GM_World_C_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+
+// Function BP_jRPG_GM_World.BP_jRPG_GM_World_C.OnGraphicSettingsApplied
+// 0x0008 (0x0008 - 0x0000)
+struct BP_jRPG_GM_World_C_OnGraphicSettingsApplied final
+{
+public:
+	class UConfigurableGameUserSettings*          Settings;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_jRPG_GM_World_C_OnGraphicSettingsApplied) == 0x000008, "Wrong alignment on BP_jRPG_GM_World_C_OnGraphicSettingsApplied");
+static_assert(sizeof(BP_jRPG_GM_World_C_OnGraphicSettingsApplied) == 0x000008, "Wrong size on BP_jRPG_GM_World_C_OnGraphicSettingsApplied");
+static_assert(offsetof(BP_jRPG_GM_World_C_OnGraphicSettingsApplied, Settings) == 0x000000, "Member 'BP_jRPG_GM_World_C_OnGraphicSettingsApplied::Settings' has a wrong offset!");
+
+// Function BP_jRPG_GM_World.BP_jRPG_GM_World_C.K2_OnRestartPlayer
+// 0x0008 (0x0008 - 0x0000)
+struct BP_jRPG_GM_World_C_K2_OnRestartPlayer final
+{
+public:
+	class AController*                            NewPlayer;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_jRPG_GM_World_C_K2_OnRestartPlayer) == 0x000008, "Wrong alignment on BP_jRPG_GM_World_C_K2_OnRestartPlayer");
+static_assert(sizeof(BP_jRPG_GM_World_C_K2_OnRestartPlayer) == 0x000008, "Wrong size on BP_jRPG_GM_World_C_K2_OnRestartPlayer");
+static_assert(offsetof(BP_jRPG_GM_World_C_K2_OnRestartPlayer, NewPlayer) == 0x000000, "Member 'BP_jRPG_GM_World_C_K2_OnRestartPlayer::NewPlayer' has a wrong offset!");
+
+// Function BP_jRPG_GM_World.BP_jRPG_GM_World_C.HandleStartingNewPlayer
+// 0x0008 (0x0008 - 0x0000)
+struct BP_jRPG_GM_World_C_HandleStartingNewPlayer final
+{
+public:
+	class APlayerController*                      NewPlayer;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_jRPG_GM_World_C_HandleStartingNewPlayer) == 0x000008, "Wrong alignment on BP_jRPG_GM_World_C_HandleStartingNewPlayer");
+static_assert(sizeof(BP_jRPG_GM_World_C_HandleStartingNewPlayer) == 0x000008, "Wrong size on BP_jRPG_GM_World_C_HandleStartingNewPlayer");
+static_assert(offsetof(BP_jRPG_GM_World_C_HandleStartingNewPlayer, NewPlayer) == 0x000000, "Member 'BP_jRPG_GM_World_C_HandleStartingNewPlayer::NewPlayer' has a wrong offset!");
+
+// Function BP_jRPG_GM_World.BP_jRPG_GM_World_C.GetSpawnTransform
+// 0x0060 (0x0060 - 0x0000)
+struct BP_jRPG_GM_World_C_GetSpawnTransform final
+{
+public:
+	struct FTransform                             SpawnTransform_0;                                  // 0x0000(0x0060)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_jRPG_GM_World_C_GetSpawnTransform) == 0x000010, "Wrong alignment on BP_jRPG_GM_World_C_GetSpawnTransform");
+static_assert(sizeof(BP_jRPG_GM_World_C_GetSpawnTransform) == 0x000060, "Wrong size on BP_jRPG_GM_World_C_GetSpawnTransform");
+static_assert(offsetof(BP_jRPG_GM_World_C_GetSpawnTransform, SpawnTransform_0) == 0x000000, "Member 'BP_jRPG_GM_World_C_GetSpawnTransform::SpawnTransform_0' has a wrong offset!");
 
 // Function BP_jRPG_GM_World.BP_jRPG_GM_World_C.ExecuteUbergraph_BP_jRPG_GM_World
 // 0x0450 (0x0450 - 0x0000)
@@ -142,61 +197,6 @@ static_assert(offsetof(BP_jRPG_GM_World_C_ExecuteUbergraph_BP_jRPG_GM_World, K2N
 static_assert(offsetof(BP_jRPG_GM_World_C_ExecuteUbergraph_BP_jRPG_GM_World, K2Node_Event_EndPlayReason) == 0x000430, "Member 'BP_jRPG_GM_World_C_ExecuteUbergraph_BP_jRPG_GM_World::K2Node_Event_EndPlayReason' has a wrong offset!");
 static_assert(offsetof(BP_jRPG_GM_World_C_ExecuteUbergraph_BP_jRPG_GM_World, CallFunc_GetConfigurableGameUserSettings_GameUserSettings_1) == 0x000438, "Member 'BP_jRPG_GM_World_C_ExecuteUbergraph_BP_jRPG_GM_World::CallFunc_GetConfigurableGameUserSettings_GameUserSettings_1' has a wrong offset!");
 static_assert(offsetof(BP_jRPG_GM_World_C_ExecuteUbergraph_BP_jRPG_GM_World, K2Node_CreateDelegate_OutputDelegate_1) == 0x000440, "Member 'BP_jRPG_GM_World_C_ExecuteUbergraph_BP_jRPG_GM_World::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-
-// Function BP_jRPG_GM_World.BP_jRPG_GM_World_C.GetSpawnTransform
-// 0x0060 (0x0060 - 0x0000)
-struct BP_jRPG_GM_World_C_GetSpawnTransform final
-{
-public:
-	struct FTransform                             SpawnTransform_0;                                  // 0x0000(0x0060)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_jRPG_GM_World_C_GetSpawnTransform) == 0x000010, "Wrong alignment on BP_jRPG_GM_World_C_GetSpawnTransform");
-static_assert(sizeof(BP_jRPG_GM_World_C_GetSpawnTransform) == 0x000060, "Wrong size on BP_jRPG_GM_World_C_GetSpawnTransform");
-static_assert(offsetof(BP_jRPG_GM_World_C_GetSpawnTransform, SpawnTransform_0) == 0x000000, "Member 'BP_jRPG_GM_World_C_GetSpawnTransform::SpawnTransform_0' has a wrong offset!");
-
-// Function BP_jRPG_GM_World.BP_jRPG_GM_World_C.HandleStartingNewPlayer
-// 0x0008 (0x0008 - 0x0000)
-struct BP_jRPG_GM_World_C_HandleStartingNewPlayer final
-{
-public:
-	class APlayerController*                      NewPlayer;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_jRPG_GM_World_C_HandleStartingNewPlayer) == 0x000008, "Wrong alignment on BP_jRPG_GM_World_C_HandleStartingNewPlayer");
-static_assert(sizeof(BP_jRPG_GM_World_C_HandleStartingNewPlayer) == 0x000008, "Wrong size on BP_jRPG_GM_World_C_HandleStartingNewPlayer");
-static_assert(offsetof(BP_jRPG_GM_World_C_HandleStartingNewPlayer, NewPlayer) == 0x000000, "Member 'BP_jRPG_GM_World_C_HandleStartingNewPlayer::NewPlayer' has a wrong offset!");
-
-// Function BP_jRPG_GM_World.BP_jRPG_GM_World_C.K2_OnRestartPlayer
-// 0x0008 (0x0008 - 0x0000)
-struct BP_jRPG_GM_World_C_K2_OnRestartPlayer final
-{
-public:
-	class AController*                            NewPlayer;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_jRPG_GM_World_C_K2_OnRestartPlayer) == 0x000008, "Wrong alignment on BP_jRPG_GM_World_C_K2_OnRestartPlayer");
-static_assert(sizeof(BP_jRPG_GM_World_C_K2_OnRestartPlayer) == 0x000008, "Wrong size on BP_jRPG_GM_World_C_K2_OnRestartPlayer");
-static_assert(offsetof(BP_jRPG_GM_World_C_K2_OnRestartPlayer, NewPlayer) == 0x000000, "Member 'BP_jRPG_GM_World_C_K2_OnRestartPlayer::NewPlayer' has a wrong offset!");
-
-// Function BP_jRPG_GM_World.BP_jRPG_GM_World_C.OnGraphicSettingsApplied
-// 0x0008 (0x0008 - 0x0000)
-struct BP_jRPG_GM_World_C_OnGraphicSettingsApplied final
-{
-public:
-	class UConfigurableGameUserSettings*          Settings;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_jRPG_GM_World_C_OnGraphicSettingsApplied) == 0x000008, "Wrong alignment on BP_jRPG_GM_World_C_OnGraphicSettingsApplied");
-static_assert(sizeof(BP_jRPG_GM_World_C_OnGraphicSettingsApplied) == 0x000008, "Wrong size on BP_jRPG_GM_World_C_OnGraphicSettingsApplied");
-static_assert(offsetof(BP_jRPG_GM_World_C_OnGraphicSettingsApplied, Settings) == 0x000000, "Member 'BP_jRPG_GM_World_C_OnGraphicSettingsApplied::Settings' has a wrong offset!");
-
-// Function BP_jRPG_GM_World.BP_jRPG_GM_World_C.ReceiveEndPlay
-// 0x0001 (0x0001 - 0x0000)
-struct BP_jRPG_GM_World_C_ReceiveEndPlay final
-{
-public:
-	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_jRPG_GM_World_C_ReceiveEndPlay) == 0x000001, "Wrong alignment on BP_jRPG_GM_World_C_ReceiveEndPlay");
-static_assert(sizeof(BP_jRPG_GM_World_C_ReceiveEndPlay) == 0x000001, "Wrong size on BP_jRPG_GM_World_C_ReceiveEndPlay");
-static_assert(offsetof(BP_jRPG_GM_World_C_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'BP_jRPG_GM_World_C_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
 
 }
 

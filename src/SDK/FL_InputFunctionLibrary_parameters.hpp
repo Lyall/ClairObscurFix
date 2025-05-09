@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "EInputAction_structs.hpp"
+#include "Engine_structs.hpp"
 #include "InputCore_structs.hpp"
 #include "FKeyVisualInfo_structs.hpp"
 #include "EInputType_structs.hpp"

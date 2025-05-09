@@ -41,9 +41,9 @@ public:
 	bool                                          IsHoveredEntrySelected;                            // 0x04C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void IsAnyItemPlaying(bool* IsAnyItemPlaying_0);
 	void GetActionBar(class UWBP_CommonActionBarContainer_C** WBP_CommonActionBarContainer);
 	void UnlockJournalItem(const struct FItemDataTableRowHandle& UnlockedJournal);
-	void Finished_913628BC43AE94E7CD5F1C8F0D1D0D60();
 	void BP_OnActivated();
 	void BP_OnDeactivated();
 	void BndEvt__WBP_Journal_Panel_WBP_CommonBoundActionButton_Back_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
@@ -53,7 +53,9 @@ public:
 	void OnInputMethodChanged_Event(ECommonInputType bNewInputType);
 	void BndEvt__WBP_Journal_Panel_WBP_JournalEntriesList_K2Node_ComponentBoundEvent_2_OnJournalItemUnlocked__DelegateSignature(class UBP_JournalViewItem_C* JournalViewItem);
 	void RebuildActionBarButtons(class UWBP_CommonActionBarContainer_C* ActionBarContainerWidget);
-	void BndEvt__WBP_Journal_Panel_WBP_JournalEntriesList_K2Node_ComponentBoundEvent_3_OnJournalItemClicked__DelegateSignature(bool IsSelected);
+	void BndEvt__WBP_Journal_Panel_WBP_JournalEntriesList_K2Node_ComponentBoundEvent_3_OnJournalItemClicked__DelegateSignature(class UBP_JournalViewItem_C* JournalViewItem, bool IsSelected);
+	void OnTimerEnded();
+	void OnUnlockJournalBackActionFallback();
 	void ExecuteUbergraph_WBP_Journal_Panel(int32 EntryPoint);
 
 public:

@@ -22,7 +22,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_PauseMenu.WBP_PauseMenu_C
-// 0x0138 (0x0568 - 0x0430)
+// 0x0140 (0x0570 - 0x0430)
 class UWBP_PauseMenu_C final : public UCommonActivatableWidget
 {
 public:
@@ -46,16 +46,17 @@ public:
 	class UWBP_CommonBoundActionButton_C*         WBP_CommonBoundActionButton_Back;                  // 0x04B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_GM_Settings_Page_C*                WBP_GM_Settings_Page;                              // 0x04C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_TutorialCollection_C*              WBP_TutorialCollection;                            // 0x04C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void()>              OnBackToExploration;                               // 0x04D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	struct FDataTableRowHandle                    SDQuitButton;                                      // 0x04E0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	TMulticastInlineDelegate<void()>              OnRequestQuit;                                     // 0x04F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	struct FSoundEventDataTableRowHandle          SD_OnActivated;                                    // 0x0500(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FSoundEventDataTableRowHandle          SD_OnDeactivated;                                  // 0x0510(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FSoundEventDataTableRowHandle          SD_OnBackFromSettings;                             // 0x0520(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	TArray<class UBP_SaveGameData_C*>             BackupSaveDatas;                                   // 0x0530(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class FString>                         BackupSaveNames;                                   // 0x0540(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class FString                                 LastSelectedBackupSave;                            // 0x0550(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	class UBP_LatentAction_LoadGame_C*            LoadlLatentAction;                                 // 0x0560(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UWBP_WidescreenRatioBox_C*              WBP_WidescreenRatioBox;                            // 0x04D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TMulticastInlineDelegate<void()>              OnBackToExploration;                               // 0x04D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FDataTableRowHandle                    SDQuitButton;                                      // 0x04E8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	TMulticastInlineDelegate<void()>              OnRequestQuit;                                     // 0x04F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FSoundEventDataTableRowHandle          SD_OnActivated;                                    // 0x0508(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FSoundEventDataTableRowHandle          SD_OnDeactivated;                                  // 0x0518(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FSoundEventDataTableRowHandle          SD_OnBackFromSettings;                             // 0x0528(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	TArray<class UBP_SaveGameData_C*>             BackupSaveDatas;                                   // 0x0538(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class FString>                         BackupSaveNames;                                   // 0x0548(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FString                                 LastSelectedBackupSave;                            // 0x0558(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	class UBP_LatentAction_LoadGame_C*            LoadlLatentAction;                                 // 0x0568(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void AreSettingsOpen(bool* AreSettingsOpen_0);
@@ -97,7 +98,7 @@ public:
 	}
 };
 static_assert(alignof(UWBP_PauseMenu_C) == 0x000008, "Wrong alignment on UWBP_PauseMenu_C");
-static_assert(sizeof(UWBP_PauseMenu_C) == 0x000568, "Wrong size on UWBP_PauseMenu_C");
+static_assert(sizeof(UWBP_PauseMenu_C) == 0x000570, "Wrong size on UWBP_PauseMenu_C");
 static_assert(offsetof(UWBP_PauseMenu_C, UberGraphFrame) == 0x000430, "Member 'UWBP_PauseMenu_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWBP_PauseMenu_C, Background) == 0x000438, "Member 'UWBP_PauseMenu_C::Background' has a wrong offset!");
 static_assert(offsetof(UWBP_PauseMenu_C, BackgroundBlur) == 0x000440, "Member 'UWBP_PauseMenu_C::BackgroundBlur' has a wrong offset!");
@@ -118,16 +119,17 @@ static_assert(offsetof(UWBP_PauseMenu_C, SettingsButton) == 0x0004B0, "Member 'U
 static_assert(offsetof(UWBP_PauseMenu_C, WBP_CommonBoundActionButton_Back) == 0x0004B8, "Member 'UWBP_PauseMenu_C::WBP_CommonBoundActionButton_Back' has a wrong offset!");
 static_assert(offsetof(UWBP_PauseMenu_C, WBP_GM_Settings_Page) == 0x0004C0, "Member 'UWBP_PauseMenu_C::WBP_GM_Settings_Page' has a wrong offset!");
 static_assert(offsetof(UWBP_PauseMenu_C, WBP_TutorialCollection) == 0x0004C8, "Member 'UWBP_PauseMenu_C::WBP_TutorialCollection' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, OnBackToExploration) == 0x0004D0, "Member 'UWBP_PauseMenu_C::OnBackToExploration' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, SDQuitButton) == 0x0004E0, "Member 'UWBP_PauseMenu_C::SDQuitButton' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, OnRequestQuit) == 0x0004F0, "Member 'UWBP_PauseMenu_C::OnRequestQuit' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, SD_OnActivated) == 0x000500, "Member 'UWBP_PauseMenu_C::SD_OnActivated' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, SD_OnDeactivated) == 0x000510, "Member 'UWBP_PauseMenu_C::SD_OnDeactivated' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, SD_OnBackFromSettings) == 0x000520, "Member 'UWBP_PauseMenu_C::SD_OnBackFromSettings' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, BackupSaveDatas) == 0x000530, "Member 'UWBP_PauseMenu_C::BackupSaveDatas' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, BackupSaveNames) == 0x000540, "Member 'UWBP_PauseMenu_C::BackupSaveNames' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, LastSelectedBackupSave) == 0x000550, "Member 'UWBP_PauseMenu_C::LastSelectedBackupSave' has a wrong offset!");
-static_assert(offsetof(UWBP_PauseMenu_C, LoadlLatentAction) == 0x000560, "Member 'UWBP_PauseMenu_C::LoadlLatentAction' has a wrong offset!");
+static_assert(offsetof(UWBP_PauseMenu_C, WBP_WidescreenRatioBox) == 0x0004D0, "Member 'UWBP_PauseMenu_C::WBP_WidescreenRatioBox' has a wrong offset!");
+static_assert(offsetof(UWBP_PauseMenu_C, OnBackToExploration) == 0x0004D8, "Member 'UWBP_PauseMenu_C::OnBackToExploration' has a wrong offset!");
+static_assert(offsetof(UWBP_PauseMenu_C, SDQuitButton) == 0x0004E8, "Member 'UWBP_PauseMenu_C::SDQuitButton' has a wrong offset!");
+static_assert(offsetof(UWBP_PauseMenu_C, OnRequestQuit) == 0x0004F8, "Member 'UWBP_PauseMenu_C::OnRequestQuit' has a wrong offset!");
+static_assert(offsetof(UWBP_PauseMenu_C, SD_OnActivated) == 0x000508, "Member 'UWBP_PauseMenu_C::SD_OnActivated' has a wrong offset!");
+static_assert(offsetof(UWBP_PauseMenu_C, SD_OnDeactivated) == 0x000518, "Member 'UWBP_PauseMenu_C::SD_OnDeactivated' has a wrong offset!");
+static_assert(offsetof(UWBP_PauseMenu_C, SD_OnBackFromSettings) == 0x000528, "Member 'UWBP_PauseMenu_C::SD_OnBackFromSettings' has a wrong offset!");
+static_assert(offsetof(UWBP_PauseMenu_C, BackupSaveDatas) == 0x000538, "Member 'UWBP_PauseMenu_C::BackupSaveDatas' has a wrong offset!");
+static_assert(offsetof(UWBP_PauseMenu_C, BackupSaveNames) == 0x000548, "Member 'UWBP_PauseMenu_C::BackupSaveNames' has a wrong offset!");
+static_assert(offsetof(UWBP_PauseMenu_C, LastSelectedBackupSave) == 0x000558, "Member 'UWBP_PauseMenu_C::LastSelectedBackupSave' has a wrong offset!");
+static_assert(offsetof(UWBP_PauseMenu_C, LoadlLatentAction) == 0x000568, "Member 'UWBP_PauseMenu_C::LoadlLatentAction' has a wrong offset!");
 
 }
 

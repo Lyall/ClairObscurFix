@@ -11,13 +11,13 @@
 #include "Basic.hpp"
 
 #include "GameplayTags_structs.hpp"
+#include "EOptionalBoolean_structs.hpp"
 #include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Slate_structs.hpp"
-#include "EUINavigationDirection_structs.hpp"
-#include "EOptionalBoolean_structs.hpp"
 #include "UMG_structs.hpp"
+#include "EUINavigationDirection_structs.hpp"
 #include "RigLogicModule_structs.hpp"
 #include "FBattleSequenceTimelineKeyframe_structs.hpp"
 

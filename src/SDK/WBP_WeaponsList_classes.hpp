@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "E_jRPG_ItemSubtype_structs.hpp"
+#include "ECharacterAttribute_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "CommonUI_classes.hpp"
-#include "ECharacterAttribute_structs.hpp"
 #include "UMG_structs.hpp"
 #include "BlueprintSorting_structs.hpp"
 

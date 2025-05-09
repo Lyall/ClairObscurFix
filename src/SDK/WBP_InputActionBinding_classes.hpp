@@ -12,8 +12,8 @@
 
 #include "SandFall_classes.hpp"
 #include "Engine_structs.hpp"
-#include "InputCore_structs.hpp"
 #include "S_InputBindingParameters_structs.hpp"
+#include "InputCore_structs.hpp"
 #include "UMG_structs.hpp"
 #include "CommonInput_structs.hpp"
 

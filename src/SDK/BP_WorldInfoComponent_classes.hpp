@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "E_EnemyWorldState_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "S_EnemyWorldInfoData_structs.hpp"
-#include "E_EnemyWorldState_structs.hpp"
 
 
 namespace SDK

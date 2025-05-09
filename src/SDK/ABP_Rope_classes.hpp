@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "E_RopeMovementStep_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "E_RopeMovementStep_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
 #include "E_RopeMovementDirection_structs.hpp"
 

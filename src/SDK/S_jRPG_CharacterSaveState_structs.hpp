@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "FPassiveEffectProgression_structs.hpp"
-#include "ECharacterAttribute_structs.hpp"
-#include "FEquipmentSlot_structs.hpp"
 #include "S_CharacterCustomizationItemData_structs.hpp"
+#include "FPassiveEffectProgression_structs.hpp"
+#include "FEquipmentSlot_structs.hpp"
+#include "ECharacterAttribute_structs.hpp"
 
 
 namespace SDK

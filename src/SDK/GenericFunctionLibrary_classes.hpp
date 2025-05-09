@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "RigLogicModule_structs.hpp"
+#include "EOptionalBoolean_structs.hpp"
 #include "Engine_classes.hpp"
 #include "UMG_structs.hpp"
 #include "EUINavigationDirection_structs.hpp"
-#include "EOptionalBoolean_structs.hpp"
 
 
 namespace SDK

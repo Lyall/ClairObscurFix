@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
+#include "E_ClimbingComponentState_structs.hpp"
+#include "ABP_Climbing_V2_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "E_Climbing_Direction_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
-#include "ABP_Climbing_V2_structs.hpp"
-#include "E_ClimbingComponentState_structs.hpp"
+#include "E_Climbing_Direction_structs.hpp"
 
 
 namespace SDK

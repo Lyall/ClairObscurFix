@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "FCharacterAttributeScalingList_structs.hpp"
 #include "ECharacterAttribute_structs.hpp"
 #include "Engine_classes.hpp"
-#include "FCharacterAttributeScalingList_structs.hpp"
 
 
 namespace SDK

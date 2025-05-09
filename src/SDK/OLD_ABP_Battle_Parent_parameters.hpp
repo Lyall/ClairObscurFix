@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "E_jRPG_CombatStyle_structs.hpp"
 #include "Engine_structs.hpp"
+#include "E_jRPG_CombatStyle_structs.hpp"
 #include "EBattleTurnState_structs.hpp"
 
 

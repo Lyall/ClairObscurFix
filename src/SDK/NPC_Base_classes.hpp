@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "BP_jRPG_NPC_Dialog_classes.hpp"
 #include "Engine_structs.hpp"
 #include "InputCore_structs.hpp"
-#include "BP_jRPG_NPC_Dialog_classes.hpp"
 
 
 namespace SDK

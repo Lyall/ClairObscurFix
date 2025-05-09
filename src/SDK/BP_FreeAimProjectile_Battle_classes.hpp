@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "EAttackType_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "EAttackType_structs.hpp"
 #include "BP_FreeAimProjectile_Base_classes.hpp"
 
 

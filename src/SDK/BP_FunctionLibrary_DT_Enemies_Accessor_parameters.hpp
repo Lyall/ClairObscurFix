@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "S_jRPG_Encounter_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "S_jRPG_Enemy_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params

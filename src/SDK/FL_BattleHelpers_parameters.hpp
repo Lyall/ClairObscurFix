@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "EAttackType_structs.hpp"
 #include "EDamageReason_structs.hpp"
+#include "EAttackType_structs.hpp"
 
 
 namespace SDK::Params

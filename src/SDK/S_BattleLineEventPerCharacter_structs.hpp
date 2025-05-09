@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "S_BattleLinePool_structs.hpp"
 #include "E_CharacterList_structs.hpp"
+#include "S_BattleLinePool_structs.hpp"
 
 
 namespace SDK

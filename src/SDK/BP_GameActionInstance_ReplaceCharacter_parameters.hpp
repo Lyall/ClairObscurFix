@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "FEquipmentSlot_structs.hpp"
 #include "E_jRPG_ItemType_structs.hpp"
-#include "S_jRPG_CharacterSaveState_structs.hpp"
+#include "FEquipmentSlot_structs.hpp"
 #include "S_ReplaceCharacterParameters_structs.hpp"
+#include "S_jRPG_CharacterSaveState_structs.hpp"
 
 
 namespace SDK::Params

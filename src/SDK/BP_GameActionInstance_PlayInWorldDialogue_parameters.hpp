@@ -16,17 +16,6 @@
 namespace SDK::Params
 {
 
-// Function BP_GameActionInstance_PlayInWorldDialogue.BP_GameActionInstance_PlayInWorldDialogue_C.ExecuteGameAction
-// 0x0008 (0x0008 - 0x0000)
-struct BP_GameActionInstance_PlayInWorldDialogue_C_ExecuteGameAction final
-{
-public:
-	const class APlayerController*                Controller;                                        // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_GameActionInstance_PlayInWorldDialogue_C_ExecuteGameAction) == 0x000008, "Wrong alignment on BP_GameActionInstance_PlayInWorldDialogue_C_ExecuteGameAction");
-static_assert(sizeof(BP_GameActionInstance_PlayInWorldDialogue_C_ExecuteGameAction) == 0x000008, "Wrong size on BP_GameActionInstance_PlayInWorldDialogue_C_ExecuteGameAction");
-static_assert(offsetof(BP_GameActionInstance_PlayInWorldDialogue_C_ExecuteGameAction, Controller) == 0x000000, "Member 'BP_GameActionInstance_PlayInWorldDialogue_C_ExecuteGameAction::Controller' has a wrong offset!");
-
 // Function BP_GameActionInstance_PlayInWorldDialogue.BP_GameActionInstance_PlayInWorldDialogue_C.ExecuteUbergraph_BP_GameActionInstance_PlayInWorldDialogue
 // 0x0040 (0x0040 - 0x0000)
 struct BP_GameActionInstance_PlayInWorldDialogue_C_ExecuteUbergraph_BP_GameActionInstance_PlayInWorldDialogue final
@@ -57,6 +46,39 @@ static_assert(offsetof(BP_GameActionInstance_PlayInWorldDialogue_C_ExecuteUbergr
 static_assert(offsetof(BP_GameActionInstance_PlayInWorldDialogue_C_ExecuteUbergraph_BP_GameActionInstance_PlayInWorldDialogue, K2Node_DynamicCast_bSuccess_1) == 0x000038, "Member 'BP_GameActionInstance_PlayInWorldDialogue_C_ExecuteUbergraph_BP_GameActionInstance_PlayInWorldDialogue::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
 static_assert(offsetof(BP_GameActionInstance_PlayInWorldDialogue_C_ExecuteUbergraph_BP_GameActionInstance_PlayInWorldDialogue, CallFunc_PlayInWorldDialogue_DialogueNotPlayed) == 0x000039, "Member 'BP_GameActionInstance_PlayInWorldDialogue_C_ExecuteUbergraph_BP_GameActionInstance_PlayInWorldDialogue::CallFunc_PlayInWorldDialogue_DialogueNotPlayed' has a wrong offset!");
 static_assert(offsetof(BP_GameActionInstance_PlayInWorldDialogue_C_ExecuteUbergraph_BP_GameActionInstance_PlayInWorldDialogue, CallFunc_BooleanOR_ReturnValue) == 0x00003A, "Member 'BP_GameActionInstance_PlayInWorldDialogue_C_ExecuteUbergraph_BP_GameActionInstance_PlayInWorldDialogue::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+
+// Function BP_GameActionInstance_PlayInWorldDialogue.BP_GameActionInstance_PlayInWorldDialogue_C.ExecuteGameAction
+// 0x0008 (0x0008 - 0x0000)
+struct BP_GameActionInstance_PlayInWorldDialogue_C_ExecuteGameAction final
+{
+public:
+	const class APlayerController*                Controller;                                        // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_GameActionInstance_PlayInWorldDialogue_C_ExecuteGameAction) == 0x000008, "Wrong alignment on BP_GameActionInstance_PlayInWorldDialogue_C_ExecuteGameAction");
+static_assert(sizeof(BP_GameActionInstance_PlayInWorldDialogue_C_ExecuteGameAction) == 0x000008, "Wrong size on BP_GameActionInstance_PlayInWorldDialogue_C_ExecuteGameAction");
+static_assert(offsetof(BP_GameActionInstance_PlayInWorldDialogue_C_ExecuteGameAction, Controller) == 0x000000, "Member 'BP_GameActionInstance_PlayInWorldDialogue_C_ExecuteGameAction::Controller' has a wrong offset!");
+
+// Function BP_GameActionInstance_PlayInWorldDialogue.BP_GameActionInstance_PlayInWorldDialogue_C.ShouldTriggerAutoSaveAfterExecution
+// 0x0001 (0x0001 - 0x0000)
+struct BP_GameActionInstance_PlayInWorldDialogue_C_ShouldTriggerAutoSaveAfterExecution final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_GameActionInstance_PlayInWorldDialogue_C_ShouldTriggerAutoSaveAfterExecution) == 0x000001, "Wrong alignment on BP_GameActionInstance_PlayInWorldDialogue_C_ShouldTriggerAutoSaveAfterExecution");
+static_assert(sizeof(BP_GameActionInstance_PlayInWorldDialogue_C_ShouldTriggerAutoSaveAfterExecution) == 0x000001, "Wrong size on BP_GameActionInstance_PlayInWorldDialogue_C_ShouldTriggerAutoSaveAfterExecution");
+static_assert(offsetof(BP_GameActionInstance_PlayInWorldDialogue_C_ShouldTriggerAutoSaveAfterExecution, ReturnValue) == 0x000000, "Member 'BP_GameActionInstance_PlayInWorldDialogue_C_ShouldTriggerAutoSaveAfterExecution::ReturnValue' has a wrong offset!");
+
+// Function BP_GameActionInstance_PlayInWorldDialogue.BP_GameActionInstance_PlayInWorldDialogue_C.ShouldBlockAutoSaveDuringExecution
+// 0x0001 (0x0001 - 0x0000)
+struct BP_GameActionInstance_PlayInWorldDialogue_C_ShouldBlockAutoSaveDuringExecution final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_GameActionInstance_PlayInWorldDialogue_C_ShouldBlockAutoSaveDuringExecution) == 0x000001, "Wrong alignment on BP_GameActionInstance_PlayInWorldDialogue_C_ShouldBlockAutoSaveDuringExecution");
+static_assert(sizeof(BP_GameActionInstance_PlayInWorldDialogue_C_ShouldBlockAutoSaveDuringExecution) == 0x000001, "Wrong size on BP_GameActionInstance_PlayInWorldDialogue_C_ShouldBlockAutoSaveDuringExecution");
+static_assert(offsetof(BP_GameActionInstance_PlayInWorldDialogue_C_ShouldBlockAutoSaveDuringExecution, ReturnValue) == 0x000000, "Member 'BP_GameActionInstance_PlayInWorldDialogue_C_ShouldBlockAutoSaveDuringExecution::ReturnValue' has a wrong offset!");
 
 // Function BP_GameActionInstance_PlayInWorldDialogue.BP_GameActionInstance_PlayInWorldDialogue_C.GetDebugString
 // 0x0110 (0x0110 - 0x0000)
@@ -89,28 +111,6 @@ static_assert(offsetof(BP_GameActionInstance_PlayInWorldDialogue_C_GetDebugStrin
 static_assert(offsetof(BP_GameActionInstance_PlayInWorldDialogue_C_GetDebugString, K2Node_MakeStruct_FormatArgumentData_1) == 0x0000A8, "Member 'BP_GameActionInstance_PlayInWorldDialogue_C_GetDebugString::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
 static_assert(offsetof(BP_GameActionInstance_PlayInWorldDialogue_C_GetDebugString, K2Node_MakeArray_Array) == 0x0000F0, "Member 'BP_GameActionInstance_PlayInWorldDialogue_C_GetDebugString::K2Node_MakeArray_Array' has a wrong offset!");
 static_assert(offsetof(BP_GameActionInstance_PlayInWorldDialogue_C_GetDebugString, CallFunc_Format_ReturnValue) == 0x000100, "Member 'BP_GameActionInstance_PlayInWorldDialogue_C_GetDebugString::CallFunc_Format_ReturnValue' has a wrong offset!");
-
-// Function BP_GameActionInstance_PlayInWorldDialogue.BP_GameActionInstance_PlayInWorldDialogue_C.ShouldBlockAutoSaveDuringExecution
-// 0x0001 (0x0001 - 0x0000)
-struct BP_GameActionInstance_PlayInWorldDialogue_C_ShouldBlockAutoSaveDuringExecution final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_GameActionInstance_PlayInWorldDialogue_C_ShouldBlockAutoSaveDuringExecution) == 0x000001, "Wrong alignment on BP_GameActionInstance_PlayInWorldDialogue_C_ShouldBlockAutoSaveDuringExecution");
-static_assert(sizeof(BP_GameActionInstance_PlayInWorldDialogue_C_ShouldBlockAutoSaveDuringExecution) == 0x000001, "Wrong size on BP_GameActionInstance_PlayInWorldDialogue_C_ShouldBlockAutoSaveDuringExecution");
-static_assert(offsetof(BP_GameActionInstance_PlayInWorldDialogue_C_ShouldBlockAutoSaveDuringExecution, ReturnValue) == 0x000000, "Member 'BP_GameActionInstance_PlayInWorldDialogue_C_ShouldBlockAutoSaveDuringExecution::ReturnValue' has a wrong offset!");
-
-// Function BP_GameActionInstance_PlayInWorldDialogue.BP_GameActionInstance_PlayInWorldDialogue_C.ShouldTriggerAutoSaveAfterExecution
-// 0x0001 (0x0001 - 0x0000)
-struct BP_GameActionInstance_PlayInWorldDialogue_C_ShouldTriggerAutoSaveAfterExecution final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_GameActionInstance_PlayInWorldDialogue_C_ShouldTriggerAutoSaveAfterExecution) == 0x000001, "Wrong alignment on BP_GameActionInstance_PlayInWorldDialogue_C_ShouldTriggerAutoSaveAfterExecution");
-static_assert(sizeof(BP_GameActionInstance_PlayInWorldDialogue_C_ShouldTriggerAutoSaveAfterExecution) == 0x000001, "Wrong size on BP_GameActionInstance_PlayInWorldDialogue_C_ShouldTriggerAutoSaveAfterExecution");
-static_assert(offsetof(BP_GameActionInstance_PlayInWorldDialogue_C_ShouldTriggerAutoSaveAfterExecution, ReturnValue) == 0x000000, "Member 'BP_GameActionInstance_PlayInWorldDialogue_C_ShouldTriggerAutoSaveAfterExecution::ReturnValue' has a wrong offset!");
 
 }
 

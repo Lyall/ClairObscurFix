@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "SandFall_classes.hpp"
 #include "E_jRPG_ItemType_structs.hpp"
+#include "SandFall_classes.hpp"
 
 
 namespace SDK

@@ -19,23 +19,24 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_GameMenu_v3.WBP_GameMenu_v3_C
-// 0x0058 (0x0488 - 0x0430)
+// 0x0060 (0x0490 - 0x0430)
 class UWBP_GameMenu_v3_C final : public UCommonActivatableWidget
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0430(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UWidgetAnimation*                       Anim_FadeOUT;                                      // 0x0438(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class USafeZone*                              ActionBarSafeZone;                                 // 0x0440(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_CommonActionBarContainer_C*        WBP_CommonActionBarContainer;                      // 0x0448(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CommonActionBarContainer_C*        CommonActionBarContainer;                          // 0x0448(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_GM_CharacterMenuContainer_C*       WBP_GM_CharacterMenuContainer;                     // 0x0450(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_GM_MainMenuContainer_C*            WBP_GM_MainMenuContainer;                          // 0x0458(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class ABP_GameMenuScene_C*                    GameMenuScene;                                     // 0x0460(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	class FName                                   PreSelectedPage;                                   // 0x0468(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UBP_CharacterData_C*                    CharacterToAutoSelect;                             // 0x0470(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	bool                                          CloseWhenCharacterViewClosed;                      // 0x0478(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	E_GameMenuPage                                ActivePage;                                        // 0x0479(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_47A[0x6];                                      // 0x047A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UBP_CharacterData_C*                    LastFocusedCharacter;                              // 0x0480(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UWBP_WidescreenRatioBox_C*              WBP_WidescreenRatioBox;                            // 0x0460(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ABP_GameMenuScene_C*                    GameMenuScene;                                     // 0x0468(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	class FName                                   PreSelectedPage;                                   // 0x0470(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UBP_CharacterData_C*                    CharacterToAutoSelect;                             // 0x0478(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	bool                                          CloseWhenCharacterViewClosed;                      // 0x0480(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	E_GameMenuPage                                ActivePage;                                        // 0x0481(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_482[0x6];                                      // 0x0482(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UBP_CharacterData_C*                    LastFocusedCharacter;                              // 0x0488(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void BndEvt__WBP_GameMenu_v3_WBP_GM_CharacterMenuContainer_K2Node_ComponentBoundEvent_4_OnActivePageChanged__DelegateSignature(E_GameMenuPage InActivePage);
@@ -71,19 +72,20 @@ public:
 	}
 };
 static_assert(alignof(UWBP_GameMenu_v3_C) == 0x000008, "Wrong alignment on UWBP_GameMenu_v3_C");
-static_assert(sizeof(UWBP_GameMenu_v3_C) == 0x000488, "Wrong size on UWBP_GameMenu_v3_C");
+static_assert(sizeof(UWBP_GameMenu_v3_C) == 0x000490, "Wrong size on UWBP_GameMenu_v3_C");
 static_assert(offsetof(UWBP_GameMenu_v3_C, UberGraphFrame) == 0x000430, "Member 'UWBP_GameMenu_v3_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWBP_GameMenu_v3_C, Anim_FadeOUT) == 0x000438, "Member 'UWBP_GameMenu_v3_C::Anim_FadeOUT' has a wrong offset!");
 static_assert(offsetof(UWBP_GameMenu_v3_C, ActionBarSafeZone) == 0x000440, "Member 'UWBP_GameMenu_v3_C::ActionBarSafeZone' has a wrong offset!");
-static_assert(offsetof(UWBP_GameMenu_v3_C, WBP_CommonActionBarContainer) == 0x000448, "Member 'UWBP_GameMenu_v3_C::WBP_CommonActionBarContainer' has a wrong offset!");
+static_assert(offsetof(UWBP_GameMenu_v3_C, CommonActionBarContainer) == 0x000448, "Member 'UWBP_GameMenu_v3_C::CommonActionBarContainer' has a wrong offset!");
 static_assert(offsetof(UWBP_GameMenu_v3_C, WBP_GM_CharacterMenuContainer) == 0x000450, "Member 'UWBP_GameMenu_v3_C::WBP_GM_CharacterMenuContainer' has a wrong offset!");
 static_assert(offsetof(UWBP_GameMenu_v3_C, WBP_GM_MainMenuContainer) == 0x000458, "Member 'UWBP_GameMenu_v3_C::WBP_GM_MainMenuContainer' has a wrong offset!");
-static_assert(offsetof(UWBP_GameMenu_v3_C, GameMenuScene) == 0x000460, "Member 'UWBP_GameMenu_v3_C::GameMenuScene' has a wrong offset!");
-static_assert(offsetof(UWBP_GameMenu_v3_C, PreSelectedPage) == 0x000468, "Member 'UWBP_GameMenu_v3_C::PreSelectedPage' has a wrong offset!");
-static_assert(offsetof(UWBP_GameMenu_v3_C, CharacterToAutoSelect) == 0x000470, "Member 'UWBP_GameMenu_v3_C::CharacterToAutoSelect' has a wrong offset!");
-static_assert(offsetof(UWBP_GameMenu_v3_C, CloseWhenCharacterViewClosed) == 0x000478, "Member 'UWBP_GameMenu_v3_C::CloseWhenCharacterViewClosed' has a wrong offset!");
-static_assert(offsetof(UWBP_GameMenu_v3_C, ActivePage) == 0x000479, "Member 'UWBP_GameMenu_v3_C::ActivePage' has a wrong offset!");
-static_assert(offsetof(UWBP_GameMenu_v3_C, LastFocusedCharacter) == 0x000480, "Member 'UWBP_GameMenu_v3_C::LastFocusedCharacter' has a wrong offset!");
+static_assert(offsetof(UWBP_GameMenu_v3_C, WBP_WidescreenRatioBox) == 0x000460, "Member 'UWBP_GameMenu_v3_C::WBP_WidescreenRatioBox' has a wrong offset!");
+static_assert(offsetof(UWBP_GameMenu_v3_C, GameMenuScene) == 0x000468, "Member 'UWBP_GameMenu_v3_C::GameMenuScene' has a wrong offset!");
+static_assert(offsetof(UWBP_GameMenu_v3_C, PreSelectedPage) == 0x000470, "Member 'UWBP_GameMenu_v3_C::PreSelectedPage' has a wrong offset!");
+static_assert(offsetof(UWBP_GameMenu_v3_C, CharacterToAutoSelect) == 0x000478, "Member 'UWBP_GameMenu_v3_C::CharacterToAutoSelect' has a wrong offset!");
+static_assert(offsetof(UWBP_GameMenu_v3_C, CloseWhenCharacterViewClosed) == 0x000480, "Member 'UWBP_GameMenu_v3_C::CloseWhenCharacterViewClosed' has a wrong offset!");
+static_assert(offsetof(UWBP_GameMenu_v3_C, ActivePage) == 0x000481, "Member 'UWBP_GameMenu_v3_C::ActivePage' has a wrong offset!");
+static_assert(offsetof(UWBP_GameMenu_v3_C, LastFocusedCharacter) == 0x000488, "Member 'UWBP_GameMenu_v3_C::LastFocusedCharacter' has a wrong offset!");
 
 }
 

@@ -216,6 +216,26 @@ void UBP_jRPG_GI_Custom_C::BindOnSaveLoaded(const TDelegate<void()>& Event, bool
 }
 
 
+// Function BP_jRPG_GI_Custom.BP_jRPG_GI_Custom_C.CanUseStats
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool UBP_jRPG_GI_Custom_C::CanUseStats()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_jRPG_GI_Custom_C", "CanUseStats");
+
+	Params::BP_jRPG_GI_Custom_C_CanUseStats Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
 // Function BP_jRPG_GI_Custom.BP_jRPG_GI_Custom_C.ChangeMap
 // (BlueprintCallable, BlueprintEvent)
 

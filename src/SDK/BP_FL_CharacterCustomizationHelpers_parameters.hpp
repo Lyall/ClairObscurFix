@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "E_CustomizationItemUser_structs.hpp"
 #include "S_CharacterCustomization_structs.hpp"
+#include "E_CustomizationItemUser_structs.hpp"
 #include "S_CharacterCustomizationItemData_structs.hpp"
 
 

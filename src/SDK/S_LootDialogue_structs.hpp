@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "E_jRPG_ItemSubtype_structs.hpp"
 #include "E_jRPG_ItemType_structs.hpp"
+#include "E_jRPG_ItemSubtype_structs.hpp"
 #include "E_CharacterList_structs.hpp"
 
 

@@ -12,8 +12,8 @@
 
 #include "SandFall_classes.hpp"
 #include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "S_AreaAudioParameters_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -34,14 +34,14 @@ public:
 	struct FTransform                             SpawnTransform;                                    // 0x03B0(0x0060)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_jRPG_GM_World(int32 EntryPoint);
-	void GetSpawnTransform(struct FTransform* SpawnTransform_0);
-	void HandleStartingNewPlayer(class APlayerController* NewPlayer);
-	void K2_OnRestartPlayer(class AController* NewPlayer);
-	void OnGraphicSettingsApplied(class UConfigurableGameUserSettings* Settings);
-	void OnPreStartPlay();
-	void ReceiveBeginPlay();
 	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
+	void ReceiveBeginPlay();
+	void OnPreStartPlay();
+	void OnGraphicSettingsApplied(class UConfigurableGameUserSettings* Settings);
+	void K2_OnRestartPlayer(class AController* NewPlayer);
+	void HandleStartingNewPlayer(class APlayerController* NewPlayer);
+	void GetSpawnTransform(struct FTransform* SpawnTransform_0);
+	void ExecuteUbergraph_BP_jRPG_GM_World(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

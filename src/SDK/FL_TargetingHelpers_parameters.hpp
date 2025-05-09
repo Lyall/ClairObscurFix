@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "EAliveStatus_structs.hpp"
-#include "ECharacterTeamSelector_structs.hpp"
 #include "ENumericValueQuery_structs.hpp"
+#include "Engine_structs.hpp"
+#include "ECharacterTeamSelector_structs.hpp"
+#include "EAliveStatus_structs.hpp"
 #include "E_jRPG_StatType_structs.hpp"
 #include "E_jRPG_TargetingType_structs.hpp"
 

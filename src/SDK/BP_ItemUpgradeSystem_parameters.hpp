@@ -10,15 +10,15 @@
 
 #include "Basic.hpp"
 
-#include "S_ItemQuantityPerWeaponUpgrade_structs.hpp"
+#include "S_ItemQuantityList_structs.hpp"
 #include "Engine_structs.hpp"
-#include "EWeaponQuality_structs.hpp"
 #include "S_ItemQuantity_structs.hpp"
+#include "S_ItemQuantityPerWeaponUpgrade_structs.hpp"
 #include "S_jRPG_Item_StaticData_structs.hpp"
+#include "S_WeaponInstanceHandle_structs.hpp"
 #include "S_WeaponInstanceData_structs.hpp"
 #include "S_LootContext_structs.hpp"
-#include "S_ItemQuantityList_structs.hpp"
-#include "S_WeaponInstanceHandle_structs.hpp"
+#include "EWeaponQuality_structs.hpp"
 #include "S_jRPG_Item_DynamicData_structs.hpp"
 #include "S_WeaponDefinition_structs.hpp"
 #include "S_WeaponScalingLevel_structs.hpp"
@@ -754,59 +754,60 @@ struct BP_ItemUpgradeSystem_C_LoadInventoryState final
 {
 public:
 	TArray<struct FS_WeaponInstanceHandle>        WeaponHandles;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	struct FS_WeaponInstanceHandle                local_currentSaveData;                             // 0x0010(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         local_MaxShardUpgradeLevel;                        // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_WeaponInstanceHandle                local_currentSaveData;                             // 0x0014(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TMap<class FName, struct FS_WeaponInstanceHandle> local_idToSaveData;                            // 0x0020(0x0050)(Edit, BlueprintVisible)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_2;                  // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_3;                  // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_2;                  // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_2;                   // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_3;                  // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_2;                   // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable_4;                  // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_A5[0x3];                                       // 0x00A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_4;                 // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable_3;                   // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_True_if_break_was_hit_Variable;          // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B1[0x3];                                       // 0x00B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable_4;                   // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_WeaponInstanceHandle                CallFunc_Array_Get_Item;                           // 0x00B4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C1[0x3];                                       // 0x00C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable_4;                   // 0x00C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAC_jRPG_InventoryManager_C*            CallFunc_GetInventoryManager_ReturnValue;          // 0x00C8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                           CallFunc_Map_Keys_Keys;                            // 0x00D0(0x0010)(ReferenceParm)
-	class FName                                   CallFunc_Array_Get_Item_1;                         // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_EC[0x4];                                       // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UBP_DataAsset_Item_Shard_C*             CallFunc_Map_Find_Value;                           // 0x00F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x00F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_FA[0x6];                                       // 0x00FA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FDataTableRowHandle>            CallFunc_GetConsumablesList_ConsumableItemPerLevel; // 0x0100(0x0010)(ReferenceParm)
-	struct FDataTableRowHandle                    CallFunc_Array_Get_Item_2;                         // 0x0110(0x0010)(NoDestructor)
-	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x0124(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0129(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CheckIfThereIsItemInInventory_Success_;   // 0x012A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CheckIfThereIsItemInInventory_IsItemFullyStacked_; // 0x012B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_CheckIfThereIsItemInInventory_ItemIndex;  // 0x012C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UBP_jRPG_GI_Custom_C*                   CallFunc_GetCustomGI_ReturnValue;                  // 0x0130(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UAC_jRPG_InventoryManager_C*            CallFunc_GetInventoryManager_ReturnValue;          // 0x00C0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                           CallFunc_Map_Keys_Keys;                            // 0x00C8(0x0010)(ReferenceParm)
+	class FName                                   CallFunc_Array_Get_Item_1;                         // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x00E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E5[0x3];                                       // 0x00E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UBP_DataAsset_Item_Shard_C*             CallFunc_Map_Find_Value;                           // 0x00E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F1[0x7];                                       // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FDataTableRowHandle>            CallFunc_GetConsumablesList_ConsumableItemPerLevel; // 0x00F8(0x0010)(ReferenceParm)
+	struct FDataTableRowHandle                    CallFunc_Array_Get_Item_2;                         // 0x0108(0x0010)(NoDestructor)
+	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x011C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_121[0x3];                                      // 0x0121(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Max_ReturnValue;                          // 0x0124(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UBP_jRPG_GI_Custom_C*                   CallFunc_GetCustomGI_ReturnValue;                  // 0x0128(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CheckIfThereIsItemInInventory_Success_;   // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CheckIfThereIsItemInInventory_IsItemFullyStacked_; // 0x0131(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_132[0x2];                                      // 0x0132(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_CheckIfThereIsItemInInventory_ItemIndex;  // 0x0134(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_jRPG_Item_DynamicData               CallFunc_Array_Get_Item_3;                         // 0x0138(0x0138)(ContainsInstancedReference, HasGetValueTypeHash)
-	TArray<class UBP_ItemInstance_Base_C*>        CallFunc_Map_Values_Values;                        // 0x0270(0x0010)(ReferenceParm)
-	class UBP_ItemInstance_Base_C*                CallFunc_Array_Get_Item_4;                         // 0x0280(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UBP_ItemInstance_Base_C*                CallFunc_GetOrCreateItemInstance_ItemInstance;     // 0x0288(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_GetItemDefinitionID_ReturnValue;          // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UBP_ItemInstance_Gear_C*                K2Node_DynamicCast_AsBP_Item_Instance_Gear;        // 0x0298(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x02A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A1[0x7];                                      // 0x02A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue_3;               // 0x0270(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_3;                // 0x0274(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_275[0x3];                                      // 0x0275(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UBP_ItemInstance_Base_C*                CallFunc_GetOrCreateItemInstance_ItemInstance;     // 0x0278(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class UBP_ItemInstance_Base_C*>        CallFunc_Map_Values_Values;                        // 0x0280(0x0010)(ReferenceParm)
+	class UBP_ItemInstance_Base_C*                CallFunc_Array_Get_Item_4;                         // 0x0290(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_4;               // 0x0298(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetItemDefinitionID_ReturnValue;          // 0x029C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_4;                // 0x02A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2A5[0x3];                                      // 0x02A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_NameToText_ReturnValue;              // 0x02A8(0x0010)()
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x02B8(0x0048)(HasGetValueTypeHash)
 	struct FS_WeaponInstanceHandle                K2Node_MakeStruct_S_WeaponInstanceHandle;          // 0x0300(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -816,60 +817,59 @@ public:
 	struct FS_WeaponInstanceHandle                CallFunc_Map_Find_Value_1;                         // 0x0330(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue_1;                   // 0x033C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_33D[0x3];                                      // 0x033D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue_3;               // 0x0340(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_4;               // 0x0344(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_3;                // 0x0348(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_4;                // 0x0349(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UBP_ItemInstance_Gear_C*                K2Node_DynamicCast_AsBP_Item_Instance_Gear;        // 0x0340(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0348(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_ItemUpgradeSystem_C_LoadInventoryState) == 0x000008, "Wrong alignment on BP_ItemUpgradeSystem_C_LoadInventoryState");
 static_assert(sizeof(BP_ItemUpgradeSystem_C_LoadInventoryState) == 0x000350, "Wrong size on BP_ItemUpgradeSystem_C_LoadInventoryState");
 static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, WeaponHandles) == 0x000000, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::WeaponHandles' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, local_currentSaveData) == 0x000010, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::local_currentSaveData' has a wrong offset!");
+static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, local_MaxShardUpgradeLevel) == 0x000010, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::local_MaxShardUpgradeLevel' has a wrong offset!");
+static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, local_currentSaveData) == 0x000014, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::local_currentSaveData' has a wrong offset!");
 static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, local_idToSaveData) == 0x000020, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::local_idToSaveData' has a wrong offset!");
 static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Array_Length_ReturnValue) == 0x000070, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, Temp_int_Loop_Counter_Variable) == 0x000074, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Add_IntInt_ReturnValue) == 0x000078, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, Temp_int_Array_Index_Variable) == 0x00007C, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, Temp_int_Array_Index_Variable) == 0x000074, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, Temp_int_Loop_Counter_Variable) == 0x000078, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Add_IntInt_ReturnValue) == 0x00007C, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, Temp_int_Loop_Counter_Variable_1) == 0x000080, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
 static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Add_IntInt_ReturnValue_1) == 0x000084, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, Temp_int_Loop_Counter_Variable_2) == 0x000088, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, Temp_int_Loop_Counter_Variable_3) == 0x00008C, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::Temp_int_Loop_Counter_Variable_3' has a wrong offset!");
+static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, Temp_int_Array_Index_Variable_1) == 0x000088, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::Temp_int_Array_Index_Variable_1' has a wrong offset!");
+static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, Temp_int_Loop_Counter_Variable_2) == 0x00008C, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
 static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Add_IntInt_ReturnValue_2) == 0x000090, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Add_IntInt_ReturnValue_3) == 0x000094, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, Temp_int_Array_Index_Variable_1) == 0x000098, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, Temp_int_Array_Index_Variable_2) == 0x00009C, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::Temp_int_Array_Index_Variable_2' has a wrong offset!");
+static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, Temp_int_Loop_Counter_Variable_3) == 0x000094, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::Temp_int_Loop_Counter_Variable_3' has a wrong offset!");
+static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, Temp_int_Array_Index_Variable_2) == 0x000098, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::Temp_int_Array_Index_Variable_2' has a wrong offset!");
+static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Add_IntInt_ReturnValue_3) == 0x00009C, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
 static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, Temp_int_Loop_Counter_Variable_4) == 0x0000A0, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::Temp_int_Loop_Counter_Variable_4' has a wrong offset!");
 static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Less_IntInt_ReturnValue) == 0x0000A4, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Add_IntInt_ReturnValue_4) == 0x0000A8, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
 static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, Temp_int_Array_Index_Variable_3) == 0x0000AC, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::Temp_int_Array_Index_Variable_3' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, Temp_bool_True_if_break_was_hit_Variable) == 0x0000B0, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
+static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, Temp_int_Array_Index_Variable_4) == 0x0000B0, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::Temp_int_Array_Index_Variable_4' has a wrong offset!");
 static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Array_Get_Item) == 0x0000B4, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Not_PreBool_ReturnValue) == 0x0000C0, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, Temp_int_Array_Index_Variable_4) == 0x0000C4, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::Temp_int_Array_Index_Variable_4' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_GetInventoryManager_ReturnValue) == 0x0000C8, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_GetInventoryManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Map_Keys_Keys) == 0x0000D0, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Map_Keys_Keys' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Array_Get_Item_1) == 0x0000E0, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Array_Length_ReturnValue_1) == 0x0000E8, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Map_Find_Value) == 0x0000F0, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Map_Find_ReturnValue) == 0x0000F8, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Less_IntInt_ReturnValue_1) == 0x0000F9, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_GetConsumablesList_ConsumableItemPerLevel) == 0x000100, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_GetConsumablesList_ConsumableItemPerLevel' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Array_Get_Item_2) == 0x000110, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Array_Length_ReturnValue_2) == 0x000120, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Array_Find_ReturnValue) == 0x000124, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Less_IntInt_ReturnValue_2) == 0x000128, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_BooleanAND_ReturnValue) == 0x000129, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_CheckIfThereIsItemInInventory_Success_) == 0x00012A, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_CheckIfThereIsItemInInventory_Success_' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_CheckIfThereIsItemInInventory_IsItemFullyStacked_) == 0x00012B, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_CheckIfThereIsItemInInventory_IsItemFullyStacked_' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_CheckIfThereIsItemInInventory_ItemIndex) == 0x00012C, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_CheckIfThereIsItemInInventory_ItemIndex' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_GetCustomGI_ReturnValue) == 0x000130, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_GetCustomGI_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_GetInventoryManager_ReturnValue) == 0x0000C0, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_GetInventoryManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Map_Keys_Keys) == 0x0000C8, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Map_Keys_Keys' has a wrong offset!");
+static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Array_Get_Item_1) == 0x0000D8, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Array_Length_ReturnValue_1) == 0x0000E0, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Less_IntInt_ReturnValue_1) == 0x0000E4, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Map_Find_Value) == 0x0000E8, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Map_Find_Value' has a wrong offset!");
+static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Map_Find_ReturnValue) == 0x0000F0, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_GetConsumablesList_ConsumableItemPerLevel) == 0x0000F8, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_GetConsumablesList_ConsumableItemPerLevel' has a wrong offset!");
+static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Array_Get_Item_2) == 0x000108, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Array_Get_Item_2' has a wrong offset!");
+static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Array_Length_ReturnValue_2) == 0x000118, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Array_Find_ReturnValue) == 0x00011C, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Less_IntInt_ReturnValue_2) == 0x000120, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Max_ReturnValue) == 0x000124, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Max_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_GetCustomGI_ReturnValue) == 0x000128, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_GetCustomGI_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_CheckIfThereIsItemInInventory_Success_) == 0x000130, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_CheckIfThereIsItemInInventory_Success_' has a wrong offset!");
+static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_CheckIfThereIsItemInInventory_IsItemFullyStacked_) == 0x000131, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_CheckIfThereIsItemInInventory_IsItemFullyStacked_' has a wrong offset!");
+static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_CheckIfThereIsItemInInventory_ItemIndex) == 0x000134, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_CheckIfThereIsItemInInventory_ItemIndex' has a wrong offset!");
 static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Array_Get_Item_3) == 0x000138, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Map_Values_Values) == 0x000270, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Map_Values_Values' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Array_Get_Item_4) == 0x000280, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_GetOrCreateItemInstance_ItemInstance) == 0x000288, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_GetOrCreateItemInstance_ItemInstance' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_GetItemDefinitionID_ReturnValue) == 0x000290, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_GetItemDefinitionID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, K2Node_DynamicCast_AsBP_Item_Instance_Gear) == 0x000298, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::K2Node_DynamicCast_AsBP_Item_Instance_Gear' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, K2Node_DynamicCast_bSuccess) == 0x0002A0, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Array_Length_ReturnValue_3) == 0x000270, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Less_IntInt_ReturnValue_3) == 0x000274, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_GetOrCreateItemInstance_ItemInstance) == 0x000278, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_GetOrCreateItemInstance_ItemInstance' has a wrong offset!");
+static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Map_Values_Values) == 0x000280, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Map_Values_Values' has a wrong offset!");
+static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Array_Get_Item_4) == 0x000290, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Array_Get_Item_4' has a wrong offset!");
+static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Array_Length_ReturnValue_4) == 0x000298, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Array_Length_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_GetItemDefinitionID_ReturnValue) == 0x00029C, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_GetItemDefinitionID_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Less_IntInt_ReturnValue_4) == 0x0002A4, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Less_IntInt_ReturnValue_4' has a wrong offset!");
 static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Conv_NameToText_ReturnValue) == 0x0002A8, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Conv_NameToText_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, K2Node_MakeStruct_FormatArgumentData) == 0x0002B8, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
 static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, K2Node_MakeStruct_S_WeaponInstanceHandle) == 0x000300, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::K2Node_MakeStruct_S_WeaponInstanceHandle' has a wrong offset!");
@@ -877,10 +877,8 @@ static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, K2Node_MakeArr
 static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Format_ReturnValue) == 0x000320, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Format_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Map_Find_Value_1) == 0x000330, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Map_Find_Value_1' has a wrong offset!");
 static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Map_Find_ReturnValue_1) == 0x00033C, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Map_Find_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Array_Length_ReturnValue_3) == 0x000340, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Array_Length_ReturnValue_4) == 0x000344, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Array_Length_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Less_IntInt_ReturnValue_3) == 0x000348, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, CallFunc_Less_IntInt_ReturnValue_4) == 0x000349, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::CallFunc_Less_IntInt_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, K2Node_DynamicCast_AsBP_Item_Instance_Gear) == 0x000340, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::K2Node_DynamicCast_AsBP_Item_Instance_Gear' has a wrong offset!");
+static_assert(offsetof(BP_ItemUpgradeSystem_C_LoadInventoryState, K2Node_DynamicCast_bSuccess) == 0x000348, "Member 'BP_ItemUpgradeSystem_C_LoadInventoryState::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function BP_ItemUpgradeSystem.BP_ItemUpgradeSystem_C.LoadShardDefinition
 // 0x0180 (0x0180 - 0x0000)

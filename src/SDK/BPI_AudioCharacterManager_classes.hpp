@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "ESfxType_structs.hpp"
 #include "CoreUObject_classes.hpp"
+#include "ESfxType_structs.hpp"
 #include "EFootstepsType_structs.hpp"
 #include "PhysicsCore_structs.hpp"
 

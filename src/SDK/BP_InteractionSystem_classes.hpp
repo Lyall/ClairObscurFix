@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "FPromptID_structs.hpp"
 #include "SandFall_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "FPromptID_structs.hpp"
 
 
 namespace SDK

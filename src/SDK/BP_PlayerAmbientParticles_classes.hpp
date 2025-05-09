@@ -43,13 +43,13 @@ public:
 	float                                         SphereRadius;                                      // 0x0324(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
-	void BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
-	void ExecuteUbergraph_BP_PlayerAmbientParticles(int32 EntryPoint);
-	void ReceiveTick(float DeltaSeconds);
-	void SetParticlesParameters();
-	void SetPreviewParticlesParameters();
 	void UserConstructionScript();
+	void SetPreviewParticlesParameters();
+	void SetParticlesParameters();
+	void ReceiveTick(float DeltaSeconds);
+	void ExecuteUbergraph_BP_PlayerAmbientParticles(int32 EntryPoint);
+	void BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+	void BndEvt__BP_PlayerAmbientParticles_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
 
 public:
 	static class UClass* StaticClass()

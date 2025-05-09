@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "E_TutorialCardWidgetPosition_structs.hpp"
 #include "Engine_structs.hpp"
+#include "E_TutorialCardWidgetPosition_structs.hpp"
 
 
 namespace SDK

@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "S_jRPG_Item_StaticData_structs.hpp"
-#include "E_jRPG_ItemType_structs.hpp"
-#include "Engine_structs.hpp"
-#include "S_PictosDefinition_structs.hpp"
-#include "S_WeaponDefinition_structs.hpp"
 #include "S_GearScalingLevel_structs.hpp"
+#include "Engine_structs.hpp"
+#include "E_jRPG_ItemType_structs.hpp"
+#include "S_jRPG_Item_StaticData_structs.hpp"
 #include "EWeaponQuality_structs.hpp"
+#include "S_WeaponDefinition_structs.hpp"
+#include "S_PictosDefinition_structs.hpp"
 
 
 namespace SDK::Params

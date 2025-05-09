@@ -16,17 +16,6 @@
 namespace SDK::Params
 {
 
-// Function BP_GameAction_PlayInworldDialogue.BP_GameAction_PlayInworldDialogue_C.GetInstanceClass
-// 0x0008 (0x0008 - 0x0000)
-struct BP_GameAction_PlayInworldDialogue_C_GetInstanceClass final
-{
-public:
-	TSubclassOf<class UGameActionInstance>        ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_GameAction_PlayInworldDialogue_C_GetInstanceClass) == 0x000008, "Wrong alignment on BP_GameAction_PlayInworldDialogue_C_GetInstanceClass");
-static_assert(sizeof(BP_GameAction_PlayInworldDialogue_C_GetInstanceClass) == 0x000008, "Wrong size on BP_GameAction_PlayInworldDialogue_C_GetInstanceClass");
-static_assert(offsetof(BP_GameAction_PlayInworldDialogue_C_GetInstanceClass, ReturnValue) == 0x000000, "Member 'BP_GameAction_PlayInworldDialogue_C_GetInstanceClass::ReturnValue' has a wrong offset!");
-
 // Function BP_GameAction_PlayInworldDialogue.BP_GameAction_PlayInworldDialogue_C.ValidateGameAction
 // 0x0060 (0x0060 - 0x0000)
 struct BP_GameAction_PlayInworldDialogue_C_ValidateGameAction final
@@ -50,6 +39,17 @@ static_assert(offsetof(BP_GameAction_PlayInworldDialogue_C_ValidateGameAction, K
 static_assert(offsetof(BP_GameAction_PlayInworldDialogue_C_ValidateGameAction, CallFunc_Format_ReturnValue) == 0x000038, "Member 'BP_GameAction_PlayInworldDialogue_C_ValidateGameAction::CallFunc_Format_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_GameAction_PlayInworldDialogue_C_ValidateGameAction, CallFunc_AppendPropertyPath_ReturnValue) == 0x000048, "Member 'BP_GameAction_PlayInworldDialogue_C_ValidateGameAction::CallFunc_AppendPropertyPath_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_GameAction_PlayInworldDialogue_C_ValidateGameAction, CallFunc_IsValid_ReturnValue) == 0x000058, "Member 'BP_GameAction_PlayInworldDialogue_C_ValidateGameAction::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+
+// Function BP_GameAction_PlayInworldDialogue.BP_GameAction_PlayInworldDialogue_C.GetInstanceClass
+// 0x0008 (0x0008 - 0x0000)
+struct BP_GameAction_PlayInworldDialogue_C_GetInstanceClass final
+{
+public:
+	TSubclassOf<class UGameActionInstance>        ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_GameAction_PlayInworldDialogue_C_GetInstanceClass) == 0x000008, "Wrong alignment on BP_GameAction_PlayInworldDialogue_C_GetInstanceClass");
+static_assert(sizeof(BP_GameAction_PlayInworldDialogue_C_GetInstanceClass) == 0x000008, "Wrong size on BP_GameAction_PlayInworldDialogue_C_GetInstanceClass");
+static_assert(offsetof(BP_GameAction_PlayInworldDialogue_C_GetInstanceClass, ReturnValue) == 0x000000, "Member 'BP_GameAction_PlayInworldDialogue_C_GetInstanceClass::ReturnValue' has a wrong offset!");
 
 }
 

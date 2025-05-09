@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "E_jRPG_ItemType_structs.hpp"
 #include "Engine_structs.hpp"
 #include "S_TutorialCardParameters_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "CommonUI_classes.hpp"
-#include "E_jRPG_ItemType_structs.hpp"
 
 
 namespace SDK

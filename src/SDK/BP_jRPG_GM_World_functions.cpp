@@ -17,21 +17,109 @@
 namespace SDK
 {
 
-// Function BP_jRPG_GM_World.BP_jRPG_GM_World_C.ExecuteUbergraph_BP_jRPG_GM_World
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_jRPG_GM_World.BP_jRPG_GM_World_C.ReceiveEndPlay
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_jRPG_GM_World_C::ExecuteUbergraph_BP_jRPG_GM_World(int32 EntryPoint)
+void ABP_jRPG_GM_World_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_jRPG_GM_World_C", "ExecuteUbergraph_BP_jRPG_GM_World");
+		Func = Class->GetFunction("BP_jRPG_GM_World_C", "ReceiveEndPlay");
 
-	Params::BP_jRPG_GM_World_C_ExecuteUbergraph_BP_jRPG_GM_World Parms{};
+	Params::BP_jRPG_GM_World_C_ReceiveEndPlay Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.EndPlayReason = EndPlayReason;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_jRPG_GM_World.BP_jRPG_GM_World_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_jRPG_GM_World_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_jRPG_GM_World_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_jRPG_GM_World.BP_jRPG_GM_World_C.OnPreStartPlay
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_jRPG_GM_World_C::OnPreStartPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_jRPG_GM_World_C", "OnPreStartPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_jRPG_GM_World.BP_jRPG_GM_World_C.OnGraphicSettingsApplied
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UConfigurableGameUserSettings*    Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_jRPG_GM_World_C::OnGraphicSettingsApplied(class UConfigurableGameUserSettings* Settings)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_jRPG_GM_World_C", "OnGraphicSettingsApplied");
+
+	Params::BP_jRPG_GM_World_C_OnGraphicSettingsApplied Parms{};
+
+	Parms.Settings = Settings;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_jRPG_GM_World.BP_jRPG_GM_World_C.K2_OnRestartPlayer
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class AController*                      NewPlayer                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_jRPG_GM_World_C::K2_OnRestartPlayer(class AController* NewPlayer)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_jRPG_GM_World_C", "K2_OnRestartPlayer");
+
+	Params::BP_jRPG_GM_World_C_K2_OnRestartPlayer Parms{};
+
+	Parms.NewPlayer = NewPlayer;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_jRPG_GM_World.BP_jRPG_GM_World_C.HandleStartingNewPlayer
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class APlayerController*                NewPlayer                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_jRPG_GM_World_C::HandleStartingNewPlayer(class APlayerController* NewPlayer)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_jRPG_GM_World_C", "HandleStartingNewPlayer");
+
+	Params::BP_jRPG_GM_World_C_HandleStartingNewPlayer Parms{};
+
+	Parms.NewPlayer = NewPlayer;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -58,109 +146,21 @@ void ABP_jRPG_GM_World_C::GetSpawnTransform(struct FTransform* SpawnTransform_0)
 }
 
 
-// Function BP_jRPG_GM_World.BP_jRPG_GM_World_C.HandleStartingNewPlayer
-// (Event, Public, BlueprintEvent)
+// Function BP_jRPG_GM_World.BP_jRPG_GM_World_C.ExecuteUbergraph_BP_jRPG_GM_World
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// class APlayerController*                NewPlayer                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_jRPG_GM_World_C::HandleStartingNewPlayer(class APlayerController* NewPlayer)
+void ABP_jRPG_GM_World_C::ExecuteUbergraph_BP_jRPG_GM_World(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_jRPG_GM_World_C", "HandleStartingNewPlayer");
+		Func = Class->GetFunction("BP_jRPG_GM_World_C", "ExecuteUbergraph_BP_jRPG_GM_World");
 
-	Params::BP_jRPG_GM_World_C_HandleStartingNewPlayer Parms{};
+	Params::BP_jRPG_GM_World_C_ExecuteUbergraph_BP_jRPG_GM_World Parms{};
 
-	Parms.NewPlayer = NewPlayer;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_jRPG_GM_World.BP_jRPG_GM_World_C.K2_OnRestartPlayer
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class AController*                      NewPlayer                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_jRPG_GM_World_C::K2_OnRestartPlayer(class AController* NewPlayer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_jRPG_GM_World_C", "K2_OnRestartPlayer");
-
-	Params::BP_jRPG_GM_World_C_K2_OnRestartPlayer Parms{};
-
-	Parms.NewPlayer = NewPlayer;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_jRPG_GM_World.BP_jRPG_GM_World_C.OnGraphicSettingsApplied
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UConfigurableGameUserSettings*    Settings                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_jRPG_GM_World_C::OnGraphicSettingsApplied(class UConfigurableGameUserSettings* Settings)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_jRPG_GM_World_C", "OnGraphicSettingsApplied");
-
-	Params::BP_jRPG_GM_World_C_OnGraphicSettingsApplied Parms{};
-
-	Parms.Settings = Settings;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_jRPG_GM_World.BP_jRPG_GM_World_C.OnPreStartPlay
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_jRPG_GM_World_C::OnPreStartPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_jRPG_GM_World_C", "OnPreStartPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_jRPG_GM_World.BP_jRPG_GM_World_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_jRPG_GM_World_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_jRPG_GM_World_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_jRPG_GM_World.BP_jRPG_GM_World_C.ReceiveEndPlay
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_jRPG_GM_World_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_jRPG_GM_World_C", "ReceiveEndPlay");
-
-	Params::BP_jRPG_GM_World_C_ReceiveEndPlay Parms{};
-
-	Parms.EndPlayReason = EndPlayReason;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

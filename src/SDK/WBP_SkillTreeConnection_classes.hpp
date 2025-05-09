@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "ESkillNodeState_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UMG_classes.hpp"
-#include "ESkillNodeState_structs.hpp"
 
 
 namespace SDK

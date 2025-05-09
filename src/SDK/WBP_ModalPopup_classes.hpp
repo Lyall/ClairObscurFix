@@ -11,13 +11,13 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "E_jRPG_YesNoQuestions_structs.hpp"
-#include "UMG_structs.hpp"
+#include "EModalUIResponse_structs.hpp"
 #include "E_ModalStandardButton_structs.hpp"
 #include "CommonInput_structs.hpp"
-#include "EModalUIResponse_structs.hpp"
+#include "E_jRPG_YesNoQuestions_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "CommonUI_classes.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK

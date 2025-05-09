@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "SandFall_structs.hpp"
-#include "S_ProgressionBalancingLevel_structs.hpp"
 #include "S_LootContext_structs.hpp"
 #include "S_LootTableEntry_structs.hpp"
 #include "S_LootTableSection_structs.hpp"
+#include "Engine_structs.hpp"
+#include "SandFall_structs.hpp"
+#include "S_ProgressionBalancingLevel_structs.hpp"
 
 
 namespace SDK::Params

@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "SandFall_classes.hpp"
-#include "S_BattleLine_structs.hpp"
 #include "S_BattleLinePoolCandidate_structs.hpp"
+#include "S_BattleLine_structs.hpp"
 #include "S_BattleLineCandidate_structs.hpp"
+#include "SandFall_classes.hpp"
 #include "E_CharacterList_structs.hpp"
 
 

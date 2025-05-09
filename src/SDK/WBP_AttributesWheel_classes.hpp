@@ -12,8 +12,8 @@
 
 #include "Engine_structs.hpp"
 #include "ECharacterAttribute_structs.hpp"
-#include "EAttributeScalingGrade_structs.hpp"
 #include "CommonUI_classes.hpp"
+#include "EAttributeScalingGrade_structs.hpp"
 
 
 namespace SDK

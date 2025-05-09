@@ -14,8 +14,8 @@
 #include "CommonInput_structs.hpp"
 #include "S_jRPG_Item_DynamicData_structs.hpp"
 #include "S_CharacterCustomizationItemData_structs.hpp"
-#include "Slate_structs.hpp"
 #include "E_CustomizationItemType_structs.hpp"
+#include "Slate_structs.hpp"
 
 
 namespace SDK::Params

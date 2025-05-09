@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "E_jRPG_ItemSubtype_structs.hpp"
+#include "E_jRPG_StatType_structs.hpp"
 #include "E_jRPG_ItemType_structs.hpp"
 #include "E_jRPG_TargetingType_structs.hpp"
-#include "E_jRPG_ItemSubtype_structs.hpp"
 #include "E_jRPG_ItemRarity_structs.hpp"
-#include "E_jRPG_StatType_structs.hpp"
 
 
 namespace SDK

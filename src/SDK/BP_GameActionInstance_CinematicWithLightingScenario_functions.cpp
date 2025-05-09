@@ -17,71 +17,24 @@
 namespace SDK
 {
 
-// Function BP_GameActionInstance_CinematicWithLightingScenario.BP_GameActionInstance_CinematicWithLightingScenario_C.ActivateLightingScenario
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function BP_GameActionInstance_CinematicWithLightingScenario.BP_GameActionInstance_CinematicWithLightingScenario_C.GetLightingScenarioToActivateAfterCinematic
+// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class ABP_LightingScenarioReference_C*  LigthingScenario                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ABP_LightingScenarioReference_C** Scenario                                               (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UBP_GameActionInstance_CinematicWithLightingScenario_C::ActivateLightingScenario(class ABP_LightingScenarioReference_C* LigthingScenario)
+void UBP_GameActionInstance_CinematicWithLightingScenario_C::GetLightingScenarioToActivateAfterCinematic(class ABP_LightingScenarioReference_C** Scenario)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GameActionInstance_CinematicWithLightingScenario_C", "ActivateLightingScenario");
+		Func = Class->GetFunction("BP_GameActionInstance_CinematicWithLightingScenario_C", "GetLightingScenarioToActivateAfterCinematic");
 
-	Params::BP_GameActionInstance_CinematicWithLightingScenario_C_ActivateLightingScenario Parms{};
-
-	Parms.LigthingScenario = LigthingScenario;
+	Params::BP_GameActionInstance_CinematicWithLightingScenario_C_GetLightingScenarioToActivateAfterCinematic Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
-}
 
-
-// Function BP_GameActionInstance_CinematicWithLightingScenario.BP_GameActionInstance_CinematicWithLightingScenario_C.ActivateLightingScenarioAfterCinematic
-// (BlueprintCallable, BlueprintEvent)
-
-void UBP_GameActionInstance_CinematicWithLightingScenario_C::ActivateLightingScenarioAfterCinematic()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GameActionInstance_CinematicWithLightingScenario_C", "ActivateLightingScenarioAfterCinematic");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_GameActionInstance_CinematicWithLightingScenario.BP_GameActionInstance_CinematicWithLightingScenario_C.CacheCurrentLightingScenario
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UBP_GameActionInstance_CinematicWithLightingScenario_C::CacheCurrentLightingScenario()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GameActionInstance_CinematicWithLightingScenario_C", "CacheCurrentLightingScenario");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_GameActionInstance_CinematicWithLightingScenario.BP_GameActionInstance_CinematicWithLightingScenario_C.ExecuteGameAction
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class APlayerController*          Controller                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UBP_GameActionInstance_CinematicWithLightingScenario_C::ExecuteGameAction(const class APlayerController* Controller)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GameActionInstance_CinematicWithLightingScenario_C", "ExecuteGameAction");
-
-	Params::BP_GameActionInstance_CinematicWithLightingScenario_C_ExecuteGameAction Parms{};
-
-	Parms.Controller = Controller;
-
-	UObject::ProcessEvent(Func, &Parms);
+	if (Scenario != nullptr)
+		*Scenario = Parms.Scenario;
 }
 
 
@@ -105,44 +58,71 @@ void UBP_GameActionInstance_CinematicWithLightingScenario_C::ExecuteUbergraph_BP
 }
 
 
-// Function BP_GameActionInstance_CinematicWithLightingScenario.BP_GameActionInstance_CinematicWithLightingScenario_C.GetLightingScenarioToActivateAfterCinematic
-// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function BP_GameActionInstance_CinematicWithLightingScenario.BP_GameActionInstance_CinematicWithLightingScenario_C.ExecuteGameAction
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class ABP_LightingScenarioReference_C** Scenario                                               (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const class APlayerController*          Controller                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UBP_GameActionInstance_CinematicWithLightingScenario_C::GetLightingScenarioToActivateAfterCinematic(class ABP_LightingScenarioReference_C** Scenario)
+void UBP_GameActionInstance_CinematicWithLightingScenario_C::ExecuteGameAction(const class APlayerController* Controller)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GameActionInstance_CinematicWithLightingScenario_C", "GetLightingScenarioToActivateAfterCinematic");
+		Func = Class->GetFunction("BP_GameActionInstance_CinematicWithLightingScenario_C", "ExecuteGameAction");
 
-	Params::BP_GameActionInstance_CinematicWithLightingScenario_C_GetLightingScenarioToActivateAfterCinematic Parms{};
+	Params::BP_GameActionInstance_CinematicWithLightingScenario_C_ExecuteGameAction Parms{};
+
+	Parms.Controller = Controller;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (Scenario != nullptr)
-		*Scenario = Parms.Scenario;
 }
 
 
-// Function BP_GameActionInstance_CinematicWithLightingScenario.BP_GameActionInstance_CinematicWithLightingScenario_C.GetDebugString
-// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
-// Parameters:
-// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
+// Function BP_GameActionInstance_CinematicWithLightingScenario.BP_GameActionInstance_CinematicWithLightingScenario_C.CacheCurrentLightingScenario
+// (Private, BlueprintCallable, BlueprintEvent)
 
-class FString UBP_GameActionInstance_CinematicWithLightingScenario_C::GetDebugString() const
+void UBP_GameActionInstance_CinematicWithLightingScenario_C::CacheCurrentLightingScenario()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GameActionInstance_CinematicWithLightingScenario_C", "GetDebugString");
+		Func = Class->GetFunction("BP_GameActionInstance_CinematicWithLightingScenario_C", "CacheCurrentLightingScenario");
 
-	Params::BP_GameActionInstance_CinematicWithLightingScenario_C_GetDebugString Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_GameActionInstance_CinematicWithLightingScenario.BP_GameActionInstance_CinematicWithLightingScenario_C.ActivateLightingScenarioAfterCinematic
+// (BlueprintCallable, BlueprintEvent)
+
+void UBP_GameActionInstance_CinematicWithLightingScenario_C::ActivateLightingScenarioAfterCinematic()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_GameActionInstance_CinematicWithLightingScenario_C", "ActivateLightingScenarioAfterCinematic");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_GameActionInstance_CinematicWithLightingScenario.BP_GameActionInstance_CinematicWithLightingScenario_C.ActivateLightingScenario
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class ABP_LightingScenarioReference_C*  LigthingScenario                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UBP_GameActionInstance_CinematicWithLightingScenario_C::ActivateLightingScenario(class ABP_LightingScenarioReference_C* LigthingScenario)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_GameActionInstance_CinematicWithLightingScenario_C", "ActivateLightingScenario");
+
+	Params::BP_GameActionInstance_CinematicWithLightingScenario_C_ActivateLightingScenario Parms{};
+
+	Parms.LigthingScenario = LigthingScenario;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
 }
 
 
@@ -168,6 +148,26 @@ void UBP_GameActionInstance_CinematicWithLightingScenario_C::GetParameters(struc
 
 	if (ScenarioReferenceOnEnd != nullptr)
 		*ScenarioReferenceOnEnd = Parms.ScenarioReferenceOnEnd;
+}
+
+
+// Function BP_GameActionInstance_CinematicWithLightingScenario.BP_GameActionInstance_CinematicWithLightingScenario_C.GetDebugString
+// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Parameters:
+// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
+
+class FString UBP_GameActionInstance_CinematicWithLightingScenario_C::GetDebugString() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_GameActionInstance_CinematicWithLightingScenario_C", "GetDebugString");
+
+	Params::BP_GameActionInstance_CinematicWithLightingScenario_C_GetDebugString Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 }

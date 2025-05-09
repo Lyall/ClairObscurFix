@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
+#include "UMG_structs.hpp"
 #include "CommonInput_structs.hpp"
-#include "CoreUObject_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params
@@ -37,53 +37,53 @@ static_assert(offsetof(WBP_Battle_JumpCounterHint_C_ExecuteUbergraph_WBP_Battle_
 static_assert(offsetof(WBP_Battle_JumpCounterHint_C_ExecuteUbergraph_WBP_Battle_JumpCounterHint, CallFunc_PlayAnimation_ReturnValue_2) == 0x000018, "Member 'WBP_Battle_JumpCounterHint_C_ExecuteUbergraph_WBP_Battle_JumpCounterHint::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
 
 // Function WBP_Battle_JumpCounterHint.WBP_Battle_JumpCounterHint_C.SetJumpCounterBrushFromAction
-// 0x03C0 (0x03C0 - 0x0000)
+// 0x0120 (0x0120 - 0x0000)
 struct WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction final
 {
 public:
-	class UCommonInputSubsystem*                  CallFunc_GetLocalPlayerSubsystem_ReturnValue;      // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   CallFunc_GetCurrentGamepadName_ReturnValue;        // 0x000C(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             Temp_object_Variable;                              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonInputSubsystem*                  CallFunc_GetLocalPlayerSubsystem_ReturnValue;      // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_12[0x2];                                       // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   CallFunc_GetCurrentGamepadName_ReturnValue;        // 0x0014(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x001E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1F[0x1];                                       // 0x001F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             Temp_object_Variable;                              // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             Temp_object_Variable_1;                            // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UCommonUISubsystemBase*                 CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ECommonInputType                              Temp_byte_Variable;                                // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             K2Node_Select_Default;                             // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_48[0x8];                                       // 0x0048(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            CallFunc_MakeBrushFromTexture_ReturnValue;         // 0x0050(0x00D0)()
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0120(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ULocalPlayer*                           CallFunc_GetOwningLocalPlayer_ReturnValue;         // 0x0130(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_138[0x8];                                      // 0x0138(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            CallFunc_GetEnhancedInputActionButtonIcon_ReturnValue; // 0x0140(0x00D0)()
-	struct FSlateBrush                            K2Node_SetFieldsInStruct_StructOut;                // 0x0210(0x00D0)()
-	struct FSlateBrush                            K2Node_Select_Default_1;                           // 0x02E0(0x00D0)(ConstParm)
-	struct FDeprecateSlateVector2D                K2Node_SetFieldsInStruct_ImageSize_ImplicitCast;   // 0x03B0(0x0008)(NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             K2Node_Select_Default_1;                           // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSlateBrush                            CallFunc_MakeBrushFromTexture_ReturnValue;         // 0x0040(0x00D0)()
+	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_2;                              // 0x0111(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default_2;                           // 0x0112(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction) == 0x000010, "Wrong alignment on WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction");
-static_assert(sizeof(WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction) == 0x0003C0, "Wrong size on WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction");
-static_assert(offsetof(WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction, CallFunc_GetLocalPlayerSubsystem_ReturnValue) == 0x000000, "Member 'WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction::CallFunc_GetLocalPlayerSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction, Temp_bool_Variable) == 0x000008, "Member 'WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction, CallFunc_GetCurrentInputType_ReturnValue) == 0x000009, "Member 'WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction, CallFunc_GetCurrentGamepadName_ReturnValue) == 0x00000C, "Member 'WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction::CallFunc_GetCurrentGamepadName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction, Temp_object_Variable) == 0x000018, "Member 'WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000020, "Member 'WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
+static_assert(sizeof(WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction) == 0x000120, "Wrong size on WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction");
+static_assert(offsetof(WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction, Temp_bool_Variable) == 0x000000, "Member 'WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction, Temp_byte_Variable) == 0x000001, "Member 'WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction, Temp_byte_Variable_1) == 0x000002, "Member 'WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction, CallFunc_GetLocalPlayerSubsystem_ReturnValue) == 0x000008, "Member 'WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction::CallFunc_GetLocalPlayerSubsystem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction, Temp_bool_Variable_1) == 0x000010, "Member 'WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction::Temp_bool_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction, CallFunc_GetCurrentInputType_ReturnValue) == 0x000011, "Member 'WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction, CallFunc_GetCurrentGamepadName_ReturnValue) == 0x000014, "Member 'WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction::CallFunc_GetCurrentGamepadName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00001C, "Member 'WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction, CallFunc_EqualEqual_NameName_ReturnValue) == 0x00001D, "Member 'WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction, K2Node_Select_Default) == 0x00001E, "Member 'WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction, Temp_object_Variable) == 0x000020, "Member 'WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction::Temp_object_Variable' has a wrong offset!");
 static_assert(offsetof(WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction, Temp_object_Variable_1) == 0x000028, "Member 'WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000030, "Member 'WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction, Temp_byte_Variable) == 0x000038, "Member 'WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction, K2Node_Select_Default) == 0x000040, "Member 'WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction, CallFunc_MakeBrushFromTexture_ReturnValue) == 0x000050, "Member 'WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction::CallFunc_MakeBrushFromTexture_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction, CallFunc_MakeVector2D_ReturnValue) == 0x000120, "Member 'WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction, CallFunc_GetOwningLocalPlayer_ReturnValue) == 0x000130, "Member 'WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction::CallFunc_GetOwningLocalPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction, CallFunc_GetEnhancedInputActionButtonIcon_ReturnValue) == 0x000140, "Member 'WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction::CallFunc_GetEnhancedInputActionButtonIcon_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction, K2Node_SetFieldsInStruct_StructOut) == 0x000210, "Member 'WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction::K2Node_SetFieldsInStruct_StructOut' has a wrong offset!");
-static_assert(offsetof(WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction, K2Node_Select_Default_1) == 0x0002E0, "Member 'WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction, K2Node_SetFieldsInStruct_ImageSize_ImplicitCast) == 0x0003B0, "Member 'WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction::K2Node_SetFieldsInStruct_ImageSize_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction, Temp_byte_Variable_2) == 0x000030, "Member 'WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction::Temp_byte_Variable_2' has a wrong offset!");
+static_assert(offsetof(WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction, K2Node_Select_Default_1) == 0x000038, "Member 'WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction, CallFunc_MakeBrushFromTexture_ReturnValue) == 0x000040, "Member 'WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction::CallFunc_MakeBrushFromTexture_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction, Temp_byte_Variable_3) == 0x000110, "Member 'WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction::Temp_byte_Variable_3' has a wrong offset!");
+static_assert(offsetof(WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction, Temp_bool_Variable_2) == 0x000111, "Member 'WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction::Temp_bool_Variable_2' has a wrong offset!");
+static_assert(offsetof(WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction, K2Node_Select_Default_2) == 0x000112, "Member 'WBP_Battle_JumpCounterHint_C_SetJumpCounterBrushFromAction::K2Node_Select_Default_2' has a wrong offset!");
 
 }
 

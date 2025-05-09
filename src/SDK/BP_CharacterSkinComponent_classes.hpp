@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "S_AnimationProfile_Skins_structs.hpp"
-#include "S_CharacterCustomization_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "S_AnimationProfile_Skins_structs.hpp"
+#include "S_CharacterCustomization_structs.hpp"
 
 
 namespace SDK

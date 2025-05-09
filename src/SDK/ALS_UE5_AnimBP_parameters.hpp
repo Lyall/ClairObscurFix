@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "S_jRPG_WorldCharacters_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
+#include "S_jRPG_WorldCharacters_structs.hpp"
 #include "S_AnimationProfile_Skins_structs.hpp"
 #include "ALSV4_CPP_structs.hpp"
 

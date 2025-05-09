@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "S_BattleLinePool_structs.hpp"
-#include "Engine_structs.hpp"
-#include "S_BattleLine_structs.hpp"
-#include "S_BattleLinePoolCandidate_structs.hpp"
-#include "S_BattleLineCandidate_structs.hpp"
 #include "ECharacterTeamSelector_structs.hpp"
+#include "S_BattleLinePoolCandidate_structs.hpp"
+#include "S_BattleLinePool_structs.hpp"
+#include "S_BattleLine_structs.hpp"
+#include "S_BattleLineCandidate_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params

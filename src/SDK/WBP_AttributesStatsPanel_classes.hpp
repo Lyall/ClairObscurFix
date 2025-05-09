@@ -11,11 +11,11 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "UMG_structs.hpp"
 #include "ECharacterAttribute_structs.hpp"
 #include "E_jRPG_StatType_structs.hpp"
-#include "EAttributeScalingGrade_structs.hpp"
 #include "CommonUI_classes.hpp"
+#include "EAttributeScalingGrade_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK

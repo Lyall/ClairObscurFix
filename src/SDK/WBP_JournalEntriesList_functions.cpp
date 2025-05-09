@@ -66,7 +66,7 @@ void UWBP_JournalEntriesList_C::BP_OnDeactivated()
 
 
 // Function WBP_JournalEntriesList.WBP_JournalEntriesList_C.ExecuteUbergraph_WBP_JournalEntriesList
-// (Final, UbergraphFunction, HasDefaults)
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -199,20 +199,6 @@ void UWBP_JournalEntriesList_C::OnJournalEntryUnlocked(class UBP_JournalViewItem
 }
 
 
-// Function WBP_JournalEntriesList.WBP_JournalEntriesList_C.OnNextTick
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_JournalEntriesList_C::OnNextTick()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JournalEntriesList_C", "OnNextTick");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_JournalEntriesList.WBP_JournalEntriesList_C.PlayJournal
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -264,6 +250,26 @@ void UWBP_JournalEntriesList_C::SetUnlockedJournal(class UBP_JournalViewItem_C* 
 	Parms.UnlockedJournal_0 = UnlockedJournal_0;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_JournalEntriesList.WBP_JournalEntriesList_C.BP_GetDesiredFocusTarget
+// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
+// Parameters:
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UWBP_JournalEntriesList_C::BP_GetDesiredFocusTarget() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_JournalEntriesList_C", "BP_GetDesiredFocusTarget");
+
+	Params::WBP_JournalEntriesList_C_BP_GetDesiredFocusTarget Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 }

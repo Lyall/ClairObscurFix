@@ -106,7 +106,7 @@ static_assert(offsetof(UMassEntitySpawnDataWrapper, SpawnData) == 0x000060, "Mem
 
 // Class MassGameplayCrowdExtended.MassSpawnerExtended
 // 0x0000 (0x0338 - 0x0338)
-class AMassSpawnerExtended : public AMassSpawner
+class AMassSpawnerExtended final : public AMassSpawner
 {
 public:
 	void DoDeterministicSpawning();

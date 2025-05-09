@@ -18,7 +18,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_SaveGameObject_V2.BP_SaveGameObject_V2_C
 // 0x0000 (0x0B20 - 0x0B20)
-class UBP_SaveGameObject_V2_C final : public UBP_SaveGameObject_V1_C
+class UBP_SaveGameObject_V2_C : public UBP_SaveGameObject_V1_C
 {
 public:
 	static class UClass* StaticClass()

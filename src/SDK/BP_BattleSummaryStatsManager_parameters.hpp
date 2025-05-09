@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "S_BattleSummaryStats_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "S_BattleSummaryStats_structs.hpp"
 
 
 namespace SDK::Params

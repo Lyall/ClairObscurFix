@@ -12,9 +12,9 @@
 
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "ALS_CharacterBP_classes.hpp"
 #include "ALSV4_CPP_structs.hpp"
 #include "E_CharacterList_structs.hpp"
+#include "ALS_CharacterBP_classes.hpp"
 
 
 namespace SDK

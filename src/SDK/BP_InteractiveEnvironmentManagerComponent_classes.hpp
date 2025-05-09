@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "S_ListOfActorsPerInteractionType_structs.hpp"
-#include "E_InteractiveEnvironmentType_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "S_ListOfActorsPerInteractionType_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "E_InteractiveEnvironmentType_structs.hpp"
 
 
 namespace SDK

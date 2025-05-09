@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "SandFall_classes.hpp"
-#include "Engine_structs.hpp"
 #include "S_InteractiveMusicParameters_structs.hpp"
 #include "S_InteractiveMusic_structs.hpp"
+#include "SandFall_classes.hpp"
+#include "Engine_structs.hpp"
 #include "E_InteractiveMusicContext_structs.hpp"
 
 

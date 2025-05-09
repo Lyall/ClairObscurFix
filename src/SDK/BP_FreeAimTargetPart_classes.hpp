@@ -12,8 +12,8 @@
 
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "EFreeAimBodyPartType_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "EFreeAimBodyPartType_structs.hpp"
 
 
 namespace SDK

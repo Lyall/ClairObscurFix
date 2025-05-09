@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_Subtitles.WBP_Subtitles_C.ExecuteUbergraph_WBP_Subtitles
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Subtitles_C::ExecuteUbergraph_WBP_Subtitles(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Subtitles_C", "ExecuteUbergraph_WBP_Subtitles");
-
-	Params::WBP_Subtitles_C_ExecuteUbergraph_WBP_Subtitles Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_Subtitles.WBP_Subtitles_C.OnSubtitleWidgetCreated_BP
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -52,6 +32,26 @@ void UWBP_Subtitles_C::OnSubtitleWidgetCreated_BP(class UVerticalBoxSlot* NewSub
 	Params::WBP_Subtitles_C_OnSubtitleWidgetCreated_BP Parms{};
 
 	Parms.NewSubWidget = NewSubWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Subtitles.WBP_Subtitles_C.ExecuteUbergraph_WBP_Subtitles
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Subtitles_C::ExecuteUbergraph_WBP_Subtitles(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Subtitles_C", "ExecuteUbergraph_WBP_Subtitles");
+
+	Params::WBP_Subtitles_C_ExecuteUbergraph_WBP_Subtitles Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

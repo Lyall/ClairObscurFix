@@ -12,8 +12,8 @@
 
 #include "E_jRPG_StatType_structs.hpp"
 #include "ECharacterAttribute_structs.hpp"
-#include "EAttackType_structs.hpp"
 #include "EAttributeScalingGrade_structs.hpp"
+#include "EAttackType_structs.hpp"
 
 
 namespace SDK

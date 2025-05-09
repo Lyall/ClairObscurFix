@@ -29,38 +29,59 @@ static_assert(sizeof(WBP_CinematicTransition_C_AnimateBlackBars) == 0x000008, "W
 static_assert(offsetof(WBP_CinematicTransition_C_AnimateBlackBars, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_CinematicTransition_C_AnimateBlackBars::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
 
 // Function WBP_CinematicTransition.WBP_CinematicTransition_C.ComputeBlackBarSize
-// 0x0078 (0x0078 - 0x0000)
+// 0x00B8 (0x00B8 - 0x0000)
 struct WBP_CinematicTransition_C_ComputeBlackBarSize final
 {
 public:
 	double                                        ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetViewportScale_ReturnValue;             // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bIsLetterBox;                                      // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetViewportScale_ReturnValue;             // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_SafeDivide_ReturnValue;                   // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              CallFunc_Conv_DoubleToVector2D_ReturnValue;        // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              CallFunc_GetViewportSize_ReturnValue;              // 0x0028(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              CallFunc_Multiply_Vector2DVector2D_ReturnValue;    // 0x0038(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_BreakVector2D_X;                          // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_BreakVector2D_Y;                          // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        K2Node_MathExpression_ReturnValue;                 // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Abs_ReturnValue;                          // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SafeDivide_B_ImplicitCast;                // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector2D_X_1;                        // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector2D_Y_1;                        // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_MathExpression_ReturnValue;                 // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_1;      // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_DoubleDouble_ReturnValue;       // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Abs_ReturnValue;                          // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_MathExpression_ReturnValue_1;               // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_2;      // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Abs_ReturnValue_1;                        // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_Select_Default;                             // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SafeDivide_B_ImplicitCast;                // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_CinematicTransition_C_ComputeBlackBarSize) == 0x000008, "Wrong alignment on WBP_CinematicTransition_C_ComputeBlackBarSize");
-static_assert(sizeof(WBP_CinematicTransition_C_ComputeBlackBarSize) == 0x000078, "Wrong size on WBP_CinematicTransition_C_ComputeBlackBarSize");
+static_assert(sizeof(WBP_CinematicTransition_C_ComputeBlackBarSize) == 0x0000B8, "Wrong size on WBP_CinematicTransition_C_ComputeBlackBarSize");
 static_assert(offsetof(WBP_CinematicTransition_C_ComputeBlackBarSize, ReturnValue) == 0x000000, "Member 'WBP_CinematicTransition_C_ComputeBlackBarSize::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CinematicTransition_C_ComputeBlackBarSize, CallFunc_GetViewportScale_ReturnValue) == 0x000008, "Member 'WBP_CinematicTransition_C_ComputeBlackBarSize::CallFunc_GetViewportScale_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CinematicTransition_C_ComputeBlackBarSize, bIsLetterBox) == 0x000008, "Member 'WBP_CinematicTransition_C_ComputeBlackBarSize::bIsLetterBox' has a wrong offset!");
+static_assert(offsetof(WBP_CinematicTransition_C_ComputeBlackBarSize, Temp_bool_Variable) == 0x000009, "Member 'WBP_CinematicTransition_C_ComputeBlackBarSize::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_CinematicTransition_C_ComputeBlackBarSize, CallFunc_GetViewportScale_ReturnValue) == 0x00000C, "Member 'WBP_CinematicTransition_C_ComputeBlackBarSize::CallFunc_GetViewportScale_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_CinematicTransition_C_ComputeBlackBarSize, CallFunc_SafeDivide_ReturnValue) == 0x000010, "Member 'WBP_CinematicTransition_C_ComputeBlackBarSize::CallFunc_SafeDivide_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_CinematicTransition_C_ComputeBlackBarSize, CallFunc_Conv_DoubleToVector2D_ReturnValue) == 0x000018, "Member 'WBP_CinematicTransition_C_ComputeBlackBarSize::CallFunc_Conv_DoubleToVector2D_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_CinematicTransition_C_ComputeBlackBarSize, CallFunc_GetViewportSize_ReturnValue) == 0x000028, "Member 'WBP_CinematicTransition_C_ComputeBlackBarSize::CallFunc_GetViewportSize_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_CinematicTransition_C_ComputeBlackBarSize, CallFunc_Multiply_Vector2DVector2D_ReturnValue) == 0x000038, "Member 'WBP_CinematicTransition_C_ComputeBlackBarSize::CallFunc_Multiply_Vector2DVector2D_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_CinematicTransition_C_ComputeBlackBarSize, CallFunc_BreakVector2D_X) == 0x000048, "Member 'WBP_CinematicTransition_C_ComputeBlackBarSize::CallFunc_BreakVector2D_X' has a wrong offset!");
 static_assert(offsetof(WBP_CinematicTransition_C_ComputeBlackBarSize, CallFunc_BreakVector2D_Y) == 0x000050, "Member 'WBP_CinematicTransition_C_ComputeBlackBarSize::CallFunc_BreakVector2D_Y' has a wrong offset!");
-static_assert(offsetof(WBP_CinematicTransition_C_ComputeBlackBarSize, K2Node_MathExpression_ReturnValue) == 0x000058, "Member 'WBP_CinematicTransition_C_ComputeBlackBarSize::K2Node_MathExpression_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CinematicTransition_C_ComputeBlackBarSize, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000060, "Member 'WBP_CinematicTransition_C_ComputeBlackBarSize::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CinematicTransition_C_ComputeBlackBarSize, CallFunc_Abs_ReturnValue) == 0x000068, "Member 'WBP_CinematicTransition_C_ComputeBlackBarSize::CallFunc_Abs_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CinematicTransition_C_ComputeBlackBarSize, CallFunc_SafeDivide_B_ImplicitCast) == 0x000070, "Member 'WBP_CinematicTransition_C_ComputeBlackBarSize::CallFunc_SafeDivide_B_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_CinematicTransition_C_ComputeBlackBarSize, CallFunc_BreakVector2D_X_1) == 0x000058, "Member 'WBP_CinematicTransition_C_ComputeBlackBarSize::CallFunc_BreakVector2D_X_1' has a wrong offset!");
+static_assert(offsetof(WBP_CinematicTransition_C_ComputeBlackBarSize, CallFunc_BreakVector2D_Y_1) == 0x000060, "Member 'WBP_CinematicTransition_C_ComputeBlackBarSize::CallFunc_BreakVector2D_Y_1' has a wrong offset!");
+static_assert(offsetof(WBP_CinematicTransition_C_ComputeBlackBarSize, K2Node_MathExpression_ReturnValue) == 0x000068, "Member 'WBP_CinematicTransition_C_ComputeBlackBarSize::K2Node_MathExpression_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CinematicTransition_C_ComputeBlackBarSize, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x000070, "Member 'WBP_CinematicTransition_C_ComputeBlackBarSize::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CinematicTransition_C_ComputeBlackBarSize, CallFunc_Multiply_DoubleDouble_ReturnValue_1) == 0x000078, "Member 'WBP_CinematicTransition_C_ComputeBlackBarSize::CallFunc_Multiply_DoubleDouble_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_CinematicTransition_C_ComputeBlackBarSize, CallFunc_LessEqual_DoubleDouble_ReturnValue) == 0x000080, "Member 'WBP_CinematicTransition_C_ComputeBlackBarSize::CallFunc_LessEqual_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CinematicTransition_C_ComputeBlackBarSize, CallFunc_Abs_ReturnValue) == 0x000088, "Member 'WBP_CinematicTransition_C_ComputeBlackBarSize::CallFunc_Abs_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CinematicTransition_C_ComputeBlackBarSize, K2Node_MathExpression_ReturnValue_1) == 0x000090, "Member 'WBP_CinematicTransition_C_ComputeBlackBarSize::K2Node_MathExpression_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_CinematicTransition_C_ComputeBlackBarSize, CallFunc_Multiply_DoubleDouble_ReturnValue_2) == 0x000098, "Member 'WBP_CinematicTransition_C_ComputeBlackBarSize::CallFunc_Multiply_DoubleDouble_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_CinematicTransition_C_ComputeBlackBarSize, CallFunc_Abs_ReturnValue_1) == 0x0000A0, "Member 'WBP_CinematicTransition_C_ComputeBlackBarSize::CallFunc_Abs_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_CinematicTransition_C_ComputeBlackBarSize, K2Node_Select_Default) == 0x0000A8, "Member 'WBP_CinematicTransition_C_ComputeBlackBarSize::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(WBP_CinematicTransition_C_ComputeBlackBarSize, CallFunc_SafeDivide_B_ImplicitCast) == 0x0000B0, "Member 'WBP_CinematicTransition_C_ComputeBlackBarSize::CallFunc_SafeDivide_B_ImplicitCast' has a wrong offset!");
 
 // Function WBP_CinematicTransition.WBP_CinematicTransition_C.ExecuteUbergraph_WBP_CinematicTransition
 // 0x0044 (0x0044 - 0x0000)
@@ -93,17 +114,36 @@ static_assert(offsetof(WBP_CinematicTransition_C_Tick, MyGeometry) == 0x000000, 
 static_assert(offsetof(WBP_CinematicTransition_C_Tick, InDeltaTime) == 0x000038, "Member 'WBP_CinematicTransition_C_Tick::InDeltaTime' has a wrong offset!");
 
 // Function WBP_CinematicTransition.WBP_CinematicTransition_C.UpdateBlackBarsSize
-// 0x0010 (0x0010 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct WBP_CinematicTransition_C_UpdateBlackBarsSize final
 {
 public:
-	double                                        CallFunc_ComputeBlackBarSize_ReturnValue;          // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetHeightOverride_InHeightOverride_ImplicitCast; // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Temp_real_Variable;                                // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Temp_real_Variable_1;                              // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_ComputeBlackBarSize_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_ComputeBlackBarSize_bIsLetterBox;         // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Select_Default;                             // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Select_Default_1;                           // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Select_Option_1_ImplicitCast;               // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Select_Option_0_ImplicitCast;               // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_CinematicTransition_C_UpdateBlackBarsSize) == 0x000008, "Wrong alignment on WBP_CinematicTransition_C_UpdateBlackBarsSize");
-static_assert(sizeof(WBP_CinematicTransition_C_UpdateBlackBarsSize) == 0x000010, "Wrong size on WBP_CinematicTransition_C_UpdateBlackBarsSize");
-static_assert(offsetof(WBP_CinematicTransition_C_UpdateBlackBarsSize, CallFunc_ComputeBlackBarSize_ReturnValue) == 0x000000, "Member 'WBP_CinematicTransition_C_UpdateBlackBarsSize::CallFunc_ComputeBlackBarSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CinematicTransition_C_UpdateBlackBarsSize, CallFunc_SetHeightOverride_InHeightOverride_ImplicitCast) == 0x000008, "Member 'WBP_CinematicTransition_C_UpdateBlackBarsSize::CallFunc_SetHeightOverride_InHeightOverride_ImplicitCast' has a wrong offset!");
+static_assert(sizeof(WBP_CinematicTransition_C_UpdateBlackBarsSize) == 0x000030, "Wrong size on WBP_CinematicTransition_C_UpdateBlackBarsSize");
+static_assert(offsetof(WBP_CinematicTransition_C_UpdateBlackBarsSize, Temp_bool_Variable) == 0x000000, "Member 'WBP_CinematicTransition_C_UpdateBlackBarsSize::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_CinematicTransition_C_UpdateBlackBarsSize, Temp_real_Variable) == 0x000004, "Member 'WBP_CinematicTransition_C_UpdateBlackBarsSize::Temp_real_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_CinematicTransition_C_UpdateBlackBarsSize, Temp_real_Variable_1) == 0x000008, "Member 'WBP_CinematicTransition_C_UpdateBlackBarsSize::Temp_real_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_CinematicTransition_C_UpdateBlackBarsSize, Temp_bool_Variable_1) == 0x00000C, "Member 'WBP_CinematicTransition_C_UpdateBlackBarsSize::Temp_bool_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_CinematicTransition_C_UpdateBlackBarsSize, CallFunc_ComputeBlackBarSize_ReturnValue) == 0x000010, "Member 'WBP_CinematicTransition_C_UpdateBlackBarsSize::CallFunc_ComputeBlackBarSize_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CinematicTransition_C_UpdateBlackBarsSize, CallFunc_ComputeBlackBarSize_bIsLetterBox) == 0x000018, "Member 'WBP_CinematicTransition_C_UpdateBlackBarsSize::CallFunc_ComputeBlackBarSize_bIsLetterBox' has a wrong offset!");
+static_assert(offsetof(WBP_CinematicTransition_C_UpdateBlackBarsSize, K2Node_Select_Default) == 0x00001C, "Member 'WBP_CinematicTransition_C_UpdateBlackBarsSize::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(WBP_CinematicTransition_C_UpdateBlackBarsSize, K2Node_Select_Default_1) == 0x000020, "Member 'WBP_CinematicTransition_C_UpdateBlackBarsSize::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(WBP_CinematicTransition_C_UpdateBlackBarsSize, K2Node_Select_Option_1_ImplicitCast) == 0x000024, "Member 'WBP_CinematicTransition_C_UpdateBlackBarsSize::K2Node_Select_Option_1_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_CinematicTransition_C_UpdateBlackBarsSize, K2Node_Select_Option_0_ImplicitCast) == 0x000028, "Member 'WBP_CinematicTransition_C_UpdateBlackBarsSize::K2Node_Select_Option_0_ImplicitCast' has a wrong offset!");
 
 }
 

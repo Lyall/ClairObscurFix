@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
+#include "FUINavigationNode_structs.hpp"
+#include "EInputAction_structs.hpp"
+#include "EFaceActions_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "EUINavigationDirection_structs.hpp"
-#include "FUINavigationNode_structs.hpp"
-#include "EFaceActions_structs.hpp"
 #include "EUINavigationLayer_structs.hpp"
-#include "EInputAction_structs.hpp"
 
 
 namespace SDK

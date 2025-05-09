@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "E_jRPG_ActionType_structs.hpp"
-#include "E_jRPG_SpeedModifier_structs.hpp"
-#include "S_jRPG_WeaponUnlock_structs.hpp"
 #include "E_jRPG_TargetingType_structs.hpp"
+#include "E_jRPG_ActionType_structs.hpp"
+#include "S_jRPG_WeaponUnlock_structs.hpp"
+#include "E_jRPG_SpeedModifier_structs.hpp"
 
 
 namespace SDK

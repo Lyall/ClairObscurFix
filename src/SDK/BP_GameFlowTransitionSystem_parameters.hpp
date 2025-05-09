@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "S_InputLockParameters_structs.hpp"
 #include "S_GameplayPauseParameters_structs.hpp"
-#include "Engine_structs.hpp"
 #include "E_GameFlowTransitionPhase_structs.hpp"
 #include "S_GameFlowTransitionRequest_structs.hpp"
 #include "S_GameFlowTransitionType_structs.hpp"

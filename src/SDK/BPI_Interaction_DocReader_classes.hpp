@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "EInputDevices_structs.hpp"
 #include "CoreUObject_classes.hpp"
+#include "EInputDevices_structs.hpp"
 
 
 namespace SDK

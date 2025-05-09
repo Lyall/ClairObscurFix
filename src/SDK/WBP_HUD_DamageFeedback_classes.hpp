@@ -12,11 +12,11 @@
 
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
-#include "EAttackType_structs.hpp"
 #include "EElementalAffinity_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
+#include "EAttackType_structs.hpp"
 
 
 namespace SDK

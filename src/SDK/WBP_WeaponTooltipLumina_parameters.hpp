@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "EWeaponQuality_structs.hpp"
-#include "SlateCore_structs.hpp"
-#include "FPassiveEffect_structs.hpp"
 #include "UMG_structs.hpp"
+#include "FPassiveEffect_structs.hpp"
+#include "SlateCore_structs.hpp"
+#include "EWeaponQuality_structs.hpp"
 
 
 namespace SDK::Params

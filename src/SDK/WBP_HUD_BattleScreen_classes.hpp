@@ -12,9 +12,9 @@
 
 #include "Engine_structs.hpp"
 #include "SandFall_structs.hpp"
+#include "EBattleTurnState_structs.hpp"
 #include "CommonUI_classes.hpp"
 #include "UMG_structs.hpp"
-#include "EBattleTurnState_structs.hpp"
 
 
 namespace SDK

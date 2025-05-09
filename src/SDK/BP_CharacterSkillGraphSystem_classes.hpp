@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "ESkillNodeState_structs.hpp"
 #include "SandFall_classes.hpp"
 #include "ELearnSkillBlockedReason_structs.hpp"
-#include "ESkillNodeState_structs.hpp"
 
 
 namespace SDK

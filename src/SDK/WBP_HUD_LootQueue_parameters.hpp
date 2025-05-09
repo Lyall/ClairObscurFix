@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "S_MerchantItemSellData_structs.hpp"
 #include "S_LootContext_structs.hpp"
+#include "S_MerchantItemSellData_structs.hpp"
 #include "E_jRPG_ItemType_structs.hpp"
+#include "Engine_structs.hpp"
 #include "S_MerchantItemQueueData_structs.hpp"
 
 

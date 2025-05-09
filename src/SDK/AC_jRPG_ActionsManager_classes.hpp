@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "E_jRPG_ActionType_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "SandFall_structs.hpp"
 #include "E_jRPG_StatType_structs.hpp"
 #include "EAttackType_structs.hpp"
+#include "E_jRPG_ActionType_structs.hpp"
 
 
 namespace SDK

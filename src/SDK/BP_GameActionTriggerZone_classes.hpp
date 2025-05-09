@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "FPromptParams_structs.hpp"
 #include "SandFall_structs.hpp"
-#include "E_GameActionTriggerZoneResetCategory_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "E_GameActionTriggerZoneResetCategory_structs.hpp"
 #include "E_GameActionTriggerZoneDestroyCategory_structs.hpp"
+#include "FPromptParams_structs.hpp"
 
 
 namespace SDK
@@ -23,7 +23,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_GameActionTriggerZone.BP_GameActionTriggerZone_C
 // 0x00A0 (0x0330 - 0x0290)
-class ABP_GameActionTriggerZone_C : public AActor
+class ABP_GameActionTriggerZone_C final : public AActor
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0290(0x0008)(ZeroConstructor, Transient, DuplicateTransient)

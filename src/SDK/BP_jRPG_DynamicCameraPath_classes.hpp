@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "E_jRPG_CameraPathType_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_classes.hpp"
+#include "E_jRPG_CameraPathType_structs.hpp"
 
 
 namespace SDK

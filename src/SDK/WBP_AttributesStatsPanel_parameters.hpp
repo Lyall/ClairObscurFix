@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
+#include "S_Stats_AttributesScaling_structs.hpp"
 #include "E_jRPG_StatType_structs.hpp"
-#include "S_jRPG_Item_StaticData_structs.hpp"
 #include "ECharacterAttribute_structs.hpp"
+#include "EAttributeScalingGrade_structs.hpp"
 #include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
+#include "S_jRPG_Item_StaticData_structs.hpp"
 #include "S_ItemQuantity_structs.hpp"
-#include "EAttributeScalingGrade_structs.hpp"
-#include "S_Stats_AttributesScaling_structs.hpp"
 
 
 namespace SDK::Params

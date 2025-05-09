@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "ESkillNodeState_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FSkillGraphNode_structs.hpp"
-#include "ELearnSkillBlockedReason_structs.hpp"
-#include "ESkillNodeState_structs.hpp"
 #include "S_jRPG_Item_StaticData_structs.hpp"
+#include "ELearnSkillBlockedReason_structs.hpp"
 #include "FSkillUnlockData_structs.hpp"
 #include "S_jRPG_CharacterSaveState_structs.hpp"
 

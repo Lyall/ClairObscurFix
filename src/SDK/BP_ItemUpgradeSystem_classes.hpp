@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "SandFall_classes.hpp"
-#include "Engine_structs.hpp"
 #include "S_ItemQuantityList_structs.hpp"
+#include "Engine_structs.hpp"
 #include "S_WeaponInstanceData_structs.hpp"
 #include "EWeaponQuality_structs.hpp"
 

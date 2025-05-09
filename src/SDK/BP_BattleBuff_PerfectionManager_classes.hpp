@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "EPerfectionReason_structs.hpp"
-#include "Engine_structs.hpp"
 #include "E_Perfection_Ranks_structs.hpp"
-#include "EDamageReason_structs.hpp"
+#include "Engine_structs.hpp"
 #include "BP_BattleBuffInstance_classes.hpp"
+#include "EDamageReason_structs.hpp"
+#include "EPerfectionReason_structs.hpp"
 
 
 namespace SDK

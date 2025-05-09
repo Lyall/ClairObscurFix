@@ -17,118 +17,171 @@
 namespace SDK
 {
 
-// Function BP_Audio_Spline_Random.BP_Audio_Spline_Random_C.CheckForErrors
-// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_Audio_Spline_Random.BP_Audio_Spline_Random_C.StartTimerForSoundData
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class FText>&                    ErrorMessages                                          (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FS_RuntimeSoundDataWithDelay&    SoundData_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 
-bool ABP_Audio_Spline_Random_C::CheckForErrors(TArray<class FText>& ErrorMessages)
+void ABP_Audio_Spline_Random_C::StartTimerForSoundData(struct FS_RuntimeSoundDataWithDelay& SoundData_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Audio_Spline_Random_C", "CheckForErrors");
+		Func = Class->GetFunction("BP_Audio_Spline_Random_C", "StartTimerForSoundData");
 
-	Params::BP_Audio_Spline_Random_C_CheckForErrors Parms{};
+	Params::BP_Audio_Spline_Random_C_StartTimerForSoundData Parms{};
 
-	Parms.ErrorMessages = std::move(ErrorMessages);
+	Parms.SoundData_0 = std::move(SoundData_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	ErrorMessages = std::move(Parms.ErrorMessages);
-
-	return Parms.ReturnValue;
+	SoundData_0 = std::move(Parms.SoundData_0);
 }
 
 
-// Function BP_Audio_Spline_Random.BP_Audio_Spline_Random_C.DEBUG_DrawMinMaxPositions
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_Audio_Spline_Random.BP_Audio_Spline_Random_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Audio_Spline_Random_C::DEBUG_DrawMinMaxPositions()
+void ABP_Audio_Spline_Random_C::ReceiveTick(float DeltaSeconds)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Audio_Spline_Random_C", "DEBUG_DrawMinMaxPositions");
+		Func = Class->GetFunction("BP_Audio_Spline_Random_C", "ReceiveTick");
+
+	Params::BP_Audio_Spline_Random_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Audio_Spline_Random.BP_Audio_Spline_Random_C.ReceiveEndPlay
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Audio_Spline_Random_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Audio_Spline_Random_C", "ReceiveEndPlay");
+
+	Params::BP_Audio_Spline_Random_C_ReceiveEndPlay Parms{};
+
+	Parms.EndPlayReason = EndPlayReason;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Audio_Spline_Random.BP_Audio_Spline_Random_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_Audio_Spline_Random_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Audio_Spline_Random_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Audio_Spline_Random.BP_Audio_Spline_Random_C.DEBUG_DrawPlayedSound
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USoundBase*                       Sound                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FVector&                   position                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Audio_Spline_Random_C::DEBUG_DrawPlayedSound(class USoundBase* Sound, const struct FVector& position)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Audio_Spline_Random_C", "DEBUG_DrawPlayedSound");
-
-	Params::BP_Audio_Spline_Random_C_DEBUG_DrawPlayedSound Parms{};
-
-	Parms.Sound = Sound;
-	Parms.position = std::move(position);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Audio_Spline_Random.BP_Audio_Spline_Random_C.ExecuteUbergraph_BP_Audio_Spline_Random
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Audio_Spline_Random_C::ExecuteUbergraph_BP_Audio_Spline_Random(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Audio_Spline_Random_C", "ExecuteUbergraph_BP_Audio_Spline_Random");
-
-	Params::BP_Audio_Spline_Random_C_ExecuteUbergraph_BP_Audio_Spline_Random Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Audio_Spline_Random.BP_Audio_Spline_Random_C.GetMinMaxDistanceFromLocationInRange
+// Function BP_Audio_Spline_Random.BP_Audio_Spline_Random_C.PlayRandomSoundAtRandomPosition
 // (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FVector&                   Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  Range                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Found                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double*                                 MinDistance                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double*                                 MaxDistance                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FS_RuntimeSoundDataWithDelay&    RandomSoundData                                        (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 
-void ABP_Audio_Spline_Random_C::GetMinMaxDistanceFromLocationInRange(const struct FVector& Location, double Range, bool* Found, double* MinDistance, double* MaxDistance)
+void ABP_Audio_Spline_Random_C::PlayRandomSoundAtRandomPosition(struct FS_RuntimeSoundDataWithDelay& RandomSoundData)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Audio_Spline_Random_C", "GetMinMaxDistanceFromLocationInRange");
+		Func = Class->GetFunction("BP_Audio_Spline_Random_C", "PlayRandomSoundAtRandomPosition");
 
-	Params::BP_Audio_Spline_Random_C_GetMinMaxDistanceFromLocationInRange Parms{};
+	Params::BP_Audio_Spline_Random_C_PlayRandomSoundAtRandomPosition Parms{};
 
-	Parms.Location = std::move(Location);
-	Parms.Range = Range;
+	Parms.RandomSoundData = std::move(RandomSoundData);
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	RandomSoundData = std::move(Parms.RandomSoundData);
+}
+
+
+// Function BP_Audio_Spline_Random.BP_Audio_Spline_Random_C.OnTimerElapsed
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void ABP_Audio_Spline_Random_C::OnTimerElapsed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Audio_Spline_Random_C", "OnTimerElapsed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Audio_Spline_Random.BP_Audio_Spline_Random_C.GetSplinePointForSound
+// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USoundBase*                       Sound                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// struct FVector*                         position                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Found                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Audio_Spline_Random_C::GetSplinePointForSound(class USoundBase* Sound, struct FVector* position, bool* Found)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Audio_Spline_Random_C", "GetSplinePointForSound");
+
+	Params::BP_Audio_Spline_Random_C_GetSplinePointForSound Parms{};
+
+	Parms.Sound = Sound;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (position != nullptr)
+		*position = std::move(Parms.position);
 
 	if (Found != nullptr)
 		*Found = Parms.Found;
+}
 
-	if (MinDistance != nullptr)
-		*MinDistance = Parms.MinDistance;
 
-	if (MaxDistance != nullptr)
-		*MaxDistance = Parms.MaxDistance;
+// Function BP_Audio_Spline_Random.BP_Audio_Spline_Random_C.GetRandomSplinePointsInDistanceRange
+// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  MinDistance                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  MaxDistance                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NumberOfPoints                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<struct FVector>*                 Points                                                 (Parm, OutParm)
+
+void ABP_Audio_Spline_Random_C::GetRandomSplinePointsInDistanceRange(double MinDistance, double MaxDistance, int32 NumberOfPoints, TArray<struct FVector>* Points)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Audio_Spline_Random_C", "GetRandomSplinePointsInDistanceRange");
+
+	Params::BP_Audio_Spline_Random_C_GetRandomSplinePointsInDistanceRange Parms{};
+
+	Parms.MinDistance = MinDistance;
+	Parms.MaxDistance = MaxDistance;
+	Parms.NumberOfPoints = NumberOfPoints;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Points != nullptr)
+		*Points = std::move(Parms.Points);
 }
 
 
@@ -166,171 +219,118 @@ void ABP_Audio_Spline_Random_C::GetRandomSplinePointInRange(const struct FVector
 }
 
 
-// Function BP_Audio_Spline_Random.BP_Audio_Spline_Random_C.GetRandomSplinePointsInDistanceRange
-// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_Audio_Spline_Random.BP_Audio_Spline_Random_C.GetMinMaxDistanceFromLocationInRange
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double                                  MinDistance                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  MaxDistance                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NumberOfPoints                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FVector>*                 Points                                                 (Parm, OutParm)
-
-void ABP_Audio_Spline_Random_C::GetRandomSplinePointsInDistanceRange(double MinDistance, double MaxDistance, int32 NumberOfPoints, TArray<struct FVector>* Points)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Audio_Spline_Random_C", "GetRandomSplinePointsInDistanceRange");
-
-	Params::BP_Audio_Spline_Random_C_GetRandomSplinePointsInDistanceRange Parms{};
-
-	Parms.MinDistance = MinDistance;
-	Parms.MaxDistance = MaxDistance;
-	Parms.NumberOfPoints = NumberOfPoints;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Points != nullptr)
-		*Points = std::move(Parms.Points);
-}
-
-
-// Function BP_Audio_Spline_Random.BP_Audio_Spline_Random_C.GetSplinePointForSound
-// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USoundBase*                       Sound                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// struct FVector*                         position                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  Range                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool*                                   Found                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double*                                 MinDistance                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double*                                 MaxDistance                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Audio_Spline_Random_C::GetSplinePointForSound(class USoundBase* Sound, struct FVector* position, bool* Found)
+void ABP_Audio_Spline_Random_C::GetMinMaxDistanceFromLocationInRange(const struct FVector& Location, double Range, bool* Found, double* MinDistance, double* MaxDistance)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Audio_Spline_Random_C", "GetSplinePointForSound");
+		Func = Class->GetFunction("BP_Audio_Spline_Random_C", "GetMinMaxDistanceFromLocationInRange");
 
-	Params::BP_Audio_Spline_Random_C_GetSplinePointForSound Parms{};
+	Params::BP_Audio_Spline_Random_C_GetMinMaxDistanceFromLocationInRange Parms{};
 
-	Parms.Sound = Sound;
+	Parms.Location = std::move(Location);
+	Parms.Range = Range;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (position != nullptr)
-		*position = std::move(Parms.position);
 
 	if (Found != nullptr)
 		*Found = Parms.Found;
+
+	if (MinDistance != nullptr)
+		*MinDistance = Parms.MinDistance;
+
+	if (MaxDistance != nullptr)
+		*MaxDistance = Parms.MaxDistance;
 }
 
 
-// Function BP_Audio_Spline_Random.BP_Audio_Spline_Random_C.OnTimerElapsed
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function BP_Audio_Spline_Random.BP_Audio_Spline_Random_C.ExecuteUbergraph_BP_Audio_Spline_Random
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Audio_Spline_Random_C::OnTimerElapsed()
+void ABP_Audio_Spline_Random_C::ExecuteUbergraph_BP_Audio_Spline_Random(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Audio_Spline_Random_C", "OnTimerElapsed");
+		Func = Class->GetFunction("BP_Audio_Spline_Random_C", "ExecuteUbergraph_BP_Audio_Spline_Random");
+
+	Params::BP_Audio_Spline_Random_C_ExecuteUbergraph_BP_Audio_Spline_Random Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Audio_Spline_Random.BP_Audio_Spline_Random_C.DEBUG_DrawPlayedSound
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USoundBase*                       Sound                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   position                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Audio_Spline_Random_C::DEBUG_DrawPlayedSound(class USoundBase* Sound, const struct FVector& position)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Audio_Spline_Random_C", "DEBUG_DrawPlayedSound");
+
+	Params::BP_Audio_Spline_Random_C_DEBUG_DrawPlayedSound Parms{};
+
+	Parms.Sound = Sound;
+	Parms.position = std::move(position);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Audio_Spline_Random.BP_Audio_Spline_Random_C.DEBUG_DrawMinMaxPositions
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_Audio_Spline_Random_C::DEBUG_DrawMinMaxPositions()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Audio_Spline_Random_C", "DEBUG_DrawMinMaxPositions");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Audio_Spline_Random.BP_Audio_Spline_Random_C.PlayRandomSoundAtRandomPosition
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function BP_Audio_Spline_Random.BP_Audio_Spline_Random_C.CheckForErrors
+// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FS_RuntimeSoundDataWithDelay&    RandomSoundData                                        (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+// TArray<class FText>&                    ErrorMessages                                          (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Audio_Spline_Random_C::PlayRandomSoundAtRandomPosition(struct FS_RuntimeSoundDataWithDelay& RandomSoundData)
+bool ABP_Audio_Spline_Random_C::CheckForErrors(TArray<class FText>& ErrorMessages)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Audio_Spline_Random_C", "PlayRandomSoundAtRandomPosition");
+		Func = Class->GetFunction("BP_Audio_Spline_Random_C", "CheckForErrors");
 
-	Params::BP_Audio_Spline_Random_C_PlayRandomSoundAtRandomPosition Parms{};
+	Params::BP_Audio_Spline_Random_C_CheckForErrors Parms{};
 
-	Parms.RandomSoundData = std::move(RandomSoundData);
+	Parms.ErrorMessages = std::move(ErrorMessages);
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	RandomSoundData = std::move(Parms.RandomSoundData);
-}
+	ErrorMessages = std::move(Parms.ErrorMessages);
 
-
-// Function BP_Audio_Spline_Random.BP_Audio_Spline_Random_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_Audio_Spline_Random_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Audio_Spline_Random_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Audio_Spline_Random.BP_Audio_Spline_Random_C.ReceiveEndPlay
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Audio_Spline_Random_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Audio_Spline_Random_C", "ReceiveEndPlay");
-
-	Params::BP_Audio_Spline_Random_C_ReceiveEndPlay Parms{};
-
-	Parms.EndPlayReason = EndPlayReason;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Audio_Spline_Random.BP_Audio_Spline_Random_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Audio_Spline_Random_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Audio_Spline_Random_C", "ReceiveTick");
-
-	Params::BP_Audio_Spline_Random_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Audio_Spline_Random.BP_Audio_Spline_Random_C.StartTimerForSoundData
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FS_RuntimeSoundDataWithDelay&    SoundData_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
-
-void ABP_Audio_Spline_Random_C::StartTimerForSoundData(struct FS_RuntimeSoundDataWithDelay& SoundData_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Audio_Spline_Random_C", "StartTimerForSoundData");
-
-	Params::BP_Audio_Spline_Random_C_StartTimerForSoundData Parms{};
-
-	Parms.SoundData_0 = std::move(SoundData_0);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	SoundData_0 = std::move(Parms.SoundData_0);
+	return Parms.ReturnValue;
 }
 
 }

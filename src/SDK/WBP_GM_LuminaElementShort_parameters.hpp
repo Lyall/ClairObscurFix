@@ -12,10 +12,10 @@
 
 #include "CoreUObject_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "GameplayTags_structs.hpp"
 #include "S_jRPG_Item_StaticData_structs.hpp"
-#include "UMG_structs.hpp"
+#include "GameplayTags_structs.hpp"
 #include "FPassiveEffect_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK::Params

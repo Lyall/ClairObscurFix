@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "E_NpcDialogEvent_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "E_jRPG_EngageTypes_structs.hpp"
+#include "DialogCondition_Struct_structs.hpp"
+#include "E_NpcDialogEvent_structs.hpp"
 #include "Dialog_Struct_structs.hpp"
+#include "E_jRPG_EngageTypes_structs.hpp"
 #include "FSoundEvent_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "DialogCondition_Struct_structs.hpp"
 
 
 namespace SDK

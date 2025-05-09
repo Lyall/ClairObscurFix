@@ -17,23 +17,17 @@
 namespace SDK
 {
 
-// Function BP_Particle_Leaves.BP_Particle_Leaves_C.ExecuteUbergraph_BP_Particle_Leaves
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_Particle_Leaves.BP_Particle_Leaves_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_Particle_Leaves_C::ExecuteUbergraph_BP_Particle_Leaves(int32 EntryPoint)
+void ABP_Particle_Leaves_C::UserConstructionScript()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Particle_Leaves_C", "ExecuteUbergraph_BP_Particle_Leaves");
+		Func = Class->GetFunction("BP_Particle_Leaves_C", "UserConstructionScript");
 
-	Params::BP_Particle_Leaves_C_ExecuteUbergraph_BP_Particle_Leaves Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -51,17 +45,23 @@ void ABP_Particle_Leaves_C::ReceiveBeginPlay()
 }
 
 
-// Function BP_Particle_Leaves.BP_Particle_Leaves_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_Particle_Leaves.BP_Particle_Leaves_C.ExecuteUbergraph_BP_Particle_Leaves
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Particle_Leaves_C::UserConstructionScript()
+void ABP_Particle_Leaves_C::ExecuteUbergraph_BP_Particle_Leaves(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Particle_Leaves_C", "UserConstructionScript");
+		Func = Class->GetFunction("BP_Particle_Leaves_C", "ExecuteUbergraph_BP_Particle_Leaves");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BP_Particle_Leaves_C_ExecuteUbergraph_BP_Particle_Leaves Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

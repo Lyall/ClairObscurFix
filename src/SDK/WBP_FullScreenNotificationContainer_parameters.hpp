@@ -12,8 +12,8 @@
 
 #include "SandFall_structs.hpp"
 #include "E_QuestStatus_structs.hpp"
-#include "E_CharacterList_structs.hpp"
 #include "S_LootContext_structs.hpp"
+#include "E_CharacterList_structs.hpp"
 #include "E_WorldMapExplorationCapacity_structs.hpp"
 #include "UMG_structs.hpp"
 

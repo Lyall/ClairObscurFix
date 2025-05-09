@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "EButton_Control_structs.hpp"
 #include "WBP_HUD_QTE_Base_classes.hpp"
-#include "Engine_structs.hpp"
 
 
 namespace SDK

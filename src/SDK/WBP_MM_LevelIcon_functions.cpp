@@ -36,5 +36,59 @@ void UWBP_MM_LevelIcon_C::SetLevelIcon(const struct FFLevelDataEntry& LevelData)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
+
+// Function WBP_MM_LevelIcon.WBP_MM_LevelIcon_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_MM_LevelIcon_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MM_LevelIcon_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_MM_LevelIcon.WBP_MM_LevelIcon_C.OnSettingsApplied
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class UConfigurableGameUserSettings*UserConfig                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MM_LevelIcon_C::OnSettingsApplied(const class UConfigurableGameUserSettings* UserConfig)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MM_LevelIcon_C", "OnSettingsApplied");
+
+	Params::WBP_MM_LevelIcon_C_OnSettingsApplied Parms{};
+
+	Parms.UserConfig = UserConfig;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MM_LevelIcon.WBP_MM_LevelIcon_C.ExecuteUbergraph_WBP_MM_LevelIcon
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MM_LevelIcon_C::ExecuteUbergraph_WBP_MM_LevelIcon(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MM_LevelIcon_C", "ExecuteUbergraph_WBP_MM_LevelIcon");
+
+	Params::WBP_MM_LevelIcon_C_ExecuteUbergraph_WBP_MM_LevelIcon Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
 }
 

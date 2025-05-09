@@ -11,12 +11,12 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "E_HitReact_Anim_Type_structs.hpp"
+#include "E_EnemyIdleState_structs.hpp"
 #include "E_BattleLookDirection_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "EBattleTurnState_structs.hpp"
-#include "E_EnemyIdleState_structs.hpp"
+#include "E_HitReact_Anim_Type_structs.hpp"
 
 
 namespace SDK::Params

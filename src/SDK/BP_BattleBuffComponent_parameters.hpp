@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "EAPChangeReason_structs.hpp"
 #include "E_PerfectionUpdateType_structs.hpp"
 #include "Engine_structs.hpp"
+#include "EAPChangeReason_structs.hpp"
 #include "EPerfectionReason_structs.hpp"
-#include "E_BuffAndStatusEffectTypes_structs.hpp"
 #include "E_StanceType_structs.hpp"
+#include "E_BuffAndStatusEffectTypes_structs.hpp"
 
 
 namespace SDK::Params

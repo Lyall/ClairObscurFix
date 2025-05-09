@@ -25,13 +25,13 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0040(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ExecuteGameAction(const class APlayerController* Controller);
-	void ExecuteUbergraph_BP_GameActionInstance_PlayInWorldDialogue(int32 EntryPoint);
 	void OnInWorldDialogueCompleted();
+	void ExecuteUbergraph_BP_GameActionInstance_PlayInWorldDialogue(int32 EntryPoint);
+	void ExecuteGameAction(const class APlayerController* Controller);
 
-	class FString GetDebugString() const;
-	bool ShouldBlockAutoSaveDuringExecution() const;
 	bool ShouldTriggerAutoSaveAfterExecution() const;
+	bool ShouldBlockAutoSaveDuringExecution() const;
+	class FString GetDebugString() const;
 
 public:
 	static class UClass* StaticClass()

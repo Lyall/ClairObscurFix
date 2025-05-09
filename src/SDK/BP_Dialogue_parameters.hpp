@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "S_DialogueParameters_structs.hpp"
-#include "E_Dialogue_AudioTrigger_structs.hpp"
 #include "S_Dialogue_EndParameters_structs.hpp"
+#include "Engine_structs.hpp"
+#include "E_Dialogue_AudioTrigger_structs.hpp"
+#include "S_DialogueParameters_structs.hpp"
 
 
 namespace SDK::Params

@@ -17,23 +17,17 @@
 namespace SDK
 {
 
-// Function BP_PlayerAmbientParticlesLeaves.BP_PlayerAmbientParticlesLeaves_C.SetDilation
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_PlayerAmbientParticlesLeaves.BP_PlayerAmbientParticlesLeaves_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_PlayerAmbientParticlesLeaves_C::SetDilation(double NewValue)
+void ABP_PlayerAmbientParticlesLeaves_C::UserConstructionScript()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlayerAmbientParticlesLeaves_C", "SetDilation");
+		Func = Class->GetFunction("BP_PlayerAmbientParticlesLeaves_C", "UserConstructionScript");
 
-	Params::BP_PlayerAmbientParticlesLeaves_C_SetDilation Parms{};
-
-	Parms.NewValue = NewValue;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -51,17 +45,23 @@ void ABP_PlayerAmbientParticlesLeaves_C::SetLeavesMaterial()
 }
 
 
-// Function BP_PlayerAmbientParticlesLeaves.BP_PlayerAmbientParticlesLeaves_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_PlayerAmbientParticlesLeaves.BP_PlayerAmbientParticlesLeaves_C.SetDilation
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PlayerAmbientParticlesLeaves_C::UserConstructionScript()
+void ABP_PlayerAmbientParticlesLeaves_C::SetDilation(double NewValue)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlayerAmbientParticlesLeaves_C", "UserConstructionScript");
+		Func = Class->GetFunction("BP_PlayerAmbientParticlesLeaves_C", "SetDilation");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BP_PlayerAmbientParticlesLeaves_C_SetDilation Parms{};
+
+	Parms.NewValue = NewValue;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

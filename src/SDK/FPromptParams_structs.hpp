@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "EFaceActions_structs.hpp"
 #include "EInputAction_structs.hpp"
+#include "EFaceActions_structs.hpp"
 
 
 namespace SDK

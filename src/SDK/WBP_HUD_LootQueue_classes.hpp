@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "S_MerchantItemQueueData_structs.hpp"
-#include "Engine_structs.hpp"
-#include "CommonUI_classes.hpp"
 #include "E_jRPG_ItemType_structs.hpp"
+#include "Engine_structs.hpp"
+#include "S_MerchantItemQueueData_structs.hpp"
+#include "CommonUI_classes.hpp"
 
 
 namespace SDK

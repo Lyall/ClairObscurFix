@@ -10,15 +10,15 @@
 
 #include "Basic.hpp"
 
+#include "E_NpcDialogueCamera_structs.hpp"
 #include "SandFall_structs.hpp"
 #include "Engine_structs.hpp"
 #include "E_NPC_SpolightTypes_structs.hpp"
-#include "BP_jRPG_NPC_Base_classes.hpp"
-#include "E_CharacterList_structs.hpp"
-#include "E_FacialExpressionsNPC_structs.hpp"
-#include "E_NpcDialogueCamera_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "E_FacialExpressionsNPC_structs.hpp"
 #include "EDialogueCameraType_structs.hpp"
+#include "E_CharacterList_structs.hpp"
+#include "BP_jRPG_NPC_Base_classes.hpp"
 
 
 namespace SDK

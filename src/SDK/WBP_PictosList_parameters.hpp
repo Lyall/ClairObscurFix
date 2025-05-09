@@ -11,13 +11,13 @@
 #include "Basic.hpp"
 
 #include "SlateCore_structs.hpp"
-#include "CoreUObject_structs.hpp"
-#include "FEquipmentSlot_structs.hpp"
-#include "UMG_structs.hpp"
-#include "BlueprintSorting_structs.hpp"
 #include "E_jRPG_StatType_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "UMG_structs.hpp"
 #include "S_jRPG_Item_DynamicData_structs.hpp"
+#include "FEquipmentSlot_structs.hpp"
 #include "S_SortDropdownEntry_structs.hpp"
+#include "BlueprintSorting_structs.hpp"
 
 
 namespace SDK::Params

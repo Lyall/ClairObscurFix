@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "EWeaponQuality_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "EWeaponQuality_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 

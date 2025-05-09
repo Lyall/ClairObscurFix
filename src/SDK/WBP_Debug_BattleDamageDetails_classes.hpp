@@ -13,9 +13,9 @@
 #include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
-#include "EDamageReason_structs.hpp"
-#include "EAttackType_structs.hpp"
 #include "EElementalAffinity_structs.hpp"
+#include "EAttackType_structs.hpp"
+#include "EDamageReason_structs.hpp"
 
 
 namespace SDK

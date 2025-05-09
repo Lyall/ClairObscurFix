@@ -14,6 +14,17 @@
 namespace SDK::Params
 {
 
+// Function WBP_Subtitles.WBP_Subtitles_C.OnSubtitleWidgetCreated_BP
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Subtitles_C_OnSubtitleWidgetCreated_BP final
+{
+public:
+	class UVerticalBoxSlot*                       NewSubWidget;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Subtitles_C_OnSubtitleWidgetCreated_BP) == 0x000008, "Wrong alignment on WBP_Subtitles_C_OnSubtitleWidgetCreated_BP");
+static_assert(sizeof(WBP_Subtitles_C_OnSubtitleWidgetCreated_BP) == 0x000008, "Wrong size on WBP_Subtitles_C_OnSubtitleWidgetCreated_BP");
+static_assert(offsetof(WBP_Subtitles_C_OnSubtitleWidgetCreated_BP, NewSubWidget) == 0x000000, "Member 'WBP_Subtitles_C_OnSubtitleWidgetCreated_BP::NewSubWidget' has a wrong offset!");
+
 // Function WBP_Subtitles.WBP_Subtitles_C.ExecuteUbergraph_WBP_Subtitles
 // 0x0010 (0x0010 - 0x0000)
 struct WBP_Subtitles_C_ExecuteUbergraph_WBP_Subtitles final
@@ -27,17 +38,6 @@ static_assert(alignof(WBP_Subtitles_C_ExecuteUbergraph_WBP_Subtitles) == 0x00000
 static_assert(sizeof(WBP_Subtitles_C_ExecuteUbergraph_WBP_Subtitles) == 0x000010, "Wrong size on WBP_Subtitles_C_ExecuteUbergraph_WBP_Subtitles");
 static_assert(offsetof(WBP_Subtitles_C_ExecuteUbergraph_WBP_Subtitles, EntryPoint) == 0x000000, "Member 'WBP_Subtitles_C_ExecuteUbergraph_WBP_Subtitles::EntryPoint' has a wrong offset!");
 static_assert(offsetof(WBP_Subtitles_C_ExecuteUbergraph_WBP_Subtitles, K2Node_Event_NewSubWidget) == 0x000008, "Member 'WBP_Subtitles_C_ExecuteUbergraph_WBP_Subtitles::K2Node_Event_NewSubWidget' has a wrong offset!");
-
-// Function WBP_Subtitles.WBP_Subtitles_C.OnSubtitleWidgetCreated_BP
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Subtitles_C_OnSubtitleWidgetCreated_BP final
-{
-public:
-	class UVerticalBoxSlot*                       NewSubWidget;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Subtitles_C_OnSubtitleWidgetCreated_BP) == 0x000008, "Wrong alignment on WBP_Subtitles_C_OnSubtitleWidgetCreated_BP");
-static_assert(sizeof(WBP_Subtitles_C_OnSubtitleWidgetCreated_BP) == 0x000008, "Wrong size on WBP_Subtitles_C_OnSubtitleWidgetCreated_BP");
-static_assert(offsetof(WBP_Subtitles_C_OnSubtitleWidgetCreated_BP, NewSubWidget) == 0x000000, "Member 'WBP_Subtitles_C_OnSubtitleWidgetCreated_BP::NewSubWidget' has a wrong offset!");
 
 }
 

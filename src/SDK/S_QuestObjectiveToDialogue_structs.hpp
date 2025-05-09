@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "SandFall_structs.hpp"
 #include "S_Loot_structs.hpp"
+#include "SandFall_structs.hpp"
 
 
 namespace SDK

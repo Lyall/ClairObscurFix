@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
+#include "S_QuestObjective_structs.hpp"
+#include "S_MainQuestData_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "SandFall_structs.hpp"
 #include "E_QuestStatus_structs.hpp"
-#include "S_MainQuestData_structs.hpp"
 #include "E_MainQuest_Step_structs.hpp"
-#include "S_QuestObjective_structs.hpp"
 #include "E_CurrentAct_structs.hpp"
 
 

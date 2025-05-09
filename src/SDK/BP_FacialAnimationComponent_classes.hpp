@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "E_Facial_LookAt_structs.hpp"
 #include "E_FacialExpressionsNPC_structs.hpp"
+#include "E_Facial_LookAt_structs.hpp"
 #include "Engine_classes.hpp"
 
 

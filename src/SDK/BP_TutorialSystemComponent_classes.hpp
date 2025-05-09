@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "S_TutorialHintParameters_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "S_TutorialCardParameters_structs.hpp"
+#include "S_TutorialHintParameters_structs.hpp"
 
 
 namespace SDK

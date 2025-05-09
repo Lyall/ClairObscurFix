@@ -19,20 +19,19 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Document.WBP_Document_C
-// 0x0050 (0x0330 - 0x02E0)
+// 0x0048 (0x0328 - 0x02E0)
 class UWBP_Document_C final : public UUserWidget
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02E0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UWidgetAnimation*                       Anim_Unlock;                                       // 0x02E8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UCommonLazyImage*                       Background;                                        // 0x02F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               JournalBackgroundOverlay;                          // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Journal_Panel_C*                   JournalPanel;                                      // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class URetainerBox*                           JournalRetainer;                                   // 0x0308(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_MM_LevelIcon_C*                    LevelImage;                                        // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USafeZone*                              SafeZone;                                          // 0x0318(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_CommonActionBarContainer_C*        WBP_CommonActionBarContainer;                      // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class ABP_DocumentActor_C*                    DocumentActor;                                     // 0x0328(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	class UOverlay*                               JournalBackgroundOverlay;                          // 0x02F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Journal_Panel_C*                   JournalPanel;                                      // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class URetainerBox*                           JournalRetainer;                                   // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_MM_LevelIcon_C*                    LevelImage;                                        // 0x0308(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USafeZone*                              SafeZone;                                          // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CommonActionBarContainer_C*        WBP_CommonActionBarContainer;                      // 0x0318(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class ABP_DocumentActor_C*                    DocumentActor;                                     // 0x0320(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
 	void BndEvt__WBP_Document_JournalPanel_K2Node_ComponentBoundEvent_0_OnBackToTeamOverview__DelegateSignature();
@@ -55,17 +54,16 @@ public:
 	}
 };
 static_assert(alignof(UWBP_Document_C) == 0x000008, "Wrong alignment on UWBP_Document_C");
-static_assert(sizeof(UWBP_Document_C) == 0x000330, "Wrong size on UWBP_Document_C");
+static_assert(sizeof(UWBP_Document_C) == 0x000328, "Wrong size on UWBP_Document_C");
 static_assert(offsetof(UWBP_Document_C, UberGraphFrame) == 0x0002E0, "Member 'UWBP_Document_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWBP_Document_C, Anim_Unlock) == 0x0002E8, "Member 'UWBP_Document_C::Anim_Unlock' has a wrong offset!");
-static_assert(offsetof(UWBP_Document_C, Background) == 0x0002F0, "Member 'UWBP_Document_C::Background' has a wrong offset!");
-static_assert(offsetof(UWBP_Document_C, JournalBackgroundOverlay) == 0x0002F8, "Member 'UWBP_Document_C::JournalBackgroundOverlay' has a wrong offset!");
-static_assert(offsetof(UWBP_Document_C, JournalPanel) == 0x000300, "Member 'UWBP_Document_C::JournalPanel' has a wrong offset!");
-static_assert(offsetof(UWBP_Document_C, JournalRetainer) == 0x000308, "Member 'UWBP_Document_C::JournalRetainer' has a wrong offset!");
-static_assert(offsetof(UWBP_Document_C, LevelImage) == 0x000310, "Member 'UWBP_Document_C::LevelImage' has a wrong offset!");
-static_assert(offsetof(UWBP_Document_C, SafeZone) == 0x000318, "Member 'UWBP_Document_C::SafeZone' has a wrong offset!");
-static_assert(offsetof(UWBP_Document_C, WBP_CommonActionBarContainer) == 0x000320, "Member 'UWBP_Document_C::WBP_CommonActionBarContainer' has a wrong offset!");
-static_assert(offsetof(UWBP_Document_C, DocumentActor) == 0x000328, "Member 'UWBP_Document_C::DocumentActor' has a wrong offset!");
+static_assert(offsetof(UWBP_Document_C, JournalBackgroundOverlay) == 0x0002F0, "Member 'UWBP_Document_C::JournalBackgroundOverlay' has a wrong offset!");
+static_assert(offsetof(UWBP_Document_C, JournalPanel) == 0x0002F8, "Member 'UWBP_Document_C::JournalPanel' has a wrong offset!");
+static_assert(offsetof(UWBP_Document_C, JournalRetainer) == 0x000300, "Member 'UWBP_Document_C::JournalRetainer' has a wrong offset!");
+static_assert(offsetof(UWBP_Document_C, LevelImage) == 0x000308, "Member 'UWBP_Document_C::LevelImage' has a wrong offset!");
+static_assert(offsetof(UWBP_Document_C, SafeZone) == 0x000310, "Member 'UWBP_Document_C::SafeZone' has a wrong offset!");
+static_assert(offsetof(UWBP_Document_C, WBP_CommonActionBarContainer) == 0x000318, "Member 'UWBP_Document_C::WBP_CommonActionBarContainer' has a wrong offset!");
+static_assert(offsetof(UWBP_Document_C, DocumentActor) == 0x000320, "Member 'UWBP_Document_C::DocumentActor' has a wrong offset!");
 
 }
 

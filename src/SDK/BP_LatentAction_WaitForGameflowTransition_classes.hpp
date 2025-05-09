@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "E_GameFlowTransitionPhase_structs.hpp"
 #include "SandFall_classes.hpp"
 #include "Engine_structs.hpp"
+#include "E_GameFlowTransitionPhase_structs.hpp"
 
 
 namespace SDK

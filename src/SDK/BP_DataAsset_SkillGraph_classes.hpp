@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "FSkillGraphEdge_structs.hpp"
 #include "Engine_classes.hpp"
 #include "FSkillGraphNode_structs.hpp"
-#include "FSkillGraphEdge_structs.hpp"
 
 
 namespace SDK

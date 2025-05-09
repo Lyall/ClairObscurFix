@@ -10,6 +10,7 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "CommonUI_classes.hpp"
 
 
@@ -17,15 +18,21 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_MM_LevelIcon.WBP_MM_LevelIcon_C
-// 0x0030 (0x0338 - 0x0308)
+// 0x0048 (0x0350 - 0x0308)
 class UWBP_MM_LevelIcon_C final : public UCommonUserWidget
 {
 public:
-	class UCommonLazyImage*                       LevelImage;                                        // 0x0308(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TSoftObjectPtr<class UTexture2D>              BackupTexture;                                     // 0x0310(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0308(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UCommonLazyImage*                       LevelImage;                                        // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UScaleBox*                              ScaleBox;                                          // 0x0318(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TSoftObjectPtr<class UTexture2D>              BackupTexture;                                     // 0x0320(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	bool                                          bUseAspectRatioOffset;                             // 0x0348(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void SetLevelIcon(const struct FFLevelDataEntry& LevelData);
+	void Construct();
+	void OnSettingsApplied(const class UConfigurableGameUserSettings* UserConfig);
+	void ExecuteUbergraph_WBP_MM_LevelIcon(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -38,9 +45,12 @@ public:
 	}
 };
 static_assert(alignof(UWBP_MM_LevelIcon_C) == 0x000008, "Wrong alignment on UWBP_MM_LevelIcon_C");
-static_assert(sizeof(UWBP_MM_LevelIcon_C) == 0x000338, "Wrong size on UWBP_MM_LevelIcon_C");
-static_assert(offsetof(UWBP_MM_LevelIcon_C, LevelImage) == 0x000308, "Member 'UWBP_MM_LevelIcon_C::LevelImage' has a wrong offset!");
-static_assert(offsetof(UWBP_MM_LevelIcon_C, BackupTexture) == 0x000310, "Member 'UWBP_MM_LevelIcon_C::BackupTexture' has a wrong offset!");
+static_assert(sizeof(UWBP_MM_LevelIcon_C) == 0x000350, "Wrong size on UWBP_MM_LevelIcon_C");
+static_assert(offsetof(UWBP_MM_LevelIcon_C, UberGraphFrame) == 0x000308, "Member 'UWBP_MM_LevelIcon_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UWBP_MM_LevelIcon_C, LevelImage) == 0x000310, "Member 'UWBP_MM_LevelIcon_C::LevelImage' has a wrong offset!");
+static_assert(offsetof(UWBP_MM_LevelIcon_C, ScaleBox) == 0x000318, "Member 'UWBP_MM_LevelIcon_C::ScaleBox' has a wrong offset!");
+static_assert(offsetof(UWBP_MM_LevelIcon_C, BackupTexture) == 0x000320, "Member 'UWBP_MM_LevelIcon_C::BackupTexture' has a wrong offset!");
+static_assert(offsetof(UWBP_MM_LevelIcon_C, bUseAspectRatioOffset) == 0x000348, "Member 'UWBP_MM_LevelIcon_C::bUseAspectRatioOffset' has a wrong offset!");
 
 }
 

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_classes.hpp"
-#include "EHealReason_structs.hpp"
 #include "EDamageReason_structs.hpp"
+#include "EHealReason_structs.hpp"
+#include "CoreUObject_classes.hpp"
 #include "EAttackType_structs.hpp"
 
 

@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "ECharacterTeamSelector_structs.hpp"
 #include "BP_BattleBuffInstance_AggregatorBase_classes.hpp"
 #include "E_jRPG_StatType_structs.hpp"
-#include "ECharacterTeamSelector_structs.hpp"
 
 
 namespace SDK

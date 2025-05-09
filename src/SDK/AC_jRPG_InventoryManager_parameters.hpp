@@ -10,10 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "S_jRPG_Item_StaticData_structs.hpp"
 #include "E_jRPG_ItemType_structs.hpp"
+#include "S_jRPG_Item_StaticData_structs.hpp"
 #include "GameplayTags_structs.hpp"
-#include "E_jRPG_StatType_structs.hpp"
 #include "S_InventoryItemTypeMetadata_structs.hpp"
 #include "S_jRPG_Item_DynamicData_structs.hpp"
 #include "E_CustomizationItemType_structs.hpp"
@@ -25,6 +24,7 @@
 #include "FVendorState_structs.hpp"
 #include "FCharacterAssignedEquipment_structs.hpp"
 #include "FEquipmentSlot_structs.hpp"
+#include "E_jRPG_StatType_structs.hpp"
 
 
 namespace SDK::Params

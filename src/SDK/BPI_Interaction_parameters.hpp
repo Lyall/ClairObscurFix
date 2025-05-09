@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "FPromptParams_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "FPromptParams_structs.hpp"
 
 
 namespace SDK::Params

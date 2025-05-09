@@ -32,9 +32,9 @@ public:
 	float                                         Dilation;                                          // 0x0360(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetDilation(double NewValue);
-	void SetLeavesMaterial();
 	void UserConstructionScript();
+	void SetLeavesMaterial();
+	void SetDilation(double NewValue);
 
 public:
 	static class UClass* StaticClass()

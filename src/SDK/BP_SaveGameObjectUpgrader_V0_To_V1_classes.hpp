@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "E_QuestStatus_structs.hpp"
+#include "E_WorldMapExplorationCapacity_structs.hpp"
 #include "BP_SaveGameObjectUpgrader_classes.hpp"
 #include "CoreUObject_structs.hpp"
 #include "E_CharacterList_structs.hpp"
-#include "E_WorldMapExplorationCapacity_structs.hpp"
+#include "E_QuestStatus_structs.hpp"
 
 
 namespace SDK

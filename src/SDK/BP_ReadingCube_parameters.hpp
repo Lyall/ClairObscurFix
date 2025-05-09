@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "S_GameplayPauseParameters_structs.hpp"
 #include "S_jRPG_Item_StaticData_structs.hpp"
 #include "Engine_structs.hpp"
+#include "S_GameplayPauseParameters_structs.hpp"
 
 
 namespace SDK::Params

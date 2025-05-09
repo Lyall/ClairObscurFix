@@ -12,8 +12,8 @@
 
 #include "PhysicsCore_structs.hpp"
 #include "EFootstepsType_structs.hpp"
-#include "ESfxType_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "ESfxType_structs.hpp"
 
 
 namespace SDK::Params
