@@ -372,6 +372,20 @@ void Resolution()
             spdlog::error("Resolution Checks: Pattern scan failed.");
         }
     }
+
+    // Fix resolution scale "bug" if maximum resolution is beyond 4K
+    std::uint8_t* ResolutionScaleBugScanResult = Memory::PatternScan(exeModule, "0F ?? ?? 72 ?? F3 0F ?? ?? ?? ?? ?? ?? F3 0F ?? ?? F3 0F ?? ?? ?? ?? ?? ?? F3 0F ?? ?? EB ??");
+    if (ResolutionScaleBugScanResult) {
+        spdlog::info("Resolution Scale Bug: Address is {:s}+{:x}", sExeName.c_str(), ResolutionScaleBugScanResult - reinterpret_cast<std::uint8_t*>(exeModule));
+        // This is not explicitly a bug per-say. 
+        // When the detected maximum resolution is beyond 3840/2160 on their respective axes, and the resolution scale is set to higher than 75%. 
+        // Then it is clamped down (presumably as a performance consideration?) to 100 - ((targetResScale - 75) * 0.8333). So a target of 100 is clamped to 79.166~
+        Memory::PatchBytes(ResolutionScaleBugScanResult + 0x3, "\xEB", 1);
+        spdlog::info("Resolution Scale Bug: Patched instructions.");
+    }
+    else {
+        spdlog::error("Resolution Scale Bug: Pattern scan failed.");
+    }
 }
 
 void Misc()
