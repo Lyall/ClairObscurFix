@@ -37,7 +37,7 @@ HMODULE thisModule;
 
 // Fix details
 std::string sFixName = "ClairObscurFix";
-std::string sFixVersion = "0.0.9";
+std::string sFixVersion = "0.0.10";
 std::filesystem::path sFixPath;
 
 // Ini
@@ -466,7 +466,8 @@ void Framerate()
                           spdlog::debug("Cutscenes: FPS: GameUserSettings = 0x{:x}. Set FPS limit to {}", reinterpret_cast<uintptr_t>(userSettings), userSettings->FrameRateLimit);   
                     }
                     else {
-                        spdlog::error("Cutscenes: FPS: Failed to retreive GameUserSettings.");
+                        ctx.xmm1.f32[0] = 0.00f;
+                        spdlog::error("Cutscenes: FPS: Failed to retreive GameUserSettings. Setting framerate limit to 0.");
                     }
                 });
         }
