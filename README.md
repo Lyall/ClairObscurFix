@@ -3,7 +3,7 @@
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W01UAI9)<br />
 [![Github All Releases](https://img.shields.io/github/downloads/Lyall/ClairObscurFix/total.svg)](https://github.com/Lyall/ClairObscurFix/releases)
 
-**ClairObscurFix** is an ASI plugin for Clair Obscur: Expedition 33 that removes the 30fps cap in cutscenes, fixes ultrawide issues and more.
+**ClairObscurFix** is an ASI plugin for Clair Obscur: Expedition 33 that removes the 30fps cap in cutscenes, disables sharpening and more.
 
 ## Features
 ### General
