@@ -86,6 +86,7 @@ SDK::UEngine* Engine = nullptr;
 SDK::UObject* WidgetObject = nullptr;
 SDK::ABP_jRPG_GM_Bootstrap_C* Bootstrap = nullptr;
 std::unordered_set<SDK::UObject*> PPOverrideInstances;
+SDK::UGameUserSettings* GameUserSettings = nullptr;
 
 void CalculateAspectRatio(bool bLog)
 {
@@ -497,21 +498,23 @@ void Framerate()
 {
     if (bCutsceneFPS) {
         // FrameRateLimit
-        std::uint8_t* FrameRateLimitScanResult = Memory::PatternScan(exeModule, "48 8B ?? F3 0F ?? ?? ?? ?? ?? ?? FF 90 ?? ?? ?? ?? 48 83 ?? ?? E9 ?? ?? ?? ??");
+        std::uint8_t* FrameRateLimitScanResult = Memory::PatternScan(exeModule, "EB ?? 0F 28 ?? 48 8B ?? ?? ?? 0F 28 ?? ?? ?? 44 0F ?? ?? ?? ?? 44 0F ?? ?? ?? ??");
         if (FrameRateLimitScanResult) {
             spdlog::info("Cutscenes: FPS: Address is {:s}+{:x}", sExeName.c_str(), FrameRateLimitScanResult - reinterpret_cast<std::uint8_t*>(exeModule));
             static SafetyHookMid FrameRateLimitMidHook{};
-            FrameRateLimitMidHook = safetyhook::create_mid(FrameRateLimitScanResult,
+            FrameRateLimitMidHook = safetyhook::create_mid(FrameRateLimitScanResult + 0x5,
                 [](SafetyHookContext& ctx) {
-                    SDK::UGameUserSettings* userSettings = SDK::UGameUserSettings::GetGameUserSettings();
-                    if (userSettings) {
-                          // This effectively sets t.MaxFPS. Just overwrite any attempt to set a framerate limit with the user's defined setting
-                          ctx.xmm1.f32[0] = userSettings->FrameRateLimit;
-                          spdlog::debug("Cutscenes: FPS: GameUserSettings = 0x{:x}. Set FPS limit to {}", reinterpret_cast<uintptr_t>(userSettings), userSettings->FrameRateLimit);   
+                    if (!GameUserSettings)
+                        // Store game user settings
+                        GameUserSettings = SDK::UGameUserSettings::GetGameUserSettings();
+                 
+                    if (GameUserSettings) {
+                        // This overrides t.MaxFPS. Always force the game to use the user's in-game defined framerate limit
+                        ctx.xmm0.f32[0] = GameUserSettings->FrameRateLimit;
                     }
                     else {
-                        ctx.xmm1.f32[0] = 0.00f;
-                        spdlog::error("Cutscenes: FPS: Failed to retreive GameUserSettings. Setting framerate limit to 0.");
+                        // Fallback to uncapping the framerate if game user settings can't be retrieved
+                        ctx.xmm0.f32[0] = 0.00f;
                     }
                 });
         }
