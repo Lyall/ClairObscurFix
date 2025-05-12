@@ -65,6 +65,7 @@ float fHUDHeightOffset;
 // Ini variables
 bool bSkipLogos;
 bool bCutsceneFPS;
+bool bAdjustResChecks;
 bool bEnableConsole;
 bool bFixMovies;
 bool bCutsceneLetterboxing;
@@ -258,6 +259,7 @@ void Configuration()
     inipp::get_value(ini.sections["Developer Console"], "Enabled", bEnableConsole);
     inipp::get_value(ini.sections["Skip Intro Logos"], "Enabled", bSkipLogos);
     inipp::get_value(ini.sections["Uncap Cutscene FPS"], "Enabled", bCutsceneFPS);
+    inipp::get_value(ini.sections["Adjust Resolution Checks"], "Enabled", bAdjustResChecks);
     inipp::get_value(ini.sections["Fix Movies"], "Enabled", bFixMovies);
     inipp::get_value(ini.sections["Center HUD"], "Enabled", bCenterHUD);
     inipp::get_value(ini.sections["Center HUD"], "AspectRatio", fHUDAspectRatio);
@@ -274,6 +276,7 @@ void Configuration()
     spdlog_confparse(bEnableConsole);
     spdlog_confparse(bSkipLogos);
     spdlog_confparse(bCutsceneFPS);
+    spdlog_confparse(bAdjustResChecks);
     spdlog_confparse(bFixMovies);
     spdlog_confparse(bCenterHUD);
     spdlog_confparse(fHUDAspectRatio);
@@ -348,6 +351,26 @@ void Resolution()
     }
     else {
         spdlog::error("Current Resolution: Pattern scan failed.");
+    }
+
+    if (bAdjustResChecks) 
+    {
+        // Use FMonitorInfo::MaxResolution instead of FMonitorInfo::NativeWidth/Height when checking if resolution is compatible
+        std::uint8_t* ResolutionChecksScanResult = Memory::PatternScan(exeModule, "8B ?? 20 39 ?? ?? 7F ?? 8B ?? ?? 39 ?? ?? 7F ?? 49 ?? ?? E8 ?? ?? ?? ?? 83 ?? 01 75 ??");
+        if (ResolutionChecksScanResult) {
+            spdlog::info("Resolution Checks: Address is {:s}+{:x}", sExeName.c_str(), ResolutionChecksScanResult - reinterpret_cast<std::uint8_t*>(exeModule));
+            // Fullscreen
+            Memory::PatchBytes(ResolutionChecksScanResult + 0x02, "\x28", 1); // Offset 0x20 -> 0x28
+            Memory::PatchBytes(ResolutionChecksScanResult + 0x0A, "\x2C", 1); // Offset 0x24 -> 0x2C
+            // Borderless
+            Memory::PatchBytes(ResolutionChecksScanResult + 0x1F, "\x2C", 1); // Offset 0x24 -> 0x2C
+            Memory::PatchBytes(ResolutionChecksScanResult + 0x22, "\x28", 1); // Offset 0x20 -> 0x28
+
+            spdlog::info("Resolution Checks: Patched instructions.");
+        }
+        else {
+            spdlog::error("Resolution Checks: Pattern scan failed.");
+        }
     }
 }
 
