@@ -79,6 +79,7 @@ int iCurrentResX;
 int iCurrentResY;
 bool bIsCutscene;
 bool bSkippedLogos;
+float fCurrentCutsceneAspect;
 std::string sWidgetName;
 SDK::UEngine* Engine = nullptr;
 SDK::UObject* WidgetObject = nullptr;
@@ -416,14 +417,20 @@ void AspectRatioFOV()
             static SafetyHookMid CutsceneAspectRatioMidHook{};
             CutsceneAspectRatioMidHook = safetyhook::create_mid(CutsceneAspectRatioScanResult,
                 [](SafetyHookContext& ctx) {
-                    // Check if forced aspect ratio is 2.39~
+                    // Check if forced aspect ratio is 2.39~ or 1.78~
                     if (std::fabs(ctx.xmm1.f32[0] - fCutsceneAspect) < 1e-5f) {
+                        fCurrentCutsceneAspect = ctx.xmm1.f32[0];
                         ctx.xmm1.f32[0] = fAspectRatio;
-                        // We're in a cutscene now
+                        
+                        bIsCutscene = true;
+                    }
+                    else if (std::fabs(ctx.xmm0.f32[0] - fNativeAspect) < 1e-5f) {
+                        fCurrentCutsceneAspect = ctx.xmm0.f32[0];
+                        ctx.xmm0.f32[0] = fAspectRatio;
+
                         bIsCutscene = true;
                     }
                     else {
-                        // If no aspect ratio is forced then we're not in a cutscene
                         bIsCutscene = false;
                     }
                 });
@@ -439,8 +446,8 @@ void AspectRatioFOV()
             static SafetyHookMid CutsceneFOVMidHook{};
             CutsceneFOVMidHook = safetyhook::create_mid(CutsceneFOVScanResult,
                 [](SafetyHookContext& ctx) {
-                    if (bIsCutscene && fAspectRatio > fCutsceneAspect)
-                        ctx.xmm0.f32[0] = atanf(tanf(ctx.xmm0.f32[0] * (fPi / 360)) / fCutsceneAspect * fAspectRatio) * (360 / fPi);
+                    if (bIsCutscene && fAspectRatio > fCurrentCutsceneAspect)
+                        ctx.xmm0.f32[0] = atanf(tanf(ctx.xmm0.f32[0] * (fPi / 360)) / fCurrentCutsceneAspect * fAspectRatio) * (360 / fPi);
                 });
         }
         else {
