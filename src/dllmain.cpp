@@ -37,7 +37,7 @@ HMODULE thisModule;
 
 // Fix details
 std::string sFixName = "ClairObscurFix";
-std::string sFixVersion = "0.0.10";
+std::string sFixVersion = "0.0.11";
 std::filesystem::path sFixPath;
 
 // Ini
@@ -74,6 +74,7 @@ bool bBackgroundAudio;
 bool bDisableSubtitleBlur;
 bool bCenterHUD;
 float fHUDAspectRatio;
+bool bMaxTimerResolution;
 
 // Variables
 int iCurrentResX;
@@ -268,6 +269,7 @@ void Configuration()
     inipp::get_value(ini.sections["Sharpening"], "Strength", fSharpenStrength);
     inipp::get_value(ini.sections["Background Audio"], "Enabled", bBackgroundAudio);
     inipp::get_value(ini.sections["Disable Subtitle Blur"], "Enabled", bDisableSubtitleBlur);
+    inipp::get_value(ini.sections["Maximum Timer Resolution"], "Enabled", bMaxTimerResolution);
 
     // Clamp settings
     fSharpenStrength = std::clamp(fSharpenStrength, 0.00f, 2.00f);
@@ -285,6 +287,7 @@ void Configuration()
     spdlog_confparse(fSharpenStrength);
     spdlog_confparse(bBackgroundAudio);
     spdlog_confparse(bDisableSubtitleBlur);
+    spdlog_confparse(bMaxTimerResolution);
 
     spdlog::info("----------");
 }
@@ -414,8 +417,10 @@ void Misc()
             [](SafetyHookContext& ctx) {
                 spdlog::debug("Level Load: ASandfallGameMode::BeginPlay() called.");
 
-                // Set maximum supported timer resolution
-                SetMaxTimerResolution();
+                if (bMaxTimerResolution) {
+                    // Set maximum supported timer resolution
+                    SetMaxTimerResolution();
+                }
 
                 // Grab bootstrap object
                 if (!bSkippedLogos && bSkipLogos) {
