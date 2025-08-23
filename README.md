@@ -1,3 +1,7 @@
+## ⚠️ This repository has been migrated
+Active development has moved to [Codeberg](https://codeberg.org/Lyall/ClairObscurFix).  
+This repo is archived and will no longer receive updates.
+
 # ClairObscurFix
 [![Patreon-Button](https://github.com/Lyall/ClairObscurFix/blob/main/.github/Patreon-Button.png?raw=true)](https://www.patreon.com/Wintermance) 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W01UAI9)<br />
